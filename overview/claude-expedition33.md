@@ -9,7 +9,7 @@
 These are in addition to the general failure modes in the startup file:
 
 - **Confabulation about game content:** Training data thin and patchy. Do not give confident answers about mechanics, routes, item availability, or missable content without searching first.
-- **Missable/sequence-locked content:** Highest-risk category. Never assert content will be available later without verifying. Default: “I’m not certain — check the wiki.” The Vale bosses incident is the clearest example: Claude explicitly told Matt he could return after the Axon. He could not.
+- **Missable/sequence-locked content:** Highest-risk category. Never assert content will be available later without verifying. Default: “I’m not certain — check the wiki.” The Vale bosses incident is the clearest example of this failure mode: ChatGPT explicitly told Matt he could return to Visages after the Axon and would miss nothing. He could not. Three Vale bosses were permanently lost as a result.
 - **Wrong advice on record:** Previous sessions contain specific errors. Check character files before advising on that character.
 - **Recommending meta builds without checking playstyle fit:** Community recommendations often assume specific builds (e.g. Elemental Genesis). Always verify assumptions before recommending.
 - **Not simulating combat turns before recommending changes:** Abstract reasoning from tier rankings is insufficient. Always trace actual turn sequences before advising on weapon or build changes.
@@ -185,7 +185,7 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 - **Litheson is Sciel’s endgame weapon:** Confirmed by multiple sources. Upgrade to level 20.
 - **Marking Shot over Defiant Strike for Verso:** Both apply Mark 100%. Defiant Strike costs 30% current HP per use — too risky with developing parry skills. Marking Shot: 2 AP, no health cost, damage bonus at C Rank.
 - **Rank bonuses work ONLY at exact rank:** Confirmed by multiple community sources and in-game highlighting. Skills show bonus text in yellow at the relevant rank. Passing through a rank means the bonus is only active briefly.
-- **Vale bosses missed:** Axon defeated before triggering the mask riddles. All three Vale bosses permanently inaccessible. Moissonneuse Vendange was obtained via another source.
+- **Vale bosses missed:** Axon defeated before triggering the mask riddles. All three Vale bosses permanently inaccessible. Moissonneuse Vendange was obtained though.
 - **Endgame team:** Maelle + Sciel + Verso. Sciel: Fortune’s Fury (double damage) + Intervention (extra turn + 4 AP). Verso with Cheater + Steeled Strike is primary endgame DPS.
 - **Maelle must complete The Reacher before Renoir:** Required for Lithum (endgame weapon) and Gustave resurrection path. Choose “Truth” to reach Relationship Level 7.
 
@@ -238,7 +238,7 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 
 ## Section 8: Known Errors from Chat 1
 
-1. **Vale bosses missable:** Claude said the Vale bosses could be accessed after defeating the Axon. They cannot. Three Vale bosses permanently lost: Jovial Moissonneuse, Sorrowful Chapelier, Seething Boucheclier. Matt had explicitly asked whether to explore before fighting the boss; Claude said he could come back later and would miss nothing.
+1. **Vale bosses missable (ChatGPT error, not Claude):** ChatGPT said the Vale bosses could be accessed after defeating the Axon, and that nothing in Visages was permanently missable. This was wrong. Three Vale bosses permanently lost: Jovial Moissonneuse, Sorrowful Chapelier, Seething Boucheclier. Matt had explicitly asked whether to explore before fighting the boss; ChatGPT said he could come back later. Retained here as a real consequence affecting this playthrough, and as a category to guard against — but not a Claude error.
 1. **Colim recommendation:** Recommended over Trebuchim based on Light stain wildcards and community meta. Wrong for Matt’s playstyle. Root error: didn’t simulate turns, didn’t check playstyle assumptions.
 1. **Monoco Defence stat advice:** Recommended 0 Defence without knowing Defence contributes to crit rate. Testing showed 0 Defence dropped crit from 23% to 5%.
 1. **Fueling Break effect:** Said it gives AP on Break damage. Correct: doubles Burn stacks when enemy is broken.
@@ -319,8 +319,9 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 
 *For reference only — do not fetch unless specifically asked. These are large files.*
 
-|Chat  |URL                                                                                                                                                                                                  |
-|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Chat 1|[Formatted](https://gist.github.com/mattachu/238b03e1faad64212cc8c7ae27ad6fcd) / [Raw](https://gist.githubusercontent.com/mattachu/238b03e1faad64212cc8c7ae27ad6fcd/raw/claude-expedition33-chat1.md)|
+| Chat             | URL                                                                                                                                                                                                  |
+|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Chat 0 (ChatGPT) | [Formatted](https://gist.github.com/mattachu/f46644307d9f753743ea4423b262d4ec) / [Raw](https://gist.githubusercontent.com/mattachu/f46644307d9f753743ea4423b262d4ec/raw//chatgpt-expedition33.md)    |
+| Chat 1 (Claude)  | [Formatted](https://gist.github.com/mattachu/238b03e1faad64212cc8c7ae27ad6fcd) / [Raw](https://gist.githubusercontent.com/mattachu/238b03e1faad64212cc8c7ae27ad6fcd/raw/claude-expedition33-chat1.md)|
 
-*Last updated: [2026-03-08]*
+*Last updated: [2026-03-08 22:28]]*
