@@ -1,203 +1,226 @@
 # Verso — Clair Obscur: Expedition 33
 
-*Last updated: [2026-03-09 21:47]*
+*Last updated: 2026-03-11*
 
 ---
 
-## Role in Party
+## Role
 
-Mid-game DPS in levelling team (Verso/Monoco/Sciel, Act 3). Endgame main DPS alongside Maelle in the planned endgame team (Maelle/Sciel/Verso). Perfection/Rank system: gains Perfection on parry and certain actions; higher Rank = higher damage multipliers. Gaulteram weapon prevents rank loss on hit (loses 1 Perfection only, not full demotion). Solo fights completed in Act 3 (vs Francois, vs Monoco) — both won.
-
-Turn order in levelling team: Sciel (~1812) → Verso (~1436) → Monoco (~1163). Verso acts second; receives Fortune's Fury buff from Sciel before his action.
-
-Primary endgame skill: Steeled Strike (13-hit extreme damage at S Rank, with Cheater Lumina). Not yet equipped — requires Cheater Pictos first (Sprong boss). Phantom Stars for AoE trash in current build.
+- **Primary role:** Mid-game DPS (levelling team); endgame main DPS
+- **Party position:** Active in Act 3 levelling team (Verso / Monoco / Sciel); planned endgame team (Maelle / Sciel / Verso)
+- **Synergies:** Receives Fortune's Fury from Sciel (doubled damage); Intervention from Sciel grants extra turn + 4 AP for burst; Monoco's Stalact Punches fills Break bar for Verso's Perfect Break (triggers Break + jumps to S Rank); Marking Shot + Rewarding Mark Lumina generate AP return for party
 
 ---
 
-## Current Build
+## Mechanics
 
-### Attributes
+Verso's central system is **Perfection and Rank**. Perfection is a resource that fills a rank meter; higher ranks give higher damage multipliers and unlock skill bonuses. Rank order: C → B → A → S. Skills and parries generate Perfection.
 
-End of Chat 1 (Level 56): Agility 99, Luck 69.
+**Critical mechanic:** Rank bonuses apply ONLY at the **exact rank stated** — not at higher ranks. Yellow skill text in-game indicates an active rank bonus. A skill with a C Rank bonus loses that bonus once at B Rank.
 
-Agility primary (Gaulteram scales Agility + Luck; same scaling as Chevalam — no respec needed when swapping). Luck secondary for Crit Rate. Both Gaulteram and Chevalam scale identically, making the weapon swap seamless.
+| Event | Perfection effect |
+|-------|-------------------|
+| Parry | Gains Perfection |
+| Hit taken (Gaulteram) | Lose 1 Perfection only (not full rank demotion) |
+| Quick Strike | Modest Perfection gain (no rank jump without Glaceso) |
+| Assault Zero | B → A rank progression |
+| Strike Storm crit (C Rank) | +2 Perfection per hit |
+| Perfect Break (at B Rank) | Triggers Break → jump to S Rank |
 
-[DETAIL THIN — when Luck was raised from 39 (Part 5 solo build) to 69 (end of Chat 1): exact session not pinpointed in transcript.]
+Gaulteram's Level 4 ability is essential while parry skills are developing: on hit, lose only 1 Perfection instead of full rank demotion. Without this, an unlucky hit can wipe the rank built over several turns.
 
-### Weapon
+**Steeled Strike** (not yet equipped): charges for 1 turn; executes following turn for 13-hit extreme damage. Interrupted if Verso takes any damage during charge. Requires Cheater Pictos (from Sprong boss) to use safely — Cheater gives a second consecutive turn, so charge and execute happen back-to-back.
 
-**Current:** Gaulteram, level 12. Scaling: Agility + Luck.
-
-| Level | Ability |
-|---|---|
-| Level 4 | On hit: lose only 1 Perfection instead of full rank demotion |
-| Level 20 | +2 Perfection when entering Rank A |
-
-**DO NOT UPGRADE Gaulteram.** Save Resplendent Catalysts. Reason: Chevalam (Verso's next weapon) is accessible from Chromatic Gold Chevaliere (Crimson Forest). Upgrading Gaulteram wastes catalysts with no long-term benefit. Go get Chevalam when the team reaches Level 65–70.
-
-**Why Gaulteram over Glaceso:** Glaceso (Level 21, in inventory) was rejected because: (a) scales Defence + Luck — requires respec now and another respec for Chevalam = 2 Recoats wasted; (b) Gaulteram Level 4 forgiveness is critical while developing parry skills; (c) same Agility + Luck scaling as Chevalam ensures a clean swap. Matt identified all three reasons; Claude initially recommended Glaceso incorrectly.
-
-**Earlier weapon:** Lanceram (level 12). Level 4: rank floor at C. Level 10: base attack +4 Perfection. Level 20: parry gives 2 Perfection. Replaced by Gaulteram — C floor is unnecessary since S rank builds in ~2 turns; Gaulteram forgiveness more valuable.
-
-**Future weapon:** Chevalam — from Chromatic Gold Chevaliere (Crimson Forest / Blades Graveyard). **Recommended attempt level: 65–70+** (NOT at current level ~56). Same Agility + Luck scaling as Gaulteram; no respec on swap.
-
-### Pictos
-
-End of Chat 1 (final, confirmed Part 7/8): Burning Death, Second Chance, Shortcut.
-
-Combined stats: Health 2291, Speed 1436, Crit 84%.
-
-- **Burning Death** (Speed 308, Crit 24%) — [DETAIL THIN — exact Pictos effect not confirmed in transcript. Stats confirmed.]
-- **Second Chance** (Health 1107, Crit 8%) — Revive with 100% health once per battle. Pictos-exclusive (40 LP, cannot be learned without Pictos). Only one character can hold at a time; moved temporarily to Verso for solo fights (vs Monoco, vs Francois), returned to Maelle after, now back with Verso for levelling team. Note: Second Chance works ONCE per battle — not a reliable safety net for repeated use.
-- **Shortcut** (Speed 182, Crit 18%) — [DETAIL THIN — exact Pictos effect not confirmed in transcript. Stats confirmed.]
-
-**Solo fight Pictos (Part 5):** Second Chance (borrowed from Maelle) + Dead Energy I + Weakness Gain. No longer equipped.
-
-### Skills
-
-End of Chat 1 (confirmed in Part 9 — Matt stated actual skills): Quick Strike, Assault Zero, Strike Storm, Marking Shot, Phantom Stars, Perfect Break.
-
-**⚠️ CONFIRMED: Light Holder and End Bringer do NOT exist in Verso's available skill list.** Matt stated explicitly in Part 9: "I don't actually have Light Holder or End Bringer." All prior recommendations including these were confabulation errors. Do not plan around them.
-
-| Skill         | AP                      | Rank Bonus                                     | Effect                                                                     | Notes                                                                                                                                                                                                           |
-|---------------|-------------------------|------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Quick Strike  | 2                       | —                                              | Modest Perfection gain                                                     | Without Glaceso: gives modest Perfection, NOT a rank jump. With Glaceso Level 4 only: jumps to Rank B.                                                                                                          |
-| Assault Zero  | 3                       | —                                              | B→A rank progression                                                       | Confirmed rank-building skill.                                                                                                                                                                                  |
-| Strike Storm  | 5                       | C: increased damage + crits give +2 Perfection | 5-hit high single-target damage, weapon element                            | Best at C Rank. Crits from 84% crit rate give +2 Perfection per hit → fast climb to A Rank. Synergises strongly with Sciel's Fortune's Fury (doubled = massive damage). KEEP over Defiant Strike for this role. |
-| Marking Shot  | 2                       | C: increased damage                            | 1-hit low damage, weapon element; 100% Mark                                | No HP cost. Chosen over Defiant Strike: same 100% Mark, lower AP (2 vs 3), no 30% HP cost, C Rank bonus aligns with early-fight state.                                                                          |
-| Phantom Stars | 9 (5 at S Rank)         | —                                              | AoE multi-hit, all enemies                                                 | **TRASH FIGHTS AND MULTI-ENEMY ONLY.** Useless vs single target. Essential for Visages and Vale areas. **Never use in solo/boss 1v1 fights.**                                                                   |
-| Perfect Break | 7 (5 at exactly B Rank) | B: costs 5 AP instead of 7                     | High Light damage; triggers Break when bar is full → Verso jumps to S Rank | Two-step mechanic: Monoco fills Break bar with Stalact Punches → Verso triggers Break with Perfect Break → Stun window + S Rank. Essential for team composition.                                                |
-
-**⚠️ RANK BONUS MECHANIC (confirmed from sources, Part 9):** Bonuses work ONLY at the EXACT rank stated. NOT at ranks above. Strike Storm C bonus = lost once at B. Perfect Break B discount = lost once at A. Yellow skill text in-game indicates active bonus. "You have to be on that exact rank to get it, you won't get the bonus if you are higher."
-
-**Steeled Strike** (9 AP): Charges for 1 turn; executes following turn. Interrupted if Verso takes any damage during charge. 13-hit extreme damage. Requires Cheater Pictos (Sprong boss) to use safely. Not yet equipped. After Cheater: swap Paradigm Shift or another skill for Steeled Strike.
-
-**Skills Verso has but is NOT using:**
-- Defiant Strike (3 AP, 2 hits Physical, 100% Mark, B Rank: increased damage, costs 30% current HP) — Mark application alternative to Marking Shot. Not recommended while parry rate is ~20% on new enemies.
-- Paradigm Shift — Generates 1–3 AP; damage bonus at C Rank only. NOT a rank jump. Redundant given team AP generation (Sciel Intervention, Monoco Potier Energy).
-- Perfect Recovery — Heals Verso only (50% HP, 100% at C Rank). Redundant given Monoco's Pelerin Heal.
-- Blitz — Extra turn; execute low-HP enemies; B Rank bonus ONLY. Not recommended — passes through B Rank quickly, bonus rarely active.
-- Berserk Slash — Scales with missing HP. Situational.
-- Steeled Strike — Available, deferred until Cheater Pictos obtained.
-- Overload (6 AP) — Sets HP to 1, instantly jumps to Rank A, refills AP (gives 9 AP). High risk without Cheater: HP = 1 = one-shot death. Second Chance mitigates once. Note: 9 AP is not spendable in one turn — AP carries to next turn. Deferred.
-
-**Confirmed NOT in Verso's skill list (resolved):** Light Holder, End Bringer.
-
-**Solo build (Part 5, completed):** Quick Strike, Assault Zero, Defiant Strike, Perfect Break, Perfect Recovery, Paradigm Shift.
-
-### Lumina
-
-End of Chat 1 (110 LP): Core suite (106 LP) + 4 LP spare.
-
-LP expanded: 92 → 110 (18 Colour of Lumina).
-
-**Core suite (106 LP, shared with Monoco and Sciel — all three characters get this):**
-
-| Lumina             | LP |
-|--------------------|----|
-| Painted Power      | 5  |
-| Teamwork           | 5  |
-| Base Shield        | 20 |
-| Energising Turn    | 20 |
-| Energising Parry   | 15 |
-| Energising Start I | 5  |
-| Dodger             | 1  |
-| Breaker            | 10 |
-| Breaking Burn      | 5  |
-| Marking Shots      | 3  |
-| Dead Energy I      | 2  |
-| Dead Energy II     | 2  |
-| Critical Break     | 5  |
-| Rewarding Mark     | 5  |
-| Burning Shots      | 3  |
-
-**Total core: 106 LP.** Verso pays all 106 LP (no free Lumina from current Pictos). 4 LP spare.
-
-Energising Break (3 LP) was dropped from core suite: triggers only on Break (1–2 times per boss fight); insufficient frequency vs other AP sources.
-
-Energising Attack I (10 LP) was rejected: only relevant for base-attack-spam builds (e.g. Dualiso weapon). Verso is skill-focused with Gaulteram.
-
-Healing Counter (10 LP) was removed after correct LP cost established (1 LP was wrong).
-
-### Key Stats (with current Pictos equipped)
-
-Base (no Pictos, Level 56): Health 1184, Attack 1213, Defence 182, Speed 946, Crit 34%.
-
-With Burning Death + Second Chance + Shortcut: Health 2291, Speed 1436, Crit 84%.
+**Solo fights:** Both completed (vs Francois, vs Monoco).
 
 ---
 
-## Build Variants
+## Current Stats
 
-**Current build (levelling team, pre-Cheater):**
-- Skills: Quick Strike, Assault Zero, Strike Storm, Marking Shot, Phantom Stars, Perfect Break
-- Rotation: build Rank at C → Strike Storm for fast Perfection → trigger Break with Perfect Break → S Rank → Phantom Stars (5 AP at S, AoE) or high-damage burst
+### Level and Attributes
 
-**Solo build (vs Monoco, vs Francois — completed):**
-- Skills: Quick Strike, Assault Zero, Defiant Strike, Perfect Break, Perfect Recovery, Paradigm Shift
-- Pictos: Second Chance (borrowed), Dead Energy I, Weakness Gain
-- No Phantom Stars (AoE useless in 1v1)
+| Attribute | Value | Priority  | Reason                                                                         |
+|-----------|-------|-----------|--------------------------------------------------------------------------------|
+| Level     | 59    | —         |                                                                                |
+| Agility   | 99    | Primary   | Gaulteram/Chevalam scale Agility + Luck; Agility raises Speed, Attack, Defence |
+| Luck      | 69    | Secondary | Increases crit rate; same weapon scaling as Agility                            |
+| Vitality  | 0     | None      | Weapon does not scale off Vitality                                             |
+| Might     | 0     | None      | No benefit for this build                                                      |
+| Defence   | 0     | None      | No benefit for this build                                                      |
 
-**Endgame variant (after Cheater Pictos obtained):**
-- Add Steeled Strike, drop Paradigm Shift or another weaker slot
-- Overload possible for instant A Rank burst — assess when Cheater in hand
+*Gaulteram and Chevalam share identical scaling (Agility + Luck) — no respec needed when swapping weapons.*
+
+### Combat Stats (without Pictos)
+
+| Stat                          | Value         |
+|-------------------------------|---------------|
+| Health                        | 1184          |
+| Base Attack (stat only)       | [unconfirmed] |
+| Attack (incl. weapon scaling) | 1213          |
+| Speed                         | 946           |
+| Defence                       | 182           |
+| Critical Rate                 | 34%           |
+
+### Combat Stats (with Pictos)
+
+| Stat          | Value  |
+|---------------|--------|
+| Health        | 2291   |
+| Attack        | 1213   |
+| Speed         | 1436   |
+| Defence       | 182    |
+| Critical Rate | 84%    |
+
+*With Burning Death (Speed +308, Crit +24%), Second Chance (Health +1107, Crit +8%), Shortcut (Speed +182, Crit +18%). Confirmed from overview file.*
 
 ---
 
-## Weapons Considered
+## Weapons
 
-**Lanceram** — Initial weapon (Part 1). C rank floor and parry Perfection bonuses. Replaced by Gaulteram — C floor irrelevant since S Rank builds naturally; Gaulteram forgiveness more valuable.
+### Current
+- **Name:** Gaulteram (12)
+- **Scaling:** Agility + Luck
+- **Notes:** Level 4: on hit, lose only 1 Perfection instead of full rank demotion — essential while parry skills developing. Level 10: [unconfirmed]. Level 20: +2 Perfection when entering Rank A. **Do not upgrade further** — save Resplendent Catalysts for Chevalam.
 
-**Gaulteram** — Current. Level 4 forgiveness on hit. Level 20: +2 Perfection entering Rank A. Same scaling as Chevalam → clean weapon swap, no respec.
+### Next
+- **Name:** Chevalam (level 27)
+- **Source:** Chromatic Gold Chevaliere (Crimson Forest / Blades Graveyard)
+- **Recommended level:** 65–70+
+- **Scaling:** Agility + Luck (identical to Gaulteram — no respec needed)
+- **Notes:** Clean weapon swap, no stat changes required. Abilities beyond what is noted not confirmed — verify on obtaining.
 
-**Glaceso** (Level 21, in inventory) — Rejected. Level 4 ability causes Quick Strike to jump to Rank B (unique to Glaceso weapon). Rejected because: (1) requires stat respec for Defence + Luck scaling; (2) requires second respec when switching to Chevalam = 2 Recoats net cost; (3) no forgiveness mechanic.
+### Endgame
+- **Name:** Chevalam (fully upgraded)
+- **Source:** As above
+- **Scaling:** Agility + Luck
+- **Notes:** Abilities not fully confirmed.
 
-**Chevalam** — Next weapon (Chromatic Gold Chevaliere, Crimson Forest). Recommended attempt level: 65–70+. Same Agility + Luck scaling as Gaulteram — clean swap, no respec. Level 27 weapon.
+### Rejected
+**Rejected — Current slot**
+- **Lanceram:** Level 4 gives C Rank floor; Level 10: +4 Perfection on base attack; Level 20: parry gives 2 Perfection. C floor irrelevant (S Rank builds naturally in ~2 turns); Gaulteram forgiveness more valuable.
+- **Glaceso (Level 21, in inventory):** Requires stat respec (Defence + Luck scaling) and a second respec when switching to Chevalam = 2 Recoats wasted. No forgiveness mechanic. Claude initially recommended Glaceso incorrectly; Matt identified all three issues.
 
 ---
 
-## Deferred / Future Upgrades
+## Pictos
 
-1. **Level team to 65–70:** Required before Chromatic Gold Chevaliere attempt (confirmed 70-75+ recommended; current level 56 is too low).
-2. **Defeat Chromatic Gold Chevaliere:** Obtain Chevalam. Weak to Light and Dark (Verso/Sciel/Monoco team is the correct composition — Maelle's Fire damage is resisted).
-3. **Equip Chevalam:** Clean swap from Gaulteram (same scaling). No respec.
-4. **Defeat Sprong (NW Stone Wave Cliffs, in water, Level 55–75):** Obtain Cheater Pictos. Fight takes 30–40 minutes; needs Painted Power (in core Lumina). Effect: always play twice in a row. Enables Steeled Strike combo: charge T1 → executes T2 safe.
-5. **Add Steeled Strike:** After Cheater obtained. Replace Paradigm Shift or other weaker skill.
-6. **Consider Defiant Strike:** When parry rate improves. Not recommended while still at ~20% parry on new enemies (30% HP cost per use is too dangerous).
-7. **Consider Overload:** After Cheater obtained (HP → 1 is manageable with doubled turns). Note: AP from Overload carries to next turn, not same turn.
+| Slot | Pictos        | Stat Bonus              |
+|------|---------------|-------------------------|
+| 1    | Burning Death | Speed +308, Crit +24%   |
+| 2    | Second Chance | Health +1107, Crit +8%  |
+| 3    | Shortcut      | Speed +182, Crit +18%   |
+
+**Notes:** Second Chance — only one character can hold at a time; works once per battle. Currently held by Verso for levelling team; must return to Maelle for endgame team. Burning Death and Shortcut exact Pictos effects not confirmed in transcript — stats confirmed only.
 
 ---
 
-## Errors to Avoid
+## Lumina
 
-- **Light Holder and End Bringer:** RESOLVED — these do not exist in Verso's available skill list. Claude confabulated them in Parts 6 and 7 citing external sources. Matt confirmed in Part 9: "I don't actually have Light Holder or End Bringer." Do not plan around them.
-- **Glaceso recommendation:** Recommended Glaceso over Gaulteram based on higher weapon level (21 vs 10). Wrong: Glaceso requires 2 Recoats (respec for Defence scaling now, respec back for Chevalam later); Gaulteram has forgiveness mechanic; same scaling as Chevalam makes swap seamless. Matt identified all three issues.
-- **Phantom Stars in 1v1/solo fights:** Recommended before Matt corrected. AoE is useless vs single target. Only use in multi-enemy fights.
-- **Paradigm Shift rank jump:** Claimed it jumps Verso to S Rank. Correct: generates 1–3 AP; damage bonus at C Rank only.
-- **Quick Strike rank jump (inherent):** Said it inherently jumps to Rank B. Correct: requires Glaceso Level 4 ability. Without Glaceso, Quick Strike gives modest Perfection gain only.
-- **Rank bonuses apply at rank and above:** WRONG. Rank bonuses work ONLY at the exact rank stated. Yellow text in-game = active. Bonuses do NOT persist to higher ranks.
-- **Energising Attack I on Verso:** Not appropriate for skill-focused/Gaulteram build. Only relevant for Dualiso weapon base-attack-spam builds.
-- **Defiant Strike over Strike Storm:** Recommended Defiant Strike for 100% Mark over Strike Storm. Matt pushed back: Strike Storm does more damage and synergises with Fortune's Fury (doubled = massive damage). Mark can be applied with Marking Shot instead.
-- **Follow-Up recommendation:** Recommended without verifying Verso has the skill. Not confirmed in Matt's actual skill list.
-- **Berserk Slash recommendation:** Recommended as slot 6. Situational; Phantom Stars is more universally useful (essential for Visages AoE).
-- **"Overload is the skill you were thinking of":** Told Matt the 9 AP skill he was thinking of was Overload. Wrong — it was Strike Storm. Overload costs 6 AP and sets HP to 1 (very different mechanic).
-- **Overload 9 AP in same turn:** Suggested spending 9 AP from Overload in the same turn. Wrong: AP from Overload carries to the next turn.
-- **Second Chance double-equipping:** Recommended Second Chance on multiple characters simultaneously. Only one character can hold this Pictos at a time.
-- **Chevalam "available right now at Level 56":** Claimed accessible immediately. Correct: Chromatic Gold Chevaliere is Level 70–75+ recommended (Claude confused area recommendation with boss recommendation — quoted "level 50+ for Crimson Forest" instead of the boss level).
-- **Glaceso Quick Strike rank jump:** Incorrectly stated Quick Strike inherently jumps to Rank B. That effect is unique to Glaceso Level 4; without Glaceso equipped, Quick Strike gives modest Perfection only.
-- **Rank system confusion (multiple instances):** Claimed Paradigm Shift jumps to S Rank, claimed rank bonuses persist to higher ranks. Both confirmed wrong. Always verify exact rank mechanics before advising.
-- **Energising Break in core suite (originally):** Included at 3 LP. Removed — triggers only on Break (1–2 times per boss fight), insufficient vs other AP sources.
+### LP Budget
+- **Current capacity:** 110 LP
+- **Expansion cost:** 18 Colour of Lumina to expand from 92 LP to 110 LP
+
+### Core Suite
+*Shared across all three main party members — listed here for reference.*
+Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energising Parry (15), Energising Start I (5), Dodger (1), Breaker (10), Breaking Burn (5), Marking Shots (3), Dead Energy I (2), Dead Energy II (2), Critical Break (5), Rewarding Mark (5), Burning Shots (3)
+**Total: 106 LP**
+
+*Verso pays all 106 LP — no free Lumina from current Pictos.*
+
+### Character-Specific
+
+*(none — Verso uses core suite only)*
+
+### Notes
+Total paid LP: 106. Spare: 4 LP.
+
+Energising Attack I (10 LP) explicitly rejected — only relevant for base-attack-spam builds (e.g. Dualiso weapon). Verso is skill-focused with Gaulteram.
+
+---
+
+## Skills
+
+**Currently equipped (6):** Quick Strike, Assault Zero, Strike Storm, Marking Shot, Phantom Stars, Perfect Break
+
+*Steeled Strike is available but not yet equipped — requires Cheater Pictos first. Slot to displace: TBD.*
+
+| Skill          | AP Cost         | Equipped | Rank Bonus                                     | Notes                                                                                                                                                              |
+|----------------|-----------------|----------|------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Quick Strike   | 2               | ✅       | —                                              | Modest Perfection gain. Does NOT jump to Rank B without Glaceso equipped.                                                                                          |
+| Assault Zero   | 3               | ✅       | —                                              | B → A rank progression. Detail thin on exact effect.                                                                                                               |
+| Strike Storm   | 5               | ✅       | C: increased damage + crits give +2 Perfection | 5-hit high single-target, weapon element. Synergises strongly with Fortune's Fury. With 84% crit rate, +2 Perfection per hit accelerates Rank climb.              |
+| Marking Shot   | 2               | ✅       | C: increased damage                            | 1-hit low damage, 100% Mark. No HP cost. Chosen over Defiant Strike: same Mark, lower AP, no 30% HP cost.                                                         |
+| Phantom Stars  | 9 (5 at S Rank) | ✅       | —                                              | AoE multi-hit, all enemies. **Trash and multi-enemy fights ONLY. Useless in 1v1 boss fights.**                                                                    |
+| Perfect Break  | 7 (5 at B Rank) | ✅       | B: costs 5 AP instead of 7                    | High Light damage; triggers Break when bar full → Verso jumps to S Rank. Monoco fills Break bar with Stalact Punches first.                                       |
+| Steeled Strike | 9               | ❌       | —                                              | Charges T1, executes T2 for 13-hit extreme damage. Interrupted if hit during charge. Requires Cheater Pictos (Sprong). Slot to displace TBD.                     |
+
+**Skills available but not equipped:**
+
+| Skill            | Notes                                                                                                                       |
+|------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| Defiant Strike   | 3 AP, 2-hit Physical, 100% Mark, B Rank: increased damage. Costs 30% current HP per use. Not recommended at ~20% parry rate. |
+| Paradigm Shift   | Generates 1–3 AP; damage bonus at C Rank only. NOT a rank jump. Redundant given team AP generation.                        |
+| Perfect Recovery | Heals Verso only (50% HP; 100% at C Rank). Redundant given Monoco's Pelerin Heal.                                          |
+| Blitz            | Extra turn; execute low-HP enemies; B Rank bonus only. Passes through B Rank quickly — bonus rarely active.                 |
+| Berserk Slash    | Scales with missing HP. Situational.                                                                                        |
+| Overload         | 6 AP. Sets HP to 1; instantly jumps to Rank A; refills AP (carries to NEXT turn, not same turn). High risk without Cheater. |
+
+**Confirmed NOT in Verso's skill list:** Light Holder, End Bringer.
+
+---
+
+## Gradient Skills
+
+| Gradient Skill | Gradient Cost | Acquired | Notes                                   |
+|----------------|---------------|----------|-----------------------------------------|
+| [unconfirmed]  | 1             | [?]      | Details not confirmed — verify in game. |
+| [unconfirmed]  | 2             | [?]      | Details not confirmed — verify in game. |
+| [unconfirmed]  | 3             | [?]      | Details not confirmed — verify in game. |
+
+---
+
+## Build Options
+
+| Build Name                   | Role     | Key Skills                                                                               | Key Lumina | Status   | Notes                                                                  |
+|------------------------------|----------|------------------------------------------------------------------------------------------|------------|----------|------------------------------------------------------------------------|
+| Levelling team (pre-Cheater) | DPS      | Quick Strike, Assault Zero, Strike Storm, Marking Shot, Phantom Stars, Perfect Break     | Core suite | Current  | Rank build via Strike Storm crits; Perfect Break for S Rank jump       |
+| Solo fights (completed)      | Solo DPS | Quick Strike, Assault Zero, Defiant Strike, Perfect Break, Perfect Recovery, Paradigm Shift | Solo Pictos | Complete | Second Chance borrowed from Maelle; now returned                    |
+| Endgame (post-Cheater)       | Main DPS | Add Steeled Strike; consider Overload when HP management more reliable                   | Core suite | Planned  | After Sprong (Cheater Pictos). Slot to displace TBD.                   |
+
+---
+
+## Key Decisions
+
+- **Gaulteram over Glaceso:** Glaceso costs 2 Recoats net; no forgiveness mechanic. Gaulteram Level 4 forgiveness critical while parry skills developing. Same scaling as Chevalam = clean future swap.
+- **Marking Shot over Defiant Strike:** Same 100% Mark. Defiant Strike costs 30% HP per use — unacceptable at ~20% parry rate. Marking Shot: 2 AP, no HP cost.
+- **Strike Storm over Defiant Strike (damage slot):** More damage, synergises with Fortune's Fury. Mark handled by Marking Shot.
+- **Phantom Stars retained:** Essential for AoE in Visages and multi-enemy areas. Useless in 1v1 — never use in boss fights.
+- **Steeled Strike deferred:** Available but requires Cheater Pictos for safe use. Obtain Cheater (Sprong) first.
 
 ---
 
 ## Open Questions
 
-- **Light Holder / End Bringer:** RESOLVED — confirmed do not exist in Verso's skill list.
+- **Which skill does Steeled Strike replace?** After obtaining Cheater Pictos — slot to displace not yet decided.
+- **Defiant Strike timing:** When parry rate improves enough to justify 30% HP cost per use.
 - **Burning Death and Shortcut Pictos exact effects:** Stats confirmed; effects not detailed in transcript.
-- **Strike Storm base AP cost outside C Rank:** Listed as 5 AP at C Rank in Claude's recommendations; exact base cost not explicitly confirmed.
-- **Phantom Stars base AP cost:** 5 AP at S Rank confirmed; base cost (higher) not stated.
-- **Assault Zero exact effect:** Confirmed as B→A rank progression skill. Details thin.
-- **When to add Steeled Strike:** After Cheater Pictos (Sprong). Decision on which skill to drop pending.
-- **Gaulteram Level 10 and Level 20 abilities:** Level 4 confirmed (loses 1 Perfection on hit). Level 10 not confirmed. Level 20 (+2 Perfection entering Rank A) confirmed from Part 7.
-- **Final Luck allocation (39 → 69):** When exactly this respec happened not pinpointed.
-- **Defiant Strike timing:** When parry rate improves enough to justify 30% HP cost per use. Not yet recommended.
+- **Assault Zero exact effect:** Confirmed as B → A rank progression. Full details thin.
+- **Gaulteram Level 10 ability:** Not confirmed in transcript.
+- **When to switch Second Chance back to Maelle:** Currently held by Verso for levelling team; must return for endgame.
+
+---
+
+## Errors to Avoid
+
+- **Light Holder and End Bringer:** Do not exist in Verso's skill list. Confabulated across multiple session summaries. Matt confirmed explicitly in Part 9.
+- **Glaceso recommendation:** Recommended over Gaulteram based on higher weapon level. Wrong: costs 2 Recoats net; no forgiveness; Gaulteram is the clean choice.
+- **Phantom Stars in 1v1/solo fights:** AoE is useless vs single target.
+- **Paradigm Shift rank jump:** Said it jumps to S Rank. Correct: generates 1–3 AP; C Rank bonus only.
+- **Quick Strike rank jump (inherent):** Requires Glaceso Level 4. Without Glaceso = modest Perfection gain only.
+- **Rank bonuses persist to higher ranks:** WRONG. Exact rank only. Yellow text = active.
+- **Energising Attack I on Verso:** Not appropriate for skill-focused/Gaulteram build.
+- **Defiant Strike over Strike Storm:** Matt corrected: Strike Storm + Marking Shot combo is superior.
+- **Overload AP in same turn:** AP from Overload carries to the next turn, not the same turn.
+- **Second Chance on multiple characters:** Only one character can hold this Pictos at a time.
+- **Chevalam "available right now at Level 56":** Recommended level is 65–70+. Claude cited area level (50+) instead of boss level.
+- **Energising Break in core suite:** Triggers only on Break (1–2 times per boss fight). Removed.

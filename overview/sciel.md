@@ -1,200 +1,205 @@
 # Sciel — Clair Obscur: Expedition 33
 
-*Last updated: [2026-03-08 21:13]*
+*Last updated: 2026-03-11*
 
 ---
 
-## Role in Party
+## Role
 
-Pure support. Active in Act 3 levelling team (Verso/Monoco/Sciel) and planned endgame team (Maelle/Sciel/Verso). Goes first in levelling team (Speed ~1812 with final Pictos). Key functions:
-- **Fortune's Fury:** Doubles one ally's damage for one turn. Sciel goes first specifically to enable this before Verso acts.
-- **Intervention:** Grants targeted ally an immediate extra turn + 4 AP. Core enabler for Verso's burst and Maelle's nuke turns.
-- **Plentiful Harvest:** Consumes all Foretell on target → 1 AP per stack. Primary AP delivery mechanism.
-- **Litheson Level 20 passive:** +3 AP per turn when a buff or debuff is applied. Primary reason Sciel takes Monoco's endgame slot.
-
-Turn order in levelling team: Sciel (~1812) → Verso (~1436) → Monoco (~1163). Sciel acts first, uses Fortune's Fury on Verso, then Verso acts with doubled damage.
+- **Primary role:** Pure support
+- **Party position:** Active in Act 3 levelling team (Verso / Monoco / Sciel) and planned endgame team (Maelle / Sciel / Verso)
+- **Synergies:** Goes first in turn order (Speed ~1812) — Fortune's Fury on Verso before he acts; Intervention gives any ally an immediate extra turn + 4 AP; Plentiful Harvest converts Foretell stacks to AP; Litheson Level 20 passive generates +3 AP per turn on buff/debuff application
 
 ---
 
-## Current Build
+## Mechanics
 
-### Attributes
+Sciel's central system is **Foretell** — a stacking buff/debuff applied to allies or enemies via her skills. Foretell stacks are the resource Plentiful Harvest converts to AP (1 AP per stack consumed). Focused Foretell applies stacks; Plentiful Harvest cashes them in.
 
-End of Chat 1 (Level 59): Agility 99, Luck 78.
+Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun charge buffs allies (exact buff unconfirmed); gaining a Moon charge debuffs enemies (exact debuff unconfirmed). Litheson Level 20 triggers +3 AP per turn whenever any buff or debuff is applied — making almost every Sciel action generate AP for the party.
 
-**Attribute testing data (Level 46, Litheson Level 16, no Pictos):**
+**Twilight state** (from skills Final Path and Twilight Dance): secondary DPS mode. Used when support actions are not needed on a turn. Chation weapon would extend Twilight further but is currently deferred (double damage risk).
 
-| Test        | Health | Attack                       | Speed     | Defence   | Crit      |
-|-------------|--------|------------------------------|-----------|-----------|-----------|
-| All zero    | 938    | 1168 (438 base + 730 weapon) | 418       | 0         | 5%        |
-| Vitality 99 | 2327   | unchanged                    | unchanged | unchanged | unchanged |
-| Agility 99  | —      | 1300 (438 + 862 weapon)      | 764       | 182       | —         |
-| Defence 99  | —      | —                            | —         | 547       | 23%       |
-| Luck 99     | —      | 1432 (438 + 994 weapon)      | 557       | —         | 41%       |
-
-Key finding: Luck gives MORE weapon attack than Agility for Litheson (994 vs 862 at 99 points). Luck is the primary weapon-scaling stat.
-
-**Why allocation shifted from Part 4 (Luck 89/Agility 49) to final (Agility 99/Luck 78):**
-
-Part 4 allocation (Luck 89, Agility 49) gave Speed ~1111 with Recovery + Dead Energy I + Weakness Gain Pictos — sufficient to go before Maelle (~961) but with little margin. When Pictos changed to Base Shield + Burning Break + Survivor (no Recovery), the speed-from-Pictos profile changed. With Agility 99/Luck 78 and the new Pictos (Base Shield +399, Survivor +439), Speed = 974 + 399 + 439 = 1812 — comfortably first in any team arrangement. Higher Agility ensures the turn order guarantee even as Pictos change.
-
-Trade-off: Agility 99 sacrifices some Attack vs Luck 89 (Luck gives more weapon attack per point), but the Speed guarantee is more valuable for Sciel's first-mover support role than the marginal Attack increase.
-
-### Weapon
-
-**Current:** Litheson, level 16 → upgrading to 20. IS her confirmed endgame weapon (multiple community sources, confirmed in Chat 1).
-
-Scaling: Agility + Luck. (Luck gives more weapon attack per point — 994 vs 862 at 99 points.)
-
-| Level    | Ability                                         |
-|----------|-------------------------------------------------|
-| Level 4  | Gaining Sun charge → buffs allies               |
-| Level 10 | Gaining Moon charge → debuffs enemies           |
-| Level 20 | +3 AP per turn when a buff or debuff is applied |
-
-Community: "God tier" for support Sciel. "Being able to apply Foretell with free aim completely changes the way you play her." Both quotes confirm Litheson, NOT Charnon (see Errors to Avoid).
-
-Upgrade cost: Level 16 → 20 requires ~4–6 Resplendent Catalysts. Level 20 passive is essential — without it, Sciel generates significantly less AP.
-
-[DETAIL THIN — Grandiose Chroma Catalyst required for Level 20? In Part 8, ~4–6 Resplendent cited for 16→20. Check whether grandiose is needed for the final step.]
-
-### Pictos
-
-**End of Chat 1 (final, confirmed Parts 7–8):** Base Shield, Burning Break, Survivor.
-
-Combined stats: Health 2802, Speed 1812, Crit 82%.
-
-- **Base Shield** (Speed 399, Crit 11%, Lumina cost 20) — Provides 1 damage-absorbing shield buffer per turn automatically. Provides free Base Shield Lumina (20 LP value from core suite). Obtained from The Chosen Path reward (completing all 5 canvas fights in Act 3).
-- **Burning Break** (Health 1541, Crit 24%) — Provides free Burning Break Lumina (5 LP value). Effect: 25% increased break damage on burning enemies (from Breaking Burn Lumina description — same name implies same effect; unconfirmed for the Pictos specifically). Chosen over Burn Affinity: Burning Break gives +1541 Health and +24% Crit vs Burn Affinity's +439 Speed and +12% Crit. Better for survivability; Speed 1812 is still comfortably first in turn order.
-- **Survivor** (Speed 439, Crit 12%, Lumina cost 20) — Survive lethal blow with 1 HP, once per battle. Effect inferred from Lumina description; consistent with community references. Provides free Survivor Lumina (20 LP value). Obtained from Grandis Merchant at Monoco's Station (98,000 Chromas) after defeating Gargant boss in Frozen Hearts (optional area east of Monoco's Station). Equip and win 4 battles to learn Survivor Lumina.
-
-**Part 4 intermediate Pictos (changed by end of Chat 1):** Recovery (moved from Monoco) + Dead Energy I + Weakness Gain.
-- Recovery returned to Monoco in the final configuration (Parts 7–8).
-- Replacement with Base Shield + Burning Break + Survivor driven by: (1) Base Shield obtained from The Chosen Path; (2) Survivor purchased; (3) higher Crit and better team synergy; (4) new Pictos give stronger combined stat profile.
-
-### Skills
-
-End of Chat 1 (final, confirmed): Fortune's Fury, Intervention, Plentiful Harvest, Focused Foretell, Twilight Dance, Final Path.
-
-| Skill             | AP            | Effect                                              | Notes                                                                                                                                   |
-|-------------------|---------------|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Fortune's Fury    | [DETAIL THIN] | Doubles one ally's damage for one turn              | Core setup. Sciel acts first (Speed ~1812) → Fortune's Fury on Verso → Verso acts with doubled damage. Must be used BEFORE target acts. |
-| Intervention      | [DETAIL THIN] | Grants targeted ally an immediate extra turn + 4 AP | Core enabler. 4 AP directly enables high-cost skills. Enables Steeled Strike charge + execute combo with Cheater.                       |
-| Plentiful Harvest | [DETAIL THIN] | Consumes all Foretell on target → 1 AP per stack    | Primary AP delivery. With 4–5 Foretell stacks: 4–5 AP to target on demand.                                                              |
-| Focused Foretell  | [DETAIL THIN] | Applies Foretell stacks to target                   | Setup for Plentiful Harvest.                                                                                                            |
-| Twilight Dance    | [DETAIL THIN] | High damage (Twilight state)                        | Secondary DPS when not needed for support.                                                                                              |
-| Final Path        | [DETAIL THIN] | High damage + extends Twilight duration             | Secondary DPS + Foretell stacking.                                                                                                      |
-
-[DETAIL THIN — all current skill AP costs and exact effects. Confirmed functions from transcript; full details pending.]
-
-**Earlier skills (Level 40, Part 1):** Focused Foretell, Twilight Slash, Harvest, Dark Wave, Twilight Dance, Final Path. Unequipped: Firing Shadow, Plentiful Harvest, Searing Bond.
-
-### Lumina
-
-End of Chat 1 (110 LP): Core suite (106 LP) + Energising Heal (10) + Healing Parry (5) + Accelerating Heal (5) = 106 LP paid (after free Luminas) + 4 LP spare.
-
-LP expanded: 84 → 110 (26 Colour of Lumina). Base Shield Lumina (20 LP) FREE from Base Shield Pictos. Survivor Lumina (20 LP) FREE from Survivor Pictos.
-
-**Core suite (106 LP, shared with Verso and Monoco):**
-
-| Lumina             | LP                    |
-|--------------------|-----------------------|
-| Painted Power      | 5                     |
-| Teamwork           | 5                     |
-| Base Shield        | 20 (FREE from Pictos) |
-| Energising Turn    | 20                    |
-| Energising Parry   | 15                    |
-| Energising Start I | 5                     |
-| Dodger             | 1                     |
-| Breaker            | 10                    |
-| Breaking Burn      | 5                     |
-| Marking Shots      | 3                     |
-| Dead Energy I      | 2                     |
-| Dead Energy II     | 2                     |
-| Critical Break     | 5                     |
-| Rewarding Mark     | 5                     |
-| Burning Shots      | 3                     |
-
-Core LP paid by Sciel: 106 − 20 (Base Shield FREE) = 86 LP.
-Survivor Lumina (20 LP value) also FREE from Pictos — not in core suite cost.
-
-**Sciel-specific additions (20 LP):**
-
-| Lumina            | LP | Notes                               |
-|-------------------|----|-------------------------------------|
-| Energising Heal   | 10 | +1 AP on heal. Triggers frequently. |
-| Healing Parry     | 5  | Small heal on parry.                |
-| Accelerating Heal | 5  | Speed boost on heal.                |
-
-Total paid: 86 + 20 = 106 LP. Spare: 4 LP.
-
-**Part 4 intermediate Lumina recommendation (63 LP core):** Energising Turn (20), Energising Parry (15), Energising Start I (5), Teamwork (5), Breaker (10), Dodger (1), Marking Shots (3), Dead Energy I (2), Dead Energy II (2). Superseded by expanded core + full loadout above.
-
-### Key Stats (with current Pictos equipped)
-
-**End of Chat 1 (final):** Health 2802, Speed 1812, Crit 82%.
-
-Base (no Pictos, Level 59): Health 1261, Attack 1699, Defence 182, Speed 974, Crit 35%.
-
-**Part 4 intermediate** (Luck 89/Agility 49 + Recovery + Dead Energy I + Weakness Gain): Health 2938, Speed 1111, Defence 395, Crit 73%. Superseded by final allocation.
+**Turn order priority:** Sciel must act before Verso for Fortune's Fury to apply in time. Speed ~1812 guarantees she goes first in any current team arrangement.
 
 ---
 
-## Build Variants
+## Current Stats
 
-[DETAIL THIN — no explicit variants discussed in Parts 1–4, 7–8 for Sciel. Her role is consistent: support first, secondary DPS only when not needed for buff/AP actions.]
+### Level and Attributes
+
+| Attribute | Value | Priority  | Reason                                                                                                      |
+|-----------|-------|-----------|-------------------------------------------------------------------------------------------------------------|
+| Level     | 61    | —         |                                                                                                             |
+| Agility   | 99    | Primary   | Guarantees Speed ~1812 with current Pictos — essential for first-mover support role. Also gives weapon attack. |
+| Luck      | 78    | Secondary | Litheson scales more off Luck than Agility for weapon attack (994 vs 862 at 99 points); maximise within Speed constraint |
+| Vitality  | 0     | None      | Litheson does not scale off Vitality                                                                        |
+| Might     | 0     | None      | No benefit for this build                                                                                   |
+| Defence   | 0     | None      | No benefit for this build                                                                                   |
+
+*Trade-off note: Agility 99 sacrifices some Attack vs Luck 89 allocation, but the Speed guarantee (first mover) is more valuable than marginal Attack increase for a pure support role.*
+
+*Previous allocation (Luck 89 / Agility 49) gave Speed ~1111 — sufficient when using Recovery Pictos, but margin was tight. Current Pictos (Base Shield + Burning Break + Survivor) give better Speed from Agility 99.*
+
+### Combat Stats (without Pictos)
+
+| Stat                          | Value         |
+|-------------------------------|---------------|
+| Health                        | 1314          |
+| Base Attack (stat only)       | 438           |
+| Attack (incl. weapon scaling) | 2641          |
+| Speed                         | 974           |
+| Defence                       | 182           |
+| Critical Rate                 | 38%           |
+
+*Base Attack 438 confirmed from attribute testing at all-zero allocation. Weapon scaling contribution at current Agility 99 / Luck 78 allocation not explicitly tested — 2641 figure from overview file.*
+
+### Combat Stats (with Pictos)
+
+| Stat          | Value  |
+|---------------|--------|
+| Health        | 2802   |
+| Attack        | 2641   |
+| Speed         | 1812   |
+| Defence       | 182    |
+| Critical Rate | 82%    |
+
+*With Base Shield (Speed +399, Crit +11%), Burning Break (Health +1541, Crit +24%), Survivor (Speed +439, Crit +12%). Confirmed from overview file.*
 
 ---
 
-## Weapons Considered
+## Weapons
 
-**Rangeson** (level 7) — B Defence, C Agility. Level 4: recover 5% health per Foretell applied. Level 10: healing skills cost 1 less AP. Role: support healer. Rejected: lower power; scaling diverges from endgame.
+### Current
+- **Name:** Litheson (16) — upgrading to 20
+- **Scaling:** Agility + Luck (Luck gives more weapon attack per point: +994 vs +862 at 99 points)
+- **Notes:** Confirmed endgame weapon (multiple community sources). Level 4: gaining Sun charge buffs allies (exact buff unconfirmed). Level 10: gaining Moon charge debuffs enemies (exact debuff unconfirmed). Level 20: +3 AP per turn when a buff or debuff is applied — essential passive, do not leave at 16.
 
-**Chation** (level 15) — B Vitality, C Luck. Level 4: Sun skills apply 10 Foretell instantly, BUT Sciel takes double damage. Level 10: basic attack gives Moon charge + converts Foretell → Burn. Level 20: +100% Burn damage in Twilight. Role: offensive DPS. Deferred: double damage too high while parry skills developing. Community description: "Busted from moment you get it."
+### Next
+- **Name:** (none — Litheson is endgame weapon)
 
-**Ramasson** (level 15) — B Luck, C Vitality. Level 4: consume 1 Moon charge at turn start → recover 20% of each ally's health. Level 10: basic attack gives 1 Moon charge. **CRITICAL: Ramasson's passive healing does NOT trigger on-heal Lumina effects (Energising Heal, Accelerating Heal). Confirmed from wiki.** Rejected once this was established.
+### Endgame
+- **Name:** Litheson (20)
+- **Source:** Already held — upgrade in progress
+- **Scaling:** Agility + Luck
+- **Notes:** Upgrade cost ~4–6 Resplendent Catalysts (16→20). Verify whether Grandiose Chroma Catalyst is required for the final step before upgrading (23 Grandiose in inventory at end of Chat 1).
 
-**Tisseron** (level 13) — B Defence, C Agility. Level 4: Moon skills extend Twilight + Twilight damage on Sun skills. Level 10: Twilight +1 turn. Level 20: gain extra turn when entering Twilight — **bugged with Cheater Pictos.** Rejected.
+### Future Options
+- **Charnon:** From Renoir's Drafts merchant post-game (89,884 Chromas). Scaling: B Defence, C Luck (different from Litheson — would require stat adjustment). Level 10: 100% crit in Twilight. Level 20: critical hits apply 1 Foretell. Post-game alternative or complement to Litheson. Comparison not fully assessed — verify before prioritising.
+- **Chation:** Scaling unconfirmed. Level 4: Sun skills apply 10 Foretell instantly but Sciel takes double damage. Level 10: basic attack gives Moon charge + converts Foretell to Burn. Level 20: +100% Burn damage in Twilight. Community: "Busted from moment you get it." Deferred — double damage risk while parry skills developing. Revisit when parry rate improves.
 
-**Litheson** (level 16) — Current and confirmed endgame weapon for support Sciel. Full details in Weapon section.
-
-**Charnon** (post-Renoir only) — B Defence, C Luck. Level 4: +20% damage per consecutive turn without taking damage (stacks 5×). Level 10: 100% crit chance in Twilight. Level 20: critical hits apply 1 Foretell. How to get: 89,884 Chromas from Gestral Merchant Grour at Renoir's Drafts (post-Renoir). Post-game alternative/complement to Litheson. [DETAIL THIN — comparison to Litheson for endgame.]
-
-**Scielson** (starter, level 9) — Agility + Luck, no abilities. Not relevant.
-
-**Other weapons in inventory (Level 40):** Alguernon (10), Lustenon (9), Sadon (11). Not relevant.
+### Rejected
+**Rejected — Current slot**
+- **Rangeson:** B Defence, C Agility. Level 4: recover 5% health per Foretell applied. Lower power; scaling diverges from endgame. Rejected.
+- **Ramasson:** B Luck, C Vitality. Level 4: consume 1 Moon charge → recover 20% of each ally's health. Passive healing does NOT trigger on-heal Lumina effects (Energising Heal, Accelerating Heal) — confirmed from wiki. Rejected once this was established.
+- **Tisseron:** B Defence, C Agility. Level 20: gain extra turn when entering Twilight — bugged with Cheater Pictos. Rejected.
 
 ---
 
-## Deferred / Future Upgrades
+## Pictos
 
-1. **Upgrade Litheson to Level 20:** Requires ~4–6 Resplendent Catalysts. Essential — +3 AP per turn on buff/debuff is the core reason Sciel is in the endgame team.
-2. **[Future] Consider Charnon (post-game):** Check if Charnon outperforms Litheson for DPS-support hybrid. Different playstyle. Scaling is B Defence, C Luck (different from Litheson — would require stat adjustment).
-3. **[Future] Consider Chation weapon:** Deferred for now due to double-damage risk. Revisit when parry rate improves.
+| Slot | Pictos        | Stat Bonus               |
+|------|---------------|--------------------------|
+| 1    | Base Shield   | Speed +399, Crit +11%    |
+| 2    | Burning Break | Health +1541, Crit +24%  |
+| 3    | Survivor      | Speed +439, Crit +12%    |
+
+**Notes:** Base Shield provides 1 damage-absorbing shield buffer per turn automatically; also provides free Base Shield Lumina (20 LP). Obtained from The Chosen Path reward. Burning Break: 25% increased break damage on burning enemies (effect inferred from Lumina name match — unconfirmed for Pictos specifically). Survivor: survive lethal blow with 1 HP, once per battle (inferred from Lumina description). Obtained from Grandis Merchant at Monoco's Station (98,000 Chromas) after defeating Gargant boss in Frozen Hearts — equip and win 4 battles to learn Survivor Lumina.
 
 ---
 
-## Errors to Avoid
+## Lumina
 
-- **Ramasson + Energising Heal synergy:** Claimed Ramasson's passive party heal triggers Energising Heal. Correct: weapon passive heals cannot trigger on-heal Lumina effects. Confirmed from wiki. This was a deciding factor in rejecting Ramasson.
-- **Charnon scaling:** Stated as Defence + Agility. Correct: B Defence, C Luck. Always verify weapon scaling before advising stat allocation.
-- **Charnon/Litheson quote conflation:** "God tier" and "changes how you play her" community quotes applied to Charnon in Part 4. Correct: both quotes are about Litheson. Claude confused these and only corrected after Matt requested explicit source verification.
-- **Litheson scaling: Luck > Agility for weapon attack:** Initially assumed Agility was primary weapon-scaling stat. Attribute testing showed Luck +994 weapon attack vs Agility +862 at 99 points. Stat allocation must reflect this.
-- **Initial stat recommendation Agility 70/Luck 50:** Based on wrong assumption about scaling. Corrected to Luck 89/Agility 49 after testing, then revised again to Agility 99/Luck 78 for Speed guarantee.
-- **Burn Affinity over Burning Break:** Initially recommended Burn Affinity (Speed 439, Crit 12%) as Sciel's second Pictos. Correct: Burning Break (Health 1541, Crit 24%) is better — substantially more health and higher Crit, while Speed 1812 with Burning Break is still comfortably first in turn order.
-- **Tisseron Level 20 + Cheater:** Tisseron Level 20 grants extra turn when entering Twilight — bugged with Cheater Pictos. Do not recommend this combination.
-- **Energising Break in core suite:** Initially included at 3 LP. Dropped — Break trigger frequency (1–2 times per boss fight) is insufficient vs other AP sources.
+### LP Budget
+- **Current capacity:** 110 LP
+- **Expansion cost:** 26 Colour of Lumina to expand from 84 LP to 110 LP
+
+### Core Suite
+*Shared across all three main party members — listed here for reference.*
+Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energising Parry (15), Energising Start I (5), Dodger (1), Breaker (10), Breaking Burn (5), Marking Shots (3), Dead Energy I (2), Dead Energy II (2), Critical Break (5), Rewarding Mark (5), Burning Shots (3)
+**Total: 106 LP**
+
+*Sciel pays 86 LP of core suite cost — Base Shield (20 LP) is FREE from Base Shield Pictos.*
+
+### Character-Specific
+
+| Lumina            | LP  | Notes                                    |
+|-------------------|-----|------------------------------------------|
+| Energising Heal   | 10  | +1 AP on heal. Triggers frequently.      |
+| Healing Parry     | 5   |                                          |
+| Accelerating Heal | 5   | Speed boost on heal.                     |
+| Survivor          | —   | FREE from Survivor Pictos (20 LP value)  |
+
+### Notes
+Total paid LP: 86 (core, minus Base Shield FREE) + 20 (character-specific) = 106 LP. Spare: 4 LP.
+
+---
+
+## Skills
+
+**Currently equipped (6):** Fortune's Fury, Intervention, Plentiful Harvest, Focused Foretell, Twilight Dance, Final Path
+
+*All AP costs unconfirmed — not stated in transcript. Flag as open question before any AP-dependent advice.*
+
+| Skill             | AP Cost       | Equipped | Notes                                                                                                                                    |
+|-------------------|---------------|----------|------------------------------------------------------------------------------------------------------------------------------------------|
+| Fortune's Fury    | [unconfirmed] | ✅       | Doubles one ally's damage for one turn. Must be used before target acts. Core setup for Verso burst.                                     |
+| Intervention      | [unconfirmed] | ✅       | Grants targeted ally an immediate extra turn + 4 AP. Core enabler for Verso's Steeled Strike combo and Maelle's nuke turns.             |
+| Plentiful Harvest | [unconfirmed] | ✅       | Consumes all Foretell on target → 1 AP per stack. Primary AP delivery. With 4–5 Foretell stacks: delivers 4–5 AP on demand.             |
+| Focused Foretell  | [unconfirmed] | ✅       | Applies Foretell stacks to target. Setup for Plentiful Harvest.                                                                          |
+| Twilight Dance    | [unconfirmed] | ✅       | High damage in Twilight state. Secondary DPS when support actions not needed.                                                            |
+| Final Path        | [unconfirmed] | ✅       | High damage + extends Twilight duration. Secondary DPS + Foretell stacking.                                                             |
+
+---
+
+## Gradient Skills
+
+| Gradient Skill | Gradient Cost | Acquired | Notes                                          |
+|----------------|---------------|----------|------------------------------------------------|
+| [unconfirmed]  | 1             | [?]      | Details not confirmed — verify in game.        |
+| [unconfirmed]  | 2             | [?]      | Details not confirmed — verify in game.        |
+| [unconfirmed]  | 3             | [?]      | Details not confirmed — verify in game.        |
+
+---
+
+## Build Options
+
+| Build Name      | Role         | Key Skills                                              | Key Lumina          | Status  | Notes                                                                              |
+|-----------------|--------------|---------------------------------------------------------|---------------------|---------|------------------------------------------------------------------------------------|
+| Pure Support    | Support      | Fortune's Fury, Intervention, Plentiful Harvest, Focused Foretell, Twilight Dance, Final Path | Core suite + Energising Heal/Parry/Heal | Current | Litheson Level 20 essential for AP generation |
+| Chation DPS-hybrid | Support/DPS | Twilight-focused skills | TBD | Deferred | Double damage risk; revisit when parry rate improves |
+
+---
+
+## Key Decisions
+
+- **Litheson confirmed endgame weapon:** Multiple community sources. "God tier" and "changes how you play her" quotes both refer to Litheson (previously misattributed to Charnon — see Errors to Avoid).
+- **Ramasson rejected:** Passive heal does not trigger Energising Heal or Accelerating Heal. Confirmed from wiki. Renders the weapon's main support synergy inert.
+- **Agility 99 over Luck 89 allocation:** Speed guarantee (1812, goes first) valued over marginal Attack gain from higher Luck. Chosen after Pictos changed from Recovery to Base Shield + Survivor.
+- **Burning Break over Burn Affinity:** Burning Break gives +1541 Health and +24% Crit vs Burn Affinity's +439 Speed and +12% Crit. Speed is already sufficient at 1812 — health and crit more valuable.
 
 ---
 
 ## Open Questions
 
-- **All current skill AP costs:** Entirely unconfirmed in Parts 1–4, 7–8. [Future session.]
-- **Fortune's Fury exact mechanic:** Duration? Does it double all damage on the turn or just the next skill? [Future session.]
-- **Intervention exact mechanic:** Does the +4 AP apply to the extra turn only, or does it carry to next standard turn? [Future session.]
-- **Burning Break Pictos exact effect:** Inferred as 25% increased break damage on burning enemies (matching Breaking Burn Lumina name). Unconfirmed for Pictos effect specifically.
-- **Survivor Pictos effect:** Inferred from Lumina description (survive lethal blow with 1 HP, once per battle). Not directly stated in transcript.
-- **Litheson Level 4 exact buff:** "Gaining Sun charge buffs allies" — what buff specifically? [Future session.]
-- **Litheson Level 10 exact debuff:** "Gaining Moon charge debuffs enemies" — what debuff? [Future session.]
-- **Stat recoat decision resolved:** Agility 99/Luck 78 is final — chosen for Speed guarantee (1812) over Luck 89/Agility 49 (1111). Not an open question.
-- **Litheson upgrade path — Grandiose Catalyst:** Whether Level 20 requires Grandiose Chroma Catalyst needs verification before upgrading. Matt has 23 Grandiose Catalysts at end of Chat 1.
+- **All skill AP costs:** Entirely unconfirmed in transcript. Do not give AP-dependent advice without verifying.
+- **Fortune's Fury exact mechanic:** Duration? Doubles all damage on that turn, or just next skill?
+- **Intervention exact mechanic:** Does the +4 AP apply to the extra turn only, or carry to next standard turn?
+- **Litheson Level 4 exact buff:** "Gaining Sun charge buffs allies" — what buff specifically?
+- **Litheson Level 10 exact debuff:** "Gaining Moon charge debuffs enemies" — what debuff?
+- **Burning Break Pictos exact effect:** Inferred as 25% increased break damage on burning enemies (matches Breaking Burn Lumina name). Not directly confirmed for Pictos.
+- **Survivor Pictos exact effect:** Inferred from Lumina description. Not directly stated in transcript.
+- **Litheson upgrade path — Grandiose Catalyst required?** Verify whether Level 20 requires Grandiose Chroma Catalyst before upgrading. 23 Grandiose in inventory at end of Chat 1.
+- **Charnon vs Litheson comparison:** Post-game option — assess when relevant.
+
+---
+
+## Errors to Avoid
+
+- **Ramasson + Energising Heal synergy:** Claimed passive party heal triggers Energising Heal. Correct: weapon passive heals cannot trigger on-heal Lumina effects. Confirmed from wiki.
+- **Charnon scaling:** Said Defence + Agility. Correct: B Defence, C Luck. Always verify weapon scaling before advising stat allocation.
+- **Charnon/Litheson quote conflation:** "God tier" and "changes how you play her" quotes applied to Charnon. Correct: both refer to Litheson. Claude confused these and only corrected after explicit source verification was requested.
+- **Luck vs Agility scaling assumption:** Initially assumed Agility was primary weapon-scaling stat for Litheson. Attribute testing showed Luck gives more weapon attack per point (994 vs 862 at 99). Always verify weapon scaling via testing before advising stat allocation.
+- **Burn Affinity over Burning Break:** Recommended Burn Affinity (Speed +439, Crit +12%) as second Pictos. Correct: Burning Break (Health +1541, Crit +24%) is better — Speed 1812 is still comfortably first in turn order.
+- **Tisseron Level 20 + Cheater:** Tisseron Level 20 grants extra turn when entering Twilight — bugged with Cheater Pictos. Do not recommend this combination.
+- **Energising Break in core suite:** Initially included at 3 LP. Dropped — Break trigger frequency (1–2 times per boss fight) is insufficient vs other AP sources.
