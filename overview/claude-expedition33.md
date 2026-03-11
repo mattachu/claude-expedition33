@@ -35,7 +35,7 @@ These are in addition to the general failure modes in the startup file:
 - **Current playthrough:** First playthrough
 - **Progress at end of Chat 1 (approx. 1–4 March 2026):**
   - Act 3. Entering Visages with new levelling team (Verso/Monoco/Sciel).
-  - Levels: Maelle 63, Lune 63, Sciel 59, Verso 56, Monoco 60.
+  - Levels: Maelle 64, Lune 63, Sciel 61, Verso 59, Monoco 61.
   - Paintress defeated. Painted Power Pictos equipped.
   - All 5 Gestral Beaches complete.
   - White Nevron quests complete + Blanche reward (100× Colour of Lumina).
@@ -79,11 +79,11 @@ Character reference files
 
 |                               |                                                                                                               |
 |-------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Level                         | 63                                                                                                            |
+| Level                         | 64                                                                                                            |
 | Role                          | Primary DPS                                                                                                   |
 | Weapon                        | Medalum (16) → Lithum after The Reacher (level 75–80)                                                         |
-| Stats (no Pictos)             | Health 1441, Attack 692, Speed 887, Defence 545, Crit 24%                                                     |
-| Attributes                    | Agility 99, Defence 76, Luck 7, Vitality 7                                                                    |
+| Stats (no Pictos)             | Health 1467, Attack 1819, Speed 893, Defence 565, Crit 25%                                                    |
+| Attributes                    | Agility 99, Defence 79, Luck 7, Vitality 7                                                                    |
 | Key skills                    | Gustave’s Homage, Sword Ballet, Fleuret Fury, Percée, Fencer’s Flurry, Swift Stride, Stendhal                 |
 | Pictos                        | Second Chance, Dead Energy I, Piercing Shot                                                                   |
 | Solo Lumina set (The Reacher) | Add: Solo Fighter, Last Stand Critical, Accelerating Last Stand, Empowering Last Stand, Protecting Last Stand |
@@ -108,11 +108,11 @@ Character reference files
 
 |                   |                                                                                                         |
 |-------------------|---------------------------------------------------------------------------------------------------------|
-| Level             | 59                                                                                                      |
+| Level             | 61                                                                                                      |
 | Role              | Pure support                                                                                            |
 | Weapon            | Litheson (16) → upgrade to 20: +3 AP per turn when buff/debuff applied (IS her endgame weapon)          |
-| Stats (no Pictos) | Health 1261, Attack 1699, Defence 182, Speed 974, Crit 35%                                              |
-| Attributes        | Agility 99, Luck 78 (actual as of 1 March; planned optimum was Luck 89/Agility 49 — may need recoat)    |
+| Stats (no Pictos) | Health 1314, Attack 2641, Defence 182, Speed 991, Crit 38%                                              |
+| Attributes        | Agility 99, Luck 84, Vitality 0, Might 0, Defence 0                                                     |
 | Pictos            | Base Shield, Burning Break, Survivor → final: Health 2802, Speed 1812, Crit 82%                         |
 | Key skills        | Fortune’s Fury, Intervention, Plentiful Harvest, Focused Foretell, Twilight Dance, Final Path           |
 | Lumina (110 LP)   | Core suite + Energising Heal, Healing Parry, Accelerating Heal; Base Shield + Survivor free from Pictos |
@@ -123,9 +123,9 @@ Character reference files
 
 |                       |                                                                                                                                                                  |
 |-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Level                 | 56                                                                                                                                                               |
+| Level                 | 59                                                                                                                                                               |
 | Role                  | Mid-game DPS/levelling; endgame main team DPS                                                                                                                    |
-| Weapon                | Gaulteram (10) → upgrade to 20 for Level 20 passive (+2 Perfection entering Rank A); same scaling as Chevalam (Agility + Luck), no respec needed when swapping   |
+| Weapon                | Gaulteram (12) — do not upgrade further; same scaling as Chevalam (Agility + Luck), no respec needed when swapping                                               |
 | Stats (no Pictos)     | Health 1184, Attack 1213, Defence 182, Speed 946, Crit 34%                                                                                                       |
 | Attributes            | Agility 99, Luck 69                                                                                                                                              |
 | Pictos                | Burning Death, Second Chance, Shortcut → final: Health 2291, Speed 1436, Crit 84%                                                                                |
@@ -142,11 +142,11 @@ Character reference files
 
 |                   |                                                                                                                                                                |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Level             | 60                                                                                                                                                             |
+| Level             | 61                                                                                                                                                             |
 | Role              | AP battery/support/breaker (levelling team); reserve in endgame                                                                                                |
 | Weapon            | Nusaro (10) → upgrade to 20: +1 AP per mask change. Endgame weapon is Joyaro (drops level 28 from Flying Manor Lampmaster, post-game — no Resplendent overlap) |
-| Stats (no Pictos) | Health 2290, Attack 1447, Defence 182, Speed 893, Crit 16%                                                                                                     |
-| Attributes        | Agility 99, Vitality 61, Luck 20                                                                                                                               |
+| Stats (no Pictos) | Health 2359, Attack 3570, Defence 182, Speed 900, Crit 16%                                                                                                     |
+| Attributes        | Agility 99, Vitality 64, Luck 20, Might 0, Defence 0                                                                                                           |
 | Pictos            | Recovery, Anti-Burn, Energising Turn → final: Health 5892, Speed 1163, Defence 1307                                                                            |
 | Skills            | Potier Energy, Stalact Punches, Pelerin Heal, Abbest Wind, Moissonneuse Vendange, Chalier Combo                                                                |
 | Lumina (110 LP)   | Core suite + Quick Break, Energising Heal; Energising Turn free from Pictos                                                                                    |
@@ -193,26 +193,25 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 
 ## Section 7: Progression Plan
 
-### Phase 1 — Complete / In Progress (Level 54–63)
+### Phase 1 — Complete (Level 54–63)
 
 - ✅ All 5 Gestral Beaches
 - ✅ White Nevron quests + Blanche (100× Colour of Lumina)
 - ✅ The Canvas puzzle
 - ✅ The Chosen Path (Base Shield Pictos)
 - ✅ Verso solo fights
-- ✅ Sirene’s Dress (Lune relationship)
-- ✅ 8 chromatics including Orphelin (Kralim) and Ramasseur
-- Easy chromatics remaining: Greatsword Cultist, Danseuse, Echassier, Jar
+- ✅ Sirene's Dress (Lune relationship)
+- ✅ Easy chromatics
 - ❌ Vale bosses permanently missed
 - ❌ Karatom quest permanently missed
 
 ### Phase 2 — Mid-game (Level 60–70)
 
 - Sacred River (Monoco relationship, Level 60–65, Verso + Monoco vs Golgra) → 3× Grandiose, Monoco Level 7
-- Sprong (NW Stone Wave Cliffs, in water, Level 55–75) → Cheater Pictos — essential for Verso’s Steeled Strike combo
+- ✅ Sprong (NW Stone Wave Cliffs, in water, Level 55–75) → Cheater Pictos — essential for Verso's Steeled Strike combo
 - Serpenphare (SE Boat Graveyard, Level 70–80+) — try here if confident, otherwise defer to Phase 4
 - Chromatic Gold Chevaliere (Crimson Forest, recommended Level 70–75+) → Chevalam for Verso
-- Moderate chromatics: Veilleur, Chalier, Chapelier, Braseleur, Hexga, Ballet, Portier, Benisseur, Glaise, Boucheclier, Cruler, Eveque, Bourgeon, Jar, Demineur, Barbasucette, Franctale
+- Moderate chromatics: Veilleur, Chalier, Chapelier, Braseleur, Hexga, Ballet, Portier, Benisseur, Glaise, Boucheclier, Cruler, Eveque, Bourgeon, Demineur, Barbasucette, Franctale
 - Endless Tower floors 1–20
 
 ### Phase 3 — Late game (Level 75–80, before Renoir)
@@ -224,11 +223,12 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 ### Phase 4 — Post-game (Level 80+)
 
 - Flying Manor (4 mini-bosses → Clea superboss) → Clea’s Life Pictos, Perfect Chroma Catalyst; **Joyaro (Monoco’s endgame weapon)** from Lampmaster
+- Chromatic Echassier (Level 80–85+)
 - Chromatic Pétank superboss
+- Chromatic Clair Obscur (Monolith Peak) → Combo Attack II Pictos
 - Serpenphare (if not defeated earlier) → Energy Master Pictos (+1 to all AP gained)
 - Painting Workshop Beast (Level 80+)
 - Endless Tower floors 21–33
-- Chromatic Clair Obscur (Monolith Peak) → Combo Attack II Pictos
 - Purchase Charnon (89,884 Chromas, Renoir’s Drafts merchant) — Sciel alternative endgame weapon
 - Kill White Nevrons for extra rewards (safe after Blanche reward)
 - Karatom quest (now accessible with Gustave alive)
@@ -324,4 +324,21 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 | Chat 0 (ChatGPT) | [Formatted](https://gist.github.com/mattachu/f46644307d9f753743ea4423b262d4ec) / [Raw](https://gist.githubusercontent.com/mattachu/f46644307d9f753743ea4423b262d4ec/raw//chatgpt-expedition33.md)    |
 | Chat 1 (Claude)  | [Formatted](https://gist.github.com/mattachu/238b03e1faad64212cc8c7ae27ad6fcd) / [Raw](https://gist.githubusercontent.com/mattachu/238b03e1faad64212cc8c7ae27ad6fcd/raw/claude-expedition33-chat1.md)|
 
-*Last updated: [2026-03-08 22:28]]*
+-----
+
+## Section 12: Session Procedure
+
+**End of session:**
+1. List open questions and decisions carried forward to next session
+2. List file updates needed — give as a concise change list for the user to apply manually to the Gist files
+3. Present the session transcript using the `present_files` tool (`/mnt/transcripts/[filename].txt`) so the user can download it. Note: transcript files are session-specific and cannot be accessed from other chats.
+4. Remind the user to start a new chat if compaction has occurred or if the session has been long
+
+**Start of next session:**
+1. Ask the user to paste the startup file URL (https://matteaston.net/claude) and fetch it
+2. Ask the user to paste the overview file URL and fetch it
+3. Ask what the session is about before fetching any character files — only fetch character files when that character is the focus
+
+-----
+
+*Last updated: [2026-03-09 21:52]*
