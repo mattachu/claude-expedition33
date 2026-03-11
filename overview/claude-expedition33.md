@@ -45,7 +45,7 @@ These are in addition to the general failure modes in the startup file:
   - Verso’s solo fights complete (vs Francois, vs Monoco).
   - Chromatics defeated: Abbest, Bruler, Lancelier, Orphelin, Troubadour, Luster, Glissando, Ramasseur.
   - **Vale bosses permanently missed** (Jovial Moissonneuse, Sorrowful Chapelier, Seething Boucheclier) — Axon defeated before riddle masks triggered.
-  - Moissonneuse Vendange skill obtained despite Vale bosses miss (source confirmed).
+  - Moissonneuse Vendange skill obtained by defeating a Moissonneuse in Visages — unrelated to the Vale bosses.
   - Karatom quest permanently missed (requires Gustave alive).
 - **Active party:** Verso, Monoco, Sciel (levelling team)
 - **Reserve:** Maelle, Lune
@@ -65,10 +65,20 @@ These are in addition to the general failure modes in the startup file:
 
 -----
 
-## Section 4: Party
+## Section 4: Game Mechanics
 
-**Levelling/mid-game team:** Verso + Monoco + Sciel (targeting Golgra fight and Chromatic Gold Chevaliere)  
-**Reserve:** Maelle, Lune  
+### Gradient Skills
+
+Each character has three Gradient Skills, costing 1, 2, and 3 Gradient Charges (GC) respectively. Gradient charges build by spending AP on skills. Gradient Skills are powerful abilities with effects ranging from damage to healing to revival — not all are attacks, hence "Gradient Skills" rather than "Gradient Attacks."
+
+Individual character Gradient Skills are listed in each character file. Details for most characters are not yet confirmed in transcript — placeholders are in place.
+
+-----
+
+## Section 5: Party
+
+**Levelling/mid-game team:** Verso + Monoco + Sciel (targeting Golgra fight and Chromatic Gold Chevaliere)
+**Reserve:** Maelle, Lune
 **Endgame team (building toward):** Maelle + Sciel + Verso
 
 Character reference files
@@ -84,7 +94,7 @@ Character reference files
 | Weapon                        | Medalum (16) → Lithum after The Reacher (level 75–80)                                                         |
 | Stats (no Pictos)             | Health 1467, Attack 1819, Speed 893, Defence 565, Crit 25%                                                    |
 | Attributes                    | Agility 99, Defence 79, Luck 7, Vitality 7                                                                    |
-| Key skills                    | Gustave’s Homage, Sword Ballet, Fleuret Fury, Percée, Fencer’s Flurry, Swift Stride, Stendhal                 |
+| Key skills                    | Gustave’s Homage, Sword Ballet, Fleuret Fury, Percée, Fencer’s Flurry, Swift Stride, Stendhal (not yet equipped) |
 | Pictos                        | Second Chance, Dead Energy I, Piercing Shot                                                                   |
 | Solo Lumina set (The Reacher) | Add: Solo Fighter, Last Stand Critical, Accelerating Last Stand, Empowering Last Stand, Protecting Last Stand |
 
@@ -153,7 +163,7 @@ Character reference files
 
 -----
 
-### Core Lumina Suite (all three get, 106 LP)
+### Core Lumina Suite (all three levelling team members, 106 LP)
 
 Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energising Parry (15), Energising Start I (5), Dodger (1), Breaker (10), Breaking Burn (5), Marking Shots (3), Dead Energy I (2), Dead Energy II (2), Critical Break (5), Rewarding Mark (5), Burning Shots (3)
 
@@ -161,20 +171,20 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 
 -----
 
-## Section 5: Character Reference Files
-*Fetch the relevant file at the start of any session focusing on that character in detail. These supersede the brief summaries in Section 4.*
+## Section 6: Character Reference Files
+*Fetch the relevant file at the start of any session focusing on that character in detail. These supersede the brief summaries in Section 5.*
 
 | Character | Role                           | File                                                                                                                                                                                                   |
 |-----------|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Maelle    | Primary DPS                    | [Formatted](https://gist.github.com/mattachu/f3d315e2f3ead49396055baf66baa733) / [Raw](https://gist.githubusercontent.com/mattachu/f3d315e2f3ead49396055baf66baa733/raw/claude-expedition33-maelle.md) |
-| Lune      | Support/healer/stain DPS.      | [Formatted](https://gist.github.com/mattachu/1dc3fb77a67c524cad6cd7b67eb3c1bd) / [Raw](https://gist.githubusercontent.com/mattachu/1dc3fb77a67c524cad6cd7b67eb3c1bd/raw/claude-expedition33-lune.md)   |
+| Lune      | Support/healer/stain DPS       | [Formatted](https://gist.github.com/mattachu/1dc3fb77a67c524cad6cd7b67eb3c1bd) / [Raw](https://gist.githubusercontent.com/mattachu/1dc3fb77a67c524cad6cd7b67eb3c1bd/raw/claude-expedition33-lune.md)   |
 | Sciel     | Pure support                   | [Formatted](https://gist.github.com/mattachu/c5309cda5bb2949d526d9495d33171f2) / [Raw](https://gist.githubusercontent.com/mattachu/c5309cda5bb2949d526d9495d33171f2/raw/claude-expedition33-sciel.md)  |
 | Verso     | Mid-game DPS / endgame DPS     | [Formatted](https://gist.github.com/mattachu/f274820fc27cf7e8333f0353619faea2) / [Raw](https://gist.githubusercontent.com/mattachu/f274820fc27cf7e8333f0353619faea2/raw/claude-expedition33-verso.md)  |
 | Monoco    | AP battery / support / breaker | [Formatted](https://gist.github.com/mattachu/03d6a0d20a7a1e3bf3bbf22f1c0bd796) / [Raw](https://gist.githubusercontent.com/mattachu/03d6a0d20a7a1e3bf3bbf22f1c0bd796/raw/claude-expedition33-monoco.md) |
 
 -----
 
-## Section 6: Key Decisions & Context
+## Section 7: Key Decisions & Context
 
 - **Trebuchim over Colim for Lune:** Colim tested and rejected. 14% attack loss, no free-aim stain generation. Trebuchim optimal for Mayhem/free-aim playstyle. Colim only appropriate for Elemental Genesis builds.
 - **Monoco stat respec (Agility 72→99, Vitality 61, Luck 20, Nusaro):** Empirically tested. Key finding: Luck 2× more efficient than Defence for crit. Agility increases Speed, Attack, and Defence stat simultaneously.
@@ -185,13 +195,13 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 - **Litheson is Sciel’s endgame weapon:** Confirmed by multiple sources. Upgrade to level 20.
 - **Marking Shot over Defiant Strike for Verso:** Both apply Mark 100%. Defiant Strike costs 30% current HP per use — too risky with developing parry skills. Marking Shot: 2 AP, no health cost, damage bonus at C Rank.
 - **Rank bonuses work ONLY at exact rank:** Confirmed by multiple community sources and in-game highlighting. Skills show bonus text in yellow at the relevant rank. Passing through a rank means the bonus is only active briefly.
-- **Vale bosses missed:** Axon defeated before triggering the mask riddles. All three Vale bosses permanently inaccessible. Moissonneuse Vendange was obtained though.
+- **Vale bosses missed:** Axon defeated before triggering the mask riddles. All three Vale bosses permanently inaccessible. Moissonneuse Vendange obtained by defeating a Moissonneuse in Visages — unrelated to the Vale bosses.
 - **Endgame team:** Maelle + Sciel + Verso. Sciel: Fortune’s Fury (double damage) + Intervention (extra turn + 4 AP). Verso with Cheater + Steeled Strike is primary endgame DPS.
 - **Maelle must complete The Reacher before Renoir:** Required for Lithum (endgame weapon) and Gustave resurrection path. Choose “Truth” to reach Relationship Level 7.
 
 -----
 
-## Section 7: Progression Plan
+## Section 8: Progression Plan
 
 ### Phase 1 — Complete (Level 54–63)
 
@@ -236,9 +246,9 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 
 -----
 
-## Section 8: Known Errors from Chat 1
+## Section 9: Known Errors from Chat 1
 
-1. **Vale bosses missable (ChatGPT error, not Claude):** ChatGPT said the Vale bosses could be accessed after defeating the Axon, and that nothing in Visages was permanently missable. This was wrong. Three Vale bosses permanently lost: Jovial Moissonneuse, Sorrowful Chapelier, Seething Boucheclier. Matt had explicitly asked whether to explore before fighting the boss; ChatGPT said he could come back later. Retained here as a real consequence affecting this playthrough, and as a category to guard against — but not a Claude error.
+1. **Vale bosses missable (ChatGPT error, not Claude):** ChatGPT said the Vale bosses could be accessed after defeating the Axon, and that nothing in Visages was permanently missable. This was wrong. Three Vale bosses permanently lost: Jovial Moissonneuse, Sorrowful Chapelier, Seething Boucheclier. Matt had explicitly asked whether to explore before fighting the boss; ChatGPT said he could come back later. Moissonneuse Vendange was obtained separately by defeating a Moissonneuse in Visages — unrelated to the Vale bosses. Retained here as a real consequence affecting this playthrough, and as a category to guard against — but not a Claude error.
 1. **Colim recommendation:** Recommended over Trebuchim based on Light stain wildcards and community meta. Wrong for Matt’s playstyle. Root error: didn’t simulate turns, didn’t check playstyle assumptions.
 1. **Monoco Defence stat advice:** Recommended 0 Defence without knowing Defence contributes to crit rate. Testing showed 0 Defence dropped crit from 23% to 5%.
 1. **Fueling Break effect:** Said it gives AP on Break damage. Correct: doubles Burn stacks when enemy is broken.
@@ -274,7 +284,7 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 
 -----
 
-## Section 9: Open Questions
+## Section 10: Open Questions
 
 - **Sciel stat recoat:** Actual allocation at end of chat was Agility 99/Luck 78. Planned optimum was Luck 89/Agility 49. Worth recoating to optimum when convenient?
 - **Verso skill additions:** Does not yet have Steeled Strike. After obtaining Cheater Pictos (Sprong), swap Paradigm Shift or another slot → Steeled Strike. Also consider whether Defiant Strike is worth adding when parry skills improve (30% HP cost becomes acceptable with high parry rate).
@@ -283,39 +293,17 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 - **Maelle relationship level:** Check current level — must reach Level 5 before The Reacher unlocks, Level 7 (via “Truth” choice) for Gustave resurrection path.
 - **Lune weapon progression:** Kralim already in inventory. When to switch from Trebuchim to Kralim for Elemental Genesis build? Requires different stat allocation and Cheater for looping.
 - **Choralim for Lune:** Already at level 20 in inventory. Sources suggested it as an endgame option alongside Kralim — worth investigating before Lune’s next build session.
+- **Gradient Skill details:** All characters have 3 Gradient Skills (1GC, 2GC, 3GC). Most details unconfirmed in transcript — placeholders in character files. Fill in during gameplay sessions.
 
 -----
 
-## Section 10: Character File Template
+## Section 11: Character File Template
 
-```
-# [Character Name] — Expedition 33
-
-## Role in Party
-[Primary function, when used, synergies with other characters]
-
-## Current Build
-- Stats: [key stats and priorities]
-- Skills/Abilities: [active choices and reasoning]
-- Equipment: [weapons, accessories, notes]
-- Pictos/Luminas: [if applicable]
-
-## Key Decisions Made
-[Decisions taken, with brief reasoning and alternatives ruled out]
-
-## Known Issues / Open Questions
-[Unresolved decisions, things to revisit, uncertainties]
-
-## Errors to Avoid
-[Specific wrong advice given in previous sessions about this character]
-
----
-*Last updated: [DATE]*
-```
+See `overview/character-file-template.md` in the repo. Fetch only when creating a new character file.
 
 -----
 
-## Section 11: Chat Logs
+## Section 12: Chat Logs
 
 *For reference only — do not fetch unless specifically asked. These are large files.*
 
@@ -326,7 +314,7 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 
 -----
 
-## Section 12: Session Procedure
+## Section 13: Session Procedure
 
 **End of session:**
 1. List open questions and decisions carried forward to next session
@@ -341,4 +329,4 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 
 -----
 
-*Last updated: [2026-03-09 21:52]*
+*Last updated: [2026-03-11]*
