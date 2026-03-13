@@ -40,7 +40,7 @@ Claude inserts a marker in the transcript at the start of each new topic section
 Placement: immediately after the `---` separator that closes the previous section, before the first speaker line of the new section. These are HTML comments — invisible when rendered, unambiguous to parse.
 
 ### Part files
-The transcript is split into part files at end of session by Script 4, at every 4th section marker (configurable). Part files are for Claude to read — loading only the relevant part keeps token consumption low. The boundary points are irrelevant to Matt.
+The transcript is split into part files at end of session by the splitter script, at every 4th section marker (configurable). Part files are for Claude to read — loading only the relevant part keeps token consumption low. The boundary points are irrelevant to Matt.
 
 ### Session state file
 Persisted to `/mnt/user-data/outputs/session-state.json` throughout the session. Survives compaction.
@@ -55,7 +55,7 @@ Persisted to `/mnt/user-data/outputs/session-state.json` throughout the session.
 }
 ```
 
-**`last_write_timestamp`:** Must be the `start_timestamp` of the first content block of the last turn written to the transcript. Script 2 uses this as an anchor — any other timestamp risks missing or duplicating turns.
+**`last_write_timestamp`:** Must be the `start_timestamp` of the first content block of the last turn written to the transcript. The converter script uses this as an anchor — any other timestamp risks missing or duplicating turns.
 
 **`modified_sections`:** A to-do list for end-of-session changelist generation, not a record of completed work. Sections are added as changes are made during the session.
 
@@ -79,7 +79,7 @@ At every compound log step, check `/mnt/transcripts/` for files.
 **If compaction detected:**
 
 1. Read session state — find `last_write_timestamp`
-2. Run Script 2 with `--after-timestamp` on the JSON transcript to extract turns after the last write
+2. Run converter script with `--after-timestamp` on the JSON transcript to extract turns after the last write
 3. Append reconstructed content to the running transcript file
 4. Insert a compaction marker in the transcript:
    ```
@@ -92,7 +92,7 @@ At every compound log step, check `/mnt/transcripts/` for files.
 7. Do not write an index section entry — that waits for the next genuine topic shift
 8. Continue session as normal
 
-**Note:** Script 1 is not needed in this flow. Timestamps in the JSON are used directly as anchors.
+**Note:** The turn index script is not needed in this flow. Timestamps in the JSON are used directly as anchors.
 
 ---
 
@@ -101,7 +101,7 @@ At every compound log step, check `/mnt/transcripts/` for files.
 Identical whether or not compaction occurred.
 
 1. Final compound log step — transcript and index are now complete
-2. Script 4 splits the transcript into part files (every 4 sections by default)
+2. Splitter script splits the transcript into part files (every 4 sections by default)
 3. Produce changelist entries for all sections in the `modified_sections` to-do list
 4. You push to GitHub
 
@@ -121,7 +121,7 @@ The compound log step only tracks changes in `modified_sections` — it never pr
 
 ## Changelist Format
 
-Section replacement at `###` level. Script 3 (`apply_changelist.py`) locates and replaces each section in the target file.
+Section replacement at `###` level. Updater script (`apply_changelist.py`) locates and replaces each section in the target file.
 
 ```
 FILE: overview/maelle.md
@@ -143,12 +143,12 @@ CONTENT:
 
 ## Scripts
 
-| Script | File | Description |
-|--------|------|-------------|
-| Script 1 | `turn_index.py` | JSON transcript → turn index. Manual use only; not part of the automated pipeline. |
-| Script 2 | `transcript_to_md.py` | JSON transcript → Markdown. Chunk mode (full session with chunk map) or timestamp mode (`--after-timestamp`) for post-compaction reconstruction. |
-| Script 3 | `apply_changelist.py` | Applies a changelist of section replacements and insertions to repo files. |
-| Script 4 | `split_transcript.py` | Splits a completed Markdown transcript into part files at `<!-- SECTION: -->` markers. |
+|Script      | File                  | Description                                                                                                                                      |
+|------------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| Turn index | `turn_index.py`       | JSON transcript → turn index. Manual use only; not part of the automated pipeline.                                                               |
+| Converter  | `transcript_to_md.py` | JSON transcript → Markdown. Chunk mode (full session with chunk map) or timestamp mode (`--after-timestamp`) for post-compaction reconstruction. |
+| Splitter   | `split_transcript.py` | Splits a completed Markdown transcript into part files at `<!-- SECTION: -->` markers.                                                           |
+| Updater    | `apply_changelist.py` | Applies a changelist of section replacements and insertions to repo files.                                                                       |
 
 ---
 
@@ -160,5 +160,5 @@ CONTENT:
 - Timestamps used as anchors are more robust than turn counting
 - `###` heading uniqueness within a `##` parent must be maintained
 - Session state must survive compaction — written to file, not held in memory
-- Part file split is mechanical (every 4 sections) — configurable in Script 4
+- Part file split is mechanical (every 4 sections) — configurable in Splitter script
 - Compaction markers are inserted in both transcript and index for traceability
