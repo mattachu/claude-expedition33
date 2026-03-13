@@ -307,10 +307,11 @@ See `overview/character-file-template.md` in the repo. Fetch only when creating 
 
 *For reference only — do not fetch unless specifically asked. These are large files.*
 
-| Chat             | URL                                                                                                                                                                                                  |
-|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Chat 0 (ChatGPT) | [Formatted](https://gist.github.com/mattachu/f46644307d9f753743ea4423b262d4ec) / [Raw](https://gist.githubusercontent.com/mattachu/f46644307d9f753743ea4423b262d4ec/raw//chatgpt-expedition33.md)    |
-| Chat 1 (Claude)  | [Formatted](https://gist.github.com/mattachu/238b03e1faad64212cc8c7ae27ad6fcd) / [Raw](https://gist.githubusercontent.com/mattachu/238b03e1faad64212cc8c7ae27ad6fcd/raw/claude-expedition33-chat1.md)|
+| Chat   | Index                                           | Transcript                          | Summary                                                                                                                                      |
+|--------|-------------------------------------------------|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| Chat 0 | _None_                                          | [chat0.md](../chats/chat0/chat0.md) | Prior (abandoned) conversation with ChatGPT; not yet indexed                                                                                 |
+| Chat 1 | [chat1-index.md](../chats/chat1/chat1-index.md) | [chat1.md](../chats/chat1/chat1.md) | Initial build analysis across all five characters; Monoco stat respec; Lune weapon comparison; Sciel and Verso builds; full progression plan |
+| Chat 2 | [chat2-index.md](../chats/chat2/chat2-index.md) | [chat2.md](../chats/chat2/chat2.md) | Endgame skill research; character stat update via voice; chromatic progress; compaction mechanics; session procedure design                  |
 
 -----
 
