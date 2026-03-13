@@ -174,16 +174,13 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 ## Section 6: Character Reference Files
 *Fetch the relevant file at the start of any session focusing on that character in detail. These supersede the brief summaries in Section 5.*
 
-| Character | Role                           | File                                                                                                                                                                                                   |
-|-----------|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Maelle    | Primary DPS                    | [Formatted](https://gist.github.com/mattachu/f3d315e2f3ead49396055baf66baa733) / [Raw](https://gist.githubusercontent.com/mattachu/f3d315e2f3ead49396055baf66baa733/raw/claude-expedition33-maelle.md) |
-| Lune      | Support/healer/stain DPS       | [Formatted](https://gist.github.com/mattachu/1dc3fb77a67c524cad6cd7b67eb3c1bd) / [Raw](https://gist.githubusercontent.com/mattachu/1dc3fb77a67c524cad6cd7b67eb3c1bd/raw/claude-expedition33-lune.md)   |
-| Sciel     | Pure support                   | [Formatted](https://gist.github.com/mattachu/c5309cda5bb2949d526d9495d33171f2) / [Raw](https://gist.githubusercontent.com/mattachu/c5309cda5bb2949d526d9495d33171f2/raw/claude-expedition33-sciel.md)  |
-| Verso     | Mid-game DPS / endgame DPS     | [Formatted](https://gist.github.com/mattachu/f274820fc27cf7e8333f0353619faea2) / [Raw](https://gist.githubusercontent.com/mattachu/f274820fc27cf7e8333f0353619faea2/raw/claude-expedition33-verso.md)  |
-| Monoco    | AP battery / support / breaker | [Formatted](https://gist.github.com/mattachu/03d6a0d20a7a1e3bf3bbf22f1c0bd796) / [Raw](https://gist.githubusercontent.com/mattachu/03d6a0d20a7a1e3bf3bbf22f1c0bd796/raw/claude-expedition33-monoco.md) |
-
------
-
+| Character | Role                           | File                                                                                                                                                               |
+|-----------|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Maelle    | Primary DPS                    | [Formatted](maelle.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/maelle.md)     |
+| Lune      | Support/healer/stain DPS       | [Formatted](lune.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/lune.md)         |
+| Sciel     | Pure support                   | [Formatted](sciel.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/sciel.md)       |
+| Verso     | Mid-game DPS / endgame DPS     | [Formatted](verso.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/verso.md)       |
+| Monoco    | AP battery / support / breaker | [Formatted](monoco.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/monoco.md)     |
 ## Section 7: Key Decisions & Context
 
 - **Trebuchim over Colim for Lune:** Colim tested and rejected. 14% attack loss, no free-aim stain generation. Trebuchim optimal for Mayhem/free-aim playstyle. Colim only appropriate for Elemental Genesis builds.
@@ -304,17 +301,13 @@ See `overview/character-file-template.md` in the repo. Fetch only when creating 
 -----
 
 ## Section 12: Chat Logs
-
 *For reference only — do not fetch unless specifically asked. These are large files.*
 
-| Chat   | Index                                           | Transcript                          | Summary                                                                                                                                      |
-|--------|-------------------------------------------------|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Chat 0 | _None_                                          | [chat0.md](../chats/chat0/chat0.md) | Prior (abandoned) conversation with ChatGPT; not yet indexed                                                                                 |
-| Chat 1 | [chat1-index.md](../chats/chat1/chat1-index.md) | [chat1.md](../chats/chat1/chat1.md) | Initial build analysis across all five characters; Monoco stat respec; Lune weapon comparison; Sciel and Verso builds; full progression plan |
-| Chat 2 | [chat2-index.md](../chats/chat2/chat2-index.md) | [chat2.md](../chats/chat2/chat2.md) | Endgame skill research; character stat update via voice; chromatic progress; compaction mechanics; session procedure design                  |
-
------
-
+| Chat   | Index                                                                                                                                                         | Full Transcript                     | Summary                                                                                                                                      |
+|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| Chat 0 | _None_                                                                                                                                                        | [chat0.md](../chats/chat0/chat0.md) | Prior (abandoned) conversation with ChatGPT; not yet indexed                                                                                 |
+| Chat 1 | [Formatted](../chats/chat1/chat1-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-index.md)                  | [chat1.md](../chats/chat1/chat1.md) | Initial build analysis across all five characters; Monoco stat respec; Lune weapon comparison; Sciel and Verso builds; full progression plan |
+| Chat 2 | [Formatted](../chats/chat2/chat2-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-index.md)                  | [chat2.md](../chats/chat2/chat2.md) | Endgame skill research; character stat update via voice; chromatic progress; compaction mechanics; session procedure design                  |
 ## Section 13: Session Procedure
 
 **End of session:**
