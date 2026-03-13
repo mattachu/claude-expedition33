@@ -1,6 +1,6 @@
 # Clair Obscur: Expedition 33 — Chat 1, Part 1
 
-## Section 1: Preamble & Conversation Setup
+## Preamble & Conversation Setup
 
 **Matt:** Conversation defaults (apply unless I say otherwise):
 
@@ -57,7 +57,7 @@ Go ahead.
 
 ---
 
-## Section 2: Can Claude Help? Initial Scepticism & Search
+## Can Claude Help? Initial Scepticism & Search
 
 **Matt:** I am playing Expedition 33, a fairly new RPG video game, on Xbox Series X.
 
@@ -222,7 +222,7 @@ Ready when you are.
 
 ---
 
-## Section 3: Establishing Context — Act 2 Position & Build Submission
+## Establishing Context — Act 2 Position & Build Submission
 
 **Matt:** Act 2. I have completed Old Luminere and am now fighting the Axons.
 
@@ -438,7 +438,7 @@ By the way, why are some Pictos red and some green?
 
 ---
 
-## Section 4: Initial Build Analysis & Corrections
+## Initial Build Analysis & Corrections
 
 **Claude:** Received. Before I dive into analysis, I need to look up several things to avoid guessing:
 
@@ -850,7 +850,7 @@ Does this all track? Let me know about the three questions above and I can give 
 
 ---
 
-## Section 5: Monoco Deep Dive — Wheel Mechanics, Rotation & Break Sequencing
+## Monoco Deep Dive — Wheel Mechanics, Rotation & Break Sequencing
 
 **Matt:** Yes, I have it. I listed it under other weapons. I have three weapons to choose from for Monoco.
 
@@ -993,7 +993,7 @@ Does this make sense so far?
 
 ---
 
-## Section 6: Lune's Weapon — Trebuchim vs Betelim vs Colim
+## Lune's Weapon — Trebuchim vs Betelim vs Colim
 
 **Matt:** All my characters have the Marking Shots Lumina equipped. That applies Mark on free aim shots (with some success percentage). I mostly use free aim shots with Lune rather than Maelle, as they also fill the stains on Trebuchim. So my free aim shots are doing five things: removing shields, causing damage (significant damage if I hit a weak spot), applying burn, applying mark, filling stains.
 
@@ -1349,7 +1349,7 @@ Does this work? And can you report back the exact Attack stat difference when yo
 
 ---
 
-## Section 7: Action Plan & Wrap-Up
+## Action Plan & Wrap-Up
 
 **Matt:** Yep. Can you put this action plan together with the ones from earlier, please
 

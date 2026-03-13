@@ -1,6 +1,6 @@
 # Clair Obscur: Expedition 33 — Chat 1, Part 2
 
-## Section 1: Monoco stat respec
+## Monoco stat respec
 
 **Matt:**
 
@@ -396,7 +396,7 @@ My final recommendation: Agility 80, Vitality 40, Luck 10. But if you want to pr
 
 I don't think his critical rate is as important as Maelle's or Lune's, I was just worried about sacrificing it completely. The stat gains for speed and health were a bit better than you predicted, so I dialled Agility back to 72 and upped Luck to 20, leaving Vitality at 40 and Might and Defence at 0. That gives Health 1555, Attack 1139, Speed 749, Defence 112, Critical Rate 16%. That seems good to me for how I use him.
 
-## Section 2: Lune and Monoco builds finalised
+## Lune and Monoco builds finalised
 
 **Claude:**
 
@@ -770,7 +770,7 @@ Are we good to move forward with testing these changes in actual combat?
 
 ---
 
-## Section 3: Error analysis — Colim recommendation
+## Error analysis — Colim recommendation
 
 **Matt:**
 
@@ -891,7 +891,7 @@ Does this explanation help you understand where I went wrong, and does my plan f
 
 Yes, that all sounds sensible. I can understand why Colim is better for Elemental Genesis. I can understand how you got to where you got to. I agree with your plan to avoid similar problems in the future.
 
-## Section 4: Pre-Monolith checklist
+## Pre-Monolith checklist
 
 **Matt:**
 
@@ -945,7 +945,7 @@ Does this answer your question? Ready to head in?
 
 Yep, thanks.
 
-## Section 5: Session meta — token usage and response format
+## Session meta — token usage and response format
 
 **Matt:**
 
