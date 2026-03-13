@@ -4,6 +4,8 @@ Tools and records for AI-assisted gameplay sessions for Clair Obscur: Expedition
 
 ## Contents
 
+See [`repo-structure.md`](repo-structure.md) for repo structure.
+
 ### Overview and Character Files
 
 Persistent context files loaded by Claude at the start of each session.
