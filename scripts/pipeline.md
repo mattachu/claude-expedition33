@@ -48,7 +48,6 @@ Persisted to `/mnt/user-data/outputs/session-state.json` throughout the session.
 ```json
 {
   "last_write_timestamp": "2026-03-08T21:45:23.000000Z",
-  "turns_since_last_write": 3,
   "modified_sections": [
     {"file": "overview/maelle.md", "parent": "## Current Stats", "section": "### Level and Attributes"}
   ]
@@ -61,38 +60,53 @@ Persisted to `/mnt/user-data/outputs/session-state.json` throughout the session.
 
 ---
 
+## Session Start Procedure
+
+1. Fetch overview file (jsDelivr raw; use commit hash if provided)
+2. Determine chat number N: count Claude chats in Section 12 of overview + 1
+3. Ask what the session is about — do not fetch character files until topic confirmed
+4. Create in `/mnt/user-data/outputs/`:
+   - `chatN.md` — empty transcript file
+   - `chatN-index.md` — index file with header (see Index File section in Section 13 of overview)
+   - `session-state.json` — initial state: `{"chat": "chatN", "last_write_timestamp": null, "modified_sections": []}`
+5. Check `/mnt/transcripts/` — flag if any files present (unexpected at session start)
+6. Confirm to user: state chat number, confirm files created, confirm ready
+
+---
+
 ## Compound Log Step
 
-Triggered every 10 turns when the topic has shifted since the last write, and always at end of session. `!check` does not trigger it.
+Triggered by the 10-turn topic shift check, and always at end of session.
 
-1. Append turns since last write to the transcript, preceded by a section marker
-2. Append a completed section entry to the index file
-3. Update session state — new timestamp, reset turn counter, add any changed `###` sections to `modified_sections`
-4. Check for compaction (see below)
+1. Write `<!-- SECTION: Title -->` and `## Title` heading to `chatN.md` — title must be unique within transcript (anchor uniqueness requirement); qualify if needed
+2. If compaction noted (from 10-turn check): run converter (`transcript_to_md.py --after-timestamp <last_write_timestamp>`), append reconstructed turns to `chatN.md`, insert compaction markers in transcript and index, update `last_write_timestamp` to last reconstructed turn
+3. Append turns since `last_write_timestamp` to `chatN.md`
+4. Append section entry to `chatN-index.md`
+5. Update `session-state.json`: set `last_write_timestamp` to `start_timestamp` of first content block of last turn written in step 3; append changed `###` sections to `modified_sections`
+
+**10-turn check** (every 10 turns):
+1. Check `/mnt/transcripts/` — if compaction found, notify Matt immediately; note internally
+2. Check for topic shift — if shifted, run compound log step
+3. Reset counter
+
+Topic shift is operationalised as: would the new section marker have a different title than the last section written? If yes, the topic has shifted.
 
 ---
 
 ## Compaction Detection and Response
 
-At every compound log step, check `/mnt/transcripts/` for files.
+Compaction is detected at every 10-turn check by inspecting `/mnt/transcripts/`. If detected, Matt is notified immediately — memory of earlier conversation may be incomplete and Matt may want to re-paste context or ask Claude to fetch files. Compaction is noted internally but no file operations are run until the next compound log step.
 
-**If compaction detected:**
+At the compound log step, if compaction was noted:
 
-1. Read session state — find `last_write_timestamp`
-2. Run converter script with `--after-timestamp` on the JSON transcript to extract turns after the last write
-3. Append reconstructed content to the running transcript file
-4. Insert a compaction marker in the transcript:
-   ```
-   ---
-   *[Compaction occurred here — pre-compaction content reconstructed from transcript JSON]*
-   ---
-   ```
-5. Insert a compaction marker in the index (inline note, not a full section entry)
-6. Reset session state — update timestamp to last reconstructed turn, reset counter
-7. Do not write an index section entry — that waits for the next genuine topic shift
-8. Continue session as normal
+1. Run converter (`transcript_to_md.py --after-timestamp <last_write_timestamp>`) on the JSON transcript
+2. Append reconstructed pre-compaction turns to `chatN.md`
+3. Insert compaction markers:
+   - Transcript: `*[Compaction occurred here — pre-compaction content reconstructed from transcript JSON]*`
+   - Index: inline note, not a full section entry
+4. Update `last_write_timestamp` to last reconstructed turn — step 3 of the compound log step then appends only post-compaction turns, eliminating any overlap
 
-**Note:** The turn index script is not needed in this flow. Timestamps in the JSON are used directly as anchors.
+**Multiple compaction events:** behaviour of `/mnt/transcripts/` (overwrite vs. append) is not empirically verified. Flag as risk if multiple compactions occur in a session.
 
 ---
 
@@ -101,9 +115,12 @@ At every compound log step, check `/mnt/transcripts/` for files.
 Identical whether or not compaction occurred.
 
 1. Final compound log step — transcript and index are now complete
-2. Splitter script splits the transcript into part files (every 4 sections by default)
-3. Produce changelist entries for all sections in the `modified_sections` to-do list
-4. You push to GitHub
+2. Splitter script splits `chatN.md` into part files (every 4 sections by default)
+3. Edit `chatN-index.md` directly to add Part Files list under `## Part Files (Claude-readable)`
+4. Produce a single `chatN-changelist.md` covering:
+   - Changelist entries for all sections in `modified_sections`
+   - New Chat N row for Section 12 of overview (generate summary at this point)
+5. Matt pushes to GitHub
 
 ---
 

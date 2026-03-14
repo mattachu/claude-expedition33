@@ -312,19 +312,102 @@ See `overview/character-file-template.md` in the repo. Fetch only when creating 
 | Chat 2 | [Formatted](../chats/chat2/chat2-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-index.md)                  | [chat2.md](../chats/chat2/chat2.md) | Endgame skill research; character stat update via voice; chromatic progress; compaction mechanics; session procedure design                  |
 
 -----
+
 ## Section 13: Session Procedure
 
-**End of session:**
-1. List open questions and decisions carried forward to next session
-2. List file updates needed — give as a concise change list for the user to apply manually to the Gist files
-3. Present the session transcript using the `present_files` tool (`/mnt/transcripts/[filename].txt`) so the user can download it. Note: transcript files are session-specific and cannot be accessed from other chats.
-4. Remind the user to start a new chat if compaction has occurred or if the session has been long
+*Full design rationale: [pipeline.md](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/scripts/pipeline.md)*
 
-**Start of next session:**
-1. Ask the user to paste the startup file URL (https://matteaston.net/claude) and fetch it
-2. Ask the user to paste the overview file URL and fetch it
-3. Ask what the session is about before fetching any character files — only fetch character files when that character is the focus
+### Session Start
+
+1. Fetch overview file (jsDelivr raw; use commit hash if provided)
+2. Determine chat number N: count Claude chats in Section 12 + 1
+3. Ask what the session is about — do not fetch character files until topic confirmed
+4. Create in `/mnt/user-data/outputs/`:
+   - `chatN.md` — empty transcript file
+   - `chatN-index.md` — index file with header (see Index File format below)
+   - `session-state.json` — `{"chat": "chatN", "last_write_timestamp": null, "modified_sections": []}`
+5. Check `/mnt/transcripts/` — flag if any files present (unexpected at session start)
+6. Confirm to user: chat number, files created, ready
+
+### Every 10 Turns
+
+1. Check `/mnt/transcripts/` — if compaction found, notify Matt immediately (memory of earlier conversation may be incomplete; Matt may want to re-paste context or ask Claude to fetch files); note compaction internally
+2. Check for topic shift — if shifted, run compound log step
+3. Reset counter
+
+### Compound Log Step
+
+Triggered at step 2 above, and always at end of session.
+
+1. Write `<!-- SECTION: Title -->` and `## Title` heading to `chatN.md` — title must be unique within transcript; qualify if needed (e.g. "Verso Build — Pre-Sprong" / "Verso Build — Post-Sprong")
+2. If compaction noted: run converter (`transcript_to_md.py --after-timestamp <last_write_timestamp>`), append reconstructed turns to `chatN.md`, insert compaction markers in transcript and index, update `last_write_timestamp` to last reconstructed turn
+3. Append turns since `last_write_timestamp` to `chatN.md`
+4. Append section entry to `chatN-index.md` (see Index File format below)
+5. Update `session-state.json`: set `last_write_timestamp` to `start_timestamp` of first content block of last turn written in step 3; append changed `###` sections to `modified_sections`
+
+### End of Session
+
+1. Run compound log step — transcript and index now complete
+2. Run splitter (`split_transcript.py`) on `chatN.md`
+3. Edit `chatN-index.md` directly to add Part Files list under `## Part Files (Claude-readable)`
+4. Produce `chatN-changelist.md` covering:
+   - Changelist entries for all sections in `modified_sections`
+   - New Chat N row for Section 12 of overview (generate summary at this point)
+5. Matt pushes to GitHub
+
+### Index File
+
+Header (written at session start, replacing N with actual chat number):
+
+```
+# Clair Obscur: Expedition 33 — Chat N
+
+Chat between Matt and Claude.
+
+## Continuous Transcript
+
+* [Formatted](https://github.com/mattachu/claude-expedition33/blob/main/chats/chatN/chatN.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN.md)
+
+## Part Files (Claude-readable)
+
+*(to be added at end of session)*
+
+## Table of Contents
+```
+
+Section entry (appended at each compound log step, under `## Table of Contents`):
+
+```
+### [Section Title](chatN.md#section-title-anchor)
+*Part P* — one-line summary.
+```
+
+Part number for section S: ⌈S/4⌉. Part file link: `https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partP.md`
+
+Anchor derived from `## Title` heading: lowercase, spaces to hyphens, punctuation removed.
+
+### Changelist Format
+
+```
+FILE: path/to/file.md
+SECTION: ## Parent > ### Child
+AFTER: ### Sibling (inserts only — omit for replacements)
+CONTENT:
+### Child
+...full replacement content...
+
+```
+
+- `##`-level replacements: include trailing `-----` separator in CONTENT
+- `###` heading must be unique within its `##` parent; renames require direct edit
+- Failure mode: loud
+
+### Session State JSON
+
+```
+{"chat": "chatN", "last_write_timestamp": "ISO8601Z", "modified_sections": [{"file": "path/to/file.md", "parent": "## Section", "section": "### Subsection"}]}
+```
+
+`last_write_timestamp` must be `start_timestamp` of first content block of last turn written in step 3. Wrong value risks missed or duplicated turns.
 
 -----
-
-*Last updated: [2026-03-11]*
