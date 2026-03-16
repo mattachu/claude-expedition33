@@ -76,35 +76,29 @@ Persisted to `/mnt/user-data/outputs/session-state.json` throughout the session.
 
 ## Compound Log Step
 
-Triggered by the 10-turn topic shift check, and always at end of session.
+Triggered by `!log` (typed by Matt at any natural pause) and always at end of session. Claude does not self-trigger log writes. `!check` does not trigger a log write — it often fires mid-topic and would create misleading section boundaries.
 
 1. Write `<!-- SECTION: Title -->` and `## Title` heading to `chatN.md` — title must be unique within transcript (anchor uniqueness requirement); qualify if needed
-2. If compaction noted (from 10-turn check): run converter (`transcript_to_md.py --after-timestamp <last_write_timestamp>`), append reconstructed turns to `chatN.md`, insert compaction markers in transcript and index, update `last_write_timestamp` to last reconstructed turn
-3. Append turns since `last_write_timestamp` to `chatN.md`
-4. Append to `chatN-index.md` under `## Table of Contents`: if this is the first section in a new part, first write part header `### [Part N](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)`; then append section entry `- **[Section Title](https://github.com/mattachu/claude-expedition33/blob/main/chats/chatN/chatN.md#anchor)** — paragraph description`
-5. Update `session-state.json`: set `last_write_timestamp` to `start_timestamp` of first content block of last turn written in step 3; append changed `###` sections to `modified_sections`
-
-**10-turn check** (every 10 turns):
-1. Check `/mnt/transcripts/` — if compaction found, notify Matt immediately; note internally
-2. Check for topic shift — if shifted, run compound log step
-3. Reset counter
-
-Topic shift is operationalised as: would the new section marker have a different title than the last section written? If yes, the topic has shifted.
+2. Check `/mnt/transcripts/` — if compaction found since last check, notify Matt immediately; note internally
+3. If compaction noted: run converter script (`transcript_to_md.py --after-timestamp <last_write_timestamp>`), append reconstructed turns to `chatN.md`, insert compaction markers in transcript and index, update `last_write_timestamp` to `start_timestamp` of last reconstructed turn, sourced from JSON output
+4. Append turns since last write to `chatN.md` — **verbatim**. Copy turns exactly as they appear in context. No paraphrasing, summarising, or compression. If in doubt, copy more rather than less.
+5. Append to `chatN-index.md` under `## Table of Contents`: if this is the first section in a new part, first write part header `### [Part N](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)`; then append section entry `- **[Section Title](https://github.com/mattachu/claude-expedition33/blob/main/chats/chatN/chatN.md#anchor)** — paragraph description`
+6. Update `session-state.json`: append changed `###` sections to `modified_sections`. Set `last_write_timestamp` only if compaction recovery was run in step 3 — otherwise leave as null.
 
 ---
 
 ## Compaction Detection and Response
 
-Compaction is detected at every 10-turn check by inspecting `/mnt/transcripts/`. If detected, Matt is notified immediately — memory of earlier conversation may be incomplete and Matt may want to re-paste context or ask Claude to fetch files. Compaction is noted internally but no file operations are run until the next compound log step.
+Compaction is detected at each compound log step by inspecting `/mnt/transcripts/`. If detected, Matt is notified immediately — memory of earlier conversation may be incomplete and Matt may want to re-paste context or ask Claude to fetch files. Compaction is noted internally but no file operations are run until the compound log step continues.
 
 At the compound log step, if compaction was noted:
 
-1. Run converter (`transcript_to_md.py --after-timestamp <last_write_timestamp>`) on the JSON transcript
+1. Run converter script (`transcript_to_md.py --after-timestamp <last_write_timestamp>`) on the JSON transcript
 2. Append reconstructed pre-compaction turns to `chatN.md`
 3. Insert compaction markers:
    - Transcript: `*[Compaction occurred here — pre-compaction content reconstructed from transcript JSON]*`
    - Index: inline note, not a full section entry
-4. Update `last_write_timestamp` to last reconstructed turn — step 3 of the compound log step then appends only post-compaction turns, eliminating any overlap
+4. Update `last_write_timestamp` to `start_timestamp` of last reconstructed turn, sourced from JSON output — the live-writing step then appends only post-compaction turns, eliminating any overlap
 
 **Multiple compaction events:** behaviour of `/mnt/transcripts/` (overwrite vs. append) is not empirically verified. Flag as risk if multiple compactions occur in a session.
 
@@ -175,8 +169,17 @@ CONTENT:
 - Claude cannot intercept its own output stream — transcripts are written explicitly at each compound log step
 - SSH key is not accessible to Claude — `git push` is always done by Matt
 - Compaction is detectable by checking `/mnt/transcripts/` for files
-- Timestamps used as anchors are more robust than turn counting
+- `last_write_timestamp` is only set during compaction recovery, sourced from the JSON transcript. In a no-compaction session it remains null throughout — this is correct, not an error.
 - `###` heading uniqueness within a `##` parent must be maintained
 - Session state must survive compaction — written to file, not held in memory
-- Part file split is mechanical (every 4 sections) — configurable in Splitter script
+- Part file split is mechanical (every 4 sections) — configurable in the splitter script
 - Compaction markers are inserted in both transcript and index for traceability
+
+---
+
+## Future Enhancements
+
+These items are parked for future consideration. Do not implement without explicit instruction.
+
+- **Turn counter:** Add a turn counter to every response in logged chats (e.g. `[Turn N]` at end of response). Purpose: allows Matt to verify turn-counting reliability independently of the logging mechanism. Could be enabled via startup file preference or a session flag.
+- **Last-log annotation:** If the turn counter is working reliably, Claude could append a log status note to each response: e.g. `[Turn 31. Last log: turn 24]`. Makes the gap since last write visible without requiring a meta-check. Dependent on turn counter being demonstrated reliable first.

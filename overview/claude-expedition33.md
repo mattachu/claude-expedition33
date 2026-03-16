@@ -330,21 +330,20 @@ See `overview/character-file-template.md` in the repo. Fetch only when creating 
 5. Check `/mnt/transcripts/` — flag if any files present (unexpected at session start)
 6. Confirm to user: chat number, files created, ready
 
-### Every 10 Turns
+### !log Command
 
-1. Check `/mnt/transcripts/` — if compaction found, notify Matt immediately (memory of earlier conversation may be incomplete; Matt may want to re-paste context or ask Claude to fetch files); note compaction internally
-2. Check for topic shift — if shifted, run compound log step
-3. Reset counter
+Matt types `!log` at any natural pause to trigger the compound log step. Claude does not self-trigger log writes. `!check` does not trigger a log write — it often fires mid-topic and would create misleading section boundaries.
 
 ### Compound Log Step
 
-Triggered at step 2 above, and always at end of session.
+Triggered by `!log` and always at end of session.
 
 1. Write `<!-- SECTION: Title -->` and `## Title` heading to `chatN.md` — title must be unique within transcript; qualify if needed (e.g. "Verso Build — Pre-Sprong" / "Verso Build — Post-Sprong")
-2. If compaction noted: run converter (`transcript_to_md.py --after-timestamp <last_write_timestamp>`), append reconstructed turns to `chatN.md`, insert compaction markers in transcript and index, update `last_write_timestamp` to last reconstructed turn
-3. Append turns since `last_write_timestamp` to `chatN.md`
-4. Append section entry to `chatN-index.md` (see Index File format below)
-5. Update `session-state.json`: set `last_write_timestamp` to `start_timestamp` of first content block of last turn written in step 3; append changed `###` sections to `modified_sections`
+2. Check `/mnt/transcripts/` — if compaction found since last check, notify Matt immediately (memory of earlier conversation may be incomplete; Matt may want to re-paste context or ask Claude to fetch files); note internally
+3. If compaction noted: run converter script (`transcript_to_md.py --after-timestamp <last_write_timestamp>`), append reconstructed turns to `chatN.md`, insert compaction markers in transcript and index, update `last_write_timestamp` to `start_timestamp` of last reconstructed turn, sourced from JSON output
+4. Append turns since last write to `chatN.md` — **verbatim**. Copy turns exactly as they appear in context. No paraphrasing, summarising, or compression. If in doubt, copy more rather than less.
+5. Append to `chatN-index.md` under `## Table of Contents`: if this is the first section in a new part, first write part header `### [Part N](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)`; then append section entry `- **[Section Title](https://github.com/mattachu/claude-expedition33/blob/main/chats/chatN/chatN.md#anchor)** — paragraph description`
+6. Update `session-state.json`: append changed `###` sections to `modified_sections`. Set `last_write_timestamp` only if compaction recovery was run in step 3 — otherwise leave as null.
 
 ### End of Session
 
@@ -423,12 +422,12 @@ CONTENT:
 - `###` heading must be unique within its `##` parent; renames require direct edit
 - Failure mode: loud
 
+
 ### Session State JSON
-
+```json
+{"chat": "chatN", "last_write_timestamp": null, "modified_sections": [{"file": "path/to/file.md", "parent": "## Section", "section": "### Subsection"}]}
 ```
-{"chat": "chatN", "last_write_timestamp": "ISO8601Z", "modified_sections": [{"file": "path/to/file.md", "parent": "## Section", "section": "### Subsection"}]}
-```
 
-`last_write_timestamp` must be `start_timestamp` of first content block of last turn written in step 3. Wrong value risks missed or duplicated turns.
+`last_write_timestamp` is only set during compaction recovery (step 3 of the compound log step), sourced from the `start_timestamp` in the JSON transcript output. In a no-compaction session it remains null throughout — this is correct, not an error. The converter script uses this field as an anchor via `--after-timestamp`; it is never needed in the live-writing path.
 
 -----
