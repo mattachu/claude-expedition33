@@ -181,5 +181,6 @@ CONTENT:
 
 These items are parked for future consideration. Do not implement without explicit instruction.
 
+- **Topic switch recognition:** At the log step, check for topic shifts and split sections accordingly.
 - **Turn counter:** Add a turn counter to every response in logged chats (e.g. `[Turn N]` at end of response). Purpose: allows Matt to verify turn-counting reliability independently of the logging mechanism. Could be enabled via startup file preference or a session flag.
 - **Last-log annotation:** If the turn counter is working reliably, Claude could append a log status note to each response: e.g. `[Turn 31. Last log: turn 24]`. Makes the gap since last write visible without requiring a meta-check. Dependent on turn counter being demonstrated reliable first.
