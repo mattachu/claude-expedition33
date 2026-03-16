@@ -81,7 +81,7 @@ Triggered by the 10-turn topic shift check, and always at end of session.
 1. Write `<!-- SECTION: Title -->` and `## Title` heading to `chatN.md` — title must be unique within transcript (anchor uniqueness requirement); qualify if needed
 2. If compaction noted (from 10-turn check): run converter (`transcript_to_md.py --after-timestamp <last_write_timestamp>`), append reconstructed turns to `chatN.md`, insert compaction markers in transcript and index, update `last_write_timestamp` to last reconstructed turn
 3. Append turns since `last_write_timestamp` to `chatN.md`
-4. Append section entry to `chatN-index.md`
+4. Append to `chatN-index.md` under `## Table of Contents`: if this is the first section in a new part, first write part header `### [Part N](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)`; then append section entry `- **[Section Title](https://github.com/mattachu/claude-expedition33/blob/main/chats/chatN/chatN.md#anchor)** — paragraph description`
 5. Update `session-state.json`: set `last_write_timestamp` to `start_timestamp` of first content block of last turn written in step 3; append changed `###` sections to `modified_sections`
 
 **10-turn check** (every 10 turns):
@@ -116,7 +116,7 @@ Identical whether or not compaction occurred.
 
 1. Final compound log step — transcript and index are now complete
 2. Splitter script splits `chatN.md` into part files (every 4 sections by default)
-3. Edit `chatN-index.md` directly to add Part Files list under `## Part Files (Claude-readable)`
+3. Edit `chatN-index.md` directly: (a) fill in Part Files list under `## Part Files (Claude-readable)` — format: `* Part N — Descriptive Title: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)`; (b) add footer `---\n*Generated: YYYY-MM-DD*`
 4. Produce a single `chatN-changelist.md` covering:
    - Changelist entries for all sections in `modified_sections`
    - New Chat N row for Section 12 of overview (generate summary at this point)

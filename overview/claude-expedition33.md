@@ -376,16 +376,36 @@ Chat between Matt and Claude.
 ## Table of Contents
 ```
 
-Section entry (appended at each compound log step, under `## Table of Contents`):
+At each compound log step: if this is the first section in a new part, first write a part header under `## Table of Contents`:
 
 ```
-### [Section Title](chatN.md#section-title-anchor)
-*Part P* — one-line summary.
+### [Part N](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)
 ```
 
-Part number for section S: ⌈S/4⌉. Part file link: `https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partP.md`
+Then append the section entry:
+
+```
+- **[Section Title](https://github.com/mattachu/claude-expedition33/blob/main/chats/chatN/chatN.md#section-title-anchor)** — paragraph description
+```
+
+Part number for section S: ⌈S/4⌉. Part file link: `https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md`
 
 Anchor derived from `## Title` heading: lowercase, spaces to hyphens, punctuation removed.
+
+End-of-session additions to `chatN-index.md` (done as part of end-of-session step 3):
+
+Part Files list (one entry per part, under `## Part Files (Claude-readable)`):
+
+```
+* Part N — Descriptive Title: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)
+```
+
+Footer (after last ToC entry):
+
+```
+---
+*Generated: YYYY-MM-DD*
+```
 
 ### Changelist Format
 
