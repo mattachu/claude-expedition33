@@ -85,15 +85,20 @@ Gaulteram's Level 4 ability is essential while parry skills are developing: on h
 ### Next
 - **Name:** Chevalam (level 27)
 - **Source:** Chromatic Gold Chevaliere (Crimson Forest / Blades Graveyard)
-- **Recommended level:** 65–70+
+- **Recommended level:** 70–75+
 - **Scaling:** Agility + Luck (identical to Gaulteram — no respec needed)
-- **Notes:** Clean weapon swap, no stat changes required. Abilities beyond what is noted not confirmed — verify on obtaining.
+- **Effects:** Starts every fight at Rank S (200% damage boost immediately); up to additional 100% damage if Verso takes no hits throughout the battle; applies Rush at battle start (nearly guarantees first move). **Disables healing and prevents gaining shields.**
+- **Caveat:** High risk at ~20% parry rate — disabling healing and shields is punishing without reliable parries. Switch from Gaulteram when parry rate against unfamiliar bosses is meaningfully higher. Not the right switch to make simultaneously with transitioning to the endgame team.
+- **Note:** Abilities confirmed via search (Chat 3). Clean weapon swap from Gaulteram — no stat changes required.
 
 ### Endgame
 - **Name:** Chevalam (fully upgraded)
 - **Source:** As above
 - **Scaling:** Agility + Luck
-- **Notes:** Abilities not fully confirmed.
+
+### Future Options *(post-endgame only)*
+- **Simoso:** Post-game weapon. Accelerates Rank progression and amplifies follow-up attacks on Marked targets. A middle path between Gaulteram (defensive) and Chevalam (all-in). Source and full effects not confirmed — verify before prioritising. Not available until well into post-game.
+- **Corpeso:** From Noires in the Dark Shores. The burn-stacking build weapon — inflicts 2 Burn stacks per rank per hit on basic attack; at S Rank with Double Burn Lumina, generates ~80 Burn stacks per turn. Entirely different role and stat allocation to Chevalam. Only relevant if switching to Path A (burn-stack nuke) — requires Verso respec and different skills.
 
 ### Rejected
 **Rejected — Current slot**
@@ -183,9 +188,9 @@ Energising Attack I (10 LP) explicitly rejected — only relevant for base-attac
 
 | Build Name                   | Role     | Key Skills                                                                               | Key Lumina | Status   | Notes                                                                  |
 |------------------------------|----------|------------------------------------------------------------------------------------------|------------|----------|------------------------------------------------------------------------|
-| Levelling team (pre-Cheater) | DPS      | Quick Strike, Assault Zero, Strike Storm, Marking Shot, Phantom Stars, Perfect Break     | Core suite | Current  | Rank build via Strike Storm crits; Perfect Break for S Rank jump       |
+| Levelling team (pre-Cheater) | DPS      | Quick Strike, Assault Zero, Strike Storm, Marking Shot, Phantom Stars, Perfect Break     | Core suite | Complete | Rank build via Strike Storm crits; Perfect Break for S Rank jump       |
 | Solo fights (completed)      | Solo DPS | Quick Strike, Assault Zero, Defiant Strike, Perfect Break, Perfect Recovery, Paradigm Shift | Solo Pictos | Complete | Second Chance borrowed from Maelle; now returned                    |
-| Endgame (post-Cheater)       | Main DPS | Add Steeled Strike; consider Overload when HP management more reliable                   | Core suite | Planned  | After Sprong (Cheater Pictos). Slot to displace TBD.                   |
+| Endgame (post-Cheater)       | Main DPS | Quick Strike, Assault Zero, Strike Storm, Marking Shot, Perfect Break, Steeled Strike   | Core suite | Current  | Phantom Stars → Steeled Strike confirmed. Second Chance → Cheater Pictos. Fortune's Fury + Steeled Strike incompatible (buff consumed on windup turn — Sciel should use Intervention instead when Verso is winding up). Steeled Strike damage calculation timing (windup vs execution turn) unresolved — needs in-game testing. |
 
 ---
 
