@@ -142,17 +142,16 @@ If the main party (Verso/Maelle/Sciel) is fully wiped in a battle, the player ca
 
 ### Lune
 
-|                     |                                                                                                              |
-|---------------------|--------------------------------------------------------------------------------------------------------------|
-| Level               | 72                                                                                                           |
-| Role                | Support/healer/stain DPS                                                                                     |
-| Weapon              | Trebuchim (25) — Power 3089, Lightning, Vitality A, Luck B                                                   |
-| Stats (with Pictos) | Health 5970, Attack 3956, Speed 839, Defence 2491, Crit 82%                                                  |
-| Attributes          | Luck 99, Vitality 71, Agility 22, Might 16, Defence 8                                                        |
-| Pictos              | Longer Shell (29), Healing Share (11), Powerful on Shell (23)                                                |
-| Key skills          | Wildfire, Terraquake, Thunderfall, Healing Light, Mayhem, Elemental Genesis                                  |
-| Lumina              | Core Suite                                                                                                   |
-| Available weapons   | Kralim (29) — future build option                                                                            |
+|                   |                                                                                                              |
+|-------------------|--------------------------------------------------------------------------------------------------------------|
+| Level             | 72                                                                                                           |
+| Role              | Support/healer/stain DPS (reserve)                                                                           |
+| Weapon            | Kralim (29)                                                                                                  |
+| Stats (with Pictos) | Health 6226, Attack 5296, Speed 972, Defence 2628, Crit 54%                                                |
+| Attributes        | Vitality 99, Agility 99, Luck 18                                                                             |
+| Pictos            | Longer Shell (29), Healing Share (11), Powerful on Shell (23)                                                |
+| Key skills        | Wildfire, Terraquake, Thunderfall, Elemental Genesis, Healing Light, Mayhem                                  |
+| Lumina            | Core Suite                                                                                                   |
 
 -----
 
@@ -163,10 +162,10 @@ If the main party (Verso/Maelle/Sciel) is fully wiped in a battle, the player ca
 | Level               | 75                                                                                                           |
 | Role                | Pure support                                                                                                 |
 | Weapon              | Litheson (20) — Power 2081, Physical, Luck A, Agility B. L4: Moon = Greater Rush all allies / Sun = Greater Slow all enemies. L10: Twilight = both. L20: +3 AP on applying Buff or Debuff, once per turn. |
-| Stats (with Pictos) | Health 3698, Attack 2975, Speed 1934, Defence 506, Crit 64%                                                  |
+| Stats (with Pictos) | Health 3698, Attack 2975, Speed 1929, Defence 607, Crit 87%                                                  |
 | Attributes          | Agility 99, Luck 99, Defence 27                                                                              |
 | Pictos              | Base Shield (20), Recovery (20), Quick Break (25)                                                            |
-| Key skills          | Focused Foretell, Twilight Dance, Final Path, Fortune's Fury, Intervention, Plentiful Harvest                |
+| Key skills          | Fortune's Fury, Intervention, Plentiful Harvest, Final Path, Twilight Dance, Focused Foretell                |
 | Lumina              | 159 LP total, 150 used, 9 spare; Cheater (40 LP)                                                             |
 | Note                | Litheson's Greater Rush/Slow effects have a large impact on turn order — fights without Sciel are noticeably harder |
 
@@ -174,17 +173,17 @@ If the main party (Verso/Maelle/Sciel) is fully wiped in a battle, the player ca
 
 ### Verso
 
-|                     |                                                                                                                  |
-|---------------------|------------------------------------------------------------------------------------------------------------------|
-| Level               | 75                                                                                                               |
-| Role                | Endgame main DPS                                                                                                 |
-| Weapon              | Chevalam (24) — Agility A, Luck B; Power 3263                                                                    |
-| Stats (with Pictos) | Health 4003, Attack 4205, Speed 1935, Defence 182, Crit 61%                                                    |
-| Attributes          | Agility 99, Luck 99, Might 27                                                                                    |
-| Pictos              | Cheater (24), Survivor (21), Second Chance (16)                                                                  |
-| Key skills          | Quick Strike, Light Holder, Marking Shot, Perfect Break, End Bringer, Steeled Strike                             |
-| Lumina              | 134 LP total, 134 used, 0 spare; Confident + Confident Fighter added; Base Shield removed (non-functional with Chevalam) |
-| Note                | Chevalam Level 20 applies Rush on Rank S — Verso always goes first regardless of raw Speed                       |
+|                   |                                                                                                                  |
+|-------------------|------------------------------------------------------------------------------------------------------------------|
+| Level             | 75                                                                                                               |
+| Role              | Endgame main DPS                                                                                                 |
+| Weapon            | Chevalam (24) — Agility A, Luck B; Power 3263                                                                   |
+| Stats (with Pictos) | Health 4003, Attack 4205, Speed 1935, Defence 182, Crit 61%                                                   |
+| Attributes        | Agility 99, Luck 99, Might 27                                                                                    |
+| Pictos            | Cheater (24), Survivor (21), Second Chance (16)                                                                  |
+| Key skills        | Quick Strike, Light Holder, Marking Shot, Perfect Break, End Bringer, Steeled Strike                            |
+| Lumina            | 134 LP total, 134 used, 0 spare; Confident + Confident Fighter added; Base Shield removed (non-functional with Chevalam) |
+| Note              | Chevalam Level 20 applies Rush on Rank S — Verso always goes first regardless of raw Speed                      |
 
 -----
 
@@ -193,14 +192,16 @@ If the main party (Verso/Maelle/Sciel) is fully wiped in a battle, the player ca
 |                     |                                                                                                                    |
 |---------------------|--------------------------------------------------------------------------------------------------------------------|
 | Level               | 72                                                                                                                 |
-| Role                | AP battery/support/breaker (levelling team); reserve in endgame                                                    |
-| Weapon              | Nusaro (20) — Power 2910, Dark, Agility A, Vitality B. L4: Parries increase Bestial Wheel by 1; damage resets it. L10: Upgraded Skills +30% damage. L20: +1 AP on Mask change. |
-| Stats (with Pictos) | Health 5724, Attack 3752, Speed 1576, Defence 1716, Crit 29%                                                      |
-| Attributes          | Agility 99, Vitality 64, Luck 53                                                                                   |
+| Role                | Break + AP support (reserve team with Lune)                                                                        |
+| Weapon              | Nusaro (20) → Joyaro (25) — switch pending respec                                                                  |
+| Stats (with Pictos) | Health 4679, Attack 3752, Speed 1242, Defence 1716, Crit 33%                                                      |
+| Attributes          | Agility 99, Defence 99, Luck 18 (respec target — current allocation has Luck 53)                                   |
 | Pictos              | Anti-Freeze (21), Anti-Burn (22), Energising Turn (14)                                                             |
-| Key skills          | Abbest Wind, Stalact Punches, Moissonneuse Vendange, Chalier Combo, Potier Energy, Pelerin Heal                   |
+| Key skills          | Potier Energy, Stalact Punches, Abbest Wind, Moissonneuse Vendange, Portier Crash, Chalier Combo                   |
 | Lumina              | 122 LP total, 114 used, 8 spare                                                                                    |
-| Endgame weapon      | Joyaro (25) — obtained, not yet equipped                                                                           |
+| Endgame weapon      | Joyaro (25) — obtained                                                                                             |
+
+-----
 
 ### Core Lumina Suite (101 LP)
 

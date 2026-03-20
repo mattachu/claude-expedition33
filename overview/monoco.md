@@ -43,26 +43,22 @@ Monoco's central system is the **Bestial Wheel** — a 9-position ring of masks 
 
 | Attribute | Value | Priority  | Reason                                                                               |
 |-----------|-------|-----------|--------------------------------------------------------------------------------------|
-| Level     | 72    | —         |                                                                                      |
+| Level     | 73    | —         |                                                                                      |
 | Agility   | 99    | Primary   | Joyaro scales Agility A; also scales Speed, Attack, and Defence simultaneously       |
 | Defence   | 99    | Primary   | Joyaro scales Defence B; also contributes to crit rate                               |
-| Vitality  | 18    | Tertiary  | Spare points (18 of 216 total); contributes Health and weapon scaling                |
-| Luck      | 0     | None      | Not relevant for Joyaro scaling; previous Luck 53 to be respecced out               |
+| Luck      | 21    | Tertiary  | Spare points ; +10% crit and +36 Speed vs Vitality's +258 Health — Luck wins         |
+| Vitality  | 0     | None      | Not relevant for Joyaro scaling; tested and inferior to Luck for spare points        |
 | Might     | 0     | None      | No benefit for this build                                                            |
 
-*Respec required: current allocation has Luck 53 which gives nothing on Joyaro (Defence+Agility scaling).*
-
-### Combat Stats (with Pictos — Anti-Freeze 21, Anti-Burn 22, Energising Turn 14)
+### Combat Stats (post-respec, with Pictos — Anti-Freeze 21, Anti-Burn 22, Energising Turn 14)
 
 | Stat                          | Base    | From weapon/Pictos              | Total   |
 |-------------------------------|---------|--------------------------------|---------|
-| Health                        | 2658    | +3066 (Pictos)                 | 5724    |
-| Attack                        | 842     | +2910 (Nusaro scaling)         | 3752    |
-| Speed                         | 1306    | +270 (Pictos)                  | 1576    |
-| Defence                       | 182     | +1534 (Pictos)                 | 1716    |
-| Critical Rate                 | 29%     | —                              | 29%     |
-
-*Attack figure based on current Nusaro. Will change after Joyaro switch and respec.*
+| Health                        | 1641    | +3066 (Pictos)                 | 4707    |
+| Attack                        | 859     | +3934 (weapon scaling)         | 4793    |
+| Speed                         | 985     | +270 (Pictos)                  | 1255    |
+| Defence                       | 729     | +1534 (Pictos)                 | 2263    |
+| Critical Rate                 | 34%     | —                              | 34%     |
 
 ### Pictos Breakdown
 
