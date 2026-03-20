@@ -14,26 +14,34 @@
 
 ## Mechanics
 
-Verso's central system is **Perfection and Rank**. Perfection is a resource that fills a rank meter; higher ranks give higher damage multipliers and unlock skill bonuses. Rank order: C → B → A → S. Skills and parries generate Perfection.
+Verso's central system is **Perfection and Rank**. Perfection is a resource that fills a rank meter; higher ranks give higher damage multipliers and unlock skill bonuses. Rank order: **D → C → B → A → S**. Skills and parries generate Perfection. D is the true base rank — previous note of C as starting rank was because Lighteram's Level 4 set a floor of C. With Chevalam there is no floor; hits can take Verso back to D.
 
-**Critical mechanic:** Rank bonuses apply ONLY at the **exact rank stated** — not at higher ranks. Yellow skill text in-game indicates an active rank bonus. A skill with a C Rank bonus loses that bonus once at B Rank.
+**Critical mechanic:** Rank bonuses apply ONLY at the **exact rank stated** — not at higher ranks. Yellow skill text in-game indicates an active rank bonus.
 
 | Event | Perfection effect |
 |-------|-------------------|
-| Parry | Gains Perfection |
-| Hit taken (Gaulteram) | Lose 1 Perfection only (not full rank demotion) |
-| Quick Strike | Modest Perfection gain (no rank jump without Glaceso) |
-| Assault Zero | B → A rank progression |
-| Strike Storm crit (C Rank) | +2 Perfection per hit |
+| Parry | Gains Perfection; successful full parry sequence triggers Counterattack (powerful free damage, does not cost a turn) |
+| Dodge | Prevents rank loss; Perfect Dodge (same timing window as Parry) gives +1 AP via Dodger Lumina |
+| Hit taken (general) | Full rank demotion |
+| Hit taken (Gaulteram) | Lose 1 Perfection only (not full rank demotion) — Gaulteram-specific, not general |
+| Quick Strike | D: gives more Perfection |
+| Light Holder | +1 Rank on completion; A: +2 AP |
 | Perfect Break (at B Rank) | Triggers Break → jump to S Rank |
+| End Bringer | A: can reapply stun on broken target |
 
-Gaulteram's Level 4 ability is essential while parry skills are developing: on hit, lose only 1 Perfection instead of full rank demotion. Without this, an unlucky hit can wipe the rank built over several turns.
+**Dodge vs Parry timing:** Dodge has a wider window than Parry. Dodge > Perfect Dodge == Parry in terms of timing windows. If a Dodge is Perfect, a Parry would also work. Dodge is used to safely learn parry timings — the game indicates whether a Dodge was Perfect.
 
-**Steeled Strike** (not yet equipped): charges for 1 turn; executes following turn for 13-hit extreme damage. Interrupted if Verso takes any damage during charge. Requires Cheater Pictos (from Sprong boss) to use safely — Cheater gives a second consecutive turn, so charge and execute happen back-to-back.
+**Counterattack:** Successfully completing all parries in an enemy's attack sequence launches a highly powerful Counterattack. This does not consume a turn. This is the primary reason to prioritise Parry over Dodge.
+
+**Stun:** Enemies are stunned on Break. End Bringer deals increased damage to stunned targets, and at A Rank can reapply stun to extend the window.
+
+**Steeled Strike:** Charges for 1 turn; executes following turn for extreme damage. Interrupted if Verso takes any damage during charge. Requires Cheater (consecutive turns) to use safely. S Rank bonus active with Chevalam (starts at S).
+
+**Burst sequence (endgame):** Verso (normal turn): base attack to farm AP → Verso (Cheater turn): Steeled Strike charge → Sciel (normal turn): Fortune's Fury on Verso → Sciel (Cheater turn): Intervention on Verso → Verso (Greater Rush turn): Steeled Strike executes with Fortune's Fury active. Combined multiplier: Rank S (×3.0) × Chevalam stacks (×1.4+) × Fortune's Fury (×2.0) = ×8.4+ before Steeled Strike's own multiplier.
 
 **Solo fights:** Both completed (vs Francois, vs Monoco).
 
----
+-----
 
 ## Current Stats
 
@@ -41,71 +49,69 @@ Gaulteram's Level 4 ability is essential while parry skills are developing: on h
 
 | Attribute | Value | Priority  | Reason                                                                         |
 |-----------|-------|-----------|--------------------------------------------------------------------------------|
-| Level     | 59    | —         |                                                                                |
-| Agility   | 99    | Primary   | Gaulteram/Chevalam scale Agility + Luck; Agility raises Speed, Attack, Defence |
-| Luck      | 69    | Secondary | Increases crit rate; same weapon scaling as Agility                            |
+| Level     | 70+   | —         |                                                                                |
+| Agility   | 99    | Primary   | Chevalam scales Agility A, Luck B; Agility raises Speed, Attack, Defence       |
+| Luck      | 99    | Primary   | Increases crit rate; same weapon scaling priority as Agility                   |
+| Might     | 27    | Tertiary  | Extra attack power; spare points                                               |
 | Vitality  | 0     | None      | Weapon does not scale off Vitality                                             |
-| Might     | 0     | None      | No benefit for this build                                                      |
 | Defence   | 0     | None      | No benefit for this build                                                      |
 
-*Gaulteram and Chevalam share identical scaling (Agility + Luck) — no respec needed when swapping weapons.*
+### Combat Stats
 
-### Combat Stats (without Pictos)
+| Stat                          | Base    | From weapon/Pictos              | Total  |
+|-------------------------------|---------|--------------------------------|--------|
+| Health                        | 1698    | +2305 (Pictos)                 | 4003   |
+| Attack                        | 942     | +3263 (Chevalam scaling)       | 4205   |
+| Speed                         | 1096    | +839 (Pictos)                  | 1935   |
+| Defence                       | 182     | —                              | 182    |
+| Critical Rate                 | 41%     | +20% (Pictos)                  | 61%    |
 
-| Stat                          | Value         |
-|-------------------------------|---------------|
-| Health                        | 1184          |
-| Base Attack (stat only)       | [unconfirmed] |
-| Attack (incl. weapon scaling) | 1213          |
-| Speed                         | 946           |
-| Defence                       | 182           |
-| Critical Rate                 | 34%           |
+### Pictos Breakdown
 
-### Combat Stats (with Pictos)
+| Pictos       | Level | Health | Speed | Crit | Effect                                      |
+|--------------|-------|--------|-------|------|---------------------------------------------|
+| Cheater      | 24    | +1198  | +400  | —    | Always play twice in a row. Lumina free.    |
+| Survivor     | 21    | —      | +439  | +12% | Survive fatal damage with 1 Health once per battle. Lumina free. |
+| Second Chance| 16    | +1107  | —     | +8%  | Revive with 100% Health once per battle. Lumina free. |
 
-| Stat          | Value  |
-|---------------|--------|
-| Health        | 2291   |
-| Attack        | 1213   |
-| Speed         | 1436   |
-| Defence       | 182    |
-| Critical Rate | 84%    |
-
-*With Burning Death (Speed +308, Crit +24%), Second Chance (Health +1107, Crit +8%), Shortcut (Speed +182, Crit +18%). Confirmed from overview file.*
-
----
+-----
 
 ## Weapons
 
 ### Current
-- **Name:** Gaulteram (12)
-- **Scaling:** Agility + Luck
-- **Notes:** Level 4: on hit, lose only 1 Perfection instead of full rank demotion — essential while parry skills developing. Level 10: [unconfirmed]. Level 20: +2 Perfection when entering Rank A. **Do not upgrade further** — save Resplendent Catalysts for Chevalam.
+- **Name:** Chevalam (level 24)
+- **Power:** 3263
+- **Element:** Physical
+- **Scaling:** Agility A, Luck B
+- **Notes:** Level 4: Start battle at Rank S, but can't be Healed or gain Shields. Level 10: 20% increased damage for each consecutive no-damage turn, stacks up to 5×. Cheater's free extra turn counts as a no-damage turn — stacks accumulate mechanically. Level 20: Apply Rush on Rank S.
 
-### Next
-- **Name:** Chevalam (level 27)
-- **Source:** Chromatic Gold Chevaliere (Crimson Forest / Blades Graveyard)
-- **Recommended level:** 70–75+
-- **Scaling:** Agility + Luck (identical to Gaulteram — no respec needed)
-- **Effects:** Starts every fight at Rank S (200% damage boost immediately); up to additional 100% damage if Verso takes no hits throughout the battle; applies Rush at battle start (nearly guarantees first move). **Disables healing and prevents gaining shields.**
-- **Caveat:** High risk at ~20% parry rate — disabling healing and shields is punishing without reliable parries. Switch from Gaulteram when parry rate against unfamiliar bosses is meaningfully higher. Not the right switch to make simultaneously with transitioning to the endgame team.
-- **Note:** Abilities confirmed via search (Chat 3). Clean weapon swap from Gaulteram — no stat changes required.
+### Also obtained (not in active use)
+| Weapon      | Level | Notes                                                                                                         |
+|-------------|-------|---------------------------------------------------------------------------------------------------------------|
+| Corpeso     | 23    | Fire, Vitality + Agility. L4: Base Attack applies 2 Burn per Rank. L10: +1 AP on Rank Up. L20: Burn damage +50% per Rank up to 300% at S. Burn-stacking build; synergises with Maelle's Burning Canvas. |
+| Contorso    | 23    | Lightning, Defence + Agility. L4: Switch to Rank S on Break; Base Attack can Break. L10: 100% Crit at Rank S. L20: Lightning strike on Crits. S-tier; deferred — same rank-loss-on-hit vulnerability, no forgiveness. |
+| Glaceso     | 29    | Defence + Luck scaling — respec required. Previously rejected.                                                |
+| Gaulteram   | 12    | Agility + Luck. Act 2 weapon. L4: lose only 1 Perfection on hit. Replaced by Chevalam.                       |
+| Dualiso     | 9     | Lightning, Vitality + Defence. L4: Play again after Base Attack. L10: +50% Base Attack damage. L20: Base Attack gives 4 Perfection. Conflicts with Cheater; base-attack-spam build. |
+| Sakaram     | 25    | Details not confirmed.                                                                                        |
+| Cruleram    | 26    | Details not confirmed.                                                                                        |
+| Lanceram    | 15    | Details not confirmed.                                                                                        |
+| Liteso      | 16    | Details not confirmed.                                                                                        |
+| Abysseram   | 10    | Details not confirmed.                                                                                        |
+| Confuso     | 11    | Details not confirmed.                                                                                        |
+| Danseso     | 10    | Details not confirmed.                                                                                        |
+| Delaram     | 7     | Details not confirmed.                                                                                        |
+| Demonam     | 5     | Details not confirmed.                                                                                        |
+| Noahram     | 1     | Details not confirmed.                                                                                        |
+| Sireso      | 14    | Details not confirmed.                                                                                        |
+| Verleso     | 7     | Details not confirmed.                                                                                        |
 
-### Endgame
-- **Name:** Chevalam (fully upgraded)
-- **Source:** As above
-- **Scaling:** Agility + Luck
+### Future (post-game)
+- **Simoso** — from Simon (Renoir's Drafts). S-tier. Scaling: Vitality + Agility. Level 20: Can't die if at least Rank A.
+- **Dreameso** — Agility + Luck scaling; Rank gain on Counterattack; deferred until parry/counterattack rate improves.
+- **Seeram** — Vitality + Agility. Can't reach Rank S. S-tier ONLY for End Bringer stunlock build on Simon. Purchased from Unfinished Cruler, Coastal Cave.
 
-### Future Options *(post-endgame only)*
-- **Simoso:** Post-game weapon. Accelerates Rank progression and amplifies follow-up attacks on Marked targets. A middle path between Gaulteram (defensive) and Chevalam (all-in). Source and full effects not confirmed — verify before prioritising. Not available until well into post-game.
-- **Corpeso:** From Noires in the Dark Shores. The burn-stacking build weapon — inflicts 2 Burn stacks per rank per hit on basic attack; at S Rank with Double Burn Lumina, generates ~80 Burn stacks per turn. Entirely different role and stat allocation to Chevalam. Only relevant if switching to Path A (burn-stack nuke) — requires Verso respec and different skills.
-
-### Rejected
-**Rejected — Current slot**
-- **Lanceram:** Level 4 gives C Rank floor; Level 10: +4 Perfection on base attack; Level 20: parry gives 2 Perfection. C floor irrelevant (S Rank builds naturally in ~2 turns); Gaulteram forgiveness more valuable.
-- **Glaceso (Level 21, in inventory):** Requires stat respec (Defence + Luck scaling) and a second respec when switching to Chevalam = 2 Recoats wasted. No forgiveness mechanic. Claude initially recommended Glaceso incorrectly; Matt identified all three issues.
-
----
+-----
 
 ## Pictos
 
@@ -122,57 +128,70 @@ Gaulteram's Level 4 ability is essential while parry skills are developing: on h
 ## Lumina
 
 ### LP Budget
-- **Current capacity:** 110 LP
-- **Expansion cost:** 18 Colour of Lumina to expand from 92 LP to 110 LP
+- **Current capacity:** 134 LP
+- **Expansion:** Paid 3 Colour of Lumina this session to expand to 134 LP
 
-### Core Suite
-*Shared across all three main party members — listed here for reference.*
-Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energising Parry (15), Energising Start I (5), Dodger (1), Breaker (10), Breaking Burn (5), Marking Shots (3), Dead Energy I (2), Dead Energy II (2), Critical Break (5), Rewarding Mark (5), Burning Shots (3)
-**Total: 106 LP**
+### Current Loadout (134 LP used, 0 LP free)
 
-*Verso pays all 106 LP — no free Lumina from current Pictos.*
+| Lumina              | LP  | Notes                                                         |
+|---------------------|-----|---------------------------------------------------------------|
+| Breaker             | 10  |                                                               |
+| Breaking Burn       | 5   |                                                               |
+| Breaking Counter    | 3   | 50% Break damage on Counterattack. Candidate for removal.     |
+| Burning Shots       | 3   |                                                               |
+| Cheater             | —   | FREE from Cheater Pictos                                      |
+| Confident           | 20  | Take half damage; cannot be healed (already Chevalam-gated)   |
+| Confident Fighter   | 15  | +30% damage; cannot be healed                                 |
+| Critical Break      | 5   |                                                               |
+| Dead Energy I       | 2   |                                                               |
+| Dead Energy II      | 2   |                                                               |
+| Dodger              | 1   |                                                               |
+| Energising Parry    | 15  |                                                               |
+| Energising Start I  | 5   |                                                               |
+| Energising Turn     | 20  |                                                               |
+| Enfeebling Mark     | 10  | Marked targets deal 30% less damage                           |
+| Marking Shots       | 3   |                                                               |
+| Painted Power       | 5   |                                                               |
+| Rewarding Mark      | 5   |                                                               |
+| Second Chance       | —   | FREE from Second Chance Pictos                                |
+| Survivor            | —   | FREE from Survivor Pictos                                     |
+| Teamwork            | 5   | Passive damage bonus when whole team alive                    |
 
-### Character-Specific
+**Note:** Base Shield removed this session — non-functional with Chevalam (can't gain shields). Confident + Confident Fighter added — synergise with Chevalam's no-heal constraint. Recovery + Chevalam interaction unverified — worth testing.
 
-*(none — Verso uses core suite only)*
-
-### Notes
-Total paid LP: 106. Spare: 4 LP.
-
-Energising Attack I (10 LP) explicitly rejected — only relevant for base-attack-spam builds (e.g. Dualiso weapon). Verso is skill-focused with Gaulteram.
-
----
+-----
 
 ## Skills
 
-**Currently equipped (6):** Quick Strike, Assault Zero, Strike Storm, Marking Shot, Phantom Stars, Perfect Break
-
-*Steeled Strike is available but not yet equipped — requires Cheater Pictos first. Slot to displace: TBD.*
+**Currently equipped (6):** Quick Strike, Light Holder, Marking Shot, Perfect Break, End Bringer, Steeled Strike
 
 | Skill          | AP Cost         | Equipped | Rank Bonus                                     | Notes                                                                                                                                                              |
 |----------------|-----------------|----------|------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Quick Strike   | 2               | ✅       | —                                              | Modest Perfection gain. Does NOT jump to Rank B without Glaceso equipped.                                                                                          |
-| Assault Zero   | 3               | ✅       | —                                              | B → A rank progression. Detail thin on exact effect.                                                                                                               |
-| Strike Storm   | 5               | ✅       | C: increased damage + crits give +2 Perfection | 5-hit high single-target, weapon element. Synergises strongly with Fortune's Fury. With 84% crit rate, +2 Perfection per hit accelerates Rank climb.              |
-| Marking Shot   | 2               | ✅       | C: increased damage                            | 1-hit low damage, 100% Mark. No HP cost. Chosen over Defiant Strike: same Mark, lower AP, no 30% HP cost.                                                         |
-| Phantom Stars  | 9 (5 at S Rank) | ✅       | —                                              | AoE multi-hit, all enemies. **Trash and multi-enemy fights ONLY. Useless in 1v1 boss fights.**                                                                    |
-| Perfect Break  | 7 (5 at B Rank) | ✅       | B: costs 5 AP instead of 7                    | High Light damage; triggers Break when bar full → Verso jumps to S Rank. Monoco fills Break bar with Stalact Punches first.                                       |
-| Steeled Strike | 9               | ❌       | —                                              | Charges T1, executes T2 for 13-hit extreme damage. Interrupted if hit during charge. Requires Cheater Pictos (Sprong). Slot to displace TBD.                     |
+| Quick Strike   | 2               | ✅       | D: gives more Perfection                       | Low physical. Modest Perfection gain. Does NOT jump to Rank B without Glaceso.                                                                                     |
+| Light Holder   | 4               | ✅       | A: +2 AP                                       | Medium Light damage, 5 hits. Gains +1 Rank at completion. Replaced Assault Zero — more flexible rank tool with AP bonus at A Rank.                                |
+| Marking Shot   | 2               | ✅       | C: increased damage                            | Low damage + 100% Mark. No HP cost. 2 AP.                                                                                                                         |
+| Perfect Break  | 7 (5 at B Rank) | ✅       | B: costs 5 AP instead of 7                    | Very high Light damage; can Break; Rank S on Break.                                                                                                                |
+| End Bringer    | 8               | ✅       | A: can reapply stun                            | Extreme Physical damage, 6 hits. Increased damage if target stunned. Enemies are stunned on Break — End Bringer's A Rank reapplies stun to extend the window.     |
+| Steeled Strike | 9               | ✅       | S: increased damage                            | After 1 turn charge, extreme Physical damage. Interrupted if damage taken. Safe with Cheater (consecutive turns). S Rank bonus active given Chevalam starts at S. |
 
 **Skills available but not equipped:**
 
-| Skill            | Notes                                                                                                                       |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| Defiant Strike   | 3 AP, 2-hit Physical, 100% Mark, B Rank: increased damage. Costs 30% current HP per use. Not recommended at ~20% parry rate. |
-| Paradigm Shift   | Generates 1–3 AP; damage bonus at C Rank only. NOT a rank jump. Redundant given team AP generation.                        |
-| Perfect Recovery | Heals Verso only (50% HP; 100% at C Rank). Redundant given Monoco's Pelerin Heal.                                          |
-| Blitz            | Extra turn; execute low-HP enemies; B Rank bonus only. Passes through B Rank quickly — bonus rarely active.                 |
-| Berserk Slash    | Scales with missing HP. Situational.                                                                                        |
-| Overload         | 6 AP. Sets HP to 1; instantly jumps to Rank A; refills AP (carries to NEXT turn, not same turn). High risk without Cheater. |
+| Skill            | AP  | Rank Bonus                   | Notes                                                                                                                    |
+|------------------|-----|------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| Assault Zero     | 3   | B: increased damage          | B→A rank progression. Replaced by Light Holder.                                                                          |
+| Berserk Slash    | 4   | C: increased damage          | Medium Physical, 3 hits. Damage scales with missing HP — at 1 HP ~1485% scaling. Niche; high risk.                      |
+| Blitz            | 3   | B: bonus only                | Insta-kills low-health enemies; otherwise deals damage. Occasional cleanup utility.                                      |
+| Burden           | 1   | —                            | Removes status effects from all allies. Best paired with Purification.                                                   |
+| Defiant Strike   | 3   | B: increased damage          | 2-hit Physical, 100% Mark. Costs 30% current HP. Not recommended at current parry rate.                                 |
+| From Fire        | 4   | B: increased damage          | Healing from Burn. Situational — only useful if enemies consistently have burn.                                          |
+| Leadership       | 3   | C: +1 more AP to allies      | Extra AP to all allies. Invaluable in some builds; conflicts with Verso's DPS role.                                      |
+| Paradigm Shift   | 1   | C: bonus                     | Generates 1–3 AP. NOT a rank jump. Redundant given team AP generation.                                                   |
+| Perfect Recovery | 3   | C: 100% HP                   | Heals Verso only. Non-functional with Chevalam.                                                                          |
+| Phantom Stars    | 9 (5 at S) | —                   | AoE multi-hit, all enemies. Trash only — useless in 1v1.                                                                 |
+| Purification     | 5   | B: increased damage          | Medium Light damage, 2 hits. Dispels self status effects. Niche.                                                         |
+| Strike Storm     | 7   | C: crits give +2 Perfection  | 5-hit high single-target, weapon element. Previously core skill; displaced by End Bringer/Steeled Strike.               |
 
-**Confirmed NOT in Verso's skill list:** Light Holder, End Bringer.
-
----
+-----
 
 ## Gradient Skills
 
@@ -206,26 +225,29 @@ Energising Attack I (10 LP) explicitly rejected — only relevant for base-attac
 
 ## Open Questions
 
-- **Which skill does Steeled Strike replace?** After obtaining Cheater Pictos — slot to displace not yet decided.
+- **Recovery + Chevalam interaction:** Chevalam prevents healing and shields. Does Recovery Lumina (10% health per turn start) count as healing? Unverified — worth testing in practice.
 - **Defiant Strike timing:** When parry rate improves enough to justify 30% HP cost per use.
-- **Burning Death and Shortcut Pictos exact effects:** Stats confirmed; effects not detailed in transcript.
-- **Assault Zero exact effect:** Confirmed as B → A rank progression. Full details thin.
-- **Gaulteram Level 10 ability:** Not confirmed in transcript.
-- **When to switch Second Chance back to Maelle:** Currently held by Verso for levelling team; must return for endgame.
+- **Dreameso timing:** When parry/counterattack rate is high enough to make Rank gain on Counterattack reliable. Post-game.
+- **Seeram + End Bringer stunlock build:** Worth investigating for post-game Simon fight specifically.
+- **Verso stat allocation:** Agility 99, Luck 99, Might 27. Whether Might is optimal over other allocations — unconfirmed.
+- **Unconfirmed weapon details:** Sakaram, Cruleram, Lanceram, Liteso, Abysseram, Confuso, Danseso, Delaram, Demonam, Noahram, Sireso, Verleso — abilities/scaling not yet documented.
 
----
+-----
 
 ## Errors to Avoid
 
-- **Light Holder and End Bringer:** Do not exist in Verso's skill list. Confabulated across multiple session summaries. Matt confirmed explicitly in Part 9.
-- **Glaceso recommendation:** Recommended over Gaulteram based on higher weapon level. Wrong: costs 2 Recoats net; no forgiveness; Gaulteram is the clean choice.
+- **Light Holder and End Bringer recommended before available:** These skills were recommended in session summaries before Matt had obtained them. The "Confirmed NOT in skill list" note was accurate at the time — the error was recommending skills without checking current availability.
+- **Glaceso recommendation:** Recommended over Gaulteram based on higher weapon level. Wrong: costs 2 Recoats net; no forgiveness; Gaulteram was the right choice at the time.
 - **Phantom Stars in 1v1/solo fights:** AoE is useless vs single target.
 - **Paradigm Shift rank jump:** Said it jumps to S Rank. Correct: generates 1–3 AP; C Rank bonus only.
 - **Quick Strike rank jump (inherent):** Requires Glaceso Level 4. Without Glaceso = modest Perfection gain only.
 - **Rank bonuses persist to higher ranks:** WRONG. Exact rank only. Yellow text = active.
-- **Energising Attack I on Verso:** Not appropriate for skill-focused/Gaulteram build.
-- **Defiant Strike over Strike Storm:** Matt corrected: Strike Storm + Marking Shot combo is superior.
 - **Overload AP in same turn:** AP from Overload carries to the next turn, not the same turn.
 - **Second Chance on multiple characters:** Only one character can hold this Pictos at a time.
-- **Chevalam "available right now at Level 56":** Recommended level is 65–70+. Claude cited area level (50+) instead of boss level.
-- **Energising Break in core suite:** Triggers only on Break (1–2 times per boss fight). Removed.
+- **Chevalam "available right now at Level 56":** Recommended level is 65–70+.
+- **Gaulteram as Act 3 endgame weapon:** It is an Act 2 weapon.
+- **Rank loss on hit as weapon-specific:** General Verso mechanic. Gaulteram's forgiveness is the exception.
+- **Rank starts at C:** Rank starts at D. C was the effective floor with Lighteram equipped. With Chevalam there is no floor — hits can send Verso back to D.
+- **Base Shield with Chevalam:** Non-functional — Chevalam prevents shields. Remove from loadout.
+
+-----

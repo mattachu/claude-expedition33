@@ -40,7 +40,7 @@ Claude inserts a marker in the transcript at the start of each new topic section
 Placement: immediately after the `---` separator that closes the previous section, before the first speaker line of the new section. These are HTML comments — invisible when rendered, unambiguous to parse.
 
 ### Part files
-The transcript is split into part files at end of session by the splitter script, at every 4th section marker (configurable). Part files are for Claude to read — loading only the relevant part keeps token consumption low. The boundary points are irrelevant to Matt.
+The transcript is split into part files at end of session by the splitter script, at every 2nd section marker (configurable via `--sections-per-part`). Part files are for Claude to read — loading only the relevant part keeps token consumption low. The boundary points are irrelevant to Matt.
 
 ### Session state file
 Persisted to `/mnt/user-data/outputs/session-state.json` throughout the session. Survives compaction.
@@ -81,9 +81,9 @@ Triggered by `!log` (typed by Matt at any natural pause) and always at end of se
 1. Write `<!-- SECTION: Title -->` and `## Title` heading to `chatN.md` — title must be unique within transcript (anchor uniqueness requirement); qualify if needed
 2. Check `/mnt/transcripts/` — if compaction found since last check, notify Matt immediately; note internally
 3. If compaction noted: run converter script (`transcript_to_md.py --after-timestamp <last_write_timestamp>`), append reconstructed turns to `chatN.md`, insert compaction markers in transcript and index, update `last_write_timestamp` to `start_timestamp` of last reconstructed turn, sourced from JSON output
-4. Append turns since last write to `chatN.md` — **verbatim**. Copy turns exactly as they appear in context. No paraphrasing, summarising, or compression. If in doubt, copy more rather than less.
-5. Append to `chatN-index.md` under `## Table of Contents`: if this is the first section in a new part, first write part header `### [Part N](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)`; then append section entry `- **[Section Title](chatN.md#anchor)** — paragraph description`
-6. Update `session-state.json`: append changed `###` sections to `modified_sections`. Set `last_write_timestamp` only if compaction recovery was run in step 3 — otherwise leave as null.
+4. Append turns since last write to `chatN.md` — **verbatim**. Copy every turn exactly as it appears in context — Matt's turns and Claude's turns alike, including all pasted content. Do not paraphrase, compress, or represent. This applies even when there are many turns, when content is long, or when the transcript would read more cleanly if summarised. The pull to summarise in these cases is strong — resist it explicitly. If in doubt, copy more rather than less.
+5. Append to `chatN-index.md` under `## Table of Contents`: if this is the first section in a new part (every 2 sections), first write part header `### [Part N](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)`; then append section entry `- **[Section Title](chatN.md#anchor)** — paragraph description`
+6. Update `session-state.json`: for each file section discussed since the last log write, append an entry to `modified_sections` if not already present. Set `last_write_timestamp` only if compaction recovery was run in step 3 — otherwise leave as null.
 
 ---
 
@@ -109,7 +109,7 @@ At the compound log step, if compaction was noted:
 Identical whether or not compaction occurred.
 
 1. Final compound log step — transcript and index are now complete
-2. Splitter script splits `chatN.md` into part files (every 4 sections by default)
+2. Insert any remaining part headers in `chatN-index.md` by counting sections (2 sections per part), then run splitter script: `split_transcript.py --sections-per-part 2` on `chatN.md`
 3. Edit `chatN-index.md` directly: (a) fill in Part Files list under `## Part Files (Claude-readable)` — format: `* Part N — Descriptive Title: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)`; (b) add footer `---\n*Generated: YYYY-MM-DD*`
 4. Produce a single `chatN-changelist.md` covering:
    - Changelist entries for all sections in `modified_sections`
@@ -172,8 +172,9 @@ CONTENT:
 - `last_write_timestamp` is only set during compaction recovery, sourced from the JSON transcript. In a no-compaction session it remains null throughout — this is correct, not an error.
 - `###` heading uniqueness within a `##` parent must be maintained
 - Session state must survive compaction — written to file, not held in memory
-- Part file split is mechanical (every 4 sections) — configurable in the splitter script
+- Part file split is mechanical (every 2 sections by default, configurable via `--sections-per-part`) — set via splitter script flag, no script changes needed
 - Compaction markers are inserted in both transcript and index for traceability
+- Transcripts must be written verbatim — both Matt's turns and Claude's turns, including all pasted content. The pull to summarise long sections is strong; resist it explicitly.
 
 ---
 

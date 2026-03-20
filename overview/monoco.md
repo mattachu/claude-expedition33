@@ -43,62 +43,60 @@ Monoco's central system is the **Bestial Wheel** — a 9-position ring of masks 
 
 | Attribute | Value | Priority  | Reason                                                                               |
 |-----------|-------|-----------|--------------------------------------------------------------------------------------|
-| Level     | 61    | —         |                                                                                      |
-| Agility   | 99    | Primary   | Scales Speed, Attack (weapon scaling), and Defence simultaneously                    |
-| Vitality  | 64    | Secondary | Nusaro scales B Agility, C Vitality; contributes Health and weapon scaling           |
-| Luck      | 20    | Tertiary  | Luck is 2× more efficient than Defence for crit, but crit is not Monoco's priority  |
+| Level     | 72    | —         |                                                                                      |
+| Agility   | 99    | Primary   | Joyaro scales Agility A; also scales Speed, Attack, and Defence simultaneously       |
+| Defence   | 99    | Primary   | Joyaro scales Defence B; also contributes to crit rate                               |
+| Vitality  | 18    | Tertiary  | Spare points (18 of 216 total); contributes Health and weapon scaling                |
+| Luck      | 0     | None      | Not relevant for Joyaro scaling; previous Luck 53 to be respecced out               |
 | Might     | 0     | None      | No benefit for this build                                                            |
-| Defence   | 0     | None      | Agility already contributes to Defence stat; zeroed                                  |
 
-*Empirically tested via 99-point-per-attribute method (Part 2). Agility contributes to Defence stat as a side effect — do not zero Agility to chase Defence.*
+*Respec required: current allocation has Luck 53 which gives nothing on Joyaro (Defence+Agility scaling).*
 
-### Combat Stats (without Pictos)
+### Combat Stats (with Pictos — Anti-Freeze 21, Anti-Burn 22, Energising Turn 14)
 
-| Stat                          | Value         |
-|-------------------------------|---------------|
-| Health                        | 2359          |
-| Base Attack (stat only)       | [unconfirmed] |
-| Attack (incl. weapon scaling) | 3570          |
-| Speed                         | 900           |
-| Defence                       | 182           |
-| Critical Rate                 | 16%           |
+| Stat                          | Base    | From weapon/Pictos              | Total   |
+|-------------------------------|---------|--------------------------------|---------|
+| Health                        | 2658    | +3066 (Pictos)                 | 5724    |
+| Attack                        | 842     | +2910 (Nusaro scaling)         | 3752    |
+| Speed                         | 1306    | +270 (Pictos)                  | 1576    |
+| Defence                       | 182     | +1534 (Pictos)                 | 1716    |
+| Critical Rate                 | 29%     | —                              | 29%     |
 
-### Combat Stats (with Pictos)
+*Attack figure based on current Nusaro. Will change after Joyaro switch and respec.*
 
-| Stat      | Value  |
-|-----------|--------|
-| Health    | 5892   |
-| Attack    | 3570   |
-| Speed     | 1163   |
-| Defence   | 1307   |
+### Pictos Breakdown
 
-*With Recovery (Health +2000, Defence +324), Anti-Burn (Health +1602, Defence +801), Energising Turn (Speed +270). Confirmed from overview file. Crit not listed — not a priority stat for Monoco.*
+| Pictos          | Level | Health  | Defence | Speed | Effect                              |
+|-----------------|-------|---------|---------|-------|-------------------------------------|
+| Anti-Freeze     | 21    | +1464   | +733    | —     | Immune to Freeze                    |
+| Anti-Burn       | 22    | +1602   | +801    | —     | Immune to Burn                      |
+| Energising Turn | 14    | —       | —       | +270  | +1 AP on turn start. Lumina free (20 LP saving). |
 
----
+-----
 
 ## Weapons
 
-### Current
-- **Name:** Nusaro (10) — upgrading to 20
-- **Scaling:** B Agility, C Vitality
-- **Notes:** Level 4: [unconfirmed — Claude stated "take no damage from counterattacks" in Part 1; not confirmed by Matt; treat as unverified]. Level 10: [unconfirmed — Claude stated "perfect parries advance Bestial Wheel +2" in Part 1; not confirmed; treat as unverified]. Level 20: +1 AP per mask change (confirmed from community sources). **Upgrade to 20 is top priority.**
+### Current (in use)
+- **Name:** Nusaro (20)
+- **Scaling:** Agility A, Vitality B
+- **Notes:** Level 4: Parries increase Bestial Wheel by 1; taking damage resets the Bestial Wheel. Level 10: Upgraded Skills deal 30% more damage. Level 20: +1 AP on Mask change. Nusaro now confirmed at level 20 — upgrade complete.
 
-### Next
-- **Name:** (none — hold Nusaro to Level 20, then Joyaro post-game)
+### Endgame (switch to when ready)
+- **Name:** Joyaro (25)
+- **Power:** 3221
+- **Element:** Lightning
+- **Scaling:** Agility A, Defence B
+- **Source:** Ultimate Sakapatate (Endless Night Sanctuary, level 25) — already obtained. Also drops from Flying Manor Lampmaster; purchasable from River of Life merchant.
+- **Notes:** Level 4: Start battle in Almighty Mask. Level 10: 20% increased damage for each consecutive turn without taking damage, stacks up to 5×. Level 20: Break damage doubled while in Almighty Mask. Almighty start is strong opener; Level 20 fires again whenever Monoco returns to Almighty Mask. Requires respec from current Luck allocation to Agility 99 + Defence 99.
 
-### Endgame
-- **Name:** Joyaro (level 28)
-- **Source:** Flying Manor Lampmaster (post-game)
-- **Recommended level:** Post-game (Level 80+)
-- **Scaling:** [unconfirmed]
-- **Notes:** Drops at Level 28. Resplendent Catalysts cap at Level 19 — no resource overlap with Nusaro upgrade. Abilities not confirmed in transcript.
+### Available weapons
+Ballaro (20), Fragaro (15), Grander (21), Joyaro (25), Monocaro (10), Urnaro (20)
 
 ### Rejected
-**Rejected — Current slot**
-- **Monocaro:** Level 4 starts in Balanced Mask — caused rotation desync (Chalier Combo 7 AP on Turn 1 unaffordable). Replaced by Nusaro in Part 2.
-- **Grandaro (level 21) / Ballaro (level 20):** Higher level but wrong scaling for Agility/Vitality build. Community confirms Nusaro is correct.
+- **Monocaro:** Starts in Balanced Mask — caused rotation desync (Chalier Combo 7 AP on Turn 1 unaffordable).
+- **Nusaro as endgame weapon:** Correct endgame weapon is Joyaro.
 
----
+-----
 
 ## Pictos
 
@@ -139,30 +137,34 @@ Total paid LP: 86 (core, minus Energising Turn FREE) + 20 (character-specific) =
 
 ## Skills
 
-**Currently equipped (6):** Potier Energy, Stalact Punches, Pelerin Heal, Abbest Wind, Moissonneuse Vendange, Chalier Combo
+**Currently equipped (6):** Abbest Wind, Stalact Punches, Moissonneuse Vendange, Chalier Combo, Potier Energy, Pelerin Heal
+
+**Target loadout (reserve team break + AP role):** Potier Energy, Stalact Punches, Abbest Wind, Moissonneuse Vendange, Portier Crash, Chalier Combo
 
 **Abbest Wind cannot be removed** — essential for wheel cycling and free second turn on Agile Mask.
 
 | Skill                 | AP Cost        | Equipped | Wheel | Mask     | Notes                                                                                                                                                       |
 |-----------------------|----------------|----------|-------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Potier Energy         | 4              | ✅       | +6    | Caster   | Gives 1–3 AP to all allies (+1 on Caster Mask = 2–4 AP). Core team AP refill.                                                                              |
-| Stalact Punches       | 4              | ✅       | +4    | Heavy    | 4-hit medium Ice damage; HIGH Break damage (fills Break bar). Only skill explicitly labelled high break damage. Enables Verso's Perfect Break.              |
-| Pelerin Heal          | 5              | ✅       | +3    | Caster   | Applies Regen to all allies; on Caster Mask also heals 40% HP. Does NOT remove status effects.                                                              |
+| Stalact Punches       | 4              | ✅       | +4    | Heavy    | 4-hit medium Ice damage; HIGH Break damage (fills Break bar). Only skill explicitly labelled high break damage.                                             |
 | Abbest Wind           | 2 (0 on Agile) | ✅       | +2    | Agile    | 1-hit low Physical; plays second turn immediately on Agile Mask (0 AP). Essential for wheel cycling. Cannot be removed.                                     |
-| Moissonneuse Vendange | 3              | ✅       | +3    | Balanced | 3-hit high damage; can Break. Obtained by defeating a Moissonneuse in Visages — unrelated to the Vale bosses.                                              |
-| Chalier Combo         | 7              | ✅       | +3    | Balanced | 6-hit high Physical damage; increased damage on Balanced Mask. No conditionals. Community-verified high damage option.                                      |
+| Moissonneuse Vendange | 3              | ✅       | +3    | Balanced | 3-hit high damage; can Break (triggers Break — pairs with Stalact Punches as filler).                                                                       |
+| Chalier Combo         | 7              | ✅       | +3    | Balanced | 6-hit high Physical damage; increased damage on Balanced Mask.                                                                                              |
+| Pelerin Heal          | 5              | ✅       | +3    | Caster   | Applies Regen to all allies; on Caster Mask heals 40% HP. **Drop for Portier Crash** — Lune covers healing in reserve team.                                |
+| Portier Crash         | 8              | ❌       | +5    | Heavy    | High Physical AoE, 1 hit. Can Break. Heavy Mask: increased damage. AoE break specialist. Add when building reserve team.                                   |
+| Évêque Spear          | 6              | ❌       | +3    | Heavy    | High single target Earth damage. Applies Powerless for 3 turns. Heavy Mask: increased damage. Situational debuff option.                                    |
 
----
+-----
 
 ## Gradient Skills
 
-| Gradient Skill | Gradient Cost | Acquired | Notes                                   |
-|----------------|---------------|----------|-----------------------------------------|
-| [unconfirmed]  | 1             | [?]      | Details not confirmed — verify in game. |
-| [unconfirmed]  | 2             | [?]      | Details not confirmed — verify in game. |
-| [unconfirmed]  | 3             | [?]      | Details not confirmed — verify in game. |
+| Gradient Skill | Gradient Cost | Acquired | Notes                                                                                                                        |
+|----------------|---------------|----------|------------------------------------------------------------------------------------------------------------------------------|
+| Mighty Strike  | 1             | ✅       | High single-target damage, 2 hits. Deals double damage if target is stunned. Goes to Almighty Mask.                         |
+| Sanctuary      | 2             | ✅       | Gives 2 Shields and applies Regen to all allies for 3 turns. Strong reserve team survivability.                             |
+| Break Point    | 3             | ✅       | Extreme single-target Lightning damage, 1 hit. Fills Break bar AND triggers Break simultaneously. Instant break on demand.  |
 
----
+-----
 
 ## Build Options
 
@@ -184,14 +186,12 @@ Total paid LP: 86 (core, minus Energising Turn FREE) + 20 (character-specific) =
 
 ## Open Questions
 
-- **Nusaro Level 4 and Level 10 abilities:** Stated in Part 1 but not confirmed by Matt. Treat as unverified until checked in game or wiki.
-- **Joyaro abilities:** Drops at Level 28 from Flying Manor Lampmaster. Specific abilities not confirmed in transcript.
-- **Anti-Burn Pictos exact effect:** Stats confirmed; effect on Burn status not detailed in transcript.
-- **Moissonneuse Vendange source:** Obtained by defeating a Moissonneuse in Visages. Unrelated to the Vale bosses.
-- **Chalier Combo AP cost:** Confirmed Balanced Mask, 6-hit high Physical, +3 wheel. AP cost not explicitly stated in transcript.
-- **Évêque Spear details:** Matt mentioned liking it from solo battles. Effect, AP cost, mask not confirmed.
+- **Joyaro switch timing:** Obtained. Switch when ready — requires respec (Agility 99, Defence 99, Vitality 18).
+- **Reserve team optimisation:** Lune as DPS + healing, Monoco as break + AP flow — roles agreed, full build optimisation deferred.
+- **Portier Crash in rotation:** Wheel movement +5 (Heavy Mask). Two Heavy skills (Stalact Punches +4, Portier Crash +5) in loadout — monitor wheel impact in practice.
+- **Évêque Spear:** Available but not equipped. Situational debuff (Powerless 3 turns) — worth having for specific boss fights.
 
----
+-----
 
 ## Errors to Avoid
 

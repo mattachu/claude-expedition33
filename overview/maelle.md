@@ -8,9 +8,9 @@
 
 - **Primary role:** Main DPS
 - **Party position:** Endgame main team (Maelle / Sciel / Verso); reserve during Act 3 levelling
-- **Synergies:** Sciel's Fortune's Fury doubles Maelle's damage; Verso's Marking Shot + Maelle's Rewarding Mark Lumina generate AP return; Burn from Lune enables Swift Stride entry and Breaking Burn multiplier
+- **Synergies:** Sciel's Fortune's Fury doubles Maelle's damage; Verso's Marking Shot + Maelle's Rewarding Mark Lumina generate AP return; Burn from Lune or Verso (Corpeso) enables Swift Stride entry and Breaking Burn multiplier; Burning Canvas damage scales with burn stacks on target — synergises with Corpeso's base attack applying 2 burn per Rank
 
----
+-----
 
 ## Mechanics
 
@@ -32,11 +32,15 @@ Maelle's central system is **stances**. She starts each battle in Stanceless (un
 - Medalum Level 20: Burn deals double damage while in Virtuose
 - Entering Virtuose triples the damage of follow-up skills (e.g. Sword Ballet deals 3× damage after Gustave's Homage switches to Virtuose)
 
-Lithum (endgame weapon) changes the entry mechanic: re-enters Virtuose after every successful counterattack (repeatable), does not remove Mark when hitting in Virtuose, and grants a free Shell charge on leaving Virtuose.
+Lithum (endgame weapon) changes the entry mechanic: re-enters Virtuose after every successful counterattack (repeatable — **note: sources conflict on whether this is Level 4 or Level 10; verify on equipping**), does not remove Mark when hitting in Virtuose (Level 10 or 4 — verify), and grants a free Shell charge on leaving Virtuose (Level 20).
 
-Stendhal is the Virtuose nuke — can one-shot Alicia in The Reacher solo fight.
+Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches to Stanceless, applies Defenceless to Maelle herself. Nerfed 40% in Patch 1.2.3 — no longer guaranteed to one-shot Alicia.
 
----
+**Burn-stacking:** Burning Canvas (5 AP, switches to Offensive, high Void damage + 1 burn per hit) deals increased damage for each burn stack on target. Stalum weapon applies self-burn for a damage multiplier. Corpeso (Verso's weapon) applies 2 burn per Rank on base attack — synergises to stack burn quickly before Maelle fires Burning Canvas.
+
+**Breaking Rules:** 3 AP, switches to Offensive, destroys all shields on target, gains 1 AP per shield destroyed. **If target is Defenceless, grants a second turn.**
+
+-----
 
 ## Current Stats
 
@@ -44,143 +48,189 @@ Stendhal is the Virtuose nuke — can one-shot Alicia in The Reacher solo fight.
 
 | Attribute | Value | Priority  | Reason                                                                                           |
 |-----------|-------|-----------|--------------------------------------------------------------------------------------------------|
-| Level     | 64    | —         |                                                                                                  |
+| Level     | 75    | —         |                                                                                                  |
 | Agility   | 99    | Primary   | Scales Speed, Attack, and Defence stat simultaneously                                            |
-| Defence   | 79    | Secondary | Contributes ~0.18% crit per point; serves dual purpose despite being half as efficient as Luck   |
-| Luck      | 7     | Minimal   | Medalum does not scale off Luck; would be primary only if using a Luck-scaling weapon            |
-| Vitality  | 7     | Minimal   | Medalum does not scale off Vitality                                                              |
+| Defence   | 99    | Secondary | Contributes ~0.18% crit per point; serves dual purpose despite being half as efficient as Luck   |
+| Luck      | 20    | Minimal   | Medalum/Lithum do not scale off Luck primarily                                                   |
+| Vitality  | 7     | Minimal   | Weapon does not scale off Vitality                                                               |
 | Might     | 0     | None      | No benefit for this build                                                                        |
 
-### Combat Stats (without Pictos)
+### Combat Stats (with Pictos — Burning Break 21, Gradient Break 25, Sniper 23)
 
-| Stat                            | Value              |
-|---------------------------------|--------------------|
-| Health                          | 1467               |
-| Base Attack (stat only)         | [unconfirmed]      |
-| Attack (incl. weapon scaling)   | 1819               |
-| Speed                           | 893                |
-| Defence                         | 565                |
-| Critical Rate                   | 25%                |
+| Stat                          | Base    | From weapon/Pictos         | Total  |
+|-------------------------------|---------|---------------------------|--------|
+| Health                        | 1772    | +1541 (Pictos)            | 3313   |
+| Attack                        | 894     | +1166 (Medalum scaling)   | 2060   |
+| Speed                         | 997     | +959 (Pictos)             | 1956   |
+| Defence                       | 729     | —                         | 729    |
+| Critical Rate                 | 34%     | +65% (Pictos)             | 99%    |
 
-*1819 is the correct combined Attack figure (base stat + Medalum weapon scaling contribution). Base attack stat without weapon contribution is unconfirmed. When switching to Lithum, record new weapon scaling contribution separately to verify improvement.*
+*When switching to Lithum, record new weapon scaling contribution separately to verify improvement over Medalum's 1166.*
 
-### Combat Stats (with Pictos)
+### Pictos Breakdown
 
-| Stat          | Value  |
-|---------------|--------|
-| Health        | ~3120  |
-| Attack        | 1819   |
-| Speed         | ~1055  |
-| Defence       | 565    |
-| Critical Rate | ~65%   |
+| Pictos           | Level | Health | Speed | Crit  | Other |
+|------------------|-------|--------|-------|-------|-------|
+| Burning Break    | 21    | +1541  | —     | +24%  | Burning Break Lumina free |
+| Gradient Break   | 25    | —      | +424  | +28%  | Gradient Break Lumina free |
+| Sniper           | 23    | —      | +529  | +13%  | Sniper Lumina free |
 
-*Pictos bonuses added: Second Chance (+1107 Health, +8% Crit), Dead Energy I (+162 Speed, +17% Crit), Piercing Shot (+546 Health, +15% Crit). Totals approximate — exact combined figure not confirmed in transcript.*
-
----
+-----
 
 ## Weapons
 
 ### Current
 - **Name:** Medalum (16)
-- **Scaling:** B Defence, C Agility
-- **Notes:** Was bugged pre-patch (double Virtuose damage). Patch removed the bug — now described as "mid weapon." Level 4: start battle in Virtuose Stance. Level 10: Burn doubled in Virtuose. Level 20: Burn deals double damage in Virtuose. Do not upgrade further; replace with Lithum after The Reacher.
-
-### Next
-- **Name:** (none — skip straight to Lithum)
+- **Scaling:** Defence + Agility
+- **Power:** 1166
+- **Notes:** Level 4: Start battle in Virtuose Stance. Level 10: Burn doubled in Virtuose. Level 20: Burn deals double damage in Virtuose. Was bugged pre-patch (double Virtuose damage). Patch removed the bug — now "mid weapon." Do not upgrade further; replace with Lithum after The Reacher.
 
 ### Endgame
 - **Name:** Lithum (level 21 when obtained)
 - **Source:** The Reacher (Maelle solo fight, must complete before Renoir)
-- **Recommended level:** 75–80
 - **Scaling:** Defence + Agility (same as Medalum — no respec needed)
-- **Notes:** Re-enters Virtuose on every successful counterattack. Does not remove Mark when hitting in Virtuose (synergises with Rewarding Mark + Marking Shots). Grants free Shell charge on leaving Virtuose. Strictly better than Medalum for parry-competent players.
+- **Notes:** Re-enters Virtuose on every successful counterattack. Does not remove Mark when hitting in Virtuose. Grants free Shell charge on leaving Virtuose. **Exact level order of abilities conflicts between sources — verify in game on equipping.**
 
-### Future Options *(post-endgame only)*
-- **Facesum:** From Chromatic Boucheclier (Isle of the Eyes). Burn-stacking synergy. Scaling and abilities not confirmed — verify before prioritising.
-- **Melarum:** From Old Lumiere (post-Renoir). Mentioned in guides as better than Medalum post-Cheater. Scaling not confirmed.
-- **Glaisum:** From Chromatic Glaise (Sky Island). Detail thin.
-- **Dansum:** From Chromatic Danseuse (Old Lumiere). Detail thin.
+### Also obtained (not in active use)
+| Weapon        | Level | Element  | Scaling          | Notes                                                                                          |
+|---------------|-------|----------|------------------|------------------------------------------------------------------------------------------------|
+| Stalum        | 23    | Fire     | Defence A, Luck B | L4: Apply Burn to self on turn start; +10% damage per self Burn stack. L10: Base attack applies 2 Burn. L20: Defensive stance receives Heal instead of Burn damage. Core weapon for burn-stacking build. |
+| Glaisum       | 23    | Physical | Defence A, Agility B | L4: Allies recover 20% health on switching to Virtuose. L10: Shell on leaving Virtuose. L20: Cleanse self Status Effects on switching to Virtuose. High power (3461). Same scaling as Medalum/Lithum — no respec. More defensive/supportive than Lithum; ally heal useless in solo. |
+| Melarum       | 10    | —        | —                | Source unknown — remove "Old Lumiere post-Renoir" claim from previous notes.                   |
+| Barrier Breaker | 15  | —        | —                | Details not confirmed.                                                                         |
+| Battlum       | 11    | —        | —                | Details not confirmed.                                                                         |
+| Brulerum      | 15    | —        | —                | Details not confirmed.                                                                         |
+| Chalium       | 13    | —        | —                | Details not confirmed.                                                                         |
+| Chantenum     | 13    | —        | —                | Details not confirmed.                                                                         |
+| Duenum        | 7     | —        | —                | Details not confirmed.                                                                         |
+| Jarum         | 13    | —        | —                | Details not confirmed.                                                                         |
+| Maellum       | 2     | —        | —                | Details not confirmed.                                                                         |
+| Plenum        | 7     | —        | —                | Details not confirmed.                                                                         |
+| Sekarum       | 5     | —        | —                | Details not confirmed.                                                                         |
+| Tissenum      | 13    | —        | —                | Details not confirmed.                                                                         |
+| Verenum       | 15    | —        | —                | Details not confirmed.                                                                         |
+| Volesterum    | 16    | —        | —                | Details not confirmed.                                                                         |
 
-### Rejected
-**Rejected — Current slot**
-- No alternatives evaluated at current stage; Medalum → Lithum path confirmed.
-
----
+-----
 
 ## Pictos
 
-| Slot | Pictos        | Stat Bonus                  |
-|------|---------------|-----------------------------|
-| 1    | Second Chance | Health +1107, Crit +8%      |
-| 2    | Dead Energy I | Speed +162, Crit +17%       |
-| 3    | Piercing Shot | Health +546, Crit +15%      |
+### Current (party loadout)
 
-**Notes:** Second Chance — only one character can hold at a time; works once per battle. Maelle holds it by default; moved temporarily to Verso for his solo fights, then returned. Piercing Shot tradeoff: free-aim shots no longer break shields — shield breaking delegated to skills.
+| Slot | Pictos        | Level | Stat Bonus                        | Notes                        |
+|------|---------------|-------|-----------------------------------|------------------------------|
+| 1    | Burning Break | 21    | Health +1541, Crit +24%           | Burning Break Lumina free    |
+| 2    | Gradient Break| 25    | Speed +424, Crit +28%             | Gradient Break Lumina free   |
+| 3    | Sniper        | 23    | Speed +529, Crit +13%             | Sniper Lumina free           |
 
----
+*Cheater equipped via Lumina (40 LP) rather than Pictos slot.*
+
+### Solo loadout (The Reacher)
+Borrow from Verso (who is not in party):
+- Slot 1: Cheater (24) — Health +1198, Speed +400. Frees 40 LP from Lumina.
+- Slot 2: Second Chance (16) — Health +1106, Crit +8%. Revival once per battle.
+- Slot 3: Gradient Break (25) — Speed +424, Crit +28%. Chosen over Burning Break for speed advantage vs Alicia's Rush phase.
+
+**Solo stats (estimated):** Health ~4076, Speed ~1821, Crit ~70%
+
+**Note:** Second Chance upgrade (level 31) exists but requires Création in Renoir's Drafts — post-game only. Level only affects stat bonuses, not the revival effect.
+
+-----
 
 ## Lumina
 
 ### LP Budget
-- **Current capacity:** 112 LP
-- **Expansion cost:** Paid 7 Colour of Lumina to reach 112 LP (from base 105)
+- **Current capacity:** 158 LP
+- **Remaining Colour of Lumina:** 146 available (1 Colour = 1 LP permanently)
 
-### Core Suite
-*Shared across all three main party members — listed here for reference.*
-Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energising Parry (15), Energising Start I (5), Dodger (1), Breaker (10), Breaking Burn (5), Marking Shots (3), Dead Energy I (2), Dead Energy II (2), Critical Break (5), Rewarding Mark (5), Burning Shots (3)
-**Total: 106 LP**
-
-*Note: Maelle's Lumina loadout predates the core suite standardisation — it overlaps substantially but is not identical. See character-specific table below.*
-
-### Character-Specific
+### Current Loadout (149 LP used, 9 LP spare)
 
 | Lumina              | LP  | Notes                          |
 |---------------------|-----|--------------------------------|
-| Energising Turn     | 20  |                                |
+| Base Shield         | 20  |                                |
+| Breaker             | 10  |                                |
+| Breaking Burn       | 5   |                                |
+| Breaking Counter    | 3   | 50% Break damage on Counterattack. Situational solo. |
+| Cheater             | 40  | Swap to Pictos for solo fight  |
+| Critical Break      | 5   |                                |
+| Dead Energy I       | 2   |                                |
+| Dead Energy II      | 2   |                                |
+| Dodger              | 1   |                                |
 | Energising Parry    | 15  |                                |
 | Energising Start I  | 5   |                                |
-| Combo Attack I      | 10  |                                |
-| Breaker             | 10  |                                |
-| Critical Break      | 5   |                                |
-| Critical Burn       | 5   |                                |
-| Energising Break    | 3   |                                |
-| Rewarding Mark      | 5   |                                |
-| Dodger              | 1   |                                |
-| Healing Parry       | 5   | 3% heal on parry — not 10%     |
-| Energising Attack I | 10  |                                |
-| Burning Shots       | 3   |                                |
+| Energising Turn     | 20  |                                |
 | Marking Shots       | 3   |                                |
-| Dead Energy II      | 2   |                                |
-| Breaking Burn       | 5   |                                |
-| Teamwork            | 5   |                                |
-| Dead Energy I       | —   | FREE from Dead Energy I Pictos |
-| Piercing Shot       | —   | FREE from Piercing Shot Pictos |
-| Second Chance       | —   | FREE from Second Chance Pictos |
+| Painted Power       | 5   |                                |
+| Rewarding Mark      | 5   |                                |
+| Teamwork            | 5   | Passive damage bonus when whole team alive — useless solo |
+| Burning Shots       | 3   |                                |
+| Burning Break       | —   | FREE from Burning Break Pictos |
+| Gradient Break      | —   | FREE from Gradient Break Pictos |
+| Sniper              | —   | FREE from Sniper Pictos        |
 
-### Notes
-Total paid LP: 112. Budget: 112 LP exactly — no spare. Do not add Lumina without removing equivalent LP first. Always recount before finalising any loadout change (LP overrun error occurred in Chat 1).
+### Solo Build Swap (The Reacher)
 
-**Solo fight variant (The Reacher):** Swap in Solo Fighter (1), Last Stand Critical (3), Accelerating Last Stand (3), Empowering Last Stand (3), Protecting Last Stand (3) = 13 LP. Must remove 13 LP of standard Lumina before The Reacher fight. Restore after.
+Remove from standard loadout:
+- Cheater (40) — swap to Pictos
+- Teamwork (5) — useless solo (whole-team bonus)
+- Breaking Counter (3) — situational
+- Dead Energy I (2) — AP on enemy death; fires once at best in solo boss
+- Dead Energy II (2) — same
+- **Total freed: 52 LP** (40 from Cheater swap + 12 from removals)
 
----
+Add for solo:
+- Last Stand suite: Solo Fighter (1), Last Stand Critical (3), Accelerating Last Stand (3), Empowering Last Stand (3), Protecting Last Stand (3) = **13 LP**
+- Recovery (10) — 10% health per turn start; strong solo healer substitute
+- Energising Attack I (10) — +1 AP per base attack; important for solo AP generation without teammates
+- **Total added: 33 LP**
+
+Net change: freed 52, added 33. 19 LP spare after swap (within 158 LP budget).
+
+**Note:** Recovery Lumina costs 10 LP. Consider adding to Core Suite for party play too — worth discussing.
+
+-----
 
 ## Skills
 
-**Currently equipped (6):** Gustave's Homage, Sword Ballet, Fleuret Fury, Percée, Swift Stride, Fencer's Flurry
+**Currently equipped (6):** Fleuret Fury, Percée, Phantom Strike, Gustave's Homage, Stendhal, Sword Ballet
 
-*Stendhal is known and important but not yet equipped. Slot to displace when added is undecided — see Open Questions.*
+### Active Skills
 
 | Skill            | AP Cost           | Equipped | Notes                                                                                                                                              |
 |------------------|-------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Gustave's Homage | 8                 | ✅       | 8-hit extreme physical damage; switches TO Virtuose Stance. Sword Ballet damage is tripled by the Virtuose entry.                                  |
-| Sword Ballet     | 9                 | ✅       | 5-hit extreme single-target damage, weapon element; crits deal double. Primary break-window damage — greatly amplified after entering Virtuose.    |
+| Gustave's Homage | 8                 | ✅       | 8-hit extreme physical damage; switches TO Virtuose Stance. Sword Ballet damage tripled by the Virtuose entry.                                     |
+| Sword Ballet     | 9                 | ✅       | 5-hit extreme single-target, weapon element; crits deal double. Primary Virtuose damage — greatly amplified after entering Virtuose.               |
 | Fleuret Fury     | 6                 | ✅       | 3-hit high single-target physical; stays in Virtuose if already there; can Break.                                                                  |
 | Percée           | 5 (2 in Virtuose) | ✅       | Increased damage to Marked. 2 AP in Virtuose but leaves Virtuose after — one use per Virtuose window.                                              |
-| Swift Stride     | 3                 | ✅       | Low physical; switches to Virtuose if target burning; regains 0–2 AP. Mid-fight Virtuose entry point.                                              |
-| Fencer's Flurry  | 4                 | ✅       | 1-hit medium AoE; applies Defenceless 1 turn. Best trash clear — do not drop. Swapped in for trash fights, out for bosses.                        |
-| Stendhal         | 4                 | ❌       | Virtuose nuke. Can one-shot Alicia in The Reacher. Equip before that fight — will displace one of the above skills (undecided which).              |
+| Phantom Strike   | 4                 | ✅       | 4-hit very high Void AoE; switches to Defensive stance; gives +35% of a Gradient Charge. Defensive stance (+1 AP per dodge/parry) useful solo.   |
+| Stendhal         | 8                 | ✅       | Extreme single-target Void damage, 1 hit; switches to Stanceless; removes self-shields; applies Defenceless to self. Nerfed 40% in Patch 1.2.3.  |
 
----
+### Known but not equipped
+
+| Skill            | AP Cost | Notes                                                                                                                                                              |
+|------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Breaking Rules   | 3       | Switches to Offensive; destroys all target shields; gains 1 AP per shield destroyed. **If target is Defenceless: grants a second turn.**                          |
+| Burning Canvas   | 5       | Switches to Offensive; high Void damage + 1 burn per hit; damage increased for each burn stack on target. Key to burn-stacking build.                             |
+| Degagement       | 2       | Switches to Offensive; low Fire damage; target becomes weak to Fire.                                                                                               |
+| Égide            | 3       | Switches to Defensive; protects allies by taking damage in their place for 2 turns.                                                                                |
+| Fencer's Flurry  | 4       | Switches to Offensive; medium AoE; applies Defenceless 1 turn. Was trash clear before Phantom Strike.                                                             |
+| Guard Up         | 3       | Switches to Offensive; Shell buff for allies.                                                                                                                      |
+| Last Chance      | 1       | Switches to Virtuose; reduces self-health to 1; refills all AP. High-risk high-reward; community standard for solo builds.                                         |
+| Mezzo Forte      | 1       | Reapply current stance; give 2–4 AP. Free AP generation in Virtuose — strong solo utility.                                                                         |
+| Momentum Strike  | 7       | Switches to Defensive; high damage; costs 4 AP in Virtuose.                                                                                                        |
+| Offensive Switch | 1       | Switches to Offensive; low damage; applies Defenceless to enemy.                                                                                                   |
+| Payback          | 9       | Switches to Defensive; very high physical damage; reduced AP cost for each attack parried since last turn; can Break.                                              |
+| Rain of Fire     | 5       | Switches to Offensive; medium Fire damage + 3 burn per hit, 2 hits; applies 2 more burn per hit if in Defensive.                                                  |
+| Spark            | 3       | Switches to Defensive; low Fire damage + 3 burn; applies 2 more burn if in Offensive.                                                                              |
+| Swift Stride     | 3       | Low physical; switches to Virtuose if target burning; regains 0–2 AP. Mid-fight Virtuose entry point.                                                              |
+
+### Solo skill loadout recommendation (The Reacher)
+
+Community standard core three: Stendhal, Phantom Strike, Last Chance.
+Remaining 3 slots: Gustave's Homage (Virtuose entry), Fleuret Fury (sustained Virtuose, can Break), Mezzo Forte (AP generation in Virtuose).
+Alternative: swap Fleuret Fury for Sword Ballet if preferring burst over Break utility.
+
+-----
 
 ## Gradient Skills
 
@@ -190,39 +240,42 @@ Total paid LP: 112. Budget: 112 LP exactly — no spare. Do not add Lumina witho
 | Phoenix Flame   | 2             | ✅       | Applies 10 Burn to all enemies; revives all allies with 50–70% Health; then changes to Offensive Stance.                                      |
 | Gommage         | 3             | ❌       | Unlocked at Relationship Level 7 (after The Reacher — choose "Truth"). Kills weak targets; otherwise extreme Void damage 1 hit, then changes to Virtuose Stance. Required for Renoir fight. |
 
----
+-----
 
 ## Build Options
 
-| Build Name               | Role      | Key Skills                                                                                        | Key Lumina                                                     | Status  | Notes                                                                                                                                                                                                                                                                                                                                                                 |
-|--------------------------|-----------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Standard DPS             | Main DPS  | Gustave's Homage, Sword Ballet, Fleuret Fury, Percée, Swift Stride, Fencer's Flurry               | Full 112 LP loadout                                            | Current | Stendhal not yet equipped; will displace one skill. Two boss-fight paths: (A) Cheater path — Gustave’s Homage → Percée burst, exits Virtuose, strong with pre-applied Mark (Verso’s Marking Shot); (B) Intervention path — Gustave’s Homage → Fencer’s Flurry → Sword Ballet next turn, stays in Virtuose. Cheater path requires Cheater Lumina (see Open Questions). |
-| Solo (The Reacher)       | Solo DPS  | Stendhal as primary nuke in Virtuose                                                              | Swap in Last Stand suite (13 LP)                               | Planned | Must revert loadout after fight                                                                                                                                                                                                                                                                                                                                       |
-| Cheater Lumina (planned) | Main DPS  | As Standard DPS + Cheater Lumina                                                                  | Dead Energy I Pictos → Energising Turn Pictos; +22 LP capacity | Planned | Contingent on Energising Turn triggering on Cheater turn. See Open Questions.                                                                                                                                                                                                                                                                                         |
+| Build Name         | Role      | Key Skills                                                                    | Key Lumina                       | Status  | Notes                                               |
+|--------------------|-----------|-------------------------------------------------------------------------------|----------------------------------|---------|-----------------------------------------------------|
+| Standard DPS       | Main DPS  | Gustave's Homage, Sword Ballet, Fleuret Fury, Percée, Phantom Strike, Stendhal | Full 158 LP loadout (149 used)  | Current | Cheater via Lumina (40 LP)                          |
+| Solo (The Reacher) | Solo DPS  | Stendhal, Phantom Strike, Last Chance, Gustave's Homage, Fleuret Fury, Mezzo Forte | Swap Cheater to Pictos; add Last Stand suite + Recovery + Energising Attack I; remove Teamwork/Breaking Counter/Dead Energy | Planned | Borrow Cheater Pictos + Second Chance from Verso |
+| Burn-stacking      | Burn DPS  | Burning Canvas as primary; Stalum weapon; Swift Stride for Virtuose entry    | Investigate separately           | Future  | Synergises with Corpeso (Verso), Kralim (Lune)      |
 
----
+-----
 
 ## Key Decisions
 
 - **Lithum over all alternatives:** Strictly better than Medalum for parry-competent players. Same scaling = no respec. The Reacher must be completed before Renoir — choose "Truth" for Gustave resurrection path and Relationship Level 7.
-- **Fencer's Flurry retained:** Claude recommended dropping it in Chat 1 (error). Corrected: it is Maelle's best AoE for trash clearing and should stay in the loadout, swapped in for trash fights.
-- **Agility primary, Defence secondary:** Agility scales Speed + Attack + Defence simultaneously. Defence retained (not zeroed) because it contributes to crit rate (~0.18% per point), serving dual purpose despite being half as efficient as Luck per point.
-- **Medalum not further upgraded:** Post-patch it is a "mid weapon." Upgrade investment not justified when Lithum replaces it at Level 75–80.
+- **Glaisum as Lithum alternative:** Same scaling as Medalum/Lithum (Defence + Agility), no respec, higher base power (3461). More defensive/supportive (ally heals, self-cleanse) vs Lithum's offensive (Mark persistence, Virtuose on Counterattack). Lithum preferred for standard DPS build; Glaisum worth considering if survivability becomes a priority.
+- **Stalum for burn-stacking:** Core weapon for the burn-stacking build path. Not current priority but available at level 23 when ready.
+- **Cheater via Lumina:** All three endgame team members use Cheater via Lumina (40 LP) rather than Pictos. For solo fights, swap Cheater to Pictos to free 40 LP.
+- **Phantom Strike over Fencer's Flurry:** Phantom Strike replaced Fencer's Flurry. Better damage, adds Defensive stance utility and Gradient generation. AoE function preserved.
+- **Solo Lumina build:** Swap Cheater to Pictos + borrow Second Chance from Verso + remove Teamwork/Breaking Counter/Dead Energy I+II + add Last Stand suite + Recovery + Energising Attack I.
+- **Gradient Break over Burning Break for solo:** For The Reacher, Gradient Break chosen for speed advantage (1821 vs 1397) to handle Alicia's Rush phase at 25% HP. Second Chance covers survivability.
 
----
+-----
 
 ## Open Questions
 
-- **Which skill does Stendhal replace?** When equipping Stendhal before The Reacher, one current skill must be dropped. Not yet decided.
-- **Maelle's relationship level at end of Chat 1:** Must be at Level 5 for The Reacher to unlock.
-- **Base Attack stat (without weapon scaling):** Not confirmed. Record separately when switching to Lithum to verify improvement.
-- **Exact stats with current Pictos:** Combined stat totals above are approximate — extrapolated from Pictos bonuses.
-- **Lithum level 4/10 abilities in full:** Sourced from community; not confirmed via in-game testing.
-- **Does Energising Turn trigger on Cheater-granted extra turns?** Critical for the Cheater Lumina combo: Gustave's Homage (8AP) leaves 1AP; Cheater grants extra turn; Energising Turn would give +1AP = 2AP total, enough for Percée (2AP in Virtuose). If Energising Turn does NOT trigger, Maelle has only 1AP and cannot use Percée. **Test using Verso** (already has both Cheater Pictos and Energising Turn Lumina) before committing Colour of Lumina to Maelle's Cheater Lumina build.
-- **Does Fortune's Fury boost Steeled Strike damage?** Wiki evidence suggests Fortune's Fury buff is consumed on the windup turn and wasted (buff applies to "next turn" = the wind-up, not the execution). Unconfirmed for the non-Cheater case. **Test:** apply Fortune's Fury to Verso, have him wind up Steeled Strike normally (no Cheater), compare execution damage to baseline.
-- **Cheater Lumina for Maelle — plan (pending testing above):** Swap Dead Energy I Pictos → Energising Turn Pictos (net: ~+98 Speed, −17% Crit, +18 LP freed); expand LP cap by 22 Colour of Lumina; add Cheater Lumina (40 LP). Total cost: 22 Colour of Lumina. Contingent on Energising Turn triggering on Cheater turn.
+- **Lithum ability order:** Sources conflict on whether Level 4 = Virtuose on Counterattack or Level 10. Verify in game on equipping.
+- **Maelle's relationship level:** Confirmed at Level 5. The Reacher available. Must reach Level 7 (via "Truth") to unlock Gommage.
+- **Gommage:** Not yet obtained. Unlocks after The Reacher, choosing "Truth."
+- **Melarum source:** Previously noted as "Old Lumiere post-Renoir" — this is likely wrong since you have it at level 10 pre-Renoir. Source unknown.
+- **Recovery Lumina in Core Suite:** Currently solo-only recommendation. Worth adding to core suite for 10% health/turn in party play? Costs 10 LP.
+- **Burn-stacking build:** Requires Stalum, Burning Canvas, potentially Kralim (Lune) and Corpeso (Verso). When to develop this build path?
+- **Breaking Rules second turn:** Confirmed from search: triggers on Defenseless target. Useful with Offensive Switch (1 AP, applies Defenceless) as setup. Worth exploring.
+- **Phantom Strike Gradient generation:** +35% per use — how many uses to fill a Gradient charge?
 
----
+-----
 
 ## Errors to Avoid
 
@@ -231,6 +284,12 @@ Total paid LP: 112. Budget: 112 LP exactly — no spare. Do not add Lumina witho
 - **Last Stand Lumina triggers:** Said HP-threshold triggers (below 25%). Correct: solo-fighting bonuses only — irrelevant in party fights.
 - **Percée spam in Virtuose:** 2 AP cost only applies once per Virtuose window — Maelle leaves Virtuose after using it.
 - **Gustave's Homage stance:** Switches TO Virtuose; does not keep her in Virtuose indefinitely.
-- **Breaking Rules functionality:** Does not deal Break damage. Only destroys shields (+1 AP per shield, second turn if target Defenceless). Correctly replaced by Gustave's Homage.
-- **LP overrun:** Previous calculation reached 118 LP against 112 LP budget. Always recount before finalising.
-- **Drop Fencer's Flurry:** Claude recommended dropping it in Chat 1. Incorrect — it is Maelle's best AoE for trash clearing.
+- **LP overrun:** Previous calculation reached 118 LP against 112 LP budget. Always recount before finalising. Current budget is 158 LP.
+- **Drop Fencer's Flurry:** Claude recommended dropping it in Chat 1. Incorrect at the time — it was Maelle's best AoE. Now correctly replaced by Phantom Strike.
+- **Stendhal AP cost:** Said 4 AP. Correct: 8 AP.
+- **Stendhal one-shots Alicia:** Was true pre-patch. Nerfed 40% in Patch 1.2.3 — no longer assumed.
+- **Stendhal self-Defenceless:** Stendhal applies Defenceless to Maelle herself on use. Plan accordingly.
+- **Teamwork effect:** Said it gives AP when an ally uses a skill. Correct: passive damage bonus when whole team is alive — non-functional in solo fights for a different reason than originally stated.
+- **Melarum source:** Do not assert "Old Lumiere post-Renoir" — this is likely wrong.
+
+-----

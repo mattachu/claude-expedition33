@@ -9,23 +9,29 @@
 These are in addition to the general failure modes in the startup file:
 
 - **Confabulation about game content:** Training data thin and patchy. Do not give confident answers about mechanics, routes, item availability, or missable content without searching first.
-- **Missable/sequence-locked content:** Highest-risk category. Never assert content will be available later without verifying. Default: “I’m not certain — check the wiki.” The Vale bosses incident is the clearest example of this failure mode: ChatGPT explicitly told Matt he could return to Visages after the Axon and would miss nothing. He could not. Three Vale bosses were permanently lost as a result.
+- **Missable/sequence-locked content:** Highest-risk category. Never assert content will be available later without verifying. Default: "I'm not certain — check the wiki." The Vale bosses incident is the clearest example of this failure mode: ChatGPT explicitly told Matt he could return to Visages after the Axon and would miss nothing. He could not. Three Vale bosses were permanently lost as a result.
 - **Wrong advice on record:** Previous sessions contain specific errors. Check character files before advising on that character.
 - **Recommending meta builds without checking playstyle fit:** Community recommendations often assume specific builds (e.g. Elemental Genesis). Always verify assumptions before recommending.
 - **Not simulating combat turns before recommending changes:** Abstract reasoning from tier rankings is insufficient. Always trace actual turn sequences before advising on weapon or build changes.
 - **Confabulating Lumina and skill effects:** Multiple effects described incorrectly across the session. Never assert Lumina or skill effects without verifying from a source.
 - **LP arithmetic errors:** Always verify LP point totals before finalising a loadout. Healing Counter listed as 1 LP — it is 10 LP.
 - **Accepting corrections without verification:** After repeated corrections, Claude began agreeing without independent checks. Default: acknowledge correction neutrally, flag whether independently verified.
-- **Weapon scaling and drop-level assumptions:** Charnon stated as Defence + Agility (correct is Defence + Luck). Nusaro stated as Monoco’s endgame weapon (it is Joyaro, which drops at level 28 post-game). Chevalam stated as available “right now” — correct recommended level to attempt the boss is 70–75+. Always verify weapon scaling, drop source, and recommended level before advising.
-- **Passive vs active effect interactions:** Claimed Ramasson’s passive heal triggered Energising Heal — it does not. Verify interaction type before assuming synergy.
+- **Weapon scaling and drop-level assumptions:** Charnon stated as Defence + Agility (correct is Defence + Luck). Nusaro stated as Monoco's endgame weapon (it is Joyaro, which drops at level 25 from the Ultimate Sakapatate in Endless Night Sanctuary, and also from Flying Manor Lampmaster). Chevalam stated as available "right now" — correct recommended level to attempt the boss is 70–75+. Always verify weapon scaling, drop source, and recommended level before advising.
+- **Passive vs active effect interactions:** Claimed Ramasson's passive heal triggered Energising Heal — it does not. Verify interaction type before assuming synergy.
 - **Asserting rank-jump skills without checking weapon or skill dependency:** Quick Strike jumps to Rank B only with Glaceso equipped (Level 4 ability). Paradigm Shift was claimed to jump to S Rank — it generates 1–3 AP. Rank bonuses apply ONLY at the exact rank stated, not at higher ranks. Always verify.
-- **Recommending skills the character doesn’t have:** Light Holder and End Bringer recommended for Verso across multiple summaries — he does not have them. Always confirm the character’s actual skill list before recommending.
-- **AoE vs single-target context:** Phantom Stars recommended for Verso’s solo Golgra fight — AoE is useless in 1v1. Check fight context.
+- **Recommending skills the character doesn't have:** Light Holder and End Bringer recommended for Verso across multiple summaries — he now has both, but always confirm the character's actual skill list before recommending.
+- **AoE vs single-target context:** Phantom Stars recommended for Verso's solo Golgra fight — AoE is useless in 1v1. Check fight context.
 - **Second Chance Pictos tracking:** Only one character can hold the Pictos at a time; the effect works once per battle, not repeatedly. Both constraints were forgotten at different points.
 - **Overload mechanics:** Described as giving 9 AP to spend in the same turn. Correct: AP refills for the next turn.
 - **Serpenphare difficulty:** Initially placed as Phase 2 content (level 60–70). Correct recommended level is 70–80+.
-- **Confabulated Lumina entries:** “Plentiful Harvest synergy (6)” listed as a Lumina — not a Lumina, just a description of a synergy. Auto Shell and Base Shield confused (Shell = 20% damage reduction for 3 turns; Shield = damage-blocking HP buffer, 1 per turn from Base Shield).
-- **Confirmation bias on skill recommendations:** Accepted the player’s suggested skills (Évêque Spear, Chalier Combo) without independent verification. Always research before confirming.
+- **Confabulated Lumina entries:** "Plentiful Harvest synergy (6)" listed as a Lumina — not a Lumina, just a description of a synergy. Auto Shell and Base Shield confused (Shell = 20% damage reduction for 3 turns; Shield = damage-blocking HP buffer, 1 per turn from Base Shield).
+- **Confirmation bias on skill recommendations:** Accepted the player's suggested skills (Évêque Spear, Chalier Combo) without independent verification. Always research before confirming.
+- **Flying Manor incorrectly stated as required:** Claimed Flying Manor was a mandatory story chapter that must be completed before Renoir. Correct: it is optional. The only mandatory pre-Renoir story content is The Reacher. The final boss is fought inside Lumière at the end of that dungeon — not at the Monument.
+- **Final boss location:** Said the Act 3 final fight was at the Monument. Correct: the final boss is fought inside Lumière at the end of that dungeon. The Monument fight was the Act 2 climax.
+- **Joyaro drop location:** Said Joyaro drops exclusively from Flying Manor Lampmaster post-game. Correct: also drops from Ultimate Sakapatate in Endless Night Sanctuary (level 25), and is purchasable from a River of Life merchant.
+- **Teamwork Lumina effect:** Said Teamwork gives AP when an ally uses a skill. Correct: passive damage bonus when the whole team is alive.
+- **Stendhal AP cost:** Said 4 AP. Correct: 8 AP. Also applies Defenceless to Maelle herself on use. Was nerfed 40% in Patch 1.2.3 — no longer one-shots Alicia.
+- **Gaulteram described as Act 3 best option:** Gaulteram is consensus Act 2 weapon. Community S-tier Act 3 weapons are Chevalam, Contorso, Corpeso, Simoso.
 
 -----
 
@@ -41,14 +47,28 @@ These are in addition to the general failure modes in the startup file:
   - White Nevron quests complete + Blanche reward (100× Colour of Lumina).
   - The Canvas puzzle complete (Painted Me outfit for Maelle).
   - The Chosen Path complete (Base Shield Pictos).
-  - Lune’s relationship quest complete (Sirene’s Dress / Chromatic Glissando).
-  - Verso’s solo fights complete (vs Francois, vs Monoco).
+  - Lune's relationship quest complete (Sirene's Dress / Chromatic Glissando).
+  - Verso's solo fights complete (vs Francois, vs Monoco).
   - Chromatics defeated: Abbest, Bruler, Lancelier, Orphelin, Troubadour, Luster, Glissando, Ramasseur.
   - **Vale bosses permanently missed** (Jovial Moissonneuse, Sorrowful Chapelier, Seething Boucheclier) — Axon defeated before riddle masks triggered.
   - Moissonneuse Vendange skill obtained by defeating a Moissonneuse in Visages — unrelated to the Vale bosses.
-  - Karatom quest permanently missed (requires Gustave alive).
-- **Active party:** Verso, Monoco, Sciel (levelling team)
-- **Reserve:** Maelle, Lune
+  - Karatom quest confirmed permanently unavailable (requires Gustave alive).
+- **Progress at end of Chat 4 (approx. 20 March 2026):**
+  - All characters level 72–75. Maelle and Sciel level 75; Verso level 75; Lune and Monoco level 72.
+  - Active team: Verso, Maelle, Sciel (endgame team). Cheater equipped on all three via Lumina.
+  - Sacred River complete (Monoco relationship quest, Golgra defeated).
+  - Dark Shore complete. Corpeso weapon obtained for Verso.
+  - Chromatic Gold Chevaliere defeated. Chevalam weapon obtained for Verso. Now equipped.
+  - Chromatics defeated (additional): Veilleur, Chalier, Glaise, Demineur.
+  - Bosses defeated: Grosse Tete, Frost Eveque, Ultimate Sakapatate (Endless Night Sanctuary).
+  - Joyaro obtained for Monoco (Ultimate Sakapatate drop).
+  - Sprong defeated. Cheater Pictos obtained.
+  - Maelle Relationship Level 5 — The Reacher available.
+- **Inventory:**
+  - 150 Colour of Lumina
+  - 27 Recoats
+  - 67 Chroma Catalyst, 61 Polished, 52 Resplendent, 69 Grandiose Chroma Catalyst
+- **Reserve:** Lune, Monoco
 
 -----
 
@@ -73,101 +93,118 @@ Each character has three Gradient Skills, costing 1, 2, and 3 Gradient Charges (
 
 Individual character Gradient Skills are listed in each character file. Details for most characters are not yet confirmed in transcript — placeholders are in place.
 
+### Break Mechanics
+
+There are two distinct types of Break skills:
+- **Break bar filling skills** (labelled "High Break damage"): Deal high damage to the break bar to fill it up over multiple hits. Example: Stalact Punches.
+- **Break trigger skills** (labelled "Can Break"): Land the final hit that actually triggers the Break when the bar is full. Example: Moissonneuse Vendange, Mayhem.
+
+A team typically needs both types — a filler to build the bar and a trigger to fire it. Some gradient skills combine both (e.g. Monoco's Break Point fills and triggers simultaneously).
+
+### Pictos
+
+Each Pictos item exists as a single copy in the game. Only one character can equip a given Pictos at a time. If another character wants the Lumina effect associated with a Pictos, they must equip it via Lumina at the listed LP cost — they cannot share the Pictos itself.
+
+### Attribute System
+
+Characters gain 3 attribute points per level up. Points are held in reserve and can be spent at any Flag. Points committed to an attribute are permanent unless a Recoat is used (resets all attributes and skill points to zero, returning all spent points). Attributes cap at 99 — points cannot be spent on an attribute already at 99.
+
+### Reserve Party
+
+If the main party (Verso/Maelle/Sciel) is fully wiped in a battle, the player can continue the battle using the reserve party (Lune and Monoco). This is most relevant for hard bosses. Lune and Monoco should not be stripped of all useful Pictos/Lumina — but main party optimisation takes priority for the vast majority of battles.
+
 -----
 
 ## Section 5: Party
 
-**Levelling/mid-game team:** Verso + Monoco + Sciel (targeting Golgra fight and Chromatic Gold Chevaliere)
-**Reserve:** Maelle, Lune
-**Endgame team (building toward):** Maelle + Sciel + Verso
+**Active endgame team:** Verso + Maelle + Sciel (Cheater equipped on all three via Lumina)
+**Reserve:** Lune, Monoco
 
-Character reference files
+**Speed order (intended):** Verso goes first via Chevalam Rush (Rank S at battle start). Sciel second, Maelle third. Gradient Break Pictos on Maelle has pushed her above Sciel — needs tweaking.
 
 -----
 
 ### Maelle
 
-|                               |                                                                                                               |
-|-------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Level                         | 64                                                                                                            |
-| Role                          | Primary DPS                                                                                                   |
-| Weapon                        | Medalum (16) → Lithum after The Reacher (level 75–80)                                                         |
-| Stats (no Pictos)             | Health 1467, Attack 1819, Speed 893, Defence 565, Crit 25%                                                    |
-| Attributes                    | Agility 99, Defence 79, Luck 7, Vitality 7                                                                    |
-| Key skills                    | Gustave’s Homage, Sword Ballet, Fleuret Fury, Percée, Fencer’s Flurry, Swift Stride, Stendhal (not yet equipped) |
-| Pictos                        | Second Chance, Dead Energy I, Piercing Shot                                                                   |
-| Solo Lumina set (The Reacher) | Add: Solo Fighter, Last Stand Critical, Accelerating Last Stand, Empowering Last Stand, Protecting Last Stand |
+|                               |                                                                                                     |
+|-------------------------------|-----------------------------------------------------------------------------------------------------|
+| Level                         | 75                                                                                                  |
+| Role                          | Primary DPS                                                                                         |
+| Weapon                        | Medalum (16) → Lithum after The Reacher                                                             |
+| Stats (with Pictos)           | Health 3313, Attack 2060, Speed 1956, Defence 729, Crit 99%                                         |
+| Attributes                    | Agility 99, Defence 99, Luck 20, Vitality 7                                                         |
+| Pictos                        | Burning Break (21), Gradient Break (25), Sniper (23)                                                |
+| Key skills (active)           | Fleuret Fury, Percée, Phantom Strike, Gustave's Homage, Stendhal, Sword Ballet                      |
+| Note                          | Gradient Break has pushed Maelle's Speed above Sciel — needs Pictos adjustment to restore intended turn order |
+| Solo Lumina set (The Reacher) | Swap Cheater Lumina → Cheater Pictos (from Verso); borrow Second Chance (from Verso); add Last Stand suite + Recovery + Energising Attack I; remove Teamwork, Breaking Counter, Dead Energy I+II |
 
 -----
 
 ### Lune
 
-|                   |                                                                         |
-|-------------------|-------------------------------------------------------------------------|
-| Level             | 63                                                                      |
-| Role              | Support/healer/stain DPS                                                |
-| Weapon            | Trebuchim (16) — do not replace with Colim or Choralim                  |
-| Stats (no Pictos) | Health 2282, Attack 1872, Defence 41, Speed 758, Crit 41%               |
-| Attributes        | Luck 91, Vitality 55, Agility 19, Might 16, Defence 8                   |
-| Key skills        | Wildfire, Mayhem, Crystal Crush, Healing Light, Revitalization, Rebirth |
-| Future weapon     | Kralim (from Chromatic Orphelin, already defeated — check inventory)    |
+|                     |                                                                                                              |
+|---------------------|--------------------------------------------------------------------------------------------------------------|
+| Level               | 72                                                                                                           |
+| Role                | Support/healer/stain DPS                                                                                     |
+| Weapon              | Trebuchim (25) — Power 3089, Lightning, Vitality A, Luck B                                                   |
+| Stats (with Pictos) | Health 5970, Attack 3956, Speed 839, Defence 2491, Crit 82%                                                  |
+| Attributes          | Luck 99, Vitality 71, Agility 22, Might 16, Defence 8                                                        |
+| Pictos              | Longer Shell (29), Healing Share (11), Powerful on Shell (23)                                                |
+| Key skills          | Wildfire, Terraquake, Thunderfall, Healing Light, Mayhem, Elemental Genesis                                  |
+| Lumina              | Core Suite                                                                                                   |
+| Available weapons   | Kralim (29) — future build option                                                                            |
 
 -----
 
 ### Sciel
 
-|                   |                                                                                                         |
-|-------------------|---------------------------------------------------------------------------------------------------------|
-| Level             | 61                                                                                                      |
-| Role              | Pure support                                                                                            |
-| Weapon            | Litheson (16) → upgrade to 20: +3 AP per turn when buff/debuff applied (IS her endgame weapon)          |
-| Stats (no Pictos) | Health 1314, Attack 2641, Defence 182, Speed 991, Crit 38%                                              |
-| Attributes        | Agility 99, Luck 84, Vitality 0, Might 0, Defence 0                                                     |
-| Pictos            | Base Shield, Burning Break, Survivor → final: Health 2802, Speed 1812, Crit 82%                         |
-| Key skills        | Fortune’s Fury, Intervention, Plentiful Harvest, Focused Foretell, Twilight Dance, Final Path           |
-| Lumina (110 LP)   | Core suite + Energising Heal, Healing Parry, Accelerating Heal; Base Shield + Survivor free from Pictos |
+|                     |                                                                                                              |
+|---------------------|--------------------------------------------------------------------------------------------------------------|
+| Level               | 75                                                                                                           |
+| Role                | Pure support                                                                                                 |
+| Weapon              | Litheson (20) — Power 2081, Physical, Luck A, Agility B. L4: Moon = Greater Rush all allies / Sun = Greater Slow all enemies. L10: Twilight = both. L20: +3 AP on applying Buff or Debuff, once per turn. |
+| Stats (with Pictos) | Health 3698, Attack 2975, Speed 1934, Defence 506, Crit 64%                                                  |
+| Attributes          | Agility 99, Luck 99, Defence 27                                                                              |
+| Pictos              | Base Shield (20), Recovery (20), Quick Break (25)                                                            |
+| Key skills          | Focused Foretell, Twilight Dance, Final Path, Fortune's Fury, Intervention, Plentiful Harvest                |
+| Lumina              | 159 LP total, 150 used, 9 spare; Cheater (40 LP)                                                             |
+| Note                | Litheson's Greater Rush/Slow effects have a large impact on turn order — fights without Sciel are noticeably harder |
 
 -----
 
 ### Verso
 
-|                       |                                                                                                                                                                  |
-|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Level                 | 59                                                                                                                                                               |
-| Role                  | Mid-game DPS/levelling; endgame main team DPS                                                                                                                    |
-| Weapon                | Gaulteram (12) — do not upgrade further; same scaling as Chevalam (Agility + Luck), no respec needed when swapping                                               |
-| Stats (no Pictos)     | Health 1184, Attack 1213, Defence 182, Speed 946, Crit 34%                                                                                                       |
-| Attributes            | Agility 99, Luck 69                                                                                                                                              |
-| Pictos                | Burning Death, Second Chance, Shortcut → final: Health 2291, Speed 1436, Crit 84%                                                                                |
-| Skills                | Quick Strike, Assault Zero, Strike Storm, Marking Shot, Phantom Stars, Perfect Break                                                                             |
-| Lumina (110 LP)       | Core suite; 4 LP spare. Note: Energising Attack I not appropriate for skill-focused build                                                                        |
-| Future weapon         | Chevalam (level 27, from Chromatic Gold Chevaliere, Crimson Forest) — recommended level 70–75+                                                                   |
-| Endgame skills to add | Steeled Strike (after getting Cheater Pictos from Sprong); Defiant Strike available but costs 30% HP per use — not recommended while parry skills are developing |
-
-**Note:** Does not have Light Holder, End Bringer, or Steeled Strike yet. Current 6-skill loadout is verified against actual available skills.
+|                     |                                                                                                                  |
+|---------------------|------------------------------------------------------------------------------------------------------------------|
+| Level               | 75                                                                                                               |
+| Role                | Endgame main DPS                                                                                                 |
+| Weapon              | Chevalam (24) — Agility A, Luck B; Power 3263                                                                    |
+| Stats (with Pictos) | Health 4003, Attack 4205, Speed 1935, Defence 182, Crit 61%                                                    |
+| Attributes          | Agility 99, Luck 99, Might 27                                                                                    |
+| Pictos              | Cheater (24), Survivor (21), Second Chance (16)                                                                  |
+| Key skills          | Quick Strike, Light Holder, Marking Shot, Perfect Break, End Bringer, Steeled Strike                             |
+| Lumina              | 134 LP total, 134 used, 0 spare; Confident + Confident Fighter added; Base Shield removed (non-functional with Chevalam) |
+| Note                | Chevalam Level 20 applies Rush on Rank S — Verso always goes first regardless of raw Speed                       |
 
 -----
 
 ### Monoco
 
-|                   |                                                                                                                                                                |
-|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Level             | 61                                                                                                                                                             |
-| Role              | AP battery/support/breaker (levelling team); reserve in endgame                                                                                                |
-| Weapon            | Nusaro (10) → upgrade to 20: +1 AP per mask change. Endgame weapon is Joyaro (drops level 28 from Flying Manor Lampmaster, post-game — no Resplendent overlap) |
-| Stats (no Pictos) | Health 2359, Attack 3570, Defence 182, Speed 900, Crit 16%                                                                                                     |
-| Attributes        | Agility 99, Vitality 64, Luck 20, Might 0, Defence 0                                                                                                           |
-| Pictos            | Recovery, Anti-Burn, Energising Turn → final: Health 5892, Speed 1163, Defence 1307                                                                            |
-| Skills            | Potier Energy, Stalact Punches, Pelerin Heal, Abbest Wind, Moissonneuse Vendange, Chalier Combo                                                                |
-| Lumina (110 LP)   | Core suite + Quick Break, Energising Heal; Energising Turn free from Pictos                                                                                    |
+|                     |                                                                                                                    |
+|---------------------|--------------------------------------------------------------------------------------------------------------------|
+| Level               | 72                                                                                                                 |
+| Role                | AP battery/support/breaker (levelling team); reserve in endgame                                                    |
+| Weapon              | Nusaro (20) — Power 2910, Dark, Agility A, Vitality B. L4: Parries increase Bestial Wheel by 1; damage resets it. L10: Upgraded Skills +30% damage. L20: +1 AP on Mask change. |
+| Stats (with Pictos) | Health 5724, Attack 3752, Speed 1576, Defence 1716, Crit 29%                                                      |
+| Attributes          | Agility 99, Vitality 64, Luck 53                                                                                   |
+| Pictos              | Anti-Freeze (21), Anti-Burn (22), Energising Turn (14)                                                             |
+| Key skills          | Abbest Wind, Stalact Punches, Moissonneuse Vendange, Chalier Combo, Potier Energy, Pelerin Heal                   |
+| Lumina              | 122 LP total, 114 used, 8 spare                                                                                    |
+| Endgame weapon      | Joyaro (25) — obtained, not yet equipped                                                                           |
 
------
+### Core Lumina Suite (101 LP)
 
-### Core Lumina Suite (all three levelling team members, 106 LP)
-
-Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energising Parry (15), Energising Start I (5), Dodger (1), Breaker (10), Breaking Burn (5), Marking Shots (3), Dead Energy I (2), Dead Energy II (2), Critical Break (5), Rewarding Mark (5), Burning Shots (3)
-
-**Lumina expansion cost:** Verso 92→110 (18 Colour), Monoco 90→110 (20 Colour), Sciel 84→110 (26 Colour). Total: 64 Colour of Lumina. Resources at end of chat: 202 available, ~138 remaining after expansion.
+Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energising Parry (15), Energising Start I (5), Dodger (1), Breaker (10), Marking Shots (3), Dead Energy I (2), Dead Energy II (2), Critical Break (5), Rewarding Mark (5), Burning Shots (3)
 
 -----
 
@@ -212,36 +249,41 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 - ✅ Sirene's Dress (Lune relationship)
 - ✅ Easy chromatics
 - ❌ Vale bosses permanently missed
-- ❌ Karatom quest permanently missed
+- ❌ Karatom quest permanently missed (requires Gustave alive)
 
 ### Phase 2 — Mid-game (Level 60–70)
 
-- Sacred River (Monoco relationship, Level 60–65, Verso + Monoco vs Golgra) → 3× Grandiose, Monoco Level 7
-- ✅ Sprong (NW Stone Wave Cliffs, in water, Level 55–75) → Cheater Pictos — essential for Verso's Steeled Strike combo
-- Serpenphare (SE Boat Graveyard, Level 70–80+) — try here if confident, otherwise defer to Phase 4
-- Chromatic Gold Chevaliere (Crimson Forest, recommended Level 70–75+) → Chevalam for Verso
-- Moderate chromatics: Veilleur, Chalier, Chapelier, Braseleur, Hexga, Ballet, Portier, Benisseur, Glaise, Boucheclier, Cruler, Eveque, Bourgeon, Demineur, Barbasucette, Franctale
+- ✅ Sacred River (Monoco relationship, Golgra) → 3× Grandiose, Monoco Level 7
+- ✅ Sprong (NW Stone Wave Cliffs, in water) → Cheater Pictos
+- ✅ Chromatic Gold Chevaliere (Crimson Forest) → Chevalam for Verso
+- ✅ Dark Shore → Corpeso for Verso
+- ✅ Grosse Tete, Frost Eveque
+- ✅ Chromatics: Veilleur, Chalier, Glaise, Demineur
+- ✅ Ultimate Sakapatate (Endless Night Sanctuary) → Joyaro for Monoco
+- Serpenphare (SE Boat Graveyard, Level 70–80+) — defer to Phase 4 if not yet attempted
+- Remaining moderate chromatics: Chapelier, Braseleur, Hexga, Ballet, Portier, Benisseur, Boucheclier, Cruler, Eveque, Bourgeon, Barbasucette, Franctale
 - Endless Tower floors 1–20
 
 ### Phase 3 — Late game (Level 75–80, before Renoir)
 
-- **The Reacher (Maelle solo, MUST do before Renoir)** → Lithum weapon, Maelle Level 6→7, Gustave resurrection path. Choose “Truth” when asked about Gustave.
+- **The Reacher (Maelle solo, MUST do before Renoir)** → Lithum weapon, Maelle Level 6→7, Gustave resurrection path. Choose "Truth" when asked about Gustave.
+- Flying Manor (Clea, optional but recommended before finale) → Clea's Life Pictos, Perfect Chroma Catalyst; Joyaro also available here if not already obtained
 - Hard chromatics optional here (can defer to post-game): Gault, Reaper Cultist, Petank, Goblu, Aberration, Creation, Lampmaster
-- Renoir (final boss, Level 75–80+) → Choose Maelle → “A Life to Paint” → Gustave returns
+- **Renoir (final boss)** → enter Lumière → fight at end of dungeon. Choose Maelle → "A Life to Paint" → Gustave returns
 
 ### Phase 4 — Post-game (Level 80+)
 
-- Flying Manor (4 mini-bosses → Clea superboss) → Clea’s Life Pictos, Perfect Chroma Catalyst; **Joyaro (Monoco’s endgame weapon)** from Lampmaster
+- Renoir's Drafts (Simon, Level 90+) — post-game; connects to Julie/Verso journal thread
+- Verso's Drafts (DLC) — post-game epilogue; extends the Verso/Expedition 00 story
 - Chromatic Echassier (Level 80–85+)
 - Chromatic Pétank superboss
 - Chromatic Clair Obscur (Monolith Peak) → Combo Attack II Pictos
-- Serpenphare (if not defeated earlier) → Energy Master Pictos (+1 to all AP gained)
+- Serpenphare (if not defeated in Phase 2) → Energy Master Pictos (+1 to all AP gained)
 - Painting Workshop Beast (Level 80+)
 - Endless Tower floors 21–33
-- Purchase Charnon (89,884 Chromas, Renoir’s Drafts merchant) — Sciel alternative endgame weapon
+- Purchase Charnon (89,884 Chromas, Renoir's Drafts merchant) — Sciel alternative endgame weapon
 - Kill White Nevrons for extra rewards (safe after Blanche reward)
-- Karatom quest (now accessible with Gustave alive)
-- DLC (Verso’s Drafts, Root of All Evil, secret Endless Tower bosses)
+- Karatom quest — ❌ permanently unavailable (requires Gustave alive)
 
 -----
 
@@ -311,6 +353,7 @@ See `overview/character-file-template.md` in the repo. Fetch only when creating 
 | Chat 1 | [Formatted](../chats/chat1/chat1-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-index.md)                  | [chat1.md](../chats/chat1/chat1.md) | Initial build analysis across all five characters; Monoco stat respec; Lune weapon comparison; Sciel and Verso builds; full progression plan |
 | Chat 2 | [Formatted](../chats/chat2/chat2-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-index.md)                  | [chat2.md](../chats/chat2/chat2.md) | Endgame skill research; character stat update via voice; chromatic progress; compaction mechanics; session procedure design                  |
 | Chat 3 | [Formatted](../chats/chat3/chat3-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat3/chat3-index.md)                  | [chat3.md](../chats/chat3/chat3.md) | Endgame team transition (Cheater Pictos, Steeled Strike, Second Chance resolution); team role framing; burn-stacking vs stance cycling paths; Chevalam mechanics; Maelle LP planning; transcript logging problems identified |
+| Chat 4 | [Formatted](../chats/chat4/chat4-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat4/chat4-index.md) | [chat4.md](../chats/chat4/chat4.md) | Progress update (Sacred River, Chevaliere, Dark Shore, Sakapatate/Joyaro, all chars 70+); story ordering research (Flying Manor optional, final boss in Lumière); Verso weapon selection (Chevalam reinstated with Cheater synergy confirmed); Steeled Strike burst sequence analysis; Maelle Reacher preparation (stats, skills, Pictos, solo build); session logging procedure improvements (verbatim instruction strengthened, sections-per-part changed to 2, session state step added); Verso full update (stats, Lumina, skills, weapons inventory) |
 
 -----
 
@@ -341,19 +384,21 @@ Triggered by `!log` and always at end of session.
 1. Write `<!-- SECTION: Title -->` and `## Title` heading to `chatN.md` — title must be unique within transcript; qualify if needed (e.g. "Verso Build — Pre-Sprong" / "Verso Build — Post-Sprong")
 2. Check `/mnt/transcripts/` — if compaction found since last check, notify Matt immediately (memory of earlier conversation may be incomplete; Matt may want to re-paste context or ask Claude to fetch files); note internally
 3. If compaction noted: run converter script (`transcript_to_md.py --after-timestamp <last_write_timestamp>`), append reconstructed turns to `chatN.md`, insert compaction markers in transcript and index, update `last_write_timestamp` to `start_timestamp` of last reconstructed turn, sourced from JSON output
-4. Append turns since last write to `chatN.md` — **verbatim**. Copy turns exactly as they appear in context. No paraphrasing, summarising, or compression. If in doubt, copy more rather than less.
-5. Append to `chatN-index.md` under `## Table of Contents`: if this is the first section in a new part, first write part header `### [Part N](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)`; then append section entry `- **[Section Title](chatN.md#anchor)** — paragraph description`
-6. Update `session-state.json`: append changed `###` sections to `modified_sections`. Set `last_write_timestamp` only if compaction recovery was run in step 3 — otherwise leave as null.
+4. Append turns since last write to `chatN.md` — **verbatim**. Copy every turn exactly as it appears in context — Matt's turns and Claude's turns alike, including all pasted content. Do not paraphrase, compress, or represent. This applies even when there are many turns, when content is long, or when the transcript would read more cleanly if summarised. The pull to summarise in these cases is strong — resist it explicitly. If in doubt, copy more rather than less.
+5. Append to `chatN-index.md` under `## Table of Contents`: if this is the first section in a new part (every 2 sections), first write part header `### [Part N](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)`; then append section entry `- **[Section Title](chatN.md#anchor)** — paragraph description`
+6. Update `session-state.json`: for each file section discussed since the last log write, append an entry to `modified_sections` if not already present. Set `last_write_timestamp` only if compaction recovery was run in step 3 — otherwise leave as null.
 
 ### End of Session
 
 1. Run compound log step — transcript and index now complete
-2. Run splitter (`split_transcript.py`) on `chatN.md`
-3. Edit `chatN-index.md` directly to add Part Files list under `## Part Files (Claude-readable)`
-4. Produce `chatN-changelist.md` covering:
+2. Insert any remaining part headers in `chatN-index.md` by counting sections (2 sections per part)
+3. Run splitter (`split_transcript.py --sections-per-part 2`) on `chatN.md`
+4. Edit `chatN-index.md` directly to add Part Files list under `## Part Files (Claude-readable)`
+5. Produce `chatN-changelist.md` covering:
    - Changelist entries for all sections in `modified_sections`
    - New Chat N row for Section 12 of overview (generate summary at this point)
-5. Matt pushes to GitHub
+   - **Write the changelist once at end of session only** — do not write changelist entries incrementally during the session. The `modified_sections` list in session state is the tracking mechanism throughout.
+6. Matt pushes to GitHub
 
 ### Index File
 
