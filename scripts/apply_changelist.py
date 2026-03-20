@@ -161,10 +161,14 @@ def find_heading_line(lines, heading, start=0, end=None):
 def find_section_end(lines, start, stop_patterns):
     """
     Find the line index where a section ends, starting from `start+1`.
-    A section ends at the first line matching any stop_pattern, or EOF.
+    A section ends at the first line matching any stop_pattern, or at a
+    '-----' separator line (which marks the end of a ## block), or EOF.
     Returns the index of the first line that does NOT belong to this section.
     """
     for i in range(start + 1, len(lines)):
+        # ----- separator marks the end of a ## section block
+        if lines[i].strip() == '-----':
+            return i
         for pattern in stop_patterns:
             if re.match(pattern, lines[i]):
                 return i
@@ -201,7 +205,15 @@ def _apply_h2_entry(lines, section_heading, new_content_lines):
 
     # Preserve blank lines before the section
     prefix = lines[:h2_line]
-    suffix = lines[section_end:]
+
+    # section_end points at the ----- separator.
+    # The replacement content already includes its own -----  so skip the
+    # original separator, but preserve the blank lines that follow it.
+    suffix_start = section_end
+    if suffix_start < len(lines) and lines[suffix_start].strip() == '-----':
+        suffix_start += 1  # skip the original ----- (replacement has its own)
+    # suffix starts at the blank lines (or next ## heading) after the separator
+    suffix = lines[suffix_start:]
 
     return prefix + new_content_lines + suffix
 
