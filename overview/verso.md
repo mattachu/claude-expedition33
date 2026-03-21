@@ -70,9 +70,9 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 | Pictos       | Level | Health | Speed | Crit | Effect                                      |
 |--------------|-------|--------|-------|------|---------------------------------------------|
-| Cheater      | 24    | +1198  | +400  | —    | Always play twice in a row. Lumina free.    |
-| Survivor     | 21    | —      | +439  | +12% | Survive fatal damage with 1 Health once per battle. Lumina free. |
-| Second Chance| 16    | +1107  | —     | +8%  | Revive with 100% Health once per battle. Lumina free. |
+| Cheater      | 24    | +1198  | +400  | —    | Always play twice in a row.    |
+| Survivor     | 21    | —      | +439  | +12% | Survive fatal damage with 1 Health once per battle. |
+| Second Chance| 16    | +1107  | —     | +8%  | Revive with 100% Health once per battle. |
 
 -----
 
