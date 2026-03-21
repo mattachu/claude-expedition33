@@ -254,39 +254,42 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 - ❌ Vale bosses permanently missed
 - ❌ Karatom quest permanently missed (requires Gustave alive)
 
-### Phase 2 — Mid-game (Level 60–70)
+### Phase 2 — Mid-game (Level 60–70) — Complete
 
 - ✅ Sacred River (Monoco relationship, Golgra) → 3× Grandiose, Monoco Level 7
 - ✅ Sprong (NW Stone Wave Cliffs, in water) → Cheater Pictos
 - ✅ Chromatic Gold Chevaliere (Crimson Forest) → Chevalam for Verso
 - ✅ Dark Shore → Corpeso for Verso
-- ✅ Grosse Tete, Frost Eveque
-- ✅ Chromatics: Veilleur, Chalier, Glaise, Demineur
+- ✅ Grosse Tete, Frost Eveque, Thunder Eveque
+- ✅ Chromatics: Veilleur, Chalier, Glaise, Demineur, Chapelier, Hexga, Ballet, Portier, Benisseur, Boucheclier, Cruler
 - ✅ Ultimate Sakapatate (Endless Night Sanctuary) → Joyaro for Monoco
-- Serpenphare (SE Boat Graveyard, Level 70–80+) — defer to Phase 4 if not yet attempted
-- Remaining moderate chromatics: Chapelier, Braseleur, Hexga, Ballet, Portier, Benisseur, Boucheclier, Cruler, Eveque, Bourgeon, Barbasucette, Franctale
-- Endless Tower floors 1–20
 
 ### Phase 3 — Late game (Level 75–80, before Renoir)
 
 - **The Reacher (Maelle solo, MUST do before Renoir)** → Lithum weapon, Maelle Level 6→7, Gustave resurrection path. Choose "Truth" when asked about Gustave.
+- Chromatic Braseleur (inside The Reacher)
+- Serpenphare (SE Boat Graveyard, Level 70–80+)
+- Endless Tower floors 1–20
+- Chromatic Eveque (Endless Tower)
 - Flying Manor (Clea, optional but recommended before finale) → Clea's Life Pictos, Perfect Chroma Catalyst; Joyaro also available here if not already obtained
-- Hard chromatics optional here (can defer to post-game): Gault, Reaper Cultist, Petank, Goblu, Aberration, Creation, Lampmaster
-- **Renoir (final boss)** → enter Lumière → fight at end of dungeon. Choose Maelle → "A Life to Paint" → Gustave returns
+- **Renoir (final boss)** → enter Lumière → fight at end of dungeon. *[Choose Maelle → "A Life to Paint" → Gustave returns]*
 
 ### Phase 4 — Post-game (Level 80+)
 
-- Renoir's Drafts (Simon, Level 90+) — post-game; connects to Julie/Verso journal thread
-- Verso's Drafts (DLC) — post-game epilogue; extends the Verso/Expedition 00 story
+- Kill White Nevrons for extra rewards (safe after Blanche reward)
+- Dark Gestral Arena
+- Hard chromatics: Gault, Reaper Cultist, Petank, Goblu, Aberration, Lampmaster
+- Chromatic Bourgeon (Monolith)
+- Chromatic Clair Obscur (Monolith Peak) → Combo Attack II Pictos
 - Chromatic Echassier (Level 80–85+)
 - Chromatic Pétank superboss
-- Chromatic Clair Obscur (Monolith Peak) → Combo Attack II Pictos
-- Serpenphare (if not defeated in Phase 2) → Energy Master Pictos (+1 to all AP gained)
-- Painting Workshop Beast (Level 80+)
-- Endless Tower floors 21–33
+- Renoir's Drafts (Simon, Level 90+) — post-game; connects to Julie/Verso journal thread
 - Purchase Charnon (89,884 Chromas, Renoir's Drafts merchant) — Sciel alternative endgame weapon
-- Kill White Nevrons for extra rewards (safe after Blanche reward)
-- Karatom quest — ❌ permanently unavailable (requires Gustave alive)
+- Chromatic Creation (Renoir's Drafts)
+- Verso's Drafts (DLC) — post-game epilogue; extends the Verso/Expedition 00 story
+- Chromatic Barbasucette (Verso's Drafts)
+- Chromatic Franctale (Verso's Drafts)
+- Endless Tower floors 21–33
 
 -----
 
