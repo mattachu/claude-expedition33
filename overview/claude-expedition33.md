@@ -16,11 +16,11 @@ These are in addition to the general failure modes in the startup file:
 - **Confabulating Lumina and skill effects:** Multiple effects described incorrectly across the session. Never assert Lumina or skill effects without verifying from a source.
 - **LP arithmetic errors:** Always verify LP point totals before finalising a loadout. Healing Counter listed as 1 LP — it is 10 LP.
 - **Accepting corrections without verification:** After repeated corrections, Claude began agreeing without independent checks. Default: acknowledge correction neutrally, flag whether independently verified.
-- **Weapon scaling and drop-level assumptions:** Charnon stated as Defence + Agility (correct is Defence + Luck). Nusaro stated as Monoco's endgame weapon (it is Joyaro, which drops at level 25 from the Ultimate Sakapatate in Endless Night Sanctuary, and also from Flying Manor Lampmaster). Chevalam stated as available "right now" — correct recommended level to attempt the boss is 70–75+. Always verify weapon scaling, drop source, and recommended level before advising.
+- **Weapon scaling and drop-level assumptions:** Charnon stated as Defence + Agility (correct is Defence + Luck). Nusaro stated as Monoco's endgame weapon (it is Joyaro). Chevalam stated as available "right now" — correct recommended level to attempt the boss is 70–75+. Always verify weapon scaling, drop source, and recommended level before advising.
 - **Passive vs active effect interactions:** Claimed Ramasson's passive heal triggered Energising Heal — it does not. Verify interaction type before assuming synergy.
 - **Asserting rank-jump skills without checking weapon or skill dependency:** Quick Strike jumps to Rank B only with Glaceso equipped (Level 4 ability). Paradigm Shift was claimed to jump to S Rank — it generates 1–3 AP. Rank bonuses apply ONLY at the exact rank stated, not at higher ranks. Always verify.
 - **Recommending skills the character doesn't have:** Light Holder and End Bringer recommended for Verso across multiple summaries — he now has both, but always confirm the character's actual skill list before recommending.
-- **AoE vs single-target context:** Phantom Stars recommended for Verso's solo Golgra fight — AoE is useless in 1v1. Check fight context.
+- **AoE vs single-target context:** Phantom Stars recommended for Verso's solo Golgra fight — AoE is useless in 1v1. Check fight context before recommending AoE skills.
 - **Second Chance Pictos tracking:** Only one character can hold the Pictos at a time; the effect works once per battle, not repeatedly. Both constraints were forgotten at different points.
 - **Overload mechanics:** Described as giving 9 AP to spend in the same turn. Correct: AP refills for the next turn.
 - **Serpenphare difficulty:** Initially placed as Phase 2 content (level 60–70). Correct recommended level is 70–80+.
@@ -73,6 +73,7 @@ These are in addition to the general failure modes in the startup file:
 -----
 
 ## Section 3: Playstyle Notes
+*Last updated: Chat 4*
 
 - **Free-aim:** Used heavily with Lune (2–3 shots typically, up to 5–6 when stacking burn + mark). Each shot: shield removal, damage, burn (Burning Shots Lumina), mark (Marking Shots Lumina), stain generation (Trebuchim). Maelle uses free-aim less frequently. Free-aim usage expected to drop with Lune/Maelle not in the levelling team.
 - **Parry rate:** ~20% against unfamiliar bosses; up to ~100% against well-known enemies after extended grinding. Pattern-recognition is the bottleneck — can require 20+ attempts. Skill is developing, not absent. This is a persistent constraint on risky builds (Overload without Cheater, Defiant Strike’s 30% HP cost, etc.).
@@ -116,6 +117,7 @@ If the main party (Verso/Maelle/Sciel) is fully wiped in a battle, the player ca
 -----
 
 ## Section 5: Party
+*Last updated: Chat 4*
 
 **Active endgame team:** Verso + Maelle + Sciel (Cheater equipped on all three via Lumina)
 **Reserve:** Lune, Monoco
@@ -288,45 +290,7 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 
 -----
 
-## Section 9: Known Errors from Chat 1
-
-1. **Vale bosses missable (ChatGPT error, not Claude):** ChatGPT said the Vale bosses could be accessed after defeating the Axon, and that nothing in Visages was permanently missable. This was wrong. Three Vale bosses permanently lost: Jovial Moissonneuse, Sorrowful Chapelier, Seething Boucheclier. Matt had explicitly asked whether to explore before fighting the boss; ChatGPT said he could come back later. Moissonneuse Vendange was obtained separately by defeating a Moissonneuse in Visages — unrelated to the Vale bosses. Retained here as a real consequence affecting this playthrough, and as a category to guard against — but not a Claude error.
-1. **Colim recommendation:** Recommended over Trebuchim based on Light stain wildcards and community meta. Wrong for Matt’s playstyle. Root error: didn’t simulate turns, didn’t check playstyle assumptions.
-1. **Monoco Defence stat advice:** Recommended 0 Defence without knowing Defence contributes to crit rate. Testing showed 0 Defence dropped crit from 23% to 5%.
-1. **Fueling Break effect:** Said it gives AP on Break damage. Correct: doubles Burn stacks when enemy is broken.
-1. **“Energising Cleanse” invented with wrong effects:** Claude described an “Energising Cleanse” Lumina with incorrect effects. A real Energising Cleanse does exist but its actual effects are different.
-1. **Last Stand Lumina effects:** Described as HP-threshold triggers. Correct: solo-fighting bonuses only.
-1. **Perfect Recovery:** Described as party heal. Correct: heals Verso only.
-1. **Tree of Life gradient cost:** Said 1 Gradient. Correct: 2 Gradient charges.
-1. **Revitalization:** Said it removes status effects. Correct: heals only.
-1. **Cleansing Tint Lumina:** Said it removes Curse via skills. Correct: only affects Healing Tint consumable items.
-1. **Healing Parry effect:** Said 10% heal on parry. Correct: 3%.
-1. **Maelle LP budget overrun:** Calculated 118 LP against a 112 LP budget.
-1. **Trebuchim AP economy:** Implied +1 AP per individual stain consumed. Correct: +1 AP per consumption event.
-1. **Charnon scaling:** Said Defence + Agility. Correct: Defence + Luck.
-1. **Charnon/Litheson quote conflation:** Attributed “god tier” and “changes how you play her” quotes to wrong weapons.
-1. **Ramasson + Energising Heal synergy:** Claimed passive heal triggers Energising Heal. Correct: weapon passive heals explicitly cannot trigger on-heal Lumina effects.
-1. **Quick Strike rank jump:** Said it jumps to Rank B. Correct: requires Glaceso Level 4 ability. Without Glaceso, Quick Strike gives modest Perfection gain.
-1. **Phantom Stars for solo fight:** Recommended for Verso’s Golgra solo. AoE is useless in 1v1.
-1. **Second Chance Pictos tracking:** Recommended for multiple characters simultaneously. Only one character can hold the Pictos at a time; also only works once per battle.
-1. **Paradigm Shift rank jump:** Said it jumps Verso to S Rank. Correct: generates 1–3 AP, with bonus at C Rank.
-1. **Lumina skill tree claim:** Said Lumina are unlocked via a skill tree. Correct: unlocked by equipping the corresponding Pictos and winning battles.
-1. **Verso’s endgame skills assumed available:** Light Holder and End Bringer recommended across multiple summaries. Verso does not have either.
-1. **Renoir described as mid-game boss:** Initially placed in Phase 2 of the progression plan. Correct: Renoir is the final boss.
-1. **Nusaro as Monoco’s endgame weapon:** Said Nusaro should be upgraded to 20 as his endgame weapon. Correct endgame weapon is Joyaro (drops at level 28 from Flying Manor Lampmaster, post-game).
-1. **Chevalam available “right now”:** Claimed Chevalam accessible at current level (~56). Recommended level for Chromatic Gold Chevaliere is 70–75+.
-1. **Serpenphare placed in Phase 2:** Initially said Level 60–70 was appropriate. Correct recommended level is 70–80+.
-1. **Rank bonuses claimed to work at rank and above:** Confirmed by community sources and in-game behaviour: bonuses apply ONLY at the exact rank stated. Passing through a rank means the bonus is active only briefly in that window.
-1. **Overload AP usage:** Implied 9 AP could be spent on multiple skills in the same turn. Correct: AP from Overload is available the following turn.
-1. **“Plentiful Harvest synergy (6)” as a Lumina:** Listed as a Lumina in a loadout. It is not a Lumina — it was a mislabelled description.
-1. **Healing Counter cost:** Listed as 1 LP. Correct: 10 LP.
-1. **Shell and Shield confused:** Auto Shell gives 20% damage reduction for 3 turns (Shell). Base Shield gives 1 absorb-type defensive buffer per turn (Shield). Described as interchangeable at one point.
-1. **Confirmation bias on Monoco skills:** Accepted Évêque Spear and Chalier Combo immediately when Matt suggested them, without independent research. Both were later revised.
-1. **Compaction continuity overclaim:** After a compaction event mid-chat, Claude described the compaction summary as fully preserving all context. Some nuance is lost in compaction; this was slightly misleading.
-
------
-
-## Section 10: Open Questions
+## Section 9: Open Questions
 
 - **Sciel stat recoat:** Actual allocation at end of chat was Agility 99/Luck 78. Planned optimum was Luck 89/Agility 49. Worth recoating to optimum when convenient?
 - **Verso skill additions:** Does not yet have Steeled Strike. After obtaining Cheater Pictos (Sprong), swap Paradigm Shift or another slot → Steeled Strike. Also consider whether Defiant Strike is worth adding when parry skills improve (30% HP cost becomes acceptable with high parry rate).
@@ -339,13 +303,7 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 
 -----
 
-## Section 11: Character File Template
-
-See `overview/character-file-template.md` in the repo. Fetch only when creating a new character file.
-
------
-
-## Section 12: Chat Logs
+## Section 10: Chat Logs
 *For reference only — do not fetch unless specifically asked. These are large files.*
 
 | Chat   | Index                                                                                                                                                         | Full Transcript                     | Summary                                                                                                                                      |
@@ -358,21 +316,40 @@ See `overview/character-file-template.md` in the repo. Fetch only when creating 
 
 -----
 
+## Section 11: Historical Error Log
+
+Full error log in `overview/historical-errors.md`: [Formatted](historical-errors.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/historical-errors.md).
+
+Fetch that file only when reviewing specific past errors. Active failure mode categories extracted from the log are maintained in Section 1 of this overview.
+
+-----
+
+## Section 12: Character File Template
+
+See `overview/character-file-template.md`: [Formatted](character-file-template.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/character-file-template.md)
+
+Fetch only when creating a new character file.
+
+-----
+
 ## Section 13: Session Procedure
 
-*Full design rationale: [Formatted](../scripts/pipeline.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/scripts/pipeline.md)*
+*Full design rationale in `scripts/pipeline.md`: [Formatted](../scripts/pipeline.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/scripts/pipeline.md)*
 
 ### Session Start
 
 1. Fetch overview file (jsDelivr raw; use commit hash if provided)
-2. Determine chat number N: count Claude chats in Section 12 + 1
-3. Ask what the session is about — do not fetch character files until topic confirmed
-4. Create in `/mnt/user-data/outputs/`:
+2. Determine chat number N: count Claude chats in Section 10 + 1
+3. Review Section 9 open questions. Check each against Section 2 playthrough status; flag any resolved items for removal in the changelist.
+4. Ask what the session is about — do not fetch character files until topic confirmed
+5. Create in `/mnt/user-data/outputs/`:
    - `chatN.md` — empty transcript file
    - `chatN-index.md` — index file with header (see Index File format below)
-   - `session-state.json` — `{"chat": "chatN", "last_write_timestamp": null, "modified_sections": []}`
-5. Check `/mnt/transcripts/` — flag if any files present (unexpected at session start)
-6. Confirm to user: chat number, files created, ready
+   - `session-state.json` — `{"chat": "chatN", "commit_hash": "<hash>", "last_write_timestamp": null, "modified_sections": [], "actions": []}`
+
+   Extract the commit hash from the jsDelivr URL used to fetch the overview file (e.g. `@6ab23396`) and store it in `commit_hash`. When a mid-session file fetch is needed, output the full jsDelivr URL with this hash for Matt to paste — avoid using `@main` as it can be stale.
+6. Check `/mnt/transcripts/` — flag if any files present (unexpected at session start)
+7. Confirm to user: chat number, files created, ready
 
 ### !log Command
 
@@ -387,19 +364,22 @@ Triggered by `!log` and always at end of session.
 3. If compaction noted: run converter script (`transcript_to_md.py --after-timestamp <last_write_timestamp>`), append reconstructed turns to `chatN.md`, insert compaction markers in transcript and index, update `last_write_timestamp` to `start_timestamp` of last reconstructed turn, sourced from JSON output
 4. Append turns since last write to `chatN.md` — **verbatim**. Copy every turn exactly as it appears in context — Matt's turns and Claude's turns alike, including all pasted content. Do not paraphrase, compress, or represent. This applies even when there are many turns, when content is long, or when the transcript would read more cleanly if summarised. The pull to summarise in these cases is strong — resist it explicitly. If in doubt, copy more rather than less.
 5. Append to `chatN-index.md` under `## Table of Contents`: if this is the first section in a new part (every 2 sections), first write part header `### [Part N](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)`; then append section entry `- **[Section Title](chatN.md#anchor)** — paragraph description`
-6. Update `session-state.json`: for each file section discussed since the last log write, append an entry to `modified_sections` if not already present. Set `last_write_timestamp` only if compaction recovery was run in step 3 — otherwise leave as null.
+6. Update `session-state.json`:
+   - For each file section with confirmed changes since the last log write: if not already present in `modified_sections`, add an entry with an empty `changes` array; then append one concise bullet per change to that entry's `changes` array.
+   - For each concrete in-game action arising since the last log write (equip, swap, respec, attempt), append a one-line entry to `actions`.
+   - Set `last_write_timestamp` only if compaction recovery was run in step 3 — otherwise leave as null.
 
 ### End of Session
 
-1. Run compound log step — transcript and index now complete
-2. Insert any remaining part headers in `chatN-index.md` by counting sections (2 sections per part)
+1. Output the in-game actions checklist from `actions` for Matt to implement before the next session.
+2. Run compound log step — transcript and index now complete
 3. Run splitter (`split_transcript.py --sections-per-part 2`) on `chatN.md`
 4. Edit `chatN-index.md` directly to add Part Files list under `## Part Files (Claude-readable)`
-5. Produce `chatN-changelist.md` covering:
-   - Changelist entries for all sections in `modified_sections`
-   - New Chat N row for Section 12 of overview (generate summary at this point)
+5. Produce `chatN-changelist.md`:
+   - For each entry in `modified_sections`, use the `changes` array as the basis for writing the full replacement content for that section.
+   - Also include the new Chat N row for Section 10 of the overview: read the existing Section 10 entries and write a new row in the same style — concise prose covering topics discussed, decisions made, and any pipeline/infrastructure changes. Do not generate this mechanically from the `actions` list; write it as a genuine summary.
    - **Write the changelist once at end of session only** — do not write changelist entries incrementally during the session. The `modified_sections` list in session state is the tracking mechanism throughout.
-6. Matt pushes to GitHub
+6. Matt runs the updater script and pushes to GitHub
 
 ### Index File
 
@@ -433,7 +413,7 @@ Then append the section entry:
 - **[Section Title](chatN.md#section-title-anchor)** — paragraph description
 ```
 
-Part number for section S: ⌈S/4⌉. Part file link: `https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md`
+Part boundaries are determined by `--sections-per-part` (default: 2). Part 1 covers sections 1–2, Part 2 covers sections 3–4, and so on — adjust if `--sections-per-part` is changed. Part file link: `https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md`
 
 Anchor derived from `## Title` heading: lowercase, spaces to hyphens, punctuation removed.
 
@@ -468,12 +448,17 @@ CONTENT:
 - `###` heading must be unique within its `##` parent; renames require direct edit
 - Failure mode: loud
 
-
 ### Session State JSON
 ```json
-{"chat": "chatN", "last_write_timestamp": null, "modified_sections": [{"file": "path/to/file.md", "parent": "## Section", "section": "### Subsection"}]}
+{"chat": "chatN", "commit_hash": "abc12345", "last_write_timestamp": null, "modified_sections": [{"file": "path/to/file.md", "parent": "## Section", "section": "### Subsection", "changes": ["Change note 1", "Change note 2"]}], "actions": ["In-game action 1"]}
 ```
 
-`last_write_timestamp` is only set during compaction recovery (step 3 of the compound log step), sourced from the `start_timestamp` in the JSON transcript output. In a no-compaction session it remains null throughout — this is correct, not an error. The converter script uses this field as an anchor via `--after-timestamp`; it is never needed in the live-writing path.
+`commit_hash`: extracted from the jsDelivr URL at session start (e.g. `@6ab23396` → `"6ab23396"`). Used to construct all mid-session file fetch URLs — Claude outputs the full URL with this hash for Matt to paste. Never use `@main` for mid-session fetches.
+
+`last_write_timestamp`: only set during compaction recovery (step 3 of the compound log step), sourced from the `start_timestamp` in the JSON transcript output. In a no-compaction session it remains null throughout — this is correct, not an error.
+
+`modified_sections`: each entry tracks one file section that needs updating. The `changes` array accumulates concise notes of what changed in that section throughout the session. At end of session, Claude uses these notes to write the full replacement content for each section.
+
+`actions`: in-game actions to implement before the next session. Output as a checklist at end of session.
 
 -----

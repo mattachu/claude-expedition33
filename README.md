@@ -10,13 +10,14 @@ See [`repo-structure.md`](repo-structure.md) for repo structure.
 
 Persistent context files loaded by Claude at the start of each session.
 
-* [`overview/claude-expedition33.md`](overview/claude-expedition33.md) — Main overview file: playthrough status, party builds, progression plan, session procedure, and known AI error log
-* [`overview/character-file-template.md`](overview/character-file-template.md) — Template for character files
+* [`overview/claude-expedition33.md`](overview/claude-expedition33.md) — Main overview file: playthrough status, party builds, progression plan, session procedure, and known AI failure modes
 * [`overview/maelle.md`](overview/maelle.md) — Maelle character file
 * [`overview/lune.md`](overview/lune.md) — Lune character file
 * [`overview/sciel.md`](overview/sciel.md) — Sciel character file
 * [`overview/verso.md`](overview/verso.md) — Verso character file
 * [`overview/monoco.md`](overview/monoco.md) — Monoco character file
+* [`overview/character-file-template.md`](overview/character-file-template.md) — Template for character files
+* [`overview/historical-errors.md`](overview/historical-errors.md) — List of known AI errors from previous chats
 
 ### Chat Transcripts
 
@@ -25,12 +26,6 @@ Full records of gameplay planning sessions. Each chat has:
 * A **continuous transcript** (`chatN.md`) — human-readable, with `##` section headings for navigation
 * **Part files** (`chatN-partN.md`) — the same content split into smaller files for Claude to load selectively, reducing token consumption
 * An **index file** (`chatN-index.md`) — table of contents with section descriptions and links into the continuous transcript
-
-| Chat   | Index                                        | Transcript                       | Summary                                                                                                                                      |
-|--------|----------------------------------------------|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Chat 0 | _None_                                       | [chat0.md](chats/chat0/chat0.md) | Prior (abandoned) conversation with ChatGPT; not yet indexed                                                                                 |
-| Chat 1 | [chat1-index.md](chats/chat1/chat1-index.md) | [chat1.md](chats/chat1/chat1.md) | Initial build analysis across all five characters; Monoco stat respec; Lune weapon comparison; Sciel and Verso builds; full progression plan |
-| Chat 2 | [chat2-index.md](chats/chat2/chat2-index.md) | [chat2.md](chats/chat2/chat2.md) | Endgame skill research; character stat update via voice; chromatic progress; compaction mechanics; session procedure design                  |
 
 ### Scripts
 
@@ -45,15 +40,17 @@ Python scripts for processing and managing session transcripts and repo files.
 
 ## Pipeline Overview
 
-Each session produces a running transcript and index, updated at regular **compound log steps**. At end of session, the transcript is split into part files, a changelist of section replacements is produced for any changed overview or character file sections, and Script 3 applies those changes to the repo. You push.
+Each session produces a running transcript and index, updated at regular **compound log steps**. At end of session, the transcript is split into part files, a changelist of section replacements is produced for any changed overview or character file sections, and the updater script applies those changes to the repo. User pushes changes to GitHub.
 
 See [`scripts/pipeline.md`](scripts/pipeline.md) for a full description of the pipeline, including compound log mechanics, compaction handling, character file update approach, and changelist format.
 
 ## Session Startup
 
-At the start of each session, Claude:
+At the start of each session on any topic, Claude:
 
 1. Asks for the startup file URL (`matteaston.net/claude`) and reads it
 2. Asks what the session is about
 3. Fetches the relevant overview file from the topic index in the startup file
 4. Follows any further instructions in that overview file
+
+For Expedition 33 game chats, the topic index leads to the overview and other files in this repo.

@@ -47,30 +47,50 @@ Persisted to `/mnt/user-data/outputs/session-state.json` throughout the session.
 
 ```json
 {
-  "last_write_timestamp": "2026-03-08T21:45:23.000000Z",
+  "chat": "chatN",
+  "commit_hash": "abc12345",
+  "last_write_timestamp": null,
   "modified_sections": [
-    {"file": "overview/maelle.md", "parent": "## Current Stats", "section": "### Level and Attributes"}
+    {
+      "file": "overview/maelle.md",
+      "parent": "## Mechanics",
+      "section": "### Stances",
+      "changes": [
+        "Update Stendhal description: nerfed 40% in patch 1.2.3, no longer one-shots Alicia",
+        "Note Defenceless applies to Maelle herself on use"
+      ]
+    }
+  ],
+  "actions": [
+    "Equip Steeled Strike on Verso (drop Paradigm Shift)",
+    "Swap Cheater Pictos to Verso; Maelle uses Cheater via Lumina"
   ]
 }
 ```
 
+**`commit_hash`:** Extracted from the jsDelivr URL used to fetch the overview file at session start (e.g. `@6ab23396` → `"6ab23396"`). Used to construct all mid-session file fetch URLs. Claude outputs the full URL with this hash for Matt to paste — never uses `@main`.
+
 **`last_write_timestamp`:** Must be the `start_timestamp` of the first content block of the last turn written to the transcript. The converter script uses this as an anchor — any other timestamp risks missing or duplicating turns.
 
-**`modified_sections`:** A to-do list for end-of-session changelist generation, not a record of completed work. Sections are added as changes are made during the session.
+**`modified_sections`:** Tracks every file section that needs updating, with a `changes` array recording what specifically changed. Each entry in `changes` is a concise note of one change to make in that section. Multiple changes to the same section accumulate in the same `changes` array. At end of session, Claude reads these notes and writes the full replacement content for each section — no re-derivation from context needed, and compaction-safe.
+
+**`actions`:** In-game actions to implement before the next session (equip, swap, respec, attempt). Presented as a checklist at end of session.
 
 ---
 
 ## Session Start Procedure
 
 1. Fetch overview file (jsDelivr raw; use commit hash if provided)
-2. Determine chat number N: count Claude chats in Section 12 of overview + 1
-3. Ask what the session is about — do not fetch character files until topic confirmed
-4. Create in `/mnt/user-data/outputs/`:
+2. Determine chat number N: count Claude chats in Section 10 of overview + 1
+3. Review Section 9 open questions. Check each against Section 2 playthrough status; flag any resolved items for removal in the changelist.
+4. Ask what the session is about — do not fetch character files until topic confirmed
+5. Create in `/mnt/user-data/outputs/`:
    - `chatN.md` — empty transcript file
    - `chatN-index.md` — index file with header (see Index File section in Section 13 of overview)
-   - `session-state.json` — initial state: `{"chat": "chatN", "last_write_timestamp": null, "modified_sections": []}`
-5. Check `/mnt/transcripts/` — flag if any files present (unexpected at session start)
-6. Confirm to user: state chat number, confirm files created, confirm ready
+   - `session-state.json` — initial state: `{"chat": "chatN", "commit_hash": "<hash>", "last_write_timestamp": null, "modified_sections": [], "actions": []}`
+   Extract the commit hash from the jsDelivr URL used to fetch the overview file (e.g. `@6ab23396`) and store it in `commit_hash`. When a mid-session file fetch is needed, output the full jsDelivr URL with this hash for Matt to paste — do not use `@main`.
+6. Check `/mnt/transcripts/` — flag if any files present (unexpected at session start)
+7. Confirm to user: state chat number, confirm files created, confirm ready
 
 ---
 
@@ -83,7 +103,10 @@ Triggered by `!log` (typed by Matt at any natural pause) and always at end of se
 3. If compaction noted: run converter script (`transcript_to_md.py --after-timestamp <last_write_timestamp>`), append reconstructed turns to `chatN.md`, insert compaction markers in transcript and index, update `last_write_timestamp` to `start_timestamp` of last reconstructed turn, sourced from JSON output
 4. Append turns since last write to `chatN.md` — **verbatim**. Copy every turn exactly as it appears in context — Matt's turns and Claude's turns alike, including all pasted content. Do not paraphrase, compress, or represent. This applies even when there are many turns, when content is long, or when the transcript would read more cleanly if summarised. The pull to summarise in these cases is strong — resist it explicitly. If in doubt, copy more rather than less.
 5. Append to `chatN-index.md` under `## Table of Contents`: if this is the first section in a new part (every 2 sections), first write part header `### [Part N](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)`; then append section entry `- **[Section Title](chatN.md#anchor)** — paragraph description`
-6. Update `session-state.json`: for each file section discussed since the last log write, append an entry to `modified_sections` if not already present. Set `last_write_timestamp` only if compaction recovery was run in step 3 — otherwise leave as null.
+6. Update `session-state.json`:
+   - For each file section with confirmed changes since the last log write: if not already present in `modified_sections`, add an entry with an empty `changes` array; then append one concise bullet per change to that entry's `changes` array.
+   - For each concrete in-game action arising since the last log write (equip, swap, respec, attempt), append a one-line entry to `actions`.
+   - Set `last_write_timestamp` only if compaction recovery was run in step 3 — otherwise leave as null.
 
 ---
 
@@ -108,13 +131,15 @@ At the compound log step, if compaction was noted:
 
 Identical whether or not compaction occurred.
 
-1. Final compound log step — transcript and index are now complete
-2. Insert any remaining part headers in `chatN-index.md` by counting sections (2 sections per part), then run splitter script: `split_transcript.py --sections-per-part 2` on `chatN.md`
-3. Edit `chatN-index.md` directly: (a) fill in Part Files list under `## Part Files (Claude-readable)` — format: `* Part N — Descriptive Title: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)`; (b) add footer `---\n*Generated: YYYY-MM-DD*`
-4. Produce a single `chatN-changelist.md` covering:
-   - Changelist entries for all sections in `modified_sections`
-   - New Chat N row for Section 12 of overview (generate summary at this point)
-5. Matt pushes to GitHub
+1. Output the in-game actions checklist from `actions` for Matt to implement before the next session.
+2. Final compound log step — transcript and index now complete
+3. Run splitter script: `split_transcript.py --sections-per-part 2` on `chatN.md`
+4. Edit `chatN-index.md` directly: (a) fill in Part Files list under `## Part Files (Claude-readable)` — format: `* Part N — Descriptive Title: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)`; (b) add footer `---\n*Generated: YYYY-MM-DD*`
+5. Produce `chatN-changelist.md`:
+   - For each entry in `modified_sections`, use the `changes` array as the basis for writing the full replacement content for that section.
+   - Also include the new Chat N row for Section 10 of the overview: read the existing Section 10 entries and write a new row in the same style — concise prose covering topics discussed, decisions made, and any pipeline/infrastructure changes. Do not generate this mechanically from the `actions` list; write it as a genuine summary.
+   - **Write the changelist once at end of session only** — do not write changelist entries incrementally during the session. The `modified_sections` list in session state is the tracking mechanism throughout.
+6. Matt runs the updater script and pushes to GitHub
 
 ---
 
@@ -126,7 +151,7 @@ The compound log step only tracks changes in `modified_sections` — it never pr
 
 **Major changes** (structural overhaul): the character file is loaded mid-session. Both overview and character file `###` sections are tracked in `modified_sections`. At end of session, both files are already in context — Claude produces changelist entries directly without re-fetching.
 
-**Decision rule:** if a change can't be fully specified in the overview note, load the character file mid-session.
+**Decision rule:** if a change can't be fully specified in the overview note, load the character file mid-session. Default to fetching when the topic involves Lumina LP budgets, skill interactions, exact stat values, weapon scaling, or any area where the overview summary is a condensed version of character file detail.
 
 ---
 
