@@ -84,6 +84,8 @@ def parse_changelist(text):
         block = block.strip()
         if not block:
             continue
+        if not block.startswith('FILE:'):
+            continue
 
         # Split header from content at CONTENT: marker
         content_match = re.search(r'(?m)^CONTENT:\s*\n', block)
