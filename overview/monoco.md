@@ -43,30 +43,22 @@ Monoco's central system is the **Bestial Wheel** — a 9-position ring of masks 
 
 | Attribute | Value | Priority  | Reason                                                                               |
 |-----------|-------|-----------|--------------------------------------------------------------------------------------|
-| Level     | 73    | —         |                                                                                      |
+| Level     | 77    | —         |                                                                                      |
 | Agility   | 99    | Primary   | Joyaro scales Agility A; also scales Speed, Attack, and Defence simultaneously       |
 | Defence   | 99    | Primary   | Joyaro scales Defence B; also contributes to crit rate                               |
-| Luck      | 21    | Tertiary  | Spare points ; +10% crit and +36 Speed vs Vitality's +258 Health — Luck wins         |
-| Vitality  | 0     | None      | Not relevant for Joyaro scaling; tested and inferior to Luck for spare points        |
+| Luck      | 24    | Tertiary  | Spare points; crit boost                                                             |
+| Vitality  | 0     | None      | Not relevant for Joyaro scaling                                                      |
 | Might     | 0     | None      | No benefit for this build                                                            |
 
-### Combat Stats (post-respec, with Pictos — Anti-Freeze 21, Anti-Burn 22, Energising Turn 14)
+### Combat Stats (with Pictos — Longer Shell 29, Energising Turn 14, Sniper 23)
 
 | Stat                          | Base    | From weapon/Pictos              | Total   |
 |-------------------------------|---------|--------------------------------|---------|
-| Health                        | 1641    | +3066 (Pictos)                 | 4707    |
-| Attack                        | 859     | +3934 (weapon scaling)         | 4793    |
-| Speed                         | 985     | +270 (Pictos)                  | 1255    |
-| Defence                       | 729     | +1534 (Pictos)                 | 2263    |
-| Critical Rate                 | 34%     | —                              | 34%     |
-
-### Pictos Breakdown
-
-| Pictos          | Level | Health  | Defence | Speed | Effect                              |
-|-----------------|-------|---------|---------|-------|-------------------------------------|
-| Anti-Freeze     | 21    | +1464   | +733    | —     | Immune to Freeze                    |
-| Anti-Burn       | 22    | +1602   | +801    | —     | Immune to Burn                      |
-| Energising Turn | 14    | —       | —       | +270  | +1 AP on turn start. Lumina free (20 LP saving). |
+| Health                        | 1726    | +2757 (Longer Shell)           | 4483    |
+| Attack                        | 876     | +3934 (Joyaro scaling)         | 4810    |
+| Speed                         | 1025    | +270 (Energising Turn) +529 (Sniper) | 1824 |
+| Defence                       | 729     | +1572 (Longer Shell)           | 2301    |
+| Critical Rate                 | 38%     | +13% (Sniper)                  | 51%     |
 
 -----
 
@@ -96,35 +88,49 @@ Ballaro (20), Fragaro (15), Grander (21), Joyaro (25), Monocaro (10), Urnaro (20
 
 ## Pictos
 
-| Slot | Pictos          | Stat Bonus                  |
-|------|-----------------|-----------------------------|
-| 1    | Recovery        | Health +2000, Defence +324  |
-| 2    | Anti-Burn       | Health +1602, Defence +801  |
-| 3    | Energising Turn | Speed +270                  |
+| Slot | Pictos          | Level | Stat Bonus                  | Effect                                      |
+|------|-----------------|-------|-----------------------------|---------------------------------------------|
+| 1    | Longer Shell    | 29    | Health +2757, Defence +1572 | On applying Shell, duration increased by 2  |
+| 2    | Energising Turn | 14    | Speed +270                  | +1 AP on turn start. Energising Turn Lumina free (20LP saving). |
+| 3    | Sniper          | 23    | Speed +529, Crit +13%       | Pure stat stick for Joyaro/skill-focused build |
 
-**Notes:** Energising Turn Pictos provides free Energising Turn Lumina (20 LP saving from core suite). Recovery Pictos was moved to Sciel during Part 4 levelling team setup, then returned to Monoco in final configuration (Parts 7–8). Anti-Burn exact effect on Burn status not confirmed in transcript — stats confirmed only.
+Longer Shell's extension effect fires when Lune uses Healing Light (Protecting Heal Lumina applies Shell on heal).
 
----
-
+-----
 ## Lumina
 
 ### LP Budget
-- **Current capacity:** 110 LP
-- **Expansion cost:** 20 Colour of Lumina to expand from 90 LP to 110 LP
+- **Current capacity:** 127 LP (level 77)
+- **Used:** 111 LP
+- **Spare:** 16 LP
 
-### Core Suite
-*Shared across all three main party members — listed here for reference.*
-Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energising Parry (15), Energising Start I (5), Dodger (1), Breaker (10), Breaking Burn (5), Marking Shots (3), Dead Energy I (2), Dead Energy II (2), Critical Break (5), Rewarding Mark (5), Burning Shots (3)
-**Total: 106 LP**
+### Current Loadout
 
-*Monoco pays 86 LP of core suite cost — Energising Turn (20 LP) is FREE from Energising Turn Pictos.*
-
-### Character-Specific
+*Reserve team core (110LP) minus Energising Turn (free from Pictos) = 90LP paid from core. Plus character-specific additions.*
 
 | Lumina          | LP  | Notes                                                                                                              |
 |-----------------|-----|--------------------------------------------------------------------------------------------------------------------|
-| Quick Break     | 10  | Extra turn immediately after Breaking an enemy. From Chromatic Cruler (confirmed obtained). Triggers every Break. |
-| Energising Heal | 10  | +1 AP on heal. More frequent trigger than Energising Break.                                                        |
+| Base Shield     | 20  | Core                                                                                                               |
+| Breaker         | 10  | Core                                                                                                               |
+| Breaking Burn   | 5   | Core                                                                                                               |
+| Breaking Counter| 3   | Core                                                                                                               |
+| Breaking Death  | 5   | Core + character-specific                                                                                          |
+| Burning Shots   | 3   | Core                                                                                                               |
+| Critical Break  | 5   | Core                                                                                                               |
+| Dodger          | 1   | Core                                                                                                               |
+| Energising Parry| 15  | Core                                                                                                               |
+| Energising Start I | 5 | Core                                                                                                             |
+| Energising Turn | —   | FREE from Energising Turn Pictos (saves 20LP)                                                                     |
+| Marking Shots   | 3   | Core                                                                                                               |
+| Painted Power   | 5   | Core                                                                                                               |
+| Rewarding Mark  | 5   | Core                                                                                                               |
+| Staggering Attack | 1 | Character-specific — adds break damage to base attack                                                             |
+| Teamwork        | 5   | Core — confirmed fires for active party only (Lune + Monoco both alive = almost always active)                    |
+
+**Situational Lumina (add for specific boss fights):**
+- Anti-Burn (10LP) — vs bosses applying Burn
+- Anti-Blight (10LP) — vs bosses applying Blight
+- Anti-Freeze (LP unknown) — vs bosses applying Freeze
 
 ### Notes
 Total paid LP: 86 (core, minus Energising Turn FREE) + 20 (character-specific) = 106 LP. Spare: 4 LP.

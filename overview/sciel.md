@@ -30,24 +30,24 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 | Attribute | Value | Priority  | Reason                                                                                                      |
 |-----------|-------|-----------|-------------------------------------------------------------------------------------------------------------|
-| Level     | 75    | —         |                                                                                                             |
-| Agility   | 99    | Primary   | Guarantees high Speed with current Pictos — essential for support role. Also gives weapon attack.           |
+| Level     | 81    | —         |                                                                                                             |
+| Agility   | 99    | Primary   | Guarantees high Speed — essential for support role. Also gives weapon attack.                               |
 | Luck      | 99    | Primary   | Litheson scales Luck A, Agility B — Luck gives more weapon attack per point                                 |
-| Defence   | 27pts | Secondary | 27 unspent points allocated here — gives +101 Defence and +7% Crit (base Crit 48%)                        |
+| Defence   | 33pts | Secondary | Spare points — gives small Defence and Crit bonus                                                           |
 | Vitality  | 0     | None      | Litheson does not scale off Vitality                                                                        |
 | Might     | 0     | None      | No benefit for this build                                                                                   |
 
-### Combat Stats (with Pictos — Base Shield 20, Recovery 20, Quick Break 25)
+### Combat Stats (with permanent Pictos — Critical Burn 25, Recovery 20, Quick Break 25)
 
 | Stat                          | Base    | From weapon/Pictos              | Total   |
 |-------------------------------|---------|--------------------------------|---------|
-| Health                        | 1698    | +2000 (Recovery)               | 3698    |
-| Attack                        | 894     | +2081 (Litheson scaling)       | 2975    |
-| Speed                         | 997     | +399 (Base Shield) +434 (Quick Break) | ~1930 |
-| Defence                       | 283     | +324 (Recovery)                | 607     |
-| Critical Rate                 | 48%     | +11% (Base Shield) +28% (Quick Break) | 87% |
+| Health                        | 1755    | +2000 (Recovery)               | 3755    |
+| Attack                        | 929     | +2081 (Litheson scaling)       | 3010    |
+| Speed                         | 1100    | +434 (Critical Burn) +444 (Recovery+Quick Break) | 1978 |
+| Defence                       | 312     | +324 (Recovery)                | 636     |
+| Critical Rate                 | 49%     | +28% (Critical Burn) +28% (Quick Break) +11% (removed Base Shield) | ~100% (capped) |
 
-*Speed confirmed at 1929 in-game. Maelle currently goes before Sciel in practice — acceptable given burst sequence is Verso-focused.*
+*Critical Burn Pictos replaced Base Shield — restored intended turn order (Sciel 1978 > Maelle 1956).*
 
 -----
 
@@ -73,38 +73,40 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 ## Pictos
 
-### Current
+### Current (permanent loadout)
 
-| Slot | Pictos      | Level | Stat Bonus                        | Effect                                      |
-|------|-------------|-------|-----------------------------------|---------------------------------------------|
-| 1    | Base Shield | 20    | Speed +399, Crit +11%             | +1 Shield per turn if no Shield active. Frees 20 LP (Base Shield Lumina free). |
-| 2    | Recovery    | 20    | Health +2000, Defence +324        | Recover 10% Health on turn start.           |
-| 3    | Quick Break | 25    | Speed +434, Crit +28%             | Play again on Breaking a target. **Never fires with Cheater** (max 2 consecutive turns — bonus turns cannot trigger further bonus turns). Pure stat stick for Sciel. |
+| Slot | Pictos        | Level | Stat Bonus                        | Effect                                      |
+|------|---------------|-------|-----------------------------------|---------------------------------------------|
+| 1    | Critical Burn | 25    | Speed +434, Crit +28%             | 25% increased Crit rate on Burning enemies  |
+| 2    | Recovery      | 20    | Health +2000, Defence +324        | Recover 10% Health on turn start            |
+| 3    | Quick Break   | 25    | Speed +444, Crit +28%             | Pure stat stick (never fires with Cheater)  |
 
-**Note:** Quick Break is a good candidate for situational swaps. Previous Pictos (Burn Affinity, Burning Break, Survivor) no longer equipped.
+*Temporarily replaced by Healing Boon / Protecting Tint while learning Lumina — revert once learnt.*
 
 -----
 
 ## Lumina
 
 ### LP Budget
-- **Current capacity:** 159 LP
-- **Used:** 150 LP
-- **Spare:** 9 LP (14 LP after Breaking Burn removed from core suite)
+- **Current capacity:** 175 LP (expanded 9 Colour of Lumina Chat 5)
+- **Used:** 170 LP
+- **Spare:** 5 LP (will become 0 after adding Healing Boon 10LP — expand pool by 5 more)
 
 ### Current Loadout
 
 | Lumina              | LP  | Notes                                                         |
 |---------------------|-----|---------------------------------------------------------------|
 | Accelerating Heal   | 5   |                                                               |
-| Base Shield         | —   | FREE from Base Shield Pictos (saves 20 LP)                    |
+| Base Shield         | 20  | Moved from Pictos to Lumina Chat 5                            |
 | Breaker             | 10  |                                                               |
-| Breaking Burn       | 5   | **Remove** — rarely triggers; being removed from core suite   |
-| Breaking Counter    | 3   | 50% Break damage on Counterattack. Situational.               |
-| Burn Affinity       | —   | FREE from Burn Affinity Pictos — **Pictos being replaced; will need to pay 10 LP if retaining effect** |
+| Breaking Burn       | 5   |                                                               |
+| Breaking Counter    | 3   |                                                               |
+| Breaking Death      | 5   |                                                               |
+| Burn Affinity       | —   | Previously FREE from Burn Affinity Pictos — now paying 10 LP if retained; check |
 | Burning Shots       | 3   |                                                               |
 | Cheater             | 40  |                                                               |
 | Critical Break      | 5   |                                                               |
+| Critical Burn       | —   | FREE from Critical Burn Pictos                                |
 | Dead Energy I       | 2   |                                                               |
 | Dead Energy II      | 2   |                                                               |
 | Dodger              | 1   |                                                               |
@@ -112,15 +114,16 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 | Energising Parry    | 15  |                                                               |
 | Energising Start I  | 5   |                                                               |
 | Energising Turn     | 20  |                                                               |
+| Healing Boon        | 10  | To add — expand pool first                                    |
 | Healing Tint Energy | 1   |                                                               |
 | Marking Shots       | 3   |                                                               |
 | Painted Power       | 5   |                                                               |
 | Protecting Heal     | 5   |                                                               |
+| Quick Break         | —   | FREE from Quick Break Pictos                                  |
 | Recovery            | —   | FREE from Recovery Pictos                                     |
 | Rewarding Mark      | 5   |                                                               |
-| Teamwork            | 5   |                                                               |
-
-**Note:** Burn Affinity Pictos being replaced by Quick Break — if Burn Affinity Lumina effect still wanted, must pay 10 LP. Heal Lumina (Energising Heal, Accelerating Heal, Protecting Heal, Healing Tint Energy) will trigger when Grim Harvest is added to skills.
+| Teamwork            | 5   |  
+                                                             |
 
 -----
 

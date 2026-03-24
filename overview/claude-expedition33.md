@@ -84,9 +84,25 @@ There are two distinct types of Break skills:
 
 A team typically needs both types — a filler to build the bar and a trigger to fire it. Some gradient skills combine both (e.g. Monoco's Break Point fills and triggers simultaneously).
 
-### Pictos
+### Pictos and Lumina
 
-Each Pictos item exists as a single copy in the game. Only one character can equip a given Pictos at a time. If another character wants the Lumina effect associated with a Pictos, they must equip it via Lumina at the listed LP cost — they cannot share the Pictos itself.
+Pictos are collectible items, one unique copy each. Finding a duplicate upgrades the existing copy. Each character has 3 Pictos slots. Equipping a Pictos applies both its stat boosts and its effect. After winning 4 battles with a Pictos equipped, it is learnt as a Lumina. Lumina can be applied to any character by spending LP; they apply the effect only — not the stat boosts. A character cannot equip the Lumina of a Pictos they already have equipped.
+
+Higher level Pictos give higher stat boosts. With all main attributes maxed at 99, Pictos stat boosts are the primary source of character growth.
+
+### Break Mechanics
+
+There are two distinct types of Break skills:
+- **Break bar filling skills** (labelled "High Break damage"): Deal high damage to the break bar to fill it up over multiple hits. Example: Stalact Punches, Terraquake.
+- **Break trigger skills** (labelled "Can Break"): Land the final hit that actually triggers the Break when the bar is full. Example: Moissonneuse Vendange, Mayhem, Final Path.
+
+A team typically needs both types — a filler to build the bar and a trigger to fire it. Some gradient skills combine both (e.g. Monoco's Break Point fills and triggers simultaneously).
+
+**Note:** By late game, Lumina (particularly Breaker) contributes significantly to break bar filling across all characters. The break capability of a team depends more on Lumina sets than on individual skills labelled as "high break damage." Multi-hit skills (e.g. Phantom Stars, Final Path) fill the break bar substantially even without that label. The skill label is not the sole indicator of break capability.
+
+### Tints
+
+Tints are consumable items, distinct from skills. There are three types: Healing Tints (restore HP), Revive Tints (revive a fallen ally), and Energy Tints (restore AP). Tints are upgraded using Shapes; the maximum number carried is increased using Shards. Tints are consumed on use and refilled on Rest. Pictos and Lumina effects that trigger "on applying a heal" or "on applying Shell" via Tints (e.g. Protecting Tint) only fire when a Tint is used, not when a healing skill is used.
 
 ### Attribute System
 
@@ -112,46 +128,16 @@ If the main party (Verso/Maelle/Sciel) is fully wiped in a battle, the player ca
 
 |                               |                                                                                                     |
 |-------------------------------|-----------------------------------------------------------------------------------------------------|
-| Level                         | 75                                                                                                  |
+| Level                         | 82                                                                                                  |
 | Role                          | Primary DPS                                                                                         |
-| Weapon                        | Medalum (16) → Lithum after The Reacher                                                             |
-| Stats (with Pictos)           | Health 3313, Attack 2060, Speed 1956, Defence 729, Crit 99%                                         |
-| Attributes                    | Agility 99, Defence 99, Luck 20, Vitality 7                                                         |
-| Pictos                        | Burning Break (21), Gradient Break (25), Sniper (23)                                                |
-| Key skills (active)           | Fleuret Fury, Percée, Phantom Strike, Gustave's Homage, Stendhal, Sword Ballet                      |
-| Note                          | Gradient Break has pushed Maelle's Speed above Sciel — needs Pictos adjustment to restore intended turn order |
-| Solo Lumina set (The Reacher) | Swap Cheater Lumina → Cheater Pictos (from Verso); borrow Second Chance (from Verso); add Last Stand suite + Recovery + Energising Attack I; remove Teamwork, Breaking Counter, Dead Energy I+II |
-
------
-
-### Lune
-
-|                   |                                                                                                              |
-|-------------------|--------------------------------------------------------------------------------------------------------------|
-| Level             | 72                                                                                                           |
-| Role              | Support/healer/stain DPS (reserve)                                                                           |
-| Weapon            | Kralim (29)                                                                                                  |
-| Stats (with Pictos) | Health 6226, Attack 5296, Speed 972, Defence 2628, Crit 54%                                                |
-| Attributes        | Vitality 99, Agility 99, Luck 18                                                                             |
-| Pictos            | Longer Shell (29), Healing Share (11), Powerful on Shell (23)                                                |
-| Key skills        | Wildfire, Terraquake, Thunderfall, Elemental Genesis, Healing Light, Mayhem                                  |
-| Lumina            | Core Suite                                                                                                   |
-
------
-
-### Sciel
-
-|                     |                                                                                                              |
-|---------------------|--------------------------------------------------------------------------------------------------------------|
-| Level               | 75                                                                                                           |
-| Role                | Pure support                                                                                                 |
-| Weapon              | Litheson (20) — Power 2081, Physical, Luck A, Agility B. L4: Moon = Greater Rush all allies / Sun = Greater Slow all enemies. L10: Twilight = both. L20: +3 AP on applying Buff or Debuff, once per turn. |
-| Stats (with Pictos) | Health 3698, Attack 2975, Speed 1929, Defence 607, Crit 87%                                                  |
-| Attributes          | Agility 99, Luck 99, Defence 27                                                                              |
-| Pictos              | Base Shield (20), Recovery (20), Quick Break (25)                                                            |
-| Key skills          | Fortune's Fury, Intervention, Plentiful Harvest, Final Path, Twilight Dance, Focused Foretell                |
-| Lumina              | 159 LP total, 150 used, 9 spare; Cheater (40 LP)                                                             |
-| Note                | Litheson's Greater Rush/Slow effects have a large impact on turn order — fights without Sciel are noticeably harder |
+| Weapon                        | Lithum (33) — Power 9254, Void, Luck S / Agility A. L4: In Virtuose, hitting Marked enemy doesn't remove Mark. L10: Switch to Virtuose on Counterattack. L20: Gain Shell on leaving Virtuose. |
+| Stats (with Pictos)           | Health 8411, Attack 10363, Speed 1580, Defence 182, Crit 93% — **Speed too low, Pictos review pending** |
+| Attributes                    | Luck 99, Agility 99, Might 48                                                                       |
+| Pictos                        | Burning Break (21), Gradient Break (25), Energy Master (30) — **temporary while learning Energy Master** |
+| Key skills (active)           | Phantom Strike, Fleuret Fury, Gustave's Homage, Percée, Stendhal + test Burning Canvas vs Sword Ballet |
+| Gommage                       | ✅ Unlocked (Relationship Level 7). Confirmed extremely powerful — 3.4M damage on Serpenphare. Required for Renoir fight. |
+| Lumina                        | 164LP total, 164LP used. Core suite (154LP) + Energising Attack I (10LP). Longer Shell (10LP) and Powerful on Shell (10LP) to add — expand pool by 20 Colour of Lumina. |
+| Note                          | Lithum L4: Mark not removed in Virtuose. L10: Counterattack → Virtuose. L20: Shell on leaving Virtuose — Longer Shell and Powerful on Shell will synergise. Shell ≠ Shield. |
 
 -----
 
@@ -159,37 +145,91 @@ If the main party (Verso/Maelle/Sciel) is fully wiped in a battle, the player ca
 
 |                   |                                                                                                                  |
 |-------------------|------------------------------------------------------------------------------------------------------------------|
-| Level             | 75                                                                                                               |
+| Level             | 81                                                                                                               |
 | Role              | Endgame main DPS                                                                                                 |
-| Weapon            | Chevalam (24) — Agility A, Luck B; Power 3263                                                                   |
-| Stats (with Pictos) | Health 4003, Attack 4205, Speed 1935, Defence 182, Crit 61%                                                   |
+| Weapon            | Chevalam (32) — Agility A, Luck B; Power 5033                                                                   |
+| Stats (with Pictos) | Health 3776, Attack ~6500+, Speed 2125, Defence 182, Crit 82%                                                |
 | Attributes        | Agility 99, Luck 99, Might 27                                                                                    |
-| Pictos            | Cheater (24), Survivor (21), Second Chance (16)                                                                  |
+| Pictos            | Cheater (24), Breaking Death (29), Second Chance (16)                                                            |
 | Key skills        | Quick Strike, Light Holder, Marking Shot, Perfect Break, End Bringer, Steeled Strike                            |
-| Lumina            | 134 LP total, 134 used, 0 spare; Confident + Confident Fighter added; Base Shield removed (non-functional with Chevalam) |
-| Note              | Chevalam Level 20 applies Rush on Rank S — Verso always goes first regardless of raw Speed                      |
+| Lumina            | 154LP total, 154LP used, 0 spare. Core suite (154LP) — Cheater free from Pictos, Breaking Death excluded, Base Shield excluded (non-functional with Chevalam). Adds: Confident (20LP), Confident Fighter (15LP), Enfeebling Mark (10LP), Survivor (20LP). |
+| Note              | Chevalam L20: Rush on Rank S — Verso always goes first. Breaking Death synergy: on death → break bar fills → Perfect Break → Rank S in one move. Survivor Lumina (20LP) covers survival. Breaking Death Pictos kept for stat boosts (Speed +586, Crit +33%). |
 
------
+### Sciel
+
+|                     |                                                                                                              |
+|---------------------|--------------------------------------------------------------------------------------------------------------|
+| Level               | 81                                                                                                           |
+| Role                | Pure support                                                                                                 |
+| Weapon              | Litheson (32) — Power 4226, Physical, Luck A, Agility B. L4: Moon = Greater Rush all allies / Sun = Greater Slow all enemies. L10: Twilight = both. L20: +3 AP on applying Buff or Debuff, once per turn. |
+| Stats (with Pictos) | Health 3755, Attack 3010, Speed 1978, Defence 636, Crit 100% (capped)                                      |
+| Attributes          | Agility 99, Luck 99, Defence 33                                                                              |
+| Pictos              | Critical Burn (25), Recovery (20), Quick Break (25) — **note: temporarily replaced by Healing Boon/Protecting Tint while learning; revert when learnt** |
+| Key skills          | Fortune's Fury, Intervention, Plentiful Harvest, Final Path, Twilight Dance, Grim Harvest                   |
+| Lumina              | 175LP total, 170LP used, 5LP spare. Core suite (154LP) + Accelerating Heal (5LP), Energising Heal (10LP), Protecting Heal (5LP), Healing Tint Energy (1LP). Healing Boon (10LP) to add once learnt. |
+| Note                | Critical Burn Pictos fixed turn order — Sciel now goes before Maelle (Speed 1978 vs 1956). Quick Break never fires with Cheater — pure stat stick. Grim Harvest replaces Focused Foretell. |
+
+### Lune
+
+|                   |                                                                                                              |
+|-------------------|--------------------------------------------------------------------------------------------------------------|
+| Level             | 76                                                                                                           |
+| Role              | DPS / healer (reserve)                                                                                       |
+| Weapon            | Kralim (29)                                                                                                  |
+| Stats (with Pictos) | Health 3989, Attack 5365, Speed 1772, Defence 1056, Crit 81%                                              |
+| Attributes        | Vitality 99, Agility 99, Luck 30                                                                             |
+| Pictos            | Powerful on Shell (23), Burn Affinity, Burning Death (21)                                                   |
+| Key skills        | Wildfire, Terraquake, Thunderfall, Elemental Genesis, Healing Light, Mayhem                                  |
+| Lumina            | 133LP total, 133LP used, 0 spare. Reserve core (110LP) + Accelerating Heal (5LP), Protecting Heal (5LP), Critical Break (5LP), Rewarding Mark (5LP), Breaking Death (5LP). Burn Affinity and Powerful on Shell free from Pictos. |
+| Note              | Protecting Heal activates Shell on every Healing Light cast — synergises with Longer Shell on Monoco. Burn Affinity fires immediately from Wildfire turn 1. Cheater deferred. |
 
 ### Monoco
 
 |                     |                                                                                                                    |
 |---------------------|--------------------------------------------------------------------------------------------------------------------|
-| Level               | 72                                                                                                                 |
+| Level               | 77                                                                                                                 |
 | Role                | Break + AP support (reserve team with Lune)                                                                        |
-| Weapon              | Nusaro (20) → Joyaro (25) — switch pending respec                                                                  |
-| Stats (with Pictos) | Health 4679, Attack 3752, Speed 1242, Defence 1716, Crit 33%                                                      |
-| Attributes          | Agility 99, Defence 99, Luck 18 (respec target — current allocation has Luck 53)                                   |
-| Pictos              | Anti-Freeze (21), Anti-Burn (22), Energising Turn (14)                                                             |
+| Weapon              | Joyaro (25)                                                                                                        |
+| Stats (with Pictos) | Health 4483, Attack 4810, Speed 1824, Defence 2301, Crit 51%                                                      |
+| Attributes          | Agility 99, Defence 99, Luck 24                                                                                    |
+| Pictos              | Longer Shell (29), Energising Turn (14), Sniper (23)                                                               |
 | Key skills          | Potier Energy, Stalact Punches, Abbest Wind, Moissonneuse Vendange, Portier Crash, Chalier Combo                   |
-| Lumina              | 122 LP total, 114 used, 8 spare                                                                                    |
-| Endgame weapon      | Joyaro (25) — obtained                                                                                             |
+| Lumina              | 127LP total, 111LP used, 16LP spare. Reserve core (110LP) — Energising Turn free from Pictos. Adds: Staggering Attack (1LP), Breaking Death (5LP). Anti-Burn and Anti-Blight available as situational Lumina for specific bosses. |
+| Note                | Longer Shell extends Shell applied by Lune's Healing Light (via Protecting Heal). Sniper is pure stat stick — effect irrelevant for Joyaro build. |
 
 -----
 
-### Core Lumina Suite (101 LP)
+### Core Lumina Suite
 
-Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energising Parry (15), Energising Start I (5), Dodger (1), Breaker (10), Marking Shots (3), Dead Energy I (2), Dead Energy II (2), Critical Break (5), Rewarding Mark (5), Burning Shots (3)
+**Main team core (154LP)** — applied to Maelle, Verso, Sciel via in-game Lumina set:
+
+| Lumina | LP |
+|---|---|
+| Painted Power | 5 |
+| Teamwork | 5 |
+| Base Shield | 20 |
+| Energising Turn | 20 |
+| Energising Parry | 15 |
+| Energising Start I | 5 |
+| Dodger | 1 |
+| Breaker | 10 |
+| Marking Shots | 3 |
+| Dead Energy I | 2 |
+| Dead Energy II | 2 |
+| Critical Break | 5 |
+| Rewarding Mark | 5 |
+| Burning Shots | 3 |
+| Breaking Burn | 5 |
+| Breaking Counter | 3 |
+| Breaking Death | 5 |
+| Cheater | 40 |
+| **Total** | **154** |
+
+Cheater costs 0LP for characters with Cheater Pictos equipped (Verso).
+
+**Reserve team core (110LP)** — applied to Lune, Monoco via in-game Lumina set. Same as main team core minus Cheater (40LP), Dead Energy I (2LP), Dead Energy II (2LP).
+
+Character-specific additions are applied on top of the relevant core set. See per-character entries above.
 
 -----
 
@@ -277,14 +317,22 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 
 ## Section 9: Open Questions
 
-- **Sciel stat recoat:** Actual allocation at end of chat was Agility 99/Luck 78. Planned optimum was Luck 89/Agility 49. Worth recoating to optimum when convenient?
-- **Verso skill additions:** Does not yet have Steeled Strike. After obtaining Cheater Pictos (Sprong), swap Paradigm Shift or another slot → Steeled Strike. Also consider whether Defiant Strike is worth adding when parry skills improve (30% HP cost becomes acceptable with high parry rate).
-- **Serpenphare timing:** Phase 2 attempt at risk (recommended 70–80+), or defer to Phase 4?
-- **Energising Break (3 LP):** Removed from core suite as infrequent. Worth reconsidering in endgame when Break frequency is higher?
-- **Maelle relationship level:** Check current level — must reach Level 5 before The Reacher unlocks, Level 7 (via “Truth” choice) for Gustave resurrection path.
-- **Lune weapon progression:** Kralim already in inventory. When to switch from Trebuchim to Kralim for Elemental Genesis build? Requires different stat allocation and Cheater for looping.
-- **Choralim for Lune:** Already at level 20 in inventory. Sources suggested it as an endgame option alongside Kralim — worth investigating before Lune’s next build session.
-- **Gradient Skill details:** All characters have 3 Gradient Skills (1GC, 2GC, 3GC). Most details unconfirmed in transcript — placeholders in character files. Fill in during gameplay sessions.
+- **Maelle Pictos review:** Speed dropped to 1580 after swapping Survivor for Energy Master (temp). Review Pictos once Energy Master is learnt and long-term holder decided.
+- **Energy Master long-term holder:** Maelle (AP synergy — every AP gain +1 is very strong with Lithum rotation) vs Sciel (Health +4979). Decide after 4 battles learning. LP cost: 40LP.
+- **Monoco Pictos slot:** If paying 20LP for Energising Turn Lumina, what replaces the Energising Turn Pictos slot? Deferred until Pictos catalogue complete. Quick Break (10LP) as Lumina also a candidate.
+- **Maelle Lumina additions:** Longer Shell (10LP) and Powerful on Shell (10LP) synergise with Lithum L20 Shell generation. Add — expand pool by 20 Colour of Lumina.
+- **Maelle skills:** Test Burning Canvas vs Sword Ballet as 6th skill slot empirically.
+- **Sciel Lumina:** Add Healing Boon (10LP) once Healing Boon and Protecting Tint are learnt (one battle remaining). Revert Pictos to Critical Burn / Recovery / Quick Break after learning.
+- **Empowering Dodge (5LP):** Reset behaviour on parry unconfirmed — test empirically before committing LP.
+- **Energising Burn (10LP):** Consider when next expanding core Lumina suite — all characters have Burning Shots.
+- **Full Strength Pictos:** Not yet obtained. Effect: 25% increased damage at full Health. Strong candidate for Maelle given Recovery + Shell from Lithum. Find as you progress.
+- **Clea's Life Pictos:** From Flying Manor (Phase 3). Recovers 100% Health on turn start if no damage taken since last turn. Strong survivability for Maelle. Note for Flying Manor visit.
+- **Verso skills file:** Stale — still shows Assault Zero and Strike Storm as equipped. Correct loadout: Quick Strike, Light Holder, Marking Shot, Perfect Break, End Bringer, Steeled Strike.
+- **New Pictos/Lumina reference file:** Create `overview/pictos-lumina.md` — JSON definitive, Markdown generated by script. Structure: mechanics sections, main team core set, reserve team core set, per-character loadouts (core + extras), known Pictos catalogue, situational Pictos, candidates for review. In progress (Chat 5 JSON scaffold at `overview/pictos-lumina.json`). Continue in Chat 6.
+- **Post-Reacher full review:** Complete ✅ — all five characters reviewed Chat 5.
+- **Gommage:** Unlocked ✅ — Relationship Level 7 complete. Required for Renoir fight.
+- **Serpenphare:** Complete ✅.
+- **Verso Survivor/Breaking Death:** Resolved ✅ — Breaking Death Pictos + Survivor Lumina confirmed.
 
 -----
 
@@ -298,6 +346,7 @@ Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energis
 | Chat 2 | [Formatted](../chats/chat2/chat2-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-index.md)                  | [chat2.md](../chats/chat2/chat2.md) | Endgame skill research; character stat update via voice; chromatic progress; compaction mechanics; session procedure design                  |
 | Chat 3 | [Formatted](../chats/chat3/chat3-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat3/chat3-index.md)                  | [chat3.md](../chats/chat3/chat3.md) | Endgame team transition (Cheater Pictos, Steeled Strike, Second Chance resolution); team role framing; burn-stacking vs stance cycling paths; Chevalam mechanics; Maelle LP planning; transcript logging problems identified |
 | Chat 4 | [Formatted](../chats/chat4/chat4-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat4/chat4-index.md) | [chat4.md](../chats/chat4/chat4.md) | Progress update (Sacred River, Chevaliere, Dark Shore, Sakapatate/Joyaro, all chars 70+); story ordering research (Flying Manor optional, final boss in Lumière); Verso weapon selection (Chevalam reinstated with Cheater synergy confirmed); Steeled Strike burst sequence analysis; Maelle Reacher preparation (stats, skills, Pictos, solo build); session logging procedure improvements (verbatim instruction strengthened, sections-per-part changed to 2, session state step added); Verso full update (stats, Lumina, skills, weapons inventory) |
+| Chat 5 | [Formatted](../chats/chat5/chat5-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat5/chat5-index.md) | [chat5.md](../chats/chat5/chat5.md) | Progress update (Reacher, Serpenphare, chromatics); Maelle respec to Luck/Agility/Might + Lithum equipped (level 33, Power 9254); Gommage unlocked; full Pictos/Lumina review all five characters; core Lumina sets defined (154LP main, 110LP reserve); Energy Master obtained; Pictos/Lumina reference file started (JSON scaffold); Tints mechanics clarified; Protecting Heal + Longer Shell synergy established for reserve team. |
 
 -----
 
@@ -356,7 +405,7 @@ Triggered by `!log` and always at end of session.
 
 ### End of Session
 
-1. Output the in-game actions checklist from `actions` for Matt to implement before the next session.
+1. Output the in-game actions checklist from `actions` for Matt to implement before the next session — **do this BEFORE step 2 so it appears verbatim in the transcript**
 2. Run compound log step — transcript and index now complete
 3. Run splitter (`split_transcript.py --sections-per-part 2`) on `chatN.md`
 4. Edit `chatN-index.md` directly to add Part Files list under `## Part Files (Claude-readable)`

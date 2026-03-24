@@ -29,32 +29,29 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 - Kralim Level 20: +1 AP when Stains are consumed.
 
 -----
+
 ## Current Stats
 
 ### Level and Attributes
 
 | Attribute | Value | Priority  | Reason                                                                                        |
 |-----------|-------|-----------|-----------------------------------------------------------------------------------------------|
-| Level     | 72    | —         |                                                                                               |
+| Level     | 76    | —         |                                                                                               |
 | Vitality  | 99    | Primary   | Kralim scales Vitality A — primary weapon scaling stat                                        |
 | Agility   | 99    | Primary   | Kralim scales Agility B — secondary weapon scaling stat                                       |
-| Luck      | 18    | Tertiary  | Spare points (18 of 216 total); ~0.36% crit per point; best use of remainder                 |
+| Luck      | 30    | Tertiary  | Spare points; crit boost                                                                      |
 | Might     | 0     | None      | No benefit for this build                                                                     |
 | Defence   | 0     | None      | No benefit for this build                                                                     |
 
-*Respec required from previous Trebuchim allocation (Luck 99, Vitality 71, Agility 22).*
-
-### Combat Stats (with Pictos — Longer Shell 29, Healing Share 11, Powerful on Shell 23)
+### Combat Stats (with Pictos — Powerful on Shell 23, Burn Affinity, Burning Death 21)
 
 | Stat                          | Base    | From weapon/Pictos              | Total   |
 |-------------------------------|---------|--------------------------------|---------|
-| Health                        | 2746    | +3224 (Pictos)                 | 5970    |
-| Attack                        | 867     | +3089 (Trebuchim scaling)      | 3956    |
-| Speed                         | 839     | —                              | 839     |
-| Defence                       | 45      | +2446 (Pictos)                 | 2491    |
-| Critical Rate                 | 43%     | +39% (Pictos)                  | 82%     |
-
-*Attack figure based on current Trebuchim. Will change after Kralim switch and respec.*
+| Health                        | 3115    | +874 (Powerful on Shell)       | 3989    |
+| Attack                        | 911     | +4454 (Kralim scaling)         | 5365    |
+| Speed                         | 1025    | +439 (Burn Affinity) +308 (Burning Death) | 1772 |
+| Defence                       | 182     | +874 (Powerful on Shell)       | 1056    |
+| Critical Rate                 | 20%     | +25% (Powerful on Shell) +12% (Burn Affinity) +24% (Burning Death) | 81% |
 
 ### Pictos Breakdown
 
@@ -95,53 +92,57 @@ Angerim (24), Betelim (12), Braselim (15), Choralim (20), Colim (13), Coralim (7
 
 ## Pictos
 
-| Slot | Pictos             | Stat Bonus                    |
-|------|--------------------|-------------------------------|
-| 1    | Energising Cleanse | Health +1166, Defence +160    |
-| 2    | Healing Share      | Health +467, Crit +14%        |
-| 3    | Breaking Burn      | Speed +243, Crit +9%          |
+| Slot | Pictos             | Level | Stat Bonus                    | Effect                                           |
+|------|--------------------|-------|-------------------------------|--------------------------------------------------|
+| 1    | Powerful on Shell  | 23    | Defence +874, Crit +25%       | Apply Powerful when applying Shell               |
+| 2    | Burn Affinity      | —     | Speed +439, Crit +12%         | 25% increased damage on Burning targets          |
+| 3    | Burning Death      | 21    | Speed +308, Crit +24%         | Apply 3 Burn to all enemies on death             |
 
-**Notes:** Energising Cleanse effect: dispels first negative status received + grants 2 AP (once per battle). Healing Share effect: receive 15% of all heals affecting other characters. Breaking Burn effect: 25% increased break damage on burning enemies. Pictos selection confirmed pre-Paintress (Act 2 end) — whether changed in Act 3 reserve status is unconfirmed.
+*Previous Pictos (Longer Shell, Healing Share, Powerful on Shell) replaced Chat 5. Longer Shell moved to Monoco; Healing Share retired.*
 
----
+*Powerful on Shell fires when Lune casts Healing Light (Shell applied via Protecting Heal Lumina) — cascades to Longer Shell on Monoco and boosts Lune's own damage.*
+
+-----
 
 ## Lumina
 
 ### LP Budget
-- **Current capacity:** 79 LP
-- **Expansion cost:** Paid 5 Colour of Lumina to reach 79 LP (from base 74)
+- **Current capacity:** 133 LP (expanded 13 Colour of Lumina Chat 5)
+- **Used:** 133 LP
+- **Spare:** 0 LP
 
-### Core Suite
-*Shared across all three main party members — listed here for reference.*
-Painted Power (5), Teamwork (5), Base Shield (20), Energising Turn (20), Energising Parry (15), Energising Start I (5), Dodger (1), Breaker (10), Breaking Burn (5), Marking Shots (3), Dead Energy I (2), Dead Energy II (2), Critical Break (5), Rewarding Mark (5), Burning Shots (3)
-**Total: 106 LP**
+### Current Loadout
 
-*Note: Lune's current loadout predates the core suite standardisation and is at 79 LP — well below the 110 LP used by the levelling team. If Lune joins the endgame team, LP expansion and loadout alignment will be needed.*
-
-### Character-Specific
+*Reserve team core (110LP) + character-specific additions.*
 
 | Lumina             | LP  | Notes                                         |
 |--------------------|-----|-----------------------------------------------|
-| Energising Turn    | 20  |                                               |
-| Energising Heal    | 10  |                                               |
-| Energising Parry   | 15  |                                               |
-| Energising Start I | 5   |                                               |
-| Dodger             | 1   |                                               |
-| Breaker            | 10  |                                               |
-| Augmented Aim      | 3   |                                               |
-| Burning Shots      | 3   |                                               |
-| Marking Shots      | 3   |                                               |
-| Dead Energy I      | 2   |                                               |
-| Dead Energy II     | 2   |                                               |
-| Teamwork           | 5   |                                               |
-| Energising Cleanse | —   | FREE from Energising Cleanse Pictos           |
-| Healing Share      | —   | FREE from Healing Share Pictos                |
-| Breaking Burn      | —   | FREE from Breaking Burn Pictos                |
+| Base Shield        | 20  | Core                                          |
+| Breaker            | 10  | Core                                          |
+| Breaking Burn      | 5   | Core — retained; fires when reserve team breaks enemies |
+| Breaking Death     | 5   | Core + character-specific                     |
+| Burn Affinity      | —   | FREE from Burn Affinity Pictos                |
+| Burning Shots      | 3   | Core                                          |
+| Critical Break     | 5   | Core + character-specific                     |
+| Dodger             | 1   | Core                                          |
+| Energising Parry   | 15  | Core                                          |
+| Energising Start I | 5   | Core                                          |
+| Energising Turn    | 20  | Core                                          |
+| Healing Tint Energy| 1   | Character-specific                            |
+| Marking Shots      | 3   | Core                                          |
+| Painted Power      | 5   | Core                                          |
+| Powerful on Shell  | —   | FREE from Powerful on Shell Pictos            |
+| Protecting Heal    | 5   | Character-specific — Shell on every Healing Light cast |
+| Rewarding Mark     | 5   | Core + character-specific                     |
+| Teamwork           | 5   | Core                                          |
+| Accelerating Heal  | 5   | Character-specific                            |
 
-### Notes
-Total paid LP: 79. Whether loadout has changed since Paintress fight is unconfirmed.
+*Removed Chat 5: Breaking Counter (3LP), Dead Energy I (2LP), Dead Energy II (2LP).*
+*Added Chat 5: Protecting Heal (5LP), Critical Break (5LP), Rewarding Mark (5LP), Breaking Death (5LP).*
 
----
+
+
+-----
 
 ## Skills
 

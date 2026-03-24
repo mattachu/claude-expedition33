@@ -48,12 +48,14 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 
 | Attribute | Value | Priority  | Reason                                                                                           |
 |-----------|-------|-----------|--------------------------------------------------------------------------------------------------|
-| Level     | 75    | —         |                                                                                                  |
-| Agility   | 99    | Primary   | Scales Speed, Attack, and Defence stat simultaneously                                            |
-| Defence   | 99    | Secondary | Contributes ~0.18% crit per point; serves dual purpose despite being half as efficient as Luck   |
-| Luck      | 20    | Minimal   | Medalum/Lithum do not scale off Luck primarily                                                   |
-| Vitality  | 7     | Minimal   | Weapon does not scale off Vitality                                                               |
-| Might     | 0     | None      | No benefit for this build                                                                        |
+| Level     | 82    | —         |                                                                                                  |
+| Luck      | 99    | Primary   | Lithum scales Luck S — primary weapon scaling stat                                               |
+| Agility   | 99    | Primary   | Lithum scales Agility A; raises Speed, Attack, Defence simultaneously                            |
+| Might     | 48    | Secondary | Flat attack bonus; best use of remaining points for DPS                                          |
+| Vitality  | 0     | None      | Weapon does not scale off Vitality                                                               |
+| Defence   | 0     | None      | No benefit for this build                                                                        |
+
+*Note: Lithum scales Luck S / Agility A — respec from Medalum's Defence+Agility was required when switching.*
 
 ### Combat Stats (with Pictos — Burning Break 21, Gradient Break 25, Sniper 23)
 
@@ -80,10 +82,11 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 ## Weapons
 
 ### Current
-- **Name:** Medalum (16)
-- **Scaling:** Defence + Agility
-- **Power:** 1166
-- **Notes:** Level 4: Start battle in Virtuose Stance. Level 10: Burn doubled in Virtuose. Level 20: Burn deals double damage in Virtuose. Was bugged pre-patch (double Virtuose damage). Patch removed the bug — now "mid weapon." Do not upgrade further; replace with Lithum after The Reacher.
+- **Name:** Lithum (33)
+- **Power:** 9254
+- **Element:** Void
+- **Scaling:** Luck S, Agility A
+- **Notes:** Level 4: In Virtuose Stance, hitting a Marked enemy doesn't remove Mark. Level 10: Switch to Virtuose Stance on Counterattack. Level 20: Gain Shell when switching out of Virtuose Stance. Nearly doubled in power from level 32 to 33 (from 4651 to 9254). Respec required from Medalum (Defence+Agility) to Lithum (Luck+Agility). Shell from L20 synergises with Longer Shell and Powerful on Shell Lumina.
 
 ### Endgame
 - **Name:** Lithum (level 21 when obtained)
@@ -125,15 +128,23 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 
 *Cheater equipped via Lumina (40 LP) rather than Pictos slot.*
 
-### Solo loadout (The Reacher)
-Borrow from Verso (who is not in party):
-- Slot 1: Cheater (24) — Health +1198, Speed +400. Frees 40 LP from Lumina.
-- Slot 2: Second Chance (16) — Health +1106, Crit +8%. Revival once per battle.
-- Slot 3: Gradient Break (25) — Speed +424, Crit +28%. Chosen over Burning Break for speed advantage vs Alicia's Rush phase.
+### Current (party loadout — temporary)
 
-**Solo stats (estimated):** Health ~4076, Speed ~1821, Crit ~70%
+| Slot | Pictos        | Level | Stat Bonus                        | Notes                        |
+|------|---------------|-------|-----------------------------------|------------------------------|
+| 1    | Burning Break | 21    | Health +1541, Crit +24%           | Burning Break Lumina free    |
+| 2    | Gradient Break| 25    | Speed +424, Crit +28%             | Gradient Break Lumina free   |
+| 3    | Energy Master | 30    | Health +4979                      | Temporary — learning; long-term holder TBD |
 
-**Note:** Second Chance upgrade (level 31) exists but requires Création in Renoir's Drafts — post-game only. Level only affects stat bonuses, not the revival effect.
+*Speed has dropped to 1580 with Energy Master replacing Survivor (+439 Speed, +12% Crit). Pictos review needed once Energy Master learnt and holder decided.*
+
+### Permanent party loadout (target — pending review)
+
+To be determined after Energy Master holder decided. Previous was Survivor / Gradient Break / Burning Break. Clea's Life (Flying Manor, Phase 3) is a future candidate.
+
+### Solo loadout (The Reacher) — completed ✅
+
+Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina build applied and reversed after completing The Reacher.
 
 -----
 
@@ -236,9 +247,9 @@ Alternative: swap Fleuret Fury for Sword Ballet if preferring burst over Break u
 
 | Gradient Skill  | Gradient Cost | Acquired | Notes                                                                                                                                          |
 |-----------------|---------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Virtuose Strike | 1             | ✅       | High single-target physical damage, 5 hits; then changes to Virtuose Stance.                                                                  |
-| Phoenix Flame   | 2             | ✅       | Applies 10 Burn to all enemies; revives all allies with 50–70% Health; then changes to Offensive Stance.                                      |
-| Gommage         | 3             | ❌       | Unlocked at Relationship Level 7 (after The Reacher — choose "Truth"). Kills weak targets; otherwise extreme Void damage 1 hit, then changes to Virtuose Stance. Required for Renoir fight. |
+| Virtuose Strike | 1             | ✅       | High single-target physical damage, 5 hits; then changes to Virtuose Stance.                                                                   |
+| Phoenix Flame   | 2             | ✅       | Applies 10 Burn to all enemies; revives all allies with 50–70% Health; then changes to Offensive Stance.                                       |
+| Gommage         | 3             | ✅       | Kills weak targets; otherwise extreme Void damage 1 hit, then changes to Virtuose Stance.                                                      |
 
 -----
 
@@ -291,5 +302,7 @@ Alternative: swap Fleuret Fury for Sword Ballet if preferring burst over Break u
 - **Stendhal self-Defenceless:** Stendhal applies Defenceless to Maelle herself on use. Plan accordingly.
 - **Teamwork effect:** Said it gives AP when an ally uses a skill. Correct: passive damage bonus when whole team is alive — non-functional in solo fights for a different reason than originally stated.
 - **Melarum source:** Do not assert "Old Lumiere post-Renoir" — this is likely wrong.
+- **Shell vs Shield confusion (recurring):** Shell = 20% damage reduction for 3 turns. Shield = damage-blocking HP buffer (1 per turn from Base Shield Lumina, or other sources). Stendhal removes self-shields (HP buffer), not Shell. Lithum L20 grants Shell (damage reduction) on leaving Virtuose. These are entirely separate mechanics — do not conflate them.
+- **Lithum scaling:** Lithum scales Luck S / Agility A — not Defence + Agility like Medalum. Respec is required when switching. Glaisum (Defence A / Agility B) also requires a respec from Lithum.
 
 -----

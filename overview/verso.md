@@ -49,7 +49,7 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 | Attribute | Value | Priority  | Reason                                                                         |
 |-----------|-------|-----------|--------------------------------------------------------------------------------|
-| Level     | 70+   | —         |                                                                                |
+| Level     | 81    | —         |                                                                                |
 | Agility   | 99    | Primary   | Chevalam scales Agility A, Luck B; Agility raises Speed, Attack, Defence       |
 | Luck      | 99    | Primary   | Increases crit rate; same weapon scaling priority as Agility                   |
 | Might     | 27    | Tertiary  | Extra attack power; spare points                                               |
@@ -79,11 +79,11 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ## Weapons
 
 ### Current
-- **Name:** Chevalam (level 24)
-- **Power:** 3263
+- **Name:** Chevalam (32)
+- **Power:** 5033
 - **Element:** Physical
 - **Scaling:** Agility A, Luck B
-- **Notes:** Level 4: Start battle at Rank S, but can't be Healed or gain Shields. Level 10: 20% increased damage for each consecutive no-damage turn, stacks up to 5×. Cheater's free extra turn counts as a no-damage turn — stacks accumulate mechanically. Level 20: Apply Rush on Rank S.
+- **Notes:** Level 4: Start battle at Rank S, but can't be Healed or gain Shields. Level 10: 20% increased damage for each consecutive no-damage turn, stacks up to 5×. Level 20: Apply Rush on Rank S.
 
 ### Also obtained (not in active use)
 | Weapon      | Level | Notes                                                                                                         |
@@ -115,29 +115,29 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 ## Pictos
 
-| Slot | Pictos        | Stat Bonus              |
-|------|---------------|-------------------------|
-| 1    | Burning Death | Speed +308, Crit +24%   |
-| 2    | Second Chance | Health +1107, Crit +8%  |
-| 3    | Shortcut      | Speed +182, Crit +18%   |
+| Slot | Pictos        | Level | Stat Bonus                        | Effect                                      |
+|------|---------------|-------|-----------------------------------|---------------------------------------------|
+| 1    | Cheater       | 24    | Health +1198, Speed +400          | Extra turn once per turn                    |
+| 2    | Breaking Death| 29    | Speed +586, Crit +33%             | Fully charge enemy break bar on death       |
+| 3    | Second Chance | 16    | Health +1107, Crit +8%            | Revive with 100% Health once per battle     |
 
-**Notes:** Second Chance — only one character can hold at a time; works once per battle. Currently held by Verso for levelling team; must return to Maelle for endgame team. Burning Death and Shortcut exact Pictos effects not confirmed in transcript — stats confirmed only.
+**Breaking Death synergy:** On death → break bar fills instantly → Second Chance revives at Rank D → Perfect Break triggers break → Rank S in one move → Steeled Strike burst immediately active.
 
----
-
+-----
 ## Lumina
 
 ### LP Budget
-- **Current capacity:** 134 LP
-- **Expansion:** Paid 3 Colour of Lumina this session to expand to 134 LP
+- **Current capacity:** 154 LP
+- **Used:** 154 LP
+- **Spare:** 0 LP
 
-### Current Loadout (134 LP used, 0 LP free)
+### Current Loadout
 
 | Lumina              | LP  | Notes                                                         |
 |---------------------|-----|---------------------------------------------------------------|
-| Breaker             | 10  |                                                               |
 | Breaking Burn       | 5   |                                                               |
-| Breaking Counter    | 3   | 50% Break damage on Counterattack. Candidate for removal.     |
+| Breaking Counter    | 3   |                                                               |
+| Breaking Death      | 5   |                                                               |
 | Burning Shots       | 3   |                                                               |
 | Cheater             | —   | FREE from Cheater Pictos                                      |
 | Confident           | 20  | Take half damage; cannot be healed (already Chevalam-gated)   |
@@ -154,10 +154,8 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Painted Power       | 5   |                                                               |
 | Rewarding Mark      | 5   |                                                               |
 | Second Chance       | —   | FREE from Second Chance Pictos                                |
-| Survivor            | —   | FREE from Survivor Pictos                                     |
-| Teamwork            | 5   | Passive damage bonus when whole team alive                    |
-
-**Note:** Base Shield removed this session — non-functional with Chevalam (can't gain shields). Confident + Confident Fighter added — synergise with Chevalam's no-heal constraint. Recovery + Chevalam interaction unverified — worth testing.
+| Survivor            | 20  | Added Chat 5 — both Survivor and Breaking Death effects now on Verso |
+| Teamwork            | 5   |                                                               |
 
 -----
 
@@ -168,11 +166,11 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Skill          | AP Cost         | Equipped | Rank Bonus                                     | Notes                                                                                                                                                              |
 |----------------|-----------------|----------|------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Quick Strike   | 2               | ✅       | D: gives more Perfection                       | Low physical. Modest Perfection gain. Does NOT jump to Rank B without Glaceso.                                                                                     |
-| Light Holder   | 4               | ✅       | A: +2 AP                                       | Medium Light damage, 5 hits. Gains +1 Rank at completion. Replaced Assault Zero — more flexible rank tool with AP bonus at A Rank.                                |
+| Light Holder   | 4               | ✅       | A: +2 AP                                       | Medium Light damage, 5 hits. Gains +1 Rank at completion.                                                                                                          |
 | Marking Shot   | 2               | ✅       | C: increased damage                            | Low damage + 100% Mark. No HP cost. 2 AP.                                                                                                                         |
 | Perfect Break  | 7 (5 at B Rank) | ✅       | B: costs 5 AP instead of 7                    | Very high Light damage; can Break; Rank S on Break.                                                                                                                |
-| End Bringer    | 8               | ✅       | A: can reapply stun                            | Extreme Physical damage, 6 hits. Increased damage if target stunned. Enemies are stunned on Break — End Bringer's A Rank reapplies stun to extend the window.     |
-| Steeled Strike | 9               | ✅       | S: increased damage                            | After 1 turn charge, extreme Physical damage. Interrupted if damage taken. Safe with Cheater (consecutive turns). S Rank bonus active given Chevalam starts at S. |
+| End Bringer    | 8               | ✅       | A: can reapply stun                            | Extreme Physical damage, 6 hits. Increased damage if target stunned.                                                                                               |
+| Steeled Strike | 9               | ✅       | S: increased damage                            | After 1 turn charge, extreme Physical damage. Interrupted if damage taken. Safe with Cheater. S Rank bonus active given Chevalam starts at S.                      |
 
 **Skills available but not equipped:**
 
