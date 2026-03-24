@@ -1,0 +1,698 @@
+{
+  "_notes": "Working file \u2014 built incrementally during Chat 5. Convert to Markdown at end of session.",
+  "_commit": "d79ec037",
+  "pictos": [
+    {
+      "name": "Anti-Blight",
+      "level": 24,
+      "stats": {
+        "health": 1897,
+        "defence": 949
+      },
+      "effect": "Immune to Blight",
+      "lp_cost": 10,
+      "holder": "Monoco"
+    },
+    {
+      "name": "Anti-Burn",
+      "level": 22,
+      "stats": {},
+      "effect": "Immune to Burn",
+      "lp_cost": null,
+      "holder": "Monoco",
+      "notes": "Stats not recorded"
+    },
+    {
+      "name": "Anti-Freeze",
+      "level": null,
+      "stats": {},
+      "effect": "Immune to Freeze",
+      "lp_cost": null,
+      "holder": "unequipped (Lumina available)",
+      "notes": "Stats not recorded; previously on Monoco"
+    },
+    {
+      "name": "Base Shield",
+      "level": 20,
+      "stats": {
+        "health": 2000,
+        "crit": "11%"
+      },
+      "effect": "Grants 1 Shield HP buffer per turn",
+      "lp_cost": 20,
+      "holder": "Sciel (Lumina)",
+      "notes": "Moved to Lumina this session \u2014 Pictos slot freed"
+    },
+    {
+      "name": "Breaking Death",
+      "level": 29,
+      "stats": {
+        "speed": 586,
+        "crit": "33%"
+      },
+      "effect": "Fully charge enemy break bar on death",
+      "lp_cost": 5,
+      "holder": "Verso"
+    },
+    {
+      "name": "Burning Break",
+      "level": 21,
+      "stats": {
+        "health": 1541,
+        "crit": "24%"
+      },
+      "effect": "Burning Break Lumina free",
+      "lp_cost": null,
+      "holder": "Maelle"
+    },
+    {
+      "name": "Cheater",
+      "level": 24,
+      "stats": {
+        "health": 1198,
+        "speed": 400
+      },
+      "effect": "Extra turn after using a skill, once per turn",
+      "lp_cost": 40,
+      "holder": "Verso"
+    },
+    {
+      "name": "Confident",
+      "level": 29,
+      "stats": {
+        "speed": 557,
+        "crit": "32%"
+      },
+      "effect": "See Confident Fighter Lumina",
+      "lp_cost": null,
+      "holder": "unequipped",
+      "notes": "Not currently equipped as Pictos"
+    },
+    {
+      "name": "Critical Burn",
+      "level": 25,
+      "stats": {
+        "speed": 434,
+        "crit": "28%"
+      },
+      "effect": "25% increased Crit rate on Burning enemies",
+      "lp_cost": 5,
+      "holder": "Sciel"
+    },
+    {
+      "name": "Draining Cleanse",
+      "level": 20,
+      "stats": {
+        "health": 2000,
+        "defence": 324
+      },
+      "effect": "Consume 1AP to prevent Status Effect application, if possible",
+      "lp_cost": 15,
+      "holder": "unequipped"
+    },
+    {
+      "name": "Empowering Dodge",
+      "level": 15,
+      "stats": {
+        "speed": 162,
+        "crit": "17%"
+      },
+      "effect": "5% increased damage per consecutive dodge, stacks up to 10",
+      "lp_cost": 5,
+      "holder": "unequipped",
+      "notes": "Reset behaviour on parry unconfirmed \u2014 test empirically"
+    },
+    {
+      "name": "Energising Shell",
+      "level": 15,
+      "stats": {
+        "defence": 319,
+        "speed": 154
+      },
+      "effect": "Give 2AP on applying Shell",
+      "lp_cost": 10,
+      "holder": "unequipped"
+    },
+    {
+      "name": "Energising Turn",
+      "level": 14,
+      "stats": {
+        "speed": 270
+      },
+      "effect": "See Energising Turn Lumina",
+      "lp_cost": 20,
+      "holder": "Monoco",
+      "notes": "Stats incomplete \u2014 speed only recorded"
+    },
+    {
+      "name": "Gradient Break",
+      "level": 25,
+      "stats": {
+        "speed": 424,
+        "crit": "28%"
+      },
+      "effect": "Gradient Break Lumina free",
+      "lp_cost": null,
+      "holder": "Maelle"
+    },
+    {
+      "name": "Healing Boon",
+      "level": 20,
+      "stats": {
+        "defence": 647,
+        "speed": 266
+      },
+      "effect": "Heal 15% HP on applying a buff",
+      "lp_cost": 10,
+      "holder": "unequipped",
+      "notes": "Strong candidate for Sciel"
+    },
+    {
+      "name": "Longer Shell",
+      "level": 29,
+      "stats": {},
+      "effect": "Extends Shell duration",
+      "lp_cost": null,
+      "holder": "Lune",
+      "notes": "Stats not recorded"
+    },
+    {
+      "name": "Healing Share",
+      "level": 11,
+      "stats": {},
+      "effect": "Unknown",
+      "lp_cost": null,
+      "holder": "Lune",
+      "notes": "Stats and effect not recorded"
+    },
+    {
+      "name": "Painted Power",
+      "level": null,
+      "stats": {},
+      "effect": "See Painted Power Lumina",
+      "lp_cost": 5,
+      "holder": "unknown",
+      "notes": "In core Lumina suite; Pictos details not recorded"
+    },
+    {
+      "name": "Powerful on Shell",
+      "level": 23,
+      "stats": {},
+      "effect": "Increased damage while Shell active",
+      "lp_cost": null,
+      "holder": "Lune",
+      "notes": "Stats not recorded"
+    },
+    {
+      "name": "Protecting Tint",
+      "level": 20,
+      "stats": {
+        "health": 1403,
+        "defence": 681
+      },
+      "effect": "Healing Tints also apply Shell",
+      "lp_cost": 5,
+      "holder": "unequipped"
+    },
+    {
+      "name": "Quick Break",
+      "level": 25,
+      "stats": {},
+      "effect": "Adds break damage",
+      "lp_cost": null,
+      "holder": "Sciel",
+      "notes": "Stats not recorded"
+    },
+    {
+      "name": "Recovery",
+      "level": null,
+      "stats": {},
+      "effect": "10% HP restored at turn start",
+      "lp_cost": 10,
+      "holder": "unequipped (in Lumina)",
+      "notes": "Pictos details not recorded; Lumina used in solo build"
+    },
+    {
+      "name": "Second Chance",
+      "level": 16,
+      "stats": {
+        "health": 1106,
+        "crit": "8%"
+      },
+      "effect": "Revive once per battle",
+      "lp_cost": null,
+      "holder": "Verso"
+    },
+    {
+      "name": "Sniper",
+      "level": 23,
+      "stats": {
+        "speed": 529,
+        "crit": "13%"
+      },
+      "effect": "Sniper Lumina free",
+      "lp_cost": null,
+      "holder": "unequipped (previously Maelle)"
+    },
+    {
+      "name": "Survivor",
+      "level": 21,
+      "stats": {
+        "speed": 439,
+        "crit": "12%"
+      },
+      "effect": "Survive fatal damage with 1 Health once per battle",
+      "lp_cost": 20,
+      "holder": "Maelle"
+    },
+    {
+      "name": "Burn Affinity",
+      "level": null,
+      "stats": {
+        "speed": 439,
+        "crit": "12%"
+      },
+      "effect": "25% increased damage on Burning targets",
+      "lp_cost": null,
+      "holder": "Lune"
+    },
+    {
+      "name": "Burning Death",
+      "level": 21,
+      "stats": {
+        "speed": 308,
+        "crit": "24%"
+      },
+      "effect": "Apply 3 Burn to all enemies on death",
+      "lp_cost": 5,
+      "holder": "Lune"
+    },
+    {
+      "name": "Warming Up",
+      "level": 15,
+      "stats": {
+        "health": 1166,
+        "crit": "9%"
+      },
+      "effect": "5% increased damage per turn, stacks up to 5",
+      "lp_cost": 15,
+      "holder": "unequipped"
+    },
+    {
+      "name": "Energy Master",
+      "level": 30,
+      "stats": {
+        "health": 4979
+      },
+      "effect": "Every AP gain is increased by 1",
+      "lp_cost": 40,
+      "holder": "Maelle (temporary \u2014 learning)",
+      "notes": "Long-term holder TBD: Maelle (AP synergy with Lithum rotation) vs Sciel (health boost). Decided after Lumina file complete."
+    }
+  ],
+  "core_lumina_suite": {
+    "main_team": {
+      "total_lp": 154,
+      "entries": [
+        {
+          "name": "Painted Power",
+          "lp": 5
+        },
+        {
+          "name": "Teamwork",
+          "lp": 5
+        },
+        {
+          "name": "Base Shield",
+          "lp": 20
+        },
+        {
+          "name": "Energising Turn",
+          "lp": 20
+        },
+        {
+          "name": "Energising Parry",
+          "lp": 15
+        },
+        {
+          "name": "Energising Start I",
+          "lp": 5
+        },
+        {
+          "name": "Dodger",
+          "lp": 1
+        },
+        {
+          "name": "Breaker",
+          "lp": 10
+        },
+        {
+          "name": "Marking Shots",
+          "lp": 3
+        },
+        {
+          "name": "Dead Energy I",
+          "lp": 2
+        },
+        {
+          "name": "Dead Energy II",
+          "lp": 2
+        },
+        {
+          "name": "Critical Break",
+          "lp": 5
+        },
+        {
+          "name": "Rewarding Mark",
+          "lp": 5
+        },
+        {
+          "name": "Burning Shots",
+          "lp": 3
+        },
+        {
+          "name": "Breaking Burn",
+          "lp": 5
+        },
+        {
+          "name": "Breaking Counter",
+          "lp": 3
+        },
+        {
+          "name": "Breaking Death",
+          "lp": 5
+        },
+        {
+          "name": "Cheater",
+          "lp": 40,
+          "notes": "Free for Cheater Pictos holders"
+        }
+      ],
+      "notes": "Applied via in-game Lumina set. Cheater costs 0LP for characters with Cheater Pictos."
+    },
+    "reserve_team": {
+      "total_lp": 110,
+      "entries": [
+        {
+          "name": "Painted Power",
+          "lp": 5
+        },
+        {
+          "name": "Teamwork",
+          "lp": 5
+        },
+        {
+          "name": "Base Shield",
+          "lp": 20
+        },
+        {
+          "name": "Energising Turn",
+          "lp": 20
+        },
+        {
+          "name": "Energising Parry",
+          "lp": 15
+        },
+        {
+          "name": "Energising Start I",
+          "lp": 5
+        },
+        {
+          "name": "Dodger",
+          "lp": 1
+        },
+        {
+          "name": "Breaker",
+          "lp": 10
+        },
+        {
+          "name": "Marking Shots",
+          "lp": 3
+        },
+        {
+          "name": "Critical Break",
+          "lp": 5
+        },
+        {
+          "name": "Rewarding Mark",
+          "lp": 5
+        },
+        {
+          "name": "Burning Shots",
+          "lp": 3
+        },
+        {
+          "name": "Breaking Burn",
+          "lp": 5
+        },
+        {
+          "name": "Breaking Counter",
+          "lp": 3
+        },
+        {
+          "name": "Breaking Death",
+          "lp": 5
+        }
+      ],
+      "notes": "Main team core minus Cheater, Dead Energy I, Dead Energy II."
+    }
+  },
+  "characters": {
+    "Maelle": {
+      "level": 81,
+      "pictos": [
+        {
+          "name": "Survivor",
+          "level": 21
+        },
+        {
+          "name": "Gradient Break",
+          "level": 25
+        },
+        {
+          "name": "Burning Break",
+          "level": 21
+        }
+      ],
+      "lumina_lp_total": 164,
+      "lumina_lp_used": 164,
+      "lumina_notes": "0LP spare. Solo build reversed \u2014 back to party loadout.",
+      "lumina_additions": [],
+      "lumina_removals": [],
+      "lumina_extras": [
+        {
+          "name": "Energising Attack I",
+          "lp": 10,
+          "notes": "Added during solo build, kept \u2014 useful for Lithum rotation"
+        }
+      ]
+    },
+    "Verso": {
+      "level": 81,
+      "pictos": [
+        {
+          "name": "Cheater",
+          "level": 24
+        },
+        {
+          "name": "Breaking Death",
+          "level": 29
+        },
+        {
+          "name": "Second Chance",
+          "level": 16
+        }
+      ],
+      "lumina_lp_total": 154,
+      "lumina_lp_used": 154,
+      "lumina_notes": "0LP spare. Survivor Lumina added (20LP). Breaking Death Pictos kept for stats. Breaking Death now learnt as Lumina (5LP) \u2014 available for other characters.",
+      "lumina_additions": [
+        {
+          "name": "Survivor",
+          "lp": 20
+        }
+      ],
+      "lumina_removals": [],
+      "lumina_extras": [
+        {
+          "name": "Confident",
+          "lp": 20
+        },
+        {
+          "name": "Confident Fighter",
+          "lp": 15
+        },
+        {
+          "name": "Enfeebling Mark",
+          "lp": 10
+        },
+        {
+          "name": "Survivor",
+          "lp": 20
+        }
+      ],
+      "lumina_core_adjustments": "Minus Cheater (free from Pictos), Breaking Death, Base Shield (non-functional with Chevalam)"
+    },
+    "Sciel": {
+      "level": 81,
+      "pictos": [
+        {
+          "name": "Critical Burn",
+          "level": 25
+        },
+        {
+          "name": "Recovery",
+          "level": 20
+        },
+        {
+          "name": "Quick Break",
+          "level": 25
+        }
+      ],
+      "lumina_lp_total": 175,
+      "lumina_lp_used": 170,
+      "lumina_notes": "4LP spare. Base Shield added at 20LP this session. Pool expanded by 9 Colour of Lumina.",
+      "lumina_additions": [
+        {
+          "name": "Base Shield",
+          "lp": 20
+        }
+      ],
+      "lumina_removals": [],
+      "lumina_extras": [
+        {
+          "name": "Accelerating Heal",
+          "lp": 5
+        },
+        {
+          "name": "Energising Heal",
+          "lp": 10
+        },
+        {
+          "name": "Protecting Heal",
+          "lp": 5
+        },
+        {
+          "name": "Healing Tint Energy",
+          "lp": 1
+        },
+        {
+          "name": "Healing Boon",
+          "lp": 10,
+          "notes": "To be added"
+        }
+      ]
+    },
+    "Lune": {
+      "level": 76,
+      "pictos": [
+        {
+          "name": "Powerful on Shell",
+          "level": 23
+        },
+        {
+          "name": "Burn Affinity",
+          "level": null
+        },
+        {
+          "name": "Burning Death",
+          "level": 21
+        }
+      ],
+      "lumina_lp_total": 120,
+      "lumina_lp_used": 115,
+      "lumina_notes": "5LP spare pre-tidy. After tidy (remove Breaking Counter/Dead Energy I+II, add Critical Break/Rewarding Mark/Breaking Death): 133/133LP. Cheater deferred.",
+      "lumina_additions": [
+        {
+          "name": "Protecting Heal",
+          "lp": 5
+        }
+      ],
+      "lumina_removals": [],
+      "lumina_extras": [
+        {
+          "name": "Accelerating Heal",
+          "lp": 5
+        },
+        {
+          "name": "Protecting Heal",
+          "lp": 5
+        }
+      ]
+    },
+    "Monoco": {
+      "level": 76,
+      "pictos": [
+        {
+          "name": "Longer Shell",
+          "level": 29
+        },
+        {
+          "name": "Energising Turn",
+          "level": 14
+        },
+        {
+          "name": "Sniper",
+          "level": 23
+        }
+      ],
+      "lumina_lp_total": 122,
+      "lumina_lp_used": 114,
+      "lumina_notes": "35LP free after removing healing Lumina. Pool size needs confirmation.",
+      "lumina_additions": [],
+      "lumina_removals": [],
+      "lumina_extras": [
+        {
+          "name": "Staggering Attack",
+          "lp": 1,
+          "notes": "LP cost unconfirmed"
+        },
+        {
+          "name": "Breaking Death",
+          "lp": 5,
+          "notes": "To be added"
+        }
+      ],
+      "lumina_core_adjustments": "Minus Energising Turn (free from Pictos)"
+    }
+  },
+  "candidates_for_review": [
+    {
+      "name": "Energising Burn",
+      "lp": 10,
+      "notes": "Consider when expanding core suite \u2014 all characters have Burning Shots so fires regularly."
+    },
+    {
+      "name": "Empowering Dodge",
+      "lp": 5,
+      "notes": "Test empirically before committing \u2014 reset on parry unconfirmed."
+    },
+    {
+      "name": "Energising Shell",
+      "lp": 10,
+      "notes": "2AP on applying Shell \u2014 good if Shell application is frequent."
+    }
+  ],
+  "situational_lumina": [
+    {
+      "name": "Anti-Blight",
+      "lp": 10,
+      "notes": "All characters \u2014 vs bosses applying Blight. Add as Lumina; no need to move Pictos."
+    },
+    {
+      "name": "Anti-Burn",
+      "lp": 10,
+      "notes": "All characters \u2014 vs bosses applying Burn regularly."
+    },
+    {
+      "name": "Anti-Freeze",
+      "lp": null,
+      "notes": "All characters \u2014 vs bosses applying Freeze. LP cost unconfirmed."
+    },
+    {
+      "name": "Draining Cleanse",
+      "lp": 15,
+      "notes": "Status effect prevention \u2014 1AP cost per use. High LP cost; situational."
+    }
+  ]
+}
