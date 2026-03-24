@@ -39,35 +39,17 @@ These are in addition to the general failure modes in the startup file:
 
 - **Platform:** Xbox Series X
 - **Current playthrough:** First playthrough
-- **Progress at end of Chat 1 (approx. 1–4 March 2026):**
-  - Act 3. Entering Visages with new levelling team (Verso/Monoco/Sciel).
-  - Levels: Maelle 64, Lune 63, Sciel 61, Verso 59, Monoco 61.
-  - Paintress defeated. Painted Power Pictos equipped.
-  - All 5 Gestral Beaches complete.
-  - White Nevron quests complete + Blanche reward (100× Colour of Lumina).
-  - The Canvas puzzle complete (Painted Me outfit for Maelle).
-  - The Chosen Path complete (Base Shield Pictos).
-  - Lune's relationship quest complete (Sirene's Dress / Chromatic Glissando).
-  - Verso's solo fights complete (vs Francois, vs Monoco).
-  - Chromatics defeated: Abbest, Bruler, Lancelier, Orphelin, Troubadour, Luster, Glissando, Ramasseur.
-  - **Vale bosses permanently missed** (Jovial Moissonneuse, Sorrowful Chapelier, Seething Boucheclier) — Axon defeated before riddle masks triggered.
-  - Moissonneuse Vendange skill obtained by defeating a Moissonneuse in Visages — unrelated to the Vale bosses.
-  - Karatom quest confirmed permanently unavailable (requires Gustave alive).
-- **Progress at end of Chat 4 (approx. 20 March 2026):**
-  - All characters level 72–75. Maelle and Sciel level 75; Verso level 75; Lune and Monoco level 72.
-  - Active team: Verso, Maelle, Sciel (endgame team). Cheater equipped on all three via Lumina.
-  - Sacred River complete (Monoco relationship quest, Golgra defeated).
-  - Dark Shore complete. Corpeso weapon obtained for Verso.
-  - Chromatic Gold Chevaliere defeated. Chevalam weapon obtained for Verso. Now equipped.
-  - Chromatics defeated (additional): Veilleur, Chalier, Glaise, Demineur.
-  - Bosses defeated: Grosse Tete, Frost Eveque, Ultimate Sakapatate (Endless Night Sanctuary).
-  - Joyaro obtained for Monoco (Ultimate Sakapatate drop).
-  - Sprong defeated. Cheater Pictos obtained.
-  - Maelle Relationship Level 5 — The Reacher available.
+- **Status as at end of Chat 5 (approx. 24 March 2026):**
+  - Act 3, Phase 3. All characters level 76–82.
+  - Active endgame team: Verso (81), Maelle (82), Sciel (81). Reserve: Lune (76), Monoco (77).
+  - The Reacher complete. Gommage unlocked (Relationship Level 7). Serpenphare defeated.
+  - **Permanently missed:** Vale bosses (Jovial Moissonneuse, Sorrowful Chapelier, Seething Boucheclier); Karatom quest (requires Gustave alive).
+
 - **Inventory:**
-  - 150 Colour of Lumina
-  - 27 Recoats
-  - 67 Chroma Catalyst, 61 Polished, 52 Resplendent, 69 Grandiose Chroma Catalyst
+  - Colour of Lumina: reduced from 150 (multiple LP pool expansions this session) — check in-game
+  - Recoats: 27 (as at Chat 4 — may have changed)
+  - Chroma Catalysts: 67 standard, 61 Polished, 52 Resplendent, Grandiose count unknown (spent heavily this session)
+
 - **Reserve:** Lune, Monoco
 
 -----

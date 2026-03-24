@@ -1,25 +1,4 @@
 FILE: overview/claude-expedition33.md
-SECTION: ## Section 2: Playthrough Status > ### Progress at end of Chat 4
-AFTER: ### Progress at end of Chat 4
-CONTENT:
-### Progress at end of Chat 5 (approx. 24 March 2026)
-
-- All characters level 76–82. Maelle level 82, Verso/Sciel level 81, Lune/Monoco level 76.
-- The Reacher complete. Lithum obtained for Maelle (level 33, Power 9254, Luck S/Agility A). Maelle Relationship Level 7 — Gommage unlocked. Confirmed extremely powerful (3.4M damage on Serpenphare).
-- Serpenphare defeated. Energy Master Pictos obtained (Health +4979, Every AP gain +1, 40LP Lumina). Lithum upgraded to 33 using reward Catalysts.
-- Active endgame team: Verso, Maelle, Sciel. Full Pictos/Lumina review completed for all five characters.
-- Chromatics defeated (additional): Benisseur, Boucheclier, Braseleur (The Reacher), Thunder Eveque, Chapelier, Hexga, Ballet, Portier, Cruler.
-- New Pictos obtained: Breaking Death (29), Confident upgraded (29), Draining Cleanse (20), Protecting Tint (20), Healing Boon (20), Energy Master (30), Burning Death (21), Burn Affinity, Energising Shell (15), Warming Up (15).
-- New weapons: Tireso (20) purchased, Braselim upgraded (21), Facesum (22), Benisim (28), Glaisum upgraded (29), Stalum upgraded (29).
-- Chevalam upgraded to level 32 (Power 5033). Litheson upgraded to level 32 (Power 4226).
-- Lune respec complete: Vitality 99, Agility 99, Luck 30. Kralim (29) confirmed equipped.
-- Maelle respec complete: Luck 99, Agility 99, Might 48. Lithum (33) equipped replacing Medalum.
-- Energy Master temporarily on Maelle while learning. Pictos: Burning Break, Gradient Break, Energy Master. Speed dropped — Pictos review needed.
-- Inventory: Colour of Lumina reduced (multiple LP pool expansions). Grandiose Chroma Catalyst count unknown — check in-game.
-
------
-
-FILE: overview/claude-expedition33.md
 SECTION: ## Section 4: Game Mechanics > ### Pictos
 CONTENT:
 ### Pictos and Lumina
