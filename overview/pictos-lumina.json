@@ -1,313 +1,2429 @@
 {
-  "_notes": "Working file \u2014 built incrementally during Chat 5. Convert to Markdown at end of session.",
+  "_notes": "Definitive Pictos/Lumina reference. 194 entries from Fandom wiki merged with player data. JSON is source of truth — generate Markdown via scripts.",
   "_commit": "d79ec037",
   "pictos": [
     {
+      "name": "Accelerating Heal",
+      "category": [
+        "support"
+      ],
+      "effect": "Healing an ally also applies Rush for 1 turn.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 9
+    },
+    {
+      "name": "Accelerating Last Stand",
+      "category": [
+        "solo",
+        "support"
+      ],
+      "effect": "Gain Rush if fighting alone.",
+      "lp_cost": 3,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 6
+    },
+    {
+      "name": "Accelerating Shots",
+      "category": [
+        "support",
+        "shots"
+      ],
+      "effect": "20% chance to gain Rush on Free Aim shot.",
+      "lp_cost": 3,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Accelerating Tint",
+      "category": [
+        "support"
+      ],
+      "effect": "Healing Tints also apply Rush.",
+      "lp_cost": 5,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Aegis Revival",
+      "category": [
+        "survival"
+      ],
+      "effect": "+1 Shield on being revived.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 12
+    },
+    {
       "name": "Anti-Blight",
+      "category": [
+        "survival"
+      ],
+      "effect": "Immune to Blight",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": "Monoco",
+      "lumina_learned": false,
       "level": 24,
       "stats": {
         "health": 1897,
         "defence": 949
-      },
-      "effect": "Immune to Blight",
-      "lp_cost": 10,
-      "holder": "Monoco"
+      }
     },
     {
       "name": "Anti-Burn",
-      "level": 22,
-      "stats": {},
+      "category": [
+        "survival"
+      ],
       "effect": "Immune to Burn",
-      "lp_cost": null,
-      "holder": "Monoco",
-      "notes": "Stats not recorded"
+      "lp_cost": 15,
+      "obtained": true,
+      "equipped_by": "Monoco",
+      "lumina_learned": false,
+      "level": 22,
+      "stats": {
+        "health": 1602,
+        "defence": 801
+      }
+    },
+    {
+      "name": "Anti-Charm",
+      "category": [
+        "survival"
+      ],
+      "effect": "Immune to Charm.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 13
     },
     {
       "name": "Anti-Freeze",
-      "level": null,
-      "stats": {},
+      "category": [
+        "survival"
+      ],
       "effect": "Immune to Freeze",
-      "lp_cost": null,
-      "holder": "unequipped (Lumina available)",
-      "notes": "Stats not recorded; previously on Monoco"
+      "lp_cost": 15,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": true,
+      "level": 21,
+      "stats": {
+        "health": 1464,
+        "defence": 733
+      },
+      "notes": "previously on Monoco"
+    },
+    {
+      "name": "Anti-Stun",
+      "category": [
+        "survival"
+      ],
+      "effect": "Immune to Stun.",
+      "lp_cost": 5,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "At Death's Door",
+      "category": [
+        "damage"
+      ],
+      "effect": "Deal 50% more damage if Health is below 10%.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 8
+    },
+    {
+      "name": "Attack Lifesteal",
+      "category": [
+        "healing"
+      ],
+      "effect": "Recover 15% Health on Base Attack.",
+      "lp_cost": 15,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 4
+    },
+    {
+      "name": "Augmented Aim",
+      "category": [
+        "damage",
+        "shots"
+      ],
+      "effect": "50% increased Free Aim damage.",
+      "lp_cost": 3,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 5
+    },
+    {
+      "name": "Augmented Attack",
+      "category": [
+        "damage"
+      ],
+      "effect": "50% increased Base Attack damage.",
+      "lp_cost": 7,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 2
+    },
+    {
+      "name": "Augmented Counter I",
+      "category": [
+        "damage"
+      ],
+      "effect": "25% increased Counterattack damage.",
+      "lp_cost": 3,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 10
+    },
+    {
+      "name": "Augmented Counter II",
+      "category": [
+        "damage"
+      ],
+      "effect": "50% increased Counterattack damage.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 12
+    },
+    {
+      "name": "Augmented Counter III",
+      "category": [
+        "damage"
+      ],
+      "effect": "75% increased Counterattack damage.",
+      "lp_cost": 7,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Augmented First Strike",
+      "category": [
+        "damage"
+      ],
+      "effect": "50% increased damage on the first hit. Once per battle.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 6
+    },
+    {
+      "name": "Auto Death",
+      "category": [
+        "death",
+        "misc"
+      ],
+      "effect": "Kill self on battle start.",
+      "lp_cost": 1,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 7
+    },
+    {
+      "name": "Auto Powerful",
+      "category": [
+        "support"
+      ],
+      "effect": "Apply Powerful for 3 turns on battle start.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Auto Regen",
+      "category": [
+        "support"
+      ],
+      "effect": "Apply Regen for 3 turns on battle start.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 13
+    },
+    {
+      "name": "Auto Rush",
+      "category": [
+        "support"
+      ],
+      "effect": "Apply Rush for 3 turns on battle start.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 10
+    },
+    {
+      "name": "Auto Shell",
+      "category": [
+        "survival"
+      ],
+      "effect": "Apply Shell for 3 turns on battle start.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 7
     },
     {
       "name": "Base Shield",
+      "category": [
+        "survival"
+      ],
+      "effect": "Grants 1 Shield HP buffer per turn",
+      "lp_cost": 20,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": true,
       "level": 20,
       "stats": {
         "health": 2000,
         "crit": "11%"
       },
-      "effect": "Grants 1 Shield HP buffer per turn",
-      "lp_cost": 20,
-      "holder": "Sciel (Lumina)",
-      "notes": "Moved to Lumina this session \u2014 Pictos slot freed"
+      "notes": "Moved to Lumina this session — Pictos slot freed"
+    },
+    {
+      "name": "Beneficial Contamination",
+      "category": [
+        "ap"
+      ],
+      "effect": "+2 AP on applying a Status Effect. Once per turn.",
+      "lp_cost": 15,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Break Specialist",
+      "category": [
+        "break"
+      ],
+      "effect": "Break damage is increased by 50%, but base damage is reduced by 20%.",
+      "lp_cost": 1,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Breaker",
+      "category": [
+        "break"
+      ],
+      "effect": "25% increased Break damage.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 5
+    },
+    {
+      "name": "Breaking Attack",
+      "category": [
+        "break"
+      ],
+      "effect": "Base Attack can Break.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Breaking Burn",
+      "category": [
+        "break"
+      ],
+      "effect": "25% increased Break damage on Burning enemies.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 15
+    },
+    {
+      "name": "Breaking Counter",
+      "category": [
+        "break"
+      ],
+      "effect": "50% increased Break damage on Counterattack.",
+      "lp_cost": 3,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 7
     },
     {
       "name": "Breaking Death",
+      "category": [
+        "break",
+        "death"
+      ],
+      "effect": "Fully charge enemy break bar on death",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": "Verso",
+      "lumina_learned": false,
       "level": 29,
       "stats": {
         "speed": 586,
         "crit": "33%"
-      },
-      "effect": "Fully charge enemy break bar on death",
+      }
+    },
+    {
+      "name": "Breaking Shots",
+      "category": [
+        "break",
+        "shots"
+      ],
+      "effect": "50% increased Break damage with Free Aim shots.",
+      "lp_cost": 1,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Breaking Slow",
+      "category": [
+        "break"
+      ],
+      "effect": "25% increased Break damage against Slowed enemies.",
       "lp_cost": 5,
-      "holder": "Verso"
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Burn Affinity",
+      "category": [
+        "burn"
+      ],
+      "effect": "25% increased damage on Burning targets",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": "Lune",
+      "lumina_learned": false,
+      "level": 21,
+      "stats": {
+        "speed": 439,
+        "crit": "12%"
+      }
     },
     {
       "name": "Burning Break",
+      "category": [
+        "burn"
+      ],
+      "effect": "Apply 3 Burn stacks on Breaking a target.",
+      "lp_cost": 3,
+      "obtained": true,
+      "equipped_by": "Maelle",
+      "lumina_learned": false,
       "level": 21,
       "stats": {
         "health": 1541,
         "crit": "24%"
-      },
-      "effect": "Burning Break Lumina free",
-      "lp_cost": null,
-      "holder": "Maelle"
+      }
+    },
+    {
+      "name": "Burning Death",
+      "category": [
+        "burn",
+        "death"
+      ],
+      "effect": "Apply 3 Burn to all enemies on death",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": "Lune",
+      "lumina_learned": false,
+      "level": 21,
+      "stats": {
+        "speed": 308,
+        "crit": "24%"
+      }
+    },
+    {
+      "name": "Burning Mark",
+      "category": [
+        "burn",
+        "mark"
+      ],
+      "effect": "Apply Burn on hitting a Marked enemy.",
+      "lp_cost": 15,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 4
+    },
+    {
+      "name": "Burning Shots",
+      "category": [
+        "burn",
+        "shots"
+      ],
+      "effect": "20% chance to Burn on Free Aim shot.",
+      "lp_cost": 3,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 1
+    },
+    {
+      "name": "Charging Alteration",
+      "category": [
+        "gradient"
+      ],
+      "effect": "+10% of a Gradient Charge on applying a Buff. Once per turn.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Charging Attack",
+      "category": [
+        "gradient"
+      ],
+      "effect": "+15% of a Gradient Charge on Base Attack.",
+      "lp_cost": 7,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Charging Burn",
+      "category": [
+        "gradient"
+      ],
+      "effect": "+20% of a Gradient Charge on applying Burn. Once per turn.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Charging Counter",
+      "category": [
+        "gradient"
+      ],
+      "effect": "+10% of a Gradient Charge on Counterattack.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Charging Critical",
+      "category": [
+        "gradient"
+      ],
+      "effect": "+20% of a Gradient Charge on hitting a Critical Hit. Once per turn.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Charging Mark",
+      "category": [
+        "gradient",
+        "mark"
+      ],
+      "effect": "+20% of a Gradient Charge on hitting a Marked target. Once per turn.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Charging Stun",
+      "category": [
+        "gradient"
+      ],
+      "effect": "+5% of a Gradient Charge on hitting a Stunned enemy.",
+      "lp_cost": 5,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Charging Tint",
+      "category": [
+        "gradient",
+        "support"
+      ],
+      "effect": "+5% of a Gradient Charge on using an item.",
+      "lp_cost": 2,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 9
+    },
+    {
+      "name": "Charging Weakness",
+      "category": [
+        "gradient"
+      ],
+      "effect": "+15% of a Gradient Charge on hitting a Weakness. Once per turn.",
+      "lp_cost": 5,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
     },
     {
       "name": "Cheater",
+      "category": [
+        "combat"
+      ],
+      "effect": "Extra turn after using a skill, once per turn",
+      "lp_cost": 40,
+      "obtained": true,
+      "equipped_by": "Verso",
+      "lumina_learned": false,
       "level": 24,
       "stats": {
         "health": 1198,
         "speed": 400
-      },
-      "effect": "Extra turn after using a skill, once per turn",
-      "lp_cost": 40,
-      "holder": "Verso"
+      }
+    },
+    {
+      "name": "Clea's Life",
+      "category": [
+        "healing"
+      ],
+      "effect": "On turn start, if no damage taken since last turn, recover 100% Health.",
+      "lp_cost": 30,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Cleansing Tint",
+      "category": [
+        "support"
+      ],
+      "effect": "Healing Tints also remove all Status Effects from the target.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 15
+    },
+    {
+      "name": "Combo Attack I",
+      "category": [
+        "combat"
+      ],
+      "effect": "Base Attack has 1 extra hit.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 9
+    },
+    {
+      "name": "Combo Attack II",
+      "category": [
+        "combat"
+      ],
+      "effect": "Base Attack has 1 extra hit.",
+      "lp_cost": 20,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Combo Attack III",
+      "category": [
+        "combat"
+      ],
+      "effect": "Base Attack has 1 extra hit.",
+      "lp_cost": 30,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
     },
     {
       "name": "Confident",
+      "category": [
+        "survival"
+      ],
+      "effect": "Take 50% less damage, but can't be healed.",
+      "lp_cost": 20,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
       "level": 29,
       "stats": {
         "speed": 557,
         "crit": "32%"
       },
-      "effect": "See Confident Fighter Lumina",
-      "lp_cost": null,
-      "holder": "unequipped",
       "notes": "Not currently equipped as Pictos"
     },
     {
+      "name": "Confident Fighter",
+      "category": [
+        "damage"
+      ],
+      "effect": "Deal 30% more damage, but can't be healed.",
+      "lp_cost": 15,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 11
+    },
+    {
+      "name": "Critical Break",
+      "category": [
+        "critical"
+      ],
+      "effect": "25% increased Break damage on Critical hits.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 14
+    },
+    {
       "name": "Critical Burn",
+      "category": [
+        "burn"
+      ],
+      "effect": "25% increased Crit rate on Burning enemies",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": "Sciel",
+      "lumina_learned": false,
       "level": 25,
       "stats": {
         "speed": 434,
         "crit": "28%"
-      },
-      "effect": "25% increased Crit rate on Burning enemies",
+      }
+    },
+    {
+      "name": "Critical Moment",
+      "category": [
+        "critical"
+      ],
+      "effect": "50% increased Critical Chance if Health is below 30%.",
+      "lp_cost": null,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 5
+    },
+    {
+      "name": "Critical Stun",
+      "category": [
+        "critical"
+      ],
+      "effect": "100% Critical Chance on hitting a Stunned target.",
       "lp_cost": 5,
-      "holder": "Sciel"
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Critical Vulnerability",
+      "category": [
+        "critical"
+      ],
+      "effect": "25% increased Critical Chance on Defenceless enemies.",
+      "lp_cost": 5,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Critical Weakness",
+      "category": [
+        "critical"
+      ],
+      "effect": "25% increased Critical Chance on Weakness.",
+      "lp_cost": 5,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Dead Energy I",
+      "category": [
+        "ap"
+      ],
+      "effect": "+3 AP on killing an enemy.",
+      "lp_cost": 2,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 15
+    },
+    {
+      "name": "Dead Energy II",
+      "category": [
+        "ap"
+      ],
+      "effect": "+3 AP on killing an enemy.",
+      "lp_cost": 2,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 1
+    },
+    {
+      "name": "Death Bomb",
+      "category": [
+        "death"
+      ],
+      "effect": "On Death, deal damage to all enemies.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 7
+    },
+    {
+      "name": "Defensive Mode",
+      "category": [
+        "survival"
+      ],
+      "effect": "On receiving damage, consume 1 AP to take 30% less damage, if possible.",
+      "lp_cost": 1,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 7
+    },
+    {
+      "name": "Dodger",
+      "category": [
+        "ap"
+      ],
+      "effect": "Gain 1 AP on Perfect Dodge. Once per turn.",
+      "lp_cost": 1,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 1
+    },
+    {
+      "name": "Double Burn",
+      "category": [
+        "burn"
+      ],
+      "effect": "On applying a Burn stack, apply a second one.",
+      "lp_cost": 30,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 11
+    },
+    {
+      "name": "Double Mark",
+      "category": [
+        "mark"
+      ],
+      "effect": "Mark requires 1 more hit to be removed.",
+      "lp_cost": 20,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
     },
     {
       "name": "Draining Cleanse",
+      "category": [
+        "survival"
+      ],
+      "effect": "Consume 1AP to prevent Status Effect application, if possible",
+      "lp_cost": 15,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
       "level": 20,
       "stats": {
         "health": 2000,
         "defence": 324
-      },
-      "effect": "Consume 1AP to prevent Status Effect application, if possible",
-      "lp_cost": 15,
-      "holder": "unequipped"
+      }
+    },
+    {
+      "name": "Effective Heal",
+      "category": [
+        "healing"
+      ],
+      "effect": "Double all Heals received.",
+      "lp_cost": 30,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 13
+    },
+    {
+      "name": "Effective Support",
+      "category": [
+        "ap"
+      ],
+      "effect": "+2 AP on using an item.",
+      "lp_cost": 5,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Empowering Attack",
+      "category": [
+        "damage"
+      ],
+      "effect": "Gain Powerful for 1 turn on Base Attack.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 1
+    },
+    {
+      "name": "Empowering Break",
+      "category": [
+        "damage"
+      ],
+      "effect": "Gain Powerful on Breaking a target.",
+      "lp_cost": 3,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
     },
     {
       "name": "Empowering Dodge",
+      "category": [
+        "damage"
+      ],
+      "effect": "5% increased damage per consecutive dodge, stacks up to 10",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
       "level": 15,
       "stats": {
         "speed": 162,
         "crit": "17%"
       },
-      "effect": "5% increased damage per consecutive dodge, stacks up to 10",
+      "notes": "Reset behaviour on parry unconfirmed — test empirically"
+    },
+    {
+      "name": "Empowering Last Stand",
+      "category": [
+        "solo",
+        "damage"
+      ],
+      "effect": "Gain Powerful if fighting alone.",
+      "lp_cost": 3,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 6
+    },
+    {
+      "name": "Empowering Parry",
+      "category": [
+        "damage"
+      ],
+      "effect": "Each successful Parry increases damage by 5% until end of the following turn. Taking any damage removes this buff.",
       "lp_cost": 5,
-      "holder": "unequipped",
-      "notes": "Reset behaviour on parry unconfirmed \u2014 test empirically"
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Empowering Tint",
+      "category": [
+        "damage",
+        "support"
+      ],
+      "effect": "Healing Tints also apply Powerful.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 8
+    },
+    {
+      "name": "Energetic Healer",
+      "category": [
+        "ap"
+      ],
+      "effect": "+2 AP on Healing an ally. Once per turn.",
+      "lp_cost": 5,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Energising Attack I",
+      "category": [
+        "ap"
+      ],
+      "effect": "+1 AP on Base Attack.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 7
+    },
+    {
+      "name": "Energising Attack II",
+      "category": [
+        "ap"
+      ],
+      "effect": "+1 AP on Base Attack.",
+      "lp_cost": 15,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Energising Break",
+      "category": [
+        "ap"
+      ],
+      "effect": "+3 AP on Breaking a target.",
+      "lp_cost": 3,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 3
+    },
+    {
+      "name": "Energising Burn",
+      "category": [
+        "ap"
+      ],
+      "effect": "+1 AP on applying Burn. Once per turn.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 22
+    },
+    {
+      "name": "Energising Cleanse",
+      "category": [
+        "ap"
+      ],
+      "effect": "Dispel the first negative Status Effect received and gain 2 AP.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 15
+    },
+    {
+      "name": "Energising Death",
+      "category": [
+        "ap",
+        "death"
+      ],
+      "effect": "On death, +4 AP to allies.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 8
+    },
+    {
+      "name": "Energising Gradient",
+      "category": [
+        "ap",
+        "gradient"
+      ],
+      "effect": "+1 AP per Gradient Charge consumed.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 17
+    },
+    {
+      "name": "Energising Heal",
+      "category": [
+        "ap"
+      ],
+      "effect": "On Healing an ally, also give 2 AP.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 7
+    },
+    {
+      "name": "Energising Jump",
+      "category": [
+        "ap"
+      ],
+      "effect": "+1 AP on Jump Counterattack.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 4
+    },
+    {
+      "name": "Energising Pain",
+      "category": [
+        "ap"
+      ],
+      "effect": "No longer gain AP on Parry. +1 AP on getting hit.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 15
+    },
+    {
+      "name": "Energising Parry",
+      "category": [
+        "ap"
+      ],
+      "effect": "+1 AP on successful Parry.",
+      "lp_cost": 15,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 9
+    },
+    {
+      "name": "Energising Powerful",
+      "category": [
+        "ap"
+      ],
+      "effect": "Give 2 AP on applying Powerful.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Energising Revive",
+      "category": [
+        "ap"
+      ],
+      "effect": "+3 AP to all allies when revived.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 8
+    },
+    {
+      "name": "Energising Rush",
+      "category": [
+        "ap"
+      ],
+      "effect": "Give 2 AP on applying Rush.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
     },
     {
       "name": "Energising Shell",
+      "category": [
+        "ap"
+      ],
+      "effect": "Give 2 AP on applying Shell.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
       "level": 15,
       "stats": {
         "defence": 319,
         "speed": 154
-      },
-      "effect": "Give 2AP on applying Shell",
+      }
+    },
+    {
+      "name": "Energising Shots",
+      "category": [
+        "ap",
+        "shots"
+      ],
+      "effect": "20% chance to gain 1 AP on Free Aim shot.",
+      "lp_cost": null,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Energising Start I",
+      "category": [
+        "ap"
+      ],
+      "effect": "+1 AP on battle start.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 6
+    },
+    {
+      "name": "Energising Start II",
+      "category": [
+        "ap"
+      ],
+      "effect": "+1 AP on battle start.",
       "lp_cost": 10,
-      "holder": "unequipped"
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 4
+    },
+    {
+      "name": "Energising Start III",
+      "category": [
+        "ap"
+      ],
+      "effect": "+1 AP on battle start.",
+      "lp_cost": 15,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 6
+    },
+    {
+      "name": "Energising Start IV",
+      "category": [
+        "ap"
+      ],
+      "effect": "+1 AP on battle start.",
+      "lp_cost": 20,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 8
+    },
+    {
+      "name": "Energising Stun",
+      "category": [
+        "ap"
+      ],
+      "effect": "+1 AP on hitting a Stunned target with a Skill.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
     },
     {
       "name": "Energising Turn",
+      "category": [
+        "ap"
+      ],
+      "effect": "+1 AP on turn start.",
+      "lp_cost": 20,
+      "obtained": true,
+      "equipped_by": "Monoco",
+      "lumina_learned": false,
       "level": 14,
       "stats": {
         "speed": 270
       },
-      "effect": "See Energising Turn Lumina",
-      "lp_cost": 20,
-      "holder": "Monoco",
-      "notes": "Stats incomplete \u2014 speed only recorded"
+      "notes": "Stats incomplete — speed only recorded"
+    },
+    {
+      "name": "Energy Master",
+      "category": [
+        "ap"
+      ],
+      "effect": "Every AP gain is increased by 1",
+      "lp_cost": 40,
+      "obtained": true,
+      "equipped_by": "Maelle",
+      "lumina_learned": false,
+      "level": 30,
+      "stats": {
+        "health": 4979
+      },
+      "notes": "Long-term holder TBD: Maelle (AP synergy with Lithum rotation) vs Sciel (health boost). Decided after Lumina file complete."
+    },
+    {
+      "name": "Enfeebling Attack",
+      "category": [
+        "support"
+      ],
+      "effect": "Base Attack applies Powerless for 1 turn.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 15
+    },
+    {
+      "name": "Enfeebling Mark",
+      "category": [
+        "mark"
+      ],
+      "effect": "Marked targets deal 30% less damage.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 7
+    },
+    {
+      "name": "Exhausting Power",
+      "category": [
+        "damage"
+      ],
+      "effect": "50% increased damage when Exhausted.",
+      "lp_cost": 2,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 8
+    },
+    {
+      "name": "Exposing Attack",
+      "category": [
+        "support"
+      ],
+      "effect": "Base Attack applies Defenceless for 1 turn.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 3
+    },
+    {
+      "name": "Exposing Break",
+      "category": [
+        "support"
+      ],
+      "effect": "Apply Defenceless on Break.",
+      "lp_cost": 5,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Faster Than Strong",
+      "category": [
+        "combat"
+      ],
+      "effect": "Always play twice in a row, but deal 50% less damage.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "First Offensive",
+      "category": [
+        "damage"
+      ],
+      "effect": "First hit dealt and taken deals 50% more damage.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 10
+    },
+    {
+      "name": "First Strike",
+      "category": [
+        "combat"
+      ],
+      "effect": "Play first.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 7
+    },
+    {
+      "name": "Fueling Break",
+      "category": [
+        "break"
+      ],
+      "effect": "Breaking a target also doubles its Burn amount.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 9
+    },
+    {
+      "name": "Full Strength",
+      "category": [
+        "damage"
+      ],
+      "effect": "25% increased damage on full Health.",
+      "lp_cost": 15,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Glass Canon",
+      "category": [
+        "damage"
+      ],
+      "effect": "Deal 25% more damage, but take 25% more damage.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 11
     },
     {
       "name": "Gradient Break",
+      "category": [
+        "break",
+        "gradient"
+      ],
+      "effect": "+50% of a Gradient Charge on Breaking a target.",
+      "lp_cost": null,
+      "obtained": true,
+      "equipped_by": "Maelle",
+      "lumina_learned": false,
       "level": 25,
       "stats": {
         "speed": 424,
         "crit": "28%"
-      },
-      "effect": "Gradient Break Lumina free",
-      "lp_cost": null,
-      "holder": "Maelle"
+      }
+    },
+    {
+      "name": "Gradient Breaker",
+      "category": [
+        "break",
+        "gradient"
+      ],
+      "effect": "50% increased Break damage with Gradient Attacks.",
+      "lp_cost": 5,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Gradient Fighter",
+      "category": [
+        "damage",
+        "gradient"
+      ],
+      "effect": "25% increased damage with Gradient Attacks.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 16
+    },
+    {
+      "name": "Greater Defenceless",
+      "category": [
+        "damage"
+      ],
+      "effect": "+15% to Defenceless damage amplification.",
+      "lp_cost": 15,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Greater Powerful",
+      "category": [
+        "damage"
+      ],
+      "effect": "+15% to Powerful damage increase.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Greater Powerless",
+      "category": [
+        "support"
+      ],
+      "effect": "+15% to Powerless damage reduction.",
+      "lp_cost": 15,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Greater Rush",
+      "category": [
+        "support"
+      ],
+      "effect": "+25% to Rush Speed increase.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Greater Shell",
+      "category": [
+        "survival"
+      ],
+      "effect": "+10% to Shell damage reduction.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 13
+    },
+    {
+      "name": "Greater Slow",
+      "category": [
+        "damage"
+      ],
+      "effect": "+10% to Slow Speed reduction.",
+      "lp_cost": 15,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 20
     },
     {
       "name": "Healing Boon",
+      "category": [
+        "healing"
+      ],
+      "effect": "Heal 15% HP on applying a buff",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
       "level": 20,
       "stats": {
         "defence": 647,
         "speed": 266
       },
-      "effect": "Heal 15% HP on applying a buff",
-      "lp_cost": 10,
-      "holder": "unequipped",
       "notes": "Strong candidate for Sciel"
     },
     {
-      "name": "Longer Shell",
-      "level": 29,
-      "stats": {},
-      "effect": "Extends Shell duration",
-      "lp_cost": null,
-      "holder": "Lune",
-      "notes": "Stats not recorded"
+      "name": "Healing Counter",
+      "category": [
+        "healing"
+      ],
+      "effect": "Recover 25% Health on Counterattack.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 10
+    },
+    {
+      "name": "Healing Death",
+      "category": [
+        "death",
+        "healing"
+      ],
+      "effect": "On death, the rest of the Expedition recover all Health.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 10
+    },
+    {
+      "name": "Healing Fire",
+      "category": [
+        "healing"
+      ],
+      "effect": "Recover 25% Health when attacking a Burning target. Once per turn.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 13
+    },
+    {
+      "name": "Healing Mark",
+      "category": [
+        "healing"
+      ],
+      "effect": "Recover 25% Health on hitting a Marked enemy. Once per turn.",
+      "lp_cost": 20,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 5
+    },
+    {
+      "name": "Healing Parry",
+      "category": [
+        "healing"
+      ],
+      "effect": "Recover 3% Health on Parry.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 10
     },
     {
       "name": "Healing Share",
+      "category": [
+        "healing"
+      ],
+      "effect": "Receive 15% of all Heals affecting other characters.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": "Lune",
+      "lumina_learned": false,
       "level": 11,
-      "stats": {},
-      "effect": "Unknown",
-      "lp_cost": null,
-      "holder": "Lune",
+      "stats": {
+        "health": 467,
+        "crit": "14%"
+      },
       "notes": "Stats and effect not recorded"
     },
     {
-      "name": "Painted Power",
-      "level": null,
-      "stats": {},
-      "effect": "See Painted Power Lumina",
+      "name": "Healing Stun",
+      "category": [
+        "healing"
+      ],
+      "effect": "Recover 5% Health on hitting a Stunned target.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 16
+    },
+    {
+      "name": "Healing Tint Energy",
+      "category": [
+        "healing"
+      ],
+      "effect": "Healing Tints also give 1 AP.",
+      "lp_cost": 1,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 7
+    },
+    {
+      "name": "Immaculate",
+      "category": [
+        "damage"
+      ],
+      "effect": "30% increased damage until a hit is received.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 12
+    },
+    {
+      "name": "In Medias Res",
+      "category": [
+        "survival"
+      ],
+      "effect": "+3 Shields on Battle Start, but max Health is halved.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 23
+    },
+    {
+      "name": "Inverted Affinity",
+      "category": [
+        "damage"
+      ],
+      "effect": "Apply Inverted on self for 3 turns on battle start. 50% increased damage while Inverted.",
       "lp_cost": 5,
-      "holder": "unknown",
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Last Stand Critical",
+      "category": [
+        "solo",
+        "critical"
+      ],
+      "effect": "100% Critical Chance while fighting alone.",
+      "lp_cost": 3,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 6
+    },
+    {
+      "name": "Longer Burn",
+      "category": [
+        "burn"
+      ],
+      "effect": "Burn duration is increased by 2.",
+      "lp_cost": 15,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Longer Powerful",
+      "category": [
+        "support"
+      ],
+      "effect": "On applying Powerful, its duration is increased by 2.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 10
+    },
+    {
+      "name": "Longer Rush",
+      "category": [
+        "support"
+      ],
+      "effect": "On applying Rush, its duration is increased by 2.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 15
+    },
+    {
+      "name": "Longer Shell",
+      "category": [
+        "survival"
+      ],
+      "effect": "On applying Shell, its duration is increased by 2.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": "Lune",
+      "lumina_learned": false,
+      "level": 29,
+      "stats": {
+        "health": 2757,
+        "defence": 1572
+      }
+    },
+    {
+      "name": "Marking Break",
+      "category": [
+        "mark"
+      ],
+      "effect": "Apply Mark on Break.",
+      "lp_cost": 5,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Marking Shots",
+      "category": [
+        "mark",
+        "shots"
+      ],
+      "effect": "20% chance to apply Mark on Free Aim shot.",
+      "lp_cost": 3,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 3
+    },
+    {
+      "name": "Painted Power",
+      "category": [
+        "damage"
+      ],
+      "effect": "Damage can exceed 9,999.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 16,
+      "stats": {
+        "health": 1844
+      },
       "notes": "In core Lumina suite; Pictos details not recorded"
     },
     {
-      "name": "Powerful on Shell",
+      "name": "Painter",
+      "category": [
+        "misc"
+      ],
+      "effect": "Converts all Physical damage to Void damage.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Perilous Parry",
+      "category": [
+        "ap"
+      ],
+      "effect": "+1 AP on Parry, but damage received is doubled.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 20
+    },
+    {
+      "name": "Piercing Shot",
+      "category": [
+        "combat",
+        "shots"
+      ],
+      "effect": "25% increased Free Aim damage. Free Aim shots ignore Shields.",
+      "lp_cost": 2,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 12
+    },
+    {
+      "name": "Powered Attack",
+      "category": [
+        "damage"
+      ],
+      "effect": "On every damage dealt, try to consume 1 AP. If successful, increase damage by 20%.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 11
+    },
+    {
+      "name": "Powerful Heal",
+      "category": [
+        "support"
+      ],
+      "effect": "Healing an ally also applies Powerful for 1 turn.",
+      "lp_cost": 5,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Powerful Mark",
+      "category": [
+        "mark"
+      ],
+      "effect": "Gain Powerful on hitting a Marked target.",
+      "lp_cost": 5,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Powerful Revive",
+      "category": [
+        "support"
+      ],
+      "effect": "Apply Powerful for 3 turns when revived.",
+      "lp_cost": 3,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 8
+    },
+    {
+      "name": "Powerful Shield",
+      "category": [
+        "damage"
+      ],
+      "effect": "10% increased damage per Shield Point on self.",
+      "lp_cost": 5,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Powerful Shots",
+      "category": [
+        "support",
+        "shots"
+      ],
+      "effect": "20% chance to gain Powerful on Free Aim shot.",
+      "lp_cost": 3,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 12
+    },
+    {
+      "name": "Powerful On Shell",
+      "category": [
+        "support"
+      ],
+      "effect": "Apply Powerful on applying Shell.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": "Lune",
+      "lumina_learned": false,
       "level": 23,
-      "stats": {},
-      "effect": "Increased damage while Shell active",
-      "lp_cost": null,
-      "holder": "Lune",
-      "notes": "Stats not recorded"
+      "stats": {
+        "defence": 240,
+        "crit": "16%"
+      }
+    },
+    {
+      "name": "Pro Retreat",
+      "category": [
+        "misc"
+      ],
+      "effect": "Allows Flee to be instantaneous.",
+      "lp_cost": 40,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Protecting Attack",
+      "category": [
+        "survival"
+      ],
+      "effect": "Gain Shell for 1 turn on Base Attack.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Protecting Death",
+      "category": [
+        "death",
+        "survival"
+      ],
+      "effect": "On death, allies gain Shell.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 13
+    },
+    {
+      "name": "Protecting Heal",
+      "category": [
+        "support"
+      ],
+      "effect": "Healing an ally also applies Shell for 1 turn.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 10
+    },
+    {
+      "name": "Protecting Last Stand",
+      "category": [
+        "solo",
+        "survival"
+      ],
+      "effect": "Gain Shell if fighting alone.",
+      "lp_cost": 3,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 6
+    },
+    {
+      "name": "Protecting Shots",
+      "category": [
+        "survival",
+        "shots"
+      ],
+      "effect": "20% chance to gain Shell on Free Aim shot.",
+      "lp_cost": 3,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
     },
     {
       "name": "Protecting Tint",
+      "category": [
+        "survival",
+        "support"
+      ],
+      "effect": "Healing Tints also apply Shell",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
       "level": 20,
       "stats": {
         "health": 1403,
         "defence": 681
-      },
-      "effect": "Healing Tints also apply Shell",
-      "lp_cost": 5,
-      "holder": "unequipped"
+      }
     },
     {
       "name": "Quick Break",
+      "category": [
+        "break"
+      ],
+      "effect": "Play again on Breaking a target.",
+      "lp_cost": 3,
+      "obtained": true,
+      "equipped_by": "Sciel",
+      "lumina_learned": false,
       "level": 25,
-      "stats": {},
-      "effect": "Adds break damage",
-      "lp_cost": null,
-      "holder": "Sciel",
-      "notes": "Stats not recorded"
+      "stats": {
+        "speed": 672,
+        "crit": "36%"
+      }
+    },
+    {
+      "name": "Random Defense",
+      "category": [
+        "survival"
+      ],
+      "effect": "Damage taken is randomly multiplied by a value between 50% and 200%.",
+      "lp_cost": 5,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
     },
     {
       "name": "Recovery",
-      "level": null,
-      "stats": {},
-      "effect": "10% HP restored at turn start",
+      "category": [
+        "healing"
+      ],
+      "effect": "Recovers 10% Health on turn start.",
       "lp_cost": 10,
-      "holder": "unequipped (in Lumina)",
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 20,
+      "stats": {
+        "health": 2000,
+        "defence": 324
+      },
       "notes": "Pictos details not recorded; Lumina used in solo build"
     },
     {
+      "name": "Rejuvenating Revive",
+      "category": [
+        "support"
+      ],
+      "effect": "Apply Regen for 3 turns when revived.",
+      "lp_cost": 3,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 12
+    },
+    {
+      "name": "Revive Paradox",
+      "category": [
+        "support"
+      ],
+      "effect": "Play immediately when revived.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 11
+    },
+    {
+      "name": "Revive Tint Energy",
+      "category": [
+        "support"
+      ],
+      "effect": "Revive Tints also give 3 AP.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 8
+    },
+    {
+      "name": "Rewarding Mark",
+      "category": [
+        "ap",
+        "mark"
+      ],
+      "effect": "+2 AP on dealing damage to a Marked target. Once per turn.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 3
+    },
+    {
+      "name": "Roulette",
+      "category": [
+        "damage"
+      ],
+      "effect": "Every hit has a 50% chance to deal either 50% or 200% of its damage.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 5
+    },
+    {
+      "name": "Rush On Powerful",
+      "category": [
+        "support"
+      ],
+      "effect": "Apply Rush on applying Powerful.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "SOS Power",
+      "category": [
+        "survival"
+      ],
+      "effect": "Apply Powerful when falling below 50% Health.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 7
+    },
+    {
+      "name": "SOS Rush",
+      "category": [
+        "survival"
+      ],
+      "effect": "Apply Rush when falling below 50% Health.",
+      "lp_cost": null,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 14
+    },
+    {
+      "name": "SOS Shell",
+      "category": [
+        "survival"
+      ],
+      "effect": "Apply Shell when falling below 50% Health.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 3
+    },
+    {
       "name": "Second Chance",
+      "category": [
+        "survival"
+      ],
+      "effect": "Revive with 100% Health. Once per battle.",
+      "lp_cost": null,
+      "obtained": true,
+      "equipped_by": "Verso",
+      "lumina_learned": false,
       "level": 16,
       "stats": {
         "health": 1106,
         "crit": "8%"
-      },
-      "effect": "Revive once per battle",
+      }
+    },
+    {
+      "name": "Shared Care",
+      "category": [
+        "healing"
+      ],
+      "effect": "When Healing an ally, also Heal self for 50% of that value.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 7
+    },
+    {
+      "name": "Shell On Rush",
+      "category": [
+        "support"
+      ],
+      "effect": "Apply Shell on applying Rush.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Shield Affinity",
+      "category": [
+        "damage"
+      ],
+      "effect": "30% increased damage while having Shields, but receiving any damage always removes all Shields.",
+      "lp_cost": 15,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 13
+    },
+    {
+      "name": "Shielding Death",
+      "category": [
+        "death",
+        "survival"
+      ],
+      "effect": "On death, allies gain 3 Shield points.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 22
+    },
+    {
+      "name": "Shielding Tint",
+      "category": [
+        "survival",
+        "support"
+      ],
+      "effect": "Healing Tints also add 2 Shields.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Shortcut",
+      "category": [
+        "survival"
+      ],
+      "effect": "Immediately play when falling below 30% Health. Once per battle.",
       "lp_cost": null,
-      "holder": "Verso"
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 16
+    },
+    {
+      "name": "Slowing Attack",
+      "category": [
+        "support"
+      ],
+      "effect": "Base Attack applies Slow for 1 turn.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Slowing Break",
+      "category": [
+        "support"
+      ],
+      "effect": "Apply Slow on Break.",
+      "lp_cost": 5,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
     },
     {
       "name": "Sniper",
+      "category": [
+        "combat",
+        "shots"
+      ],
+      "effect": "First Free Aim shot each turn deals 200% increased damage and can Break.",
+      "lp_cost": 15,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
       "level": 23,
       "stats": {
         "speed": 529,
         "crit": "13%"
-      },
-      "effect": "Sniper Lumina free",
-      "lp_cost": null,
-      "holder": "unequipped (previously Maelle)"
+      }
+    },
+    {
+      "name": "Solidifying",
+      "category": [
+        "survival"
+      ],
+      "effect": "+2 Shields when the character's Health falls below 50%. Once per battle.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 9
+    },
+    {
+      "name": "Solo Fighter",
+      "category": [
+        "solo",
+        "damage"
+      ],
+      "effect": "Deal 50% more damage if fighting alone.",
+      "lp_cost": 1,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 6
+    },
+    {
+      "name": "Staggering Attack",
+      "category": [
+        "break"
+      ],
+      "effect": "50% increased Break damage on Base Attack.",
+      "lp_cost": 1,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 3
+    },
+    {
+      "name": "Stay Marked",
+      "category": [
+        "mark"
+      ],
+      "effect": "50% chance to apply Mark when attacking a Marked target.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Stun Boost",
+      "category": [
+        "damage"
+      ],
+      "effect": "30% increased damage on Stunned targets.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 4
     },
     {
       "name": "Survivor",
-      "level": 21,
-      "stats": {
-        "speed": 439,
-        "crit": "12%"
-      },
+      "category": [
+        "survival"
+      ],
       "effect": "Survive fatal damage with 1 Health once per battle",
       "lp_cost": 20,
-      "holder": "Maelle"
-    },
-    {
-      "name": "Burn Affinity",
-      "level": null,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 21,
       "stats": {
         "speed": 439,
         "crit": "12%"
-      },
-      "effect": "25% increased damage on Burning targets",
-      "lp_cost": null,
-      "holder": "Lune"
+      }
     },
     {
-      "name": "Burning Death",
-      "level": 21,
-      "stats": {
-        "speed": 308,
-        "crit": "24%"
-      },
-      "effect": "Apply 3 Burn to all enemies on death",
+      "name": "Sweet Kill",
+      "category": [
+        "healing"
+      ],
+      "effect": "Recover 50% Health on killing an enemy.",
       "lp_cost": 5,
-      "holder": "Lune"
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 8
+    },
+    {
+      "name": "Tainted",
+      "category": [
+        "damage"
+      ],
+      "effect": "15% increased damage for each Status Effect on self.",
+      "lp_cost": null,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Teamwork",
+      "category": [
+        "support"
+      ],
+      "effect": "10% increased damage while all allies are alive.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 7
+    },
+    {
+      "name": "The One",
+      "category": [
+        "misc"
+      ],
+      "effect": "Max Health reduced to 1.",
+      "lp_cost": 1,
+      "obtained": false,
+      "equipped_by": null,
+      "lumina_learned": false
+    },
+    {
+      "name": "Time Tint",
+      "category": [
+        "support"
+      ],
+      "effect": "Energy Tints also apply Rush.",
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 10
+    },
+    {
+      "name": "Versatile",
+      "category": [
+        "combat"
+      ],
+      "effect": "After a Free Aim hit, Base Attack damage is increased by 50% for 1 turn.",
+      "lp_cost": 5,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 3
     },
     {
       "name": "Warming Up",
+      "category": [
+        "damage"
+      ],
+      "effect": "5% increased damage per turn, stacks up to 5",
+      "lp_cost": 15,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
       "level": 15,
       "stats": {
         "health": 1166,
         "crit": "9%"
-      },
-      "effect": "5% increased damage per turn, stacks up to 5",
-      "lp_cost": 15,
-      "holder": "unequipped"
+      }
     },
     {
-      "name": "Energy Master",
-      "level": 30,
-      "stats": {
-        "health": 4979
-      },
-      "effect": "Every AP gain is increased by 1",
-      "lp_cost": 40,
-      "holder": "Maelle (temporary \u2014 learning)",
-      "notes": "Long-term holder TBD: Maelle (AP synergy with Lithum rotation) vs Sciel (health boost). Decided after Lumina file complete."
+      "name": "Weakness Gain",
+      "category": [
+        "ap"
+      ],
+      "effect": "+1 AP on hitting an enemy's Weakness. Once per turn.",
+      "lp_cost": 3,
+      "obtained": true,
+      "equipped_by": null,
+      "lumina_learned": false,
+      "level": 15
     }
   ],
   "core_lumina_suite": {
@@ -459,10 +2575,10 @@
   },
   "characters": {
     "Maelle": {
-      "level": 81,
+      "level": 82,
       "pictos": [
         {
-          "name": "Survivor",
+          "name": "Burning Break",
           "level": 21
         },
         {
@@ -470,20 +2586,20 @@
           "level": 25
         },
         {
-          "name": "Burning Break",
-          "level": 21
+          "name": "Energy Master",
+          "level": 30
         }
       ],
-      "lumina_lp_total": 164,
+      "lumina_lp_total": 165,
       "lumina_lp_used": 164,
-      "lumina_notes": "0LP spare. Solo build reversed \u2014 back to party loadout.",
+      "lumina_notes": "1LP spare. Energy Master replaced Survivor as 3rd Pictos.",
       "lumina_additions": [],
       "lumina_removals": [],
       "lumina_extras": [
         {
           "name": "Energising Attack I",
           "lp": 10,
-          "notes": "Added during solo build, kept \u2014 useful for Lithum rotation"
+          "notes": "Added during solo build, kept — useful for Lithum rotation"
         }
       ]
     },
@@ -505,7 +2621,7 @@
       ],
       "lumina_lp_total": 154,
       "lumina_lp_used": 154,
-      "lumina_notes": "0LP spare. Survivor Lumina added (20LP). Breaking Death Pictos kept for stats. Breaking Death now learnt as Lumina (5LP) \u2014 available for other characters.",
+      "lumina_notes": "0LP spare. Survivor Lumina added (20LP). Breaking Death Pictos kept for stats. Breaking Death now learnt as Lumina (5LP) — available for other characters.",
       "lumina_additions": [
         {
           "name": "Survivor",
@@ -660,39 +2776,39 @@
     {
       "name": "Energising Burn",
       "lp": 10,
-      "notes": "Consider when expanding core suite \u2014 all characters have Burning Shots so fires regularly."
+      "notes": "Consider when expanding core suite — all characters have Burning Shots so fires regularly."
     },
     {
       "name": "Empowering Dodge",
       "lp": 5,
-      "notes": "Test empirically before committing \u2014 reset on parry unconfirmed."
+      "notes": "Test empirically before committing — reset on parry unconfirmed."
     },
     {
       "name": "Energising Shell",
       "lp": 10,
-      "notes": "2AP on applying Shell \u2014 good if Shell application is frequent."
+      "notes": "2AP on applying Shell — good if Shell application is frequent."
     }
   ],
   "situational_lumina": [
     {
       "name": "Anti-Blight",
       "lp": 10,
-      "notes": "All characters \u2014 vs bosses applying Blight. Add as Lumina; no need to move Pictos."
+      "notes": "All characters — vs bosses applying Blight. Add as Lumina; no need to move Pictos."
     },
     {
       "name": "Anti-Burn",
-      "lp": 10,
-      "notes": "All characters \u2014 vs bosses applying Burn regularly."
+      "lp": 15,
+      "notes": "All characters — vs bosses applying Burn regularly."
     },
     {
       "name": "Anti-Freeze",
-      "lp": null,
-      "notes": "All characters \u2014 vs bosses applying Freeze. LP cost unconfirmed."
+      "lp": 15,
+      "notes": "All characters — vs bosses applying Freeze. LP cost unconfirmed."
     },
     {
       "name": "Draining Cleanse",
       "lp": 15,
-      "notes": "Status effect prevention \u2014 1AP cost per use. High LP cost; situational."
+      "notes": "Status effect prevention — 1AP cost per use. High LP cost; situational."
     }
   ]
 }
