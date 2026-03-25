@@ -84,9 +84,9 @@ def generate_summary(data):
     lines += [
         "# Clair Obscur: Expedition 33 — Pictos and Lumina Summary",
         "",
-        f"*Generated from `pictos-lumina.json` (commit `{data.get('_commit', 'unknown')}`).*",
+        f"*Generated from `pictos-lumina.json`.*",
         "",
-        "See `pictos-lumina-catalogue.md` for the full list of all 194 Pictos.",
+        "See [`pictos-lumina-catalogue.md`](pictos-lumina-catalogue.md) for the full list of all 194 Pictos.",
         "",
         "-----",
         "",
@@ -260,7 +260,9 @@ def generate_catalogue(data):
     lines += [
         "# Clair Obscur: Expedition 33 — Pictos Catalogue",
         "",
-        f"*Generated from `pictos-lumina.json` (commit `{data.get('_commit', 'unknown')}`).*",
+        f"*Generated from `pictos-lumina.json`.*",
+        "",
+        "See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lumina currently in use.",
         "",
         f"**{len(pictos)} Pictos total.** {len([p for p in pictos if p.get('obtained')])} obtained.",
         "",

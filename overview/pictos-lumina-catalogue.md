@@ -1,6 +1,8 @@
 # Clair Obscur: Expedition 33 — Pictos Catalogue
 
-*Generated from `pictos-lumina.json` (commit `d79ec037`).*
+*Generated from `pictos-lumina.json`.*
+
+See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lumina currently in use.
 
 **194 Pictos total.** 133 obtained.
 

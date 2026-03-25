@@ -1,8 +1,8 @@
 # Clair Obscur: Expedition 33 — Pictos and Lumina Summary
 
-*Generated from `pictos-lumina.json` (commit `d79ec037`).*
+*Generated from `pictos-lumina.json`.*
 
-See `pictos-lumina-catalogue.md` for the full list of all 194 Pictos.
+See [`pictos-lumina-catalogue.md`](pictos-lumina-catalogue.md) for the full list of all 194 Pictos.
 
 -----
 
@@ -86,7 +86,7 @@ Each character has a pool of Lumina Points (LP). LP = character level by default
 ### Maelle
 
 **Level:** 82 | **LP:** 164/165
-*1LP spare. Energy Master replaced Survivor as 3rd Pictos.*
+*1LP spare.*
 
 **Pictos:**
 
@@ -94,7 +94,7 @@ Each character has a pool of Lumina Points (LP). LP = character level by default
 |---|---|---|---|
 | Burning Break | 21 | Apply 3 Burn stacks on Breaking a target. | Health +1541, Crit +24% |
 | Gradient Break | 25 | +50% of a Gradient Charge on Breaking a target. | Speed +424, Crit +28% |
-| Energy Master | 30 | Every AP gain is increased by 1 | Health +4979 |
+| Survivor | 21 | Survive fatal damage with 1 Health once per battle | Speed +439, Crit +12% |
 
 **Character-specific Lumina (on top of core):**
 
@@ -106,7 +106,7 @@ Each character has a pool of Lumina Points (LP). LP = character level by default
 ### Verso
 
 **Level:** 81 | **LP:** 154/154
-*0LP spare. Survivor Lumina added (20LP). Breaking Death Pictos kept for stats. Breaking Death now learnt as Lumina (5LP) — available for other characters.*
+*0LP spare. Survivor Lumina added (20LP). Breaking Death Pictos kept for stats.*
 
 **Pictos:**
 
@@ -116,7 +116,7 @@ Each character has a pool of Lumina Points (LP). LP = character level by default
 | Breaking Death | 29 | Fully charge enemy break bar on death | Speed +586, Crit +33% |
 | Second Chance | 16 | Revive with 100% Health. Once per battle. | Health +1106, Crit +8% |
 
-*Core adjustments: Minus Cheater (free from Pictos), Breaking Death, Base Shield (non-functional with Chevalam)*
+*Core adjustments: Minus Cheater, Breaking Death (free from Pictos), Base Shield (non-functional with Chevalam)*
 
 **Character-specific Lumina (on top of core):**
 
@@ -158,15 +158,15 @@ Each character has a pool of Lumina Points (LP). LP = character level by default
 
 ### Lune
 
-**Level:** 76 | **LP:** 115/120
-*5LP spare pre-tidy. After tidy (remove Breaking Counter/Dead Energy I+II, add Critical Break/Rewarding Mark/Breaking Death): 133/133LP. Cheater deferred.*
+**Level:** 76 | **LP:** 120/122
+*2LP spare. Cheater deferred.*
 
 **Pictos:**
 
 | Pictos | Level | Effect | Stats |
 |---|---|---|---|
-| Powerful on Shell | 23 |  |  |
-| Burn Affinity | — | 25% increased damage on Burning targets | Speed +439, Crit +12% |
+| Powerful On Shell | 23 | Apply Powerful on applying Shell. | Defence +874, Crit +25% |
+| Burn Affinity | 21 | 25% increased damage on Burning targets | Speed +439, Crit +12% |
 | Burning Death | 21 | Apply 3 Burn to all enemies on death | Speed +308, Crit +24% |
 
 **Character-specific Lumina (on top of core):**
@@ -181,8 +181,8 @@ Each character has a pool of Lumina Points (LP). LP = character level by default
 
 ### Monoco
 
-**Level:** 76 | **LP:** 114/122
-*35LP free after removing healing Lumina. Pool size needs confirmation.*
+**Level:** 77 | **LP:** 91/127
+*36LP free after removing healing Lumina. Needs work.*
 
 **Pictos:**
 
@@ -199,7 +199,6 @@ Each character has a pool of Lumina Points (LP). LP = character level by default
 | Lumina | LP | Effect | Notes |
 |---|---|---|---|
 | Staggering Attack | 1 | 50% increased Break damage on Base Attack. | LP cost unconfirmed |
-| Breaking Death | 5 | Fully charge enemy break bar on death | To be added |
 
 
 -----
@@ -221,8 +220,12 @@ Add these as Lumina for specific boss fights — no need to change Pictos.
 
 | Lumina | LP | Effect | Notes |
 |---|---|---|---|
-| Energising Burn | 10 | +1 AP on applying Burn. Once per turn. | Consider when expanding core suite — all characters have Burning Shots so fires regularly. |
+| Energy Master | 40 | Every AP gain is increased by 1 | Game-change but expensive; consider when expanding core set. |
+| Healing Boon | 10 | Heal 15% HP on applying a buff | Consider for Sciel with Litheson. |
+| Energising Shell | 10 | Give 2 AP on applying Shell. | Consider for Maelle with Lithum. |
+| Longer Shell | 5 | On applying Shell, its duration is increased by 2. | Consider for Maelle with Lithum. |
+| Powerful On Shell | 10 | Apply Powerful on applying Shell. | Consider for Maelle with Lithum. |
+| Energising Burn | 10 | +1 AP on applying Burn. Once per turn. | Consider when expanding core set — all characters have Burning Shots so fires regularly. |
 | Empowering Dodge | 5 | 5% increased damage per consecutive dodge, stacks up to 10 | Test empirically before committing — reset on parry unconfirmed. |
-| Energising Shell | 10 | Give 2 AP on applying Shell. | 2AP on applying Shell — good if Shell application is frequent. |
 
 -----
