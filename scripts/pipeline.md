@@ -64,6 +64,11 @@ Persisted to `/mnt/user-data/outputs/session-state.json` throughout the session.
   "actions": [
     "Equip Steeled Strike on Verso (drop Paradigm Shift)",
     "Swap Cheater Pictos to Verso; Maelle uses Cheater via Lumina"
+  ],
+  "pictos_lumina_changes": [
+    "Mark Full Strength as obtained, level 25",
+    "Swap Maelle Pictos: Energy Master → Survivor",
+    "Add Longer Shell (10LP) to Maelle Lumina loadout"
   ]
 }
 ```
@@ -76,6 +81,8 @@ Persisted to `/mnt/user-data/outputs/session-state.json` throughout the session.
 
 **`actions`:** In-game actions to implement before the next session (equip, swap, respec, attempt). Presented as a checklist at end of session.
 
+**`pictos_lumina_changes`:** Tracks changes to apply to `overview/pictos-lumina.json` at end of session. Each entry is a concise note describing one change (e.g. "Mark Full Strength as obtained, level 25", "Swap Maelle Pictos: Energy Master → Survivor"). At end of session, Claude reads the JSON, applies all accumulated changes, writes the updated JSON, and regenerates the two Markdown files by running `python3 scripts/generate_pictos_lumina.py overview/pictos-lumina.json overview/`. These files are included in the changelist commit alongside other file updates.
+
 ---
 
 ## Session Start Procedure
@@ -87,7 +94,7 @@ Persisted to `/mnt/user-data/outputs/session-state.json` throughout the session.
 5. Create in `/mnt/user-data/outputs/`:
    - `chatN.md` — empty transcript file
    - `chatN-index.md` — index file with header (see Index File section in Section 13 of overview)
-   - `session-state.json` — initial state: `{"chat": "chatN", "commit_hash": "<hash>", "last_write_timestamp": null, "modified_sections": [], "actions": []}`
+   - `session-state.json` — initial state: `{"chat": "chatN", "commit_hash": "<hash>", "last_write_timestamp": null, "modified_sections": [], "actions": [], "pictos_lumina_changes": []}`
    Extract the commit hash from the jsDelivr URL used to fetch the overview file (e.g. `@6ab23396`) and store it in `commit_hash`. When a mid-session file fetch is needed, output the full jsDelivr URL with this hash for Matt to paste — do not use `@main`.
 6. Check `/mnt/transcripts/` — flag if any files present (unexpected at session start)
 7. Confirm to user: state chat number, confirm files created, confirm ready
@@ -106,6 +113,7 @@ Triggered by `!log` (typed by Matt at any natural pause) and always at end of se
 6. Update `session-state.json`:
    - For each file section with confirmed changes since the last log write: if not already present in `modified_sections`, add an entry with an empty `changes` array; then append one concise bullet per change to that entry's `changes` array.
    - For each concrete in-game action arising since the last log write (equip, swap, respec, attempt), append a one-line entry to `actions`.
+   - For each Pictos/Lumina change confirmed since the last log write (obtained, equipped, swapped, Lumina added/removed, LP expanded), append a one-line entry to `pictos_lumina_changes`.
    - Set `last_write_timestamp` only if compaction recovery was run in step 3 — otherwise leave as null.
 
 ---
@@ -135,11 +143,12 @@ Identical whether or not compaction occurred.
 2. Final compound log step — transcript and index now complete
 3. Run splitter script: `split_transcript.py --sections-per-part 2` on `chatN.md`
 4. Edit `chatN-index.md` directly: (a) fill in Part Files list under `## Part Files (Claude-readable)` — format: `* Part N — Descriptive Title: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)`; (b) add footer `---\n*Generated: YYYY-MM-DD*`
-5. Produce `chatN-changelist.md`:
+5. If `pictos_lumina_changes` is non-empty: apply all accumulated changes to `overview/pictos-lumina.json`, then regenerate Markdown: `python3 scripts/generate_pictos_lumina.py overview/pictos-lumina.json overview/`. Include the updated JSON and both Markdown files in the changelist commit. Also update the per-character Lumina totals in the overview (Section 5) if LP used/total changed.
+6. Produce `chatN-changelist.md`:
    - For each entry in `modified_sections`, use the `changes` array as the basis for writing the full replacement content for that section.
    - Also include the new Chat N row for Section 10 of the overview: read the existing Section 10 entries and write a new row in the same style — concise prose covering topics discussed, decisions made, and any pipeline/infrastructure changes. Do not generate this mechanically from the `actions` list; write it as a genuine summary.
    - **Write the changelist once at end of session only** — do not write changelist entries incrementally during the session. The `modified_sections` list in session state is the tracking mechanism throughout.
-6. Matt runs the updater script and pushes to GitHub
+7. Matt runs the updater script and pushes to GitHub
 
 ---
 
