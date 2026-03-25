@@ -6868,7 +6868,7 @@ move on to Lune or Maelle recoat decisions
 Your call.
 
 
-## Skill choice for Lune when adding Cystal Crush 6871
+## Skill choice for Lune when adding Crystal Crush 6871
 
 **Matt:**
 Ok, thanks. Next question. I’ve just got Crystal Crush for Lune, which a YouTube video said was a great way to build break energy. But I don’t know what move to swap out. She currently has Wildfire, Mayhem, Elemental Trick, Elemental Genesis, Healing Light and Rebirth
@@ -21054,7 +21054,7 @@ suggest one small prep tweak that makes the fight much smoother.
 But the navigation question is now settled.
 
 
-## Meta-discussion of ChatGPT's obstinate adherance to unfounded essumptions 21057
+## Meta-discussion of ChatGPT's obstinate adherance to unfounded assumptions 21057
 
 **Matt:**
 That is ridiculous. You kept hinting for ages that there was another route. 
@@ -21657,7 +21657,7 @@ Or, if you’d rather proceed on your own for a bit, that also makes sense.
 Either way: you were right to call this out.
 
 
-## Stengthening ChatGPT defaults and exporting chat as Markdown 21660
+## Strengthening ChatGPT defaults and exporting chat as Markdown 21660
 
 **Matt:**
 Can we make it even stronger? For *any* question on Expedition 33, don’t answer without checking guides and communities first. Your learnt knowledge of Expedition 33 and how to apply that knowledge is insufficient to answer my questions. But you do have the ability to read guides much faster than I can and summarise what you learn. You also have the ability to filter what you learn and present it with less spoilers. For example, in the Tisseur case, you could have looked up the information you know now and then said that the fight would *not* lead to missing out on something later, and indeed many guides recommend fighting the Tisseur before Sirene, but you wouldn’t have had to tell me about the shields. 
