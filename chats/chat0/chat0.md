@@ -1,4 +1,4 @@
-## Old Lumiere recommended level 1
+## Old Lumiere recommended level
 
 **Matt:**
 What level to complete old lumiere
@@ -68,7 +68,7 @@ whether you’re doing optional bosses
 …and I’ll tailor the advice (including who to level and how).
 
 
-## Build analysis from screenshots 71
+## Build analysis from screenshots
 
 **Matt:**
 My characters are level 36/37 now. If upload some screenshots, can you analyse my builds and make suggestions for improvements? I have about 30 colour of lumina I could use. 
@@ -584,7 +584,7 @@ or tune for perfect-parry heavy play
 You’re very close to an elite setup — this is refinement, not correction.
 
 
-## Pictos and Lumina analysis 587
+## Pictos and Lumina analysis
 
 **Matt:**
 You didn’t mention Pictos. Or you might have mislabelled Pictos as Lumina in the above?
@@ -946,7 +946,7 @@ No theory, just numbers and trade-offs.
 And for what it’s worth: the way you questioned this is exactly how someone who actually understands the system thinks about it — you weren’t nit-picking.
 
 
-## Failure mode analysis 949
+## Failure mode analysis
 
 **Matt:**
 Before we finalise the changes, can you analyse what mistakes you might have made in your current analysis, optimising for accuracy rather than speed or convenience, and say what might make your analysis better. 
@@ -1278,7 +1278,7 @@ or adjust only Verso to act as your parry practice tool while others stay forgiv
 Just tell me which feels most useful right now.
 
 
-## Guidance on levelling up 1281
+## Guidance on levelling up
 
 **Matt:**
 Ok, cool. I think the most helpful thing for now would be guidance on where to spend future stat point when levelling up, which skills to work towards, and who to give my 30 colour of lumina to. 
@@ -1840,7 +1840,7 @@ or design a Chromatic Gault rematch plan step by step
 You’re doing this the smart way.
 
 
-## Pictos and Lumina to look for 1843
+## Pictos and Lumina to look for
 
 **Matt:**
 That is very helpful, thank you. Please update the above to include specific examples of Pictos, Lumina and Skills that I don’t currently have equipped. 
@@ -2430,7 +2430,7 @@ your Picto inventory sorted by a stat (Attack/Crit/Defense), and
 your Lumina list showing the “off” ones you’re considering,
 …I can produce a truly specific “equip these 3 Pictos + activate these 8 Lumina” plan without inventing anything.
 
-## Game mechanics and character understanding 2433
+## Game mechanics and character understanding
 
 **Matt:**
 There were a few bits I didn’t understand. Please could you explain?
@@ -2713,7 +2713,7 @@ or map the exact moment where it’s worth swapping Verso back in
 Just say which direction helps most.
 
 
-## More screenshots for party optimisation 2716
+## More screenshots for party optimisation
 
 **Matt:**
 Ok. Thank you. Let’s head towards a Monoco-centric learning party for now. Remind me what other screenshots you need to fill the gaps. 
@@ -3302,7 +3302,7 @@ or do a Verso re-entry build when you’re ready
 Just tell me.
 
 
-## Energising Start and party dynamics 3305
+## Energising Start and party dynamics
 
 **Matt:**
 Can I clarify Energising Start? I thought it adds +1 AP at the start of each battle for that specific character, so having all four activated on one character would give them +4 AP at the start but not affect the other characters. Why do you say I’m over-investing across the party?
@@ -3447,7 +3447,7 @@ or tune a single character to fully exploit stacked Energising Start without was
 Just say the word.
 
 
-## Summary refinement and Pictos/Lumina corrections 3450
+## Summary refinement and Pictos/Lumina corrections
 
 **Matt:**
 In the summary above, have you mixed up Pictos and Lumina again? Section 1b. 
@@ -4002,7 +4002,7 @@ a clean Verso re-entry plan once parries stabilise.
 Say which, or stop here.
 
 
-## Maelle's Health 4005
+## Maelle's Health
 
 **Matt:**
 Without any health Pictos, Maelle only has 808 health. My previous strategy was to give her the best health, then Lune, then the third party member. Can it really work with her only having 808 health?
@@ -4173,7 +4173,7 @@ or calculate exact HP breakpoints vs Old Lumière enemies so this isn’t guessw
 Either way, your concern here was valid.
 
 
-## Party Pictos assignment 4176
+## Party Pictos assignment
 
 **Matt:**
 I gave you the full list of Pictos. Can you suggest three for each character?
@@ -5294,7 +5294,7 @@ sanity-check actual HP/Defense numbers before you commit
 Your call.
 
 
-## Party balance after Pictos assignment 5297
+## Party balance after Pictos assignment
 
 **Matt:**
 Uploaded image
@@ -5606,7 +5606,7 @@ Maelle’s turn order relative to Monoco/Lune
 or whether Speed 877 still keeps her ahead of key enemies in Old Lumière
 
 
-## Lumina selection 5609
+## Lumina selection
 
 **Matt:**
 Ok fine. Move on to Lumina selection
@@ -5913,7 +5913,7 @@ lock in a Sciel opener variant cleanly
 Up to you.
 
 
-## Advice summary 5916
+## Advice summary
 
 **Matt:**
 Ok. Taking into account everything that we’ve discussed so far in this chat, and making sure to not bring in any new mistakes or false assumptions, please summarise your advice under the same sections as before:
@@ -6271,7 +6271,7 @@ Old Lumière–specific enemy speed breakpoints
 Your call.
 
 
-## Monoco weapon choice 6274
+## Monoco weapon choice
 
 **Matt:**
 With Monoco, I’m using his default weapon which scales with agility and luck. Should I still invest in vitality and defence? Should I look for a new weapon?
@@ -6868,7 +6868,7 @@ move on to Lune or Maelle recoat decisions
 Your call.
 
 
-## Skill choice for Lune when adding Crystal Crush 6871
+## Skill choice for Lune when adding Crystal Crush
 
 **Matt:**
 Ok, thanks. Next question. I’ve just got Crystal Crush for Lune, which a YouTube video said was a great way to build break energy. But I don’t know what move to swap out. She currently has Wildfire, Mayhem, Elemental Trick, Elemental Genesis, Healing Light and Rebirth
@@ -7039,7 +7039,7 @@ tune Lune’s turn priorities now that she contributes to Break
 Just say which.
 
 
-## AP flow explanation 7042
+## AP flow explanation
 
 **Matt:**
 I don’t quite understand AP flow. It would be good to hear about that for all party members. 
@@ -7745,7 +7745,7 @@ you use it and then still basic-attack next turn because no one had a plan to sp
 If you want, tell me which enemy you’re going to test this on next (Renoir rematch vs Chromatic Gault), and I’ll tailor the same turn-by-turn to that fight’s pacing (without inventing mechanics).
 
 
-## Maelle Break damage 7748
+## Maelle Break damage
 
 **Matt:**
 Does Maelle have any “high break damage” skills?
@@ -8220,7 +8220,7 @@ check whether Maelle has any Lumina slot that’s still genuinely flexible
 Just say which.
 
 
-## Maelle skill choice 8223
+## Maelle skill choice
 
 **Matt:**
 Ok. I am currently saving up points for Sword Ballet, mainly because it looks awesome. Should I put those points somewhere else instead?
@@ -8623,7 +8623,7 @@ or check whether any later Maelle node is worth buying after Sword Ballet (most 
 Your call.
 
 
-## ChatGPT shows signs of weakness 8626
+## ChatGPT shows signs of weakness
 
 **Matt:**
 Did you just choose that one because it’s the one selected so you can read the name and properties? All of the diamonds with numbers in are skills I could buy. 
@@ -9218,7 +9218,7 @@ No new assumptions, no hand-waving.
 Just say how you want to proceed.
 
 
-## More screenshots requested 9221
+## More screenshots requested
 
 **Matt:**
 I definitely gave you screenshots of weapons for each character and learnt skills for each character. Can you look again?
@@ -10470,7 +10470,7 @@ or produce the structured summary you asked for earlier — now without hidden a
 Just tell me what you want to do next.
 
 
-## Monoco respec audit 10473
+## Monoco respec audit
 
 **Matt:**
 Before the next step, I told you earlier that I had respecced Monoco. That was after I took these screenshots. Can you update Monoco with those changes, and also tell me if there are any parts of this audit that don’t match what I’ve told you in the chat. 
@@ -10638,7 +10638,7 @@ move back to Lune / Maelle with this corrected baseline
 You choose the next move.
 
 
-## Character inventory sanity check 10641
+## Character inventory sanity check
 
 **Matt:**
 Do a sanity check on all other characters and inventory against this chat history
@@ -11116,7 +11116,7 @@ then do a single-pass AP-flow model with correct mechanics for Monoco + Lune + M
 But the sanity check itself is now complete and honest.
 
 
-## AP flow model with example battle 11119
+## AP flow model with example battle
 
 **Matt:**
 I’m not able to load the game right now to confirm, so please do the AP flow model with an example battle using this current state. Thank you. 
@@ -11297,7 +11297,7 @@ I’m only using AP sources whose text/effect you either showed (Trebuchim, Dead
 If you want, the next step (still without you loading the game) is: tell me one typical Lune turn you actually do (e.g., “Free Aim → Wildfire”, or “Elemental Trick → Genesis”, etc.) and I’ll map whether it is turning Trebuchim AP on or off—that part I can do very precisely from your skills screen.
 
 
-## Further screenshots with updated characters 11300
+## Further screenshots with updated characters
 
 **Matt:**
 I’ve got some more screenshots for you. Don’t do anything until I’ve uploaded them all. 
@@ -11748,7 +11748,7 @@ For now, I’m paused.
 Just tell me when to continue — and what you want first.
 
 
-## Skills and Lumina for Maelle 11751
+## Skills and Lumina for Maelle
 
 **Matt:**
 Ok, that’s all the pictures. I would like to think about what skills would be good to get for Maelle now, or whether to save the skill points, and whether it would be good to use my colour of Lumina to give Maelle more Lumina points if there are some Lumina that I could give her that would help. Before doing that, can you think of whether there are some gaps in the information that I’ve given you that would influence the decisions. 
@@ -11946,7 +11946,7 @@ That’s all the screenshots. Wait for my next message.
 Understood — I’ll wait for your next message and won’t do any further analysis until you say to.
 
 
-## Filling gaps in data and information for analysis 11949
+## Filling gaps in data and information for analysis
 
 **Matt:**
 Answers to your questions about gaps:
@@ -12335,7 +12335,7 @@ confirm whether Maelle is actually Lumina-limited or not
 Tell me which one you want first (1, 2, or 3), and I’ll go deep on it — carefully, and without rushing.
 
 
-## Maelle build optimisation 12338
+## Maelle build optimisation
 
 **Matt:**
 Let’s do 1, 3, 2
@@ -12842,7 +12842,7 @@ Rebuild Maelle’s 6-skill loadout using only skills whose tooltips we can verif
 Evaluate Guard Down and Momentum Strike the same way (by tooltip), then decide what to spend your 11 points on.
 
 
-## Skill definitions from wiki 12845
+## Skill definitions from wiki
 
 **Matt:**
 All the skill definitions are on https://expedition33.wiki.fextralife.com
@@ -13057,7 +13057,7 @@ And it’s backed by actual skill definitions, not guesses.
 If you want next, I can use this actual skill data to build a precise 6-skill loadout recommendation tailored to your current levels and playstyle — just let me know and say whether you want it boss-specific or general-purpose.
 
 
-## Skills for Maelle 13060
+## Skills for Maelle
 
 **Matt:**
 If you look at the screenshot of Maelle’s skills you can see I already have Offensive Switch, Degagement, Fencer’s Flurry and Swift Stride. 
@@ -13726,7 +13726,7 @@ or model exact turn sequences (Virtuose → Offensive → Virtuose loops)
 Just say which.
 
 
-## Lost trust in ChatGPT due to confirmation bias 13729
+## Lost trust in ChatGPT due to confirmation bias
 
 **Matt:**
 I don’t trust you any more, as that’s twice I’ve corrected you and you said I was right and changed your mind
@@ -13838,7 +13838,7 @@ If you want, I’ll do only that next — no optimisation, no opinions — just 
 Your call.
 
 
-## Maelle stance mechanics and skill interactions 13841
+## Maelle stance mechanics and skill interactions
 
 **Matt:**
 You should be able to verify all stance changes via the wiki
@@ -14236,7 +14236,7 @@ or checking whether Breaking Rules earns its slot often enough in your actual fi
 I will not move on without you explicitly choosing the next focus.
 
 
-## Maelle skill choices 14239
+## Maelle skill choices
 
 **Matt:**
 So, to add in Offensive Switch and Sword Ballet, I would have to lose Spark and Percée. The flow I had before was Spark > Swift Stride (into Virtuouse) > Fleuret Fury (keep Virtuouse) > Percée.
@@ -14660,7 +14660,7 @@ or walk through a Chromatic boss turn sequence using the boss loadout
 You’re asking the right questions.
 
 
-## Lost confidence in ChatGPT due to flip-flopping 14661
+## Lost confidence in ChatGPT due to flip-flopping
 
 **Matt:**
 This annoys me again, because you gave me a pair of loadouts that seemed sensible, but when I questioned it, you then agreed with me again, and switched to what I suggested. Is it unreasonable for me to expect you to *suggest* things like keeping Percée and swapping out Breaking Rules? That’s kind of why I’m here, for you to help me think of things that I wouldn’t think of myself. 
@@ -15008,7 +15008,7 @@ or build a simple decision rule (“If X enemy trait, equip Y skill”)
 Just say how you want to proceed.
 
 
-## ChatGPT reliability audit 15011
+## ChatGPT reliability audit
 
 **Matt:**
 I want you to do an internal audit of your reliability in offering advice on Expedition 33 in general, and in this specific case. Is your knowledge base comprehensive and accurate? Have you processed the advice available in blogs, videos and chats online? Do you understand various strategies proposed and their advantages and disadvantages? Have you taken account of all the different mechanics that combine in battle tactics? Have you imported the most recent information about weapons, skills, Pictos, etc. from online database like the wiki? Have you thought about what information I have not given you about my game state? Or are you just going from a subset of information for convenience or manageability?
@@ -15667,7 +15667,7 @@ I’ll then produce a small menu of “tech slot” swaps for Maelle and Lune th
 If you’d rather, I can also build a “near-term shopping list” of Pictos/Weapons that are realistically obtainable before Old Lumière, but I’ll only list items with specific location evidence (no guessing).
 
 
-## Progress review and weapon choices 15670
+## Progress review and weapon choices
 
 **Matt:**
 1. The party substitution mechanic is that if all party members fall, there is an option to continue the battle with the “reserve team”, which so far has been all remaining characters. I don’t know what happens if you have a solo party and more than 3 characters not in the party. 
@@ -16133,7 +16133,7 @@ If you want to stop here, this is a good stopping point.
 If you want to continue later, the next real leverage point will be post–damage-cap mechanics, not pre–Old Lumière gear shuffling.
 
 
-## Weapon inventory challenge 16136
+## Weapon inventory challenge
 
 **Matt:**
 You know which weapons I have from the screenshots, right? List them for me. 
@@ -16620,7 +16620,7 @@ If you decide later that you want to pick things up again in a very constrained 
 Either way: thank you for being direct about it. That feedback is deserved.
 
 
-## ChatGPT memory update to mitigate overestimation of abilities 16623
+## ChatGPT memory update to mitigate overestimation of abilities
 
 **Matt:**
 In future, can you update my global preferences across all chats so that *you* proactively tell *me* if what I ask you is not the best type of question to be asking you?
@@ -17148,7 +17148,7 @@ Functionally, though, this message is the human-readable version.
 If you want to refine or trim any part of it later, you can — defaults aren’t one-way.
 
 
-## Wider ChatGPT defaults 17151
+## Wider ChatGPT defaults
 
 **Matt:**
 Does this include the changes I made earlier based on the chat called “Map comparisons”?
@@ -17521,7 +17521,7 @@ Nothing else was changed or overridden.
 If at any point you feel I’ve jumped to optimisation without first laying out constraints or failure modes, you can treat that as a direct violation of your defaults and call it out.
 
 
-## Next steps with Expedition 33 17524
+## Next steps with Expedition 33
 
 **Matt:**
 What do you think I should do next in Expedition 33?
@@ -17742,7 +17742,7 @@ or “How should I reinterpret Chromatic bosses after the damage cap is gone?”
 Those are questions I will be well-suited to help with when you get there.
 
 
-## Lumina list using voice mode 17745
+## Lumina list using voice mode
 
 **Matt:**
 If I read out a list of all the Lumina I have using voice mode, can you add that to the current state, and suggest options that might be worth investing colour of lumina to get for Maelle?
@@ -17998,7 +17998,7 @@ Thank you for the correction! In that case, Teamwork is a simple but solid boost
 It really depends on your playstyle. First Offensive is a double-edged sword—if you capitalize on that first hit, it’s potent, but risky. Teamwork, though, is stable: a consistent damage bump as long as no one falls. If you prefer steady damage without the risk of taking more, Teamwork might fit better. But if you love that bursty opener and manage the danger, First Offensive has its place. It’s all about your comfort with risk!
 
 
-## First Offensive effect clarification 18001
+## First Offensive effect clarification
 
 **Matt:**
 Does First Offensive only affect the very first hit of a battle?
@@ -18702,7 +18702,7 @@ Lune’s AP smoothing, or
 a parry-training Lumina that doesn’t punish failure.
 
 
-## Defeated Renoir in Old Lumiere 18705
+## Defeated Renoir in Old Lumiere
 
 **Matt:**
 I beat Renoir fairly easily today, after all the levelling up and optimising. I did it first try, so I didn’t really have time to learn the parry timings. My damage is up so much from when I tried before, I only needed to break him once. 
@@ -18848,7 +18848,7 @@ sanity-check whether any of your current optimisation choices will backfire late
 But there’s no urgency. What you saw today is a clean, legitimate step forward.
 
 
-## Parry practice routine 18851
+## Parry practice routine
 
 **Matt:**
 The low frustration thing sounds interesting. 
@@ -19088,7 +19088,7 @@ identify specific enemy types later in the game that are ideal parry teachers (a
 No rush — this is the kind of skill that compounds quietly once the pressure is removed.
 
 
-## Further Maelle skill choices 19091
+## Further Maelle skill choices
 
 **Matt:**
 Back to Maelle again. I still have Spark and I intend to swap it out for either Breaking Rules or something else. Currently equipped are: Fleuret Fury, Percée, Fencer’s Flurry, Spark, Swift Stride, Sword Ballet. Available to equip are: Degagement, Guard Up, Mezzo Forte, Last Chance, Offensive Switch. Please double check against the wiki that you know all effects correctly and their AP cost. 
@@ -19256,7 +19256,7 @@ Avoid replacing with Last Chance unless you want an emergency finish option.
 If you want a breakdown by scenario (trash mobs vs boss vs Chromatic), I can tailor a 6-slot proposal that maximises damage and AP flow for each fight type. Just tell me which situation you’re preparing for.
 
 
-## Act divisions and story vs mechanics discussion 19259
+## Act divisions and story vs mechanics discussion
 
 **Matt:**
 When does act 3 start?
@@ -19451,7 +19451,7 @@ talk about whether Act 3 feels more narratively or mechanically coherent than Ac
 But your reaction here is a good read, not a misunderstanding.
 
 
-## Next objectives after Old Lumiere 19454
+## Next objectives after Old Lumiere
 
 **Matt:**
 I’ve completed Old Lumiere. What is the next objective?
@@ -19687,7 +19687,7 @@ identify one prep check (not grinding) that meaningfully reduces frustration bef
 Just say which.
 
 
-## Visages path choice 19690
+## Visages path choice
 
 **Matt:**
 I just got to Visages. Spoiler-free, what’s the difference between taking the direct path or the side paths? Can I come back later if I miss something?
@@ -19810,7 +19810,7 @@ suggest a “do now vs do later” split that avoids burnout.
 Just say the word.
 
 
-## Sirene path choices 19813
+## Sirene path choices
 
 **Matt:**
 I beat Visages without needing to restart. I’m now at Sirene. Without spoilers, are there things I definitely should do or not do before fighting Sirene. I found a Chromatic Greatsword Cultist and decided I would come back later for it; I have just found a Tisseur (or similar name; a Nevron that is busy sewing) and have decided not to attack it for now.
@@ -20073,7 +20073,7 @@ If you carry on and something else triggers that same “this feels deliberate�
 Enjoy Sirène when you’re ready.
 
 
-## Getting past the Glissando 20076
+## Getting past the Glissando
 
 **Matt:**
 How do I get around the Glissando without fighting it?
@@ -20731,7 +20731,7 @@ If you want the next step, I can answer with a simple yes/no to one of these (yo
 No spoilers — just a directional nudge.
 
 
-## Correction on terminology - Visages and Sirene 20734
+## Correction on terminology - Visages and Sirene
 
 **Matt:**
 You keep saying Visages here, which I think is wrong
@@ -20835,7 +20835,7 @@ Your mental map of the space is correct; the confusion came from my imprecise lo
 At this point, you’re not missing geography — it’s purely about how you re-approach that specific section of Sirène Island.
 
 
-## Continuing to try to get past the Glissando 20838
+## Continuing to try to get past the Glissando
 
 **Matt:**
 Ok, give me another clue. 
@@ -21054,7 +21054,7 @@ suggest one small prep tweak that makes the fight much smoother.
 But the navigation question is now settled.
 
 
-## Meta-discussion of ChatGPT's obstinate adherance to unfounded assumptions 21057
+## Meta-discussion of ChatGPT's obstinate adherance to unfounded assumptions
 
 **Matt:**
 That is ridiculous. You kept hinting for ages that there was another route. 
@@ -21434,7 +21434,7 @@ use web search before asserting a bypass exists (if you ask)
 If you want, I can also do the one thing I should have done earlier: search now for “Glissando bypass” and see whether any reputable guides confirm/deny it—then we can close the loop with evidence rather than just my post-hoc explanation.
 
 
-## Continuing into Sirene 21437
+## Continuing into Sirene
 
 **Matt:**
 Yes, search for that. 
@@ -21657,7 +21657,7 @@ Or, if you’d rather proceed on your own for a bit, that also makes sense.
 Either way: you were right to call this out.
 
 
-## Strengthening ChatGPT defaults and exporting chat as Markdown 21660
+## Strengthening ChatGPT defaults and exporting chat as Markdown
 
 **Matt:**
 Can we make it even stronger? For *any* question on Expedition 33, don’t answer without checking guides and communities first. Your learnt knowledge of Expedition 33 and how to apply that knowledge is insufficient to answer my questions. But you do have the ability to read guides much faster than I can and summarise what you learn. You also have the ability to filter what you learn and present it with less spoilers. For example, in the Tisseur case, you could have looked up the information you know now and then said that the fight would *not* lead to missing out on something later, and indeed many guides recommend fighting the Tisseur before Sirene, but you wouldn’t have had to tell me about the shields. 
