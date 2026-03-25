@@ -79,20 +79,6 @@ Individual character Gradient Skills are listed in each character file. Details 
 ### Break Mechanics
 
 There are two distinct types of Break skills:
-- **Break bar filling skills** (labelled "High Break damage"): Deal high damage to the break bar to fill it up over multiple hits. Example: Stalact Punches.
-- **Break trigger skills** (labelled "Can Break"): Land the final hit that actually triggers the Break when the bar is full. Example: Moissonneuse Vendange, Mayhem.
-
-A team typically needs both types — a filler to build the bar and a trigger to fire it. Some gradient skills combine both (e.g. Monoco's Break Point fills and triggers simultaneously).
-
-### Pictos and Lumina
-
-Pictos are collectible items, one unique copy each. Finding a duplicate upgrades the existing copy. Each character has 3 Pictos slots. Equipping a Pictos applies both its stat boosts and its effect. After winning 4 battles with a Pictos equipped, it is learnt as a Lumina. Lumina can be applied to any character by spending LP; they apply the effect only — not the stat boosts. A character cannot equip the Lumina of a Pictos they already have equipped.
-
-Higher level Pictos give higher stat boosts. With all main attributes maxed at 99, Pictos stat boosts are the primary source of character growth.
-
-### Break Mechanics
-
-There are two distinct types of Break skills:
 - **Break bar filling skills** (labelled "High Break damage"): Deal high damage to the break bar to fill it up over multiple hits. Example: Stalact Punches, Terraquake.
 - **Break trigger skills** (labelled "Can Break"): Land the final hit that actually triggers the Break when the bar is full. Example: Moissonneuse Vendange, Mayhem, Final Path.
 
@@ -100,9 +86,21 @@ A team typically needs both types — a filler to build the bar and a trigger to
 
 **Note:** By late game, Lumina (particularly Breaker) contributes significantly to break bar filling across all characters. The break capability of a team depends more on Lumina sets than on individual skills labelled as "high break damage." Multi-hit skills (e.g. Phantom Stars, Final Path) fill the break bar substantially even without that label. The skill label is not the sole indicator of break capability.
 
+### Pictos and Lumina
+
+Pictos are collectible items, one unique copy each. Finding a duplicate upgrades the existing copy. Each character has 3 Pictos slots. Equipping a Pictos applies both its stat boosts and its effect. After winning 4 battles with a Pictos equipped, it is learnt as a Lumina. Lumina can be applied to any character by spending LP; they apply the effect only — not the stat boosts. A character cannot equip the Lumina of a Pictos they already have equipped.
+
+Higher level Pictos give higher stat boosts. With all main attributes maxed at 99, Pictos stat boosts are the primary source of character growth.
+
+Any Lumina costs 0LP for a character who has that Pictos equipped (e.g. Verso has Cheater and Breaking Death as Pictos; Monoco has Energising Turn as Pictos).
+
 ### Tints
 
-Tints are consumable items, distinct from skills. There are three types: Healing Tints (restore HP), Revive Tints (revive a fallen ally), and Energy Tints (restore AP). Tints are upgraded using Shapes; the maximum number carried is increased using Shards. Tints are consumed on use and refilled on Rest. Pictos and Lumina effects that trigger "on applying a heal" or "on applying Shell" via Tints (e.g. Protecting Tint) only fire when a Tint is used, not when a healing skill is used.
+Tints are consumable items, distinct from skills. There are three types: Healing Tints (restore HP), Revive Tints (revive a fallen ally), and Energy Tints (restore AP). Tints are upgraded using Shapes; the maximum number carried is increased using Shards. Tints are consumed on use and refilled on Rest.
+
+**Important:** Pictos/Lumina effects that trigger "on applying a heal" or "on applying Shell" behave differently depending on source:
+- *Protecting Tint Lumina*: fires when a **Tint** is used — not when a healing skill is used.
+- *Protecting Heal Lumina*: fires when a **skill** heals an ally — not on Tint use.
 
 ### Attribute System
 

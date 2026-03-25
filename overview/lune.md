@@ -1,6 +1,6 @@
 # Lune — Clair Obscur: Expedition 33
 
-*Last updated: 2026-03-11*
+*Last updated: 2026-03-24*
 
 ---
 
@@ -11,6 +11,7 @@
 - **Synergies:** Elemental Genesis requires one of each element stain (Fire, Earth, Lightning, Ice) — Light stains act as wildcards for any missing element; any two of Wildfire/Terraquake/Thunderfall cover all four elements; Kralim Level 10 generates 2 random stains on turn start to accelerate Genesis setup; reserve team role: Lune as DPS + healing, Monoco as break + AP flow
 
 -----
+
 ## Mechanics
 
 Lune's central system is **stain generation and consumption**. Skills generate stains by element; Elemental Genesis consumes one of each of the four elements (Fire, Earth, Lightning, Ice) for extreme damage. **Light stains act as wildcards** — a Light stain can substitute for any missing element. Maximum 4 stains at once.
@@ -20,7 +21,7 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 **Kralim Level 4 damage stacking:** Casting a skill increases skill damage of all other elements by +20%. Resets when casting a skill of a previously used element. Encourages varied element usage.
 
 **Two types of Break skills:**
-- **Break bar filling:** "High Break damage" skills (e.g. Stalact Punches) chip away at the break bar over multiple hits
+- **Break bar filling:** "High Break damage" skills (e.g. Crystal Crush, Terraquake) chip away at the break bar over multiple hits
 - **Break trigger:** "Can Break" skills (e.g. Mayhem, Moissonneuse Vendange) land the final hit that triggers the Break
 
 **Stain interactions:**
@@ -45,28 +46,21 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 
 ### Combat Stats (with Pictos — Powerful on Shell 23, Burn Affinity, Burning Death 21)
 
-| Stat                          | Base    | From weapon/Pictos              | Total   |
-|-------------------------------|---------|--------------------------------|---------|
-| Health                        | 3115    | +874 (Powerful on Shell)       | 3989    |
-| Attack                        | 911     | +4454 (Kralim scaling)         | 5365    |
-| Speed                         | 1025    | +439 (Burn Affinity) +308 (Burning Death) | 1772 |
-| Defence                       | 182     | +874 (Powerful on Shell)       | 1056    |
+| Stat                          | Base    | From weapon/Pictos                                 | Total   |
+|-------------------------------|---------|---------------------------------------------------|---------|
+| Health                        | 3115    | +874 (Powerful on Shell)                          | 3989    |
+| Attack                        | 911     | +4454 (Kralim scaling)                            | 5365    |
+| Speed                         | 1025    | +439 (Burn Affinity) +308 (Burning Death)         | 1772    |
+| Defence                       | 182     | +874 (Powerful on Shell)                          | 1056    |
 | Critical Rate                 | 20%     | +25% (Powerful on Shell) +12% (Burn Affinity) +24% (Burning Death) | 81% |
 
-### Pictos Breakdown
-
-| Pictos           | Level | Health  | Defence | Crit  | Effect                                           |
-|------------------|-------|---------|---------|-------|--------------------------------------------------|
-| Longer Shell     | 29    | +2757   | +1572   | —     | On applying Shell, duration increased by 2       |
-| Healing Share    | 11    | +467    | —       | +14%  | Receive 15% of all Heals affecting other characters |
-| Powerful on Shell| 23    | —       | +874    | +25%  | Apply Powerful on applying Shell                 |
-
 -----
+
 ## Weapons
 
 ### Current
 - **Name:** Kralim (29)
-- **Power:** ~3390 at level 33 (near cap at level 29)
+- **Power:** ~3390
 - **Element:** [unconfirmed — verify in game]
 - **Scaling:** Vitality A, Agility B
 - **Notes:** Level 4: Casting a Skill increases Skill damage of all other elements by +20%; resets when casting a previously used element. Level 10: On turn start, if no Stains, 2 random Stains generated. Level 20: +1 AP when Stains are consumed. Required for Elemental Genesis build.
@@ -79,7 +73,7 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 - **Notes:** Stain generation weapon — L4: 1 random stain on free-aim; L20: base attack generates 2 random stains. Replaced by Kralim for Genesis build.
 
 ### Available weapons (inventory)
-Angerim (24), Betelim (12), Braselim (15), Choralim (20), Colim (13), Coralim (7), Deminerim (4), Elerim (13), Kralim (29), Ligherim (12), Lunerim (1), Potierim (10), Redalim (10), Saperim (14), Snowim (22), Trebuchim (25), Troubadim (15)
+Angerim (24), Betelim (12), Benisim (28), Braselim (21), Choralim (20), Colim (13), Coralim (7), Deminerim (4), Elerim (13), Kralim (29), Ligherim (12), Lunerim (1), Potierim (10), Redalim (10), Saperim (14), Snowim (22), Trebuchim (25), Troubadim (15)
 
 ### Future Options
 - **Choralim (20):** 100% crit when 4 stains are active. Circular dependency as primary weapon; may serve as crit-maintenance layer once base 100% crit established. Role in endgame build needs clarification.
@@ -115,32 +109,31 @@ Angerim (24), Betelim (12), Braselim (15), Choralim (20), Colim (13), Coralim (7
 
 *Reserve team core (110LP) + character-specific additions.*
 
-| Lumina             | LP  | Notes                                         |
-|--------------------|-----|-----------------------------------------------|
-| Base Shield        | 20  | Core                                          |
-| Breaker            | 10  | Core                                          |
-| Breaking Burn      | 5   | Core — retained; fires when reserve team breaks enemies |
-| Breaking Death     | 5   | Core + character-specific                     |
-| Burn Affinity      | —   | FREE from Burn Affinity Pictos                |
-| Burning Shots      | 3   | Core                                          |
-| Critical Break     | 5   | Core + character-specific                     |
-| Dodger             | 1   | Core                                          |
-| Energising Parry   | 15  | Core                                          |
-| Energising Start I | 5   | Core                                          |
-| Energising Turn    | 20  | Core                                          |
-| Healing Tint Energy| 1   | Character-specific                            |
-| Marking Shots      | 3   | Core                                          |
-| Painted Power      | 5   | Core                                          |
-| Powerful on Shell  | —   | FREE from Powerful on Shell Pictos            |
-| Protecting Heal    | 5   | Character-specific — Shell on every Healing Light cast |
-| Rewarding Mark     | 5   | Core + character-specific                     |
-| Teamwork           | 5   | Core                                          |
-| Accelerating Heal  | 5   | Character-specific                            |
+| Lumina             | LP  | Notes                                                          |
+|--------------------|-----|----------------------------------------------------------------|
+| Base Shield        | 20  | Core                                                           |
+| Breaker            | 10  | Core                                                           |
+| Breaking Burn      | 5   | Core — retained; fires when reserve team breaks enemies        |
+| Breaking Counter   | 3   | Core                                                           |
+| Breaking Death     | 5   | Core + character-specific                                      |
+| Burn Affinity      | —   | FREE from Burn Affinity Pictos                                 |
+| Burning Shots      | 3   | Core                                                           |
+| Critical Break     | 5   | Core + character-specific                                      |
+| Dodger             | 1   | Core                                                           |
+| Energising Parry   | 15  | Core                                                           |
+| Energising Start I | 5   | Core                                                           |
+| Energising Turn    | 20  | Core                                                           |
+| Healing Tint Energy| 1   | Character-specific                                             |
+| Marking Shots      | 3   | Core                                                           |
+| Painted Power      | 5   | Core                                                           |
+| Powerful on Shell  | —   | FREE from Powerful on Shell Pictos                             |
+| Protecting Heal    | 5   | Character-specific — Shell on every Healing Light cast         |
+| Rewarding Mark     | 5   | Core + character-specific                                      |
+| Teamwork           | 5   | Core                                                           |
+| Accelerating Heal  | 5   | Character-specific                                             |
 
-*Removed Chat 5: Breaking Counter (3LP), Dead Energy I (2LP), Dead Energy II (2LP).*
+*Removed Chat 5: Breaking Counter removed from character-specific (now in core). Dead Energy I (2LP) and Dead Energy II (2LP) removed.*
 *Added Chat 5: Protecting Heal (5LP), Critical Break (5LP), Rewarding Mark (5LP), Breaking Death (5LP).*
-
-
 
 -----
 
@@ -151,10 +144,10 @@ Angerim (24), Betelim (12), Braselim (15), Choralim (20), Colim (13), Coralim (7
 | Skill             | AP Cost | Equipped | Notes                                                                                                                                    |
 |-------------------|---------|----------|------------------------------------------------------------------------------------------------------------------------------------------|
 | Wildfire          | 4       | ✅       | Medium Fire AoE, 1 hit; applies 3 Burn; generates 1 Fire + 1 Light stain. Primary Burn applicator and Fire stain source.                |
-| Terraquake        | 5       | ✅       | Earth damage over 3 turns; generates Earth + Light stains. Upgrade on Crystal Crush — same element, sustained damage over multiple turns.|
+| Terraquake        | 5       | ✅       | Earth damage over 3 turns; increases all Break damage received by 50% for 3 turns; generates Earth + Light stains.                      |
 | Thunderfall       | 5       | ✅       | Lightning damage; generates Lightning + Light stains. Flexible vs lightning-weak enemies.                                               |
 | Healing Light     | 3       | ✅       | Heals targeted ally 30–50% HP; dispels ALL status effects including Cursed; consumes 2 Earth stains for 0 AP; generates 1 Light stain.  |
-| Mayhem            | 3       | ✅       | Consumes all stains for damage; Breaks with 4 stains. Break option and stain sink. Needs 4 stains to Break.                             |
+| Mayhem            | 3       | ✅       | Consumes all stains for damage; Breaks with 4 stains. Needs 4 stains to Break.                                                          |
 | Elemental Genesis | 4       | ✅       | Primary DPS skill. Requires 1 of each element stain (Fire, Earth, Lightning, Ice — Light wildcards for missing element). Extreme damage. |
 
 ### Available skills (effects not fully confirmed)
@@ -170,33 +163,32 @@ Crystal Crush, Earth Rising, Electrify, Elemental Trick, Fire Rage, Ice Lance, I
 | Tree of Life    | 2             | ✅       | Heals party + removes ALL status effects. Reliable only when charges accumulated. |
 | Sky Break       | 3             | ✅       | Extreme damage to all enemies using element with most stains; can break.          |
 
----
+-----
 
 ## Build Options
 
 | Build Name           | Role              | Key Skills                                     | Key Weapon | Status   | Notes                                                                                        |
 |----------------------|-------------------|------------------------------------------------|------------|----------|----------------------------------------------------------------------------------------------|
-| Trebuchim free-aim   | Support/healer/DPS | Wildfire, Mayhem, Crystal Crush, Healing Light, Revitalization, Rebirth | Trebuchim | Current | Hold until Genesis build decision made                                                    |
-| Elemental Genesis    | DPS               | Elemental Trick, Elemental Genesis             | Kralim     | Deferred | Requires Kralim, Cheater Lumina (Sprong), stat reallocation (Vitality 99, Agility 99, high Luck), full skill/Lumina rebuild. Incompatible with current setup. |
+| Elemental Genesis    | DPS / healer      | Wildfire, Terraquake, Thunderfall, Healing Light, Mayhem, Elemental Genesis | Kralim | Current | Vitality 99, Agility 99, Luck 30. Reserve team role. |
 
----
+-----
 
 ## Key Decisions
 
-- **Trebuchim over Colim:** Tested and confirmed. 14% attack loss with Colim, identical AP economy, no stain generation on free-aim. Trebuchim optimal for this playstyle.
-- **Trebuchim over Choralim:** Choralim has circular dependency for Elemental Trick (needs stains for crits, needs crits for stains). Not a replacement.
-- **Elemental Genesis deferred:** Requires full rebuild. No firm plan yet — hold until Cheater Lumina obtained and Genesis build fully planned.
-- **Revitalization over Ice Lance:** Ice Lance (slows enemies) replaced pre-Paintress with Revitalization (AoE heal). Healing coverage prioritised.
+- **Trebuchim over Colim:** Tested and confirmed. 14% attack loss with Colim, identical AP economy, no stain generation on free-aim. Trebuchim optimal for prior playstyle.
+- **Kralim over Trebuchim:** Kralim required for Elemental Genesis build. Respec to Vitality 99 / Agility 99 completed Chat 5.
+- **Burn Affinity over Warming Up for Pictos:** Warming Up takes 5 turns to reach 25% damage cap — too slow for reserve entry. Burn Affinity fires immediately from turn 1 via Wildfire.
+- **Burning Death over Sniper as third Pictos:** Higher Crit (+24% vs +13%) and useful on-death burn effect more relevant for Lune's role than Sniper's Speed advantage.
+- **Protecting Heal added:** Activates Shell on every Healing Light cast, enabling Longer Shell extension on Monoco and Powerful on Shell bonus for Lune.
 
----
+-----
 
 ## Open Questions
 
 - **Kralim element:** Not confirmed in transcript — verify in game.
 - **Choralim role in Genesis build:** Can it serve as crit-maintenance layer alongside Kralim? Needs clarification before next Lune build session.
-- **Correct stat allocation post-respec:** Vitality 99, Agility 99, Luck 18 confirmed — apply when switching to Kralim.
-- **Reserve team optimisation:** Lune as DPS + healing, Monoco as break + AP flow — roles agreed but builds not fully optimised.
-- **Gradient skills:** Unconfirmed — verify in game (Tree of Life at 2GC confirmed).
+- **Reserve team optimisation:** Lune as DPS + healing, Monoco as break + AP flow — roles agreed; builds reviewed Chat 5.
+- **Cheater deferred:** 40LP — not added to reserve team core yet. May add in future if Speed proves insufficient substitute.
 
 -----
 
@@ -211,3 +203,6 @@ Crystal Crush, Earth Rising, Electrify, Elemental Trick, Fire Rage, Ice Lance, I
 - **Elemental Genesis + Trebuchim compatibility:** Incompatible. Trebuchim generates random stains; Genesis requires exactly 1 of each element.
 - **Mayhem break condition:** Needs 4 stains consumed to Break. With only 2–3 stains, Mayhem deals damage but cannot Break.
 - **Choralim as primary Elemental Trick weapon:** Circular dependency — gives 100% crit only when 4 stains already active. Cannot be the stain-generation weapon. Base 100% crit must come from Luck + Pictos independently.
+- **Protecting Tint fires on skill heals:** Incorrect. Protecting Tint fires on Tint use only, not on skill heals like Healing Light. Protecting Heal Lumina fires on skill heals.
+
+-----
