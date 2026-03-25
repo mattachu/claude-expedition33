@@ -148,7 +148,8 @@ Identical whether or not compaction occurred.
    - For each entry in `modified_sections`, use the `changes` array as the basis for writing the full replacement content for that section.
    - Also include the new Chat N row for Section 10 of the overview: read the existing Section 10 entries and write a new row in the same style — concise prose covering topics discussed, decisions made, and any pipeline/infrastructure changes. Do not generate this mechanically from the `actions` list; write it as a genuine summary.
    - **Write the changelist once at end of session only** — do not write changelist entries incrementally during the session. The `modified_sections` list in session state is the tracking mechanism throughout.
-7. Matt runs the updater script and pushes to GitHub
+7. If any significant new errors were made during this session, note them for manual addition to `overview/historical-errors.md`.
+8. Matt runs the updater script, makes any manual changes, and pushes to GitHub
 
 ---
 
