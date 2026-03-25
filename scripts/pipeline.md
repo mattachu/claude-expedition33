@@ -181,7 +181,7 @@ CONTENT:
 - `SECTION` uses `## Parent > ### Child` for `###`-level; `## Section` for `##`-level
 - `AFTER` is omitted for replacements; only used for new section inserts
 - `CONTENT` is the complete replacement text including the heading line
-- For `##`-level replacements, include the trailing `-----` separator as the last line of the `CONTENT` block — the separator is consumed by the replacement and will be lost if omitted
+- Separators (`---`) between `##` sections are inserted automatically by the updater script — do not include them in CONTENT
 - Failure mode: loud — no silent corruption
 - **Maintenance discipline:** `###` heading text must be unique within its `##` parent. Renaming a heading requires a direct file edit, not a changelist entry.
 

@@ -60,7 +60,7 @@ Monoco's central system is the **Bestial Wheel** — a 9-position ring of masks 
 | Defence                       | 729     | +1572 (Longer Shell)                          | 2301    |
 | Critical Rate                 | 38%     | +13% (Sniper)                                 | 51%     |
 
------
+---
 
 ## Weapons
 
@@ -84,7 +84,7 @@ Ballaro (20), Fragaro (15), Grander (21), Joyaro (25), Monocaro (10), Urnaro (20
 - **Monocaro:** Starts in Balanced Mask — caused rotation desync (Chalier Combo 7 AP on Turn 1 unaffordable).
 - **Nusaro as endgame weapon:** Correct endgame weapon is Joyaro.
 
------
+---
 
 ## Pictos
 
@@ -100,7 +100,7 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 - Anti-Burn (22): Health +1602, Defence +801 — vs bosses applying Burn regularly
 - Anti-Blight (24): Health +1897, Defence +949 — vs bosses applying Blight
 
------
+---
 
 ## Lumina
 
@@ -140,7 +140,7 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 *Removed Chat 5: Dead Energy I (2LP), Dead Energy II (2LP).*
 *Added Chat 5: Breaking Death (5LP).*
 
------
+---
 
 ## Skills
 
@@ -161,7 +161,7 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Portier Crash         | 8              | ❌       | +5    | Heavy    | High Physical AoE, 1 hit. Can Break. Heavy Mask: increased damage. AoE break specialist. Add when building reserve team.                                   |
 | Évêque Spear          | 6              | ❌       | +3    | Heavy    | High single target Earth damage. Applies Powerless for 3 turns. Heavy Mask: increased damage. Situational debuff option.                                    |
 
------
+---
 
 ## Gradient Skills
 
@@ -171,7 +171,7 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Sanctuary      | 2             | ✅       | Gives 2 Shields and applies Regen to all allies for 3 turns. Strong reserve team survivability.                             |
 | Break Point    | 3             | ✅       | Extreme single-target Lightning damage, 1 hit. Fills Break bar AND triggers Break simultaneously. Instant break on demand.  |
 
------
+---
 
 ## Build Options
 
@@ -179,7 +179,7 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 |----------------|-----------------------|----------------------------------------------------------------------------------------------|----------------------------------------------|---------|-------------------------------------------------|
 | Reserve team   | Break + AP support    | Potier Energy, Stalact Punches, Abbest Wind, Moissonneuse Vendange, Chalier Combo, Pelerin Heal | Reserve core + Staggering Attack + Breaking Death | Current | Joyaro equipped; Longer Shell/Energising Turn/Sniper Pictos |
 
------
+---
 
 ## Key Decisions
 
@@ -189,7 +189,7 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 - **Chalier Combo retained:** Community verified 6-hit high damage with no conditionals. Better than Bénisseur Mortar (requires Mark on target for Almighty jump — unreliable without Lune/Maelle).
 - **Abbest Wind non-negotiable:** Wheel cycling and Agile free turn are essential. Cannot be displaced.
 
------
+---
 
 ## Open Questions
 
@@ -198,7 +198,7 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 - **Évêque Spear:** Available but not equipped. Situational debuff (Powerless 3 turns) — worth having for specific boss fights.
 - **Energising Turn Pictos swap:** If paying 20LP for Energising Turn Lumina, what replaces the slot? Deferred until Pictos catalogue complete.
 
------
+---
 
 ## Errors to Avoid
 
@@ -215,4 +215,3 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 - **Bénisseur Mortar Almighty jump:** Jumps to Almighty ONLY if target is Marked. Not a reliable Almighty access tool without Mark frequency from Lune/Maelle.
 - **Teamwork scope:** "All allies" means the active party only (Lune + Monoco when reserve), not all 5 characters. Confirmed via search Chat 5.
 
------

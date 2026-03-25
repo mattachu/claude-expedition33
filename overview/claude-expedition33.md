@@ -2,7 +2,7 @@
 
 *Fetched at the start of any session involving this game. Follow all instructions below.*
 
------
+---
 
 ## Section 1: Topic-Specific Failure Modes
 
@@ -33,7 +33,7 @@ These are in addition to the general failure modes in the startup file:
 - **Stendhal AP cost:** Said 4 AP. Correct: 8 AP. Also applies Defenceless to Maelle herself on use. Was nerfed 40% in Patch 1.2.3 — no longer one-shots Alicia.
 - **Gaulteram described as Act 3 best option:** Gaulteram is consensus Act 2 weapon. Community S-tier Act 3 weapons are Chevalam, Contorso, Corpeso, Simoso.
 
------
+---
 
 ## Section 2: Playthrough Status
 
@@ -52,7 +52,7 @@ These are in addition to the general failure modes in the startup file:
 
 - **Reserve:** Lune, Monoco
 
------
+---
 
 ## Section 3: Playstyle Notes
 *Last updated: Chat 4*
@@ -66,7 +66,7 @@ These are in addition to the general failure modes in the startup file:
 - **Status effects:** Primarily burn and mark; limited experience with others.
 - **Risk tolerance:** Conservative while parry skills are developing. Prefers empirical testing (99-point attribute method established with Monoco and Sciel). Rejects builds that rely on low-HP states (Overload without Cheater, Berserk Slash) or skills with survival costs (Defiant Strike’s HP cost).
 
------
+---
 
 ## Section 4: Game Mechanics
 
@@ -116,7 +116,7 @@ Characters gain 3 attribute points per level up. Points are held in reserve and 
 
 If the main party (Verso/Maelle/Sciel) is fully wiped in a battle, the player can continue the battle using the reserve party (Lune and Monoco). This is most relevant for hard bosses. Lune and Monoco should not be stripped of all useful Pictos/Lumina — but main party optimisation takes priority for the vast majority of battles.
 
------
+---
 
 ## Section 5: Party
 *Last updated: Chat 4*
@@ -125,8 +125,6 @@ If the main party (Verso/Maelle/Sciel) is fully wiped in a battle, the player ca
 **Reserve:** Lune, Monoco
 
 **Speed order (intended):** Verso goes first via Chevalam Rush (Rank S at battle start). Sciel second, Maelle third. Gradient Break Pictos on Maelle has pushed her above Sciel — needs tweaking.
-
------
 
 ### Maelle
 
@@ -142,8 +140,6 @@ If the main party (Verso/Maelle/Sciel) is fully wiped in a battle, the player ca
 | Gommage                       | ✅ Unlocked (Relationship Level 7). Confirmed extremely powerful — 3.4M damage on Serpenphare. Required for Renoir fight. |
 | Lumina                        | 164LP used / 165LP total. See [pictos-lumina-summary.md](pictos-lumina-summary.md) §5 for full loadout. |
 | Note                          | Lithum L4: Mark not removed in Virtuose. L10: Counterattack → Virtuose. L20: Shell on leaving Virtuose — Longer Shell and Powerful on Shell will synergise. Shell ≠ Shield. |
-
------
 
 ### Verso
 
@@ -201,13 +197,11 @@ If the main party (Verso/Maelle/Sciel) is fully wiped in a battle, the player ca
 | Lumina              | 111LP used / 127LP total. See [pictos-lumina-summary.md](pictos-lumina-summary.md) §5 for full loadout. |
 | Note                | Longer Shell extends Shell applied by Lune's Healing Light (via Protecting Heal). Sniper is pure stat stick — effect irrelevant for Joyaro build. |
 
------
-
 ### Core Lumina Suite
 
 Main team core: 154LP (Maelle, Verso, Sciel). Reserve team core: 110LP (Lune, Monoco). Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.md) §3–4. Character-specific additions on top of core sets in §5.
 
------
+---
 
 ## Section 6: Character Reference Files
 *Fetch the relevant file at the start of any session focusing on that character in detail. These supersede the brief summaries in Section 5.*
@@ -220,7 +214,8 @@ Main team core: 154LP (Maelle, Verso, Sciel). Reserve team core: 110LP (Lune, Mo
 | Verso     | Mid-game DPS / endgame DPS     | [Formatted](verso.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/verso.md)       |
 | Monoco    | AP battery / support / breaker | [Formatted](monoco.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/monoco.md)     |
 
------
+---
+
 ## Section 7: Key Decisions & Context
 
 - **Trebuchim over Colim for Lune:** Colim tested and rejected. 14% attack loss, no free-aim stain generation. Trebuchim optimal for Mayhem/free-aim playstyle. Colim only appropriate for Elemental Genesis builds.
@@ -236,7 +231,7 @@ Main team core: 154LP (Maelle, Verso, Sciel). Reserve team core: 110LP (Lune, Mo
 - **Endgame team:** Maelle + Sciel + Verso. Sciel: Fortune’s Fury (double damage) + Intervention (extra turn + 4 AP). Verso with Cheater + Steeled Strike is primary endgame DPS.
 - **Maelle must complete The Reacher before Renoir:** Required for Lithum (endgame weapon) and Gustave resurrection path. Choose “Truth” to reach Relationship Level 7.
 
------
+---
 
 ## Section 8: Progression Plan
 
@@ -289,7 +284,7 @@ Main team core: 154LP (Maelle, Verso, Sciel). Reserve team core: 110LP (Lune, Mo
 - Chromatic Franctale (Verso's Drafts)
 - Endless Tower floors 21–33
 
------
+---
 
 ## Section 9: Open Questions
 
@@ -306,7 +301,7 @@ Main team core: 154LP (Maelle, Verso, Sciel). Reserve team core: 110LP (Lune, Mo
 - **Verso skills file:** Stale — still shows Assault Zero and Strike Storm as equipped. Correct loadout: Quick Strike, Light Holder, Marking Shot, Perfect Break, End Bringer, Steeled Strike.
 - **Pictos/Lumina reference file:** Complete ✅ — `overview/pictos-lumina.json` (194 entries, 133 obtained), two generated Markdown files. Pipeline updated for session tracking. See Section 4 for links.
 
------
+---
 
 ## Section 10: Chat Logs
 *For reference only — do not fetch unless specifically asked. These are large files.*
@@ -320,7 +315,7 @@ Main team core: 154LP (Maelle, Verso, Sciel). Reserve team core: 110LP (Lune, Mo
 | Chat 4 | [Formatted](../chats/chat4/chat4-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat4/chat4-index.md) | [chat4.md](../chats/chat4/chat4.md) | Progress update (Sacred River, Chevaliere, Dark Shore, Sakapatate/Joyaro, all chars 70+); story ordering research (Flying Manor optional, final boss in Lumière); Verso weapon selection (Chevalam reinstated with Cheater synergy confirmed); Steeled Strike burst sequence analysis; Maelle Reacher preparation (stats, skills, Pictos, solo build); session logging procedure improvements (verbatim instruction strengthened, sections-per-part changed to 2, session state step added); Verso full update (stats, Lumina, skills, weapons inventory) |
 | Chat 5 | [Formatted](../chats/chat5/chat5-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat5/chat5-index.md) | [chat5.md](../chats/chat5/chat5.md) | Progress update (Reacher, Serpenphare, chromatics); Maelle respec to Luck/Agility/Might + Lithum equipped (level 33, Power 9254); Gommage unlocked; full Pictos/Lumina review all five characters; core Lumina sets defined (154LP main, 110LP reserve); Energy Master obtained; Pictos/Lumina reference file started (JSON scaffold); Tints mechanics clarified; Protecting Heal + Longer Shell synergy established for reserve team. |
 
------
+---
 
 ## Section 11: Historical Error Log
 
@@ -328,7 +323,7 @@ Full error log in `overview/historical-errors.md`: [Formatted](historical-errors
 
 Fetch that file only when reviewing specific past errors. Active failure mode categories extracted from the log are maintained in Section 1 of this overview.
 
------
+---
 
 ## Section 12: Character File Template
 
@@ -336,7 +331,7 @@ See `overview/character-file-template.md`: [Formatted](character-file-template.m
 
 Fetch only when creating a new character file.
 
------
+---
 
 ## Section 13: Session Procedure
 
@@ -452,8 +447,8 @@ CONTENT:
 
 ```
 
-- `##`-level replacements: include trailing `-----` separator in CONTENT
 - `###` heading must be unique within its `##` parent; renames require direct edit
+- Separators (`---`) between `##` sections are inserted automatically by the updater script — do not include them in CONTENT
 - Failure mode: loud
 
 ### Session State JSON
@@ -470,5 +465,3 @@ CONTENT:
 `actions`: in-game actions to implement before the next session. Output as a checklist at end of session.
 
 `pictos_lumina_changes`: changes to apply to `overview/pictos-lumina.json` at end of session. Each entry is a concise note (e.g. "Mark Full Strength obtained, level 25", "Swap Maelle Pictos: Energy Master → Survivor"). At end of session, Claude applies these to the JSON and regenerates both Markdown files via `python3 scripts/generate_pictos_lumina.py`.
-
------

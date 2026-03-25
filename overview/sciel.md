@@ -49,7 +49,7 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 *Critical Burn Pictos replaced Base Shield — restored intended turn order (Sciel 1978 > Maelle 1956).*
 
------
+---
 
 ## Weapons
 
@@ -69,7 +69,7 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 - **Tisseron:** Level 20 extra turn on Twilight entry bugged with Cheater Pictos.
 - **Rangeson:** Lower power; scaling diverges from endgame.
 
------
+---
 
 ## Pictos
 
@@ -83,7 +83,7 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 *Temporarily replaced by Healing Boon / Protecting Tint while learning Lumina — revert once learnt.*
 
------
+---
 
 ## Lumina
 
@@ -125,7 +125,7 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 | Teamwork            | 5   |  
                                                              |
 
------
+---
 
 ## Skills
 
@@ -146,7 +146,7 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 ### Available skills (effects unconfirmed)
 All Set, Card Weaver, Dark Cleansing, Dark Wave, Delaying Slash, Firing Shadow, Harvest, Marking Card, Phantom Blade, Searing Bond, Twilight Slash
 
------
+---
 
 ## Gradient Skills
 
@@ -156,7 +156,7 @@ All Set, Card Weaver, Dark Cleansing, Dark Wave, Delaying Slash, Firing Shadow, 
 | Doom           | 2             | ✅       | Very high single-target Dark damage, 3 hits. Applies Powerless, Defenceless and Slow for 3 turns. Can Break. Strong boss debuff package. |
 | End Slice      | 3             | ✅       | Extreme single-target Physical damage, 1 hit. Damage increased for each Foretell consumed since battle start. Scales with total Plentiful Harvest usage — used to defeat Sprong. |
 
------
+---
 
 ## Build Options
 
@@ -184,7 +184,7 @@ All Set, Card Weaver, Dark Cleansing, Dark Wave, Delaying Slash, Firing Shadow, 
 - **Charnon vs Litheson comparison:** Post-game option — assess when relevant.
 - **Double Third, Frenzy, Feint Pictos:** Post-launch Pictos flagged as synergising with Verso's Steeled Strike. May be connected to Verso's Drafts DLC. Research when discussing Verso next session.
 
------
+---
 
 ## Errors to Avoid
 
@@ -197,4 +197,3 @@ All Set, Card Weaver, Dark Cleansing, Dark Wave, Delaying Slash, Firing Shadow, 
 - **Quick Break with Cheater:** The extra turn from Quick Break never fires when Cheater is equipped — maximum two consecutive turns; bonus turns cannot trigger further bonus turns. Quick Break is a pure stat stick for any Cheater user.
 - **Rank order starting at C:** General Verso error, not Sciel — but note here for awareness: rank starts at D, not C.
 
------

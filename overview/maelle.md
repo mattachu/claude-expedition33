@@ -10,7 +10,7 @@
 - **Party position:** Endgame main team (Maelle / Sciel / Verso); reserve during Act 3 levelling
 - **Synergies:** Sciel's Fortune's Fury doubles Maelle's damage; Verso's Marking Shot + Maelle's Rewarding Mark Lumina generate AP return; Burn from Lune or Verso (Corpeso) enables Swift Stride entry and Breaking Burn multiplier; Burning Canvas damage scales with burn stacks on target — synergises with Corpeso's base attack applying 2 burn per Rank
 
------
+---
 
 ## Mechanics
 
@@ -40,7 +40,7 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 
 **Breaking Rules:** 3 AP, switches to Offensive, destroys all shields on target, gains 1 AP per shield destroyed. **If target is Defenceless, grants a second turn.**
 
------
+---
 
 ## Current Stats
 
@@ -77,7 +77,7 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 | Gradient Break   | 25    | —      | +424  | +28%  | Gradient Break Lumina free |
 | Sniper           | 23    | —      | +529  | +13%  | Sniper Lumina free |
 
------
+---
 
 ## Weapons
 
@@ -114,7 +114,7 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 | Verenum       | 15    | —        | —                | Details not confirmed.                                                                         |
 | Volesterum    | 16    | —        | —                | Details not confirmed.                                                                         |
 
------
+---
 
 ## Pictos
 
@@ -146,7 +146,7 @@ To be determined after Energy Master holder decided. Previous was Survivor / Gra
 
 Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina build applied and reversed after completing The Reacher.
 
------
+---
 
 ## Lumina
 
@@ -199,7 +199,7 @@ Net change: freed 52, added 33. 19 LP spare after swap (within 158 LP budget).
 
 **Note:** Recovery Lumina costs 10 LP. Consider adding to Core Suite for party play too — worth discussing.
 
------
+---
 
 ## Skills
 
@@ -241,7 +241,7 @@ Community standard core three: Stendhal, Phantom Strike, Last Chance.
 Remaining 3 slots: Gustave's Homage (Virtuose entry), Fleuret Fury (sustained Virtuose, can Break), Mezzo Forte (AP generation in Virtuose).
 Alternative: swap Fleuret Fury for Sword Ballet if preferring burst over Break utility.
 
------
+---
 
 ## Gradient Skills
 
@@ -251,7 +251,7 @@ Alternative: swap Fleuret Fury for Sword Ballet if preferring burst over Break u
 | Phoenix Flame   | 2             | ✅       | Applies 10 Burn to all enemies; revives all allies with 50–70% Health; then changes to Offensive Stance.                                       |
 | Gommage         | 3             | ✅       | Kills weak targets; otherwise extreme Void damage 1 hit, then changes to Virtuose Stance.                                                      |
 
------
+---
 
 ## Build Options
 
@@ -261,7 +261,7 @@ Alternative: swap Fleuret Fury for Sword Ballet if preferring burst over Break u
 | Solo (The Reacher) | Solo DPS  | Stendhal, Phantom Strike, Last Chance, Gustave's Homage, Fleuret Fury, Mezzo Forte | Swap Cheater to Pictos; add Last Stand suite + Recovery + Energising Attack I; remove Teamwork/Breaking Counter/Dead Energy | Planned | Borrow Cheater Pictos + Second Chance from Verso |
 | Burn-stacking      | Burn DPS  | Burning Canvas as primary; Stalum weapon; Swift Stride for Virtuose entry    | Investigate separately           | Future  | Synergises with Corpeso (Verso), Kralim (Lune)      |
 
------
+---
 
 ## Key Decisions
 
@@ -273,7 +273,7 @@ Alternative: swap Fleuret Fury for Sword Ballet if preferring burst over Break u
 - **Solo Lumina build:** Swap Cheater to Pictos + borrow Second Chance from Verso + remove Teamwork/Breaking Counter/Dead Energy I+II + add Last Stand suite + Recovery + Energising Attack I.
 - **Gradient Break over Burning Break for solo:** For The Reacher, Gradient Break chosen for speed advantage (1821 vs 1397) to handle Alicia's Rush phase at 25% HP. Second Chance covers survivability.
 
------
+---
 
 ## Open Questions
 
@@ -286,7 +286,7 @@ Alternative: swap Fleuret Fury for Sword Ballet if preferring burst over Break u
 - **Breaking Rules second turn:** Confirmed from search: triggers on Defenseless target. Useful with Offensive Switch (1 AP, applies Defenceless) as setup. Worth exploring.
 - **Phantom Strike Gradient generation:** +35% per use — how many uses to fill a Gradient charge?
 
------
+---
 
 ## Errors to Avoid
 
@@ -305,4 +305,3 @@ Alternative: swap Fleuret Fury for Sword Ballet if preferring burst over Break u
 - **Shell vs Shield confusion (recurring):** Shell = 20% damage reduction for 3 turns. Shield = damage-blocking HP buffer (1 per turn from Base Shield Lumina, or other sources). Stendhal removes self-shields (HP buffer), not Shell. Lithum L20 grants Shell (damage reduction) on leaving Virtuose. These are entirely separate mechanics — do not conflate them.
 - **Lithum scaling:** Lithum scales Luck S / Agility A — not Defence + Agility like Medalum. Respec is required when switching. Glaisum (Defence A / Agility B) also requires a respec from Lithum.
 
------

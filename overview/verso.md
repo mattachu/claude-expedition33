@@ -41,7 +41,7 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 **Solo fights:** Both completed (vs Francois, vs Monoco).
 
------
+---
 
 ## Current Stats
 
@@ -74,7 +74,7 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Survivor     | 21    | —      | +439  | +12% | Survive fatal damage with 1 Health once per battle. |
 | Second Chance| 16    | +1107  | —     | +8%  | Revive with 100% Health once per battle. |
 
------
+---
 
 ## Weapons
 
@@ -111,7 +111,7 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 - **Dreameso** — Agility + Luck scaling; Rank gain on Counterattack; deferred until parry/counterattack rate improves.
 - **Seeram** — Vitality + Agility. Can't reach Rank S. S-tier ONLY for End Bringer stunlock build on Simon. Purchased from Unfinished Cruler, Coastal Cave.
 
------
+---
 
 ## Pictos
 
@@ -123,7 +123,8 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 **Breaking Death synergy:** On death → break bar fills instantly → Second Chance revives at Rank D → Perfect Break triggers break → Rank S in one move → Steeled Strike burst immediately active.
 
------
+---
+
 ## Lumina
 
 ### LP Budget
@@ -157,7 +158,7 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Survivor            | 20  | Added Chat 5 — both Survivor and Breaking Death effects now on Verso |
 | Teamwork            | 5   |                                                               |
 
------
+---
 
 ## Skills
 
@@ -189,7 +190,7 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Purification     | 5   | B: increased damage          | Medium Light damage, 2 hits. Dispels self status effects. Niche.                                                         |
 | Strike Storm     | 7   | C: crits give +2 Perfection  | 5-hit high single-target, weapon element. Previously core skill; displaced by End Bringer/Steeled Strike.               |
 
------
+---
 
 ## Gradient Skills
 
@@ -230,7 +231,7 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 - **Verso stat allocation:** Agility 99, Luck 99, Might 27. Whether Might is optimal over other allocations — unconfirmed.
 - **Unconfirmed weapon details:** Sakaram, Cruleram, Lanceram, Liteso, Abysseram, Confuso, Danseso, Delaram, Demonam, Noahram, Sireso, Verleso — abilities/scaling not yet documented.
 
------
+---
 
 ## Errors to Avoid
 
@@ -248,4 +249,3 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 - **Rank starts at C:** Rank starts at D. C was the effective floor with Lighteram equipped. With Chevalam there is no floor — hits can send Verso back to D.
 - **Base Shield with Chevalam:** Non-functional — Chevalam prevents shields. Remove from loadout.
 
------

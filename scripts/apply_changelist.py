@@ -46,16 +46,106 @@ Behaviour:
     ## missing:             Fail loudly — structural changes require manual edit.
     ## -level entry:        Replace the entire ## section (no ### child specified).
 
+    Note: the script operates at heading level only. Individual bullet points,
+    table rows, or paragraphs within a section cannot be targeted directly —
+    to update them, replace the entire ### section containing them.
+
 Section boundaries:
-    A ### section spans from its heading line to just before the next ### or ##
-    heading, or EOF. Trailing blank lines between sections are preserved as-is
-    in the surrounding file; the replacement content's own trailing blank lines
-    are stripped to avoid accumulation.
+    A ## section spans from its heading line to just before the next ## heading,
+    or EOF. A ### section spans from its heading line to just before the next ###
+    or ## heading, or EOF. Horizontal rules (--- or -----) are not used as
+    boundaries and are stripped from files on load; --- separators are written
+    between ## sections on output for readability.
 """
 
 import re
 import sys
 from pathlib import Path
+
+
+# ---------------------------------------------------------------------------
+# Separator normalisation
+# ---------------------------------------------------------------------------
+
+_SEPARATOR_RE = re.compile(r'^-{3,}\s*$')
+
+
+def is_separator(line):
+    """True if the line is a horizontal rule (--- or -----  etc.)."""
+    return bool(_SEPARATOR_RE.match(line))
+
+
+def strip_separators(lines):
+    """
+    Remove all horizontal-rule lines (--- / -----) from a line list.
+    Returns a new list; does not modify in place.
+    """
+    return [line for line in lines if not is_separator(line)]
+
+
+def normalise_blank_lines(lines):
+    """
+    Collapse runs of more than one blank line to a single blank line.
+    Returns a new list.
+    """
+    result = []
+    prev_blank = False
+    for line in lines:
+        blank = line.strip() == ''
+        if blank and prev_blank:
+            continue
+        result.append(line)
+        prev_blank = blank
+    return result
+
+
+def insert_h2_separators(lines):
+    """
+    Insert a '---\\n' line before every ## heading (except the very first line
+    of the file), skipping any ## lines that appear inside fenced code blocks.
+
+    Layout produced:
+
+        <preceding content>
+
+        ---
+
+        ## Next Section
+        ...
+
+    The blank line BEFORE --- and the blank line AFTER --- come from the
+    existing content or are added here; a run of blanks is collapsed to one.
+    """
+    result = []
+    in_fence = False
+    for i, line in enumerate(lines):
+        # Track fenced code blocks (``` or ~~~, with optional language tag)
+        if re.match(r'^(`{3,}|~{3,})', line):
+            in_fence = not in_fence
+        if i > 0 and not in_fence and re.match(r'^## ', line):
+            # Ensure there's a blank line before the ---
+            if result and result[-1].strip() != '':
+                result.append('\n')
+            result.append('---\n')
+            # Ensure there's a blank line after the ---
+            result.append('\n')
+        result.append(line)
+    return normalise_blank_lines(result)
+
+
+def load_file(path):
+    """Read a file, strip all horizontal rules, and return lines."""
+    with open(path, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+    return strip_separators(lines)
+
+
+def save_file(path, lines):
+    """Normalise blank lines, insert ## separators, and write the file."""
+    lines = normalise_blank_lines(lines)
+    lines = insert_h2_separators(lines)
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(''.join(lines))
 
 
 # ---------------------------------------------------------------------------
@@ -95,8 +185,9 @@ def parse_changelist(text):
         header_text = block[:content_match.start()]
         content_text = block[content_match.end():]
 
-        # Strip trailing blank lines from content, then add exactly one trailing newline.
-        # The splice functions add a blank line separator before the suffix if needed.
+        # Strip trailing blank lines from content, then add exactly one
+        # trailing newline. The splice functions add blank line separators
+        # around the content as needed.
         content_text = content_text.rstrip('\n') + '\n'
 
         # Parse header fields
@@ -127,7 +218,10 @@ def parse_changelist(text):
             section_heading = section_str.strip()
             section_level = 2
             if not section_heading.startswith('## '):
-                raise ValueError(f'Section heading must start with "## " or use "## > ###" format: {section_heading}')
+                raise ValueError(
+                    f'Section heading must start with "## " or use "## > ###" format: '
+                    f'{section_heading}'
+                )
 
         entries.append({
             'file': file_path,
@@ -160,20 +254,26 @@ def find_heading_line(lines, heading, start=0, end=None):
     return None
 
 
-def find_section_end(lines, start, stop_patterns):
+def find_section_end(lines, start, level):
     """
-    Find the line index where a section ends, starting from `start+1`.
-    A section ends at the first line matching any stop_pattern, or at a
-    '-----' separator line (which marks the end of a ## block), or EOF.
-    Returns the index of the first line that does NOT belong to this section.
+    Return the index of the first line that belongs to the NEXT section,
+    starting from start+1.
+
+    Rules (no separator logic — headings only):
+      level=2: stop at the next ## heading (^## ) or EOF.
+      level=3: stop at the next ### heading (^### ) or any ## heading
+               (^## ), or EOF.
+
+    Returns len(lines) if no stop line is found (section reaches EOF).
     """
+    if level == 2:
+        stop_re = re.compile(r'^## ')
+    else:  # level == 3
+        stop_re = re.compile(r'^#{2,3} ')
+
     for i in range(start + 1, len(lines)):
-        # ----- separator marks the end of a ## section block
-        if lines[i].strip() == '-----':
+        if stop_re.match(lines[i]):
             return i
-        for pattern in stop_patterns:
-            if re.match(pattern, lines[i]):
-                return i
     return len(lines)
 
 
@@ -200,24 +300,26 @@ def _apply_h2_entry(lines, section_heading, new_content_lines):
     """Replace an entire ## section."""
     h2_line = find_heading_line(lines, section_heading)
     if h2_line is None:
-        raise ValueError(f'## section not found: "{section_heading}"\n'
-                         f'Structural changes require manual edit.')
+        raise ValueError(
+            f'## section not found: "{section_heading}"\n'
+            f'Structural changes require manual edit.'
+        )
 
-    section_end = find_section_end(lines, h2_line, [r'^## '])
+    section_end = find_section_end(lines, h2_line, level=2)
 
-    # Preserve blank lines before the section
     prefix = lines[:h2_line]
+    suffix = lines[section_end:]
 
-    # section_end points at the ----- separator.
-    # The replacement content already includes its own -----  so skip the
-    # original separator, but preserve the blank lines that follow it.
-    suffix_start = section_end
-    if suffix_start < len(lines) and lines[suffix_start].strip() == '-----':
-        suffix_start += 1  # skip the original ----- (replacement has its own)
-    # suffix starts at the blank lines (or next ## heading) after the separator
-    suffix = lines[suffix_start:]
+    # Strip trailing blank lines from prefix to avoid accumulating blanks;
+    # insert_h2_separators will add the correct spacing on write.
+    while prefix and prefix[-1].strip() == '':
+        prefix.pop()
 
-    return prefix + new_content_lines + suffix
+    # Ensure exactly one blank line between new content and the next section
+    # (if the suffix starts immediately with a ## heading or non-blank line).
+    post_sep = ['\n'] if suffix and suffix[0].strip() != '' else []
+
+    return prefix + new_content_lines + post_sep + suffix
 
 
 def _apply_h3_entry(lines, parent_heading, section_heading, after_hint, new_content_lines):
@@ -226,36 +328,43 @@ def _apply_h3_entry(lines, parent_heading, section_heading, after_hint, new_cont
     # Find ## parent
     h2_line = find_heading_line(lines, parent_heading)
     if h2_line is None:
-        raise ValueError(f'## parent not found: "{parent_heading}"\n'
-                         f'Structural changes require manual edit.')
+        raise ValueError(
+            f'## parent not found: "{parent_heading}"\n'
+            f'Structural changes require manual edit.'
+        )
 
     # Find end of ## parent block
-    h2_end = find_section_end(lines, h2_line, [r'^## '])
+    h2_end = find_section_end(lines, h2_line, level=2)
 
     # Look for existing ### section within parent
     h3_line = find_heading_line(lines, section_heading, start=h2_line + 1, end=h2_end)
 
     if h3_line is not None:
-        # UPDATE: replace existing section
-        h3_end = find_section_end(lines, h3_line, [r'^### ', r'^## '])
+        # UPDATE: replace existing ### section
+        h3_end = find_section_end(lines, h3_line, level=3)
         prefix = lines[:h3_line]
         suffix = lines[h3_end:]
-        # Ensure a blank line between new content and what follows
-        separator = ['\n'] if suffix and suffix[0].strip() != '' else []
-        return prefix + new_content_lines + separator + suffix
+
+        # Preserve a blank line between new content and what follows, but
+        # only if the suffix doesn't already start with one.
+        post_sep = ['\n'] if suffix and suffix[0].strip() != '' else []
+
+        return prefix + new_content_lines + post_sep + suffix
 
     else:
         # INSERT: section does not yet exist
-        insert_after_line = _find_insert_position(lines, h2_line, h2_end, after_hint, section_heading)
-        prefix = lines[:insert_after_line]
-        suffix = lines[insert_after_line:]
+        insert_pos = _find_insert_position(lines, h2_line, h2_end, after_hint)
+        prefix = lines[:insert_pos]
+        suffix = lines[insert_pos:]
+
         # Ensure a blank line before and after the inserted section
         pre_sep = ['\n'] if prefix and prefix[-1].strip() != '' else []
         post_sep = ['\n'] if suffix and suffix[0].strip() != '' else []
+
         return prefix + pre_sep + new_content_lines + post_sep + suffix
 
 
-def _find_insert_position(lines, h2_start, h2_end, after_hint, new_heading):
+def _find_insert_position(lines, h2_start, h2_end, after_hint):
     """
     Determine the line index after which the new ### section should be inserted.
 
@@ -268,7 +377,7 @@ def _find_insert_position(lines, h2_start, h2_end, after_hint, new_heading):
         after_line = find_heading_line(lines, after_hint, start=h2_start + 1, end=h2_end)
         if after_line is None:
             raise ValueError(f'AFTER: sibling not found: "{after_hint}"')
-        return find_section_end(lines, after_line, [r'^### ', r'^## '])
+        return find_section_end(lines, after_line, level=3)
 
     # Find last ### sibling
     last_h3_line = None
@@ -277,10 +386,9 @@ def _find_insert_position(lines, h2_start, h2_end, after_hint, new_heading):
             last_h3_line = i
 
     if last_h3_line is not None:
-        return find_section_end(lines, last_h3_line, [r'^### ', r'^## '])
+        return find_section_end(lines, last_h3_line, level=3)
 
-    # No ### siblings — insert at end of ## parent block
-    # Back up over trailing blank lines to keep formatting clean
+    # No ### siblings — insert at end of ## parent block, before trailing blanks
     pos = h2_end
     while pos > h2_start + 1 and not lines[pos - 1].strip():
         pos -= 1
@@ -294,8 +402,10 @@ def _find_insert_position(lines, h2_start, h2_end, after_hint, new_heading):
 def main():
     import argparse
 
-    parser = argparse.ArgumentParser(description=__doc__,
-                                     formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
     parser.add_argument('changelist', help='Path to changelist file')
     parser.add_argument('--repo-root', default='.', help='Root of git repo (default: .)')
     parser.add_argument('--dry-run', action='store_true',
@@ -334,15 +444,18 @@ def main():
             continue
 
         print(f'\nProcessing: {rel_path}')
-        with open(target_path, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
+
+        # Load with separator stripping — normalises files regardless of
+        # whether they previously used ---, -----, or no separators.
+        lines = load_file(target_path)
 
         for entry in file_entries:
             section_id = (f'{entry["parent"]} > {entry["section"]}'
                           if entry['parent'] else entry['section'])
             try:
+                exists = _section_exists(lines, entry)
                 new_lines = apply_entry(lines, entry)
-                action = 'UPDATE' if _section_exists(lines, entry) else 'INSERT'
+                action = 'UPDATE' if exists else 'INSERT'
                 print(f'  {action}: {section_id}')
                 lines = new_lines
             except ValueError as e:
@@ -352,12 +465,26 @@ def main():
                 break
 
         if not any_error:
-            new_content = ''.join(lines)
             if args.dry_run:
-                print(f'  [dry-run] Would write {len(new_content):,} bytes to {target_path}')
+                import difflib
+                original_lines = []
+                with open(target_path, 'r', encoding='utf-8') as f:
+                    original_lines = f.readlines()
+                normalised = normalise_blank_lines(lines)
+                normalised = insert_h2_separators(normalised)
+                diff = list(difflib.unified_diff(
+                    original_lines,
+                    normalised,
+                    fromfile=f'a/{rel_path}',
+                    tofile=f'b/{rel_path}',
+                ))
+                if diff:
+                    print(f'  [dry-run] diff for {rel_path}:')
+                    print(''.join(diff), end='')
+                else:
+                    print(f'  [dry-run] No changes to {rel_path}')
             else:
-                with open(target_path, 'w', encoding='utf-8') as f:
-                    f.write(new_content)
+                save_file(target_path, lines)
                 print(f'  Written: {target_path}')
 
     if any_error:
@@ -374,7 +501,7 @@ def _section_exists(lines, entry):
     h2_line = find_heading_line(lines, entry['parent'])
     if h2_line is None:
         return False
-    h2_end = find_section_end(lines, h2_line, [r'^## '])
+    h2_end = find_section_end(lines, h2_line, level=2)
     return find_heading_line(lines, entry['section'], h2_line + 1, h2_end) is not None
 
 

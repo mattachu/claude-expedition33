@@ -10,7 +10,7 @@
 - **Party position:** Reserve team with Monoco (fallback if main party wiped); endgame team TBD
 - **Synergies:** Elemental Genesis requires one of each element stain (Fire, Earth, Lightning, Ice) — Light stains act as wildcards for any missing element; any two of Wildfire/Terraquake/Thunderfall cover all four elements; Kralim Level 10 generates 2 random stains on turn start to accelerate Genesis setup; reserve team role: Lune as DPS + healing, Monoco as break + AP flow
 
------
+---
 
 ## Mechanics
 
@@ -29,7 +29,7 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 - Healing Light: consumes 2 Earth stains to cost 0 AP.
 - Kralim Level 20: +1 AP when Stains are consumed.
 
------
+---
 
 ## Current Stats
 
@@ -54,7 +54,7 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 | Defence                       | 182     | +874 (Powerful on Shell)                          | 1056    |
 | Critical Rate                 | 20%     | +25% (Powerful on Shell) +12% (Burn Affinity) +24% (Burning Death) | 81% |
 
------
+---
 
 ## Weapons
 
@@ -82,7 +82,7 @@ Angerim (24), Betelim (12), Benisim (28), Braselim (21), Choralim (20), Colim (1
 - **Colim:** Tested Act 2. 14% attack loss; identical AP economy; no free-aim stain generation. Rejected.
 - **Trebuchim for Genesis:** Random stain generation incompatible with precise Genesis element requirements — replaced by Kralim.
 
------
+---
 
 ## Pictos
 
@@ -96,7 +96,7 @@ Angerim (24), Betelim (12), Benisim (28), Braselim (21), Choralim (20), Colim (1
 
 *Powerful on Shell fires when Lune casts Healing Light (Shell applied via Protecting Heal Lumina) — cascades to Longer Shell on Monoco and boosts Lune's own damage.*
 
------
+---
 
 ## Lumina
 
@@ -135,7 +135,7 @@ Angerim (24), Betelim (12), Benisim (28), Braselim (21), Choralim (20), Colim (1
 *Removed Chat 5: Breaking Counter removed from character-specific (now in core). Dead Energy I (2LP) and Dead Energy II (2LP) removed.*
 *Added Chat 5: Protecting Heal (5LP), Critical Break (5LP), Rewarding Mark (5LP), Breaking Death (5LP).*
 
------
+---
 
 ## Skills
 
@@ -153,7 +153,7 @@ Angerim (24), Betelim (12), Benisim (28), Braselim (21), Choralim (20), Colim (1
 ### Available skills (effects not fully confirmed)
 Crystal Crush, Earth Rising, Electrify, Elemental Trick, Fire Rage, Ice Lance, Immolation, Rebirth, Revitalisation, Rockslide, Thermal Transfer, Typhoon
 
------
+---
 
 ## Gradient Skills
 
@@ -163,7 +163,7 @@ Crystal Crush, Earth Rising, Electrify, Elemental Trick, Fire Rage, Ice Lance, I
 | Tree of Life    | 2             | ✅       | Heals party + removes ALL status effects. Reliable only when charges accumulated. |
 | Sky Break       | 3             | ✅       | Extreme damage to all enemies using element with most stains; can break.          |
 
------
+---
 
 ## Build Options
 
@@ -171,7 +171,7 @@ Crystal Crush, Earth Rising, Electrify, Elemental Trick, Fire Rage, Ice Lance, I
 |----------------------|-------------------|------------------------------------------------|------------|----------|----------------------------------------------------------------------------------------------|
 | Elemental Genesis    | DPS / healer      | Wildfire, Terraquake, Thunderfall, Healing Light, Mayhem, Elemental Genesis | Kralim | Current | Vitality 99, Agility 99, Luck 30. Reserve team role. |
 
------
+---
 
 ## Key Decisions
 
@@ -181,7 +181,7 @@ Crystal Crush, Earth Rising, Electrify, Elemental Trick, Fire Rage, Ice Lance, I
 - **Burning Death over Sniper as third Pictos:** Higher Crit (+24% vs +13%) and useful on-death burn effect more relevant for Lune's role than Sniper's Speed advantage.
 - **Protecting Heal added:** Activates Shell on every Healing Light cast, enabling Longer Shell extension on Monoco and Powerful on Shell bonus for Lune.
 
------
+---
 
 ## Open Questions
 
@@ -190,7 +190,7 @@ Crystal Crush, Earth Rising, Electrify, Elemental Trick, Fire Rage, Ice Lance, I
 - **Reserve team optimisation:** Lune as DPS + healing, Monoco as break + AP flow — roles agreed; builds reviewed Chat 5.
 - **Cheater deferred:** 40LP — not added to reserve team core yet. May add in future if Speed proves insufficient substitute.
 
------
+---
 
 ## Errors to Avoid
 
@@ -205,4 +205,3 @@ Crystal Crush, Earth Rising, Electrify, Elemental Trick, Fire Rage, Ice Lance, I
 - **Choralim as primary Elemental Trick weapon:** Circular dependency — gives 100% crit only when 4 stains already active. Cannot be the stain-generation weapon. Base 100% crit must come from Luck + Pictos independently.
 - **Protecting Tint fires on skill heals:** Incorrect. Protecting Tint fires on Tint use only, not on skill heals like Healing Light. Protecting Heal Lumina fires on skill heals.
 
------
