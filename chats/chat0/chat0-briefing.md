@@ -16,9 +16,9 @@ Each batch provides:
 
 **Structure:**
 - Each section opens with `<!-- SECTION: Title -->` marker, then `## Title` heading — title in marker must exactly match the `##` heading
-- Each section ends with a `---` separator
 - Speaker labels: `**Matt:**` and `**ChatGPT:**` — one per turn, on its own line, immediately followed by the turn content
 - Blank line between turns
+- Each ChatGPT turn ends with a `---` separator (blank line, then `---`, then blank line before the next turn or section)
 
 **ChatGPT turn formatting:**
 - Emoji headers → `**🔥 Recommended level**` etc.
