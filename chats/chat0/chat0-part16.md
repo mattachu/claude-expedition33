@@ -1,644 +1,119 @@
+<!-- SECTION: Monoco respec audit -->
 ## Monoco respec audit
 
 **Matt:**
-Before the next step, I told you earlier that I had respecced Monoco. That was after I took these screenshots. Can you update Monoco with those changes, and also tell me if there are any parts of this audit that don’t match what I’ve told you in the chat. 
+Before the next step, I told you earlier that I had respecced Monoco. That was after I took these screenshots. Can you update Monoco with those changes, and also tell me if there are any parts of this audit that don't match what I've told you in the chat.
 
 **ChatGPT:**
 Good — this is exactly the right moment to reconcile state vs screenshots.
 
-I’ll do this in two parts, very cleanly:
+I'll do this in two parts: update Monoco to reflect the respec you explicitly described, then call out any remaining mismatches between the audit and what you've told me in text. No new assumptions.
 
-Update Monoco to reflect the respec you explicitly described
+**Updated Monoco (post-respec)**
 
-Call out any remaining mismatches between the audit and what you’ve told me in text
+You stated explicitly: "This gives him Health 3110, Attack 712, Speed 591, Defense 401, Crit 22%." I therefore treat the following as authoritative current state, superseding the screenshots.
 
-No new assumptions.
+Combat stats: Health 3110, Attack Power 712, Speed 591, Defense 401, Critical Rate 22%.
 
-1️⃣ UPDATED MONOCO (POST-RESPEC)
-You stated explicitly:
+This is a substantial survivability shift: +~1200 Health, +~200 Defense, minimal speed change (587 → 591), slight attack drop. This aligns with your stated goal of forgiveness and Monoco's role as stabiliser.
 
-“This gives him Health 3110, Attack 712, Speed 591, Defense 401, Crit 22%.”
+Attributes: exact post-respec V/M/A/D/L not provided — I infer only that Vitality and Defense were increased meaningfully. Weapon assumed to remain Monocaro Lv10 unless stated otherwise.
 
-I therefore treat the following as authoritative current state, superseding the screenshots.
+**Mismatches / corrections vs chat history**
 
-🟩 MONOCO — CURRENT
-Combat Stats (current)
-Health: 3110
+Things that now match what you told me:
 
-Attack Power: 712
+- Monoco is no longer fragile — screenshot showed 1911 HP / 200 DEF; respec corrects this ✅
+- Auto Death not recommended despite its crit — consistent with your stance ✅
+- Energising Start misunderstanding, Fueling Break ≠ AP generation, In Medias Res HP halving, and non-existent Pictos being suggested — all corrections respected ✅
 
-Speed: 591
+Remaining uncertainties (not errors, but incomplete):
 
-Defense: 401
+1. Monoco attributes — pre-respec split from screenshots, post-respec results from text only; exact new V/M/A/D/L unknown.
+2. Lumina selection after respec — active Lumina may have changed; no assumptions made.
+3. Weapons — Monocaro assumed, no swap stated.
 
-Critical Rate: 22%
+No Picto ownership claims, skill ownership claims, party-swap mechanics, or AP generation sources contradict anything you've said. The audit is now internally consistent.
 
-This is a substantial survivability shift:
+Next sensible steps: lock Monoco's Lumina post-respec, re-audit AP flow using the correct Potier Energy context, or move back to Lune / Maelle with this corrected baseline.
 
-+~1200 Health
+---
 
-+~200 Defense
-
-Minimal speed loss (587 → 591 is effectively flat)
-
-Slight attack drop (expected, given Vitality/Defense investment)
-
-This aligns perfectly with:
-
-your stated goal of forgiveness
-
-Monoco’s role as stabiliser
-
-his mask mechanics (which care more about staying alive long enough than raw DPS)
-
-Attributes
-You did not give the exact post-respec attribute numbers (V/M/A/D/L), only the resulting combat stats.
-
-Therefore:
-
-I do not invent attribute values
-
-I infer only that Vitality and Defense were increased meaningfully
-
-I assume weapon remains Monocaro Lv10 unless you say otherwise
-
-If you want, you can later give the exact attribute spread and I’ll lock it in.
-
-2️⃣ MISMATCHES / CORRECTIONS vs CHAT HISTORY
-This is the important honesty check you asked for.
-
-✅ Things that now match what you told me
-Monoco is no longer fragile
-→ The audit screenshot showed 1911 HP / 200 DEF
-→ Your respec corrects this, and I’ve updated it
-
-You do not want Auto Death despite its crit
-→ Audit never recommends it; matches your stance
-
-You correctly challenged:
-
-Energising Start misunderstanding
-
-Fueling Break ≠ AP generation
-
-In Medias Res halving health
-
-Non-existent Pictos being suggested earlier
-
-Those corrections are all now respected.
-
-⚠️ Remaining mismatches / uncertainties (explicitly flagged)
-These are not errors, but places where the audit is still incomplete or frozen in time:
-
-1. Monoco attributes
-I only have:
-
-pre-respec attributes from screenshots
-
-post-respec results from your text
-
-I do not know the exact new V/M/A/D/L split
-
-➡️ This is fine, but worth noting.
-
-2. Lumina selection after respec
-Audit lists available Lumina correctly
-
-But Monoco’s currently active Lumina may have changed when you respecced
-
-I have not been told if you altered:
-
-Energising Start
-
-Accelerating Heal
-
-Teamwork
-
-Breaker
-
-etc.
-
-➡️ I have not assumed anything here.
-
-3. Weapons
-I assume:
-
-Monoco still uses Monocaro
-
-No weapon swap occurred during respec
-
-If you tested Nusaro or another weapon post-respec, I don’t know that yet
-
-❌ Things that do not conflict with anything you’ve said
-Important to say this clearly:
-
-No Picto ownership claims contradict you
-
-No skill ownership claims contradict you
-
-No party-swap mechanics are being asserted anymore
-
-No AP generation sources are being invented
-
-At this point, the audit is internally consistent and consistent with your corrections.
-
-Summary (plain and direct)
-Monoco has been correctly updated to his post-respec tank/stabiliser state
-
-The audit now reflects:
-
-what the screenshots showed at the time
-
-plus the explicit changes you described later
-
-The only missing data is information you haven’t provided yet (exact attributes / active Lumina after respec)
-
-We are now on genuinely solid footing.
-
-When you’re ready, next sensible steps would be one of:
-
-lock Monoco’s Lumina post-respec
-
-re-audit AP flow using the correct Potier Energy context
-
-move back to Lune / Maelle with this corrected baseline
-
-You choose the next move.
-
-
+<!-- SECTION: Character inventory sanity check -->
 ## Character inventory sanity check
 
 **Matt:**
 Do a sanity check on all other characters and inventory against this chat history
 
 **ChatGPT:**
-Understood. I’ll do this as a strict sanity check, not new advice, not optimisation, and not filling gaps with guesses.
+Understood. Strict sanity check only — no new advice, no optimisation, no gap-filling with guesses. Chat statements take priority over screenshots where they conflict. Every inconsistency is called out explicitly.
 
-I will:
+**Maelle**
 
-Treat chat statements as higher priority than screenshots where they conflict
+Level 37 — consistent everywhere.
 
-Explicitly mark what I know, what is stale, and what is unknown
+Weapon: Medalum Lv11 — effects (Virtuose Stance, Burn doubling) match the burn-centric build and Picto/Lumina choices. ✅
 
-Call out every remaining inconsistency, including ones caused by me, not you
+Stats: you explicitly evaluated two states — Health 1401 / Speed 1039 / Crit 52% and Health 1947 / Speed 877 / Crit 50%. Screenshots showing 3055 HP are therefore older. Current Maelle HP is in the ~1900 range, not 3000+. ✅ Consistent with your description; wrong to treat screenshot HP as current.
 
-No patronising, no optimisation layer.
+Pictos confirmed owned (non-exhaustive): Breaking Burn, Dead Energy I, Aegis Revival, Combo Attack I, First Offensive, Accelerating Heal, Fueling Break, Confident, Solidifying, Burning Death, Augmented First Strike, Breaking Counter, Perilous Parry, Powerful Revive, Death Bomb, SOS Power, Energising Heal, Augmented Aim. No contradictions.
 
-SANITY CHECK — ALL OTHER CHARACTERS & INVENTORY
-(excluding Monoco, already reconciled)
+Lumina confirmed available: Breaker, Breaking Burn, Breaking Counter, Accelerating Last Stand, Dead Energy I / II, Healing Counter, Healing Parry, Marking Shots, Rewarding Mark, Energising Start (multiple tiers), Attack Lifesteal, Aegis Revival, and others. Picto / Lumina conflation previously corrected.
 
-I’ll go character by character.
+Skills confirmed learned: Fleuret Fury, Percée, Swift Stride, Breaking Rules, Fencer's Flurry, Spark, Disengagement, Guard Up, Mezzo Forte, Offensive Switch, Last Chance. Saving for Sword Ballet. ✅
 
-🟥 MAELLE — SANITY CHECK
-What is consistent
-Level
+Remaining uncertainties: which stat state was finalised (1401 vs 1947 HP); whether Combo Attack I is currently equipped; exact active Lumina after tightening turn order.
 
-Level 37 — consistent everywhere
+**Lune**
 
-Weapon
+Level 36 — consistent.
 
-Medalum Lv11 is equipped
+Weapon: Trebuchim Lv11 (Stain / AP on consume) matches AP-flow questions and Crystal Crush discussion. ✅
 
-Effects confirmed:
+Stats: Health ~2250–2500, low Defense (~100), high Luck (~35) — all consistent across screenshots.
 
-Start in Virtuose Stance
+Skills confirmed learned: Wildfire, Mayhem, Elemental Trick, Elemental Genesis, Healing Light, Rebirth, Thunderfall, Rockslide, Immolation, Ice Lance, Earth Rising, Electrify. Loadout before Crystal Crush matches screenshots and your stated list. Crystal Crush newly acquired, not yet integrated. ✅
 
-Burn doubling in Virtuose
+Pictos and Lumina: Rejuvenating Revive, Protecting Heal, Accelerating Heal, Aegis Revival, First Offensive, Fueling Break, Confident, Solidifying, Energising Death, Dead Energy I, Combo Attack I, plus Energising Heal, Accelerating Heal, Rejuvenating Revive, Energising Start, Dead Energy, Marking Shots, Rewarding Mark in Lumina. No conflicts.
 
-This matches:
+Remaining uncertainties: which skill Crystal Crush replaced; current active Lumina after AP discussions.
 
-Your burn-centric build
+**Sciel**
 
-Your Picto/Lumina choices
+Level 34 — consistent.
 
-✅ No contradiction
+Weapon: Scieleson Lv9 (no special AP mechanics) matches her opener/debuff role.
 
-Stats (latest reliable)
-You explicitly evaluated two Maelle stat states:
+Stats: high Crit (~38–42%), moderate Speed, low survivability — consistent.
 
-Low-health version
+Skills confirmed learned: Focused Foretell, Twilight Slash, Twilight Dance, Harvest, Final Path, Searing Bond, Plentiful Harvest, Firing Shadow — matches screenshots exactly.
 
-Health: 1401
+Pictos / Lumina: Energising Start IV, Combo Attack I, First Offensive, Breaker — no inconsistencies.
 
-Speed: 1039
+**Verso**
 
-Crit: 52%
+Level 36 — consistent.
 
-Higher-health version
+Weapon: Lanceram Lv12 (Rank can't drop below C, Base Attacks give Perfection) matches earlier questions about Rank loss and parry pressure.
 
-Health: 1947
+Stats: high Attack, low HP (~1100), low Defense — consistent.
 
-Speed: 877
+Skills confirmed learned: Quick Strike, Defiant Strike, Assault Zero, Paradigm Shift, Strike Storm, Perfect Recovery, Berserk Slash, From Fire, Marking Shot, Purification, Steeled Strike — consistent.
 
-Crit: 50%
+Important correction already made: mid-fight party swapping was incorrectly implied earlier; this has been corrected.
 
-You asked whether (2) is worse than (1).
-That means both states existed, and the second was intentionally tested.
+**Inventory-wide**
 
-➡️ Therefore:
+Pictos: In Medias Res confirmed owned (with HP halving). Previously suggested non-owned Pictos have been discarded.
 
-Screenshots showing 3055 HP are older
+Lumina: no invented Lumina remain in the analysis. Energising Start correctly understood as per-character only.
 
-Current Maelle HP is ~1900 range, not 3000+
+**Final verdict**
 
-✅ This is consistent with your description
-❌ It would be wrong for me to treat screenshot HP as current
+✅ Internally consistent — all characters (except Monoco, updated separately) match screenshots plus chat.
 
-Pictos — confirmed ownership (from screenshots)
-You definitely own (non-exhaustive, but solid):
+⚠ Known stale data: Maelle HP in early screenshots; Monoco pre-respec stats.
 
-Breaking Burn
+❓ Unknown (not errors): final Maelle stat choice; active Lumina selections post-adjustments; exact skill swap for Lune with Crystal Crush.
 
-Dead Energy I
-
-Aegis Revival
-
-Combo Attack I
-
-First Offensive
-
-Accelerating Heal
-
-Fueling Break
-
-Confident
-
-Solidifying
-
-Burning Death
-
-Augmented First Strike
-
-Breaking Counter
-
-Perilous Parry
-
-Powerful Revive
-
-Death Bomb
-
-SOS Power
-
-Energising Heal
-
-Augmented Aim
-
-No contradictions here.
-
-Lumina — confirmed available
-You have (from earlier Lumina screenshots):
-
-Breaker
-
-Breaking Burn
-
-Breaking Counter
-
-Accelerating Last Stand
-
-Dead Energy I / II
-
-Healing Counter
-
-Healing Parry
-
-Marking Shots
-
-Rewarding Mark
-
-Energising Start (multiple tiers)
-
-Attack Lifesteal
-
-Aegis Revival
-
-etc.
-
-I previously mixed Lumina/Picto labels — that has been corrected.
-
-Skills — confirmed learned (from screenshot)
-Maelle has learned:
-
-Fleuret Fury
-
-Percée
-
-Swift Stride
-
-Breaking Rules
-
-Fencer’s Flurry
-
-Spark
-
-Disengagement
-
-Guard Up
-
-Mezzo Forte
-
-Offensive Switch
-
-Last Chance
-
-She is saving for Sword Ballet.
-
-➡️ No contradiction here.
-
-❗ Remaining uncertainties (explicit)
-Which Maelle stat state you ended on (1401 vs 1947 HP)
-
-Whether Combo Attack I is currently equipped (you discussed it, but didn’t confirm final choice)
-
-Exact active Lumina after tightening turn order
-
-These are unknowns, not inconsistencies.
-
-🟦 LUNE — SANITY CHECK
-What is consistent
-Level
-
-Level 36 — consistent
-
-Weapon
-
-Trebu chim Lv11
-
-Generates random stain on Free Aim
-
-+1 AP when stains are consumed
-
-This matches:
-
-Your AP-flow confusion questions
-
-The Crystal Crush discussion
-
-✅ No contradiction
-
-Stats
-
-Health ~2250–2500 range
-
-Low Defense (~100)
-
-High Luck (~35)
-All consistent across screenshots.
-
-Skills — confirmed learned
-Lune has learned:
-
-Wildfire
-
-Mayhem
-
-Elemental Trick
-
-Elemental Genesis
-
-Healing Light
-
-Rebirth
-
-Thunderfall
-
-Rockslide
-
-Immolation
-
-Ice Lance
-
-Earth Rising
-
-Electrify
-
-You explicitly stated her current loadout before Crystal Crush:
-
-Wildfire, Mayhem, Elemental Trick, Elemental Genesis, Healing Light, Rebirth
-
-That matches screenshots.
-
-You later said:
-
-I’ve just got Crystal Crush
-
-So:
-
-Crystal Crush is newly acquired
-
-Not yet integrated
-
-✅ No contradiction.
-
-Pictos — confirmed ownership
-From screenshots, Lune owns:
-
-Rejuvenating Revive
-
-Protecting Heal
-
-Accelerating Heal
-
-Aegis Revival
-
-First Offensive
-
-Fueling Break
-
-Confident
-
-Solidifying
-
-Energising Death
-
-Dead Energy I
-
-Combo Attack I
-
-etc.
-
-Lumina — confirmed available
-You have for Lune:
-
-Energising Heal
-
-Accelerating Heal
-
-Rejuvenating Revive
-
-Energising Start
-
-Dead Energy
-
-Marking Shots
-
-Rewarding Mark
-
-No conflicts.
-
-❗ Remaining uncertainties
-Which skill Crystal Crush replaced (you asked, but hadn’t acted yet)
-
-Current active Lumina after AP discussions
-
-🟨 SCIEL — SANITY CHECK
-What is consistent
-Level
-
-Level 34 — consistent
-
-Weapon
-
-Scieleson Lv9
-
-No special AP mechanics
-
-Matches her “opener/debuff” role
-
-Stats
-
-High Crit (~38–42%)
-
-Moderate speed
-
-Low survivability
-
-Consistent.
-
-Skills — confirmed learned
-Sciel has learned:
-
-Focused Foretell
-
-Twilight Slash
-
-Twilight Dance
-
-Harvest
-
-Final Path
-
-Searing Bond
-
-Plentiful Harvest
-
-Firing Shadow
-
-This matches screenshots exactly.
-
-Pictos / Lumina
-Nothing contradicts:
-
-Energising Start IV
-
-Combo Attack I
-
-First Offensive
-
-Breaker (Lumina)
-
-No inconsistencies.
-
-🟧 VERSO — SANITY CHECK
-What is consistent
-Level
-
-Level 36
-
-Weapon
-
-Lanceram Lv12
-
-Rank can’t drop below C
-
-Base attacks give Perfection
-
-This matches your earlier question about:
-
-Rank loss
-
-Parry pressure
-
-Stats
-
-High Attack
-
-Low HP (~1100)
-
-Low Defense
-
-Consistent.
-
-Skills — confirmed learned
-Verso has learned:
-
-Quick Strike
-
-Defiant Strike
-
-Assault Zero
-
-Paradigm Shift
-
-Strike Storm
-
-Perfect Recovery
-
-Berserk Slash
-
-From Fire
-
-Marking Shot
-
-Purification
-
-Steeled Strike
-
-Consistent.
-
-❗ Important correction already made
-Earlier, I incorrectly implied:
-
-mid-fight party swapping
-This was wrong and has been corrected.
-
-INVENTORY-WIDE SANITY CHECK
-Pictos
-You do not own Solid Stance / Heavy Frame
-
-You do own In Medias Res (with HP halving)
-
-I incorrectly suggested non-owned Pictos earlier
-
-Those suggestions have been discarded
-
-Lumina
-No invented Lumina remain in the analysis
-
-Energising Start behavior is now correctly understood (per-character only)
-
-FINAL VERDICT
-✅ Internally consistent now
-All characters (except Monoco, updated separately) match screenshots + chat
-
-No remaining false assumptions are being relied upon
-
-⚠️ Known stale data
-Maelle HP in early screenshots
-
-Monoco pre-respec stats
-
-❓ Unknown (not errors)
-Final Maelle stat choice
-
-Active Lumina selections post-adjustments
-
-Exact skill swap for Lune with Crystal Crush
-
-If you want, the next clean step would be:
-
-lock current Maelle stats
-
-then do a single-pass AP-flow model with correct mechanics for Monoco + Lune + Maelle
-
-But the sanity check itself is now complete and honest.
+---
