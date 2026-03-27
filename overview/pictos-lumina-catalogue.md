@@ -60,7 +60,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 |  | Breaking Shots | 50% increased Break damage with Free Aim shots. | 1 |  | shots |
 |  | Breaking Slow | 25% increased Break damage against Slowed enemies. | 5 |  |  |
 | ✓ | Fueling Break | Breaking a target also doubles its Burn amount. | 5 |  |  |
-| ✓ | Gradient Break | +50% of a Gradient Charge on Breaking a target. | — | Maelle | gradient |
+| ✓ | Gradient Break | +50% of a Gradient Charge on Breaking a target. | 5 | Maelle | gradient |
 |  | Gradient Breaker | 50% increased Break damage with Gradient Attacks. | 5 |  | gradient |
 | ✓ | Quick Break | Play again on Breaking a target. | 3 | Sciel |  |
 | ✓ | Staggering Attack | 50% increased Break damage on Base Attack. | 1 |  |  |
@@ -246,7 +246,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 | ✓ | SOS Power | Apply Powerful when falling below 50% Health. | 5 |  |  |
 | ✓ | SOS Rush | Apply Rush when falling below 50% Health. | — |  |  |
 | ✓ | SOS Shell | Apply Shell when falling below 50% Health. | 5 |  |  |
-| ✓ | Second Chance | Revive with 100% Health. Once per battle. | — | Verso |  |
+| ✓ | Second Chance | Revive with 100% Health. Once per battle. | 40 | Verso |  |
 |  | Shielding Tint | Healing Tints also add 2 Shields. | 10 |  | support |
 | ✓ | Shortcut | Immediately play when falling below 30% Health. Once per battle. | — |  |  |
 | ✓ | Solidifying | +2 Shields when the character's Health falls below 50%. Once per battle. | 10 |  |  |

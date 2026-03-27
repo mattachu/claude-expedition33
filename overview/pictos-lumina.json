@@ -1406,7 +1406,7 @@
         "gradient"
       ],
       "effect": "+50% of a Gradient Charge on Breaking a target.",
-      "lp_cost": null,
+      "lp_cost": 5,
       "obtained": true,
       "equipped_by": "Maelle",
       "lumina_learned": false,
@@ -2150,7 +2150,7 @@
         "survival"
       ],
       "effect": "Revive with 100% Health. Once per battle.",
-      "lp_cost": null,
+      "lp_cost": 40,
       "obtained": true,
       "equipped_by": "Verso",
       "lumina_learned": false,
@@ -2686,8 +2686,8 @@
           "level": 25
         },
         {
-          "name": "Recovery",
-          "level": 20
+          "name": "Energy Master",
+          "level": 30
         },
         {
           "name": "Quick Break",

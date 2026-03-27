@@ -149,7 +149,7 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 | Pictos | Level | Effect | Stats |
 |---|---|---|---|
 | Critical Burn | 25 | 25% increased Crit rate on Burning enemies | Speed +434, Crit +28% |
-| Recovery | 20 | Recovers 10% Health on turn start. | Health +2000, Defence +324 |
+| Energy Master | 30 | Every AP gain is increased by 1 | Health +4979 |
 | Quick Break | 25 | Play again on Breaking a target. | Speed +434, Crit +28% |
 
 **Character-specific Lumina (on top of core):**
