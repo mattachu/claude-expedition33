@@ -83,7 +83,11 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 - **Power:** 5033
 - **Element:** Physical
 - **Scaling:** Agility A, Luck B
-- **Notes:** Level 4: Start battle at Rank S, but can't be Healed or gain Shields. Level 10: 20% increased damage for each consecutive no-damage turn, stacks up to 5×. Level 20: Apply Rush on Rank S.
+- **Effects:**
+    - Level 4: Start battle at Rank S, but can't be Healed or gain Shields.
+    - Level 10: 20% increased damage for each consecutive no-damage turn, stacks up to 5×.
+    - Level 20: Apply Rush on Rank S.
+- **Notes:** The Cheater extra turn counts as a no-damage turn and stacks the Level 10 bonus — Verso builds damage stacks mechanically just by taking his Cheater turns normally, not only by successfully avoiding hits. Confident (20LP) and Confident Fighter (15LP) are the recommended Lumina pairing: since Chevalam already prevents healing, the "cannot be healed" downside of both Lumina is fully priced in, while the benefits (take half damage; deal 30% more damage) are entirely available.
 
 ### Also obtained (not in active use)
 | Weapon      | Level | Notes                                                                                                         |
@@ -170,7 +174,7 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Light Holder   | 4               | ✅       | A: +2 AP                                       | Medium Light damage, 5 hits. Gains +1 Rank at completion.                                                                                                          |
 | Marking Shot   | 2               | ✅       | C: increased damage                            | Low damage + 100% Mark. No HP cost. 2 AP.                                                                                                                         |
 | Perfect Break  | 7 (5 at B Rank) | ✅       | B: costs 5 AP instead of 7                    | Very high Light damage; can Break; Rank S on Break.                                                                                                                |
-| End Bringer    | 8               | ✅       | A: can reapply stun                            | Extreme Physical damage, 6 hits. Increased damage if target stunned.                                                                                               |
+| End Bringer    | 8               | ✅       | A: can reapply stun                            | Extreme Physical damage, 6 hits. Increased damage if target Stunned. Break → Stun is the reliable setup: enemies are Stunned on Break, enabling End Bringer's bonus immediately. A Rank ability reapplies Stun to extend the window. |
 | Steeled Strike | 9               | ✅       | S: increased damage                            | After 1 turn charge, extreme Physical damage. Interrupted if damage taken. Safe with Cheater. S Rank bonus active given Chevalam starts at S.                      |
 
 **Skills available but not equipped:**
@@ -248,4 +252,3 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 - **Rank loss on hit as weapon-specific:** General Verso mechanic. Gaulteram's forgiveness is the exception.
 - **Rank starts at C:** Rank starts at D. C was the effective floor with Lighteram equipped. With Chevalam there is no floor — hits can send Verso back to D.
 - **Base Shield with Chevalam:** Non-functional — Chevalam prevents shields. Remove from loadout.
-

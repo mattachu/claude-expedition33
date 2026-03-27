@@ -63,14 +63,22 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 - **Power:** ~3390
 - **Element:** [unconfirmed — verify in game]
 - **Scaling:** Vitality A, Agility B
-- **Notes:** Level 4: Casting a Skill increases Skill damage of all other elements by +20%; resets when casting a previously used element. Level 10: On turn start, if no Stains, 2 random Stains generated. Level 20: +1 AP when Stains are consumed. Required for Elemental Genesis build.
+- **Effects:**
+    - Level 4: Casting a Skill increases Skill damage of all other elements by +20%; resets when casting a previously used element.
+    - Level 10: On turn start, if no Stains, 2 random Stains generated.
+    - Level 20: +1 AP when Stains are consumed.
+- **Notes:** Required for Elemental Genesis build. Note: If both generated stains are the same element, the duplicate cannot contribute to Elemental Genesis (which requires one of each element) — though it can still be used for other purposes such as Mayhem damage. A Light wildcard stain from a skill mitigates the Genesis-specific gap.
 
 ### Previous
 - **Name:** Trebuchim (25)
 - **Power:** 3089
 - **Element:** Lightning
 - **Scaling:** Vitality A, Luck B
-- **Notes:** Stain generation weapon — L4: 1 random stain on free-aim; L20: base attack generates 2 random stains. Replaced by Kralim for Genesis build.
+- **Effects:**
+    - Level 4: 1 random stain on free-aim
+    - Level 10: [unconfirmed]
+    - Level 20: base attack generates 2 random stains
+- **Notes:** Stain generation weapon, used with Mayhem. Replaced by Kralim for Genesis build.
 
 ### Available weapons (inventory)
 Angerim (24), Betelim (12), Benisim (28), Braselim (21), Choralim (20), Colim (13), Coralim (7), Deminerim (4), Elerim (13), Kralim (29), Ligherim (12), Lunerim (1), Potierim (10), Redalim (10), Saperim (14), Snowim (22), Trebuchim (25), Troubadim (15)
@@ -80,7 +88,7 @@ Angerim (24), Betelim (12), Benisim (28), Braselim (21), Choralim (20), Colim (1
 
 ### Rejected
 - **Colim:** Tested Act 2. 14% attack loss; identical AP economy; no free-aim stain generation. Rejected.
-- **Trebuchim for Genesis:** Random stain generation incompatible with precise Genesis element requirements — replaced by Kralim.
+- **Trebuchim for Genesis:** Free-aim random stain generation incompatible with precise Genesis element requirements — replaced by Kralim.
 
 ---
 
@@ -149,6 +157,8 @@ Angerim (24), Betelim (12), Benisim (28), Braselim (21), Choralim (20), Colim (1
 | Healing Light     | 3       | ✅       | Heals targeted ally 30–50% HP; dispels ALL status effects including Cursed; consumes 2 Earth stains for 0 AP; generates 1 Light stain.  |
 | Mayhem            | 3       | ✅       | Consumes all stains for damage; Breaks with 4 stains. Needs 4 stains to Break.                                                          |
 | Elemental Genesis | 4       | ✅       | Primary DPS skill. Requires 1 of each element stain (Fire, Earth, Lightning, Ice — Light wildcards for missing element). Extreme damage. |
+| Lightning Dance   | —       | ❌       | **Priority skill — acquired, not yet equipped.** Primary single-target nuke for the Kralim burst build; requires Fire + Ice + Earth stains. Slot in when loadout allows. |
+| Hell              | —       | ❌       | **Priority skill — not yet acquired, saving up.** Guarantees 4 stains and AoE burn on turn 1, enabling Genesis or Lightning Dance on turn 2. Important to obtain. |
 
 ### Available skills (effects not fully confirmed)
 Crystal Crush, Earth Rising, Electrify, Elemental Trick, Fire Rage, Ice Lance, Immolation, Rebirth, Revitalisation, Rockslide, Thermal Transfer, Typhoon
@@ -204,4 +214,3 @@ Crystal Crush, Earth Rising, Electrify, Elemental Trick, Fire Rage, Ice Lance, I
 - **Mayhem break condition:** Needs 4 stains consumed to Break. With only 2–3 stains, Mayhem deals damage but cannot Break.
 - **Choralim as primary Elemental Trick weapon:** Circular dependency — gives 100% crit only when 4 stains already active. Cannot be the stain-generation weapon. Base 100% crit must come from Luck + Pictos independently.
 - **Protecting Tint fires on skill heals:** Incorrect. Protecting Tint fires on Tint use only, not on skill heals like Healing Light. Protecting Heal Lumina fires on skill heals.
-

@@ -69,8 +69,12 @@ Monoco's central system is the **Bestial Wheel** — a 9-position ring of masks 
 - **Power:** 3221
 - **Element:** Lightning
 - **Scaling:** Agility A, Defence B
+- **Effects:**
+    - Level 4: Start battle in Almighty Mask.
+    - Level 10: 20% increased damage for each consecutive turn without taking damage, stacks up to 5×.
+    - Level 20: Break damage doubled while in Almighty Mask.
 - **Source:** Ultimate Sakapatate (Endless Night Sanctuary, level 25) — obtained. Also drops from Flying Manor Lampmaster; purchasable from River of Life merchant.
-- **Notes:** Level 4: Start battle in Almighty Mask. Level 10: 20% increased damage for each consecutive turn without taking damage, stacks up to 5×. Level 20: Break damage doubled while in Almighty Mask. Almighty start is strong opener; Level 20 fires again whenever Monoco returns to Almighty Mask.
+- **Notes:** Almighty start is strong opener; Level 20 fires again whenever Monoco returns to Almighty Mask.
 
 ### Previous
 - **Name:** Nusaro (20)
@@ -214,4 +218,3 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 - **Confirmation bias on player skill suggestions:** Accepted Évêque Spear and Chalier Combo without independent research.
 - **Bénisseur Mortar Almighty jump:** Jumps to Almighty ONLY if target is Marked. Not a reliable Almighty access tool without Mark frequency from Lune/Maelle.
 - **Teamwork scope:** "All allies" means the active party only (Lune + Monoco when reserve), not all 5 characters. Confirmed via search Chat 5.
-

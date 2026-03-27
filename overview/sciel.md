@@ -58,7 +58,11 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 - **Power:** 2081
 - **Element:** Physical
 - **Scaling:** Luck A, Agility B
-- **Notes:** Level 4: During Moon phase, all allies have Greater Rush. During Sun phase, all enemies have Greater Slow. Level 10: During Twilight phase, all allies have Greater Rush AND all enemies have Greater Slow. Level 20: +3 AP on applying a Buff or Debuff, once per turn. Confirmed endgame weapon. Litheson's phase effects have a large impact on turn order — fights without Sciel noticeably harder.
+- **Effects:**
+    - Level 4: During Moon phase, all allies have Greater Rush. During Sun phase, all enemies have Greater Slow.
+    - Level 10: During Twilight phase, all allies have Greater Rush AND all enemies have Greater Slow.
+    - Level 20: +3 AP on applying a Buff or Debuff, once per turn.
+- **Notes:** Confirmed endgame weapon. Litheson's phase effects have a large impact on turn order — fights without Sciel noticeably harder.
 
 ### Future Options
 - **Charnon:** From Renoir's Drafts merchant post-game (89,884 Chromas). Scaling: B Defence, C Luck. Level 10: 100% crit in Twilight. Level 20: critical hits apply 1 Foretell. Post-game alternative — assess when relevant.
@@ -140,11 +144,12 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 | Plentiful Harvest | 4       | ✅       | Consumes all Foretell on target → 1 AP per stack, split between party. 5 stacks = +2/+2/+1; 10 stacks = +3/+3/+4.                     |
 | Final Path        | 9       | ✅       | High damage + applies 10 Foretell in one turn. Fast route to big Plentiful Harvest. Irreplaceable for efficient harvest loop.            |
 | Twilight Dance    | 9       | ✅       | High damage in Twilight state, consumes Foretell. Secondary DPS when support actions not needed.                                         |
-| Focused Foretell  | 2       | ✅       | Applies 2 Foretell (or 5 if target has none). **Drop when Grim Harvest available** — Grim Harvest fills the moderate-cost utility slot. |
+| Focused Foretell  | 2       | ✅       | Applies 2 Foretell (or 5 if target has none). The reset-to-5 mechanic is central to the Plentiful Harvest AP loop: cast Plentiful Harvest (consumes all Foretell), then Focused Foretell resets stacks to 5, enabling an efficient repeated cycle. **Drop when Grim Harvest available** — Grim Harvest fills the moderate-cost utility slot. |
+| Dark Cleansing    | 0       | ❌       | Cleanses an ally of status effects and propagates that ally's buffs to all allies. With Healing Boon Lumina equipped, the buff propagation triggers a 15% heal for each ally buffed — making this an effective 0AP party-wide heal. |
 | Grim Harvest      | 5       | ❌       | Heals all allies 30% + 5% per Foretell stack consumed. 10 stacks = 80% heal; in Twilight (doubled Foretell) = 100%. Not yet available — requires Recoat or 5 more levels. |
 
 ### Available skills (effects unconfirmed)
-All Set, Card Weaver, Dark Cleansing, Dark Wave, Delaying Slash, Firing Shadow, Harvest, Marking Card, Phantom Blade, Searing Bond, Twilight Slash
+All Set, Card Weaver, Dark Wave, Delaying Slash, Firing Shadow, Harvest, Marking Card, Phantom Blade, Searing Bond, Twilight Slash
 
 ---
 
@@ -180,7 +185,7 @@ All Set, Card Weaver, Dark Cleansing, Dark Wave, Delaying Slash, Firing Shadow, 
 
 - **Grim Harvest timing:** Available via Recoat (27 available) or 5 more levels. Not urgent before The Reacher (Maelle solo). Aim for before Flying Manor / final boss.
 - **Burn Affinity Lumina:** Now that Burn Affinity Pictos is replaced by Quick Break, the free Lumina effect is lost. Worth paying 10 LP to retain the effect? Probably not given burn is less active without Lune. 14 LP spare after Breaking Burn removal.
-- **Available skills detail:** All Set, Card Weaver, Dark Cleansing, Dark Wave, Delaying Slash, Firing Shadow, Harvest, Marking Card, Phantom Blade, Searing Bond, Twilight Slash — AP costs and effects unconfirmed.
+- **Delaying Slash:** Listed in available skills; community sources describe it as a standout support skill that delays an enemy's next turn (boss control). Effect not yet confirmed in transcript — verify in-game and document if accurate.
 - **Charnon vs Litheson comparison:** Post-game option — assess when relevant.
 - **Double Third, Frenzy, Feint Pictos:** Post-launch Pictos flagged as synergising with Verso's Steeled Strike. May be connected to Verso's Drafts DLC. Research when discussing Verso next session.
 
@@ -196,4 +201,3 @@ All Set, Card Weaver, Dark Cleansing, Dark Wave, Delaying Slash, Firing Shadow, 
 - **Gradient Break effect:** Not "extra turn on Break." Correct: +50% Gradient Charge on Breaking a target.
 - **Quick Break with Cheater:** The extra turn from Quick Break never fires when Cheater is equipped — maximum two consecutive turns; bonus turns cannot trigger further bonus turns. Quick Break is a pure stat stick for any Cheater user.
 - **Rank order starting at C:** General Verso error, not Sciel — but note here for awareness: rank starts at D, not C.
-

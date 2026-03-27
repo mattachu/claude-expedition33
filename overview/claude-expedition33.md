@@ -8,7 +8,7 @@
 
 These are in addition to the general failure modes in the startup file:
 
-- **Confabulation about game content:** Training data thin and patchy. Do not give confident answers about mechanics, routes, item availability, or missable content without searching first.
+- **Confabulation about game content:** Training data thin and patchy. Do not give confident answers about mechanics, routes, item availability, or missable content without searching first. Example: The Glissando incident (Chat 0) — asserted a bypass existed and escalated increasingly specific hints through multiple failed attempts; no bypass exists. For any navigation, bypass, or optional enemy question, treat prior knowledge as zero and search before answering. Two failed attempts from the player is a hard stop requiring premise re-evaluation, not hint escalation.
 - **Missable/sequence-locked content:** Highest-risk category. Never assert content will be available later without verifying. Default: "I'm not certain — check the wiki." The Vale bosses incident is the clearest example of this failure mode: ChatGPT explicitly told Matt he could return to Visages after the Axon and would miss nothing. He could not. Three Vale bosses were permanently lost as a result.
 - **Wrong advice on record:** Previous sessions contain specific errors. Check character files before advising on that character.
 - **Recommending meta builds without checking playstyle fit:** Community recommendations often assume specific builds (e.g. Elemental Genesis). Always verify assumptions before recommending.
@@ -58,21 +58,33 @@ These are in addition to the general failure modes in the startup file:
 *Last updated: Chat 4*
 
 - **Free-aim:** Used heavily with Lune (2–3 shots typically, up to 5–6 when stacking burn + mark). Each shot: shield removal, damage, burn (Burning Shots Lumina), mark (Marking Shots Lumina), stain generation (Trebuchim). Maelle uses free-aim less frequently. Free-aim usage expected to drop with Lune/Maelle not in the levelling team.
-- **Parry rate:** ~20% against unfamiliar bosses; up to ~100% against well-known enemies after extended grinding. Pattern-recognition is the bottleneck — can require 20+ attempts. Skill is developing, not absent. This is a persistent constraint on risky builds (Overload without Cheater, Defiant Strike’s 30% HP cost, etc.).
-- **AP management:** Prefers to use skills every turn if AP allows. Values AP flow highly. **Endgame team (Maelle/Sciel/Verso) AP note:** AP flow is sustainable with Sciel’s Litheson (+3 AP/turn for Sciel on buff/debuff) and Intervention, but requires active management — it is not as straightforward or as quick to refill as Monoco’s Potier Energy. Do not assume freely available AP when advising on endgame team builds.
-- **Turn order (levelling team):** Sciel first (Fortune’s Fury before Verso acts), Verso second (Strike Storm with doubled damage), Monoco third (Potier Energy refills AP). Turn order: Sciel ~1812 → Verso ~1436 → Monoco ~1163.
-- **Trash fights:** Maelle: Fencer’s Flurry to clear turn 1. With new team: Phantom Stars (Verso AoE at S Rank).
+- **Parry rate:** ~20% against unfamiliar bosses; up to ~100% against well-known enemies after extended grinding. Pattern-recognition is the bottleneck — can require 20+ attempts. Skill is developing, not absent. Dodge is used actively to learn timings: the dodge window is wider than the parry window, and Perfect Dodge shares the same timing as Parry — so Dodge rate is meaningfully higher than parry rate. Dodger Lumina gives +1 AP on Perfect Dodge. This is a persistent constraint on risky builds (Overload without Cheater, Defiant Strike's 30% HP cost, etc.).
+- **AP management:** Prefers to use skills every turn if AP allows. Values AP flow highly. **Endgame team (Maelle/Sciel/Verso) AP note:** AP flow is sustainable with Sciel's Litheson (+3 AP/turn for Sciel on buff/debuff) and Intervention, but requires active management — it is not as straightforward or as quick to refill as Monoco's Potier Energy. Do not assume freely available AP when advising on endgame team builds.
+- **Turn order (levelling team):** Sciel first (Fortune's Fury before Verso acts), Verso second (Strike Storm with doubled damage), Monoco third (Potier Energy refills AP). Turn order: Sciel ~1812 → Verso ~1436 → Monoco ~1163.
+- **Trash fights:** Maelle: Fencer's Flurry to clear turn 1. With new team: Phantom Stars (Verso AoE at S Rank).
 - **Boss fights:** Methodical; learns patterns over multiple attempts. Values break dynamics highly.
 - **Status effects:** Primarily burn and mark; limited experience with others.
-- **Risk tolerance:** Conservative while parry skills are developing. Prefers empirical testing (99-point attribute method established with Monoco and Sciel). Rejects builds that rely on low-HP states (Overload without Cheater, Berserk Slash) or skills with survival costs (Defiant Strike’s HP cost).
+- **Risk tolerance:** Conservative while parry skills are developing. Prefers empirical testing (99-point attribute method established with Monoco and Sciel). Rejects builds that rely on low-HP states (Overload without Cheater, Berserk Slash) or skills with survival costs (Defiant Strike's HP cost).
 
 ---
 
 ## Section 4: Game Mechanics
 
+### Counterattack
+
+Successfully completing all parries in an enemy's attack sequence triggers a Counterattack automatically. This deals significant damage and does not consume a turn — it is the primary mechanical reward for parrying, beyond damage avoidance. Some weapon abilities add further effects on Counterattack: Lithum Level 10 (Maelle) switches her to Virtuose stance on a successful Counterattack.
+
+### AP
+
+Every character gains 1 AP at the start of their turn as a baseline, before any skills, Lumina, or Pictos effects. A skill costing 4 AP therefore requires 4 turns of baseline generation with no other AP sources.
+
+### Free-Aim
+
+Free-aim is a distinct targeting mode costing 1 AP, used before selecting a skill, item, or basic attack. It is separate from both skills and basic attacks. Lumina and weapon effects that specify "free-aim shots" (e.g. Burning Shots, Marking Shots, Augmented Aim) apply only to free-aim shots — not to skills or basic attacks. Conversely, effects that trigger on "base attacks" do not trigger on free-aim. This distinction matters when evaluating Lumina synergies.
+
 ### Gradient Skills
 
-Each character has three Gradient Skills, costing 1, 2, and 3 Gradient Charges (GC) respectively. Gradient charges build by spending AP on skills. Gradient Skills are powerful abilities with effects ranging from damage to healing to revival — not all are attacks, hence "Gradient Skills" rather than "Gradient Attacks."
+Each character has three Gradient Skills, costing 1, 2, and 3 Gradient Charges (GC) respectively. Gradient charges build by spending AP on skills only — not from basic attacks, parries, or free-aim shots. Gradient Skills are powerful abilities with effects ranging from damage to healing to revival — not all are attacks, hence "Gradient Skills" rather than "Gradient Attacks."
 
 Individual character Gradient Skills are listed in each character file. Details for most characters are not yet confirmed in transcript — placeholders are in place.
 
@@ -86,15 +98,21 @@ A team typically needs both types — a filler to build the bar and a trigger to
 
 **Note:** By late game, Lumina (particularly Breaker) contributes significantly to break bar filling across all characters. The break capability of a team depends more on Lumina sets than on individual skills labelled as "high break damage." Multi-hit skills (e.g. Phantom Stars, Final Path) fill the break bar substantially even without that label. The skill label is not the sole indicator of break capability.
 
+### Damage Cap
+
+A 9,999 damage cap applies by default. Painted Power (5 LP Lumina) removes this cap and is essential from Act 3 onwards. It is included in the core Lumina suite for all characters.
+
 ### Pictos and Lumina
 
-Pictos are collectible items (3 slots per character) giving stat boosts and effects. Learning a Pictos (4 battles) unlocks it as a Lumina — effect only, no stat boosts, costs LP. Any Lumina costs 0LP for a character who has that Pictos equipped. With attributes maxed at 99, Pictos stat boosts are the primary source of character growth.
+ictos are collectible items (3 slots per character) giving stat boosts and effects. Learning a Pictos (4 battles) unlocks it as a Lumina — effect only, no stat boosts, costs LP. Any Lumina costs 0LP for a character who has that Pictos equipped. With attributes maxed at 99, Pictos stat boosts are the primary source of character growth.
+
+Key rules: each Pictos is a unique copy (only one character can equip it); duplicates upgrade the existing copy; extra-turn effects don't stack (bonus turns can't trigger further bonus turns); passive "on turn start" effects fire on Cheater/Intervention bonus turns too; Pictos stat boosts cover Health, Defence, Speed, and Crit only — not Attack. For status immunity, add the relevant Lumina rather than swapping Pictos.
 
 **Full reference:** `overview/pictos-lumina.json` (definitive data source — 194 Pictos, obtained status, equipped/Lumina loadouts). Two generated Markdown files:
 
 | File | Purpose | When to read |
 |---|---|---|
-| `pictos-lumina-summary.md` [Formatted](pictos-lumina-summary.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/pictos-lumina-summary.md) | Core Lumina sets, per-character loadouts, situational, candidates | Any session involving Pictos/Lumina advice |
+| `pictos-lumina-summary.md` [Formatted](pictos-lumina-summary.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/pictos-lumina-summary.md) | Full Pictos/Lumina mechanics, Core Lumina sets, per-character loadouts, situational, candidates | Any session involving Pictos/Lumina advice |
 | `pictos-lumina-catalogue.md` [Formatted](pictos-lumina-catalogue.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/pictos-lumina-catalogue.md) | All 194 Pictos grouped by category with effects and LP costs | When browsing or searching the full catalogue |
 | `pictos-lumina.json` [Repo](pictos-lumina.json) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/pictos-lumina.json) | Raw JSON — query directly for specific Pictos data | When Claude needs to look up or modify specific entries |
 
@@ -108,9 +126,13 @@ Tints are consumable items, distinct from skills. There are three types: Healing
 - *Protecting Tint Lumina*: fires when a **Tint** is used — not when a healing skill is used.
 - *Protecting Heal Lumina*: fires when a **skill** heals an ally — not on Tint use.
 
+"Can't be healed" effects (e.g. Chevalam Level 4, Confident, Confident Fighter) block active healing actions — Tints and healing skills. They do not block passive on-turn-start Lumina effects such as Recovery (10% health per turn start).
+
 ### Attribute System
 
 Characters gain 3 attribute points per level up. Points are held in reserve and can be spent at any Flag. Points committed to an attribute are permanent unless a Recoat is used (resets all attributes and skill points to zero, returning all spent points). Attributes cap at 99 — points cannot be spent on an attribute already at 99.
+
+Primary attribute effects are universal: Vitality → Health; Might → Attack Power; Agility → Speed; Defence → Defence stat; Luck → Critical Rate. Two secondary effects have been confirmed consistently across multiple characters: Agility also increases Defence stat; Luck also increases Speed. These are likely universal but have not been verified on every character. Weapon scaling contributes to Attack Power via two attributes at different rates — the contributing attributes vary per weapon and are listed in each character file.
 
 ### Reserve Party
 

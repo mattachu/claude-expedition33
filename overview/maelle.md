@@ -27,6 +27,7 @@ Maelle's central system is **stances**. She starts each battle in Stanceless (un
 
 **Virtuose** is her most powerful stance. Key interactions:
 - Percée costs 2 AP instead of 5 in Virtuose — but Maelle **leaves Virtuose after using it**; cannot be spammed at 2 AP (one use per Virtuose window)
+- Using the same stance trigger twice in succession puts Maelle into Stanceless — e.g. two consecutive Virtuose-entry skills will leave her Stanceless after the second
 - Fleuret Fury keeps her in Virtuose if already there
 - Medalum Level 10: every Burn applied is doubled while in Virtuose
 - Medalum Level 20: Burn deals double damage while in Virtuose
@@ -86,7 +87,13 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 - **Power:** 9254
 - **Element:** Void
 - **Scaling:** Luck S, Agility A
-- **Notes:** Level 4: In Virtuose Stance, hitting a Marked enemy doesn't remove Mark. Level 10: Switch to Virtuose Stance on Counterattack. Level 20: Gain Shell when switching out of Virtuose Stance. Nearly doubled in power from level 32 to 33 (from 4651 to 9254). Respec required from Medalum (Defence+Agility) to Lithum (Luck+Agility). Shell from L20 synergises with Longer Shell and Powerful on Shell Lumina.
+- **Effects:**
+    - Level 4: In Virtuose Stance, hitting a Marked enemy doesn't remove Mark.
+    - Level 10: Switch to Virtuose Stance on Counterattack.
+    - Level 20: Gain Shell when switching out of Virtuose Stance.
+- **Notes:** Nearly doubled in power from level 32 to 33 (from 4651 to 9254). Respec required from Medalum (Defence+Agility) to Lithum (Luck+Agility). Shell from L20 synergises with Longer Shell and Powerful On Shell Lumina.
+- **Core rotation:** Any skill switching to Defensive stance → parry/counterattack → Counterattack triggers Virtuose entry (L10) → attack in Virtuose → Shell applied on leaving Virtuose (L20) → repeat. Phantom Strike is a useful Defensive-entry option as it also contributes +35% Gradient Charge per use.
+- **L4 Mark synergy:** Hitting a Marked enemy in Virtuose does not consume the Mark. This enables repeated Percée use in Virtuose on a Marked enemy (each cast benefits from reduced 2 AP cost, increased damage, and Rewarding Mark AP return) without losing the Mark. Burning Canvas can similarly be used in Virtuose on a Marked enemy for repeated burn-scaling damage without consuming the Mark. Both synergies make these skills substantially stronger with Lithum than with Medalum.
 
 ### Endgame
 - **Name:** Lithum (level 21 when obtained)
@@ -304,4 +311,3 @@ Alternative: swap Fleuret Fury for Sword Ballet if preferring burst over Break u
 - **Melarum source:** Do not assert "Old Lumiere post-Renoir" — this is likely wrong.
 - **Shell vs Shield confusion (recurring):** Shell = 20% damage reduction for 3 turns. Shield = damage-blocking HP buffer (1 per turn from Base Shield Lumina, or other sources). Stendhal removes self-shields (HP buffer), not Shell. Lithum L20 grants Shell (damage reduction) on leaving Virtuose. These are entirely separate mechanics — do not conflate them.
 - **Lithum scaling:** Lithum scales Luck S / Agility A — not Defence + Agility like Medalum. Respec is required when switching. Glaisum (Defence A / Agility B) also requires a respec from Lithum.
-
