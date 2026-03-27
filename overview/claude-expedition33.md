@@ -471,7 +471,7 @@ CONTENT:
 ```
 
 - `###` heading must be unique within its `##` parent; renames require direct edit
-- Separators (`---`) between `##` sections are inserted automatically by the updater script — do not include them in CONTENT
+- Separators (`---`) between `##` sections are inserted automatically by the updater script — do not include them in CONTENT or use them between FILE blocks
 - Failure mode: loud
 
 ### Session State JSON
