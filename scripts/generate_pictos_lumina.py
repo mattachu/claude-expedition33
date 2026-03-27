@@ -88,7 +88,7 @@ def generate_summary(data):
         "",
         "See [`pictos-lumina-catalogue.md`](pictos-lumina-catalogue.md) for the full list of all 194 Pictos.",
         "",
-        "-----",
+        "---",
         "",
     ]
 
@@ -104,7 +104,7 @@ def generate_summary(data):
         "",
         "Extra-turn effects (e.g. Quick Break's \"play again on Break\") do not stack — if a character is already on a bonus turn, any further extra-turn trigger is nullified. Quick Break is therefore a pure stat stick for any Cheater user.",
         "",
-        "-----",
+        "---",
         "",
     ]
 
@@ -122,7 +122,7 @@ def generate_summary(data):
         "",
         "**In-game Lumina Sets:** The game allows saving up to 50 Lumina Sets per character. Sets apply a group of Lumina in one action. The recommended workflow is: apply core set first, then add character-specific extras on top.",
         "",
-        "-----",
+        "---",
         "",
     ]
 
@@ -146,7 +146,7 @@ def generate_summary(data):
                 effect = p.get("effect", "")
                 break
         lines.append(row([e["name"], e["lp"], effect, e.get("notes", "")]))
-    lines += ["", "-----", ""]
+    lines += ["", "---", ""]
 
     # ── 4. Reserve Team Core Lumina Set ──────────────────────────────────
     reserve = data.get("core_lumina_suite", {}).get("reserve_team", {})
@@ -166,7 +166,7 @@ def generate_summary(data):
                 effect = p.get("effect", "")
                 break
         lines.append(row([e["name"], e["lp"], effect]))
-    lines += ["", "-----", ""]
+    lines += ["", "---", ""]
 
     # ── 5. Per-Character Loadouts ────────────────────────────────────────
     lines += ["## 5. Per-Character Loadouts", ""]
@@ -229,7 +229,7 @@ def generate_summary(data):
             lines += [""]
         lines += [""]
 
-    lines += ["-----", ""]
+    lines += ["---", ""]
 
     # ── 6. Situational Lumina ────────────────────────────────────────────
     lines += ["## 6. Situational Lumina", "", "Add these as Lumina for specific boss fights — no need to change Pictos.", ""]
@@ -243,7 +243,7 @@ def generate_summary(data):
                     effect = p.get("effect", "")
                     break
             lines.append(row([s["name"], s.get("lp", "?"), effect, s["notes"]]))
-    lines += ["", "-----", ""]
+    lines += ["", "---", ""]
 
     # ── 7. Candidates for Review ─────────────────────────────────────────
     lines += ["## 7. Candidates for Future Review", ""]
@@ -255,7 +255,7 @@ def generate_summary(data):
                 effect = p.get("effect", "")
                 break
         lines.append(row([c["name"], c.get("lp", "?"), effect, c.get("notes", "")]))
-    lines += ["", "-----", ""]
+    lines += ["", "---", ""]
 
     return "\n".join(lines)
 
@@ -274,7 +274,7 @@ def generate_catalogue(data):
         "",
         f"**{len(pictos)} Pictos total.** {len([p for p in pictos if p.get('obtained')])} obtained.",
         "",
-        "-----",
+        "---",
         "",
     ]
 
@@ -335,7 +335,7 @@ def generate_catalogue(data):
                 also_in,
             ]))
 
-        lines += ["", "-----", ""]
+        lines += ["", "---", ""]
 
     return "\n".join(lines)
 

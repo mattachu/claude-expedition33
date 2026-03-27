@@ -1,5 +1,5 @@
 {
-  "_notes": "Definitive Pictos/Lumina reference. 194 entries from Fandom wiki merged with player data. JSON is source of truth — generate Markdown via scripts.",
+  "_notes": "Definitive Pictos/Lumina reference. 194 entries from Fandom wiki merged with player data. JSON is source of truth \u2014 generate Markdown via scripts.",
   "pictos": [
     {
       "name": "Accelerating Heal",
@@ -69,7 +69,7 @@
       "effect": "Immune to Blight",
       "lp_cost": 10,
       "obtained": true,
-      "equipped_by": "Monoco",
+      "equipped_by": null,
       "lumina_learned": false,
       "level": 24,
       "stats": {
@@ -85,7 +85,7 @@
       "effect": "Immune to Burn",
       "lp_cost": 15,
       "obtained": true,
-      "equipped_by": "Monoco",
+      "equipped_by": null,
       "lumina_learned": false,
       "level": 22,
       "stats": {
@@ -232,15 +232,18 @@
     {
       "name": "Auto Death",
       "category": [
-        "death",
-        "misc"
+        "death"
       ],
-      "effect": "Kill self on battle start.",
+      "effect": "Kill self on turn start.",
       "lp_cost": 1,
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 7
+      "level": 7,
+      "stats": {
+        "crit": "26%"
+      },
+      "notes": "Used with Second Chance to apply buffs/debuffs on battle start. Not recommended for Matt."
     },
     {
       "name": "Auto Powerful",
@@ -301,10 +304,10 @@
       "lumina_learned": true,
       "level": 20,
       "stats": {
-        "health": 2000,
+        "speed": 399,
         "crit": "11%"
       },
-      "notes": "Moved to Lumina this session — Pictos slot freed"
+      "notes": "Moved to Lumina this session \u2014 Pictos slot freed"
     },
     {
       "name": "Beneficial Contamination",
@@ -687,12 +690,16 @@
       "category": [
         "damage"
       ],
-      "effect": "Deal 30% more damage, but can't be healed.",
+      "effect": "30% increased damage, but cannot be healed.",
       "lp_cost": 15,
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 11
+      "level": 11,
+      "stats": {
+        "health": 222,
+        "crit": "20%"
+      }
     },
     {
       "name": "Critical Break",
@@ -927,7 +934,7 @@
         "speed": 162,
         "crit": "17%"
       },
-      "notes": "Reset behaviour on parry unconfirmed — test empirically"
+      "notes": "Reset behaviour on parry unconfirmed \u2014 test empirically"
     },
     {
       "name": "Empowering Last Stand",
@@ -1245,7 +1252,7 @@
       "stats": {
         "speed": 270
       },
-      "notes": "Stats incomplete — speed only recorded"
+      "notes": "Stats incomplete \u2014 speed only recorded"
     },
     {
       "name": "Energy Master",
@@ -1255,7 +1262,7 @@
       "effect": "Every AP gain is increased by 1",
       "lp_cost": 40,
       "obtained": true,
-      "equipped_by": "Maelle",
+      "equipped_by": "Sciel",
       "lumina_learned": false,
       "level": 30,
       "stats": {
@@ -1405,7 +1412,7 @@
       "lumina_learned": false,
       "level": 25,
       "stats": {
-        "speed": 424,
+        "speed": 434,
         "crit": "28%"
       }
     },
@@ -1493,14 +1500,18 @@
     {
       "name": "Greater Slow",
       "category": [
-        "damage"
+        "support"
       ],
-      "effect": "+10% to Slow Speed reduction.",
+      "effect": "+15% to Slow Speed reduction.",
       "lp_cost": 15,
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 20
+      "level": 20,
+      "stats": {
+        "defence": 647,
+        "speed": 266
+      }
     },
     {
       "name": "Healing Boon",
@@ -1588,7 +1599,7 @@
       "effect": "Receive 15% of all Heals affecting other characters.",
       "lp_cost": 5,
       "obtained": true,
-      "equipped_by": "Lune",
+      "equipped_by": null,
       "lumina_learned": false,
       "level": 11,
       "stats": {
@@ -1643,7 +1654,12 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 23
+      "level": 23,
+      "stats": {
+        "defence": 1310,
+        "crit": "13%"
+      },
+      "notes": "Not recommended for Matt."
     },
     {
       "name": "Inverted Affinity",
@@ -1712,7 +1728,7 @@
       "effect": "On applying Shell, its duration is increased by 2.",
       "lp_cost": 10,
       "obtained": true,
-      "equipped_by": "Lune",
+      "equipped_by": "Monoco",
       "lumina_learned": false,
       "level": 29,
       "stats": {
@@ -1781,7 +1797,12 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 20
+      "level": 20,
+      "stats": {
+        "speed": 280,
+        "crit": "23%"
+      },
+      "notes": "Not recommended for Matt."
     },
     {
       "name": "Piercing Shot",
@@ -1983,8 +2004,8 @@
       "lumina_learned": false,
       "level": 25,
       "stats": {
-        "speed": 672,
-        "crit": "36%"
+        "speed": 434,
+        "crit": "28%"
       }
     },
     {
@@ -2185,7 +2206,11 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 22
+      "level": 22,
+      "stats": {
+        "defence": 801,
+        "speed": 161
+      }
     },
     {
       "name": "Shielding Tint",
@@ -2242,11 +2267,11 @@
       "effect": "First Free Aim shot each turn deals 200% increased damage and can Break.",
       "lp_cost": 15,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Monoco",
       "lumina_learned": false,
       "level": 23,
       "stats": {
-        "speed": 529,
+        "speed": 525,
         "crit": "13%"
       }
     },
@@ -2318,7 +2343,7 @@
       "effect": "Survive fatal damage with 1 Health once per battle",
       "lp_cost": 20,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Maelle",
       "lumina_learned": false,
       "level": 21,
       "stats": {
@@ -2427,7 +2452,7 @@
   ],
   "core_lumina_suite": {
     "main_team": {
-      "total_lp": 154,
+      "total_lp": 194,
       "entries": [
         {
           "name": "Painted Power",
@@ -2501,9 +2526,14 @@
           "name": "Cheater",
           "lp": 40,
           "notes": "Free for Cheater Pictos holders"
+        },
+        {
+          "name": "Energy Master",
+          "lp": 40,
+          "notes": "Free for Sciel (Energy Master Pictos)"
         }
       ],
-      "notes": "Applied via in-game Lumina set. Cheater costs 0LP for characters with Cheater Pictos."
+      "notes": "Applied via in-game Lumina set. Cheater costs 0LP for characters with Cheater Pictos. Energy Master costs 0LP for Sciel who holds the Pictos."
     },
     "reserve_team": {
       "total_lp": 110,
@@ -2574,7 +2604,7 @@
   },
   "characters": {
     "Maelle": {
-      "level": 82,
+      "level": 83,
       "pictos": [
         {
           "name": "Burning Break",
@@ -2589,21 +2619,21 @@
           "level": 21
         }
       ],
-      "lumina_lp_total": 165,
-      "lumina_lp_used": 164,
-      "lumina_notes": "1LP spare.",
+      "lumina_lp_total": 196,
+      "lumina_lp_used": 194,
+      "lumina_notes": "2P spare.",
       "lumina_additions": [],
       "lumina_removals": [],
       "lumina_extras": [
         {
           "name": "Energising Attack I",
           "lp": 10,
-          "notes": "Added during solo build, kept — useful for Lithum rotation"
+          "notes": "Added during solo build, kept \u2014 useful for Lithum rotation"
         }
       ]
     },
     "Verso": {
-      "level": 81,
+      "level": 82,
       "pictos": [
         {
           "name": "Cheater",
@@ -2618,8 +2648,8 @@
           "level": 16
         }
       ],
-      "lumina_lp_total": 154,
-      "lumina_lp_used": 154,
+      "lumina_lp_total": 194,
+      "lumina_lp_used": 194,
       "lumina_notes": "0LP spare. Survivor Lumina added (20LP). Breaking Death Pictos kept for stats.",
       "lumina_additions": [
         {
@@ -2649,7 +2679,7 @@
       "lumina_core_adjustments": "Minus Cheater, Breaking Death (free from Pictos), Base Shield (non-functional with Chevalam)"
     },
     "Sciel": {
-      "level": 81,
+      "level": 82,
       "pictos": [
         {
           "name": "Critical Burn",
@@ -2664,15 +2694,9 @@
           "level": 25
         }
       ],
-      "lumina_lp_total": 175,
-      "lumina_lp_used": 170,
-      "lumina_notes": "4LP spare. Base Shield added at 20LP this session. Pool expanded by 9 Colour of Lumina.",
-      "lumina_additions": [
-        {
-          "name": "Base Shield",
-          "lp": 20
-        }
-      ],
+      "lumina_lp_total": 176,
+      "lumina_lp_used": 175,
+      "lumina_notes": "1LP spare.",
       "lumina_removals": [],
       "lumina_extras": [
         {
@@ -2699,7 +2723,7 @@
       ]
     },
     "Lune": {
-      "level": 76,
+      "level": 78,
       "pictos": [
         {
           "name": "Powerful On Shell",
@@ -2714,9 +2738,9 @@
           "level": 21
         }
       ],
-      "lumina_lp_total": 122,
+      "lumina_lp_total": 123,
       "lumina_lp_used": 120,
-      "lumina_notes": "2LP spare. Cheater deferred.",
+      "lumina_notes": "3LP spare. Cheater deferred.",
       "lumina_additions": [
         {
           "name": "Protecting Heal",
@@ -2736,7 +2760,7 @@
       ]
     },
     "Monoco": {
-      "level": 77,
+      "level": 78,
       "pictos": [
         {
           "name": "Longer Shell",
@@ -2751,9 +2775,9 @@
           "level": 23
         }
       ],
-      "lumina_lp_total": 127,
+      "lumina_lp_total": 128,
       "lumina_lp_used": 91,
-      "lumina_notes": "36LP free after removing healing Lumina. Needs work.",
+      "lumina_notes": "37LP free after removing healing Lumina. Needs work.",
       "lumina_additions": [],
       "lumina_removals": [],
       "lumina_extras": [
@@ -2772,7 +2796,7 @@
       "lp": 40,
       "notes": "Game-change but expensive; consider when expanding core set."
     },
-{
+    {
       "name": "Healing Boon",
       "lp": 10,
       "notes": "Consider for Sciel with Litheson."
@@ -2795,34 +2819,34 @@
     {
       "name": "Energising Burn",
       "lp": 10,
-      "notes": "Consider when expanding core set — all characters have Burning Shots so fires regularly."
+      "notes": "Consider when expanding core set \u2014 all characters have Burning Shots so fires regularly."
     },
     {
       "name": "Empowering Dodge",
       "lp": 5,
-      "notes": "Test empirically before committing — reset on parry unconfirmed."
+      "notes": "Test empirically before committing \u2014 reset on parry unconfirmed."
     }
   ],
   "situational_lumina": [
     {
       "name": "Anti-Blight",
       "lp": 10,
-      "notes": "All characters — vs bosses applying Blight. Add as Lumina; no need to move Pictos."
+      "notes": "All characters \u2014 vs bosses applying Blight. Add as Lumina; no need to move Pictos."
     },
     {
       "name": "Anti-Burn",
       "lp": 15,
-      "notes": "All characters — vs bosses applying Burn regularly."
+      "notes": "All characters \u2014 vs bosses applying Burn regularly."
     },
     {
       "name": "Anti-Freeze",
       "lp": 15,
-      "notes": "All characters — vs bosses applying Freeze. LP cost unconfirmed."
+      "notes": "All characters \u2014 vs bosses applying Freeze. LP cost unconfirmed."
     },
     {
       "name": "Draining Cleanse",
       "lp": 15,
-      "notes": "Status effect prevention — 1AP cost per use. High LP cost; situational."
+      "notes": "Status effect prevention \u2014 1AP cost per use. High LP cost; situational."
     }
   ]
 }

@@ -6,7 +6,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 
 **194 Pictos total.** 133 obtained.
 
------
+---
 
 ## AP and Energy (32 Pictos, 24 obtained)
 
@@ -40,12 +40,12 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 | ✓ | Energising Start IV | +1 AP on battle start. | 20 |  |  |
 |  | Energising Stun | +1 AP on hitting a Stunned target with a Skill. | 10 |  |  |
 | ✓ | Energising Turn | +1 AP on turn start. | 20 | Monoco |  |
-| ✓ | Energy Master | Every AP gain is increased by 1 | 40 | Maelle |  |
+| ✓ | Energy Master | Every AP gain is increased by 1 | 40 | Sciel |  |
 | ✓ | Perilous Parry | +1 AP on Parry, but damage received is doubled. | 5 |  |  |
 | ✓ | Rewarding Mark | +2 AP on dealing damage to a Marked target. Once per turn. | 5 |  | mark |
 | ✓ | Weakness Gain | +1 AP on hitting an enemy's Weakness. Once per turn. | 3 |  |  |
 
------
+---
 
 ## Break (13 Pictos, 8 obtained)
 
@@ -65,7 +65,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 | ✓ | Quick Break | Play again on Breaking a target. | 3 | Sciel |  |
 | ✓ | Staggering Attack | 50% increased Break damage on Base Attack. | 1 |  |  |
 
------
+---
 
 ## Burn (8 Pictos, 7 obtained)
 
@@ -80,7 +80,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 | ✓ | Double Burn | On applying a Burn stack, apply a second one. | 30 |  |  |
 |  | Longer Burn | Burn duration is increased by 2. | 15 |  |  |
 
------
+---
 
 ## Critical Hit (5 Pictos, 2 obtained)
 
@@ -92,9 +92,9 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 |  | Critical Vulnerability | 25% increased Critical Chance on Defenceless enemies. | 5 |  |  |
 |  | Critical Weakness | 25% increased Critical Chance on Weakness. | 5 |  |  |
 
------
+---
 
-## Damage Modifiers (31 Pictos, 22 obtained)
+## Damage Modifiers (30 Pictos, 21 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
 |---|---|---|---|---|---|
@@ -105,7 +105,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 | ✓ | Augmented Counter II | 50% increased Counterattack damage. | 5 |  |  |
 |  | Augmented Counter III | 75% increased Counterattack damage. | 7 |  |  |
 | ✓ | Augmented First Strike | 50% increased damage on the first hit. Once per battle. | 5 |  |  |
-| ✓ | Confident Fighter | Deal 30% more damage, but can't be healed. | 15 |  |  |
+| ✓ | Confident Fighter | 30% increased damage, but cannot be healed. | 15 |  |  |
 | ✓ | Empowering Attack | Gain Powerful for 1 turn on Base Attack. | 10 |  |  |
 |  | Empowering Break | Gain Powerful on Breaking a target. | 3 |  |  |
 | ✓ | Empowering Dodge | 5% increased damage per consecutive dodge, stacks up to 10 | 5 |  |  |
@@ -118,7 +118,6 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 | ✓ | Gradient Fighter | 25% increased damage with Gradient Attacks. | 5 |  | gradient |
 |  | Greater Defenceless | +15% to Defenceless damage amplification. | 15 |  |  |
 |  | Greater Powerful | +15% to Powerful damage increase. | 10 |  |  |
-| ✓ | Greater Slow | +10% to Slow Speed reduction. | 15 |  |  |
 | ✓ | Immaculate | 30% increased damage until a hit is received. | 10 |  |  |
 |  | Inverted Affinity | Apply Inverted on self for 3 turns on battle start. 50% increased damage while Inverted. | 5 |  |  |
 | ✓ | Painted Power | Damage can exceed 9,999. | 5 |  |  |
@@ -130,19 +129,19 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 |  | Tainted | 15% increased damage for each Status Effect on self. | — |  |  |
 | ✓ | Warming Up | 5% increased damage per turn, stacks up to 5 | 15 |  |  |
 
------
+---
 
 ## Death Effects (5 Pictos, 5 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
 |---|---|---|---|---|---|
-| ✓ | Auto Death | Kill self on battle start. | 1 |  | misc |
+| ✓ | Auto Death | Kill self on turn start. | 1 |  |  |
 | ✓ | Death Bomb | On Death, deal damage to all enemies. | 5 |  |  |
 | ✓ | Healing Death | On death, the rest of the Expedition recover all Health. | 5 |  | healing |
 | ✓ | Protecting Death | On death, allies gain Shell. | 5 |  | survival |
 | ✓ | Shielding Death | On death, allies gain 3 Shield points. | 10 |  | survival |
 
------
+---
 
 ## Gradient Charge (9 Pictos, 1 obtained)
 
@@ -158,7 +157,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 | ✓ | Charging Tint | +5% of a Gradient Charge on using an item. | 2 |  | support |
 |  | Charging Weakness | +15% of a Gradient Charge on hitting a Weakness. Once per turn. | 5 |  |  |
 
------
+---
 
 ## Healing (14 Pictos, 13 obtained)
 
@@ -172,14 +171,14 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 | ✓ | Healing Fire | Recover 25% Health when attacking a Burning target. Once per turn. | 10 |  |  |
 | ✓ | Healing Mark | Recover 25% Health on hitting a Marked enemy. Once per turn. | 20 |  |  |
 | ✓ | Healing Parry | Recover 3% Health on Parry. | 5 |  |  |
-| ✓ | Healing Share | Receive 15% of all Heals affecting other characters. | 5 | Lune |  |
+| ✓ | Healing Share | Receive 15% of all Heals affecting other characters. | 5 |  |  |
 | ✓ | Healing Stun | Recover 5% Health on hitting a Stunned target. | 10 |  |  |
 | ✓ | Healing Tint Energy | Healing Tints also give 1 AP. | 1 |  |  |
 | ✓ | Recovery | Recovers 10% Health on turn start. | 10 |  |  |
 | ✓ | Shared Care | When Healing an ally, also Heal self for 50% of that value. | 10 |  |  |
 | ✓ | Sweet Kill | Recover 50% Health on killing an enemy. | 5 |  |  |
 
------
+---
 
 ## Mark (6 Pictos, 2 obtained)
 
@@ -192,7 +191,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 |  | Powerful Mark | Gain Powerful on hitting a Marked target. | 5 |  |  |
 |  | Stay Marked | 50% chance to apply Mark when attacking a Marked target. | 10 |  |  |
 
------
+---
 
 ## Combat Flow (9 Pictos, 6 obtained)
 
@@ -205,10 +204,10 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 |  | Faster Than Strong | Always play twice in a row, but deal 50% less damage. | 10 |  |  |
 | ✓ | First Strike | Play first. | 10 |  |  |
 | ✓ | Piercing Shot | 25% increased Free Aim damage. Free Aim shots ignore Shields. | 2 |  | shots |
-| ✓ | Sniper | First Free Aim shot each turn deals 200% increased damage and can Break. | 15 |  | shots |
+| ✓ | Sniper | First Free Aim shot each turn deals 200% increased damage and can Break. | 15 | Monoco | shots |
 | ✓ | Versatile | After a Free Aim hit, Base Attack damage is increased by 50% for 1 turn. | 5 |  |  |
 
------
+---
 
 ## Solo and Last Stand (5 Pictos, 5 obtained)
 
@@ -220,15 +219,15 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 | ✓ | Protecting Last Stand | Gain Shell if fighting alone. | 3 |  | survival |
 | ✓ | Solo Fighter | Deal 50% more damage if fighting alone. | 1 |  | damage |
 
------
+---
 
 ## Survival and Defence (26 Pictos, 21 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
 |---|---|---|---|---|---|
 | ✓ | Aegis Revival | +1 Shield on being revived. | 5 |  |  |
-| ✓ | Anti-Blight | Immune to Blight | 10 | Monoco |  |
-| ✓ | Anti-Burn | Immune to Burn | 15 | Monoco |  |
+| ✓ | Anti-Blight | Immune to Blight | 10 |  |  |
+| ✓ | Anti-Burn | Immune to Burn | 15 |  |  |
 | ✓ | Anti-Charm | Immune to Charm. | 10 |  |  |
 | ✓ | Anti-Freeze | Immune to Freeze | 15 |  |  |
 |  | Anti-Stun | Immune to Stun. | 5 |  |  |
@@ -239,7 +238,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 | ✓ | Draining Cleanse | Consume 1AP to prevent Status Effect application, if possible | 15 |  |  |
 | ✓ | Greater Shell | +10% to Shell damage reduction. | 10 |  |  |
 | ✓ | In Medias Res | +3 Shields on Battle Start, but max Health is halved. | 10 |  |  |
-| ✓ | Longer Shell | On applying Shell, its duration is increased by 2. | 10 | Lune |  |
+| ✓ | Longer Shell | On applying Shell, its duration is increased by 2. | 10 | Monoco |  |
 |  | Protecting Attack | Gain Shell for 1 turn on Base Attack. | 10 |  |  |
 |  | Protecting Shots | 20% chance to gain Shell on Free Aim shot. | 3 |  | shots |
 | ✓ | Protecting Tint | Healing Tints also apply Shell | 5 |  | support |
@@ -251,11 +250,11 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 |  | Shielding Tint | Healing Tints also add 2 Shields. | 10 |  | support |
 | ✓ | Shortcut | Immediately play when falling below 30% Health. Once per battle. | — |  |  |
 | ✓ | Solidifying | +2 Shields when the character's Health falls below 50%. Once per battle. | 10 |  |  |
-| ✓ | Survivor | Survive fatal damage with 1 Health once per battle | 20 |  |  |
+| ✓ | Survivor | Survive fatal damage with 1 Health once per battle | 20 | Maelle |  |
 
------
+---
 
-## Buffs and Support (28 Pictos, 17 obtained)
+## Buffs and Support (29 Pictos, 18 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
 |---|---|---|---|---|---|
@@ -271,6 +270,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 |  | Exposing Break | Apply Defenceless on Break. | 5 |  |  |
 |  | Greater Powerless | +15% to Powerless damage reduction. | 15 |  |  |
 |  | Greater Rush | +25% to Rush Speed increase. | 10 |  |  |
+| ✓ | Greater Slow | +15% to Slow Speed reduction. | 15 |  |  |
 | ✓ | Longer Powerful | On applying Powerful, its duration is increased by 2. | 10 |  |  |
 | ✓ | Longer Rush | On applying Rush, its duration is increased by 2. | 10 |  |  |
 |  | Powerful Heal | Healing an ally also applies Powerful for 1 turn. | 5 |  |  |
@@ -288,7 +288,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 | ✓ | Teamwork | 10% increased damage while all allies are alive. | 5 |  |  |
 | ✓ | Time Tint | Energy Tints also apply Rush. | 10 |  |  |
 
------
+---
 
 ## Miscellaneous (3 Pictos, 0 obtained)
 
@@ -298,4 +298,4 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 |  | Pro Retreat | Allows Flee to be instantaneous. | 40 |  |  |
 |  | The One | Max Health reduced to 1. | 1 |  |  |
 
------
+---
