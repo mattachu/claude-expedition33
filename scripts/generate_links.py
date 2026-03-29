@@ -28,16 +28,6 @@ FILES = [
     # Reference
     "reference/mechanics.md",
     "reference/pictos-lumina-catalogue.md",
-    # Scripts
-    "scripts/pipeline.md",
-    "scripts/apply_changelist.py",
-    "scripts/generate.py",
-    "scripts/split_transcript.py",
-    "scripts/transcript_to_md.py",
-    "scripts/turn_index.py",
-    # Root
-    "repo-structure.md",
-    "README.md",
     # Chat indexes
     "chats/chat0/chat0-index.md",
     "chats/chat1/chat1-index.md",
@@ -48,6 +38,9 @@ FILES = [
     "chats/chat6/chat6-index.md",
     "chats/chat7/chat7-index.md",
     "chats/chat8/chat8-index.md",
+    # Root
+    "repo-structure.md",
+    "README.md",
 ]
 
 lines = [
