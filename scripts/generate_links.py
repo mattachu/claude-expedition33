@@ -4,7 +4,7 @@
 import sys
 
 REPO = "mattachu/claude-expedition33"
-HASH = sys.argv[1]
+HASH = sys.argv[1][:8]
 BASE = f"https://cdn.jsdelivr.net/gh/{REPO}@{HASH}"
 
 FILES = [
