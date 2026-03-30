@@ -1,0 +1,1013 @@
+{
+  "_notes": "Skill reference data for all characters. Static — effects and AP costs do not change. Character state (learned/equipped) lives in data/characters.json. Monoco skills include Bestial Wheel data.",
+  "Maelle": [
+    {
+      "name": "Breaking Rules",
+      "ap": 3,
+      "description": "Destroys all target shields. Gains 1 AP per shield destroyed. If target is Defenceless: grants a second turn.",
+      "stance_change": "Offensive"
+    },
+    {
+      "name": "Burning Canvas",
+      "ap": 5,
+      "description": "High Void damage + 1 burn per hit. Damage increased for each burn stack on target.",
+      "stance_change": "Offensive"
+    },
+    {
+      "name": "Combustion",
+      "ap": 4,
+      "description": "Medium single target Physical damage. 2 hits. Consumes up to 10 Burn for increased damage.",
+      "stance_change": "Offensive"
+    },
+    {
+      "name": "Degagement",
+      "ap": 2,
+      "description": "Low Fire damage. Target becomes weak to Fire.",
+      "stance_change": "Offensive"
+    },
+    {
+      "name": "Égide",
+      "ap": 3,
+      "description": "Protects allies by taking damage in their place for 2 turns.",
+      "stance_change": "Defensive"
+    },
+    {
+      "name": "Fencer's Flurry",
+      "ap": 4,
+      "description": "Medium AoE. Applies Defenceless 1 turn.",
+      "stance_change": "Offensive"
+    },
+    {
+      "name": "Fleuret Fury",
+      "ap": 6,
+      "description": "3-hit high single-target Physical. Stays in Virtuose if already there. Can Break.",
+      "stance_change": null
+    },
+    {
+      "name": "Guard Up",
+      "ap": 3,
+      "description": "Shell buff for allies.",
+      "stance_change": "Offensive"
+    },
+    {
+      "name": "Gustave's Homage",
+      "ap": 8,
+      "description": "8-hit extreme Physical damage. Switches to Virtuose Stance.",
+      "stance_change": "Virtuose"
+    },
+    {
+      "name": "Last Chance",
+      "ap": 1,
+      "description": "Reduces self-health to 1. Refills all AP.",
+      "stance_change": "Virtuose"
+    },
+    {
+      "name": "Mezzo Forte",
+      "ap": 1,
+      "description": "Reapply current stance. Give 2–4 AP.",
+      "stance_change": null
+    },
+    {
+      "name": "Momentum Strike",
+      "ap": 7,
+      "description": "High damage. Costs 4 AP in Virtuose.",
+      "stance_change": "Defensive"
+    },
+    {
+      "name": "Offensive Switch",
+      "ap": 1,
+      "description": "Low damage. Applies Defenceless to enemy.",
+      "stance_change": "Offensive"
+    },
+    {
+      "name": "Payback",
+      "ap": 9,
+      "description": "Very high Physical damage. Reduced AP cost for each attack parried since last turn. Can Break.",
+      "stance_change": "Defensive"
+    },
+    {
+      "name": "Percée",
+      "ap": 5,
+      "ap_in_virtuose": 2,
+      "description": "Increased damage to Marked target. 2 AP in Virtuose but leaves Virtuose after — one use per Virtuose window.",
+      "stance_change": "Stanceless"
+    },
+    {
+      "name": "Phantom Strike",
+      "ap": 4,
+      "description": "4-hit very high Void AoE. Switches to Defensive stance. Gives +35% of a Gradient Charge.",
+      "stance_change": "Defensive"
+    },
+    {
+      "name": "Rain of Fire",
+      "ap": 5,
+      "description": "Medium Fire damage + 3 burn per hit, 2 hits. Applies 2 more burn per hit if in Defensive.",
+      "stance_change": "Offensive"
+    },
+    {
+      "name": "Spark",
+      "ap": 3,
+      "description": "Low Fire damage + 3 burn. Applies 2 more burn if in Offensive.",
+      "stance_change": "Defensive"
+    },
+    {
+      "name": "Stendhal",
+      "ap": 8,
+      "description": "Extreme single-target Void damage, 1 hit. Switches to Stanceless. Removes self-shields. Applies Defenceless to self. Nerfed 40% in Patch 1.2.3.",
+      "stance_change": "Stanceless"
+    },
+    {
+      "name": "Swift Stride",
+      "ap": 3,
+      "description": "Low Physical. Switches to Virtuose if target burning. Regains 0–2 AP.",
+      "stance_change": "Virtuose"
+    },
+    {
+      "name": "Sword Ballet",
+      "ap": 9,
+      "description": "5-hit extreme single-target weapon element. Crits deal double damage. Primary Virtuose damage skill.",
+      "stance_change": null
+    }
+  ],
+  "Verso": [
+    {
+      "name": "Assault Zero",
+      "ap": 3,
+      "description": "Medium Physical single target.",
+      "rank_bonus": {
+        "rank": "B",
+        "effect": "Increased damage"
+      }
+    },
+    {
+      "name": "Berserk Slash",
+      "ap": 4,
+      "description": "Medium Physical, 3 hits. Damage scales with missing HP.",
+      "rank_bonus": {
+        "rank": "C",
+        "effect": "Increased damage"
+      }
+    },
+    {
+      "name": "Blitz",
+      "ap": 3,
+      "description": "Insta-kills low-health enemies; otherwise deals damage.",
+      "rank_bonus": {
+        "rank": "B",
+        "effect": "Bonus only"
+      }
+    },
+    {
+      "name": "Burden",
+      "ap": 1,
+      "description": "Removes status effects from all allies.",
+      "rank_bonus": null
+    },
+    {
+      "name": "Defiant Strike",
+      "ap": 3,
+      "description": "2-hit Physical, 100% Mark. Costs 30% current HP.",
+      "rank_bonus": {
+        "rank": "B",
+        "effect": "Increased damage"
+      }
+    },
+    {
+      "name": "End Bringer",
+      "ap": 8,
+      "description": "Extreme Physical damage, 6 hits. Increased damage if target Stunned.",
+      "rank_bonus": {
+        "rank": "A",
+        "effect": "Can reapply stun on broken target"
+      }
+    },
+    {
+      "name": "From Fire",
+      "ap": 4,
+      "description": "Healing from Burn. Situational — only useful if enemies have burn.",
+      "rank_bonus": {
+        "rank": "B",
+        "effect": "Increased damage"
+      }
+    },
+    {
+      "name": "Leadership",
+      "ap": 3,
+      "description": "Extra AP to all allies.",
+      "rank_bonus": {
+        "rank": "C",
+        "effect": "+1 more AP to allies"
+      }
+    },
+    {
+      "name": "Light Holder",
+      "ap": 4,
+      "description": "Medium Light damage, 5 hits. Gains +1 Rank at completion.",
+      "rank_bonus": {
+        "rank": "A",
+        "effect": "+2 AP"
+      }
+    },
+    {
+      "name": "Marking Shot",
+      "ap": 2,
+      "description": "Low damage + 100% Mark. No HP cost.",
+      "rank_bonus": {
+        "rank": "C",
+        "effect": "Increased damage"
+      }
+    },
+    {
+      "name": "Paradigm Shift",
+      "ap": 1,
+      "description": "Generates 1–3 AP. C Rank: bonus only. NOT a rank jump to S.",
+      "rank_bonus": {
+        "rank": "C",
+        "effect": "Bonus only"
+      }
+    },
+    {
+      "name": "Perfect Break",
+      "ap": 7,
+      "ap_at_rank": {
+        "rank": "B",
+        "ap": 5
+      },
+      "description": "Very high Light damage. Can Break. Rank S on Break.",
+      "rank_bonus": {
+        "rank": "B",
+        "effect": "Costs 5 AP instead of 7"
+      }
+    },
+    {
+      "name": "Perfect Recovery",
+      "ap": 3,
+      "description": "Heals Verso only. Non-functional with Chevalam.",
+      "rank_bonus": {
+        "rank": "C",
+        "effect": "100% HP heal"
+      }
+    },
+    {
+      "name": "Phantom Stars",
+      "ap": 9,
+      "ap_at_rank": {
+        "rank": "S",
+        "ap": 5
+      },
+      "description": "AoE multi-hit all enemies. Trash fights only — useless in 1v1.",
+      "rank_bonus": null
+    },
+    {
+      "name": "Purification",
+      "ap": 5,
+      "description": "Medium Light damage, 2 hits. Dispels self status effects.",
+      "rank_bonus": {
+        "rank": "B",
+        "effect": "Increased damage"
+      }
+    },
+    {
+      "name": "Quick Strike",
+      "ap": 2,
+      "description": "Low Physical.",
+      "rank_bonus": {
+        "rank": "D",
+        "effect": "Gives more Perfection"
+      }
+    },
+    {
+      "name": "Steeled Strike",
+      "ap": 9,
+      "description": "After 1 turn charge, extreme Physical damage. Interrupted if damage taken during charge.",
+      "rank_bonus": {
+        "rank": "S",
+        "effect": "Increased damage"
+      }
+    },
+    {
+      "name": "Strike Storm",
+      "ap": 7,
+      "description": "5-hit high single-target weapon element.",
+      "rank_bonus": {
+        "rank": "C",
+        "effect": "Crits give +2 Perfection"
+      }
+    }
+  ],
+  "Sciel": [
+    {
+      "name": "Dark Cleansing",
+      "ap": 0,
+      "description": "Cleanses an ally of their status effects and propagates that ally's buffs to all allies.",
+      "charge": "Moon"
+    },
+    {
+      "name": "Dark Wave",
+      "ap": 6,
+      "description": "High Dark AoE, 3 hits. Consumes all Foretell for increased damage.",
+      "charge": "Moon"
+    },
+    {
+      "name": "Delaying Slash",
+      "ap": 6,
+      "description": "High single-target Dark damage. Consumes Foretell for increased damage. Delays target's next turn.",
+      "charge": "Moon"
+    },
+    {
+      "name": "Final Path",
+      "ap": 9,
+      "description": "High damage, applies 10 Foretell in one turn. Fast route to big Plentiful Harvest.",
+      "charge": "Sun"
+    },
+    {
+      "name": "Firing Shadow",
+      "ap": 3,
+      "description": "Low Dark AoE, 3 hits. Consumes 1 Foretell per hit for increased damage.",
+      "charge": "Moon"
+    },
+    {
+      "name": "Focused Foretell",
+      "ap": 2,
+      "description": "Applies 2 Foretell (or 5 if target has none). Core Foretell reset mechanic for Plentiful Harvest loop.",
+      "charge": "Sun"
+    },
+    {
+      "name": "Fortune's Fury",
+      "ap": 5,
+      "description": "Doubles one ally's damage for their next turn. Must be used before target acts.",
+      "charge": null
+    },
+    {
+      "name": "Grim Harvest",
+      "ap": 5,
+      "description": "Medium single-target Dark damage, 1 hit. Heals all allies 30% HP + 5% per Foretell consumed.",
+      "charge": "Moon"
+    },
+    {
+      "name": "Harvest",
+      "ap": 3,
+      "description": "Heals Sciel based on Foretell stacks consumed.",
+      "charge": "Moon"
+    },
+    {
+      "name": "Intervention",
+      "ap": 5,
+      "description": "Grants targeted ally an immediate extra turn + 4 AP (Greater Rush).",
+      "charge": null
+    },
+    {
+      "name": "Phantom Blade",
+      "ap": 5,
+      "description": "High single-target Dark damage, 1 hit. Consumes all Foretell for increased damage. Can Break.",
+      "charge": "Moon"
+    },
+    {
+      "name": "Plentiful Harvest",
+      "ap": 4,
+      "description": "Consumes all Foretell on target → 1 AP per stack, split between party. 5 stacks = +2/+2/+1; 10 stacks = +3/+3/+4.",
+      "charge": "Moon"
+    },
+    {
+      "name": "Sealed Fate",
+      "ap": 4,
+      "description": "High single-target weapon element, 5–7 hits. Each hit consumes 1 Foretell for 200% more damage. Crits don't remove Foretell.",
+      "charge": "Moon"
+    },
+    {
+      "name": "Searing Bond",
+      "ap": 4,
+      "description": "Medium single-target Dark, 1 hit. Applies 5 Foretell. Also deals damage and applies Foretell to every other Burning enemy.",
+      "charge": "Sun"
+    },
+    {
+      "name": "Twilight Dance",
+      "ap": 9,
+      "description": "High single-target Dark damage in Twilight state. Consumes Foretell. Extends Twilight duration by 1 turn.",
+      "charge": "Moon"
+    },
+    {
+      "name": "Twilight Slash",
+      "ap": 2,
+      "description": "Low single-target Physical damage. Applies 2 Foretell.",
+      "charge": "Sun"
+    }
+  ],
+  "Lune": [
+    {
+      "name": "Crustal Crush",
+      "ap": 7,
+      "description": "High single-target Earth damage + Break damage, 5 hits. Consumes Lightning Stain ×2 for increased damage (×3).",
+      "stains_generated": [
+        "Earth",
+        "Light"
+      ],
+      "stains_consumed": [
+        "Lightning",
+        "Lightning"
+      ]
+    },
+    {
+      "name": "Earth Rising",
+      "ap": 3,
+      "description": "Low Earth AoE, 1 hit. Consumes Lightning Stain for increased damage (×1.5).",
+      "stains_generated": [
+        "Earth"
+      ],
+      "stains_consumed": [
+        "Lightning"
+      ]
+    },
+    {
+      "name": "Electrify",
+      "ap": 1,
+      "description": "Low single-target Lightning damage, 3 hits. Crits trigger an additional hit. Consumes Fire Stain to generate Light Stain.",
+      "stains_generated": [
+        "Lightning",
+        "Lightning"
+      ],
+      "stains_consumed": [
+        "Fire"
+      ]
+    },
+    {
+      "name": "Elemental Genesis",
+      "ap": 4,
+      "description": "Extreme damage to all enemies, 8 hits. Each hit deals random element damage. Requires Lightning, Earth, Fire and Ice Stains.",
+      "stains_generated": [],
+      "stains_consumed": [
+        "Fire",
+        "Ice",
+        "Lightning",
+        "Earth"
+      ]
+    },
+    {
+      "name": "Elemental Trick",
+      "ap": 3,
+      "description": "Low single-target Ice, Fire, Lightning, and Earth damage, 4 hits. Critical hits generate the corresponding Stain.",
+      "stains_generated": [],
+      "stains_consumed": []
+    },
+    {
+      "name": "Fire Rage",
+      "ap": 5,
+      "description": "Increasingly high Fire AoE every turn until Lune receives damage. Stuns itself if interrupted. Consumes Ice Stain ×2 for increased damage (×2).",
+      "stains_generated": [
+        "Fire",
+        "Light"
+      ],
+      "stains_consumed": [
+        "Ice",
+        "Ice"
+      ]
+    },
+    {
+      "name": "Healing Light",
+      "ap": 3,
+      "description": "Heals targeted ally 30–50% HP and dispels all status effects. Consumes Earth Stain ×2 for 0 AP cost. Generates Light Stain.",
+      "stains_generated": [
+        "Light"
+      ],
+      "stains_consumed": [
+        "Earth",
+        "Earth"
+      ]
+    },
+    {
+      "name": "Hell",
+      "ap": 9,
+      "description": "Very high Fire AoE, 2 hits. Applies 5 Burn per hit. Deals self-damage if failed. Consumes Ice, Earth and Lightning Stains for greatly increased damage (×3).",
+      "stains_generated": [
+        "Fire",
+        "Light"
+      ],
+      "stains_consumed": [
+        "Ice",
+        "Earth",
+        "Lightning"
+      ]
+    },
+    {
+      "name": "Ice Lance",
+      "ap": 4,
+      "description": "Medium single-target Ice damage, 1 hit. Slows target 3 turns. Consumes Earth Stain for increased damage (×1.5).",
+      "stains_generated": [
+        "Ice",
+        "Light"
+      ],
+      "stains_consumed": [
+        "Earth"
+      ]
+    },
+    {
+      "name": "Immolation",
+      "ap": 2,
+      "description": "Low single-target Fire damage, 1 hit. Applies 3 Burn. Applies 2 more Burn if target is Marked. Consumes Ice Stain for increased damage (×1.5).",
+      "stains_generated": [
+        "Fire"
+      ],
+      "stains_consumed": [
+        "Ice"
+      ]
+    },
+    {
+      "name": "Lightning Dance",
+      "ap": 7,
+      "description": "Very high single-target Lightning damage, 6 hits. Crits trigger an additional hit. Consumes Earth, Ice and Fire Stains for greatly increased damage (×5).",
+      "stains_generated": [
+        "Lightning",
+        "Light"
+      ],
+      "stains_consumed": [
+        "Earth",
+        "Ice",
+        "Fire"
+      ]
+    },
+    {
+      "name": "Mayhem",
+      "ap": 3,
+      "description": "Consumes all Stains to deal high elemental damage, 1–4 hits. Can Break if 4 Stains consumed.",
+      "stains_generated": [],
+      "stains_consumed": [
+        "all"
+      ]
+    },
+    {
+      "name": "Rebirth",
+      "ap": 5,
+      "description": "Revives an ally with 30–70% Health and 2 AP. Consumes Lightning Stain ×3 for 0 AP cost.",
+      "stains_generated": [
+        "Light"
+      ],
+      "stains_consumed": [
+        "Lightning",
+        "Lightning",
+        "Lightning"
+      ]
+    },
+    {
+      "name": "Revitalisation",
+      "ap": 5,
+      "description": "Heals 1–3 allies 40–60% Health. Consumes Fire Stain ×3 to also apply Regen for 3 turns.",
+      "stains_generated": [
+        "Light"
+      ],
+      "stains_consumed": [
+        "Fire",
+        "Fire",
+        "Fire"
+      ]
+    },
+    {
+      "name": "Rockslide",
+      "ap": 5,
+      "description": "Medium single-target Earth damage, 2 hits. Can Break. Consumes Lightning, Ice and Fire Stains for greatly increased damage (×5).",
+      "stains_generated": [
+        "Earth",
+        "Light"
+      ],
+      "stains_consumed": [
+        "Lightning",
+        "Ice",
+        "Fire"
+      ]
+    },
+    {
+      "name": "Terraquake",
+      "ap": 5,
+      "description": "Earth AoE + deals Earth and Break damage to all enemies every turn for 3 turns. Increases all Break damage received by 50%. Consumes Lightning Stain ×2 to extend to 5 turns.",
+      "stains_generated": [
+        "Earth",
+        "Light"
+      ],
+      "stains_consumed": [
+        "Lightning",
+        "Lightning"
+      ]
+    },
+    {
+      "name": "Thermal Transfer",
+      "ap": 2,
+      "description": "Low single-target Ice damage, 2 hits. Gains 4 AP if target is Burning. Consumes Earth Stain ×2: Play a second turn.",
+      "stains_generated": [
+        "Ice"
+      ],
+      "stains_consumed": [
+        "Earth",
+        "Earth"
+      ]
+    },
+    {
+      "name": "Thunderfall",
+      "ap": 5,
+      "description": "Medium Lightning damage to random enemies, 2–6 hits. Crits trigger an additional hit. Consumes Fire Stain for increased damage (×1.5).",
+      "stains_generated": [
+        "Lightning",
+        "Light"
+      ],
+      "stains_consumed": [
+        "Fire"
+      ]
+    },
+    {
+      "name": "Typhoon",
+      "ap": 8,
+      "description": "Ice AoE + on turn start deals high Ice damage to all enemies and heals allies 20% HP for 3 turns. Consumes Earth Stain ×2 to extend to 5 turns.",
+      "stains_generated": [
+        "Ice",
+        "Light"
+      ],
+      "stains_consumed": [
+        "Earth",
+        "Earth"
+      ]
+    },
+    {
+      "name": "Wildfire",
+      "ap": 4,
+      "description": "Medium Fire AoE, 1 hit. Applies 3 Burn. Consumes Ice Stain ×2 for increased damage (×2).",
+      "stains_generated": [
+        "Fire",
+        "Light"
+      ],
+      "stains_consumed": [
+        "Ice",
+        "Ice"
+      ]
+    }
+  ],
+  "Monoco": [
+    {
+      "name": "Abbest Wind",
+      "ap": 2,
+      "wheel": 2,
+      "mask": "Agile",
+      "description": "Low Physical single target, 1 hit. Plays a second turn.",
+      "mask_bonus": "Costs 0 AP"
+    },
+    {
+      "name": "Aberration Light",
+      "ap": 7,
+      "wheel": 4,
+      "mask": "Agile",
+      "description": "High Light AoE, 2 hits. Applies 4 Burn per hit.",
+      "mask_bonus": "Applies 2 more Burn per hit"
+    },
+    {
+      "name": "Ballet Charm",
+      "ap": 2,
+      "wheel": 3,
+      "mask": "Caster",
+      "description": "Low Light single target, 1 hit. Applies Powerless 3 turns.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Bénisseur Mortar",
+      "ap": 5,
+      "wheel": 6,
+      "mask": "Caster",
+      "description": "Medium Ice single target, 3 hits. Jumps to Almighty Mask if target is Marked.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Boucheclier Fortify",
+      "ap": 3,
+      "wheel": 5,
+      "mask": "Heavy",
+      "description": "Applies Shell to 1–3 allies for 3 turns.",
+      "mask_bonus": "Also applies 1 Shield"
+    },
+    {
+      "name": "Braseleur Smash",
+      "ap": 4,
+      "wheel": 2,
+      "mask": "Balanced",
+      "description": "Medium Fire single target, 2 hits. Applies 3 Burn.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Bruler Bash",
+      "ap": 4,
+      "wheel": 4,
+      "mask": "Caster",
+      "description": "Medium Physical single target, 3 hits. Can Break.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Chalier Combo",
+      "ap": 7,
+      "wheel": 3,
+      "mask": "Balanced",
+      "description": "High Physical single target, 6 hits. Interrupted if failed.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Chapelier Slash",
+      "ap": 7,
+      "wheel": 4,
+      "mask": "Agile",
+      "description": "High Physical AoE, 3 hits. Applies Mark.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Chevalière Ice",
+      "ap": 6,
+      "wheel": 2,
+      "mask": "Balanced",
+      "description": "High Ice AoE, 3 hits. Applies Slow 3 turns.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Chevalière Piercing",
+      "ap": 3,
+      "wheel": 3,
+      "mask": "Agile",
+      "description": "Physical single target through Shields, 6 hits. More damage per Shield on target.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Chevalière Thrusts",
+      "ap": 7,
+      "wheel": 3,
+      "mask": "Heavy",
+      "description": "High Physical AoE, 3 hits. Crits deal double damage.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Clair Enfeeble",
+      "ap": 5,
+      "wheel": 3,
+      "mask": "Balanced",
+      "description": "Medium Light AoE, 1 hit. Applies Powerless 3 turns.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Contorsionniste Blast",
+      "ap": 6,
+      "wheel": 2,
+      "mask": "Balanced",
+      "description": "Medium Physical AoE, 1 hit. Heals all allies 10% HP per enemy hit.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Creation Void",
+      "ap": null,
+      "wheel": 4,
+      "mask": "Caster",
+      "description": "Extreme Void damage to random targets, 3 hits. More damage if same target hit multiple times.",
+      "mask_bonus": "Increased damage",
+      "_note": "AP cost unconfirmed — skill not yet learned"
+    },
+    {
+      "name": "Cruler Barrier",
+      "ap": 4,
+      "wheel": 4,
+      "mask": "Heavy",
+      "description": "Applies 1–2 Shields to target.",
+      "mask_bonus": "Gives 2 AP to target"
+    },
+    {
+      "name": "Cultist Blood",
+      "ap": 3,
+      "wheel": 5,
+      "mask": "Heavy",
+      "description": "Medium Dark AoE, 3 hits. Sacrifices 90% HP for increased damage.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Cultist Slashes",
+      "ap": 5,
+      "wheel": 3,
+      "mask": "Agile",
+      "description": "Medium Dark single target, 3 hits. More damage the less HP Monoco has.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Danseuse Waltz",
+      "ap": 8,
+      "wheel": 3,
+      "mask": "Balanced",
+      "description": "High Fire single target, 3 hits. More damage against Burning targets.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Démineur Thunder",
+      "ap": 2,
+      "wheel": 5,
+      "mask": "Caster",
+      "description": "Low Lightning single target, 1 hit. Extra Break damage.",
+      "mask_bonus": "Increased Break damage"
+    },
+    {
+      "name": "Duallist Storm",
+      "ap": 8,
+      "wheel": 1,
+      "mask": "Almighty",
+      "description": "Extreme Physical single target, 4 hits. Can Break.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Échassier Stabs",
+      "ap": 4,
+      "wheel": 4,
+      "mask": "Agile",
+      "description": "Medium Physical single target, 2 hits. Second hit applies Mark.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Évêque Spear",
+      "ap": 6,
+      "wheel": 3,
+      "mask": "Heavy",
+      "description": "High Earth single target, 1 hit. Applies Powerless 3 turns.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Gault Fury",
+      "ap": 3,
+      "wheel": 2,
+      "mask": "Balanced",
+      "description": "Low Physical single target, 4 hits. Applies Mark.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Glaise Earthquakes",
+      "ap": 4,
+      "wheel": 6,
+      "mask": "Heavy",
+      "description": "Medium Earth AoE, 3 hits. Applies Powerful to self.",
+      "mask_bonus": "Applies Powerful to all allies"
+    },
+    {
+      "name": "Grosse Tête Whack",
+      "ap": 6,
+      "wheel": 4,
+      "mask": "Heavy",
+      "description": "High Physical single target, 5 hits. Applies Defenceless 3 turns.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Hexga Crush",
+      "ap": 5,
+      "wheel": 6,
+      "mask": "Heavy",
+      "description": "Medium Earth single target, 2 hits. Applies Defenceless 3 turns.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Jar Lampstorm",
+      "ap": 5,
+      "wheel": 6,
+      "mask": "Heavy",
+      "description": "Medium Physical AoE, 4 hits.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Lampmaster Light",
+      "ap": 5,
+      "wheel": 1,
+      "mask": "Almighty",
+      "description": "High Light AoE, 1 hit. Increased damage at each cast.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Lancelier Impale",
+      "ap": 2,
+      "wheel": 4,
+      "mask": "Agile",
+      "description": "Low Ice single target, 1 hit. Slows target 3 turns.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Luster Slices",
+      "ap": 3,
+      "wheel": 3,
+      "mask": "Agile",
+      "description": "Low Physical single target, 3 hits. Applies Rush to self 3 turns.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Moissonneuse Vendange",
+      "ap": 5,
+      "wheel": 2,
+      "mask": "Balanced",
+      "description": "High Physical single target, 3 hits. Can Break.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Obscur Sword",
+      "ap": 6,
+      "wheel": 3,
+      "mask": "Heavy",
+      "description": "High Dark single target, 5 hits. More damage against Powerless targets.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Orphelin Cheers",
+      "ap": 3,
+      "wheel": 3,
+      "mask": "Caster",
+      "description": "Applies Powerful to 1–3 allies.",
+      "mask_bonus": "Also gives 3 AP to targets"
+    },
+    {
+      "name": "Pèlerin Heal",
+      "ap": 5,
+      "wheel": 3,
+      "mask": "Caster",
+      "description": "Applies Regen to all allies. On Caster Mask heals 40% HP.",
+      "mask_bonus": "Also heals 40% HP"
+    },
+    {
+      "name": "Portier Crash",
+      "ap": 8,
+      "wheel": 5,
+      "mask": "Heavy",
+      "description": "High Physical AoE, 1 hit. Can Break.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Potier Energy",
+      "ap": 4,
+      "wheel": 6,
+      "mask": "Caster",
+      "description": "Gives 1–3 AP to all allies.",
+      "mask_bonus": "Gives 1 additional AP"
+    },
+    {
+      "name": "Ramasseur Bonk",
+      "ap": 2,
+      "wheel": 4,
+      "mask": "Agile",
+      "description": "Low Dark single target, 1 hit. Can Break.",
+      "mask_bonus": "Fills 20% of target's Break Bar"
+    },
+    {
+      "name": "Rocher Hammering",
+      "ap": 3,
+      "wheel": 3,
+      "mask": "Heavy",
+      "description": "Medium Physical single target, 4 hits. Can Break.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Sakapatate Estoc",
+      "ap": 3,
+      "wheel": 3,
+      "mask": "Balanced",
+      "description": "Low Lightning single target, 1 hit. More damage if target is Stunned.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Sakapatate Explosion",
+      "ap": 4,
+      "wheel": 6,
+      "mask": "Caster",
+      "description": "Medium Lightning random targets, 3 hits. Crits trigger an additional hit.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Sakapatate Fire",
+      "ap": null,
+      "wheel": 1,
+      "mask": "Almighty",
+      "description": "Extreme Fire AoE, 3 hits. Applies 3 Burn per hit.",
+      "mask_bonus": "Increased damage",
+      "_note": "AP cost unconfirmed — skill not yet learned"
+    },
+    {
+      "name": "Sakapatate Slam",
+      "ap": 7,
+      "wheel": 5,
+      "mask": "Heavy",
+      "description": "High Physical AoE, 1 hit. Increased damage against Marked targets.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Sapling Absorption",
+      "ap": 6,
+      "wheel": 5,
+      "mask": "Caster",
+      "description": "High Dark, 3 hits. Recovers 5% HP per hit.",
+      "mask_bonus": "Increased damage and double heal"
+    },
+    {
+      "name": "Stalact Punches",
+      "ap": 4,
+      "wheel": 4,
+      "mask": "Heavy",
+      "description": "Medium Ice single target, 4 hits. High Break damage.",
+      "mask_bonus": "Increased damage"
+    },
+    {
+      "name": "Troubadour Trumpet",
+      "ap": 3,
+      "wheel": 4,
+      "mask": "Caster",
+      "description": "Applies a random buff to 1–3 allies.",
+      "mask_bonus": "Applies a second random buff"
+    }
+  ]
+}

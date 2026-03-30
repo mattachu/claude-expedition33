@@ -7,7 +7,6 @@ Paste this file's content at session start. Claude fetches files from these URLs
 - `overview/claude-expedition33.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@d56bd4093e90157f8440b281b658647dede15949/overview/claude-expedition33.md
 - `overview/party-summary.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@d56bd4093e90157f8440b281b658647dede15949/overview/party-summary.md
 - `overview/pictos-lumina-summary.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@d56bd4093e90157f8440b281b658647dede15949/overview/pictos-lumina-summary.md
-- `overview/historical-errors.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@d56bd4093e90157f8440b281b658647dede15949/overview/historical-errors.md
 - `data/playthrough.json`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@d56bd4093e90157f8440b281b658647dede15949/data/playthrough.json
 - `data/characters.json`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@d56bd4093e90157f8440b281b658647dede15949/data/characters.json
 - `data/skills.json`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@d56bd4093e90157f8440b281b658647dede15949/data/skills.json
@@ -20,6 +19,7 @@ Paste this file's content at session start. Claude fetches files from these URLs
 - `characters/monoco.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@d56bd4093e90157f8440b281b658647dede15949/characters/monoco.md
 - `reference/mechanics.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@d56bd4093e90157f8440b281b658647dede15949/reference/mechanics.md
 - `reference/pictos-lumina-catalogue.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@d56bd4093e90157f8440b281b658647dede15949/reference/pictos-lumina-catalogue.md
+- `reference/historical-errors.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@d56bd4093e90157f8440b281b658647dede15949/reference/historical-errors.md
 - `chats/chat0/chat0-index.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@d56bd4093e90157f8440b281b658647dede15949/chats/chat0/chat0-index.md
 - `chats/chat1/chat1-index.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@d56bd4093e90157f8440b281b658647dede15949/chats/chat1/chat1-index.md
 - `chats/chat2/chat2-index.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@d56bd4093e90157f8440b281b658647dede15949/chats/chat2/chat2-index.md

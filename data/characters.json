@@ -1,0 +1,493 @@
+{
+  "Maelle": {
+    "level": 83,
+    "role": "Primary DPS",
+    "attributes": {
+      "luck": 99,
+      "agility": 99,
+      "might": 51
+    },
+    "stats_base": null,
+    "stats_modified": {
+      "health": 3471,
+      "attack": 10436,
+      "speed": 2027,
+      "defence": 182,
+      "crit": "105%",
+      "_note": "Stats with Lithum (33), Burning Break (21), Gradient Break (25), Survivor (21) equipped"
+    },
+    "weapon_equipped": "Lithum",
+    "pictos_equipped": [
+      "Burning Break",
+      "Gradient Break",
+      "Survivor"
+    ],
+    "lp_total": 196,
+    "lp_used": 194,
+    "lumina_core_exclusions": [],
+    "lumina_extras": [
+      {
+        "name": "Energising Attack I",
+        "note": "Added during solo build, kept — useful for Lithum rotation"
+      }
+    ],
+    "skills_equipped": [
+      "Phantom Strike",
+      "Fleuret Fury",
+      "Percée",
+      "Gustave's Homage",
+      "Stendhal",
+      "Sword Ballet"
+    ],
+    "skills_learned": [
+      "Phantom Strike",
+      "Fleuret Fury",
+      "Percée",
+      "Gustave's Homage",
+      "Stendhal",
+      "Sword Ballet",
+      "Breaking Rules",
+      "Burning Canvas",
+      "Combustion",
+      "Degagement",
+      "Égide",
+      "Fencer's Flurry",
+      "Guard Up",
+      "Last Chance",
+      "Mezzo Forte",
+      "Momentum Strike",
+      "Offensive Switch",
+      "Payback",
+      "Rain of Fire",
+      "Spark",
+      "Swift Stride"
+    ],
+    "gradient_skills": [
+      {
+        "name": "Virtuose Strike",
+        "cost": 1,
+        "unlocked": true,
+        "effect": "High single-target physical damage, 5 hits; switches to Virtuose Stance."
+      },
+      {
+        "name": "Phoenix Flame",
+        "cost": 2,
+        "unlocked": true,
+        "effect": "Applies 10 Burn to all enemies; revives all allies with 50–70% Health; switches to Offensive Stance."
+      },
+      {
+        "name": "Gommage",
+        "cost": 3,
+        "unlocked": true,
+        "effect": "Kills weak targets; otherwise extreme Void damage 1 hit, then switches to Virtuose Stance."
+      }
+    ]
+  },
+  "Verso": {
+    "level": 82,
+    "role": "Endgame main DPS",
+    "attributes": {
+      "agility": 99,
+      "luck": 99,
+      "might": 48
+    },
+    "stats_base": null,
+    "stats_modified": {
+      "health": 4205,
+      "attack": 6282,
+      "speed": 2132,
+      "defence": 182,
+      "crit": "82%",
+      "_note": "Stats with Chevalam (32), Breaking Death (29), Cheater (24), Second Chance (16) equipped"
+    },
+    "weapon_equipped": "Chevalam",
+    "pictos_equipped": [
+      "Breaking Death",
+      "Cheater",
+      "Second Chance"
+    ],
+    "lp_total": 194,
+    "lp_used": 194,
+    "lumina_core_exclusions": [
+      {
+        "name": "Base Shield",
+        "note": "Non-functional — Chevalam L4 prevents shields"
+      },
+      {
+        "name": "Cheater",
+        "note": "Free from Cheater Pictos"
+      },
+      {
+        "name": "Breaking Death",
+        "note": "Free from Breaking Death Pictos"
+      },
+      {
+        "name": "Second Chance",
+        "note": "Free from Second Chance Pictos"
+      }
+    ],
+    "lumina_extras": [
+      {
+        "name": "Confident",
+        "note": "50% damage reduction — cost priced in via Chevalam L4 healing block"
+      },
+      {
+        "name": "Confident Fighter",
+        "note": "30% increased damage — cost priced in via Chevalam L4 healing block"
+      },
+      {
+        "name": "Enfeebling Mark",
+        "note": "Reduces damage from Marked targets — synergy with Verso's Mark skills"
+      },
+      {
+        "name": "Survivor",
+        "note": "Buffer for Verso when he can't be healed"
+      }
+    ],
+    "skills_equipped": [
+      "Quick Strike",
+      "Light Holder",
+      "Marking Shot",
+      "Perfect Break",
+      "End Bringer",
+      "Steeled Strike"
+    ],
+    "skills_learned": [
+      "Assault Zero",
+      "Berserk Slash",
+      "Blitz",
+      "Burden",
+      "Defiant Strike",
+      "End Bringer",
+      "From Fire",
+      "Leadership",
+      "Light Holder",
+      "Marking Shot",
+      "Paradigm Shift",
+      "Perfect Break",
+      "Perfect Recovery",
+      "Phantom Stars",
+      "Purification",
+      "Quick Strike",
+      "Steeled Strike",
+      "Strike Storm"
+    ],
+    "gradient_skills": [
+      {
+        "name": "Sabotage",
+        "cost": 1,
+        "unlocked": true,
+        "effect": "Medium Physical damage to all enemies, 1 hit. Applies Mark."
+      },
+      {
+        "name": "Striker",
+        "cost": 2,
+        "unlocked": true,
+        "effect": "High single-target Physical damage, 1 hit. Can Break."
+      },
+      {
+        "name": "Angel Eyes",
+        "cost": 3,
+        "unlocked": true,
+        "effect": "Extreme Physical damage, 8 hits. Gain 1 Perfection per hit. Applies Aureole to Verso, reviving him if he dies."
+      }
+    ]
+  },
+  "Sciel": {
+    "level": 82,
+    "role": "Pure support",
+    "attributes": {
+      "agility": 99,
+      "luck": 99,
+      "defence": 48
+    },
+    "stats_base": null,
+    "stats_modified": {
+      "health": 6879,
+      "attack": 5245,
+      "speed": 2014,
+      "defence": 390,
+      "crit": "108%",
+      "_note": "Stats with Litheson (32), Critical Burn (25), Energy Master (30), Quick Break (25) equipped"
+    },
+    "weapon_equipped": "Litheson",
+    "pictos_equipped": [
+      "Critical Burn",
+      "Energy Master",
+      "Quick Break"
+    ],
+    "lp_total": 176,
+    "lp_used": 175,
+    "lumina_core_exclusions": [
+      {
+        "name": "Energy Master",
+        "note": "Free from Energy Master Pictos"
+      }
+    ],
+    "lumina_extras": [
+      {
+        "name": "Accelerating Heal",
+        "note": "Rush on heal — synergy with Litheson AP generation"
+      },
+      {
+        "name": "Energising Heal",
+        "note": "2 AP on healing an ally — primary AP engine with Grim Harvest"
+      },
+      {
+        "name": "Protecting Heal",
+        "note": "Shell on heal — enables Powerful on Shell via Lune Pictos"
+      },
+      {
+        "name": "Healing Tint Energy",
+        "note": "1 AP on Healing Tint use — small AP top-up"
+      },
+      {
+        "name": "Healing Boon",
+        "note": "15% HP on applying a buff — fires on Dark Cleansing propagation and Litheson phase changes"
+      }
+    ],
+    "skills_equipped": [
+      "Fortune's Fury",
+      "Intervention",
+      "Plentiful Harvest",
+      "Final Path",
+      "Twilight Dance",
+      "Grim Harvest"
+    ],
+    "skills_learned": [
+      "Dark Cleansing",
+      "Dark Wave",
+      "Delaying Slash",
+      "Final Path",
+      "Firing Shadow",
+      "Focused Foretell",
+      "Fortune's Fury",
+      "Grim Harvest",
+      "Harvest",
+      "Intervention",
+      "Phantom Blade",
+      "Plentiful Harvest",
+      "Sealed Fate",
+      "Searing Bond",
+      "Twilight Dance",
+      "Twilight Slash"
+    ],
+    "gradient_skills": [
+      {
+        "name": "Shadow Bringer",
+        "cost": 1,
+        "unlocked": true,
+        "effect": "High single-target Dark damage to random enemies, 10 hits. Applies 1 Foretell per hit (10 total)."
+      },
+      {
+        "name": "Doom",
+        "cost": 2,
+        "unlocked": true,
+        "effect": "Very high single-target Dark damage, 3 hits. Applies Powerless, Defenceless and Slow for 3 turns. Can Break."
+      },
+      {
+        "name": "End Slice",
+        "cost": 3,
+        "unlocked": true,
+        "effect": "Extreme single-target Physical damage, 1 hit. Damage increased for each Foretell consumed since battle start."
+      }
+    ]
+  },
+  "Lune": {
+    "level": 78,
+    "role": "DPS / healer (reserve)",
+    "attributes": {
+      "vitality": 99,
+      "agility": 99,
+      "luck": 36
+    },
+    "stats_base": null,
+    "stats_modified": {
+      "health": 4047,
+      "attack": 5401,
+      "speed": 1797,
+      "defence": 1056,
+      "crit": "84%",
+      "_note": "Stats with Kralim (29), Powerful on Shell (23), Burn Affinity (21), Burning Death (21) equipped"
+    },
+    "weapon_equipped": "Kralim",
+    "pictos_equipped": [
+      "Powerful on Shell",
+      "Burn Affinity",
+      "Burning Death"
+    ],
+    "lp_total": 123,
+    "lp_used": 120,
+    "lumina_core_exclusions": [],
+    "lumina_extras": [
+      {
+        "name": "Accelerating Heal",
+        "note": "Rush on heal — synergy with Healing Light"
+      },
+      {
+        "name": "Protecting Heal",
+        "note": "Shell on heal — triggers Powerful on Shell Pictos and Longer Shell on Monoco"
+      }
+    ],
+    "skills_equipped": [
+      "Hell",
+      "Terraquake",
+      "Lightning Dance",
+      "Healing Light",
+      "Mayhem",
+      "Elemental Genesis"
+    ],
+    "skills_learned": [
+      "Crustal Crush",
+      "Earth Rising",
+      "Electrify",
+      "Elemental Genesis",
+      "Elemental Trick",
+      "Fire Rage",
+      "Healing Light",
+      "Hell",
+      "Ice Lance",
+      "Immolation",
+      "Lightning Dance",
+      "Mayhem",
+      "Rebirth",
+      "Revitalisation",
+      "Rockslide",
+      "Terraquake",
+      "Thunderfall",
+      "Wildfire"
+    ],
+    "gradient_skills": [
+      {
+        "name": "Tremor",
+        "cost": 1,
+        "unlocked": true,
+        "effect": "High Earth damage to all enemies and removes all enemies' Shields."
+      },
+      {
+        "name": "Tree of Life",
+        "cost": 2,
+        "unlocked": true,
+        "effect": "Heals party and removes ALL status effects."
+      },
+      {
+        "name": "Sky Break",
+        "cost": 3,
+        "unlocked": true,
+        "effect": "Extreme damage to all enemies using element with most stains. Can Break."
+      }
+    ]
+  },
+  "Monoco": {
+    "level": 82,
+    "role": "Break + AP support (reserve)",
+    "attributes": {
+      "agility": 99,
+      "defence": 99,
+      "luck": 48
+    },
+    "stats_base": null,
+    "stats_modified": {
+      "health": 4657,
+      "attack": 6605,
+      "speed": 2189,
+      "defence": 2301,
+      "crit": "62%",
+      "_note": "Stats with Joyaro (25), Longer Shell (29), Energising Turn (14), Sniper (23) equipped"
+    },
+    "weapon_equipped": "Joyaro",
+    "pictos_equipped": [
+      "Longer Shell",
+      "Energising Turn",
+      "Sniper"
+    ],
+    "lp_total": 128,
+    "lp_used": 91,
+    "lumina_core_exclusions": [
+      {
+        "name": "Energising Turn",
+        "note": "Free from Energising Turn Pictos"
+      }
+    ],
+    "lumina_extras": [
+      {
+        "name": "Staggering Attack",
+        "note": "Break damage on base attack — small break bar contribution"
+      }
+    ],
+    "skills_equipped": [
+      "Abbest Wind",
+      "Stalact Punches",
+      "Moissonneuse Vendange",
+      "Chalier Combo",
+      "Portier Crash",
+      "Potier Energy"
+    ],
+    "skills_learned": [
+      "Abbest Wind",
+      "Aberration Light",
+      "Ballet Charm",
+      "Bénisseur Mortar",
+      "Boucheclier Fortify",
+      "Braseleur Smash",
+      "Bruler Bash",
+      "Chalier Combo",
+      "Chapelier Slash",
+      "Chevalière Ice",
+      "Chevalière Piercing",
+      "Chevalière Thrusts",
+      "Clair Enfeeble",
+      "Contorsionniste Blast",
+      "Cruler Barrier",
+      "Cultist Blood",
+      "Cultist Slashes",
+      "Danseuse Waltz",
+      "Démineur Thunder",
+      "Duallist Storm",
+      "Échassier Stabs",
+      "Évêque Spear",
+      "Gault Fury",
+      "Glaise Earthquakes",
+      "Grosse Tête Whack",
+      "Hexga Crush",
+      "Jar Lampstorm",
+      "Lampmaster Light",
+      "Lancelier Impale",
+      "Luster Slices",
+      "Moissonneuse Vendange",
+      "Obscur Sword",
+      "Orphelin Cheers",
+      "Pèlerin Heal",
+      "Portier Crash",
+      "Potier Energy",
+      "Ramasseur Bonk",
+      "Rocher Hammering",
+      "Sakapatate Estoc",
+      "Sakapatate Explosion",
+      "Sakapatate Slam",
+      "Sapling Absorption",
+      "Stalact Punches",
+      "Troubadour Trumpet"
+    ],
+    "gradient_skills": [
+      {
+        "name": "Mighty Strike",
+        "cost": 1,
+        "unlocked": true,
+        "effect": "High single-target damage, 2 hits. Deals double damage if target is Stunned. Goes to Almighty Mask."
+      },
+      {
+        "name": "Sanctuary",
+        "cost": 2,
+        "unlocked": true,
+        "effect": "Gives 2 Shields and applies Regen to all allies for 3 turns."
+      },
+      {
+        "name": "Break Point",
+        "cost": 3,
+        "unlocked": true,
+        "effect": "Extreme single-target Lightning damage, 1 hit. Fills Break bar AND triggers Break simultaneously."
+      }
+    ]
+  }
+}

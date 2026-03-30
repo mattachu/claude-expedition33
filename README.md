@@ -8,16 +8,14 @@ See [`repo-structure.md`](repo-structure.md) for repo structure.
 
 ### Overview and Character Files
 
-Persistent context files loaded by Claude at the start of each session.
+Persistent context files loaded by Claude at the start of each session or when needed.
 
 * [`overview/claude-expedition33.md`](overview/claude-expedition33.md) — Main overview file: playthrough status, party builds, progression plan, session procedure, and known AI failure modes
-* [`overview/maelle.md`](overview/maelle.md) — Maelle character file
-* [`overview/lune.md`](overview/lune.md) — Lune character file
-* [`overview/sciel.md`](overview/sciel.md) — Sciel character file
-* [`overview/verso.md`](overview/verso.md) — Verso character file
-* [`overview/monoco.md`](overview/monoco.md) — Monoco character file
-* [`overview/character-file-template.md`](overview/character-file-template.md) — Template for character files
-* [`overview/historical-errors.md`](overview/historical-errors.md) — List of known AI errors from previous chats
+* [`characters/maelle.md`](overview/maelle.md) — Maelle character file
+* [`characters/lune.md`](overview/lune.md) — Lune character file
+* [`characters/sciel.md`](overview/sciel.md) — Sciel character file
+* [`characters/verso.md`](overview/verso.md) — Verso character file
+* [`characters/monoco.md`](overview/monoco.md) — Monoco character file
 
 ### Chat Transcripts
 

@@ -1,0 +1,869 @@
+{
+  "_notes": "Weapon inventory for all characters. Static fields: name, element, scaling, effects. Mutable fields: level, power, obtained. Flags (omit if false): obtained, future, rejected. Equipped weapon is in data/characters.json weapon_equipped field.",
+  "Maelle": [
+    {
+      "name": "Lithum",
+      "level": 33,
+      "power": 9302,
+      "element": "Void",
+      "scaling": "Luck S, Agility A",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "In Virtuose Stance, hitting a Marked enemy doesn't remove Mark."
+        },
+        {
+          "level": 10,
+          "description": "Switch to Virtuose Stance on Counterattack."
+        },
+        {
+          "level": 20,
+          "description": "Gain Shell when switching out of Virtuose Stance."
+        }
+      ],
+      "notes": "Endgame weapon from The Reacher. Nearly doubled in power from level 32 to 33. Respec required from Medalum (Defence+Agility) to Lithum (Luck+Agility)."
+    },
+    {
+      "name": "Stalum",
+      "level": 23,
+      "power": null,
+      "element": "Fire",
+      "scaling": "Defence A, Luck B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Apply Burn to self on turn start; +10% damage per self Burn stack."
+        },
+        {
+          "level": 10,
+          "description": "Base attack applies 2 Burn."
+        },
+        {
+          "level": 20,
+          "description": "Defensive stance receives Heal instead of Burn damage."
+        }
+      ],
+      "notes": "Core weapon for burn-stacking build."
+    },
+    {
+      "name": "Glaisum",
+      "level": 23,
+      "power": 3461,
+      "element": "Physical",
+      "scaling": "Defence A, Agility B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Allies recover 20% health on switching to Virtuose."
+        },
+        {
+          "level": 10,
+          "description": "Shell on leaving Virtuose."
+        },
+        {
+          "level": 20,
+          "description": "Cleanse self status effects on switching to Virtuose."
+        }
+      ],
+      "notes": "Same scaling as Medalum/Lithum — no respec needed. More defensive/supportive than Lithum."
+    },
+    {
+      "name": "Melarum",
+      "level": 10,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": [],
+      "notes": "Source unknown — do not assert Old Lumiere post-Renoir."
+    },
+    {
+      "name": "Barrier Breaker",
+      "level": 15,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Battlum",
+      "level": 11,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Brulerum",
+      "level": 15,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Chalium",
+      "level": 13,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Chantenum",
+      "level": 13,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Duenum",
+      "level": 7,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Jarum",
+      "level": 13,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Maellum",
+      "level": 2,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Plenum",
+      "level": 7,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Sekarum",
+      "level": 5,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Tissenum",
+      "level": 13,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Verenum",
+      "level": 15,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Volesterum",
+      "level": 16,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    }
+  ],
+  "Verso": [
+    {
+      "name": "Chevalam",
+      "level": 33,
+      "power": 5173,
+      "element": "Physical",
+      "scaling": "Agility A, Luck B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Start battle at Rank S, but can't be healed or gain Shields."
+        },
+        {
+          "level": 10,
+          "description": "20% increased damage for each consecutive no-damage turn, stacks up to 5×."
+        },
+        {
+          "level": 20,
+          "description": "Apply Rush on Rank S."
+        }
+      ],
+      "notes": "Cheater extra turn counts as no-damage turn and stacks the Level 10 bonus. Confident and Confident Fighter are the recommended Lumina pairing — cannot be healed downside fully priced in by Chevalam."
+    },
+    {
+      "name": "Corpeso",
+      "level": 23,
+      "power": null,
+      "element": "Fire",
+      "scaling": "Vitality A, Agility B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Base Attack applies 2 Burn per Rank."
+        },
+        {
+          "level": 10,
+          "description": "+1 AP on Rank Up."
+        },
+        {
+          "level": 20,
+          "description": "Burn damage +50% per Rank up to 300% at S."
+        }
+      ],
+      "notes": "Burn-stacking build. Synergises with Maelle's Burning Canvas."
+    },
+    {
+      "name": "Contorso",
+      "level": 23,
+      "power": null,
+      "element": "Lightning",
+      "scaling": "Defence A, Agility B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Switch to Rank S on Break. Base Attack can Break."
+        },
+        {
+          "level": 10,
+          "description": "100% Crit at Rank S."
+        },
+        {
+          "level": 20,
+          "description": "Lightning strike on Crits."
+        }
+      ],
+      "notes": "S-tier Act 3 weapon. Deferred — same rank-loss-on-hit vulnerability as Chevalam, no forgiveness."
+    },
+    {
+      "name": "Gaulteram",
+      "level": 12,
+      "power": null,
+      "element": null,
+      "scaling": "Agility A, Luck B",
+      "obtained": true,
+      "rejected": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Lose only 1 Perfection on hit instead of full rank demotion."
+        }
+      ],
+      "notes": "Act 2 weapon. Forgiveness mechanic critical while parry skills developing. Replaced by Chevalam. Kept for Renoir self-nerf strategy."
+    },
+    {
+      "name": "Glaceso",
+      "level": 29,
+      "power": null,
+      "element": null,
+      "scaling": "Defence A, Luck B",
+      "obtained": true,
+      "rejected": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Quick Strike jumps to Rank B."
+        }
+      ],
+      "notes": "Requires respec (Defence+Luck vs Agility+Luck). No forgiveness mechanic. Costs 2 Recoats net."
+    },
+    {
+      "name": "Dualiso",
+      "level": 9,
+      "power": null,
+      "element": "Lightning",
+      "scaling": "Vitality A, Defence B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Play again after Base Attack."
+        },
+        {
+          "level": 10,
+          "description": "+50% Base Attack damage."
+        },
+        {
+          "level": 20,
+          "description": "Base Attack gives 4 Perfection."
+        }
+      ],
+      "notes": "Conflicts with Cheater. Base-attack-spam build."
+    },
+    {
+      "name": "Simoso",
+      "level": null,
+      "power": null,
+      "element": null,
+      "scaling": "Vitality A, Agility B",
+      "obtained": false,
+      "future": true,
+      "effects": [
+        {
+          "level": 20,
+          "description": "Can't die if at least Rank A."
+        }
+      ],
+      "notes": "From Simon (Renoir's Drafts). S-tier post-game weapon."
+    },
+    {
+      "name": "Dreameso",
+      "level": null,
+      "power": null,
+      "element": null,
+      "scaling": "Agility A, Luck B",
+      "obtained": false,
+      "future": true,
+      "effects": [],
+      "notes": "Rank gain on Counterattack. Deferred until parry/counterattack rate improves."
+    },
+    {
+      "name": "Seeram",
+      "level": null,
+      "power": null,
+      "element": null,
+      "scaling": "Vitality A, Agility B",
+      "obtained": false,
+      "future": true,
+      "effects": [],
+      "notes": "Can't reach Rank S. S-tier only for End Bringer stunlock build on Simon. Purchased from Unfinished Cruler, Coastal Cave."
+    },
+    {
+      "name": "Sakaram",
+      "level": 25,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Cruleram",
+      "level": 26,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Lanceram",
+      "level": 15,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Liteso",
+      "level": 16,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Abysseram",
+      "level": 10,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Confuso",
+      "level": 11,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Danseso",
+      "level": 10,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Delaram",
+      "level": 7,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Demonam",
+      "level": 5,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Noahram",
+      "level": 1,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Sireso",
+      "level": 14,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Verleso",
+      "level": 7,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    }
+  ],
+  "Sciel": [
+    {
+      "name": "Litheson",
+      "level": 33,
+      "power": 4226,
+      "element": "Physical",
+      "scaling": "Luck A, Agility B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "During Moon phase, all allies have Greater Rush. During Sun phase, all enemies have Greater Slow."
+        },
+        {
+          "level": 10,
+          "description": "During Twilight phase, all allies have Greater Rush AND all enemies have Greater Slow."
+        },
+        {
+          "level": 20,
+          "description": "+3 AP on applying a Buff or Debuff, once per turn."
+        }
+      ],
+      "notes": "Confirmed endgame weapon. Phase effects have large impact on turn order."
+    },
+    {
+      "name": "Charnon",
+      "level": null,
+      "power": null,
+      "element": null,
+      "scaling": "Defence B, Luck C",
+      "obtained": false,
+      "future": true,
+      "effects": [
+        {
+          "level": 10,
+          "description": "100% crit in Twilight."
+        },
+        {
+          "level": 20,
+          "description": "Critical hits apply 1 Foretell."
+        }
+      ],
+      "notes": "Post-game from Renoir's Drafts merchant (89,884 Chromas). Alternative endgame weapon."
+    },
+    {
+      "name": "Chation",
+      "level": null,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Sun Skills always apply 10 Foretell, but Sciel takes double damage."
+        },
+        {
+          "level": 10,
+          "description": "Base attack gives Moon charge + converts Foretell to Burn."
+        },
+        {
+          "level": 20,
+          "description": "+100% Burn damage in Twilight."
+        }
+      ],
+      "notes": "Double damage risk. Deferred."
+    },
+    {
+      "name": "Ramasson",
+      "level": null,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "rejected": true,
+      "effects": [],
+      "notes": "Passive heal does NOT trigger on-heal Lumina effects. Main support synergy inert."
+    },
+    {
+      "name": "Tisseron",
+      "level": null,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "rejected": true,
+      "effects": [
+        {
+          "level": 20,
+          "description": "Extra turn on Twilight entry."
+        }
+      ],
+      "notes": "Level 20 extra turn on Twilight entry bugged with Cheater Pictos."
+    },
+    {
+      "name": "Rangeson",
+      "level": null,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "rejected": true,
+      "effects": [],
+      "notes": "Lower power; scaling diverges from endgame."
+    }
+  ],
+  "Lune": [
+    {
+      "name": "Kralim",
+      "level": 29,
+      "power": 4454,
+      "element": null,
+      "scaling": "Vitality A, Agility B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Casting a Skill increases Skill damage of all other elements by +20%. Resets when casting a previously used element."
+        },
+        {
+          "level": 10,
+          "description": "On turn start, if no Stains, 2 random Stains generated."
+        },
+        {
+          "level": 20,
+          "description": "+1 AP when Stains are consumed."
+        }
+      ],
+      "notes": "Element unconfirmed — verify in game. Required for Elemental Genesis build."
+    },
+    {
+      "name": "Trebuchim",
+      "level": 25,
+      "power": 3089,
+      "element": "Lightning",
+      "scaling": "Vitality A, Luck B",
+      "obtained": true,
+      "rejected": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "1 random stain on free-aim."
+        },
+        {
+          "level": 10,
+          "description": null
+        },
+        {
+          "level": 20,
+          "description": "Base attack generates 2 random stains."
+        }
+      ],
+      "notes": "Previous weapon. Replaced by Kralim for Genesis build."
+    },
+    {
+      "name": "Choralim",
+      "level": 20,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "future": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "100% crit when 4 stains are active."
+        }
+      ],
+      "notes": "Circular dependency as primary weapon — needs base 100% crit from Luck+Pictos first. Role in endgame build needs clarification."
+    },
+    {
+      "name": "Angerim",
+      "level": 24,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Betelim",
+      "level": 12,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Benisim",
+      "level": 28,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Braselim",
+      "level": 21,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Colim",
+      "level": 13,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "rejected": true,
+      "effects": [],
+      "notes": "14% attack loss vs Trebuchim. No free-aim stain generation. Tested and rejected."
+    },
+    {
+      "name": "Coralim",
+      "level": 7,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Deminerim",
+      "level": 4,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Elerim",
+      "level": 13,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Ligherim",
+      "level": 12,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Lunerim",
+      "level": 1,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Potierim",
+      "level": 10,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Redalim",
+      "level": 10,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Saperim",
+      "level": 14,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Snowim",
+      "level": 22,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Troubadim",
+      "level": 15,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    }
+  ],
+  "Monoco": [
+    {
+      "name": "Joyaro",
+      "level": 25,
+      "power": 3934,
+      "element": "Lightning",
+      "scaling": "Agility A, Defence B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Start battle in Almighty Mask."
+        },
+        {
+          "level": 10,
+          "description": "20% increased damage for each consecutive turn without taking damage, stacks up to 5×."
+        },
+        {
+          "level": 20,
+          "description": "Break damage doubled while in Almighty Mask."
+        }
+      ],
+      "notes": "Almighty start is strong opener. Level 20 fires again whenever Monoco returns to Almighty Mask. Also drops from Flying Manor Lampmaster; purchasable from River of Life merchant."
+    },
+    {
+      "name": "Nusaro",
+      "level": 20,
+      "power": null,
+      "element": null,
+      "scaling": "Agility A, Vitality B",
+      "obtained": true,
+      "rejected": true,
+      "effects": [
+        {
+          "level": 20,
+          "description": "+1 AP on Mask change."
+        }
+      ],
+      "notes": "Previous weapon. Replaced by Joyaro after respec."
+    },
+    {
+      "name": "Ballaro",
+      "level": 20,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Fragaro",
+      "level": 15,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Grander",
+      "level": 21,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Monocaro",
+      "level": 10,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "rejected": true,
+      "effects": [],
+      "notes": "Starts in Balanced Mask — causes rotation desync (Chalier Combo 7 AP on Turn 1 unaffordable)."
+    },
+    {
+      "name": "Urnaro",
+      "level": 20,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    }
+  ]
+}
