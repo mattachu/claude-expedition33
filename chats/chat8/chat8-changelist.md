@@ -13,8 +13,6 @@ Learnable Nevrons display Monoco's icon next to their HP bar in battle. Skills c
 
 Since a post-launch patch, all skills are obtainable post-game. The Endless Tower covers most enemy types.
 
----
-
 FILE: overview/monoco.md
 SECTION: ## Skills
 CONTENT:
@@ -25,8 +23,6 @@ CONTENT:
 **Missing (2):** Creation Void (from The Creation boss in Lumière), Sakapatate Fire (from Ultimate Sakapatate — available in Endless Tower Stages 7 and 8, and possibly the Monolith).
 
 Full skill reference (AP cost, wheel move, mask, effect, mask bonus, learned/equipped status) in `data/skills.json`.
-
----
 
 FILE: overview/claude-expedition33.md
 SECTION: ## Section 13: Session Procedure > ### Session Start
@@ -52,8 +48,6 @@ CONTENT:
 
 **Link resolution:** All file URLs are constructed as `https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@<hash>/<filepath>` using the hash extracted in step 4. Never use `@main` for mid-session fetches.
 
----
-
 FILE: overview/claude-expedition33.md
 SECTION: ## Section 13: Session Procedure > ### End of Session
 AFTER: ### Compound Log Step
@@ -70,8 +64,6 @@ CONTENT:
    - Include the new Chat N row for Section 10 of the overview
 7. If any significant new errors were made, note for manual addition to `overview/historical-errors.md`
 8. Matt runs the updater script, makes manual changes, and pushes to GitHub
-
----
 
 FILE: scripts/pipeline.md
 SECTION: ## File Architecture
@@ -142,84 +134,20 @@ CONTENT:
 
 `DATA:` blocks are applied first (updating JSON), then `generate.py` runs, then `FILE:` blocks are applied.
 
----
-
-FILE: data/playthrough.json
-CONTENT:
-{
-  "act": 3,
-  "phase": 3,
-  "current_area": "Flying Manor",
-  "active_party": ["Verso", "Maelle", "Sciel"],
-  "reserve_party": ["Lune", "Monoco"],
-  "inventory": {
-    "colour_of_lumina": 164,
-    "recoats": 28,
-    "chroma_catalyst": 67,
-    "chroma_catalyst_polished": 65,
-    "chroma_catalyst_resplendent": 83,
-    "chroma_catalyst_grandiose": 14,
-    "chroma_catalyst_perfect": 1
-  },
-  "phase_3_checklist": {
-    "the_reacher": true,
-    "chromatic_braseleur": true,
-    "serpenphare": true,
-    "flying_manor": false,
-    "renoir": false
-  }
-}
-
----
-
-NEW FILE: data/characters.json
-NEW FILE: data/skills.json
-NEW FILE: data/weapons.json
-
-(See outputs directory for file contents — too large for inline changelist)
-
----
-
 FILE: overview/claude-expedition33.md
 SECTION: ## Section 10: Chat Logs
 CONTENT:
-### Chat 10 row (append to table)
+## Section 10: Chat Logs
+*For reference only — do not fetch unless specifically asked. These are large files.*
 
+| Chat   | Index                                                                                                                                        | Full Transcript                     | Summary                                                                                                                                      |
+|--------|----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| Chat 0 | [Formatted](../chats/chat0/chat0-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat0/chat0-index.md) | [chat0.md](../chats/chat0/chat0.md) | Prior (abandoned) conversation with ChatGPT                                                                                                  |
+| Chat 1 | [Formatted](../chats/chat1/chat1-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-index.md) | [chat1.md](../chats/chat1/chat1.md) | Initial build analysis across all five characters; Monoco stat respec; Lune weapon comparison; Sciel and Verso builds; full progression plan |
+| Chat 2 | [Formatted](../chats/chat2/chat2-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-index.md) | [chat2.md](../chats/chat2/chat2.md) | Endgame skill research; character stat update via voice; chromatic progress; compaction mechanics; session procedure design                  |
+| Chat 3 | [Formatted](../chats/chat3/chat3-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat3/chat3-index.md) | [chat3.md](../chats/chat3/chat3.md) | Endgame team transition (Cheater Pictos, Steeled Strike, Second Chance resolution); team role framing; burn-stacking vs stance cycling paths; Chevalam mechanics; Maelle LP planning; transcript logging problems identified |
+| Chat 4 | [Formatted](../chats/chat4/chat4-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat4/chat4-index.md) | [chat4.md](../chats/chat4/chat4.md) | Progress update (Sacred River, Chevaliere, Dark Shore, Sakapatate/Joyaro, all chars 70+); story ordering research (Flying Manor optional, final boss in Lumière); Verso weapon selection (Chevalam reinstated with Cheater synergy confirmed); Steeled Strike burst sequence analysis; Maelle Reacher preparation (stats, skills, Pictos, solo build); session logging procedure improvements |
+| Chat 5 | [Formatted](../chats/chat5/chat5-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat5/chat5-index.md) | [chat5.md](../chats/chat5/chat5.md) | Progress update (Reacher, Serpenphare, chromatics); Maelle respec to Luck/Agility/Might + Lithum equipped; Gommage unlocked; full Pictos/Lumina review all five characters; core Lumina sets defined (154LP main, 110LP reserve); Energy Master obtained; Pictos/Lumina reference file started (JSON scaffold) |
+| Chat 6 | [Formatted](../chats/chat6/chat6-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat6/chat6-index.md) | [chat6.md](../chats/chat6/chat6.md) | Flying Manor ordering decided (before Renoir); Renoir self-nerf strategy (Gaulteram/Medalum, calibrate on earlier fights); progression plan restructured (Endless Tower moved to Phase 4, Braseleur ticked off); Energy Master learnt and added to main team core (194LP); all character stats updated; JSON corrected (stat errors, six new Pictos); Recovery confirmed non-functional on Verso; base speed scales with level confirmed; Pictos optimisation deferred to Opus session |
+| Chat 7 | [Formatted](../chats/chat7/chat7-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat7/chat7-index.md) | [chat7.md](../chats/chat7/chat7.md) | Pictos optimisation framework prepared for Sonnet handoff; deferred actual assignment until after Flying Manor; three JSON corrections (Second Chance LP, Gradient Break LP, Sciel Pictos); identified stale Pictos data in all main team character files; Colour of Lumina pool expansion mechanism documented; Pictos data rationalisation designed (eliminate JSON character pictos array, derive from equipped_by); procedural note for Pictos update workflow |
 | Chat 8 | [Formatted](../chats/chat8/chat8-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat8/chat8-index.md) | [chat8.md](../chats/chat8/chat8.md) | Monoco full skill audit (46 skills, two missing, acquisition mechanic documented). Repo restructure design: new folder structure (overview/data/characters/reference), JSON-as-source-of-truth extended to characters/weapons/skills/playthrough. GitHub Actions workflow added (auto-generates LINKS.md on push). All five data files built (characters.json, weapons.json, skills.json, playthrough.json). Session procedure updated: LINKS.md at session start, turn counter display, sections-per-part changed to 4. |
-
----
-
-HANDOFF: Chat 9
-
-## Chat 9 Handoff
-
-### Status
-Chat 8 complete. Flying Manor in progress — Clea next. Main party Verso/Maelle/Sciel, reserve Lune/Monoco.
-
-### What was done in Chat 8
-1. Monoco full skill audit — 46-skill table built; two missing (Creation Void from The Creation in Lumière; Sakapatate Fire from Ultimate Sakapatate — available in Endless Tower). Moissonneuse Vendange corrected (AP 3→5, wheel +3→+2). Equipped skills updated; full skill catalogue in `data/skills.json`.
-2. Repo restructure design — new folder structure agreed: `overview/`, `data/`, `characters/`, `reference/`. JSON-as-source-of-truth extended across repo.
-3. GitHub Actions workflow — auto-generates `LINKS.md` with pinned jsDelivr URLs on every push. Matt pastes link to latest `LINKS.md` at session start; Claude fetches it to get all file URLs, then fetches files on demand.
-4. Schema design — finalised for `data/characters.json`, `data/weapons.json`, `data/skills.json`, `data/playthrough.json`. Key decisions: `lumina_core_exclusions` + `lumina_extras` (name+note only); `equipped_by` retained in `pictos-lumina.json` for uniqueness enforcement with cross-validation in `generate.py`; `obtained` explicit boolean on all weapon entries.
-5. All five data files built — `playthrough.json`, `characters.json` (all five merged), `skills.json`, `weapons.json`. Stats partially stale — full update deferred to post-Flying Manor.
-
-### Immediately pending (before or at start of Chat 9)
-- Matt to finish Flying Manor and defeat Clea
-- Matt to run end-of-session changelist from Chat 8
-- Post-Flying Manor: record base stats and modified stats for all characters in `data/characters.json`
-- Post-Flying Manor: update inventory counts in `data/playthrough.json`
-- Post-Flying Manor: update list of strongest Pictos obtained ready for party optimisation
-
-### Pictos optimisation
-Reminder: when Flying Manor is complete, read the uploaded `pictos-optimisation-framework.md` before starting the Pictos session.
-
-### Key file locations (fetch via LINKS.md)
-- `overview/claude-expedition33.md` — main overview
-- `data/playthrough.json`, `data/characters.json`, `data/skills.json`, `data/weapons.json` — new data files
-- `characters/maelle.md` etc. — narrative character files (note: repo restructure not yet applied — files still at `overview/maelle.md` until changelist is run)
-
-### Open questions carried forward
-All items from Section 9 of the overview remain open. Additionally:
-- Sciel Litheson level — confirm 32 or 33 in game
-- Choralim (Lune) — future weapon or just obtained/uncertain?
-- Verso gradient skills — Matt to verify in game

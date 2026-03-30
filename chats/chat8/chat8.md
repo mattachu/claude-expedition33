@@ -289,6 +289,8 @@ What's next?
 
 **Matt:** !log
 
+---
+
 <!-- SECTION: Repo Restructure Design -->
 ## Repo Restructure Design
 
@@ -414,6 +416,8 @@ This is a design-then-implementation task, not a reasoning-under-uncertainty tas
 
 Do you want to work through the schema design now, or is this something to park until after Flying Manor when you'll have a clearer picture of what's actually drifting?
 
+---
+
 <!-- SECTION: Repo Restructure — Folder Structure and Schema -->
 ## Repo Restructure — Folder Structure and Schema
 
@@ -529,11 +533,11 @@ New: changelist → update JSON first → regenerate Markdown → apply narrativ
 
 The changelist format would gain a `DATA:` block type alongside `FILE:` for JSON updates.
 
----
-
 This is definitely within Sonnet's skill set — it's concrete schema design and Python generation script work. No ambiguity requiring Opus-level reasoning. The main design decision to nail before coding is: which fields in `characters.json` are worth the generation overhead vs. which are stable enough to just keep in Markdown? I'd suggest we be conservative — only fields that change regularly and appear in multiple places (level, stats, weapon, Pictos, skills equipped) go in JSON. Everything else stays in Markdown until it proves to be a drift problem.
 
 Want to firm up the schema before touching any files, or is the above enough to start implementing?
+
+---
 
 <!-- SECTION: Repo Restructure — Mechanics, Links and Procedure -->
 ## Repo Restructure — Mechanics, Links and Procedure
@@ -627,6 +631,8 @@ Before we go ahead into schema design: !log
 Done. Two sections logged, index updated, session state tracking three files for changelist: `monoco.md`, the overview Session 13, and `pipeline.md`.
 
 Ready for schema design when you are.
+
+---
 
 <!-- SECTION: Transcript Review and Turn Counter -->
 ## Transcript Review and Turn Counter
@@ -772,14 +778,14 @@ Fixed — all four sections now under Part 1. Part 2 will only appear once we lo
 
 [No compaction found. Inserted `<!-- SECTION: Transcript Review and Turn Counter -->` above the "Show me the log and index" turn. Appended remaining turns to transcript. Updated index with fifth section under Part 2.]
 
+---
+
 <!-- SECTION: Schema Design -->
 ## Schema Design
 
 **Claude:** *[Turn 40. Last log: Turn 39.]*
 
 Good. Let me propose the full schema for both files, then we can refine before any code is written.
-
----
 
 ### `data/characters.json`
 
@@ -828,8 +834,6 @@ A few design questions on this:
 3. **LP:** `lp_used` changes frequently. `lp_total` only changes when you spend Colour of Lumina. Worth keeping both here since the generator needs them for the stats block.
 
 4. **`gommage`:** Maelle-specific. Do we want a freeform `character_flags` object for things like this, or just put Maelle-specific fields directly on her object?
-
----
 
 ### `data/playthrough.json`
 
@@ -1605,6 +1609,8 @@ Ready to log?
 
 [No compaction found. Appending GitHub Actions Workflow section to transcript. Updating index.]
 
+---
+
 <!-- SECTION: Building the Data Files -->
 ## Building the Data Files
 
@@ -1812,6 +1818,8 @@ Happy with that? If so, Verso next.
 **Claude:** *[Turn 70. Last log: Turn 60.]*
 
 [No compaction found. Appending Building the Data Files section to transcript. Updating index.]
+
+---
 
 <!-- SECTION: Building characters.json -->
 ## Building characters.json
@@ -2386,6 +2394,8 @@ I'd suggest starting with 3 since it's the smallest, most self-contained change 
 **Claude:** *[Turn 96. Last log: Turn 84.]*
 
 [No compaction found. Identified verbatim issues in this section — Matt's Turn 87 message was missing URLs, Claude's Turn 87 response was almost entirely missing, Turn 88 screenshot misidentified as Sciel's instead of Lune's. Section rewritten.]
+
+---
 
 <!-- SECTION: End of Session -->
 ## End of Session
