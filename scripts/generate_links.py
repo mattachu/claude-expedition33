@@ -12,7 +12,6 @@ FILES = [
     "overview/claude-expedition33.md",
     "overview/party-summary.md",
     "overview/pictos-lumina-summary.md",
-    "overview/historical-errors.md",
     # Data
     "data/playthrough.json",
     "data/characters.json",
@@ -28,6 +27,7 @@ FILES = [
     # Reference
     "reference/mechanics.md",
     "reference/pictos-lumina-catalogue.md",
+    "reference/historical-errors.md",
     # Chat indexes
     "chats/chat0/chat0-index.md",
     "chats/chat1/chat1-index.md",

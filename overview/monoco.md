@@ -35,6 +35,18 @@ Monoco's central system is the **Bestial Wheel** — a 9-position ring of masks 
 
 **Bénisseur Mortar** jumps to Almighty Mask ONLY when the target is Marked. Without reliable Mark, it does not jump — making it a weak standard skill without the current team's Mark frequency.
 
+### Skill Acquisition
+
+Monoco does not learn skills via skill points. Instead, he collects **feet** from Nevrons (enemies). Each Nevron carries a foot tied to one of Monoco's skills. To collect a foot:
+
+- Monoco must be in the **active party** when the Nevron is defeated
+- He does **not** need to be alive at battle end — being knocked out still counts
+- If the main party wipes and the reserve party wins without Monoco, **he does not collect the foot**
+
+Learnable Nevrons display Monoco's icon next to their HP bar in battle. Skills can be equipped immediately after battle — no Flag visit required.
+
+Since a post-launch patch, all skills are obtainable post-game. The Endless Tower covers most enemy types.
+
 ---
 
 ## Current Stats
@@ -148,22 +160,22 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 
 ## Skills
 
-**Currently equipped (6):** Abbest Wind, Stalact Punches, Moissonneuse Vendange, Chalier Combo, Potier Energy, Pelerin Heal
-
-**Target loadout (reserve team break + AP role):** Potier Energy, Stalact Punches, Abbest Wind, Moissonneuse Vendange, Portier Crash, Chalier Combo
+**Currently equipped (6):** Abbest Wind, Stalact Punches, Portier Crash, Moissonneuse Vendange, Chalier Combo, Potier Energy
 
 **Abbest Wind cannot be removed** — essential for wheel cycling and free second turn on Agile Mask.
 
-| Skill                 | AP Cost        | Equipped | Wheel | Mask     | Notes                                                                                                                                                       |
-|-----------------------|----------------|----------|-------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Potier Energy         | 4              | ✅       | +6    | Caster   | Gives 1–3 AP to all allies (+1 on Caster Mask = 2–4 AP). Core team AP refill.                                                                              |
-| Stalact Punches       | 4              | ✅       | +4    | Heavy    | 4-hit medium Ice damage; HIGH Break damage (fills Break bar).                                                                                               |
-| Abbest Wind           | 2 (0 on Agile) | ✅       | +2    | Agile    | 1-hit low Physical; plays second turn immediately on Agile Mask (0 AP). Essential for wheel cycling. Cannot be removed.                                     |
-| Moissonneuse Vendange | 3              | ✅       | +3    | Balanced | 3-hit high damage; can Break (triggers Break — pairs with Stalact Punches as filler).                                                                       |
-| Chalier Combo         | 7              | ✅       | +3    | Balanced | 6-hit high Physical damage; increased damage on Balanced Mask.                                                                                              |
-| Pelerin Heal          | 5              | ✅       | +3    | Caster   | Applies Regen to all allies; on Caster Mask heals 40% HP. **Drop for Portier Crash** — Lune covers healing in reserve team.                                |
-| Portier Crash         | 8              | ❌       | +5    | Heavy    | High Physical AoE, 1 hit. Can Break. Heavy Mask: increased damage. AoE break specialist. Add when building reserve team.                                   |
-| Évêque Spear          | 6              | ❌       | +3    | Heavy    | High single target Earth damage. Applies Powerless for 3 turns. Heavy Mask: increased damage. Situational debuff option.                                    |
+| Skill                 | AP Cost        | Wheel | Mask     | Notes                                                                                                                                                       |
+|-----------------------|----------------|-------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Potier Energy         | 4              | +6    | Caster   | Gives 1–3 AP to all allies (+1 on Caster Mask = 2–4 AP). Core team AP refill.                                                                               |
+| Stalact Punches       | 4              | +4    | Heavy    | 4-hit medium Ice damage; HIGH Break damage (fills Break bar).                                                                                               |
+| Abbest Wind           | 2 (0 on Agile) | +2    | Agile    | 1-hit low Physical; plays second turn immediately on Agile Mask (0 AP). Essential for wheel cycling. Cannot be removed.                                     |
+| Moissonneuse Vendange | 3              | +3    | Balanced | 3-hit high damage; can Break (triggers Break — pairs with Stalact Punches as filler).                                                                       |
+| Chalier Combo         | 7              | +3    | Balanced | 6-hit high Physical damage; increased damage on Balanced Mask.                                                                                              |
+| Portier Crash         | 8              | +5    | Heavy    | High Physical AoE, 1 hit. Can Break. Heavy Mask: increased damage. AoE break specialist.                                                                    |
+
+**Not yet learnt (2):** Creation Void (from The Creation boss in Lumière), Sakapatate Fire (from Ultimate Sakapatate — available in Endless Tower Stages 7 and 8, and possibly the Monolith).
+
+Full skill reference (AP cost, wheel move, mask, effect, mask bonus, learned/equipped status) in `data/skills.json`.
 
 ---
 
