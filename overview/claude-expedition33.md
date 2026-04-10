@@ -40,28 +40,38 @@ Fetch that file only when reviewing specific past errors.
 
 ## Section 2: Playthrough Status
 
+<!-- GENERATED:START playthrough:summary -->
 - **Platform:** Xbox Series X
 - **Current playthrough:** First playthrough
-- **Status as at end of Chat 6 (approx. 27 March 2026):**
-  - Act 3, Phase 3. Characters: Maelle L83, Verso L82, Sciel L82, Lune L78, Monoco L78.
-  - Active endgame team: Verso (82), Maelle (83), Sciel (82). Reserve: Lune (78), Monoco (78).
+- **Progress:**
+  - Act 3, Phase 3.
+  - Characters: Maelle L83, Verso L82, Sciel L82, Lune L78, Monoco L78.
   - The Reacher complete. Gommage unlocked. Serpenphare defeated. Chromatic Braseleur defeated (easy).
   - Flying Manor next — agreed to attempt at current level before Endless Tower.
-  - **Permanently missed:** Vale bosses (Jovial Moissonneuse, Sorrowful Chapelier, Seething Boucheclier); Karatom quest (requires Gustave alive).
+<!-- GENERATED:END -->
+- **Permanently missed:** Vale bosses (Jovial Moissonneuse, Sorrowful Chapelier, Seething Boucheclier); Karatom quest (requires Gustave alive).
 
-- **Inventory:**
-  - Colour of Lumina: ~200 (reduced by EM pool expansions this session)
-  - Recoats: 26 (Lune used one this session for Hell + Lightning Dance)
-  - Chroma Catalysts: check in-game
-
-- **LP totals (end of Chat 6):**
-  - Maelle: 194/196
-  - Verso: 194/194
-  - Sciel: 175/176
-  - Lune: 120/123
-  - Monoco: 91/128
-
+### Party
+<!-- GENERATED:START playthrough:party -->
+- **Active:** Maelle, Verso, Sciel
 - **Reserve:** Lune, Monoco
+<!-- GENERATED:END -->
+
+### Inventory
+<!-- GENERATED:START playthrough:inventory -->
+- Colour of Lumina: ~200 (reduced by EM pool expansions this session)
+- Recoats: 26 (Lune used one this session for Hell + Lightning Dance)
+- Chroma Catalysts: check in-game
+<!-- GENERATED:END -->
+
+### LP totals
+<!-- GENERATED:START characters:summary:LP -->
+- Maelle: 194/196
+- Verso: 194/194
+- Sciel: 175/176
+- Lune: 120/123
+- Monoco: 91/128
+<!-- GENERATED:END -->
 
 ---
 
@@ -134,87 +144,31 @@ If the main party is fully wiped in a battle, the player can continue the battle
 ## Section 5: Party
 *Last updated: Chat 6*
 
-**Active endgame team:** Verso + Maelle + Sciel
-**Reserve:** Lune, Monoco
+<!-- GENERATED:START playthrough:party -->
+- **Active:** Maelle, Verso, Sciel
+- **Reserve:** Lune, Monoco
+<!-- GENERATED:END -->
 
 **Speed order (intended):** Verso goes first via Chevalam Rush (Rank S at battle start). Sciel second, Maelle third. Current turn order: Verso 2132 > Maelle 2027 > Sciel 2014. Needs tweaking.
 Note: base speed scales with level independently of Agility — keep levels close when speeds are close and turn order matters.
 
 **Turn rotation (endgame burst):** Verso (base attack) → Verso(C) (Steeled Strike charge) → Sciel (Fortune's Fury on Verso) → Sciel(C) (Intervention on Verso) → Verso(Intervention) (Steeled Strike executes at Rank S with doubled damage).
 
-### Maelle
-
-|                               |                                                                                                     |
-|-------------------------------|-----------------------------------------------------------------------------------------------------|
-| Level                         | 83                                                                                                  |
-| Role                          | Primary DPS                                                                                         |
-| Weapon                        | Lithum (33) — Power 9302, Void, Luck S / Agility A                                                 |
-| Stats (with Pictos)           | Health 3471, Attack 10436, Speed 2027, Defence 182, Crit 105%                                      |
-| Attributes                    | Luck 99, Agility 99, Might 51                                                                       |
-| Pictos                        | Burning Break (21), Gradient Break (25), Survivor (21)                                             |
-| Key skills                    | Phantom Strike, Fleuret Fury, Percée, Gustave's Homage, Stendhal, Sword Ballet                     |
-| Gommage                       | ✅ Unlocked (Relationship Level 7)                                                                  |
-| Lumina                        | 194LP used / 196LP total. Main team core (194LP).                                                  |
-
-### Verso
-
-|                   |                                                                                                                  |
-|-------------------|------------------------------------------------------------------------------------------------------------------|
-| Level             | 82                                                                                                               |
-| Role              | Endgame main DPS                                                                                                 |
-| Weapon            | Chevalam (32) — Agility A, Luck B; Power 5173                                                                   |
-| Stats (with Pictos) | Health 4205, Attack 6282, Speed 2132, Defence 182, Crit 82%                                                  |
-| Attributes        | Agility 99, Luck 99, Might 48                                                                                    |
-| Pictos            | Breaking Death (29), Cheater (24), Second Chance (16)                                                            |
-| Key skills        | Quick Strike, Light Holder, Phantom Stars, Perfect Break, End Bringer, Steeled Strike                           |
-| Lumina            | 194LP used / 194LP total. Main team core minus Cheater/Breaking Death (free from Pictos) minus Base Shield (non-functional) plus Confident (20LP) + Confident Fighter (15LP) + Enfeebling Mark (10LP) + Survivor (20LP). |
-| Note              | Chevalam L4 blocks ALL healing and shields — Recovery, Base Shield, healing Lumina effects all non-functional. Confirmed in-game. |
-
-### Sciel
-
-|                     |                                                                                                              |
-|---------------------|--------------------------------------------------------------------------------------------------------------|
-| Level               | 82                                                                                                           |
-| Role                | Pure support                                                                                                 |
-| Weapon              | Litheson (32) — Power 4226, Physical, Luck A, Agility B                                                     |
-| Stats (with Pictos) | Health 6879, Attack 5245, Speed 2014, Defence 390, Crit 108%                                                |
-| Attributes          | Agility 99, Luck 99, Defence 48                                                                              |
-| Pictos              | Critical Burn (25), Energy Master (30), Quick Break (25)                                                     |
-| Key skills          | Grim Harvest, Final Path, Twilight Dance, Fortune's Fury, Intervention, Plentiful Harvest                   |
-| Lumina              | 175LP used / 176LP total. Main team core minus Energy Master (free from Pictos) plus Accelerating Heal (5) + Energising Heal (10) + Protecting Heal (5) + Healing Tint Energy (1). |
-
-### Lune
-
-|                   |                                                                                                              |
-|-------------------|--------------------------------------------------------------------------------------------------------------|
-| Level             | 78                                                                                                           |
-| Role              | DPS / healer (reserve)                                                                                       |
-| Weapon            | Kralim (29) — Power 4454, Vitality A, Agility B                                                             |
-| Stats (with Pictos) | Health 4047, Attack 5401, Speed 1797, Defence 1056, Crit 84%                                              |
-| Attributes        | Vitality 99, Agility 99, Luck 36                                                                             |
-| Pictos            | Powerful On Shell (23), Burn Affinity (21), Burning Death (21)                                              |
-| Key skills        | Terraquake, Hell, Lightning Dance, Healing Light, Mayhem, Elemental Genesis                                  |
-| Lumina            | 120LP used / 123LP total. Reserve team core (110LP) plus Accelerating Heal (5) + Protecting Heal (5).      |
-| Note              | Used Recoat to add Hell and Lightning Dance this session.                                                     |
-
-### Monoco
-
-|                     |                                                                                                                    |
-|---------------------|--------------------------------------------------------------------------------------------------------------------|
-| Level               | 78                                                                                                                 |
-| Role                | Break + AP support (reserve team with Lune)                                                                        |
-| Weapon              | Joyaro (25) — Power 3934, Lightning, Agility A, Defence B                                                         |
-| Stats (with Pictos) | Health 4541, Attack 4881, Speed 1845, Defence 2301, Crit 54%                                                      |
-| Attributes          | Agility 99, Defence 99, Luck 36                                                                                    |
-| Pictos              | Longer Shell (29), Sniper (23), Energising Turn (14)                                                               |
-| Key skills          | Abbest Wind, Stalact Punches, Portier Crash, Chalier Combo, Moissonneuse Vendange, Potier Energy                  |
-| Lumina              | 91LP used / 128LP total. Reserve team core minus Energising Turn (free from Pictos) plus Staggering Attack (1).   |
+<!-- GENERATED:START characters:summary:party -->
+*[Placeholder for table including level, role, weapon, skills, Pictos, LP, etc.]*
+<!-- GENERATED:END -->
 
 ### Core Lumina Suite
 
-**Main team core: 194LP** (Maelle, Verso, Sciel). Includes: Painted Power, Teamwork, Base Shield, Energising Turn, Energising Parry, Energising Start I, Dodger, Breaker, Marking Shots, Dead Energy I, Dead Energy II, Critical Break, Rewarding Mark, Burning Shots, Breaking Burn, Breaking Counter, Breaking Death, Cheater, **Energy Master**. Note: Cheater/Breaking Death free for Verso (Pictos); Base Shield non-functional for Verso; Energy Master free for Sciel (Pictos).
+**Main team core:**
+<!-- GENERATED:START pictos:core:main -->
+**194LP** Painted Power, Teamwork, Base Shield, Energising Turn, Energising Parry, Energising Start I, Dodger, Breaker, Marking Shots, Dead Energy I, Dead Energy II, Critical Break, Rewarding Mark, Burning Shots, Breaking Burn, Breaking Counter, Breaking Death, Cheater, **Energy Master**. Note: Cheater/Breaking Death free for Verso (Pictos); Base Shield non-functional for Verso; Energy Master free for Sciel (Pictos).
+<!-- GENERATED:END -->
 
-**Reserve team core: 110LP** (Lune, Monoco). Main team core minus Cheater, Dead Energy I, Dead Energy II, Energy Master.
+**Reserve team core:**
+<!-- GENERATED:START pictos:core:reserve -->
+**110LP** Main team core minus Cheater, Dead Energy I, Dead Energy II, Energy Master.
+<!-- GENERATED:END -->
 
 Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.md) §3–4. Character-specific additions on top of core sets in §5.
 
@@ -277,14 +231,17 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 
 ### Phase 3 — Late game (Level 75–80, before Renoir)
 
+<!-- GENERATED:START playthrough:phase_3_checklist -->
 - ✅ The Reacher (Maelle solo) → Lithum weapon, Maelle Level 7, Gustave resurrection path
 - ✅ Chromatic Braseleur (inside The Reacher) — complete (easy)
 - ✅ Serpenphare (SE Boat Graveyard)
 - ⬜ Flying Manor (if too difficult at current level, use Endless Tower floors 1–20 first) → Clea's Life Pictos, Perfect Chroma Catalyst
 - ⬜ **Renoir (final boss)** — enter Lumière → fight at end of dungeon. *[Choose Maelle → "A Life to Paint" → Gustave returns]*. Self-nerf: enter with Gaulteram/Medalum, calibrate on earlier fights, add back before final save point.
+<!-- GENERATED:END -->
 
 ### Phase 4 — Post-game (Level 80+)
 
+<!-- GENERATED:START playthrough:phase_4_checklist -->
 - ⬜ Endless Tower floors 1–20 + Chromatic Eveque (good first post-game activity; also serves as level-up fallback if Flying Manor too hard)
 - ⬜ Dark Gestral Arena
 - ⬜ Hard chromatics: Gault, Reaper Cultist, Petank, Goblu, Aberration, Lampmaster
@@ -299,6 +256,7 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 - ⬜ Chromatic Barbasucette (Verso's Drafts)
 - ⬜ Chromatic Franctale (Verso's Drafts)
 - ⬜ Endless Tower floors 21–33 + DLC bosses (Clea Unleashed, Simon the Divergent Star — accessed via Tower canvases after beating originals; added by Thank You Update, no ordering dependency with Verso's Drafts)
+<!-- GENERATED:END -->
 
 ---
 

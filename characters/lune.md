@@ -1,14 +1,19 @@
 # Lune — Clair Obscur: Expedition 33
 
-*Last updated: 2026-03-24*
+*Last updated: 2026-04-10*
 
 ---
 
 ## Role
 
-- **Primary role:** DPS / healer (reserve team)
-- **Party position:** Reserve team with Monoco (fallback if main party wiped); endgame team TBD
-- **Synergies:** Elemental Genesis requires one of each element stain (Fire, Earth, Lightning, Ice) — Light stains act as wildcards for any missing element; any two of Wildfire/Terraquake/Thunderfall cover all four elements; Kralim Level 10 generates 2 random stains on turn start to accelerate Genesis setup; reserve team role: Lune as DPS + healing, Monoco as break + AP flow
+- **Primary role:** DPS + Healer (reserve team)
+- **Party position:** Reserve team with Monoco (fallback if main party wiped)
+- **Synergies:**
+    + Elemental Genesis requires one of each element stain (Fire, Earth, Lightning, Ice)
+    + Light stains act as wildcards for any missing element
+    + Any two of Wildfire/Terraquake/Thunderfall cover all four elements
+    + Kralim Level 10 generates 2 random stains on turn start to accelerate Genesis setup
+    + Reserve team role: Lune as DPS + healing, Monoco as break + AP flow
 
 ---
 
@@ -16,13 +21,9 @@
 
 Lune's central system is **stain generation and consumption**. Skills generate stains by element; Elemental Genesis consumes one of each of the four elements (Fire, Earth, Lightning, Ice) for extreme damage. **Light stains act as wildcards** — a Light stain can substitute for any missing element. Maximum 4 stains at once.
 
-**Elemental Genesis stain setup:** Any two of Wildfire (Fire+Light), Terraquake (Earth+Light), Thunderfall (Lightning+Light) produce 4 stains covering all four elements via the Light wildcard. Kralim Level 10 generates 2 random stains on turn start, giving a head start each turn.
+**Elemental Genesis stain setup:** Any two of Wildfire (Fire+Light), Terraquake (Earth+Light), Lightning Dance (Lightning+Light) produce 4 stains covering all four elements via the Light wildcard. Kralim Level 10 generates 2 random stains on turn start, giving a head start each turn.
 
 **Kralim Level 4 damage stacking:** Casting a skill increases skill damage of all other elements by +20%. Resets when casting a skill of a previously used element. Encourages varied element usage.
-
-**Two types of Break skills:**
-- **Break bar filling:** "High Break damage" skills (e.g. Crystal Crush, Terraquake) chip away at the break bar over multiple hits
-- **Break trigger:** "Can Break" skills (e.g. Mayhem, Moissonneuse Vendange) land the final hit that triggers the Break
 
 **Stain interactions:**
 - Mayhem: consumes ALL stains for damage and Break. Requires 4 stains for Break.
@@ -35,6 +36,7 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 
 ### Level and Attributes
 
+<!-- GENERATED:START characters:Lune:attributes -->
 | Attribute | Value | Priority  | Reason                                                                                        |
 |-----------|-------|-----------|-----------------------------------------------------------------------------------------------|
 | Level     | 76    | —         |                                                                                               |
@@ -43,22 +45,29 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 | Luck      | 30    | Tertiary  | Spare points; crit boost                                                                      |
 | Might     | 0     | None      | No benefit for this build                                                                     |
 | Defence   | 0     | None      | No benefit for this build                                                                     |
+<!-- GENERATED:END -->
 
-### Combat Stats (with Pictos — Powerful on Shell 23, Burn Affinity, Burning Death 21)
+### Combat Stats
 
-| Stat                          | Base    | From weapon/Pictos                                 | Total   |
+<!-- GENERATED:START characters:Lune:stats -->
+*With Pictos: Powerful on Shell 23, Burn Affinity, Burning Death 21*
+
+| Stat                          | Base    | From weapon/Pictos                                | Total   |
 |-------------------------------|---------|---------------------------------------------------|---------|
 | Health                        | 3115    | +874 (Powerful on Shell)                          | 3989    |
 | Attack                        | 911     | +4454 (Kralim scaling)                            | 5365    |
 | Speed                         | 1025    | +439 (Burn Affinity) +308 (Burning Death)         | 1772    |
 | Defence                       | 182     | +874 (Powerful on Shell)                          | 1056    |
 | Critical Rate                 | 20%     | +25% (Powerful on Shell) +12% (Burn Affinity) +24% (Burning Death) | 81% |
+<!-- GENERATED:END -->
 
 ---
 
 ## Weapons
 
-### Current
+### Current (Endgame)
+
+<!-- GENERATED:START weapons:Lune:Kralim -->
 - **Name:** Kralim (29)
 - **Power:** ~3390
 - **Element:** [unconfirmed — verify in game]
@@ -67,9 +76,11 @@ Lune's central system is **stain generation and consumption**. Skills generate s
     - Level 4: Casting a Skill increases Skill damage of all other elements by +20%; resets when casting a previously used element.
     - Level 10: On turn start, if no Stains, 2 random Stains generated.
     - Level 20: +1 AP when Stains are consumed.
+<!-- GENERATED:END -->
 - **Notes:** Required for Elemental Genesis build. Note: If both generated stains are the same element, the duplicate cannot contribute to Elemental Genesis (which requires one of each element) — though it can still be used for other purposes such as Mayhem damage. A Light wildcard stain from a skill mitigates the Genesis-specific gap.
 
 ### Previous
+<!-- GENERATED:START weapons:Lune:Trebuchim -->
 - **Name:** Trebuchim (25)
 - **Power:** 3089
 - **Element:** Lightning
@@ -78,27 +89,30 @@ Lune's central system is **stain generation and consumption**. Skills generate s
     - Level 4: 1 random stain on free-aim
     - Level 10: [unconfirmed]
     - Level 20: base attack generates 2 random stains
+<!-- GENERATED:END -->
 - **Notes:** Stain generation weapon, used with Mayhem. Replaced by Kralim for Genesis build.
 
-### Available weapons (inventory)
-Angerim (24), Betelim (12), Benisim (28), Braselim (21), Choralim (20), Colim (13), Coralim (7), Deminerim (4), Elerim (13), Kralim (29), Ligherim (12), Lunerim (1), Potierim (10), Redalim (10), Saperim (14), Snowim (22), Trebuchim (25), Troubadim (15)
-
 ### Future Options
-- **Choralim (20):** 100% crit when 4 stains are active. Circular dependency as primary weapon; may serve as crit-maintenance layer once base 100% crit established. Role in endgame build needs clarification.
+<!-- GENERATED:START weapons:Lune:Choralim -->
+- **Choralim (20):** 100% crit when 4 stains are active.
+<!-- GENERATED:END -->
+- **Notes:** Circular dependency as primary weapon; may serve as crit-maintenance layer once base 100% crit established. Role in endgame build needs clarification.
 
 ### Rejected
 - **Colim:** Tested Act 2. 14% attack loss; identical AP economy; no free-aim stain generation. Rejected.
-- **Trebuchim for Genesis:** Free-aim random stain generation incompatible with precise Genesis element requirements — replaced by Kralim.
+- **Trebuchim for Genesis:** Trebuchim's free-aim random stain generation incompatible with precise Genesis element requirements — replaced by Kralim for first two stains plus varied skills for another stain plus a light stain.
 
 ---
 
 ## Pictos
 
+<!-- GENERATED:START characters:Lune:Pictos -->
 | Slot | Pictos             | Level | Stat Bonus                    | Effect                                           |
 |------|--------------------|-------|-------------------------------|--------------------------------------------------|
 | 1    | Powerful on Shell  | 23    | Defence +874, Crit +25%       | Apply Powerful when applying Shell               |
 | 2    | Burn Affinity      | —     | Speed +439, Crit +12%         | 25% increased damage on Burning targets          |
 | 3    | Burning Death      | 21    | Speed +308, Crit +24%         | Apply 3 Burn to all enemies on death             |
+<!-- GENERATED:END -->
 
 *Previous Pictos (Longer Shell, Healing Share, Powerful on Shell) replaced Chat 5. Longer Shell moved to Monoco; Healing Share retired.*
 
@@ -109,12 +123,15 @@ Angerim (24), Betelim (12), Benisim (28), Braselim (21), Choralim (20), Colim (1
 ## Lumina
 
 ### LP Budget
+<!-- GENERATED:START characters:Lune:LP -->
 - **Current capacity:** 133 LP (expanded 13 Colour of Lumina Chat 5)
 - **Used:** 133 LP
 - **Spare:** 0 LP
+<!-- GENERATED:END -->
 
 ### Current Loadout
 
+<!-- GENERATED:START characters:Lune:Lumina -->
 *Reserve team core (110LP) + character-specific additions.*
 
 | Lumina             | LP  | Notes                                                          |
@@ -139,6 +156,7 @@ Angerim (24), Betelim (12), Benisim (28), Braselim (21), Choralim (20), Colim (1
 | Rewarding Mark     | 5   | Core + character-specific                                      |
 | Teamwork           | 5   | Core                                                           |
 | Accelerating Heal  | 5   | Character-specific                                             |
+<!-- GENERATED:END -->
 
 *Removed Chat 5: Breaking Counter removed from character-specific (now in core). Dead Energy I (2LP) and Dead Energy II (2LP) removed.*
 *Added Chat 5: Protecting Heal (5LP), Critical Break (5LP), Rewarding Mark (5LP), Breaking Death (5LP).*
@@ -147,6 +165,7 @@ Angerim (24), Betelim (12), Benisim (28), Braselim (21), Choralim (20), Colim (1
 
 ## Skills
 
+<!-- GENERATED:START characters:Lune:skills -->
 **Currently equipped (6):** Wildfire, Terraquake, Thunderfall, Healing Light, Mayhem, Elemental Genesis
 
 | Skill             | AP Cost | Equipped | Notes                                                                                                                                    |
@@ -159,27 +178,28 @@ Angerim (24), Betelim (12), Benisim (28), Braselim (21), Choralim (20), Colim (1
 | Elemental Genesis | 4       | ✅       | Primary DPS skill. Requires 1 of each element stain (Fire, Earth, Lightning, Ice — Light wildcards for missing element). Extreme damage. |
 | Lightning Dance   | —       | ❌       | **Priority skill — acquired, not yet equipped.** Primary single-target nuke for the Kralim burst build; requires Fire + Ice + Earth stains. Slot in when loadout allows. |
 | Hell              | —       | ❌       | **Priority skill — not yet acquired, saving up.** Guarantees 4 stains and AoE burn on turn 1, enabling Genesis or Lightning Dance on turn 2. Important to obtain. |
-
-### Available skills (effects not fully confirmed)
-Crystal Crush, Earth Rising, Electrify, Elemental Trick, Fire Rage, Ice Lance, Immolation, Rebirth, Revitalisation, Rockslide, Thermal Transfer, Typhoon
+<!-- GENERATED:END -->
 
 ---
 
 ## Gradient Skills
 
+<!-- GENERATED:START characters:Lune:gradients -->
 | Gradient Skill  | Gradient Cost | Acquired | Notes                                                                             |
 |-----------------|---------------|----------|-----------------------------------------------------------------------------------|
 | Tremor          | 1             | ✅       | High Earth damage to all enemies and removes all enemies' Shields.                |
 | Tree of Life    | 2             | ✅       | Heals party + removes ALL status effects. Reliable only when charges accumulated. |
 | Sky Break       | 3             | ✅       | Extreme damage to all enemies using element with most stains; can break.          |
+<!-- GENERATED:END -->
 
 ---
 
 ## Build Options
 
-| Build Name           | Role              | Key Skills                                     | Key Weapon | Status   | Notes                                                                                        |
-|----------------------|-------------------|------------------------------------------------|------------|----------|----------------------------------------------------------------------------------------------|
-| Elemental Genesis    | DPS / healer      | Wildfire, Terraquake, Thunderfall, Healing Light, Mayhem, Elemental Genesis | Kralim | Current | Vitality 99, Agility 99, Luck 30. Reserve team role. |
+| Build                | Role              | Key Skills                                                                  | Key Weapon | Status   | Notes                                                                                             |
+|----------------------|-------------------|-----------------------------------------------------------------------------|------------|----------|---------------------------------------------------------------------------------------------------|
+| Mayhem               | DPS / healer      | Mayhem, Wildfire, Crustal Crush, Thunderfall, Healing Light, Rebirth        | Trebuchim  | Previous | Use Trebuchim + skills to generate stains, Mayhem for damage + break. Heavily used in Acts 1 & 2. |
+| Elemental Genesis    | DPS / healer      | Hell, Terraquake, Lightning Dance, Elemental Genesis, Mayhem, Healing Light | Kralim     | Current  | Vitality 99, Agility 99, Luck 30. Reserve team role.                                              |
 
 ---
 

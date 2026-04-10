@@ -1,6 +1,6 @@
 # Verso — Clair Obscur: Expedition 33
 
-*Last updated: 2026-03-11*
+*Last updated: 2026-04-10*
 
 ---
 
@@ -8,7 +8,12 @@
 
 - **Primary role:** Mid-game DPS (levelling team); endgame main DPS
 - **Party position:** Active in Act 3 levelling team (Verso / Monoco / Sciel); planned endgame team (Maelle / Sciel / Verso)
-- **Synergies:** Receives Fortune's Fury from Sciel (doubled damage); Intervention from Sciel grants extra turn + 4 AP for burst; Monoco's Stalact Punches fills Break bar for Verso's Perfect Break (triggers Break + jumps to S Rank); Marking Shot + Rewarding Mark Lumina generate AP return for party
+- **Synergies:**
+    + Receives Fortune's Fury from Sciel (doubled damage)
+    + Intervention from Sciel grants extra turn (good for Steeled Strike) + 4 AP for burst
+    + Monoco's Stalact Punches fills Break bar for Verso's Perfect Break (triggers Break + jumps to S Rank)
+    + Marking Shot + Rewarding Mark Lumina generate AP return for party
+    + Breaking Death Lumina fills Break bar on death, which allows Verso to jump back to Rank S when revived using Perfect Break
 
 ---
 
@@ -18,16 +23,18 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 **Critical mechanic:** Rank bonuses apply ONLY at the **exact rank stated** — not at higher ranks. Yellow skill text in-game indicates an active rank bonus.
 
-| Event | Perfection effect |
-|-------|-------------------|
-| Parry | Gains Perfection; successful full parry sequence triggers Counterattack (powerful free damage, does not cost a turn) |
-| Dodge | Prevents rank loss; Perfect Dodge (same timing window as Parry) gives +1 AP via Dodger Lumina |
-| Hit taken (general) | Full rank demotion |
-| Hit taken (Gaulteram) | Lose 1 Perfection only (not full rank demotion) — Gaulteram-specific, not general |
-| Quick Strike | D: gives more Perfection |
-| Light Holder | +1 Rank on completion; A: +2 AP |
-| Perfect Break (at B Rank) | Triggers Break → jump to S Rank |
-| End Bringer | A: can reapply stun on broken target |
+| Event                     | Perfection effect                |
+|---------------------------|----------------------------------|
+| Parry                     | Gains Perfection                 |
+| Dodge                     | Prevents rank loss               |
+| Hit taken (general)       | Full rank demotion               |
+| Hit taken (Gaulteram)     | Lose 1 Perfection only           |
+| Death                     | Drop back to Rank D              |
+| Battle start (general)    | Start on Rank D                  |
+| Battle start (Lanceram)   | Start on Rank C                  |
+| Battle start (Chevalam)   | Start on Rank S                  |
+| Light Holder              | +1 Rank on completion            |
+| Perfect Break (at B Rank) | Jump to S Rank if triggers Break |
 
 **Dodge vs Parry timing:** Dodge has a wider window than Parry. Dodge > Perfect Dodge == Parry in terms of timing windows. If a Dodge is Perfect, a Parry would also work. Dodge is used to safely learn parry timings — the game indicates whether a Dodge was Perfect.
 
@@ -43,10 +50,11 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 ---
 
-## Current Stats
+## Stats
 
 ### Level and Attributes
 
+<!-- GENERATED:START characters:Verso:attributes -->
 | Attribute | Value | Priority  | Reason                                                                         |
 |-----------|-------|-----------|--------------------------------------------------------------------------------|
 | Level     | 81    | —         |                                                                                |
@@ -55,9 +63,11 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Might     | 27    | Tertiary  | Extra attack power; spare points                                               |
 | Vitality  | 0     | None      | Weapon does not scale off Vitality                                             |
 | Defence   | 0     | None      | No benefit for this build                                                      |
+<!-- GENERATED:END -->
 
 ### Combat Stats
 
+<!-- GENERATED:START characters:Verso:stats -->
 | Stat                          | Base    | From weapon/Pictos              | Total  |
 |-------------------------------|---------|--------------------------------|--------|
 | Health                        | 1698    | +2305 (Pictos)                 | 4003   |
@@ -65,20 +75,14 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Speed                         | 1096    | +839 (Pictos)                  | 1935   |
 | Defence                       | 182     | —                              | 182    |
 | Critical Rate                 | 41%     | +20% (Pictos)                  | 61%    |
-
-### Pictos Breakdown
-
-| Pictos       | Level | Health | Speed | Crit | Effect                                      |
-|--------------|-------|--------|-------|------|---------------------------------------------|
-| Cheater      | 24    | +1198  | +400  | —    | Always play twice in a row.    |
-| Survivor     | 21    | —      | +439  | +12% | Survive fatal damage with 1 Health once per battle. |
-| Second Chance| 16    | +1107  | —     | +8%  | Revive with 100% Health once per battle. |
+<!-- GENERATED:END -->
 
 ---
 
 ## Weapons
 
-### Current
+### Current (Endgame)
+<!-- GENERATED:START weapons:Verso:Chevalam -->
 - **Name:** Chevalam (32)
 - **Power:** 5033
 - **Element:** Physical
@@ -87,28 +91,8 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
     - Level 4: Start battle at Rank S, but can't be Healed or gain Shields.
     - Level 10: 20% increased damage for each consecutive no-damage turn, stacks up to 5×.
     - Level 20: Apply Rush on Rank S.
+<!-- GENERATED:END -->
 - **Notes:** The Cheater extra turn counts as a no-damage turn and stacks the Level 10 bonus — Verso builds damage stacks mechanically just by taking his Cheater turns normally, not only by successfully avoiding hits. Confident (20LP) and Confident Fighter (15LP) are the recommended Lumina pairing: since Chevalam already prevents healing, the "cannot be healed" downside of both Lumina is fully priced in, while the benefits (take half damage; deal 30% more damage) are entirely available.
-
-### Also obtained (not in active use)
-| Weapon      | Level | Notes                                                                                                         |
-|-------------|-------|---------------------------------------------------------------------------------------------------------------|
-| Corpeso     | 23    | Fire, Vitality + Agility. L4: Base Attack applies 2 Burn per Rank. L10: +1 AP on Rank Up. L20: Burn damage +50% per Rank up to 300% at S. Burn-stacking build; synergises with Maelle's Burning Canvas. |
-| Contorso    | 23    | Lightning, Defence + Agility. L4: Switch to Rank S on Break; Base Attack can Break. L10: 100% Crit at Rank S. L20: Lightning strike on Crits. S-tier; deferred — same rank-loss-on-hit vulnerability, no forgiveness. |
-| Glaceso     | 29    | Defence + Luck scaling — respec required. Previously rejected.                                                |
-| Gaulteram   | 12    | Agility + Luck. Act 2 weapon. L4: lose only 1 Perfection on hit. Replaced by Chevalam.                       |
-| Dualiso     | 9     | Lightning, Vitality + Defence. L4: Play again after Base Attack. L10: +50% Base Attack damage. L20: Base Attack gives 4 Perfection. Conflicts with Cheater; base-attack-spam build. |
-| Sakaram     | 25    | Details not confirmed.                                                                                        |
-| Cruleram    | 26    | Details not confirmed.                                                                                        |
-| Lanceram    | 15    | Details not confirmed.                                                                                        |
-| Liteso      | 16    | Details not confirmed.                                                                                        |
-| Abysseram   | 10    | Details not confirmed.                                                                                        |
-| Confuso     | 11    | Details not confirmed.                                                                                        |
-| Danseso     | 10    | Details not confirmed.                                                                                        |
-| Delaram     | 7     | Details not confirmed.                                                                                        |
-| Demonam     | 5     | Details not confirmed.                                                                                        |
-| Noahram     | 1     | Details not confirmed.                                                                                        |
-| Sireso      | 14    | Details not confirmed.                                                                                        |
-| Verleso     | 7     | Details not confirmed.                                                                                        |
 
 ### Future (post-game)
 - **Simoso** — from Simon (Renoir's Drafts). S-tier. Scaling: Vitality + Agility. Level 20: Can't die if at least Rank A.
@@ -119,11 +103,13 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 ## Pictos
 
+<!-- GENERATED:START characters:Verso:Pictos -->
 | Slot | Pictos        | Level | Stat Bonus                        | Effect                                      |
 |------|---------------|-------|-----------------------------------|---------------------------------------------|
 | 1    | Cheater       | 24    | Health +1198, Speed +400          | Extra turn once per turn                    |
 | 2    | Breaking Death| 29    | Speed +586, Crit +33%             | Fully charge enemy break bar on death       |
 | 3    | Second Chance | 16    | Health +1107, Crit +8%            | Revive with 100% Health once per battle     |
+<!-- GENERATED:END -->
 
 **Breaking Death synergy:** On death → break bar fills instantly → Second Chance revives at Rank D → Perfect Break triggers break → Rank S in one move → Steeled Strike burst immediately active.
 
@@ -132,12 +118,15 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ## Lumina
 
 ### LP Budget
+<!-- GENERATED:START characters:Verso:LP -->
 - **Current capacity:** 154 LP
 - **Used:** 154 LP
 - **Spare:** 0 LP
+<!-- GENERATED:END -->
 
 ### Current Loadout
 
+<!-- GENERATED:START characters:Verso:Lumina -->
 | Lumina              | LP  | Notes                                                         |
 |---------------------|-----|---------------------------------------------------------------|
 | Breaking Burn       | 5   |                                                               |
@@ -161,11 +150,13 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Second Chance       | —   | FREE from Second Chance Pictos                                |
 | Survivor            | 20  | Added Chat 5 — both Survivor and Breaking Death effects now on Verso |
 | Teamwork            | 5   |                                                               |
+<!-- GENERATED:END -->
 
 ---
 
 ## Skills
 
+<!-- GENERATED:START characters:Verso:skills -->
 **Currently equipped (6):** Quick Strike, Light Holder, Marking Shot, Perfect Break, End Bringer, Steeled Strike
 
 | Skill          | AP Cost         | Equipped | Rank Bonus                                     | Notes                                                                                                                                                              |
@@ -193,26 +184,29 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Phantom Stars    | 9 (5 at S) | —                   | AoE multi-hit, all enemies. Trash only — useless in 1v1.                                                                 |
 | Purification     | 5   | B: increased damage          | Medium Light damage, 2 hits. Dispels self status effects. Niche.                                                         |
 | Strike Storm     | 7   | C: crits give +2 Perfection  | 5-hit high single-target, weapon element. Previously core skill; displaced by End Bringer/Steeled Strike.               |
+<!-- GENERATED:END -->
 
 ---
 
 ## Gradient Skills
 
+<!-- GENERATED:START characters:Verso:skills -->
 | Gradient Skill | Gradient Cost | Acquired | Notes                                   |
 |----------------|---------------|----------|-----------------------------------------|
 | [unconfirmed]  | 1             | [?]      | Details not confirmed — verify in game. |
 | [unconfirmed]  | 2             | [?]      | Details not confirmed — verify in game. |
 | [unconfirmed]  | 3             | [?]      | Details not confirmed — verify in game. |
+<!-- GENERATED:END -->
 
 ---
 
 ## Build Options
 
-| Build Name                   | Role     | Key Skills                                                                               | Key Lumina | Status   | Notes                                                                  |
-|------------------------------|----------|------------------------------------------------------------------------------------------|------------|----------|------------------------------------------------------------------------|
-| Levelling team (pre-Cheater) | DPS      | Quick Strike, Assault Zero, Strike Storm, Marking Shot, Phantom Stars, Perfect Break     | Core suite | Complete | Rank build via Strike Storm crits; Perfect Break for S Rank jump       |
-| Solo fights (completed)      | Solo DPS | Quick Strike, Assault Zero, Defiant Strike, Perfect Break, Perfect Recovery, Paradigm Shift | Solo Pictos | Complete | Second Chance borrowed from Maelle; now returned                    |
-| Endgame (post-Cheater)       | Main DPS | Quick Strike, Assault Zero, Strike Storm, Marking Shot, Perfect Break, Steeled Strike   | Core suite | Current  | Phantom Stars → Steeled Strike confirmed. Second Chance → Cheater Pictos. Fortune's Fury + Steeled Strike incompatible (buff consumed on windup turn — Sciel should use Intervention instead when Verso is winding up). Steeled Strike damage calculation timing (windup vs execution turn) unresolved — needs in-game testing. |
+| Build Name                   | Role     | Key Skills                                                                                  | Key Lumina  | Status   | Notes                                                                     |
+|------------------------------|----------|---------------------------------------------------------------------------------------------|-------------|----------|---------------------------------------------------------------------------|
+| Levelling team (pre-Cheater) | DPS      | Quick Strike, Assault Zero, Strike Storm, Marking Shot, Phantom Stars, Perfect Break        | Core suite  | Complete | Rank build via Strike Storm crits; Perfect Break for S Rank jump          |
+| Solo fights (completed)      | Solo DPS | Quick Strike, Assault Zero, Defiant Strike, Perfect Break, Perfect Recovery, Paradigm Shift | Solo Pictos | Complete | Second Chance borrowed from Maelle; now returned                          |
+| Endgame (post-Cheater)       | Main DPS | Quick Strike, Assault Zero, Strike Storm, Marking Shot, Perfect Break, Steeled Strike       | Core suite  | Current  | Phantom Stars → Steeled Strike confirmed. Second Chance → Cheater Pictos. |
 
 ---
 

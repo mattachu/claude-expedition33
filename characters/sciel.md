@@ -1,6 +1,6 @@
 # Sciel — Clair Obscur: Expedition 33
 
-*Last updated: 2026-03-11*
+*Last updated: 2026-04-10*
 
 ---
 
@@ -8,7 +8,12 @@
 
 - **Primary role:** Pure support
 - **Party position:** Active in Act 3 levelling team (Verso / Monoco / Sciel) and planned endgame team (Maelle / Sciel / Verso)
-- **Synergies:** Goes first in turn order (Speed ~1812) — Fortune's Fury on Verso before he acts; Intervention gives any ally an immediate extra turn + 4 AP; Plentiful Harvest converts Foretell stacks to AP; Litheson Level 20 passive generates +3 AP per turn on buff/debuff application
+- **Synergies:**
+    + Fortune's Fury double's an ally's damage
+    + Intervention gives any ally an immediate extra turn + 4 AP
+    + Use Fortune's Fury + Intervention on Verso after he winds up Steeled Strike
+    + Plentiful Harvest converts Foretell stacks to AP
+    + Litheson Level 20 passive generates +3 AP for Sciel per turn on buff/debuff application
 
 ---
 
@@ -20,14 +25,15 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 **Twilight state** (from skills Final Path and Twilight Dance): secondary DPS mode. Used when support actions are not needed on a turn. Chation weapon would extend Twilight further but is currently deferred (double damage risk).
 
-**Turn order priority:** Sciel must act before Verso for Fortune's Fury to apply in time. Speed ~1812 guarantees she goes first in any current team arrangement.
+**Turn order priority:** Sciel needs high speed to provide support to allies. Ideally goes first or second.
 
 ---
 
-## Current Stats
+## Stats
 
 ### Level and Attributes
 
+<!-- GENERATED:START characters:Sciel:attributes -->
 | Attribute | Value | Priority  | Reason                                                                                                      |
 |-----------|-------|-----------|-------------------------------------------------------------------------------------------------------------|
 | Level     | 81    | —         |                                                                                                             |
@@ -36,8 +42,12 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 | Defence   | 33pts | Secondary | Spare points — gives small Defence and Crit bonus                                                           |
 | Vitality  | 0     | None      | Litheson does not scale off Vitality                                                                        |
 | Might     | 0     | None      | No benefit for this build                                                                                   |
+<!-- GENERATED:END -->
 
-### Combat Stats (with permanent Pictos — Critical Burn 25, Recovery 20, Quick Break 25)
+### Combat Stats
+
+<!-- GENERATED:START characters:Sciel:attributes -->
+*With permanent Pictos — Critical Burn 25, Recovery 20, Quick Break 25*
 
 | Stat                          | Base    | From weapon/Pictos              | Total   |
 |-------------------------------|---------|--------------------------------|---------|
@@ -46,6 +56,7 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 | Speed                         | 1100    | +434 (Critical Burn) +444 (Recovery+Quick Break) | 1978 |
 | Defence                       | 312     | +324 (Recovery)                | 636     |
 | Critical Rate                 | 49%     | +28% (Critical Burn) +28% (Quick Break) +11% (removed Base Shield) | ~100% (capped) |
+<!-- GENERATED:END -->
 
 *Critical Burn Pictos replaced Base Shield — restored intended turn order (Sciel 1978 > Maelle 1956).*
 
@@ -54,6 +65,7 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 ## Weapons
 
 ### Current (Endgame)
+<!-- GENERATED:START weapons:Sciel:Litheson -->
 - **Name:** Litheson (20)
 - **Power:** 2081
 - **Element:** Physical
@@ -62,6 +74,7 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
     - Level 4: During Moon phase, all allies have Greater Rush. During Sun phase, all enemies have Greater Slow.
     - Level 10: During Twilight phase, all allies have Greater Rush AND all enemies have Greater Slow.
     - Level 20: +3 AP on applying a Buff or Debuff, once per turn.
+<!-- GENERATED:END -->
 - **Notes:** Confirmed endgame weapon. Litheson's phase effects have a large impact on turn order — fights without Sciel noticeably harder.
 
 ### Future Options
@@ -79,25 +92,28 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 ### Current (permanent loadout)
 
+<!-- GENERATED:START characters:Sciel:Pictos -->
 | Slot | Pictos        | Level | Stat Bonus                        | Effect                                      |
 |------|---------------|-------|-----------------------------------|---------------------------------------------|
 | 1    | Critical Burn | 25    | Speed +434, Crit +28%             | 25% increased Crit rate on Burning enemies  |
 | 2    | Recovery      | 20    | Health +2000, Defence +324        | Recover 10% Health on turn start            |
 | 3    | Quick Break   | 25    | Speed +444, Crit +28%             | Pure stat stick (never fires with Cheater)  |
-
-*Temporarily replaced by Healing Boon / Protecting Tint while learning Lumina — revert once learnt.*
+<!-- GENERATED:END -->
 
 ---
 
 ## Lumina
 
 ### LP Budget
+<!-- GENERATED:START characters:Sciel:LP -->
 - **Current capacity:** 175 LP (expanded 9 Colour of Lumina Chat 5)
 - **Used:** 170 LP
 - **Spare:** 5 LP (will become 0 after adding Healing Boon 10LP — expand pool by 5 more)
+<!-- GENERATED:END -->
 
 ### Current Loadout
 
+<!-- GENERATED:START characters:Sciel:Lumina -->
 | Lumina              | LP  | Notes                                                         |
 |---------------------|-----|---------------------------------------------------------------|
 | Accelerating Heal   | 5   |                                                               |
@@ -126,13 +142,14 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 | Quick Break         | —   | FREE from Quick Break Pictos                                  |
 | Recovery            | —   | FREE from Recovery Pictos                                     |
 | Rewarding Mark      | 5   |                                                               |
-| Teamwork            | 5   |  
-                                                             |
+| Teamwork            | 5   |                                                               |
+<!-- GENERATED:END -->
 
 ---
 
 ## Skills
 
+<!-- GENERATED:START characters:Sciel:skills -->
 **Currently equipped (6):** Focused Foretell, Twilight Dance, Final Path, Fortune's Fury, Intervention, Plentiful Harvest
 
 **Target loadout (when Grim Harvest available):** Fortune's Fury, Intervention, Plentiful Harvest, Final Path, Twilight Dance, Grim Harvest
@@ -140,35 +157,35 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 | Skill             | AP Cost | Equipped | Notes                                                                                                                                    |
 |-------------------|---------|----------|------------------------------------------------------------------------------------------------------------------------------------------|
 | Fortune's Fury    | 5       | ✅       | Doubles one ally's damage for their next turn. Must be used before target acts. Core setup for Verso burst.                              |
-| Intervention      | 5       | ✅       | Grants targeted ally an immediate extra turn + 4 AP (Greater Rush). Core enabler for Verso's Steeled Strike combo.                      |
-| Plentiful Harvest | 4       | ✅       | Consumes all Foretell on target → 1 AP per stack, split between party. 5 stacks = +2/+2/+1; 10 stacks = +3/+3/+4.                     |
+| Intervention      | 5       | ✅       | Grants targeted ally an immediate extra turn + 4 AP (Greater Rush). Core enabler for Verso's Steeled Strike combo.                       |
+| Plentiful Harvest | 4       | ✅       | Consumes all Foretell on target → 1 AP per stack, split between party. 5 stacks = +2/+2/+1; 10 stacks = +3/+3/+4.                        |
 | Final Path        | 9       | ✅       | High damage + applies 10 Foretell in one turn. Fast route to big Plentiful Harvest. Irreplaceable for efficient harvest loop.            |
 | Twilight Dance    | 9       | ✅       | High damage in Twilight state, consumes Foretell. Secondary DPS when support actions not needed.                                         |
 | Focused Foretell  | 2       | ✅       | Applies 2 Foretell (or 5 if target has none). The reset-to-5 mechanic is central to the Plentiful Harvest AP loop: cast Plentiful Harvest (consumes all Foretell), then Focused Foretell resets stacks to 5, enabling an efficient repeated cycle. **Drop when Grim Harvest available** — Grim Harvest fills the moderate-cost utility slot. |
 | Dark Cleansing    | 0       | ❌       | Cleanses an ally of status effects and propagates that ally's buffs to all allies. With Healing Boon Lumina equipped, the buff propagation triggers a 15% heal for each ally buffed — making this an effective 0AP party-wide heal. |
 | Grim Harvest      | 5       | ❌       | Heals all allies 30% + 5% per Foretell stack consumed. 10 stacks = 80% heal; in Twilight (doubled Foretell) = 100%. Not yet available — requires Recoat or 5 more levels. |
-
-### Available skills (effects unconfirmed)
-All Set, Card Weaver, Dark Wave, Delaying Slash, Firing Shadow, Harvest, Marking Card, Phantom Blade, Searing Bond, Twilight Slash
+<!-- GENERATED:END -->
 
 ---
 
 ## Gradient Skills
 
+<!-- GENERATED:START characters:Sciel:gradients -->
 | Gradient Skill | Gradient Cost | Acquired | Notes                                                                                                          |
 |----------------|---------------|----------|----------------------------------------------------------------------------------------------------------------|
 | Shadow Bringer | 1             | ✅       | High single-target Dark damage to random enemies, 10 hits. Applies 1 Foretell per hit (10 total). Efficient Foretell builder at low GC cost. |
 | Doom           | 2             | ✅       | Very high single-target Dark damage, 3 hits. Applies Powerless, Defenceless and Slow for 3 turns. Can Break. Strong boss debuff package. |
 | End Slice      | 3             | ✅       | Extreme single-target Physical damage, 1 hit. Damage increased for each Foretell consumed since battle start. Scales with total Plentiful Harvest usage — used to defeat Sprong. |
+<!-- GENERATED:END -->
 
 ---
 
 ## Build Options
 
-| Build Name      | Role         | Key Skills                                              | Key Lumina          | Status  | Notes                                                                              |
-|-----------------|--------------|---------------------------------------------------------|---------------------|---------|------------------------------------------------------------------------------------|
-| Pure Support    | Support      | Fortune's Fury, Intervention, Plentiful Harvest, Focused Foretell, Twilight Dance, Final Path | Core suite + Energising Heal/Parry/Heal | Current | Litheson Level 20 essential for AP generation |
-| Chation DPS-hybrid | Support/DPS | Twilight-focused skills | TBD | Deferred | Double damage risk; revisit when parry rate improves |
+| Build Name         | Role         | Key Skills                                                                                    | Key Lumina                              | Status   | Notes                                                |
+|--------------------|--------------|-----------------------------------------------------------------------------------------------|-----------------------------------------|----------|------------------------------------------------------|
+| Pure Support       | Support      | Fortune's Fury, Intervention, Plentiful Harvest, Focused Foretell, Twilight Dance, Final Path | Core suite + Energising Heal/Parry/Heal | Current  | Litheson Level 20 essential for AP generation        |
+| Chation DPS-hybrid | Support/DPS  | Twilight-focused skills                                                                       | TBD                                     | Deferred | Double damage risk; revisit when parry rate improves |
 
 ---
 

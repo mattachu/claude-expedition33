@@ -1,6 +1,6 @@
 # Monoco — Clair Obscur: Expedition 33
 
-*Last updated: 2026-03-24*
+*Last updated: 2026-04-10*
 
 ---
 
@@ -49,10 +49,11 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 
 ---
 
-## Current Stats
+## Stats
 
 ### Level and Attributes
 
+<!-- GENERATED:START characters:Monoco:attributes -->
 | Attribute | Value | Priority  | Reason                                                                               |
 |-----------|-------|-----------|--------------------------------------------------------------------------------------|
 | Level     | 77    | —         |                                                                                      |
@@ -61,8 +62,12 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 | Luck      | 24    | Tertiary  | Spare points; crit boost                                                             |
 | Vitality  | 0     | None      | Not relevant for Joyaro scaling                                                      |
 | Might     | 0     | None      | No benefit for this build                                                            |
+<!-- GENERATED:END -->
 
-### Combat Stats (with Pictos — Longer Shell 29, Energising Turn 14, Sniper 23)
+### Combat Stats
+
+<!-- GENERATED:START characters:Monoco:stats -->
+*With Pictos: Longer Shell 29, Energising Turn 14, Sniper 23*
 
 | Stat                          | Base    | From weapon/Pictos                             | Total   |
 |-------------------------------|---------|-----------------------------------------------|---------|
@@ -71,12 +76,14 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 | Speed                         | 1025    | +270 (Energising Turn) +529 (Sniper)          | 1824    |
 | Defence                       | 729     | +1572 (Longer Shell)                          | 2301    |
 | Critical Rate                 | 38%     | +13% (Sniper)                                 | 51%     |
+<!-- GENERATED:END -->
 
 ---
 
 ## Weapons
 
-### Current
+### Current (Endgame)
+<!-- GENERATED:START weapons:Monoco:Joyaro -->
 - **Name:** Joyaro (25)
 - **Power:** 3221
 - **Element:** Lightning
@@ -85,16 +92,16 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
     - Level 4: Start battle in Almighty Mask.
     - Level 10: 20% increased damage for each consecutive turn without taking damage, stacks up to 5×.
     - Level 20: Break damage doubled while in Almighty Mask.
+<!-- GENERATED:END -->
 - **Source:** Ultimate Sakapatate (Endless Night Sanctuary, level 25) — obtained. Also drops from Flying Manor Lampmaster; purchasable from River of Life merchant.
 - **Notes:** Almighty start is strong opener; Level 20 fires again whenever Monoco returns to Almighty Mask.
 
 ### Previous
+<!-- GENERATED:START weapons:Monoco:Nusaro -->
 - **Name:** Nusaro (20)
 - **Scaling:** Agility A, Vitality B
+<!-- GENERATED:END -->
 - **Notes:** Level 20: +1 AP on Mask change. Replaced by Joyaro after respec.
-
-### Available weapons
-Ballaro (20), Fragaro (15), Grander (21), Joyaro (25), Monocaro (10), Urnaro (20)
 
 ### Rejected
 - **Monocaro:** Starts in Balanced Mask — caused rotation desync (Chalier Combo 7 AP on Turn 1 unaffordable).
@@ -104,11 +111,13 @@ Ballaro (20), Fragaro (15), Grander (21), Joyaro (25), Monocaro (10), Urnaro (20
 
 ## Pictos
 
+<!-- GENERATED:START characters:Monoco:Pictos -->
 | Slot | Pictos          | Level | Stat Bonus                  | Effect                                      |
 |------|-----------------|-------|-----------------------------|---------------------------------------------|
 | 1    | Longer Shell    | 29    | Health +2757, Defence +1572 | On applying Shell, duration increased by 2  |
 | 2    | Energising Turn | 14    | Speed +270                  | +1 AP on turn start. Energising Turn Lumina free (20LP saving). |
 | 3    | Sniper          | 23    | Speed +529, Crit +13%       | Pure stat stick for Joyaro/skill-focused build |
+<!-- GENERATED:END -->
 
 Longer Shell's extension effect fires when Lune uses Healing Light (Protecting Heal Lumina applies Shell on heal).
 
@@ -121,12 +130,15 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 ## Lumina
 
 ### LP Budget
+<!-- GENERATED:START characters:Monoco:LP -->
 - **Current capacity:** 127 LP (level 77)
 - **Used:** 111 LP
 - **Spare:** 16 LP
+<!-- GENERATED:END -->
 
 ### Current Loadout
 
+<!-- GENERATED:START characters:Monoco:Lumina -->
 *Reserve team core (110LP) minus Energising Turn (free from Pictos) = 90LP paid from core. Plus character-specific additions.*
 
 | Lumina             | LP  | Notes                                                                                                              |
@@ -147,6 +159,7 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Rewarding Mark     | 5   | Core                                                                                                               |
 | Staggering Attack  | 1   | Character-specific — adds break damage to base attack                                                              |
 | Teamwork           | 5   | Core — fires for active party only (Lune + Monoco both alive = almost always true when reserve team is active)     |
+<!-- GENERATED:END -->
 
 **Situational Lumina (add for specific boss fights):**
 - Anti-Burn (10LP) — vs bosses applying Burn
@@ -160,9 +173,8 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 
 ## Skills
 
+<!-- GENERATED:START characters:Monoco:skills -->
 **Currently equipped (6):** Abbest Wind, Stalact Punches, Portier Crash, Moissonneuse Vendange, Chalier Combo, Potier Energy
-
-**Abbest Wind cannot be removed** — essential for wheel cycling and free second turn on Agile Mask.
 
 | Skill                 | AP Cost        | Wheel | Mask     | Notes                                                                                                                                                       |
 |-----------------------|----------------|-------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -172,6 +184,9 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Moissonneuse Vendange | 3              | +3    | Balanced | 3-hit high damage; can Break (triggers Break — pairs with Stalact Punches as filler).                                                                       |
 | Chalier Combo         | 7              | +3    | Balanced | 6-hit high Physical damage; increased damage on Balanced Mask.                                                                                              |
 | Portier Crash         | 8              | +5    | Heavy    | High Physical AoE, 1 hit. Can Break. Heavy Mask: increased damage. AoE break specialist.                                                                    |
+<!-- GENERATED:END -->
+
+**Abbest Wind should not be removed** — essential for wheel cycling and free second turn on Agile Mask.
 
 **Not yet learnt (2):** Creation Void (from The Creation boss in Lumière), Sakapatate Fire (from Ultimate Sakapatate — available in Endless Tower Stages 7 and 8, and possibly the Monolith).
 
@@ -181,19 +196,22 @@ Full skill reference (AP cost, wheel move, mask, effect, mask bonus, learned/equ
 
 ## Gradient Skills
 
+<!-- GENERATED:START characters:Monoco:gradients -->
 | Gradient Skill | Gradient Cost | Acquired | Notes                                                                                                                        |
 |----------------|---------------|----------|------------------------------------------------------------------------------------------------------------------------------|
 | Mighty Strike  | 1             | ✅       | High single-target damage, 2 hits. Deals double damage if target is stunned. Goes to Almighty Mask.                         |
 | Sanctuary      | 2             | ✅       | Gives 2 Shields and applies Regen to all allies for 3 turns. Strong reserve team survivability.                             |
 | Break Point    | 3             | ✅       | Extreme single-target Lightning damage, 1 hit. Fills Break bar AND triggers Break simultaneously. Instant break on demand.  |
+<!-- GENERATED:END -->
 
 ---
 
 ## Build Options
 
-| Build Name     | Role                  | Key Skills                                                                                   | Key Lumina                                   | Status  | Notes                                           |
-|----------------|-----------------------|----------------------------------------------------------------------------------------------|----------------------------------------------|---------|-------------------------------------------------|
-| Reserve team   | Break + AP support    | Potier Energy, Stalact Punches, Abbest Wind, Moissonneuse Vendange, Chalier Combo, Pelerin Heal | Reserve core + Staggering Attack + Breaking Death | Current | Joyaro equipped; Longer Shell/Energising Turn/Sniper Pictos |
+| Build          | Role                 | Key Skills                                                                                       | Key Lumina                                        | Status   | Notes                                                       |
+|----------------|----------------------|--------------------------------------------------------------------------------------------------|---------------------------------------------------|----------|-------------------------------------------------------------|
+| Levelling team | Break + support/heal | Potier Energy, Stalact Punches, Abbest Wind, Moissonneuse Vendange, Chalier Combo, Pelerin Heal  |                                                   | Previous | Versatile; can cover Lune's roles                           |
+| Reserve team   | Break + AP support   | Potier Energy, Stalact Punches, Abbest Wind, Moissonneuse Vendange, Chalier Combo, Portier Crash | Reserve core + Staggering Attack + Breaking Death | Current  | Joyaro equipped; Longer Shell/Energising Turn/Sniper Pictos |
 
 ---
 
