@@ -33,6 +33,9 @@ These are in addition to the general failure modes in the startup file:
 - **Stendhal AP cost:** Said 4 AP. Correct: 8 AP. Also applies Defenceless to Maelle herself on use. Was nerfed 40% in Patch 1.2.3 — no longer one-shots Alicia.
 - **Gaulteram described as Act 3 best option:** Gaulteram is consensus Act 2 weapon. Community S-tier Act 3 weapons are Chevalam, Contorso, Corpeso, Simoso.
 
+Full error log in [`reference/historical-errors.md`](../reference/historical-errors.md).
+Fetch that file only when reviewing specific past errors.
+
 ---
 
 ## Section 2: Playthrough Status
@@ -78,37 +81,29 @@ These are in addition to the general failure modes in the startup file:
 
 ## Section 4: Game Mechanics
 
-### Counterattack
+*More detailed descriptions of mechanics are included in [`reference/mechanics.md`](../reference/mechanics.md).*
 
-Successfully completing all parries in an enemy's attack sequence triggers a Counterattack automatically. This deals significant damage and does not consume a turn — it is the primary mechanical reward for parrying, beyond damage avoidance. Some weapon abilities add further effects on Counterattack: Lithum Level 10 (Maelle) switches her to Virtuose stance on a successful Counterattack.
+### Parry, Dodge, Jump and Counterattack
+
+Most enemy attacks can be avoided by triggering a parry, dodge or jump. These must be triggered within a quick-time window. Parrying has the shortest windows. Successfully completing all parries in an enemy's attack sequence triggers a Counterattack, which deals high damage.
 
 ### AP
 
-Every character gains 1 AP at the start of their turn as a baseline, before any skills, Lumina, or Pictos effects. A skill costing 4 AP therefore requires 4 turns of baseline generation with no other AP sources.
+Skills cost AP to use. Every character gains 1 AP at the start of their turn as a baseline, before any skills, Lumina, or Pictos effects.
 
 ### Free-Aim
 
-Free-aim is a distinct targeting mode costing 1 AP, used before selecting a skill, item, or basic attack. It is separate from both skills and basic attacks. Lumina and weapon effects that specify "free-aim shots" (e.g. Burning Shots, Marking Shots, Augmented Aim) apply only to free-aim shots — not to skills or basic attacks. Conversely, effects that trigger on "base attacks" do not trigger on free-aim. This distinction matters when evaluating Lumina synergies.
+Free-aim is a distinct targeting mode costing 1 AP, used before selecting a skill, item, or basic attack.
 
 ### Gradient Skills
 
-Each character has three Gradient Skills, costing 1, 2, and 3 Gradient Charges (GC) respectively. Gradient charges build by spending AP on skills only — not from basic attacks, parries, or free-aim shots. Gradient Skills are powerful abilities with effects ranging from damage to healing to revival — not all are attacks, hence "Gradient Skills" rather than "Gradient Attacks."
-
-Individual character Gradient Skills are listed in each character file. Details for most characters are not yet confirmed in transcript — placeholders are in place.
+Gradient Skills are powerful abilities with effects ranging from damage to healing to revival. Each character has three Gradient Skills, costing 1, 2, and 3 Gradient Charges (GC) respectively. Gradient charges build by spending AP on skills.
 
 ### Break Mechanics
 
 There are two distinct types of Break skills:
-- **Break bar filling skills** (labelled "High Break damage"): Deal high damage to the break bar to fill it up over multiple hits. Example: Stalact Punches, Terraquake.
-- **Break trigger skills** (labelled "Can Break"): Land the final hit that actually triggers the Break when the bar is full. Example: Moissonneuse Vendange, Mayhem, Final Path.
-
-A team typically needs both types — a filler to build the bar and a trigger to fire it. Some gradient skills combine both (e.g. Monoco's Break Point fills and triggers simultaneously).
-
-**Note:** By late game, Lumina (particularly Breaker) contributes significantly to break bar filling across all characters. The break capability of a team depends more on Lumina sets than on individual skills labelled as "high break damage." Multi-hit skills (e.g. Phantom Stars, Final Path) fill the break bar substantially even without that label. The skill label is not the sole indicator of break capability.
-
-### Damage Cap
-
-A 9,999 damage cap applies by default. Painted Power (5 LP Lumina) removes this cap and is essential from Act 3 onwards. It is included in the core Lumina suite for all characters.
+- **Break bar filling skills** deal damage and also advance the break bar to fill it up over multiple hits.
+- **Break trigger skills** land the final hit that actually triggers the Break after the bar is full.
 
 ### Pictos and Lumina
 
@@ -118,41 +113,21 @@ Key rules: each Pictos is a unique copy (only one character can equip it); dupli
 
 **Lumina Point (LP) pools:** Each character's LP pool equals their level by default. Pools can be permanently increased by spending **Colour of Lumina** items (1 Colour = 1 LP per character). The increase is permanent and irreversible. Current stock: ~200 Colour of Lumina. Pools have already been expanded for main team members (Maelle 196, Verso 194, Sciel 176).
 
-**Full reference:** `overview/pictos-lumina.json` (definitive data source — 194 Pictos, obtained status, equipped/Lumina loadouts). Two generated Markdown files:
+**Full reference:**
 
-| File | Purpose | When to read |
-|---|---|---|
-| `pictos-lumina-summary.md` [Formatted](pictos-lumina-summary.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/pictos-lumina-summary.md) | Full Pictos/Lumina mechanics, Core Lumina sets, per-character loadouts, situational, candidates | Any session involving Pictos/Lumina advice |
-| `pictos-lumina-catalogue.md` [Formatted](pictos-lumina-catalogue.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/pictos-lumina-catalogue.md) | All 194 Pictos grouped by category with effects and LP costs | When browsing or searching the full catalogue |
-| `pictos-lumina.json` [Repo](pictos-lumina.json) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/pictos-lumina.json) | Raw JSON — query directly for specific Pictos data | When Claude needs to look up or modify specific entries |
-
-Generated by: `python3 scripts/generate_pictos_lumina.py overview/pictos-lumina.json overview/`
-
-**When Pictos assignments change**, update in this order:
-1. Update `pictos-lumina.json` — set `equipped_by` on the relevant Pictos entries (single source of truth)
-2. Run `python3 scripts/generate_pictos_lumina.py overview/pictos-lumina.json overview/` — regenerates summary and catalogue Markdown
-3. Update character files — Pictos section table and Combat Stats table (manual)
-4. Update overview Section 5 — party summary Pictos line per character (manual)
+| File                                   | Purpose                                                                                         | When to read                                            |
+|----------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| `overview/pictos-lumina-summary.md`    | Full Pictos/Lumina mechanics, Core Lumina sets, per-character loadouts, situational, candidates | Any session involving Pictos/Lumina advice              |
+| `reference/pictos-lumina-catalogue.md` | All 194 Pictos grouped by category with effects and LP costs                                    | When browsing or searching the full catalogue           |
+| `data/pictos-lumina.json`              | Raw JSON — query directly for specific Pictos data                                              | When Claude needs to look up or modify specific entries |
 
 ### Tints
 
-Tints are consumable items, distinct from skills. There are three types: Healing Tints (restore HP), Revive Tints (revive a fallen ally), and Energy Tints (restore AP). Tints are upgraded using Shapes; the maximum number carried is increased using Shards. Tints are consumed on use and refilled on Rest.
-
-**Important:** Pictos/Lumina effects that trigger "on applying a heal" or "on applying Shell" behave differently depending on source:
-- *Protecting Tint Lumina*: fires when a **Tint** is used — not when a healing skill is used.
-- *Protecting Heal Lumina*: fires when a **skill** heals an ally — not on Tint use.
-
-"Can't be healed" effects (e.g. Chevalam Level 4, Confident, Confident Fighter) block active healing actions — Tints and healing skills. They do not block passive on-turn-start Lumina effects such as Recovery (10% health per turn start).
-
-### Attribute System
-
-Characters gain 3 attribute points per level up. Points are held in reserve and can be spent at any Flag. Points committed to an attribute are permanent unless a Recoat is used (resets all attributes and skill points to zero, returning all spent points). Attributes cap at 99 — points cannot be spent on an attribute already at 99.
-
-Primary attribute effects are universal: Vitality → Health; Might → Attack Power; Agility → Speed; Defence → Defence stat; Luck → Critical Rate. Two secondary effects have been confirmed consistently across multiple characters: Agility also increases Defence stat; Luck also increases Speed. These are likely universal but have not been verified on every character. Weapon scaling contributes to Attack Power via two attributes at different rates — the contributing attributes vary per weapon and are listed in each character file.
+Tints are consumable items, distinct from skills. Healing Tints restore HP, Revive Tints revive a fallen ally, and Energy Tints provide AP.
 
 ### Reserve Party
 
-If the main party (Verso/Maelle/Sciel) is fully wiped in a battle, the player can continue the battle using the reserve party (Lune and Monoco). This is most relevant for hard bosses. Lune and Monoco should not be stripped of all useful Pictos/Lumina — but main party optimisation takes priority for the vast majority of battles.
+If the main party is fully wiped in a battle, the player can continue the battle using the reserve party. This is most relevant for hard bosses.
 
 ---
 
@@ -248,13 +223,13 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 ## Section 6: Character Reference Files
 *Fetch the relevant file at the start of any session focusing on that character in detail. These supersede the brief summaries in Section 5.*
 
-| Character | Role                           | File                                                                                                                                                               |
-|-----------|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Maelle    | Primary DPS                    | [Formatted](maelle.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/maelle.md)     |
-| Lune      | Support/healer/stain DPS       | [Formatted](lune.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/lune.md)         |
-| Sciel     | Pure support                   | [Formatted](sciel.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/sciel.md)       |
-| Verso     | Mid-game DPS / endgame DPS     | [Formatted](verso.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/verso.md)       |
-| Monoco    | AP battery / support / breaker | [Formatted](monoco.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/monoco.md)     |
+| Character | Role                           | File                                              |
+|-----------|--------------------------------|---------------------------------------------------|
+| Maelle    | Primary DPS                    | [`characters/maelle.md`](../characters/maelle.md) |
+| Verso     | Mid-game DPS / endgame DPS     | [`characters/verso.md`](../characters/verso.md)   |
+| Sciel     | Pure support                   | [`characters/sciel.md`](../characters/sciel.md)   |
+| Lune      | Support/healer/stain DPS       | [`characters/lune.md`](../characters/lune.md)     |
+| Monoco    | AP battery / support / breaker | [`characters/monoco.md`](../characters/monoco.md) |
 
 ---
 
@@ -345,39 +320,23 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 ## Section 10: Chat Logs
 *For reference only — do not fetch unless specifically asked. These are large files.*
 
-| Chat   | Index                                                                                                                                        | Full Transcript                     | Summary                                                                                                                                      |
-|--------|----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Chat 0 | [Formatted](../chats/chat0/chat0-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat0/chat0-index.md) | [chat0.md](../chats/chat0/chat0.md) | Prior (abandoned) conversation with ChatGPT                                                                                                  |
-| Chat 1 | [Formatted](../chats/chat1/chat1-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-index.md) | [chat1.md](../chats/chat1/chat1.md) | Initial build analysis across all five characters; Monoco stat respec; Lune weapon comparison; Sciel and Verso builds; full progression plan |
-| Chat 2 | [Formatted](../chats/chat2/chat2-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-index.md) | [chat2.md](../chats/chat2/chat2.md) | Endgame skill research; character stat update via voice; chromatic progress; compaction mechanics; session procedure design                  |
-| Chat 3 | [Formatted](../chats/chat3/chat3-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat3/chat3-index.md) | [chat3.md](../chats/chat3/chat3.md) | Endgame team transition (Cheater Pictos acquired); team role framing; burn-stacking vs stance cycling paths; Chevalam mechanics; Maelle LP planning; transcript logging problems |
-| Chat 4 | [Formatted](../chats/chat4/chat4-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat4/chat4-index.md) | [chat4.md](../chats/chat4/chat4.md) | Progress update; story ordering research; Verso weapon selection; Steeled Strike burst sequence analysis; Maelle Reacher preparation; session logging procedure improvements |
-| Chat 5 | [Formatted](../chats/chat5/chat5-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat5/chat5-index.md) | [chat5.md](../chats/chat5/chat5.md) | Maelle respec for Lithum; Gommage unlocked; full Pictos/Lumina review all five characters; core Lumina sets defined; Energy Master obtained; Pictos/Lumina reference created |
-| Chat 6 | [Formatted](../chats/chat6/chat6-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat6/chat6-index.md) | [chat6.md](../chats/chat6/chat6.md) | Flying Manor ordering decided; Renoir self-nerf strategy; progression plan restructured; all character stats updated; Pictos optimisation deferred to Opus session |
+| Chat   | Index                                                                                                                                        | Full Transcript                     | Summary                                                                                                                                                                                                                                  |
+|--------|----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Chat 0 | [Formatted](../chats/chat0/chat0-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat0/chat0-index.md) | [chat0.md](../chats/chat0/chat0.md) | Prior (abandoned) conversation with ChatGPT                                                                                                                                                                                              |
+| Chat 1 | [Formatted](../chats/chat1/chat1-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-index.md) | [chat1.md](../chats/chat1/chat1.md) | Initial build analysis across all five characters; Monoco stat respec; Lune weapon comparison; Sciel and Verso builds; full progression plan                                                                                             |
+| Chat 2 | [Formatted](../chats/chat2/chat2-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-index.md) | [chat2.md](../chats/chat2/chat2.md) | Endgame skill research; character stat update via voice; chromatic progress; compaction mechanics; session procedure design                                                                                                              |
+| Chat 3 | [Formatted](../chats/chat3/chat3-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat3/chat3-index.md) | [chat3.md](../chats/chat3/chat3.md) | Endgame team transition (Cheater Pictos acquired); team role framing; burn-stacking vs stance cycling paths; Chevalam mechanics; Maelle LP planning; transcript logging problems                                                         |
+| Chat 4 | [Formatted](../chats/chat4/chat4-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat4/chat4-index.md) | [chat4.md](../chats/chat4/chat4.md) | Progress update; story ordering research; Verso weapon selection; Steeled Strike burst sequence analysis; Maelle Reacher preparation; session logging procedure improvements                                                             |
+| Chat 5 | [Formatted](../chats/chat5/chat5-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat5/chat5-index.md) | [chat5.md](../chats/chat5/chat5.md) | Maelle respec for Lithum; Gommage unlocked; full Pictos/Lumina review all five characters; core Lumina sets defined; Energy Master obtained; Pictos/Lumina reference created                                                             |
+| Chat 6 | [Formatted](../chats/chat6/chat6-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat6/chat6-index.md) | [chat6.md](../chats/chat6/chat6.md) | Flying Manor ordering decided; Renoir self-nerf strategy; progression plan restructured; all character stats updated; Pictos optimisation deferred to Opus session                                                                       |
 | Chat 7 | [Formatted](../chats/chat7/chat7-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat7/chat7-index.md) | [chat7.md](../chats/chat7/chat7.md) | Pictos optimisation framework designed and prepared for Sonnet handoff; actual optimisation and assignment deferred until after Flying Manor; Colour of Lumina pool expansion mechanism documented; Pictos data rationalisation designed |
-| Chat 8 | [Formatted](../chats/chat8/chat8-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat8/chat8-index.md) | [chat8.md](../chats/chat8/chat8.md) | Monoco full skill audit; Repo restructure design: new folder structure, JSON reference files, GitHub Actions workflow; All five data files built; Session procedure updated; hand-off for script design |
+| Chat 8 | [Formatted](../chats/chat8/chat8-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat8/chat8-index.md) | [chat8.md](../chats/chat8/chat8.md) | Monoco full skill audit; Repo restructure design: new folder structure, JSON reference files, GitHub Actions workflow; All five data files built; Session procedure updated; hand-off for script design                                  |
 
 ---
 
-## Section 11: Historical Error Log
+## Section 11: Session Procedure
 
-Full error log in `overview/historical-errors.md`: [Formatted](historical-errors.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/historical-errors.md).
-
-Fetch that file only when reviewing specific past errors. Active failure mode categories extracted from the log are maintained in Section 1 of this overview.
-
----
-
-## Section 12: Character File Template
-
-See `overview/character-file-template.md`: [Formatted](character-file-template.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/overview/character-file-template.md)
-
-Fetch only when creating a new character file.
-
----
-
-## Section 13: Session Procedure
-
-*Full design rationale in `scripts/pipeline.md`: [Formatted](../scripts/pipeline.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/scripts/pipeline.md)*
+*Full design rationale in [`scripts/pipeline.md`](../scripts/pipeline.md)*
 
 ### Session Start
 
