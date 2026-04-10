@@ -28,10 +28,12 @@ claude-expedition33/
 │   └── pictos-lumina-catalogue.md
 ├── scripts/
 │   ├── pipeline.md
+│   ├── scripts.md
 │   ├── turn_index.py
 │   ├── transcript_to_md.py
 │   ├── generate_links.py
 │   ├── generate_pictos_lumina.py
+│   ├── generate_scripts_md.py
 │   ├── apply_changelist.py
 │   └── split_transcript.py
 └── chats/
@@ -40,5 +42,7 @@ claude-expedition33/
     └── chatN
         ├── chatN-index.md
         ├── chatN.md
+        ├── chatN-part1.md
+        ├── ...
         └── chatN-partP.md
 ```
