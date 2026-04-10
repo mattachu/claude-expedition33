@@ -48,9 +48,10 @@ FILES = [
 lines = [
     "# Session Links",
     "",
-    f"*Commit: `{HASH}`*",
+    f"Commit: `{HASH}`  ",
+    f"Link: {BASE}/LINKS.md",
     "",
-    "Paste this file's content at session start. "
+    "Paste the link above at session start. "
     "Claude fetches files from these URLs on demand.",
     "",
 ]

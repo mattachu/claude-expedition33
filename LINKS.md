@@ -1,8 +1,9 @@
 # Session Links
 
-*Commit: `88e1ecb3`*
+Commit: `88e1ecb3`  
+Link: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@88e1ecb3/LINKS.md
 
-Paste this file's content at session start. Claude fetches files from these URLs on demand.
+Paste the link above at session start. Claude fetches files from these URLs on demand.
 
 - `overview/claude-expedition33.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@88e1ecb3/overview/claude-expedition33.md
 - `overview/party-summary.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@88e1ecb3/overview/party-summary.md
