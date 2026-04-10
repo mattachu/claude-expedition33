@@ -20,6 +20,7 @@ Paste this file's content at session start. Claude fetches files from these URLs
 - `reference/mechanics.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f26f5f96/reference/mechanics.md
 - `reference/pictos-lumina-catalogue.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f26f5f96/reference/pictos-lumina-catalogue.md
 - `reference/historical-errors.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f26f5f96/reference/historical-errors.md
+- `scripts/scripts.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f26f5f96/scripts/scripts.md
 - `chats/chat0/chat0-index.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f26f5f96/chats/chat0/chat0-index.md
 - `chats/chat1/chat1-index.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f26f5f96/chats/chat1/chat1-index.md
 - `chats/chat2/chat2-index.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f26f5f96/chats/chat2/chat2-index.md

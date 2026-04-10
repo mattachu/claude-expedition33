@@ -28,6 +28,8 @@ FILES = [
     "reference/mechanics.md",
     "reference/pictos-lumina-catalogue.md",
     "reference/historical-errors.md",
+    # Scripts
+    "scripts/scripts.md",
     # Chat indexes
     "chats/chat0/chat0-index.md",
     "chats/chat1/chat1-index.md",
