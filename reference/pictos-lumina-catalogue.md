@@ -1,8 +1,8 @@
 # Clair Obscur: Expedition 33 — Pictos Catalogue
 
-*Generated from `pictos-lumina.json`.*
+*Generated from `data/pictos-lumina.json`.*
 
-See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lumina currently in use.
+See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) for Pictos and Lumina currently in use.
 
 **194 Pictos total.** 133 obtained.
 
@@ -11,7 +11,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 ## AP and Energy (32 Pictos, 24 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
-|---|---|---|---|---|---|
+|--|------|--------|----|-------------|---------|
 |  | Beneficial Contamination | +2 AP on applying a Status Effect. Once per turn. | 15 |  |  |
 | ✓ | Dead Energy I | +3 AP on killing an enemy. | 2 |  |  |
 | ✓ | Dead Energy II | +3 AP on killing an enemy. | 2 |  |  |
@@ -33,7 +33,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 | ✓ | Energising Revive | +3 AP to all allies when revived. | 5 |  |  |
 |  | Energising Rush | Give 2 AP on applying Rush. | 10 |  |  |
 | ✓ | Energising Shell | Give 2 AP on applying Shell. | 10 |  |  |
-|  | Energising Shots | 20% chance to gain 1 AP on Free Aim shot. | — |  | shots |
+|  | Energising Shots | 20% chance to gain 1 AP on Free Aim shot. | None |  | shots |
 | ✓ | Energising Start I | +1 AP on battle start. | 5 |  |  |
 | ✓ | Energising Start II | +1 AP on battle start. | 10 |  |  |
 | ✓ | Energising Start III | +1 AP on battle start. | 15 |  |  |
@@ -50,7 +50,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 ## Break (13 Pictos, 8 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
-|---|---|---|---|---|---|
+|--|------|--------|----|-------------|---------|
 |  | Break Specialist | Break damage is increased by 50%, but base damage is reduced by 20%. | 1 |  |  |
 | ✓ | Breaker | 25% increased Break damage. | 10 |  |  |
 |  | Breaking Attack | Base Attack can Break. | 10 |  |  |
@@ -70,7 +70,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 ## Burn (8 Pictos, 7 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
-|---|---|---|---|---|---|
+|--|------|--------|----|-------------|---------|
 | ✓ | Burn Affinity | 25% increased damage on Burning targets | 10 | Lune |  |
 | ✓ | Burning Break | Apply 3 Burn stacks on Breaking a target. | 3 | Maelle |  |
 | ✓ | Burning Death | Apply 3 Burn to all enemies on death | 5 | Lune | death |
@@ -85,9 +85,9 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 ## Critical Hit (5 Pictos, 2 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
-|---|---|---|---|---|---|
+|--|------|--------|----|-------------|---------|
 | ✓ | Critical Break | 25% increased Break damage on Critical hits. | 5 |  |  |
-| ✓ | Critical Moment | 50% increased Critical Chance if Health is below 30%. | — |  |  |
+| ✓ | Critical Moment | 50% increased Critical Chance if Health is below 30%. | None |  |  |
 |  | Critical Stun | 100% Critical Chance on hitting a Stunned target. | 5 |  |  |
 |  | Critical Vulnerability | 25% increased Critical Chance on Defenceless enemies. | 5 |  |  |
 |  | Critical Weakness | 25% increased Critical Chance on Weakness. | 5 |  |  |
@@ -97,7 +97,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 ## Damage Modifiers (30 Pictos, 21 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
-|---|---|---|---|---|---|
+|--|------|--------|----|-------------|---------|
 | ✓ | At Death's Door | Deal 50% more damage if Health is below 10%. | 5 |  |  |
 | ✓ | Augmented Aim | 50% increased Free Aim damage. | 3 |  | shots |
 | ✓ | Augmented Attack | 50% increased Base Attack damage. | 7 |  |  |
@@ -126,7 +126,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 | ✓ | Roulette | Every hit has a 50% chance to deal either 50% or 200% of its damage. | 5 |  |  |
 | ✓ | Shield Affinity | 30% increased damage while having Shields, but receiving any damage always removes all Shields. | 15 |  |  |
 | ✓ | Stun Boost | 30% increased damage on Stunned targets. | 10 |  |  |
-|  | Tainted | 15% increased damage for each Status Effect on self. | — |  |  |
+|  | Tainted | 15% increased damage for each Status Effect on self. | None |  |  |
 | ✓ | Warming Up | 5% increased damage per turn, stacks up to 5 | 15 |  |  |
 
 ---
@@ -134,7 +134,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 ## Death Effects (5 Pictos, 5 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
-|---|---|---|---|---|---|
+|--|------|--------|----|-------------|---------|
 | ✓ | Auto Death | Kill self on turn start. | 1 |  |  |
 | ✓ | Death Bomb | On Death, deal damage to all enemies. | 5 |  |  |
 | ✓ | Healing Death | On death, the rest of the Expedition recover all Health. | 5 |  | healing |
@@ -146,7 +146,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 ## Gradient Charge (9 Pictos, 1 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
-|---|---|---|---|---|---|
+|--|------|--------|----|-------------|---------|
 |  | Charging Alteration | +10% of a Gradient Charge on applying a Buff. Once per turn. | 10 |  |  |
 |  | Charging Attack | +15% of a Gradient Charge on Base Attack. | 7 |  |  |
 |  | Charging Burn | +20% of a Gradient Charge on applying Burn. Once per turn. | 10 |  |  |
@@ -162,7 +162,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 ## Healing (14 Pictos, 13 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
-|---|---|---|---|---|---|
+|--|------|--------|----|-------------|---------|
 | ✓ | Attack Lifesteal | Recover 15% Health on Base Attack. | 15 |  |  |
 |  | Clea's Life | On turn start, if no damage taken since last turn, recover 100% Health. | 30 |  |  |
 | ✓ | Effective Heal | Double all Heals received. | 30 |  |  |
@@ -183,7 +183,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 ## Mark (6 Pictos, 2 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
-|---|---|---|---|---|---|
+|--|------|--------|----|-------------|---------|
 |  | Double Mark | Mark requires 1 more hit to be removed. | 20 |  |  |
 | ✓ | Enfeebling Mark | Marked targets deal 30% less damage. | 10 |  |  |
 |  | Marking Break | Apply Mark on Break. | 5 |  |  |
@@ -196,7 +196,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 ## Combat Flow (9 Pictos, 6 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
-|---|---|---|---|---|---|
+|--|------|--------|----|-------------|---------|
 | ✓ | Cheater | Extra turn after using a skill, once per turn | 40 | Verso |  |
 | ✓ | Combo Attack I | Base Attack has 1 extra hit. | 10 |  |  |
 |  | Combo Attack II | Base Attack has 1 extra hit. | 20 |  |  |
@@ -212,7 +212,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 ## Solo and Last Stand (5 Pictos, 5 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
-|---|---|---|---|---|---|
+|--|------|--------|----|-------------|---------|
 | ✓ | Accelerating Last Stand | Gain Rush if fighting alone. | 3 |  | support |
 | ✓ | Empowering Last Stand | Gain Powerful if fighting alone. | 3 |  | damage |
 | ✓ | Last Stand Critical | 100% Critical Chance while fighting alone. | 3 |  | critical |
@@ -224,7 +224,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 ## Survival and Defence (26 Pictos, 21 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
-|---|---|---|---|---|---|
+|--|------|--------|----|-------------|---------|
 | ✓ | Aegis Revival | +1 Shield on being revived. | 5 |  |  |
 | ✓ | Anti-Blight | Immune to Blight | 10 |  |  |
 | ✓ | Anti-Burn | Immune to Burn | 15 |  |  |
@@ -244,11 +244,11 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 | ✓ | Protecting Tint | Healing Tints also apply Shell | 5 |  | support |
 |  | Random Defense | Damage taken is randomly multiplied by a value between 50% and 200%. | 5 |  |  |
 | ✓ | SOS Power | Apply Powerful when falling below 50% Health. | 5 |  |  |
-| ✓ | SOS Rush | Apply Rush when falling below 50% Health. | — |  |  |
+| ✓ | SOS Rush | Apply Rush when falling below 50% Health. | None |  |  |
 | ✓ | SOS Shell | Apply Shell when falling below 50% Health. | 5 |  |  |
 | ✓ | Second Chance | Revive with 100% Health. Once per battle. | 40 | Verso |  |
 |  | Shielding Tint | Healing Tints also add 2 Shields. | 10 |  | support |
-| ✓ | Shortcut | Immediately play when falling below 30% Health. Once per battle. | — |  |  |
+| ✓ | Shortcut | Immediately play when falling below 30% Health. Once per battle. | None |  |  |
 | ✓ | Solidifying | +2 Shields when the character's Health falls below 50%. Once per battle. | 10 |  |  |
 | ✓ | Survivor | Survive fatal damage with 1 Health once per battle | 20 | Maelle |  |
 
@@ -257,7 +257,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 ## Buffs and Support (29 Pictos, 18 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
-|---|---|---|---|---|---|
+|--|------|--------|----|-------------|---------|
 | ✓ | Accelerating Heal | Healing an ally also applies Rush for 1 turn. | 5 |  |  |
 |  | Accelerating Shots | 20% chance to gain Rush on Free Aim shot. | 3 |  | shots |
 |  | Accelerating Tint | Healing Tints also apply Rush. | 5 |  |  |
@@ -293,7 +293,7 @@ See [`pictos-lumina-summary.md`](pictos-lumina-summary.md) for the Pictos and Lu
 ## Miscellaneous (3 Pictos, 0 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
-|---|---|---|---|---|---|
+|--|------|--------|----|-------------|---------|
 |  | Painter | Converts all Physical damage to Void damage. | 10 |  |  |
 |  | Pro Retreat | Allows Flee to be instantaneous. | 40 |  |  |
 |  | The One | Max Health reduced to 1. | 1 |  |  |

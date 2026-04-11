@@ -59,7 +59,7 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 | Level     | 82    | —         |
 | Agility   | 99    | Primary   |
 | Defence   | 99    | Primary   |
-| Luck      | 48    | Tertiary  |
+| Luck      | 48    | Secondary |
 | Vitality  | 0     | None      |
 | Might     | 0     | None      |
 <!-- GENERATED:END -->
@@ -67,13 +67,15 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 ### Combat Stats
 
 <!-- GENERATED:START characters:Monoco:stats -->
+*Stats with Joyaro (25), Longer Shell (29), Energising Turn (14), Sniper (23) equipped*
+
 | Stat    | Base        | Modified |
 |---------|-------------|----------|
-| Health  | *[unknown]* | 4541     |
-| Attack  | *[unknown]* | 4881     |
-| Speed   | *[unknown]* | 1845     |
+| Health  | *[unknown]* | 4657     |
+| Attack  | *[unknown]* | 6605     |
+| Speed   | *[unknown]* | 2189     |
 | Defence | *[unknown]* | 2301     |
-| Crit    | *[unknown]* | 54%      |
+| Crit    | *[unknown]* | 62%      |
 <!-- GENERATED:END -->
 
 ---
@@ -83,7 +85,7 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 ### Current (Endgame)
 <!-- GENERATED:START weapons:Monoco:Joyaro -->
 - **Name:** Joyaro (25)
-- **Power:** 3221
+- **Power:** 3934
 - **Element:** Lightning
 - **Scaling:** Agility A, Defence B
 - **Effects:**
@@ -97,7 +99,11 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 ### Previous
 <!-- GENERATED:START weapons:Monoco:Nusaro -->
 - **Name:** Nusaro (20)
+- **Power:** *[unknown]*
+- **Element:** *[unknown]*
 - **Scaling:** Agility A, Vitality B
+- **Effects:**
+    - Level 20: +1 AP on Mask change.
 <!-- GENERATED:END -->
 - **Notes:** Level 20: +1 AP on Mask change. Replaced by Joyaro after respec.
 
@@ -110,11 +116,11 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 ## Pictos
 
 <!-- GENERATED:START characters:Monoco:Pictos -->
-| Slot | Pictos          | Level | Stat Bonus                  | Effect                                      |
-|------|-----------------|-------|-----------------------------|---------------------------------------------|
-| 1    | Longer Shell    | 29    | Health +2757, Defence +1572 | On applying Shell, duration increased by 2  |
-| 2    | Energising Turn | 14    | Speed +270                  | +1 AP on turn start. Energising Turn Lumina free (20LP saving). |
-| 3    | Sniper          | 23    | Speed +529, Crit +13%       | Pure stat stick for Joyaro/skill-focused build |
+| Slot | Pictos          | Level | Stat Bonus                  | Effect                                                                   |
+|------|-----------------|-------|-----------------------------|--------------------------------------------------------------------------|
+| 1    | Longer Shell    | 29    | Health +2757, Defence +1572 | On applying Shell, its duration is increased by 2.                       |
+| 2    | Energising Turn | 14    | Speed +270                  | +1 AP on turn start.                                                     |
+| 3    | Sniper          | 23    | Speed +525, Crit +13%       | First Free Aim shot each turn deals 200% increased damage and can Break. |
 <!-- GENERATED:END -->
 
 Longer Shell's extension effect fires when Lune uses Healing Light (Protecting Heal Lumina applies Shell on heal).
@@ -129,34 +135,32 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 
 ### LP Budget
 <!-- GENERATED:START characters:Monoco:LP -->
-- **Current capacity:** 127 LP (level 77)
-- **Used:** 111 LP
-- **Spare:** 16 LP
+- **Current capacity:** 128 LP
+- **Used:** 91 LP
+- **Spare:** 37 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Monoco:Lumina -->
-*Reserve team core (110LP) minus Energising Turn (free from Pictos) = 90LP paid from core. Plus character-specific additions.*
-
-| Lumina             | LP  | Notes                                                                                                              |
-|--------------------|-----|--------------------------------------------------------------------------------------------------------------------|
-| Base Shield        | 20  | Core                                                                                                               |
-| Breaker            | 10  | Core                                                                                                               |
-| Breaking Burn      | 5   | Core                                                                                                               |
-| Breaking Counter   | 3   | Core                                                                                                               |
-| Breaking Death     | 5   | Core + character-specific                                                                                          |
-| Burning Shots      | 3   | Core                                                                                                               |
-| Critical Break     | 5   | Core                                                                                                               |
-| Dodger             | 1   | Core                                                                                                               |
-| Energising Parry   | 15  | Core                                                                                                               |
-| Energising Start I | 5   | Core                                                                                                               |
-| Energising Turn    | —   | FREE from Energising Turn Pictos (saves 20LP)                                                                      |
-| Marking Shots      | 3   | Core                                                                                                               |
-| Painted Power      | 5   | Core                                                                                                               |
-| Rewarding Mark     | 5   | Core                                                                                                               |
-| Staggering Attack  | 1   | Character-specific — adds break damage to base attack                                                              |
-| Teamwork           | 5   | Core — fires for active party only (Lune + Monoco both alive = almost always true when reserve team is active)     |
+| Lumina             | LP | Notes                                                      |
+|--------------------|----|------------------------------------------------------------|
+| Base Shield        | 20 |                                                            |
+| Breaker            | 10 |                                                            |
+| Breaking Burn      | 5  |                                                            |
+| Breaking Counter   | 3  |                                                            |
+| Breaking Death     | 5  |                                                            |
+| Burning Shots      | 3  |                                                            |
+| Critical Break     | 5  |                                                            |
+| Dodger             | 1  |                                                            |
+| Energising Parry   | 15 |                                                            |
+| Energising Start I | 5  |                                                            |
+| Energising Turn    | —  | FREE from Energising Turn Pictos                           |
+| Marking Shots      | 3  |                                                            |
+| Painted Power      | 5  |                                                            |
+| Rewarding Mark     | 5  |                                                            |
+| Staggering Attack  | 1  | Break damage on base attack — small break bar contribution |
+| Teamwork           | 5  |                                                            |
 <!-- GENERATED:END -->
 
 **Situational Lumina (add for specific boss fights):**
@@ -172,16 +176,54 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 ## Skills
 
 <!-- GENERATED:START characters:Monoco:skills -->
-**Currently equipped (6):** Abbest Wind, Stalact Punches, Moissonneuse Vendange, Chalier Combo, Portier Crash, Potier Energy
+**Currently equipped (6):** Abbest Wind, Chalier Combo, Moissonneuse Vendange, Portier Crash, Potier Energy, Stalact Punches
 
-| Skill                 | AP             | Wheel | Mask     | Equipped | Notes                                                                                       |
-|-----------------------|----------------|-------|----------|----------|---------------------------------------------------------------------------------------------|
-| Potier Energy         | 4              | +6    | Caster   | ✅       | Gives 1–3 AP to all allies (+1 on Caster Mask = 2–4 AP). Core team AP refill.              |
-| Stalact Punches       | 4              | +4    | Heavy    | ✅       | 4-hit medium Ice damage; HIGH Break damage.                                                  |
-| Abbest Wind           | 2 (0 on Agile) | +2    | Agile    | ✅       | 1-hit low Physical; plays second turn immediately on Agile Mask. Essential for wheel cycling.|
-| Moissonneuse Vendange | 3              | +3    | Balanced | ✅       | 3-hit high damage; can Break.                                                                |
-| Chalier Combo         | 7              | +3    | Balanced | ✅       | 6-hit high Physical damage; increased damage on Balanced Mask.                              |
-| Portier Crash         | 8              | +5    | Heavy    | ✅       | High Physical AoE, 1 hit. Can Break. Increased damage on Heavy Mask.                        |
+| Skill                 | AP             | Wheel | Mask     | Equipped | Notes                                                                             |
+|-----------------------|----------------|-------|----------|----------|-----------------------------------------------------------------------------------|
+| Abbest Wind           | 2 (0 in Agile) | +2    | Agile    | ✅        | Low Physical single target, 1 hit. Plays a second turn.                           |
+| Chalier Combo         | 7              | +3    | Balanced | ✅        | High Physical single target, 6 hits. Interrupted if failed.                       |
+| Moissonneuse Vendange | 5              | +2    | Balanced | ✅        | High Physical single target, 3 hits. Can Break.                                   |
+| Portier Crash         | 8              | +5    | Heavy    | ✅        | High Physical AoE, 1 hit. Can Break.                                              |
+| Potier Energy         | 4              | +6    | Caster   | ✅        | Gives 1–3 AP to all allies.                                                       |
+| Stalact Punches       | 4              | +4    | Heavy    | ✅        | Medium Ice single target, 4 hits. High Break damage.                              |
+| Aberration Light      | 7              | +4    | Agile    | ❌        | High Light AoE, 2 hits. Applies 4 Burn per hit.                                   |
+| Ballet Charm          | 2              | +3    | Caster   | ❌        | Low Light single target, 1 hit. Applies Powerless 3 turns.                        |
+| Bénisseur Mortar      | 5              | +6    | Caster   | ❌        | Medium Ice single target, 3 hits. Jumps to Almighty Mask if target is Marked.     |
+| Boucheclier Fortify   | 3              | +5    | Heavy    | ❌        | Applies Shell to 1–3 allies for 3 turns.                                          |
+| Braseleur Smash       | 4              | +2    | Balanced | ❌        | Medium Fire single target, 2 hits. Applies 3 Burn.                                |
+| Bruler Bash           | 4              | +4    | Caster   | ❌        | Medium Physical single target, 3 hits. Can Break.                                 |
+| Chapelier Slash       | 7              | +4    | Agile    | ❌        | High Physical AoE, 3 hits. Applies Mark.                                          |
+| Chevalière Ice        | 6              | +2    | Balanced | ❌        | High Ice AoE, 3 hits. Applies Slow 3 turns.                                       |
+| Chevalière Piercing   | 3              | +3    | Agile    | ❌        | Physical single target through Shields, 6 hits. More damage per Shield on target. |
+| Chevalière Thrusts    | 7              | +3    | Heavy    | ❌        | High Physical AoE, 3 hits. Crits deal double damage.                              |
+| Clair Enfeeble        | 5              | +3    | Balanced | ❌        | Medium Light AoE, 1 hit. Applies Powerless 3 turns.                               |
+| Contorsionniste Blast | 6              | +2    | Balanced | ❌        | Medium Physical AoE, 1 hit. Heals all allies 10% HP per enemy hit.                |
+| Cruler Barrier        | 4              | +4    | Heavy    | ❌        | Applies 1–2 Shields to target.                                                    |
+| Cultist Blood         | 3              | +5    | Heavy    | ❌        | Medium Dark AoE, 3 hits. Sacrifices 90% HP for increased damage.                  |
+| Cultist Slashes       | 5              | +3    | Agile    | ❌        | Medium Dark single target, 3 hits. More damage the less HP Monoco has.            |
+| Danseuse Waltz        | 8              | +3    | Balanced | ❌        | High Fire single target, 3 hits. More damage against Burning targets.             |
+| Démineur Thunder      | 2              | +5    | Caster   | ❌        | Low Lightning single target, 1 hit. Extra Break damage.                           |
+| Duallist Storm        | 8              | +1    | Almighty | ❌        | Extreme Physical single target, 4 hits. Can Break.                                |
+| Échassier Stabs       | 4              | +4    | Agile    | ❌        | Medium Physical single target, 2 hits. Second hit applies Mark.                   |
+| Évêque Spear          | 6              | +3    | Heavy    | ❌        | High Earth single target, 1 hit. Applies Powerless 3 turns.                       |
+| Gault Fury            | 3              | +2    | Balanced | ❌        | Low Physical single target, 4 hits. Applies Mark.                                 |
+| Glaise Earthquakes    | 4              | +6    | Heavy    | ❌        | Medium Earth AoE, 3 hits. Applies Powerful to self.                               |
+| Grosse Tête Whack     | 6              | +4    | Heavy    | ❌        | High Physical single target, 5 hits. Applies Defenceless 3 turns.                 |
+| Hexga Crush           | 5              | +6    | Heavy    | ❌        | Medium Earth single target, 2 hits. Applies Defenceless 3 turns.                  |
+| Jar Lampstorm         | 5              | +6    | Heavy    | ❌        | Medium Physical AoE, 4 hits.                                                      |
+| Lampmaster Light      | 5              | +1    | Almighty | ❌        | High Light AoE, 1 hit. Increased damage at each cast.                             |
+| Lancelier Impale      | 2              | +4    | Agile    | ❌        | Low Ice single target, 1 hit. Slows target 3 turns.                               |
+| Luster Slices         | 3              | +3    | Agile    | ❌        | Low Physical single target, 3 hits. Applies Rush to self 3 turns.                 |
+| Obscur Sword          | 6              | +3    | Heavy    | ❌        | High Dark single target, 5 hits. More damage against Powerless targets.           |
+| Orphelin Cheers       | 3              | +3    | Caster   | ❌        | Applies Powerful to 1–3 allies.                                                   |
+| Pèlerin Heal          | 5              | +3    | Caster   | ❌        | Applies Regen to all allies. On Caster Mask heals 40% HP.                         |
+| Ramasseur Bonk        | 2              | +4    | Agile    | ❌        | Low Dark single target, 1 hit. Can Break.                                         |
+| Rocher Hammering      | 3              | +3    | Heavy    | ❌        | Medium Physical single target, 4 hits. Can Break.                                 |
+| Sakapatate Estoc      | 3              | +3    | Balanced | ❌        | Low Lightning single target, 1 hit. More damage if target is Stunned.             |
+| Sakapatate Explosion  | 4              | +6    | Caster   | ❌        | Medium Lightning random targets, 3 hits. Crits trigger an additional hit.         |
+| Sakapatate Slam       | 7              | +5    | Heavy    | ❌        | High Physical AoE, 1 hit. Increased damage against Marked targets.                |
+| Sapling Absorption    | 6              | +5    | Caster   | ❌        | High Dark, 3 hits. Recovers 5% HP per hit.                                        |
+| Troubadour Trumpet    | 3              | +4    | Caster   | ❌        | Applies a random buff to 1–3 allies.                                              |
 <!-- GENERATED:END -->
 
 *Abbest Wind should not be removed — essential for wheel cycling and free second turn on Agile Mask.*
@@ -195,11 +237,11 @@ Full skill reference (AP cost, wheel move, mask, effect, mask bonus, learned/equ
 ## Gradient Skills
 
 <!-- GENERATED:START characters:Monoco:gradients -->
-| Gradient Skill | Gradient Cost | Acquired | Notes                                                                                                                        |
-|----------------|---------------|----------|------------------------------------------------------------------------------------------------------------------------------|
-| Mighty Strike  | 1             | ✅       | High single-target damage, 2 hits. Deals double damage if target is stunned. Goes to Almighty Mask.                         |
-| Sanctuary      | 2             | ✅       | Gives 2 Shields and applies Regen to all allies for 3 turns. Strong reserve team survivability.                             |
-| Break Point    | 3             | ✅       | Extreme single-target Lightning damage, 1 hit. Fills Break bar AND triggers Break simultaneously. Instant break on demand.  |
+| Gradient Skill | Gradient Cost | Acquired | Notes                                                                                               |
+|----------------|---------------|----------|-----------------------------------------------------------------------------------------------------|
+| Mighty Strike  | 1             | ✅        | High single-target damage, 2 hits. Deals double damage if target is Stunned. Goes to Almighty Mask. |
+| Sanctuary      | 2             | ✅        | Gives 2 Shields and applies Regen to all allies for 3 turns.                                        |
+| Break Point    | 3             | ✅        | Extreme single-target Lightning damage, 1 hit. Fills Break bar AND triggers Break simultaneously.   |
 <!-- GENERATED:END -->
 
 ---

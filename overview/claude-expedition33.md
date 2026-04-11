@@ -45,23 +45,22 @@ Fetch that file only when reviewing specific past errors.
 - **Current playthrough:** First playthrough
 - **Progress:**
   - Act 3, Phase 3.
-  - Characters: Maelle L83, Verso L82, Sciel L82, Lune L78, Monoco L78.
-  - The Reacher complete. Gommage unlocked. Serpenphare defeated. Chromatic Braseleur defeated (easy).
-  - Flying Manor next — agreed to attempt at current level before Endless Tower.
+  - Characters: Maelle L83, Verso L82, Sciel L82, Lune L78, Monoco L82.
+  - Current area: Flying Manor.
 <!-- GENERATED:END -->
 - **Permanently missed:** Vale bosses (Jovial Moissonneuse, Sorrowful Chapelier, Seething Boucheclier); Karatom quest (requires Gustave alive).
 
 ### Party
 <!-- GENERATED:START playthrough:party -->
-- **Active:** Maelle, Verso, Sciel
+- **Active:** Verso, Maelle, Sciel
 - **Reserve:** Lune, Monoco
 <!-- GENERATED:END -->
 
 ### Inventory
 <!-- GENERATED:START playthrough:inventory -->
-- Colour of Lumina: ~200 (reduced by EM pool expansions this session)
-- Recoats: 26 (Lune used one this session for Hell + Lightning Dance)
-- Chroma Catalysts: check in-game
+- Colour of Lumina: 164
+- Recoats: 28
+- Chroma Catalysts: 67 standard, 65 polished, 83 resplendent, 14 grandiose, 1 perfect
 <!-- GENERATED:END -->
 
 ### LP totals
@@ -145,7 +144,7 @@ If the main party is fully wiped in a battle, the player can continue the battle
 *Last updated: Chat 6*
 
 <!-- GENERATED:START playthrough:party -->
-- **Active:** Maelle, Verso, Sciel
+- **Active:** Verso, Maelle, Sciel
 - **Reserve:** Lune, Monoco
 <!-- GENERATED:END -->
 
@@ -155,19 +154,25 @@ Note: base speed scales with level independently of Agility — keep levels clos
 **Turn rotation (endgame burst):** Verso (base attack) → Verso(C) (Steeled Strike charge) → Sciel (Fortune's Fury on Verso) → Sciel(C) (Intervention on Verso) → Verso(Intervention) (Steeled Strike executes at Rank S with doubled damage).
 
 <!-- GENERATED:START characters:summary:party -->
-*[Placeholder for table including level, role, weapon, skills, Pictos, LP, etc.]*
+| Character | Level | Role                         | Weapon        | Pictos                                          | LP      |
+|-----------|-------|------------------------------|---------------|-------------------------------------------------|---------|
+| Maelle    | 83    | Primary DPS                  | Lithum (33)   | Burning Break, Gradient Break, Survivor         | 194/196 |
+| Verso     | 82    | Endgame main DPS             | Chevalam (33) | Breaking Death, Cheater, Second Chance          | 194/194 |
+| Sciel     | 82    | Pure support                 | Litheson (33) | Critical Burn, Energy Master, Quick Break       | 175/176 |
+| Lune      | 78    | DPS / healer (reserve)       | Kralim (29)   | Powerful On Shell, Burn Affinity, Burning Death | 120/123 |
+| Monoco    | 82    | Break + AP support (reserve) | Joyaro (25)   | Longer Shell, Energising Turn, Sniper           | 91/128  |
 <!-- GENERATED:END -->
 
 ### Core Lumina Suite
 
 **Main team core:**
 <!-- GENERATED:START pictos:core:main -->
-**194LP** Painted Power, Teamwork, Base Shield, Energising Turn, Energising Parry, Energising Start I, Dodger, Breaker, Marking Shots, Dead Energy I, Dead Energy II, Critical Break, Rewarding Mark, Burning Shots, Breaking Burn, Breaking Counter, Breaking Death, Cheater, **Energy Master**. Note: Cheater/Breaking Death free for Verso (Pictos); Base Shield non-functional for Verso; Energy Master free for Sciel (Pictos).
+**194LP** Painted Power, Teamwork, Base Shield, Energising Turn, Energising Parry, Energising Start I, Dodger, Breaker, Marking Shots, Dead Energy I, Dead Energy II, Critical Break, Rewarding Mark, Burning Shots, Breaking Burn, Breaking Counter, Breaking Death, Cheater, Energy Master. Note: Painted Power (Essential for all characters from Act 3 onwards); Base Shield (Non-functional for Verso (Chevalam L4 prevents shields)); Energising Turn (Main AP flow generator; boosted by Energy Master).
 <!-- GENERATED:END -->
 
 **Reserve team core:**
 <!-- GENERATED:START pictos:core:reserve -->
-**110LP** Main team core minus Cheater, Dead Energy I, Dead Energy II, Energy Master.
+**110LP** Painted Power, Teamwork, Base Shield, Energising Turn, Energising Parry, Energising Start I, Dodger, Breaker, Marking Shots, Critical Break, Rewarding Mark, Burning Shots, Breaking Burn, Breaking Counter, Breaking Death.
 <!-- GENERATED:END -->
 
 Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.md) §3–4. Character-specific additions on top of core sets in §5.

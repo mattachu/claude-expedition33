@@ -60,7 +60,7 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Level     | 82    | —         |
 | Agility   | 99    | Primary   |
 | Luck      | 99    | Primary   |
-| Might     | 48    | Tertiary  |
+| Might     | 48    | Secondary |
 | Vitality  | 0     | None      |
 | Defence   | 0     | None      |
 <!-- GENERATED:END -->
@@ -68,6 +68,8 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ### Combat Stats
 
 <!-- GENERATED:START characters:Verso:stats -->
+*Stats with Chevalam (32), Breaking Death (29), Cheater (24), Second Chance (16) equipped*
+
 | Stat    | Base        | Modified |
 |---------|-------------|----------|
 | Health  | *[unknown]* | 4205     |
@@ -83,12 +85,12 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 ### Current (Endgame)
 <!-- GENERATED:START weapons:Verso:Chevalam -->
-- **Name:** Chevalam (32)
-- **Power:** 5033
+- **Name:** Chevalam (33)
+- **Power:** 5173
 - **Element:** Physical
 - **Scaling:** Agility A, Luck B
 - **Effects:**
-    - Level 4: Start battle at Rank S, but can't be Healed or gain Shields.
+    - Level 4: Start battle at Rank S, but can't be healed or gain Shields.
     - Level 10: 20% increased damage for each consecutive no-damage turn, stacks up to 5×.
     - Level 20: Apply Rush on Rank S.
 <!-- GENERATED:END -->
@@ -104,11 +106,11 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ## Pictos
 
 <!-- GENERATED:START characters:Verso:Pictos -->
-| Slot | Pictos        | Level | Stat Bonus                        | Effect                                      |
-|------|---------------|-------|-----------------------------------|---------------------------------------------|
-| 1    | Cheater       | 24    | Health +1198, Speed +400          | Extra turn once per turn                    |
-| 2    | Breaking Death| 29    | Speed +586, Crit +33%             | Fully charge enemy break bar on death       |
-| 3    | Second Chance | 16    | Health +1107, Crit +8%            | Revive with 100% Health once per battle     |
+| Slot | Pictos         | Level | Stat Bonus               | Effect                                        |
+|------|----------------|-------|--------------------------|-----------------------------------------------|
+| 1    | Breaking Death | 29    | Speed +586, Crit +33%    | Fully charge enemy break bar on death         |
+| 2    | Cheater        | 24    | Health +1198, Speed +400 | Extra turn after using a skill, once per turn |
+| 3    | Second Chance  | 16    | Health +1106, Crit +8%   | Revive with 100% Health. Once per battle.     |
 <!-- GENERATED:END -->
 
 **Breaking Death synergy:** On death → break bar fills instantly → Second Chance revives at Rank D → Perfect Break triggers break → Rank S in one move → Steeled Strike burst immediately active.
@@ -119,37 +121,38 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 ### LP Budget
 <!-- GENERATED:START characters:Verso:LP -->
-- **Current capacity:** 154 LP
-- **Used:** 154 LP
+- **Current capacity:** 194 LP
+- **Used:** 194 LP
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Verso:Lumina -->
-| Lumina              | LP  | Notes                                                         |
-|---------------------|-----|---------------------------------------------------------------|
-| Breaking Burn       | 5   |                                                               |
-| Breaking Counter    | 3   |                                                               |
-| Breaking Death      | 5   |                                                               |
-| Burning Shots       | 3   |                                                               |
-| Cheater             | —   | FREE from Cheater Pictos                                      |
-| Confident           | 20  | Take half damage; cannot be healed (already Chevalam-gated)   |
-| Confident Fighter   | 15  | +30% damage; cannot be healed                                 |
-| Critical Break      | 5   |                                                               |
-| Dead Energy I       | 2   |                                                               |
-| Dead Energy II      | 2   |                                                               |
-| Dodger              | 1   |                                                               |
-| Energising Parry    | 15  |                                                               |
-| Energising Start I  | 5   |                                                               |
-| Energising Turn     | 20  |                                                               |
-| Enfeebling Mark     | 10  | Marked targets deal 30% less damage                           |
-| Marking Shots       | 3   |                                                               |
-| Painted Power       | 5   |                                                               |
-| Rewarding Mark      | 5   |                                                               |
-| Second Chance       | —   | FREE from Second Chance Pictos                                |
-| Survivor            | 20  | Added Chat 5 — both Survivor and Breaking Death effects now on Verso |
-| Teamwork            | 5   |                                                               |
+| Lumina             | LP | Notes                                                                 |
+|--------------------|----|-----------------------------------------------------------------------|
+| Breaker            | 10 |                                                                       |
+| Breaking Burn      | 5  |                                                                       |
+| Breaking Counter   | 3  |                                                                       |
+| Breaking Death     | —  | FREE from Breaking Death Pictos                                       |
+| Burning Shots      | 3  |                                                                       |
+| Cheater            | —  | FREE from Cheater Pictos                                              |
+| Confident          | 20 | 50% damage reduction — cost priced in via Chevalam L4 healing block   |
+| Confident Fighter  | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block   |
+| Critical Break     | 5  |                                                                       |
+| Dead Energy I      | 2  |                                                                       |
+| Dead Energy II     | 2  |                                                                       |
+| Dodger             | 1  |                                                                       |
+| Energising Parry   | 15 |                                                                       |
+| Energising Start I | 5  |                                                                       |
+| Energising Turn    | 20 | Main AP flow generator; boosted by Energy Master                      |
+| Energy Master      | 40 |                                                                       |
+| Enfeebling Mark    | 10 | Reduces damage from Marked targets — synergy with Verso's Mark skills |
+| Marking Shots      | 3  |                                                                       |
+| Painted Power      | 5  | Essential for all characters from Act 3 onwards                       |
+| Rewarding Mark     | 5  |                                                                       |
+| Survivor           | 20 | Buffer for Verso when he can't be healed                              |
+| Teamwork           | 5  |                                                                       |
 <!-- GENERATED:END -->
 
 ---
@@ -157,33 +160,28 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ## Skills
 
 <!-- GENERATED:START characters:Verso:skills -->
-**Currently equipped (6):** Quick Strike, Light Holder, Marking Shot, Perfect Break, End Bringer, Steeled Strike
+**Currently equipped (6):** End Bringer, Light Holder, Marking Shot, Perfect Break, Quick Strike, Steeled Strike
 
-| Skill          | AP Cost         | Equipped | Rank Bonus                                     | Notes                                                                                                                                                              |
-|----------------|-----------------|----------|------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Quick Strike   | 2               | ✅       | D: gives more Perfection                       | Low physical. Modest Perfection gain. Does NOT jump to Rank B without Glaceso.                                                                                     |
-| Light Holder   | 4               | ✅       | A: +2 AP                                       | Medium Light damage, 5 hits. Gains +1 Rank at completion.                                                                                                          |
-| Marking Shot   | 2               | ✅       | C: increased damage                            | Low damage + 100% Mark. No HP cost. 2 AP.                                                                                                                         |
-| Perfect Break  | 7 (5 at B Rank) | ✅       | B: costs 5 AP instead of 7                    | Very high Light damage; can Break; Rank S on Break.                                                                                                                |
-| End Bringer    | 8               | ✅       | A: can reapply stun                            | Extreme Physical damage, 6 hits. Increased damage if target Stunned. Break → Stun is the reliable setup: enemies are Stunned on Break, enabling End Bringer's bonus immediately. A Rank ability reapplies Stun to extend the window. |
-| Steeled Strike | 9               | ✅       | S: increased damage                            | After 1 turn charge, extreme Physical damage. Interrupted if damage taken. Safe with Cheater. S Rank bonus active given Chevalam starts at S.                      |
-
-**Skills available but not equipped:**
-
-| Skill            | AP  | Rank Bonus                   | Notes                                                                                                                    |
-|------------------|-----|------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Assault Zero     | 3   | B: increased damage          | B→A rank progression. Replaced by Light Holder.                                                                          |
-| Berserk Slash    | 4   | C: increased damage          | Medium Physical, 3 hits. Damage scales with missing HP — at 1 HP ~1485% scaling. Niche; high risk.                      |
-| Blitz            | 3   | B: bonus only                | Insta-kills low-health enemies; otherwise deals damage. Occasional cleanup utility.                                      |
-| Burden           | 1   | —                            | Removes status effects from all allies. Best paired with Purification.                                                   |
-| Defiant Strike   | 3   | B: increased damage          | 2-hit Physical, 100% Mark. Costs 30% current HP. Not recommended at current parry rate.                                 |
-| From Fire        | 4   | B: increased damage          | Healing from Burn. Situational — only useful if enemies consistently have burn.                                          |
-| Leadership       | 3   | C: +1 more AP to allies      | Extra AP to all allies. Invaluable in some builds; conflicts with Verso's DPS role.                                      |
-| Paradigm Shift   | 1   | C: bonus                     | Generates 1–3 AP. NOT a rank jump. Redundant given team AP generation.                                                   |
-| Perfect Recovery | 3   | C: 100% HP                   | Heals Verso only. Non-functional with Chevalam.                                                                          |
-| Phantom Stars    | 9 (5 at S) | —                   | AoE multi-hit, all enemies. Trash only — useless in 1v1.                                                                 |
-| Purification     | 5   | B: increased damage          | Medium Light damage, 2 hits. Dispels self status effects. Niche.                                                         |
-| Strike Storm     | 7   | C: crits give +2 Perfection  | 5-hit high single-target, weapon element. Previously core skill; displaced by End Bringer/Steeled Strike.               |
+| Skill            | AP              | Rank Bonus                           | Equipped | Notes                                                                                    |
+|------------------|-----------------|--------------------------------------|----------|------------------------------------------------------------------------------------------|
+| End Bringer      | 8               | A: Can reapply stun on broken target | ✅        | Extreme Physical damage, 6 hits. Increased damage if target Stunned.                     |
+| Light Holder     | 4               | A: +2 AP                             | ✅        | Medium Light damage, 5 hits. Gains +1 Rank at completion.                                |
+| Marking Shot     | 2               | C: Increased damage                  | ✅        | Low damage + 100% Mark. No HP cost.                                                      |
+| Perfect Break    | 7 (5 at Rank B) | B: Reduced AP cost                   | ✅        | Very high Light damage. Can Break. Rank S on Break.                                      |
+| Quick Strike     | 2               | D: Gives more Perfection             | ✅        | Low Physical.                                                                            |
+| Steeled Strike   | 9               | S: Increased damage                  | ✅        | After 1 turn charge, extreme Physical damage. Interrupted if damage taken during charge. |
+| Assault Zero     | 3               | B: Increased damage                  | ❌        | Medium Physical single target.                                                           |
+| Berserk Slash    | 4               | C: Increased damage                  | ❌        | Medium Physical, 3 hits. Damage scales with missing HP.                                  |
+| Blitz            | 3               | B: Bonus only                        | ❌        | Insta-kills low-health enemies; otherwise deals damage.                                  |
+| Burden           | 1               | —                                    | ❌        | Removes status effects from all allies.                                                  |
+| Defiant Strike   | 3               | B: Increased damage                  | ❌        | 2-hit Physical, 100% Mark. Costs 30% current HP.                                         |
+| From Fire        | 4               | B: Increased damage                  | ❌        | Healing from Burn. Situational — only useful if enemies have burn.                       |
+| Leadership       | 3               | C: +1 more AP to allies              | ❌        | Extra AP to all allies.                                                                  |
+| Paradigm Shift   | 1               | C: Bonus only                        | ❌        | Generates 1–3 AP. C Rank: bonus only. NOT a rank jump to S.                              |
+| Perfect Recovery | 3               | C: 100% HP heal                      | ❌        | Heals Verso only. Non-functional with Chevalam.                                          |
+| Phantom Stars    | 9 (5 at Rank S) | S: Reduced AP cost                   | ❌        | AoE multi-hit all enemies. Trash fights only — useless in 1v1.                           |
+| Purification     | 5               | B: Increased damage                  | ❌        | Medium Light damage, 2 hits. Dispels self status effects.                                |
+| Strike Storm     | 7               | C: Crits give +2 Perfection          | ❌        | 5-hit high single-target weapon element.                                                 |
 <!-- GENERATED:END -->
 
 ---
@@ -191,11 +189,11 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ## Gradient Skills
 
 <!-- GENERATED:START characters:Verso:gradients -->
-| Gradient Skill | Gradient Cost | Acquired | Notes                                   |
-|----------------|---------------|----------|-----------------------------------------|
-| [unconfirmed]  | 1             | [?]      | Details not confirmed — verify in game. |
-| [unconfirmed]  | 2             | [?]      | Details not confirmed — verify in game. |
-| [unconfirmed]  | 3             | [?]      | Details not confirmed — verify in game. |
+| Gradient Skill | Gradient Cost | Acquired | Notes                                                                                                          |
+|----------------|---------------|----------|----------------------------------------------------------------------------------------------------------------|
+| Sabotage       | 1             | ✅        | Medium Physical damage to all enemies, 1 hit. Applies Mark.                                                    |
+| Striker        | 2             | ✅        | High single-target Physical damage, 1 hit. Can Break.                                                          |
+| Angel Eyes     | 3             | ✅        | Extreme Physical damage, 8 hits. Gain 1 Perfection per hit. Applies Aureole to Verso, reviving him if he dies. |
 <!-- GENERATED:END -->
 
 ---

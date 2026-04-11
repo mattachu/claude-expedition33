@@ -39,27 +39,29 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 <!-- GENERATED:START lumina:core:main -->
 **Total: 194 LP** — applied to Maelle, Verso, Sciel.
 
-| Lumina | LP | Effect | Notes |
-|---|---|---|---|
-| Painted Power | 5 | Damage can exceed 9,999. |  |
-| Teamwork | 5 | 10% increased damage while all allies are alive. |  |
-| Base Shield | 20 | Grants 1 Shield HP buffer per turn |  |
-| Energising Turn | 20 | +1 AP on turn start. |  |
-| Energising Parry | 15 | +1 AP on successful Parry. |  |
-| Energising Start I | 5 | +1 AP on battle start. |  |
-| Dodger | 1 | Gain 1 AP on Perfect Dodge. Once per turn. |  |
-| Breaker | 10 | 25% increased Break damage. |  |
-| Marking Shots | 3 | 20% chance to apply Mark on Free Aim shot. |  |
-| Dead Energy I | 2 | +3 AP on killing an enemy. |  |
-| Dead Energy II | 2 | +3 AP on killing an enemy. |  |
-| Critical Break | 5 | 25% increased Break damage on Critical hits. |  |
-| Rewarding Mark | 5 | +2 AP on dealing damage to a Marked target. Once per turn. |  |
-| Burning Shots | 3 | 20% chance to Burn on Free Aim shot. |  |
-| Breaking Burn | 5 | 25% increased Break damage on Burning enemies. |  |
-| Breaking Counter | 3 | 50% increased Break damage on Counterattack. |  |
-| Breaking Death | 5 | Fully charge enemy break bar on death |  |
-| Cheater | 40 | Extra turn after using a skill, once per turn | Free for Cheater Pictos holders |
-| Energy Master | 40 | Every AP gain is increased by 1 | Free for Sciel (Energy Master Pictos) |
+*Applied via in-game Lumina set.*
+
+| Lumina             | LP | Effect                                                     | Notes                                                   |
+|--------------------|----|------------------------------------------------------------|---------------------------------------------------------|
+| Painted Power      | 5  | Damage can exceed 9,999.                                   | Essential for all characters from Act 3 onwards         |
+| Teamwork           | 5  | 10% increased damage while all allies are alive.           |                                                         |
+| Base Shield        | 20 | Grants 1 Shield HP buffer per turn                         | Non-functional for Verso (Chevalam L4 prevents shields) |
+| Energising Turn    | 20 | +1 AP on turn start.                                       | Main AP flow generator; boosted by Energy Master        |
+| Energising Parry   | 15 | +1 AP on successful Parry.                                 |                                                         |
+| Energising Start I | 5  | +1 AP on battle start.                                     |                                                         |
+| Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                 |                                                         |
+| Breaker            | 10 | 25% increased Break damage.                                |                                                         |
+| Marking Shots      | 3  | 20% chance to apply Mark on Free Aim shot.                 |                                                         |
+| Dead Energy I      | 2  | +3 AP on killing an enemy.                                 |                                                         |
+| Dead Energy II     | 2  | +3 AP on killing an enemy.                                 |                                                         |
+| Critical Break     | 5  | 25% increased Break damage on Critical hits.               |                                                         |
+| Rewarding Mark     | 5  | +2 AP on dealing damage to a Marked target. Once per turn. |                                                         |
+| Burning Shots      | 3  | 20% chance to Burn on Free Aim shot.                       |                                                         |
+| Breaking Burn      | 5  | 25% increased Break damage on Burning enemies.             |                                                         |
+| Breaking Counter   | 3  | 50% increased Break damage on Counterattack.               |                                                         |
+| Breaking Death     | 5  | Fully charge enemy break bar on death                      |                                                         |
+| Cheater            | 40 | Extra turn after using a skill, once per turn              |                                                         |
+| Energy Master      | 40 | Every AP gain is increased by 1                            |                                                         |
 <!-- GENERATED:END -->
 
 ---
@@ -71,23 +73,23 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 
 *Main team core minus Cheater, Dead Energy I, Dead Energy II.*
 
-| Lumina | LP | Effect |
-|---|---|---|
-| Painted Power | 5 | Damage can exceed 9,999. |
-| Teamwork | 5 | 10% increased damage while all allies are alive. |
-| Base Shield | 20 | Grants 1 Shield HP buffer per turn |
-| Energising Turn | 20 | +1 AP on turn start. |
-| Energising Parry | 15 | +1 AP on successful Parry. |
-| Energising Start I | 5 | +1 AP on battle start. |
-| Dodger | 1 | Gain 1 AP on Perfect Dodge. Once per turn. |
-| Breaker | 10 | 25% increased Break damage. |
-| Marking Shots | 3 | 20% chance to apply Mark on Free Aim shot. |
-| Critical Break | 5 | 25% increased Break damage on Critical hits. |
-| Rewarding Mark | 5 | +2 AP on dealing damage to a Marked target. Once per turn. |
-| Burning Shots | 3 | 20% chance to Burn on Free Aim shot. |
-| Breaking Burn | 5 | 25% increased Break damage on Burning enemies. |
-| Breaking Counter | 3 | 50% increased Break damage on Counterattack. |
-| Breaking Death | 5 | Fully charge enemy break bar on death |
+| Lumina             | LP | Effect                                                     |
+|--------------------|----|------------------------------------------------------------|
+| Painted Power      | 5  | Damage can exceed 9,999.                                   |
+| Teamwork           | 5  | 10% increased damage while all allies are alive.           |
+| Base Shield        | 20 | Grants 1 Shield HP buffer per turn                         |
+| Energising Turn    | 20 | +1 AP on turn start.                                       |
+| Energising Parry   | 15 | +1 AP on successful Parry.                                 |
+| Energising Start I | 5  | +1 AP on battle start.                                     |
+| Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                 |
+| Breaker            | 10 | 25% increased Break damage.                                |
+| Marking Shots      | 3  | 20% chance to apply Mark on Free Aim shot.                 |
+| Critical Break     | 5  | 25% increased Break damage on Critical hits.               |
+| Rewarding Mark     | 5  | +2 AP on dealing damage to a Marked target. Once per turn. |
+| Burning Shots      | 3  | 20% chance to Burn on Free Aim shot.                       |
+| Breaking Burn      | 5  | 25% increased Break damage on Burning enemies.             |
+| Breaking Counter   | 3  | 50% increased Break damage on Counterattack.               |
+| Breaking Death     | 5  | Fully charge enemy break bar on death                      |
 <!-- GENERATED:END -->
 
 ---
@@ -97,12 +99,12 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 Add these as Lumina for specific boss fights — no need to change Pictos.
 
 <!-- GENERATED:START lumina:situational -->
-| Lumina | LP | Effect | Notes |
-|---|---|---|---|
-| Anti-Blight | 10 | Immune to Blight | All characters — vs bosses applying Blight. Add as Lumina; no need to move Pictos. |
-| Anti-Burn | 15 | Immune to Burn | All characters — vs bosses applying Burn regularly. |
-| Anti-Freeze | 15 | Immune to Freeze | All characters — vs bosses applying Freeze. LP cost unconfirmed. |
-| Draining Cleanse | 15 | Consume 1AP to prevent Status Effect application, if possible | Status effect prevention — 1AP cost per use. High LP cost; situational. |
+| Lumina           | LP | Effect                                                        | Notes                                                                              |
+|------------------|----|---------------------------------------------------------------|------------------------------------------------------------------------------------|
+| Anti-Blight      | 10 | Immune to Blight                                              | All characters — vs bosses applying Blight. Add as Lumina; no need to move Pictos. |
+| Anti-Burn        | 15 | Immune to Burn                                                | All characters — vs bosses applying Burn regularly.                                |
+| Anti-Freeze      | 15 | Immune to Freeze                                              | All characters — vs bosses applying Freeze. LP cost unconfirmed.                   |
+| Draining Cleanse | 15 | Consume 1AP to prevent Status Effect application, if possible | Status effect prevention — 1AP cost per use. High LP cost; situational.            |
 <!-- GENERATED:END -->
 
 ---
@@ -110,15 +112,15 @@ Add these as Lumina for specific boss fights — no need to change Pictos.
 ## 6. Candidates for Future Review
 
 <!-- GENERATED:START lumina:future -->
-| Lumina | LP | Effect | Notes |
-|---|---|---|---|
-| Energy Master | 40 | Every AP gain is increased by 1 | Game-change but expensive; consider when expanding core set. |
-| Healing Boon | 10 | Heal 15% HP on applying a buff | Consider for Sciel with Litheson. |
-| Energising Shell | 10 | Give 2 AP on applying Shell. | Consider for Maelle with Lithum. |
-| Longer Shell | 5 | On applying Shell, its duration is increased by 2. | Consider for Maelle with Lithum. |
-| Powerful On Shell | 10 | Apply Powerful on applying Shell. | Consider for Maelle with Lithum. |
-| Energising Burn | 10 | +1 AP on applying Burn. Once per turn. | Consider when expanding core set — all characters have Burning Shots so fires regularly. |
-| Empowering Dodge | 5 | 5% increased damage per consecutive dodge, stacks up to 10 | Test empirically before committing — reset on parry unconfirmed. |
+| Lumina            | LP | Effect                                                     | Notes                                                                                    |
+|-------------------|----|------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| Energy Master     | 40 | Every AP gain is increased by 1                            | Game-change but expensive; consider when expanding core set.                             |
+| Healing Boon      | 10 | Heal 15% HP on applying a buff                             | Consider for Sciel with Litheson.                                                        |
+| Energising Shell  | 10 | Give 2 AP on applying Shell.                               | Consider for Maelle with Lithum.                                                         |
+| Longer Shell      | 5  | On applying Shell, its duration is increased by 2.         | Consider for Maelle with Lithum.                                                         |
+| Powerful On Shell | 10 | Apply Powerful on applying Shell.                          | Consider for Maelle with Lithum.                                                         |
+| Energising Burn   | 10 | +1 AP on applying Burn. Once per turn.                     | Consider when expanding core set — all characters have Burning Shots so fires regularly. |
+| Empowering Dodge  | 5  | 5% increased damage per consecutive dodge, stacks up to 10 | Test empirically before committing — reset on parry unconfirmed.                         |
 <!-- GENERATED:END -->
 
 ---

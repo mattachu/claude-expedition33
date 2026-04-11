@@ -55,8 +55,8 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 | Attribute | Value | Priority  |
 |-----------|-------|-----------|
 | Level     | 83    | —         |
-| Luck      | 99    | Primary   |
 | Agility   | 99    | Primary   |
+| Luck      | 99    | Primary   |
 | Might     | 51    | Secondary |
 | Vitality  | 0     | None      |
 | Defence   | 0     | None      |
@@ -67,6 +67,8 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 ### Combat Stats
 
 <!-- GENERATED:START characters:Maelle:stats -->
+*Stats with Lithum (33), Burning Break (21), Gradient Break (25), Survivor (21) equipped*
+
 | Stat    | Base        | Modified |
 |---------|-------------|----------|
 | Health  | *[unknown]* | 3471     |
@@ -83,7 +85,7 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 ### Current (Endgame)
 <!-- GENERATED:START weapons:Maelle:Lithum -->
 - **Name:** Lithum (33)
-- **Power:** 9254
+- **Power:** 9302
 - **Element:** Void
 - **Scaling:** Luck S, Agility A
 - **Effects:**
@@ -102,11 +104,11 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 ### Current (party loadout)
 
 <!-- GENERATED:START characters:Maelle:Pictos -->
-| Slot | Pictos        | Level | Stat Bonus                        | Notes                        |
-|------|---------------|-------|-----------------------------------|------------------------------|
-| 1    | Burning Break | 21    | Health +1541, Crit +24%           | Burning Break Lumina free    |
-| 2    | Gradient Break| 25    | Speed +424, Crit +28%             | Gradient Break Lumina free   |
-| 3    | Sniper        | 23    | Speed +529, Crit +13%             | Sniper Lumina free           |
+| Slot | Pictos         | Level | Stat Bonus              | Effect                                             |
+|------|----------------|-------|-------------------------|----------------------------------------------------|
+| 1    | Burning Break  | 21    | Health +1541, Crit +24% | Apply 3 Burn stacks on Breaking a target.          |
+| 2    | Gradient Break | 25    | Speed +434, Crit +28%   | +50% of a Gradient Charge on Breaking a target.    |
+| 3    | Survivor       | 21    | Speed +439, Crit +12%   | Survive fatal damage with 1 Health once per battle |
 <!-- GENERATED:END -->
 
 *Cheater equipped via Lumina (40 LP) rather than Pictos slot.*
@@ -121,37 +123,36 @@ Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina 
 
 ### LP Budget
 <!-- GENERATED:START characters:Maelle:LP -->
-- **Current capacity:** 158 LP
-- **Remaining Colour of Lumina:** 146 available (1 Colour = 1 LP permanently)
+- **Current capacity:** 196 LP
+- **Used:** 194 LP
+- **Spare:** 2 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Maelle:Lumina -->
-*149 LP used, 9 LP spare*
-
-| Lumina              | LP  | Notes                          |
-|---------------------|-----|--------------------------------|
-| Base Shield         | 20  |                                |
-| Breaker             | 10  |                                |
-| Breaking Burn       | 5   |                                |
-| Breaking Counter    | 3   | 50% Break damage on Counterattack. Situational solo. |
-| Cheater             | 40  | Swap to Pictos for solo fight  |
-| Critical Break      | 5   |                                |
-| Dead Energy I       | 2   |                                |
-| Dead Energy II      | 2   |                                |
-| Dodger              | 1   |                                |
-| Energising Parry    | 15  |                                |
-| Energising Start I  | 5   |                                |
-| Energising Turn     | 20  |                                |
-| Marking Shots       | 3   |                                |
-| Painted Power       | 5   |                                |
-| Rewarding Mark      | 5   |                                |
-| Teamwork            | 5   | Passive damage bonus when whole team alive — useless solo |
-| Burning Shots       | 3   |                                |
-| Burning Break       | —   | FREE from Burning Break Pictos |
-| Gradient Break      | —   | FREE from Gradient Break Pictos |
-| Sniper              | —   | FREE from Sniper Pictos        |
+| Lumina              | LP | Notes                                                      |
+|---------------------|----|------------------------------------------------------------|
+| Base Shield         | 20 | Non-functional for Verso (Chevalam L4 prevents shields)    |
+| Breaker             | 10 |                                                            |
+| Breaking Burn       | 5  |                                                            |
+| Breaking Counter    | 3  |                                                            |
+| Breaking Death      | 5  |                                                            |
+| Burning Shots       | 3  |                                                            |
+| Cheater             | 40 |                                                            |
+| Critical Break      | 5  |                                                            |
+| Dead Energy I       | 2  |                                                            |
+| Dead Energy II      | 2  |                                                            |
+| Dodger              | 1  |                                                            |
+| Energising Attack I | 10 | Added during solo build, kept — useful for Lithum rotation |
+| Energising Parry    | 15 |                                                            |
+| Energising Start I  | 5  |                                                            |
+| Energising Turn     | 20 | Main AP flow generator; boosted by Energy Master           |
+| Energy Master       | 40 |                                                            |
+| Marking Shots       | 3  |                                                            |
+| Painted Power       | 5  | Essential for all characters from Act 3 onwards            |
+| Rewarding Mark      | 5  |                                                            |
+| Teamwork            | 5  |                                                            |
 <!-- GENERATED:END -->
 
 ### Solo Build Swap (The Reacher)
@@ -179,30 +180,31 @@ Net change: freed 52, added 33. 19 LP spare after swap (within 158 LP budget).
 ## Skills
 
 <!-- GENERATED:START characters:Maelle:skills -->
-**Currently equipped (6):** Fleuret Fury, Percée, Phantom Strike, Gustave's Homage, Stendhal, Sword Ballet
+**Currently equipped (6):** Phantom Strike, Fleuret Fury, Percée, Gustave's Homage, Stendhal, Sword Ballet
 
-| Skill            | AP Cost           | Equipped | Notes                                                                                                                                              |
-|------------------|-------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Gustave's Homage | 8                 | ✅       | 8-hit extreme physical damage; switches TO Virtuose Stance. Sword Ballet damage tripled by the Virtuose entry.                                     |
-| Sword Ballet     | 9                 | ✅       | 5-hit extreme single-target, weapon element; crits deal double. Primary Virtuose damage — greatly amplified after entering Virtuose.               |
-| Fleuret Fury     | 6                 | ✅       | 3-hit high single-target physical; stays in Virtuose if already there; can Break.                                                                  |
-| Percée           | 5 (2 in Virtuose) | ✅       | Increased damage to Marked. 2 AP in Virtuose but leaves Virtuose after — one use per Virtuose window.                                              |
-| Phantom Strike   | 4                 | ✅       | 4-hit very high Void AoE; switches to Defensive stance; gives +35% of a Gradient Charge. Defensive stance (+1 AP per dodge/parry) useful solo.   |
-| Stendhal         | 8                 | ✅       | Extreme single-target Void damage, 1 hit; switches to Stanceless; removes self-shields; applies Defenceless to self. Nerfed 40% in Patch 1.2.3.  |
-| Breaking Rules   | 3                 | ❌       | Switches to Offensive; destroys all target shields; gains 1 AP per shield destroyed. **If target is Defenceless: grants a second turn.**                          |
-| Burning Canvas   | 5                 | ❌       | Switches to Offensive; high Void damage + 1 burn per hit; damage increased for each burn stack on target. Key to burn-stacking build.                             |
-| Degagement       | 2                 | ❌       | Switches to Offensive; low Fire damage; target becomes weak to Fire.                                                                                               |
-| Égide            | 3                 | ❌       | Switches to Defensive; protects allies by taking damage in their place for 2 turns.                                                                                |
-| Fencer's Flurry  | 4                 | ❌       | Switches to Offensive; medium AoE; applies Defenceless 1 turn. Was trash clear before Phantom Strike.                                                             |
-| Guard Up         | 3                 | ❌       | Switches to Offensive; Shell buff for allies.                                                                                                                      |
-| Last Chance      | 1                 | ❌       | Switches to Virtuose; reduces self-health to 1; refills all AP. High-risk high-reward; community standard for solo builds.                                         |
-| Mezzo Forte      | 1                 | ❌       | Reapply current stance; give 2–4 AP. Free AP generation in Virtuose — strong solo utility.                                                                         |
-| Momentum Strike  | 7                 | ❌       | Switches to Defensive; high damage; costs 4 AP in Virtuose.                                                                                                        |
-| Offensive Switch | 1                 | ❌       | Switches to Offensive; low damage; applies Defenceless to enemy.                                                                                                   |
-| Payback          | 9                 | ❌       | Switches to Defensive; very high physical damage; reduced AP cost for each attack parried since last turn; can Break.                                              |
-| Rain of Fire     | 5                 | ❌       | Switches to Offensive; medium Fire damage + 3 burn per hit, 2 hits; applies 2 more burn per hit if in Defensive.                                                  |
-| Spark            | 3                 | ❌       | Switches to Defensive; low Fire damage + 3 burn; applies 2 more burn if in Offensive.                                                                              |
-| Swift Stride     | 3                 | ❌       | Low physical; switches to Virtuose if target burning; regains 0–2 AP. Mid-fight Virtuose entry point.                                                              |
+| Skill            | AP                | Stance     | Equipped | Notes                                                                                                                                           |
+|------------------|-------------------|------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Phantom Strike   | 4                 | Defensive  | ✅        | 4-hit very high Void AoE. Switches to Defensive stance. Gives +35% of a Gradient Charge.                                                        |
+| Fleuret Fury     | 6                 | —          | ✅        | 3-hit high single-target Physical. Stays in Virtuose if already there. Can Break.                                                               |
+| Percée           | 5 (2 in Virtuose) | Stanceless | ✅        | Increased damage to Marked target. 2 AP in Virtuose but leaves Virtuose after — one use per Virtuose window.                                    |
+| Gustave's Homage | 8                 | Virtuose   | ✅        | 8-hit extreme Physical damage. Switches to Virtuose Stance.                                                                                     |
+| Stendhal         | 8                 | Stanceless | ✅        | Extreme single-target Void damage, 1 hit. Switches to Stanceless. Removes self-shields. Applies Defenceless to self. Nerfed 40% in Patch 1.2.3. |
+| Sword Ballet     | 9                 | —          | ✅        | 5-hit extreme single-target weapon element. Crits deal double damage. Primary Virtuose damage skill.                                            |
+| Breaking Rules   | 3                 | Offensive  | ❌        | Destroys all target shields. Gains 1 AP per shield destroyed. If target is Defenceless: grants a second turn.                                   |
+| Burning Canvas   | 5                 | Offensive  | ❌        | High Void damage + 1 burn per hit. Damage increased for each burn stack on target.                                                              |
+| Combustion       | 4                 | Offensive  | ❌        | Medium single target Physical damage. 2 hits. Consumes up to 10 Burn for increased damage.                                                      |
+| Degagement       | 2                 | Offensive  | ❌        | Low Fire damage. Target becomes weak to Fire.                                                                                                   |
+| Égide            | 3                 | Defensive  | ❌        | Protects allies by taking damage in their place for 2 turns.                                                                                    |
+| Fencer's Flurry  | 4                 | Offensive  | ❌        | Medium AoE. Applies Defenceless 1 turn.                                                                                                         |
+| Guard Up         | 3                 | Offensive  | ❌        | Shell buff for allies.                                                                                                                          |
+| Last Chance      | 1                 | Virtuose   | ❌        | Reduces self-health to 1. Refills all AP.                                                                                                       |
+| Mezzo Forte      | 1                 | —          | ❌        | Reapply current stance. Give 2–4 AP.                                                                                                            |
+| Momentum Strike  | 7                 | Defensive  | ❌        | High damage. Costs 4 AP in Virtuose.                                                                                                            |
+| Offensive Switch | 1                 | Offensive  | ❌        | Low damage. Applies Defenceless to enemy.                                                                                                       |
+| Payback          | 9                 | Defensive  | ❌        | Very high Physical damage. Reduced AP cost for each attack parried since last turn. Can Break.                                                  |
+| Rain of Fire     | 5                 | Offensive  | ❌        | Medium Fire damage + 3 burn per hit, 2 hits. Applies 2 more burn per hit if in Defensive.                                                       |
+| Spark            | 3                 | Defensive  | ❌        | Low Fire damage + 3 burn. Applies 2 more burn if in Offensive.                                                                                  |
+| Swift Stride     | 3                 | Virtuose   | ❌        | Low Physical. Switches to Virtuose if target burning. Regains 0–2 AP.                                                                           |
 <!-- GENERATED:END -->
 
 ### Solo skill loadout recommendation (The Reacher)
@@ -216,11 +218,11 @@ Alternative: swap Fleuret Fury for Sword Ballet if preferring burst over Break u
 ## Gradient Skills
 
 <!-- GENERATED:START characters:Maelle:gradients -->
-| Gradient Skill  | Gradient Cost | Acquired | Notes                                                                                                                                          |
-|-----------------|---------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Virtuose Strike | 1             | ✅       | High single-target physical damage, 5 hits; then changes to Virtuose Stance.                                                                   |
-| Phoenix Flame   | 2             | ✅       | Applies 10 Burn to all enemies; revives all allies with 50–70% Health; then changes to Offensive Stance.                                       |
-| Gommage         | 3             | ✅       | Kills weak targets; otherwise extreme Void damage 1 hit, then changes to Virtuose Stance.                                                      |
+| Gradient Skill  | Gradient Cost | Acquired | Notes                                                                                                |
+|-----------------|---------------|----------|------------------------------------------------------------------------------------------------------|
+| Virtuose Strike | 1             | ✅        | High single-target physical damage, 5 hits; switches to Virtuose Stance.                             |
+| Phoenix Flame   | 2             | ✅        | Applies 10 Burn to all enemies; revives all allies with 50–70% Health; switches to Offensive Stance. |
+| Gommage         | 3             | ✅        | Kills weak targets; otherwise extreme Void damage 1 hit, then switches to Virtuose Stance.           |
 <!-- GENERATED:END -->
 
 ---

@@ -47,6 +47,8 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 ### Combat Stats
 
 <!-- GENERATED:START characters:Sciel:stats -->
+*Stats with Litheson (32), Critical Burn (25), Energy Master (30), Quick Break (25) equipped*
+
 | Stat    | Base        | Modified |
 |---------|-------------|----------|
 | Health  | *[unknown]* | 6879     |
@@ -64,8 +66,8 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 ### Current (Endgame)
 <!-- GENERATED:START weapons:Sciel:Litheson -->
-- **Name:** Litheson (20)
-- **Power:** 2081
+- **Name:** Litheson (33)
+- **Power:** 4226
 - **Element:** Physical
 - **Scaling:** Luck A, Agility B
 - **Effects:**
@@ -91,11 +93,11 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 ### Current (permanent loadout)
 
 <!-- GENERATED:START characters:Sciel:Pictos -->
-| Slot | Pictos        | Level | Stat Bonus                        | Effect                                      |
-|------|---------------|-------|-----------------------------------|---------------------------------------------|
-| 1    | Critical Burn | 25    | Speed +434, Crit +28%             | 25% increased Crit rate on Burning enemies  |
-| 2    | Recovery      | 20    | Health +2000, Defence +324        | Recover 10% Health on turn start            |
-| 3    | Quick Break   | 25    | Speed +444, Crit +28%             | Pure stat stick (never fires with Cheater)  |
+| Slot | Pictos        | Level | Stat Bonus            | Effect                                     |
+|------|---------------|-------|-----------------------|--------------------------------------------|
+| 1    | Critical Burn | 25    | Speed +434, Crit +28% | 25% increased Crit rate on Burning enemies |
+| 2    | Energy Master | 30    | Health +4979          | Every AP gain is increased by 1            |
+| 3    | Quick Break   | 25    | Speed +434, Crit +28% | Play again on Breaking a target.           |
 <!-- GENERATED:END -->
 
 ---
@@ -104,42 +106,40 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 ### LP Budget
 <!-- GENERATED:START characters:Sciel:LP -->
-- **Current capacity:** 175 LP (expanded 9 Colour of Lumina Chat 5)
-- **Used:** 170 LP
-- **Spare:** 5 LP (will become 0 after adding Healing Boon 10LP — expand pool by 5 more)
+- **Current capacity:** 176 LP
+- **Used:** 175 LP
+- **Spare:** 1 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Sciel:Lumina -->
-| Lumina              | LP  | Notes                          |
-|---------------------|-----|--------------------------------|
-| Accelerating Heal   | 5   |                                |
-| Base Shield         | 20  |                                |
-| Breaker             | 10  |                                |
-| Breaking Burn       | 5   |                                |
-| Breaking Counter    | 3   |                                |
-| Breaking Death      | 5   |                                |
-| Burning Shots       | 3   |                                |
-| Cheater             | 40  |                                |
-| Critical Break      | 5   |                                |
-| Critical Burn       | —   | FREE from Critical Burn Pictos |
-| Dead Energy I       | 2   |                                |
-| Dead Energy II      | 2   |                                |
-| Dodger              | 1   |                                |
-| Energising Heal     | 10  |                                |
-| Energising Parry    | 15  |                                |
-| Energising Start I  | 5   |                                |
-| Energising Turn     | 20  |                                |
-| Healing Boon        | 10  |                                |
-| Healing Tint Energy | 1   |                                |
-| Marking Shots       | 3   |                                |
-| Painted Power       | 5   |                                |
-| Protecting Heal     | 5   |                                |
-| Quick Break         | —   | FREE from Quick Break Pictos   |
-| Recovery            | —   | FREE from Recovery Pictos      |
-| Rewarding Mark      | 5   |                                |
-| Teamwork            | 5   |                                |
+| Lumina              | LP | Notes                                                                                      |
+|---------------------|----|--------------------------------------------------------------------------------------------|
+| Accelerating Heal   | 5  | Rush on heal — synergy with Litheson AP generation                                         |
+| Base Shield         | 20 | Non-functional for Verso (Chevalam L4 prevents shields)                                    |
+| Breaker             | 10 |                                                                                            |
+| Breaking Burn       | 5  |                                                                                            |
+| Breaking Counter    | 3  |                                                                                            |
+| Breaking Death      | 5  |                                                                                            |
+| Burning Shots       | 3  |                                                                                            |
+| Cheater             | 40 |                                                                                            |
+| Critical Break      | 5  |                                                                                            |
+| Dead Energy I       | 2  |                                                                                            |
+| Dead Energy II      | 2  |                                                                                            |
+| Dodger              | 1  |                                                                                            |
+| Energising Heal     | 10 | 2 AP on healing an ally — primary AP engine with Grim Harvest                              |
+| Energising Parry    | 15 |                                                                                            |
+| Energising Start I  | 5  |                                                                                            |
+| Energising Turn     | 20 | Main AP flow generator; boosted by Energy Master                                           |
+| Energy Master       | —  | FREE from Energy Master Pictos                                                             |
+| Healing Boon        | 10 | 15% HP on applying a buff — fires on Dark Cleansing propagation and Litheson phase changes |
+| Healing Tint Energy | 1  | 1 AP on Healing Tint use — small AP top-up                                                 |
+| Marking Shots       | 3  |                                                                                            |
+| Painted Power       | 5  | Essential for all characters from Act 3 onwards                                            |
+| Protecting Heal     | 5  | Shell on heal — enables Powerful On Shell via Lune Pictos                                  |
+| Rewarding Mark      | 5  |                                                                                            |
+| Teamwork            | 5  |                                                                                            |
 <!-- GENERATED:END -->
 
 *Burn Affinity Lumina removed — Burn Affinity Pictos replaced by Quick Break, effect no longer free.*
@@ -149,18 +149,26 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 ## Skills
 
 <!-- GENERATED:START characters:Sciel:skills -->
-**Currently equipped (6):** Fortune's Fury, Intervention, Plentiful Harvest, Final Path, Twilight Dance, Grim Harvest
+**Currently equipped (6):** Final Path, Fortune's Fury, Grim Harvest, Intervention, Plentiful Harvest, Twilight Dance
 
-| Skill             | AP  | Charge | Equipped | Notes                                                                                                                    |
-|-------------------|-----|--------|----------|--------------------------------------------------------------------------------------------------------------------------|
-| Fortune's Fury    | 5   | —      | ✅       | Doubles one ally's damage for their next turn. Must be used before target acts.                                          |
-| Intervention      | 5   | —      | ✅       | Grants targeted ally an immediate extra turn + 4 AP (Greater Rush).                                                      |
-| Plentiful Harvest | 4   | Moon   | ✅       | Consumes all Foretell on target → 1 AP per stack, split between party. 5 stacks = +2/+2/+1; 10 stacks = +3/+3/+4.       |
-| Final Path        | 9   | Sun    | ✅       | High damage + applies 10 Foretell in one turn. Fast route to big Plentiful Harvest.                                      |
-| Twilight Dance    | 9   | Moon   | ✅       | High damage in Twilight state, consumes Foretell. Secondary DPS when support actions not needed.                         |
-| Grim Harvest      | 5   | Moon   | ✅       | Heals all allies 30% + 5% per Foretell stack consumed.                                                                   |
-| Focused Foretell  | 2   | Sun    | ❌       | Applies 2 Foretell (or 5 if target has none). Reset-to-5 mechanic central to Plentiful Harvest AP loop. Drop for Grim Harvest. |
-| Dark Cleansing    | 0   | Moon   | ❌       | Cleanses ally of status effects; propagates their buffs to all allies. With Healing Boon: 15% heal per ally buffed.      |
+| Skill             | AP | Charge | Equipped | Notes                                                                                                                        |
+|-------------------|----|--------|----------|------------------------------------------------------------------------------------------------------------------------------|
+| Final Path        | 9  | Sun    | ✅        | High damage, applies 10 Foretell in one turn. Fast route to big Plentiful Harvest.                                           |
+| Fortune's Fury    | 5  | —      | ✅        | Doubles one ally's damage for their next turn. Must be used before target acts.                                              |
+| Grim Harvest      | 5  | Moon   | ✅        | Medium single-target Dark damage, 1 hit. Heals all allies 30% HP + 5% per Foretell consumed.                                 |
+| Intervention      | 5  | —      | ✅        | Grants targeted ally an immediate extra turn + 4 AP (Greater Rush).                                                          |
+| Plentiful Harvest | 4  | Moon   | ✅        | Consumes all Foretell on target → 1 AP per stack, split between party. 5 stacks = +2/+2/+1; 10 stacks = +3/+3/+4.            |
+| Twilight Dance    | 9  | Moon   | ✅        | High single-target Dark damage in Twilight state. Consumes Foretell. Extends Twilight duration by 1 turn.                    |
+| Dark Cleansing    | 0  | Moon   | ❌        | Cleanses an ally of their status effects and propagates that ally's buffs to all allies.                                     |
+| Dark Wave         | 6  | Moon   | ❌        | High Dark AoE, 3 hits. Consumes all Foretell for increased damage.                                                           |
+| Delaying Slash    | 6  | Moon   | ❌        | High single-target Dark damage. Consumes Foretell for increased damage. Delays target's next turn.                           |
+| Firing Shadow     | 3  | Moon   | ❌        | Low Dark AoE, 3 hits. Consumes 1 Foretell per hit for increased damage.                                                      |
+| Focused Foretell  | 2  | Sun    | ❌        | Applies 2 Foretell (or 5 if target has none). Core Foretell reset mechanic for Plentiful Harvest loop.                       |
+| Harvest           | 3  | Moon   | ❌        | Heals Sciel based on Foretell stacks consumed.                                                                               |
+| Phantom Blade     | 5  | Moon   | ❌        | High single-target Dark damage, 1 hit. Consumes all Foretell for increased damage. Can Break.                                |
+| Sealed Fate       | 4  | Moon   | ❌        | High single-target weapon element, 5–7 hits. Each hit consumes 1 Foretell for 200% more damage. Crits don't remove Foretell. |
+| Searing Bond      | 4  | Sun    | ❌        | Medium single-target Dark, 1 hit. Applies 5 Foretell. Also deals damage and applies Foretell to every other Burning enemy.   |
+| Twilight Slash    | 2  | Sun    | ❌        | Low single-target Physical damage. Applies 2 Foretell.                                                                       |
 <!-- GENERATED:END -->
 
 *Target loadout once Grim Harvest confirmed available: Fortune's Fury, Intervention, Plentiful Harvest, Final Path, Twilight Dance, Grim Harvest.*
@@ -170,11 +178,11 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 ## Gradient Skills
 
 <!-- GENERATED:START characters:Sciel:gradients -->
-| Gradient Skill | Gradient Cost | Acquired | Notes                                                                                                          |
-|----------------|---------------|----------|----------------------------------------------------------------------------------------------------------------|
-| Shadow Bringer | 1             | ✅       | High single-target Dark damage to random enemies, 10 hits. Applies 1 Foretell per hit (10 total). Efficient Foretell builder at low GC cost. |
-| Doom           | 2             | ✅       | Very high single-target Dark damage, 3 hits. Applies Powerless, Defenceless and Slow for 3 turns. Can Break. Strong boss debuff package. |
-| End Slice      | 3             | ✅       | Extreme single-target Physical damage, 1 hit. Damage increased for each Foretell consumed since battle start. Scales with total Plentiful Harvest usage — used to defeat Sprong. |
+| Gradient Skill | Gradient Cost | Acquired | Notes                                                                                                         |
+|----------------|---------------|----------|---------------------------------------------------------------------------------------------------------------|
+| Shadow Bringer | 1             | ✅        | High single-target Dark damage to random enemies, 10 hits. Applies 1 Foretell per hit (10 total).             |
+| Doom           | 2             | ✅        | Very high single-target Dark damage, 3 hits. Applies Powerless, Defenceless and Slow for 3 turns. Can Break.  |
+| End Slice      | 3             | ✅        | Extreme single-target Physical damage, 1 hit. Damage increased for each Foretell consumed since battle start. |
 <!-- GENERATED:END -->
 
 ---
