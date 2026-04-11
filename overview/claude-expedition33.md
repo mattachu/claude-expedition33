@@ -241,7 +241,6 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 
 ### Phase 4 — Post-game (Level 80+)
 
-<!-- GENERATED:START playthrough:phase_4_checklist -->
 - ⬜ Endless Tower floors 1–20 + Chromatic Eveque (good first post-game activity; also serves as level-up fallback if Flying Manor too hard)
 - ⬜ Dark Gestral Arena
 - ⬜ Hard chromatics: Gault, Reaper Cultist, Petank, Goblu, Aberration, Lampmaster
@@ -256,7 +255,6 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 - ⬜ Chromatic Barbasucette (Verso's Drafts)
 - ⬜ Chromatic Franctale (Verso's Drafts)
 - ⬜ Endless Tower floors 21–33 + DLC bosses (Clea Unleashed, Simon the Divergent Star — accessed via Tower canvases after beating originals; added by Thank You Update, no ordering dependency with Verso's Drafts)
-<!-- GENERATED:END -->
 
 ---
 

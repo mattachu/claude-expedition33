@@ -37,28 +37,26 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 ### Level and Attributes
 
 <!-- GENERATED:START characters:Lune:attributes -->
-| Attribute | Value | Priority  | Reason                                                                                        |
-|-----------|-------|-----------|-----------------------------------------------------------------------------------------------|
-| Level     | 76    | —         |                                                                                               |
-| Vitality  | 99    | Primary   | Kralim scales Vitality A — primary weapon scaling stat                                        |
-| Agility   | 99    | Primary   | Kralim scales Agility B — secondary weapon scaling stat                                       |
-| Luck      | 30    | Tertiary  | Spare points; crit boost                                                                      |
-| Might     | 0     | None      | No benefit for this build                                                                     |
-| Defence   | 0     | None      | No benefit for this build                                                                     |
+| Attribute | Value | Priority  |
+|-----------|-------|-----------|
+| Level     | 78    | —         |
+| Vitality  | 99    | Primary   |
+| Agility   | 99    | Primary   |
+| Luck      | 36    | Tertiary  |
+| Might     | 0     | None      |
+| Defence   | 0     | None      |
 <!-- GENERATED:END -->
 
 ### Combat Stats
 
 <!-- GENERATED:START characters:Lune:stats -->
-*With Pictos: Powerful on Shell 23, Burn Affinity, Burning Death 21*
-
-| Stat                          | Base    | From weapon/Pictos                                | Total   |
-|-------------------------------|---------|---------------------------------------------------|---------|
-| Health                        | 3115    | +874 (Powerful on Shell)                          | 3989    |
-| Attack                        | 911     | +4454 (Kralim scaling)                            | 5365    |
-| Speed                         | 1025    | +439 (Burn Affinity) +308 (Burning Death)         | 1772    |
-| Defence                       | 182     | +874 (Powerful on Shell)                          | 1056    |
-| Critical Rate                 | 20%     | +25% (Powerful on Shell) +12% (Burn Affinity) +24% (Burning Death) | 81% |
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 4047     |
+| Attack  | *[unknown]* | 5401     |
+| Speed   | *[unknown]* | 1797     |
+| Defence | *[unknown]* | 1056     |
+| Crit    | *[unknown]* | 84%      |
 <!-- GENERATED:END -->
 
 ---
@@ -134,50 +132,47 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 <!-- GENERATED:START characters:Lune:Lumina -->
 *Reserve team core (110LP) + character-specific additions.*
 
-| Lumina             | LP  | Notes                                                          |
-|--------------------|-----|----------------------------------------------------------------|
-| Base Shield        | 20  | Core                                                           |
-| Breaker            | 10  | Core                                                           |
-| Breaking Burn      | 5   | Core — retained; fires when reserve team breaks enemies        |
-| Breaking Counter   | 3   | Core                                                           |
-| Breaking Death     | 5   | Core + character-specific                                      |
-| Burn Affinity      | —   | FREE from Burn Affinity Pictos                                 |
-| Burning Shots      | 3   | Core                                                           |
-| Critical Break     | 5   | Core + character-specific                                      |
-| Dodger             | 1   | Core                                                           |
-| Energising Parry   | 15  | Core                                                           |
-| Energising Start I | 5   | Core                                                           |
-| Energising Turn    | 20  | Core                                                           |
-| Healing Tint Energy| 1   | Character-specific                                             |
-| Marking Shots      | 3   | Core                                                           |
-| Painted Power      | 5   | Core                                                           |
-| Powerful on Shell  | —   | FREE from Powerful on Shell Pictos                             |
-| Protecting Heal    | 5   | Character-specific — Shell on every Healing Light cast         |
-| Rewarding Mark     | 5   | Core + character-specific                                      |
-| Teamwork           | 5   | Core                                                           |
-| Accelerating Heal  | 5   | Character-specific                                             |
+| Lumina             | LP  | Notes                                       |
+|--------------------|-----|---------------------------------------------|
+| Accelerating Heal  | 5   | Character-specific                          |
+| Base Shield        | 20  | Core                                        |
+| Breaker            | 10  | Core                                        |
+| Breaking Burn      | 5   | Core                                        |
+| Breaking Counter   | 3   | Core                                        |
+| Breaking Death     | 5   | Core + character-specific                   |
+| Burn Affinity      | —   | FREE from Burn Affinity Pictos              |
+| Burning Shots      | 3   | Core                                        |
+| Critical Break     | 5   | Core + character-specific                   |
+| Dodger             | 1   | Core                                        |
+| Energising Parry   | 15  | Core                                        |
+| Energising Start I | 5   | Core                                        |
+| Energising Turn    | 20  | Core                                        |
+| Healing Tint Energy| 1   | Character-specific                          |
+| Marking Shots      | 3   | Core                                        |
+| Painted Power      | 5   | Core                                        |
+| Powerful on Shell  | —   | FREE from Powerful on Shell Pictos          |
+| Protecting Heal    | 5   | Character-specific — Shell on Healing Light |
+| Rewarding Mark     | 5   | Core + character-specific                   |
+| Teamwork           | 5   | Core                                        |
 <!-- GENERATED:END -->
-
-*Removed Chat 5: Breaking Counter removed from character-specific (now in core). Dead Energy I (2LP) and Dead Energy II (2LP) removed.*
-*Added Chat 5: Protecting Heal (5LP), Critical Break (5LP), Rewarding Mark (5LP), Breaking Death (5LP).*
 
 ---
 
 ## Skills
 
 <!-- GENERATED:START characters:Lune:skills -->
-**Currently equipped (6):** Wildfire, Terraquake, Thunderfall, Healing Light, Mayhem, Elemental Genesis
+**Currently equipped (6):** Hell, Terraquake, Lightning Dance, Healing Light, Mayhem, Elemental Genesis
 
-| Skill             | AP Cost | Equipped | Notes                                                                                                                                    |
-|-------------------|---------|----------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Wildfire          | 4       | ✅       | Medium Fire AoE, 1 hit; applies 3 Burn; generates 1 Fire + 1 Light stain. Primary Burn applicator and Fire stain source.                |
-| Terraquake        | 5       | ✅       | Earth damage over 3 turns; increases all Break damage received by 50% for 3 turns; generates Earth + Light stains.                      |
-| Thunderfall       | 5       | ✅       | Lightning damage; generates Lightning + Light stains. Flexible vs lightning-weak enemies.                                               |
-| Healing Light     | 3       | ✅       | Heals targeted ally 30–50% HP; dispels ALL status effects including Cursed; consumes 2 Earth stains for 0 AP; generates 1 Light stain.  |
-| Mayhem            | 3       | ✅       | Consumes all stains for damage; Breaks with 4 stains. Needs 4 stains to Break.                                                          |
-| Elemental Genesis | 4       | ✅       | Primary DPS skill. Requires 1 of each element stain (Fire, Earth, Lightning, Ice — Light wildcards for missing element). Extreme damage. |
-| Lightning Dance   | —       | ❌       | **Priority skill — acquired, not yet equipped.** Primary single-target nuke for the Kralim burst build; requires Fire + Ice + Earth stains. Slot in when loadout allows. |
-| Hell              | —       | ❌       | **Priority skill — not yet acquired, saving up.** Guarantees 4 stains and AoE burn on turn 1, enabling Genesis or Lightning Dance on turn 2. Important to obtain. |
+| Skill             | AP  | Stains Generated     | Equipped | Notes                                                                                                     |
+|-------------------|-----|----------------------|----------|-----------------------------------------------------------------------------------------------------------|
+| Hell              | —   | —                    | ✅       | Guarantees 4 stains and AoE burn on turn 1, enabling Genesis or Lightning Dance on turn 2.                |
+| Terraquake        | 5   | Earth, Light         | ✅       | Earth damage over 3 turns; increases all Break damage received by 50% for 3 turns.                        |
+| Lightning Dance   | —   | Lightning, Light     | ✅       | Primary single-target nuke for Kralim burst build; requires Fire + Ice + Earth stains.                    |
+| Healing Light     | 3   | Light (consumes 2×Earth for 0AP) | ✅ | Heals targeted ally 30–50% HP; dispels ALL status effects including Cursed.                        |
+| Mayhem            | 3   | —                    | ✅       | Consumes all stains for damage; Breaks with 4 stains.                                                     |
+| Elemental Genesis | 4   | —                    | ✅       | Requires 1 of each element stain (Fire, Earth, Lightning, Ice — Light wildcards). Extreme damage.         |
+| Wildfire          | 4   | Fire, Light          | ❌       | Medium Fire AoE; applies 3 Burn.                                                                          |
+| Thunderfall       | 5   | Lightning, Light     | ❌       | Lightning damage; flexible vs lightning-weak enemies.                                                     |
 <!-- GENERATED:END -->
 
 ---

@@ -34,31 +34,29 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 ### Level and Attributes
 
 <!-- GENERATED:START characters:Sciel:attributes -->
-| Attribute | Value | Priority  | Reason                                                                                                      |
-|-----------|-------|-----------|-------------------------------------------------------------------------------------------------------------|
-| Level     | 81    | —         |                                                                                                             |
-| Agility   | 99    | Primary   | Guarantees high Speed — essential for support role. Also gives weapon attack.                               |
-| Luck      | 99    | Primary   | Litheson scales Luck A, Agility B — Luck gives more weapon attack per point                                 |
-| Defence   | 33pts | Secondary | Spare points — gives small Defence and Crit bonus                                                           |
-| Vitality  | 0     | None      | Litheson does not scale off Vitality                                                                        |
-| Might     | 0     | None      | No benefit for this build                                                                                   |
+| Attribute | Value | Priority  |
+|-----------|-------|-----------|
+| Level     | 82    | —         |
+| Agility   | 99    | Primary   |
+| Luck      | 99    | Primary   |
+| Defence   | 48    | Secondary |
+| Vitality  | 0     | None      |
+| Might     | 0     | None      |
 <!-- GENERATED:END -->
 
 ### Combat Stats
 
-<!-- GENERATED:START characters:Sciel:attributes -->
-*With permanent Pictos — Critical Burn 25, Recovery 20, Quick Break 25*
-
-| Stat                          | Base    | From weapon/Pictos              | Total   |
-|-------------------------------|---------|--------------------------------|---------|
-| Health                        | 1755    | +2000 (Recovery)               | 3755    |
-| Attack                        | 929     | +2081 (Litheson scaling)       | 3010    |
-| Speed                         | 1100    | +434 (Critical Burn) +444 (Recovery+Quick Break) | 1978 |
-| Defence                       | 312     | +324 (Recovery)                | 636     |
-| Critical Rate                 | 49%     | +28% (Critical Burn) +28% (Quick Break) +11% (removed Base Shield) | ~100% (capped) |
+<!-- GENERATED:START characters:Sciel:stats -->
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 6879     |
+| Attack  | *[unknown]* | 5245     |
+| Speed   | *[unknown]* | 2014     |
+| Defence | *[unknown]* | 390      |
+| Crit    | *[unknown]* | 108%     |
 <!-- GENERATED:END -->
 
-*Critical Burn Pictos replaced Base Shield — restored intended turn order (Sciel 1978 > Maelle 1956).*
+*Critical Burn Pictos replaced Base Shield — restored intended turn order (Sciel faster than Maelle).*
 
 ---
 
@@ -114,57 +112,58 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 ### Current Loadout
 
 <!-- GENERATED:START characters:Sciel:Lumina -->
-| Lumina              | LP  | Notes                                                         |
-|---------------------|-----|---------------------------------------------------------------|
-| Accelerating Heal   | 5   |                                                               |
-| Base Shield         | 20  | Moved from Pictos to Lumina Chat 5                            |
-| Breaker             | 10  |                                                               |
-| Breaking Burn       | 5   |                                                               |
-| Breaking Counter    | 3   |                                                               |
-| Breaking Death      | 5   |                                                               |
-| Burn Affinity       | —   | Previously FREE from Burn Affinity Pictos — now paying 10 LP if retained; check |
-| Burning Shots       | 3   |                                                               |
-| Cheater             | 40  |                                                               |
-| Critical Break      | 5   |                                                               |
-| Critical Burn       | —   | FREE from Critical Burn Pictos                                |
-| Dead Energy I       | 2   |                                                               |
-| Dead Energy II      | 2   |                                                               |
-| Dodger              | 1   |                                                               |
-| Energising Heal     | 10  |                                                               |
-| Energising Parry    | 15  |                                                               |
-| Energising Start I  | 5   |                                                               |
-| Energising Turn     | 20  |                                                               |
-| Healing Boon        | 10  | To add — expand pool first                                    |
-| Healing Tint Energy | 1   |                                                               |
-| Marking Shots       | 3   |                                                               |
-| Painted Power       | 5   |                                                               |
-| Protecting Heal     | 5   |                                                               |
-| Quick Break         | —   | FREE from Quick Break Pictos                                  |
-| Recovery            | —   | FREE from Recovery Pictos                                     |
-| Rewarding Mark      | 5   |                                                               |
-| Teamwork            | 5   |                                                               |
+| Lumina              | LP  | Notes                          |
+|---------------------|-----|--------------------------------|
+| Accelerating Heal   | 5   |                                |
+| Base Shield         | 20  |                                |
+| Breaker             | 10  |                                |
+| Breaking Burn       | 5   |                                |
+| Breaking Counter    | 3   |                                |
+| Breaking Death      | 5   |                                |
+| Burning Shots       | 3   |                                |
+| Cheater             | 40  |                                |
+| Critical Break      | 5   |                                |
+| Critical Burn       | —   | FREE from Critical Burn Pictos |
+| Dead Energy I       | 2   |                                |
+| Dead Energy II      | 2   |                                |
+| Dodger              | 1   |                                |
+| Energising Heal     | 10  |                                |
+| Energising Parry    | 15  |                                |
+| Energising Start I  | 5   |                                |
+| Energising Turn     | 20  |                                |
+| Healing Boon        | 10  |                                |
+| Healing Tint Energy | 1   |                                |
+| Marking Shots       | 3   |                                |
+| Painted Power       | 5   |                                |
+| Protecting Heal     | 5   |                                |
+| Quick Break         | —   | FREE from Quick Break Pictos   |
+| Recovery            | —   | FREE from Recovery Pictos      |
+| Rewarding Mark      | 5   |                                |
+| Teamwork            | 5   |                                |
 <!-- GENERATED:END -->
+
+*Burn Affinity Lumina removed — Burn Affinity Pictos replaced by Quick Break, effect no longer free.*
 
 ---
 
 ## Skills
 
 <!-- GENERATED:START characters:Sciel:skills -->
-**Currently equipped (6):** Focused Foretell, Twilight Dance, Final Path, Fortune's Fury, Intervention, Plentiful Harvest
+**Currently equipped (6):** Fortune's Fury, Intervention, Plentiful Harvest, Final Path, Twilight Dance, Grim Harvest
 
-**Target loadout (when Grim Harvest available):** Fortune's Fury, Intervention, Plentiful Harvest, Final Path, Twilight Dance, Grim Harvest
-
-| Skill             | AP Cost | Equipped | Notes                                                                                                                                    |
-|-------------------|---------|----------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Fortune's Fury    | 5       | ✅       | Doubles one ally's damage for their next turn. Must be used before target acts. Core setup for Verso burst.                              |
-| Intervention      | 5       | ✅       | Grants targeted ally an immediate extra turn + 4 AP (Greater Rush). Core enabler for Verso's Steeled Strike combo.                       |
-| Plentiful Harvest | 4       | ✅       | Consumes all Foretell on target → 1 AP per stack, split between party. 5 stacks = +2/+2/+1; 10 stacks = +3/+3/+4.                        |
-| Final Path        | 9       | ✅       | High damage + applies 10 Foretell in one turn. Fast route to big Plentiful Harvest. Irreplaceable for efficient harvest loop.            |
-| Twilight Dance    | 9       | ✅       | High damage in Twilight state, consumes Foretell. Secondary DPS when support actions not needed.                                         |
-| Focused Foretell  | 2       | ✅       | Applies 2 Foretell (or 5 if target has none). The reset-to-5 mechanic is central to the Plentiful Harvest AP loop: cast Plentiful Harvest (consumes all Foretell), then Focused Foretell resets stacks to 5, enabling an efficient repeated cycle. **Drop when Grim Harvest available** — Grim Harvest fills the moderate-cost utility slot. |
-| Dark Cleansing    | 0       | ❌       | Cleanses an ally of status effects and propagates that ally's buffs to all allies. With Healing Boon Lumina equipped, the buff propagation triggers a 15% heal for each ally buffed — making this an effective 0AP party-wide heal. |
-| Grim Harvest      | 5       | ❌       | Heals all allies 30% + 5% per Foretell stack consumed. 10 stacks = 80% heal; in Twilight (doubled Foretell) = 100%. Not yet available — requires Recoat or 5 more levels. |
+| Skill             | AP  | Charge | Equipped | Notes                                                                                                                    |
+|-------------------|-----|--------|----------|--------------------------------------------------------------------------------------------------------------------------|
+| Fortune's Fury    | 5   | —      | ✅       | Doubles one ally's damage for their next turn. Must be used before target acts.                                          |
+| Intervention      | 5   | —      | ✅       | Grants targeted ally an immediate extra turn + 4 AP (Greater Rush).                                                      |
+| Plentiful Harvest | 4   | Moon   | ✅       | Consumes all Foretell on target → 1 AP per stack, split between party. 5 stacks = +2/+2/+1; 10 stacks = +3/+3/+4.       |
+| Final Path        | 9   | Sun    | ✅       | High damage + applies 10 Foretell in one turn. Fast route to big Plentiful Harvest.                                      |
+| Twilight Dance    | 9   | Moon   | ✅       | High damage in Twilight state, consumes Foretell. Secondary DPS when support actions not needed.                         |
+| Grim Harvest      | 5   | Moon   | ✅       | Heals all allies 30% + 5% per Foretell stack consumed.                                                                   |
+| Focused Foretell  | 2   | Sun    | ❌       | Applies 2 Foretell (or 5 if target has none). Reset-to-5 mechanic central to Plentiful Harvest AP loop. Drop for Grim Harvest. |
+| Dark Cleansing    | 0   | Moon   | ❌       | Cleanses ally of status effects; propagates their buffs to all allies. With Healing Boon: 15% heal per ally buffed.      |
 <!-- GENERATED:END -->
+
+*Target loadout once Grim Harvest confirmed available: Fortune's Fury, Intervention, Plentiful Harvest, Final Path, Twilight Dance, Grim Harvest.*
 
 ---
 

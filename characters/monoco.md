@@ -54,28 +54,26 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 ### Level and Attributes
 
 <!-- GENERATED:START characters:Monoco:attributes -->
-| Attribute | Value | Priority  | Reason                                                                               |
-|-----------|-------|-----------|--------------------------------------------------------------------------------------|
-| Level     | 77    | —         |                                                                                      |
-| Agility   | 99    | Primary   | Joyaro scales Agility A; also scales Speed, Attack, and Defence simultaneously       |
-| Defence   | 99    | Primary   | Joyaro scales Defence B; also contributes to crit rate                               |
-| Luck      | 24    | Tertiary  | Spare points; crit boost                                                             |
-| Vitality  | 0     | None      | Not relevant for Joyaro scaling                                                      |
-| Might     | 0     | None      | No benefit for this build                                                            |
+| Attribute | Value | Priority  |
+|-----------|-------|-----------|
+| Level     | 82    | —         |
+| Agility   | 99    | Primary   |
+| Defence   | 99    | Primary   |
+| Luck      | 48    | Tertiary  |
+| Vitality  | 0     | None      |
+| Might     | 0     | None      |
 <!-- GENERATED:END -->
 
 ### Combat Stats
 
 <!-- GENERATED:START characters:Monoco:stats -->
-*With Pictos: Longer Shell 29, Energising Turn 14, Sniper 23*
-
-| Stat                          | Base    | From weapon/Pictos                             | Total   |
-|-------------------------------|---------|-----------------------------------------------|---------|
-| Health                        | 1726    | +2757 (Longer Shell)                          | 4483    |
-| Attack                        | 876     | +3934 (Joyaro scaling)                        | 4810    |
-| Speed                         | 1025    | +270 (Energising Turn) +529 (Sniper)          | 1824    |
-| Defence                       | 729     | +1572 (Longer Shell)                          | 2301    |
-| Critical Rate                 | 38%     | +13% (Sniper)                                 | 51%     |
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 4541     |
+| Attack  | *[unknown]* | 4881     |
+| Speed   | *[unknown]* | 1845     |
+| Defence | *[unknown]* | 2301     |
+| Crit    | *[unknown]* | 54%      |
 <!-- GENERATED:END -->
 
 ---
@@ -174,21 +172,21 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 ## Skills
 
 <!-- GENERATED:START characters:Monoco:skills -->
-**Currently equipped (6):** Abbest Wind, Stalact Punches, Portier Crash, Moissonneuse Vendange, Chalier Combo, Potier Energy
+**Currently equipped (6):** Abbest Wind, Stalact Punches, Moissonneuse Vendange, Chalier Combo, Portier Crash, Potier Energy
 
-| Skill                 | AP Cost        | Wheel | Mask     | Notes                                                                                                                                                       |
-|-----------------------|----------------|-------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Potier Energy         | 4              | +6    | Caster   | Gives 1–3 AP to all allies (+1 on Caster Mask = 2–4 AP). Core team AP refill.                                                                               |
-| Stalact Punches       | 4              | +4    | Heavy    | 4-hit medium Ice damage; HIGH Break damage (fills Break bar).                                                                                               |
-| Abbest Wind           | 2 (0 on Agile) | +2    | Agile    | 1-hit low Physical; plays second turn immediately on Agile Mask (0 AP). Essential for wheel cycling. Cannot be removed.                                     |
-| Moissonneuse Vendange | 3              | +3    | Balanced | 3-hit high damage; can Break (triggers Break — pairs with Stalact Punches as filler).                                                                       |
-| Chalier Combo         | 7              | +3    | Balanced | 6-hit high Physical damage; increased damage on Balanced Mask.                                                                                              |
-| Portier Crash         | 8              | +5    | Heavy    | High Physical AoE, 1 hit. Can Break. Heavy Mask: increased damage. AoE break specialist.                                                                    |
+| Skill                 | AP             | Wheel | Mask     | Equipped | Notes                                                                                       |
+|-----------------------|----------------|-------|----------|----------|---------------------------------------------------------------------------------------------|
+| Potier Energy         | 4              | +6    | Caster   | ✅       | Gives 1–3 AP to all allies (+1 on Caster Mask = 2–4 AP). Core team AP refill.              |
+| Stalact Punches       | 4              | +4    | Heavy    | ✅       | 4-hit medium Ice damage; HIGH Break damage.                                                  |
+| Abbest Wind           | 2 (0 on Agile) | +2    | Agile    | ✅       | 1-hit low Physical; plays second turn immediately on Agile Mask. Essential for wheel cycling.|
+| Moissonneuse Vendange | 3              | +3    | Balanced | ✅       | 3-hit high damage; can Break.                                                                |
+| Chalier Combo         | 7              | +3    | Balanced | ✅       | 6-hit high Physical damage; increased damage on Balanced Mask.                              |
+| Portier Crash         | 8              | +5    | Heavy    | ✅       | High Physical AoE, 1 hit. Can Break. Increased damage on Heavy Mask.                        |
 <!-- GENERATED:END -->
 
-**Abbest Wind should not be removed** — essential for wheel cycling and free second turn on Agile Mask.
+*Abbest Wind should not be removed — essential for wheel cycling and free second turn on Agile Mask.*
 
-**Not yet learnt (2):** Creation Void (from The Creation boss in Lumière), Sakapatate Fire (from Ultimate Sakapatate — available in Endless Tower Stages 7 and 8, and possibly the Monolith).
+*Not yet learnt (2): Creation Void (from The Creation boss in Lumière), Sakapatate Fire (from Ultimate Sakapatate — Endless Tower Stages 7–8).*
 
 Full skill reference (AP cost, wheel move, mask, effect, mask bonus, learned/equipped status) in `data/skills.json`.
 

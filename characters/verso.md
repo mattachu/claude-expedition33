@@ -55,26 +55,26 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ### Level and Attributes
 
 <!-- GENERATED:START characters:Verso:attributes -->
-| Attribute | Value | Priority  | Reason                                                                         |
-|-----------|-------|-----------|--------------------------------------------------------------------------------|
-| Level     | 81    | —         |                                                                                |
-| Agility   | 99    | Primary   | Chevalam scales Agility A, Luck B; Agility raises Speed, Attack, Defence       |
-| Luck      | 99    | Primary   | Increases crit rate; same weapon scaling priority as Agility                   |
-| Might     | 27    | Tertiary  | Extra attack power; spare points                                               |
-| Vitality  | 0     | None      | Weapon does not scale off Vitality                                             |
-| Defence   | 0     | None      | No benefit for this build                                                      |
+| Attribute | Value | Priority  |
+|-----------|-------|-----------|
+| Level     | 82    | —         |
+| Agility   | 99    | Primary   |
+| Luck      | 99    | Primary   |
+| Might     | 48    | Tertiary  |
+| Vitality  | 0     | None      |
+| Defence   | 0     | None      |
 <!-- GENERATED:END -->
 
 ### Combat Stats
 
 <!-- GENERATED:START characters:Verso:stats -->
-| Stat                          | Base    | From weapon/Pictos              | Total  |
-|-------------------------------|---------|--------------------------------|--------|
-| Health                        | 1698    | +2305 (Pictos)                 | 4003   |
-| Attack                        | 942     | +3263 (Chevalam scaling)       | 4205   |
-| Speed                         | 1096    | +839 (Pictos)                  | 1935   |
-| Defence                       | 182     | —                              | 182    |
-| Critical Rate                 | 41%     | +20% (Pictos)                  | 61%    |
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 4205     |
+| Attack  | *[unknown]* | 6282     |
+| Speed   | *[unknown]* | 2132     |
+| Defence | *[unknown]* | 182      |
+| Crit    | *[unknown]* | 82%      |
 <!-- GENERATED:END -->
 
 ---
@@ -190,7 +190,7 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 ## Gradient Skills
 
-<!-- GENERATED:START characters:Verso:skills -->
+<!-- GENERATED:START characters:Verso:gradients -->
 | Gradient Skill | Gradient Cost | Acquired | Notes                                   |
 |----------------|---------------|----------|-----------------------------------------|
 | [unconfirmed]  | 1             | [?]      | Details not confirmed — verify in game. |

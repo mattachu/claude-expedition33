@@ -52,33 +52,29 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 ### Level and Attributes
 
 <!-- GENERATED:START characters:Maelle:attributes -->
-| Attribute | Value | Priority  | Reason                                                                                           |
-|-----------|-------|-----------|--------------------------------------------------------------------------------------------------|
-| Level     | 82    | —         |                                                                                                  |
-| Luck      | 99    | Primary   | Lithum scales Luck S — primary weapon scaling stat                                               |
-| Agility   | 99    | Primary   | Lithum scales Agility A; raises Speed, Attack, Defence simultaneously                            |
-| Might     | 48    | Secondary | Flat attack bonus; best use of remaining points for DPS                                          |
-| Vitality  | 0     | None      | Weapon does not scale off Vitality                                                               |
-| Defence   | 0     | None      | No benefit for this build                                                                        |
+| Attribute | Value | Priority  |
+|-----------|-------|-----------|
+| Level     | 83    | —         |
+| Luck      | 99    | Primary   |
+| Agility   | 99    | Primary   |
+| Might     | 51    | Secondary |
+| Vitality  | 0     | None      |
+| Defence   | 0     | None      |
 <!-- GENERATED:END -->
 
-*Note: Lithum scales Luck S / Agility A — respec from Medalum's Defence+Agility was required when switching.*
+*Lithum scales Luck S / Agility A — respec from Medalum (Defence+Agility) required when switching.*
 
 ### Combat Stats
 
 <!-- GENERATED:START characters:Maelle:stats -->
-*With Pictos: Burning Break 21, Gradient Break 25, Sniper 23*
-
-| Stat          | Base    | From weapon/Pictos      | Total  |
-|---------------|---------|-------------------------|--------|
-| Health        | 1772    | +1541 (Pictos)          | 3313   |
-| Attack        | 894     | +1166 (Medalum scaling) | 2060   |
-| Speed         | 997     | +959 (Pictos)           | 1956   |
-| Defence       | 729     | —                       | 729    |
-| Critical Rate | 34%     | +65% (Pictos)           | 99%    |
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 3471     |
+| Attack  | *[unknown]* | 10436    |
+| Speed   | *[unknown]* | 2027     |
+| Defence | *[unknown]* | 182      |
+| Crit    | *[unknown]* | 105%     |
 <!-- GENERATED:END -->
-
-*When switching to Lithum, record new weapon scaling contribution separately to verify improvement over Medalum's 1166.*
 
 ---
 
@@ -131,7 +127,7 @@ Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina 
 
 ### Current Loadout
 
-<!-- GENERATED:START characters:Lune:Lumina -->
+<!-- GENERATED:START characters:Maelle:Lumina -->
 *149 LP used, 9 LP spare*
 
 | Lumina              | LP  | Notes                          |
