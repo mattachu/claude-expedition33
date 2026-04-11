@@ -24,6 +24,8 @@ Lumina are passive effects derived from Pictos. They apply the **effect only** �
 
 Each character has a pool of Lumina Points (LP). LP = character level by default. Permanently increase LP by spending Colour of Lumina items (1 Colour = 1 LP).
 
+Any Lumina costs 0 LP for a character who has that Pictos equipped — the stat boosts and the Lumina effect are both active from the Pictos, so there's no LP charge for the Lumina. For example, a character holding the Cheater Pictos gets the Cheater Lumina effect at no LP cost, rather than 40 LP. If characters hold a Pictos from the core set, they free up those LP to use on other Lumina.
+
 Passive Lumina effects that trigger "on turn start" (e.g. Recovery: 10% health regen) fire on bonus turns granted by Cheater or Intervention, not only on normal turns.
 
 For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather than swapping Pictos. The Pictos stays on its holder for the stat boosts; Lumina is the situational layer.
@@ -34,11 +36,8 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 
 ## 3. Main Team Core Lumina Set
 
+<!-- GENERATED:START lumina:core:main -->
 **Total: 194 LP** — applied to Maelle, Verso, Sciel.
-
-*Applied via in-game Lumina set. Cheater costs 0LP for characters with Cheater Pictos. Energy Master costs 0LP for Sciel who holds the Pictos.*
-
-*Note: any Lumina costs 0LP for a character who has that Pictos equipped. For example, Verso has Cheater as Pictos (0LP), Breaking Death as Pictos (0LP); Monoco has Energising Turn as Pictos (0LP).*
 
 | Lumina | LP | Effect | Notes |
 |---|---|---|---|
@@ -61,11 +60,13 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 | Breaking Death | 5 | Fully charge enemy break bar on death |  |
 | Cheater | 40 | Extra turn after using a skill, once per turn | Free for Cheater Pictos holders |
 | Energy Master | 40 | Every AP gain is increased by 1 | Free for Sciel (Energy Master Pictos) |
+<!-- GENERATED:END -->
 
 ---
 
 ## 4. Reserve Team Core Lumina Set
 
+<!-- GENERATED:START lumina:core:reserve -->
 **Total: 110 LP** — applied to Lune, Monoco.
 
 *Main team core minus Cheater, Dead Energy I, Dead Energy II.*
@@ -87,144 +88,28 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 | Breaking Burn | 5 | 25% increased Break damage on Burning enemies. |
 | Breaking Counter | 3 | 50% increased Break damage on Counterattack. |
 | Breaking Death | 5 | Fully charge enemy break bar on death |
+<!-- GENERATED:END -->
 
 ---
 
-## 5. Per-Character Loadouts
-
-### Maelle
-
-**Level:** 83 | **LP:** 194/196
-*2P spare.*
-
-**Pictos:**
-
-| Pictos | Level | Effect | Stats |
-|---|---|---|---|
-| Burning Break | 21 | Apply 3 Burn stacks on Breaking a target. | Health +1541, Crit +24% |
-| Gradient Break | 25 | +50% of a Gradient Charge on Breaking a target. | Speed +434, Crit +28% |
-| Survivor | 21 | Survive fatal damage with 1 Health once per battle | Speed +439, Crit +12% |
-
-**Character-specific Lumina (on top of core):**
-
-| Lumina | LP | Effect | Notes |
-|---|---|---|---|
-| Energising Attack I | 10 | +1 AP on Base Attack. | Added during solo build, kept — useful for Lithum rotation |
-
-
-### Verso
-
-**Level:** 82 | **LP:** 194/194
-*0LP spare. Survivor Lumina added (20LP). Breaking Death Pictos kept for stats.*
-
-**Pictos:**
-
-| Pictos | Level | Effect | Stats |
-|---|---|---|---|
-| Cheater | 24 | Extra turn after using a skill, once per turn | Health +1198, Speed +400 |
-| Breaking Death | 29 | Fully charge enemy break bar on death | Speed +586, Crit +33% |
-| Second Chance | 16 | Revive with 100% Health. Once per battle. | Health +1106, Crit +8% |
-
-*Core adjustments: Minus Cheater, Breaking Death (free from Pictos), Base Shield (non-functional with Chevalam)*
-
-**Character-specific Lumina (on top of core):**
-
-| Lumina | LP | Effect | Notes |
-|---|---|---|---|
-| Confident | 20 | Take 50% less damage, but can't be healed. |  |
-| Confident Fighter | 15 | 30% increased damage, but cannot be healed. |  |
-| Enfeebling Mark | 10 | Marked targets deal 30% less damage. |  |
-| Survivor | 20 | Survive fatal damage with 1 Health once per battle |  |
-
-*Added this session: Survivor*
-
-
-### Sciel
-
-**Level:** 82 | **LP:** 175/176
-*1LP spare.*
-
-**Pictos:**
-
-| Pictos | Level | Effect | Stats |
-|---|---|---|---|
-| Critical Burn | 25 | 25% increased Crit rate on Burning enemies | Speed +434, Crit +28% |
-| Energy Master | 30 | Every AP gain is increased by 1 | Health +4979 |
-| Quick Break | 25 | Play again on Breaking a target. | Speed +434, Crit +28% |
-
-**Character-specific Lumina (on top of core):**
-
-| Lumina | LP | Effect | Notes |
-|---|---|---|---|
-| Accelerating Heal | 5 | Healing an ally also applies Rush for 1 turn. |  |
-| Energising Heal | 10 | On Healing an ally, also give 2 AP. |  |
-| Protecting Heal | 5 | Healing an ally also applies Shell for 1 turn. |  |
-| Healing Tint Energy | 1 | Healing Tints also give 1 AP. |  |
-| Healing Boon | 10 | Heal 15% HP on applying a buff | To be added |
-
-
-### Lune
-
-**Level:** 78 | **LP:** 120/123
-*3LP spare. Cheater deferred.*
-
-**Pictos:**
-
-| Pictos | Level | Effect | Stats |
-|---|---|---|---|
-| Powerful On Shell | 23 | Apply Powerful on applying Shell. | Defence +874, Crit +25% |
-| Burn Affinity | 21 | 25% increased damage on Burning targets | Speed +439, Crit +12% |
-| Burning Death | 21 | Apply 3 Burn to all enemies on death | Speed +308, Crit +24% |
-
-**Character-specific Lumina (on top of core):**
-
-| Lumina | LP | Effect | Notes |
-|---|---|---|---|
-| Accelerating Heal | 5 | Healing an ally also applies Rush for 1 turn. |  |
-| Protecting Heal | 5 | Healing an ally also applies Shell for 1 turn. |  |
-
-*Added this session: Protecting Heal*
-
-
-### Monoco
-
-**Level:** 78 | **LP:** 91/128
-*37LP free after removing healing Lumina. Needs work.*
-
-**Pictos:**
-
-| Pictos | Level | Effect | Stats |
-|---|---|---|---|
-| Longer Shell | 29 | On applying Shell, its duration is increased by 2. | Health +2757, Defence +1572 |
-| Energising Turn | 14 | +1 AP on turn start. | Speed +270 |
-| Sniper | 23 | First Free Aim shot each turn deals 200% increased damage and can Break. | Speed +525, Crit +13% |
-
-*Core adjustments: Minus Energising Turn (free from Pictos)*
-
-**Character-specific Lumina (on top of core):**
-
-| Lumina | LP | Effect | Notes |
-|---|---|---|---|
-| Staggering Attack | 1 | 50% increased Break damage on Base Attack. | LP cost unconfirmed |
-
-
----
-
-## 6. Situational Lumina
+## 5. Situational Lumina
 
 Add these as Lumina for specific boss fights — no need to change Pictos.
 
+<!-- GENERATED:START lumina:situational -->
 | Lumina | LP | Effect | Notes |
 |---|---|---|---|
 | Anti-Blight | 10 | Immune to Blight | All characters — vs bosses applying Blight. Add as Lumina; no need to move Pictos. |
 | Anti-Burn | 15 | Immune to Burn | All characters — vs bosses applying Burn regularly. |
 | Anti-Freeze | 15 | Immune to Freeze | All characters — vs bosses applying Freeze. LP cost unconfirmed. |
 | Draining Cleanse | 15 | Consume 1AP to prevent Status Effect application, if possible | Status effect prevention — 1AP cost per use. High LP cost; situational. |
+<!-- GENERATED:END -->
 
 ---
 
-## 7. Candidates for Future Review
+## 6. Candidates for Future Review
 
+<!-- GENERATED:START lumina:future -->
 | Lumina | LP | Effect | Notes |
 |---|---|---|---|
 | Energy Master | 40 | Every AP gain is increased by 1 | Game-change but expensive; consider when expanding core set. |
@@ -234,5 +119,6 @@ Add these as Lumina for specific boss fights — no need to change Pictos.
 | Powerful On Shell | 10 | Apply Powerful on applying Shell. | Consider for Maelle with Lithum. |
 | Energising Burn | 10 | +1 AP on applying Burn. Once per turn. | Consider when expanding core set — all characters have Burning Shots so fires regularly. |
 | Empowering Dodge | 5 | 5% increased damage per consecutive dodge, stacks up to 10 | Test empirically before committing — reset on parry unconfirmed. |
+<!-- GENERATED:END -->
 
 ---
