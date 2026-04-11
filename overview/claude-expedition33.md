@@ -323,11 +323,21 @@ Matt types `!log` at any natural pause to trigger the compound log step. Claude 
 
 Triggered by `!log` and always at end of session.
 
+**Before writing:** The `!log` command itself, and any subsequent turns discussing
+the log (verbatim checks, rewrites), must be written to the transcript. These turns
+go between the previous section's last turn and the `<!-- SECTION -->` heading for
+the new section.
+
 1. Write `<!-- SECTION: Title -->` and `## Title` heading to `chatN.md` — title must be unique within transcript; qualify if needed (e.g. "Verso Build — Pre-Sprong" / "Verso Build — Post-Sprong")
 2. Check `/mnt/transcripts/` — if compaction found since last check, notify Matt immediately (memory of earlier conversation may be incomplete; Matt may want to re-paste context or ask Claude to fetch files); note internally
 3. If compaction noted: run converter script (`transcript_to_md.py --after-timestamp <last_write_timestamp>`), append reconstructed turns to `chatN.md`, insert compaction markers in transcript and index, update `last_write_timestamp` to `start_timestamp` of last reconstructed turn, sourced from JSON output
-4. Append turns since last write to `chatN.md` — **verbatim**. Copy every turn exactly as it appears in context — Matt's turns and Claude's turns alike, including all pasted content. Do not paraphrase, compress, or represent. This applies even when there are many turns, when content is long, or when the transcript would read more cleanly if summarised. The pull to summarise in these cases is strong — resist it explicitly. If in doubt, copy more rather than less.
-5. Append to `chatN-index.md` under `## Table of Contents`: if this is the first section in a new part (every 2 sections), first write part header `### [Part N](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)`; then append section entry `- **[Section Title](chatN.md#anchor)** — paragraph description`
+4. Append turns since last write to `chatN.md` — **verbatim**. Copy every turn exactly as it appears in context — Matt's turns and Claude's turns alike, including all pasted content. Do not paraphrase, compress, summarise, or represent any turn, regardless of length. This applies even when there are many turns, when content is long, or when the transcript would read more cleanly if summarised. The pull to summarise in these cases is strong — resist it explicitly. If in doubt, copy more rather than less.
+
+   **Bracket notation is for tool calls only.** Use `[Fetched X]`, `[Created file Y]`, `[Viewed Z]` to annotate tool calls at the start of a Claude turn. Never use brackets to summarise or represent Claude's substantive response text — that text must be copied verbatim.
+
+   **Numbered and bulleted lists in Matt's turns:** Insert a blank line between `**Matt:**` and the first list item so Markdown renders correctly.
+
+5. Append to `chatN-index.md` under `## Table of Contents`: if this is the first section in a new part (every 4 sections), first write part header `### [Part N](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md)`; then append section entry `- **[Section Title](chatN.md#anchor)** — 2–3 sentence description`. Section descriptions should cover the topic and key decisions only — do not list every item discussed.
 6. Update `session-state.json`:
    - For each file section with confirmed changes since the last log write: if not already present in `modified_sections`, add an entry with an empty `changes` array; then append one concise bullet per change to that entry's `changes` array.
    - For each concrete in-game action arising since the last log write (equip, swap, respec, attempt), append a one-line entry to `actions`.
@@ -340,7 +350,7 @@ Triggered by `!log` and always at end of session.
 2. Run compound log step — transcript and index now complete
 3. Run splitter (`split_transcript.py --sections-per-part 4`) on `chatN.md`
 4. Edit `chatN-index.md` directly to add Part Files list under `## Part Files (Claude-readable)`
-5. If `pictos_lumina_changes` is non-empty: apply changes to `data/pictos-lumina.json`. Markdown will be regenerated via `python3 scripts/generate.py`.
+5. If `pictos_lumina_changes` is non-empty: apply changes to `data/pictos-lumina.json` directly or via `DATA:` blocks in the changelist. Markdown will be regenerated via `scripts/generate.py`.
 6. Produce `chatN-changelist.md`:
    - For each entry in `modified_sections`, use the `changes` array as the basis for writing the full replacement content for that section.
    - Also include the new Chat N row for Section 10 of the overview: read the existing Section 10 entries and write a new row in the same style — concise prose covering topics discussed, decisions made, and any pipeline/infrastructure changes. Do not generate this mechanically from the `actions` list; write it as a genuine summary.
@@ -377,10 +387,10 @@ At each compound log step: if this is the first section in a new part, first wri
 Then append the section entry:
 
 ```
-- **[Section Title](chatN.md#section-title-anchor)** — paragraph description
+* **[Section Title](chatN.md#section-title-anchor)** — 2–3 sentence description of the topic and key decisions. Do not list every item discussed.
 ```
 
-Part boundaries are determined by `--sections-per-part` (default: 2). Part 1 covers sections 1–2, Part 2 covers sections 3–4, and so on — adjust if `--sections-per-part` is changed. Part file link: `https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md`
+Part boundaries are determined by `--sections-per-part` (default: 4). Part 1 covers sections 1–4, Part 2 covers sections 5–8, and so on. Part file link: `https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partN.md`
 
 Anchor derived from `## Title` heading: lowercase, spaces to hyphens, punctuation removed.
 
