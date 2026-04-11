@@ -2456,7 +2456,8 @@
       "entries": [
         {
           "name": "Painted Power",
-          "lp": 5
+          "lp": 5,
+          "notes": "Essential for all characters from Act 3 onwards"
         },
         {
           "name": "Teamwork",
@@ -2464,11 +2465,13 @@
         },
         {
           "name": "Base Shield",
-          "lp": 20
+          "lp": 20,
+          "notes": "Non-functional for Verso (Chevalam L4 prevents shields)"
         },
         {
           "name": "Energising Turn",
-          "lp": 20
+          "lp": 20,
+          "notes": "Main AP flow generator; boosted by Energy Master"
         },
         {
           "name": "Energising Parry",
@@ -2524,16 +2527,14 @@
         },
         {
           "name": "Cheater",
-          "lp": 40,
-          "notes": "Free for Cheater Pictos holders"
+          "lp": 40
         },
         {
           "name": "Energy Master",
-          "lp": 40,
-          "notes": "Free for Sciel (Energy Master Pictos)"
+          "lp": 40
         }
       ],
-      "notes": "Applied via in-game Lumina set. Cheater costs 0LP for characters with Cheater Pictos. Energy Master costs 0LP for Sciel who holds the Pictos."
+      "notes": "Applied via in-game Lumina set."
     },
     "reserve_team": {
       "total_lp": 110,
@@ -2600,194 +2601,6 @@
         }
       ],
       "notes": "Main team core minus Cheater, Dead Energy I, Dead Energy II."
-    }
-  },
-  "characters": {
-    "Maelle": {
-      "level": 83,
-      "pictos": [
-        {
-          "name": "Burning Break",
-          "level": 21
-        },
-        {
-          "name": "Gradient Break",
-          "level": 25
-        },
-        {
-          "name": "Survivor",
-          "level": 21
-        }
-      ],
-      "lumina_lp_total": 196,
-      "lumina_lp_used": 194,
-      "lumina_notes": "2P spare.",
-      "lumina_additions": [],
-      "lumina_removals": [],
-      "lumina_extras": [
-        {
-          "name": "Energising Attack I",
-          "lp": 10,
-          "notes": "Added during solo build, kept \u2014 useful for Lithum rotation"
-        }
-      ]
-    },
-    "Verso": {
-      "level": 82,
-      "pictos": [
-        {
-          "name": "Cheater",
-          "level": 24
-        },
-        {
-          "name": "Breaking Death",
-          "level": 29
-        },
-        {
-          "name": "Second Chance",
-          "level": 16
-        }
-      ],
-      "lumina_lp_total": 194,
-      "lumina_lp_used": 194,
-      "lumina_notes": "0LP spare. Survivor Lumina added (20LP). Breaking Death Pictos kept for stats.",
-      "lumina_additions": [
-        {
-          "name": "Survivor",
-          "lp": 20
-        }
-      ],
-      "lumina_removals": [],
-      "lumina_extras": [
-        {
-          "name": "Confident",
-          "lp": 20
-        },
-        {
-          "name": "Confident Fighter",
-          "lp": 15
-        },
-        {
-          "name": "Enfeebling Mark",
-          "lp": 10
-        },
-        {
-          "name": "Survivor",
-          "lp": 20
-        }
-      ],
-      "lumina_core_adjustments": "Minus Cheater, Breaking Death (free from Pictos), Base Shield (non-functional with Chevalam)"
-    },
-    "Sciel": {
-      "level": 82,
-      "pictos": [
-        {
-          "name": "Critical Burn",
-          "level": 25
-        },
-        {
-          "name": "Energy Master",
-          "level": 30
-        },
-        {
-          "name": "Quick Break",
-          "level": 25
-        }
-      ],
-      "lumina_lp_total": 176,
-      "lumina_lp_used": 175,
-      "lumina_notes": "1LP spare.",
-      "lumina_removals": [],
-      "lumina_extras": [
-        {
-          "name": "Accelerating Heal",
-          "lp": 5
-        },
-        {
-          "name": "Energising Heal",
-          "lp": 10
-        },
-        {
-          "name": "Protecting Heal",
-          "lp": 5
-        },
-        {
-          "name": "Healing Tint Energy",
-          "lp": 1
-        },
-        {
-          "name": "Healing Boon",
-          "lp": 10,
-          "notes": "To be added"
-        }
-      ]
-    },
-    "Lune": {
-      "level": 78,
-      "pictos": [
-        {
-          "name": "Powerful On Shell",
-          "level": 23
-        },
-        {
-          "name": "Burn Affinity",
-          "level": 21
-        },
-        {
-          "name": "Burning Death",
-          "level": 21
-        }
-      ],
-      "lumina_lp_total": 123,
-      "lumina_lp_used": 120,
-      "lumina_notes": "3LP spare. Cheater deferred.",
-      "lumina_additions": [
-        {
-          "name": "Protecting Heal",
-          "lp": 5
-        }
-      ],
-      "lumina_removals": [],
-      "lumina_extras": [
-        {
-          "name": "Accelerating Heal",
-          "lp": 5
-        },
-        {
-          "name": "Protecting Heal",
-          "lp": 5
-        }
-      ]
-    },
-    "Monoco": {
-      "level": 78,
-      "pictos": [
-        {
-          "name": "Longer Shell",
-          "level": 29
-        },
-        {
-          "name": "Energising Turn",
-          "level": 14
-        },
-        {
-          "name": "Sniper",
-          "level": 23
-        }
-      ],
-      "lumina_lp_total": 128,
-      "lumina_lp_used": 91,
-      "lumina_notes": "37LP free after removing healing Lumina. Needs work.",
-      "lumina_additions": [],
-      "lumina_removals": [],
-      "lumina_extras": [
-        {
-          "name": "Staggering Attack",
-          "lp": 1,
-          "notes": "LP cost unconfirmed"
-        }
-      ],
-      "lumina_core_adjustments": "Minus Energising Turn (free from Pictos)"
     }
   },
   "candidates_for_review": [

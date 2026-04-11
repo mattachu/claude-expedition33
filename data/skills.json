@@ -88,7 +88,7 @@
     {
       "name": "Percée",
       "ap": 5,
-      "ap_in_virtuose": 2,
+      "ap_adjusted": "2 in Virtuose",
       "description": "Increased damage to Marked target. 2 AP in Virtuose but leaves Virtuose after — one use per Virtuose window.",
       "stance_change": "Stanceless"
     },
@@ -229,14 +229,11 @@
     {
       "name": "Perfect Break",
       "ap": 7,
-      "ap_at_rank": {
-        "rank": "B",
-        "ap": 5
-      },
+      "ap_adjusted": "5 at Rank B",
       "description": "Very high Light damage. Can Break. Rank S on Break.",
       "rank_bonus": {
         "rank": "B",
-        "effect": "Costs 5 AP instead of 7"
+        "effect": "Reduced AP cost"
       }
     },
     {
@@ -251,12 +248,12 @@
     {
       "name": "Phantom Stars",
       "ap": 9,
-      "ap_at_rank": {
-        "rank": "S",
-        "ap": 5
-      },
+      "ap_adjusted": "5 at Rank S",
       "description": "AoE multi-hit all enemies. Trash fights only — useless in 1v1.",
-      "rank_bonus": null
+      "rank_bonus":  {
+        "rank": "S",
+        "effect": "Reduced AP cost"
+      }
     },
     {
       "name": "Purification",
@@ -642,6 +639,7 @@
     {
       "name": "Abbest Wind",
       "ap": 2,
+      "ap_adjusted": "0 in Agile",
       "wheel": 2,
       "mask": "Agile",
       "description": "Low Physical single target, 1 hit. Plays a second turn.",

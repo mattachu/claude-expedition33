@@ -28,7 +28,7 @@
     "lumina_extras": [
       {
         "name": "Energising Attack I",
-        "note": "Added during solo build, kept — useful for Lithum rotation"
+        "notes": "Added during solo build, kept — useful for Lithum rotation"
       }
     ],
     "skills_equipped": [
@@ -111,37 +111,37 @@
     "lumina_core_exclusions": [
       {
         "name": "Base Shield",
-        "note": "Non-functional — Chevalam L4 prevents shields"
+        "notes": "Non-functional — Chevalam L4 prevents shields"
       },
       {
         "name": "Cheater",
-        "note": "Free from Cheater Pictos"
+        "notes": "Free from Cheater Pictos"
       },
       {
         "name": "Breaking Death",
-        "note": "Free from Breaking Death Pictos"
+        "notes": "Free from Breaking Death Pictos"
       },
       {
         "name": "Second Chance",
-        "note": "Free from Second Chance Pictos"
+        "notes": "Free from Second Chance Pictos"
       }
     ],
     "lumina_extras": [
       {
         "name": "Confident",
-        "note": "50% damage reduction — cost priced in via Chevalam L4 healing block"
+        "notes": "50% damage reduction — cost priced in via Chevalam L4 healing block"
       },
       {
         "name": "Confident Fighter",
-        "note": "30% increased damage — cost priced in via Chevalam L4 healing block"
+        "notes": "30% increased damage — cost priced in via Chevalam L4 healing block"
       },
       {
         "name": "Enfeebling Mark",
-        "note": "Reduces damage from Marked targets — synergy with Verso's Mark skills"
+        "notes": "Reduces damage from Marked targets — synergy with Verso's Mark skills"
       },
       {
         "name": "Survivor",
-        "note": "Buffer for Verso when he can't be healed"
+        "notes": "Buffer for Verso when he can't be healed"
       }
     ],
     "skills_equipped": [
@@ -221,29 +221,29 @@
     "lumina_core_exclusions": [
       {
         "name": "Energy Master",
-        "note": "Free from Energy Master Pictos"
+        "notes": "Free from Energy Master Pictos"
       }
     ],
     "lumina_extras": [
       {
         "name": "Accelerating Heal",
-        "note": "Rush on heal — synergy with Litheson AP generation"
+        "notes": "Rush on heal — synergy with Litheson AP generation"
       },
       {
         "name": "Energising Heal",
-        "note": "2 AP on healing an ally — primary AP engine with Grim Harvest"
+        "notes": "2 AP on healing an ally — primary AP engine with Grim Harvest"
       },
       {
         "name": "Protecting Heal",
-        "note": "Shell on heal — enables Powerful on Shell via Lune Pictos"
+        "notes": "Shell on heal — enables Powerful On Shell via Lune Pictos"
       },
       {
         "name": "Healing Tint Energy",
-        "note": "1 AP on Healing Tint use — small AP top-up"
+        "notes": "1 AP on Healing Tint use — small AP top-up"
       },
       {
         "name": "Healing Boon",
-        "note": "15% HP on applying a buff — fires on Dark Cleansing propagation and Litheson phase changes"
+        "notes": "15% HP on applying a buff — fires on Dark Cleansing propagation and Litheson phase changes"
       }
     ],
     "skills_equipped": [
@@ -308,11 +308,11 @@
       "speed": 1797,
       "defence": 1056,
       "crit": "84%",
-      "_note": "Stats with Kralim (29), Powerful on Shell (23), Burn Affinity (21), Burning Death (21) equipped"
+      "_note": "Stats with Kralim (29), Powerful On Shell (23), Burn Affinity (21), Burning Death (21) equipped"
     },
     "weapon_equipped": "Kralim",
     "pictos_equipped": [
-      "Powerful on Shell",
+      "Powerful On Shell",
       "Burn Affinity",
       "Burning Death"
     ],
@@ -322,11 +322,11 @@
     "lumina_extras": [
       {
         "name": "Accelerating Heal",
-        "note": "Rush on heal — synergy with Healing Light"
+        "notes": "Rush on heal — synergy with Healing Light"
       },
       {
         "name": "Protecting Heal",
-        "note": "Shell on heal — triggers Powerful on Shell Pictos and Longer Shell on Monoco"
+        "notes": "Shell on heal — triggers Powerful On Shell Pictos and Longer Shell on Monoco"
       }
     ],
     "skills_equipped": [
@@ -406,13 +406,13 @@
     "lumina_core_exclusions": [
       {
         "name": "Energising Turn",
-        "note": "Free from Energising Turn Pictos"
+        "notes": "Free from Energising Turn Pictos"
       }
     ],
     "lumina_extras": [
       {
         "name": "Staggering Attack",
-        "note": "Break damage on base attack — small break bar contribution"
+        "notes": "Break damage on base attack — small break bar contribution"
       }
     ],
     "skills_equipped": [
