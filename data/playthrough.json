@@ -2,7 +2,7 @@
   "act": 3,
   "phase": 3,
   "current_area": "Flying Manor",
-  "active_party": ["Verso", "Maelle", "Sciel"],
+  "active_party": ["Maelle", "Verso", "Sciel"],
   "reserve_party": ["Lune", "Monoco"],
   "inventory": {
     "colour_of_lumina": 164,

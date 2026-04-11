@@ -2466,7 +2466,8 @@
         {
           "name": "Base Shield",
           "lp": 20,
-          "notes": "Non-functional for Verso (Chevalam L4 prevents shields)"
+          "notes": "Verso: non-functional with Chevalam as L4 effect prevents shields"
+
         },
         {
           "name": "Energising Turn",

@@ -52,7 +52,7 @@ Fetch that file only when reviewing specific past errors.
 
 ### Party
 <!-- GENERATED:START playthrough:party -->
-- **Active:** Verso, Maelle, Sciel
+- **Active:** Maelle, Verso, Sciel
 - **Reserve:** Lune, Monoco
 <!-- GENERATED:END -->
 
@@ -144,7 +144,7 @@ If the main party is fully wiped in a battle, the player can continue the battle
 *Last updated: Chat 6*
 
 <!-- GENERATED:START playthrough:party -->
-- **Active:** Verso, Maelle, Sciel
+- **Active:** Maelle, Verso, Sciel
 - **Reserve:** Lune, Monoco
 <!-- GENERATED:END -->
 
@@ -167,7 +167,7 @@ Note: base speed scales with level independently of Agility — keep levels clos
 
 **Main team core:**
 <!-- GENERATED:START pictos:core:main -->
-**194LP** Painted Power, Teamwork, Base Shield, Energising Turn, Energising Parry, Energising Start I, Dodger, Breaker, Marking Shots, Dead Energy I, Dead Energy II, Critical Break, Rewarding Mark, Burning Shots, Breaking Burn, Breaking Counter, Breaking Death, Cheater, Energy Master. Note: Painted Power (Essential for all characters from Act 3 onwards); Base Shield (Non-functional for Verso (Chevalam L4 prevents shields)); Energising Turn (Main AP flow generator; boosted by Energy Master).
+**194LP** Painted Power, Teamwork, Base Shield, Energising Turn, Energising Parry, Energising Start I, Dodger, Breaker, Marking Shots, Dead Energy I, Dead Energy II, Critical Break, Rewarding Mark, Burning Shots, Breaking Burn, Breaking Counter, Breaking Death, Cheater, Energy Master. Note: Painted Power (Essential for all characters from Act 3 onwards); Base Shield (Verso: non-functional with Chevalam as L4 effect prevents shields); Energising Turn (Main AP flow generator; boosted by Energy Master).
 <!-- GENERATED:END -->
 
 **Reserve team core:**

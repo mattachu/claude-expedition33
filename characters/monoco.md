@@ -54,14 +54,14 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 ### Level and Attributes
 
 <!-- GENERATED:START characters:Monoco:attributes -->
-| Attribute | Value | Priority  |
-|-----------|-------|-----------|
-| Level     | 82    | —         |
-| Agility   | 99    | Primary   |
-| Defence   | 99    | Primary   |
-| Luck      | 48    | Secondary |
-| Vitality  | 0     | None      |
-| Might     | 0     | None      |
+| Attribute | Value |
+|-----------|-------|
+| Level     | 82    |
+| Agility   | 99    |
+| Defence   | 99    |
+| Luck      | 48    |
+| Vitality  | 0     |
+| Might     | 0     |
 <!-- GENERATED:END -->
 
 ### Combat Stats

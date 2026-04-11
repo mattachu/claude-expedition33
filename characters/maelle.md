@@ -52,14 +52,14 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 ### Level and Attributes
 
 <!-- GENERATED:START characters:Maelle:attributes -->
-| Attribute | Value | Priority  |
-|-----------|-------|-----------|
-| Level     | 83    | —         |
-| Agility   | 99    | Primary   |
-| Luck      | 99    | Primary   |
-| Might     | 51    | Secondary |
-| Vitality  | 0     | None      |
-| Defence   | 0     | None      |
+| Attribute | Value |
+|-----------|-------|
+| Level     | 83    |
+| Agility   | 99    |
+| Luck      | 99    |
+| Might     | 51    |
+| Vitality  | 0     |
+| Defence   | 0     |
 <!-- GENERATED:END -->
 
 *Lithum scales Luck S / Agility A — respec from Medalum (Defence+Agility) required when switching.*
@@ -133,7 +133,7 @@ Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina 
 <!-- GENERATED:START characters:Maelle:Lumina -->
 | Lumina              | LP | Notes                                                      |
 |---------------------|----|------------------------------------------------------------|
-| Base Shield         | 20 | Non-functional for Verso (Chevalam L4 prevents shields)    |
+| Base Shield         | 20 |                                                            |
 | Breaker             | 10 |                                                            |
 | Breaking Burn       | 5  |                                                            |
 | Breaking Counter    | 3  |                                                            |

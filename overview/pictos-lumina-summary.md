@@ -41,27 +41,27 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 
 *Applied via in-game Lumina set.*
 
-| Lumina             | LP | Effect                                                     | Notes                                                   |
-|--------------------|----|------------------------------------------------------------|---------------------------------------------------------|
-| Painted Power      | 5  | Damage can exceed 9,999.                                   | Essential for all characters from Act 3 onwards         |
-| Teamwork           | 5  | 10% increased damage while all allies are alive.           |                                                         |
-| Base Shield        | 20 | Grants 1 Shield HP buffer per turn                         | Non-functional for Verso (Chevalam L4 prevents shields) |
-| Energising Turn    | 20 | +1 AP on turn start.                                       | Main AP flow generator; boosted by Energy Master        |
-| Energising Parry   | 15 | +1 AP on successful Parry.                                 |                                                         |
-| Energising Start I | 5  | +1 AP on battle start.                                     |                                                         |
-| Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                 |                                                         |
-| Breaker            | 10 | 25% increased Break damage.                                |                                                         |
-| Marking Shots      | 3  | 20% chance to apply Mark on Free Aim shot.                 |                                                         |
-| Dead Energy I      | 2  | +3 AP on killing an enemy.                                 |                                                         |
-| Dead Energy II     | 2  | +3 AP on killing an enemy.                                 |                                                         |
-| Critical Break     | 5  | 25% increased Break damage on Critical hits.               |                                                         |
-| Rewarding Mark     | 5  | +2 AP on dealing damage to a Marked target. Once per turn. |                                                         |
-| Burning Shots      | 3  | 20% chance to Burn on Free Aim shot.                       |                                                         |
-| Breaking Burn      | 5  | 25% increased Break damage on Burning enemies.             |                                                         |
-| Breaking Counter   | 3  | 50% increased Break damage on Counterattack.               |                                                         |
-| Breaking Death     | 5  | Fully charge enemy break bar on death                      |                                                         |
-| Cheater            | 40 | Extra turn after using a skill, once per turn              |                                                         |
-| Energy Master      | 40 | Every AP gain is increased by 1                            |                                                         |
+| Lumina             | LP | Effect                                                     | Notes                                                             |
+|--------------------|----|------------------------------------------------------------|-------------------------------------------------------------------|
+| Painted Power      | 5  | Damage can exceed 9,999.                                   | Essential for all characters from Act 3 onwards                   |
+| Teamwork           | 5  | 10% increased damage while all allies are alive.           |                                                                   |
+| Base Shield        | 20 | Grants 1 Shield HP buffer per turn                         | Verso: non-functional with Chevalam as L4 effect prevents shields |
+| Energising Turn    | 20 | +1 AP on turn start.                                       | Main AP flow generator; boosted by Energy Master                  |
+| Energising Parry   | 15 | +1 AP on successful Parry.                                 |                                                                   |
+| Energising Start I | 5  | +1 AP on battle start.                                     |                                                                   |
+| Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                 |                                                                   |
+| Breaker            | 10 | 25% increased Break damage.                                |                                                                   |
+| Marking Shots      | 3  | 20% chance to apply Mark on Free Aim shot.                 |                                                                   |
+| Dead Energy I      | 2  | +3 AP on killing an enemy.                                 |                                                                   |
+| Dead Energy II     | 2  | +3 AP on killing an enemy.                                 |                                                                   |
+| Critical Break     | 5  | 25% increased Break damage on Critical hits.               |                                                                   |
+| Rewarding Mark     | 5  | +2 AP on dealing damage to a Marked target. Once per turn. |                                                                   |
+| Burning Shots      | 3  | 20% chance to Burn on Free Aim shot.                       |                                                                   |
+| Breaking Burn      | 5  | 25% increased Break damage on Burning enemies.             |                                                                   |
+| Breaking Counter   | 3  | 50% increased Break damage on Counterattack.               |                                                                   |
+| Breaking Death     | 5  | Fully charge enemy break bar on death                      |                                                                   |
+| Cheater            | 40 | Extra turn after using a skill, once per turn              |                                                                   |
+| Energy Master      | 40 | Every AP gain is increased by 1                            |                                                                   |
 <!-- GENERATED:END -->
 
 ---

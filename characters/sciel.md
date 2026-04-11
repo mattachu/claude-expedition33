@@ -34,14 +34,14 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 ### Level and Attributes
 
 <!-- GENERATED:START characters:Sciel:attributes -->
-| Attribute | Value | Priority  |
-|-----------|-------|-----------|
-| Level     | 82    | —         |
-| Agility   | 99    | Primary   |
-| Luck      | 99    | Primary   |
-| Defence   | 48    | Secondary |
-| Vitality  | 0     | None      |
-| Might     | 0     | None      |
+| Attribute | Value |
+|-----------|-------|
+| Level     | 82    |
+| Agility   | 99    |
+| Luck      | 99    |
+| Defence   | 48    |
+| Vitality  | 0     |
+| Might     | 0     |
 <!-- GENERATED:END -->
 
 ### Combat Stats
@@ -117,7 +117,7 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 | Lumina              | LP | Notes                                                                                      |
 |---------------------|----|--------------------------------------------------------------------------------------------|
 | Accelerating Heal   | 5  | Rush on heal — synergy with Litheson AP generation                                         |
-| Base Shield         | 20 | Non-functional for Verso (Chevalam L4 prevents shields)                                    |
+| Base Shield         | 20 |                                                                                            |
 | Breaker             | 10 |                                                                                            |
 | Breaking Burn       | 5  |                                                                                            |
 | Breaking Counter    | 3  |                                                                                            |

@@ -6,6 +6,55 @@
 
 ## Active Party
 
+### Maelle
+
+**Level:** 83 | **Role:** Primary DPS | **Weapon:** Lithum (33)
+
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 3471     |
+| Attack  | *[unknown]* | 10436    |
+| Speed   | *[unknown]* | 2027     |
+| Defence | *[unknown]* | 182      |
+| Crit    | *[unknown]* | 105%     |
+
+
+| Pictos         | Level | Stats                   |
+|----------------|-------|-------------------------|
+| Burning Break  | 21    | Health +1541, Crit +24% |
+| Gradient Break | 25    | Speed +434, Crit +28%   |
+| Survivor       | 21    | Speed +439, Crit +12%   |
+
+
+**Lumina loadout:**
+
+| Lumina              | LP | Notes                                                      |
+|---------------------|----|------------------------------------------------------------|
+| Base Shield         | 20 |                                                            |
+| Breaker             | 10 |                                                            |
+| Breaking Burn       | 5  |                                                            |
+| Breaking Counter    | 3  |                                                            |
+| Breaking Death      | 5  |                                                            |
+| Burning Shots       | 3  |                                                            |
+| Cheater             | 40 |                                                            |
+| Critical Break      | 5  |                                                            |
+| Dead Energy I       | 2  |                                                            |
+| Dead Energy II      | 2  |                                                            |
+| Dodger              | 1  |                                                            |
+| Energising Attack I | 10 | Added during solo build, kept — useful for Lithum rotation |
+| Energising Parry    | 15 |                                                            |
+| Energising Start I  | 5  |                                                            |
+| Energising Turn     | 20 | Main AP flow generator; boosted by Energy Master           |
+| Energy Master       | 40 |                                                            |
+| Marking Shots       | 3  |                                                            |
+| Painted Power       | 5  | Essential for all characters from Act 3 onwards            |
+| Rewarding Mark      | 5  |                                                            |
+| Teamwork            | 5  |                                                            |
+
+**LP:** 194/196
+
+---
+
 ### Verso
 
 **Level:** 82 | **Role:** Endgame main DPS | **Weapon:** Chevalam (33)
@@ -57,55 +106,6 @@
 
 ---
 
-### Maelle
-
-**Level:** 83 | **Role:** Primary DPS | **Weapon:** Lithum (33)
-
-| Stat    | Base        | Modified |
-|---------|-------------|----------|
-| Health  | *[unknown]* | 3471     |
-| Attack  | *[unknown]* | 10436    |
-| Speed   | *[unknown]* | 2027     |
-| Defence | *[unknown]* | 182      |
-| Crit    | *[unknown]* | 105%     |
-
-
-| Pictos         | Level | Stats                   |
-|----------------|-------|-------------------------|
-| Burning Break  | 21    | Health +1541, Crit +24% |
-| Gradient Break | 25    | Speed +434, Crit +28%   |
-| Survivor       | 21    | Speed +439, Crit +12%   |
-
-
-**Lumina loadout:**
-
-| Lumina              | LP | Notes                                                      |
-|---------------------|----|------------------------------------------------------------|
-| Base Shield         | 20 | Non-functional for Verso (Chevalam L4 prevents shields)    |
-| Breaker             | 10 |                                                            |
-| Breaking Burn       | 5  |                                                            |
-| Breaking Counter    | 3  |                                                            |
-| Breaking Death      | 5  |                                                            |
-| Burning Shots       | 3  |                                                            |
-| Cheater             | 40 |                                                            |
-| Critical Break      | 5  |                                                            |
-| Dead Energy I       | 2  |                                                            |
-| Dead Energy II      | 2  |                                                            |
-| Dodger              | 1  |                                                            |
-| Energising Attack I | 10 | Added during solo build, kept — useful for Lithum rotation |
-| Energising Parry    | 15 |                                                            |
-| Energising Start I  | 5  |                                                            |
-| Energising Turn     | 20 | Main AP flow generator; boosted by Energy Master           |
-| Energy Master       | 40 |                                                            |
-| Marking Shots       | 3  |                                                            |
-| Painted Power       | 5  | Essential for all characters from Act 3 onwards            |
-| Rewarding Mark      | 5  |                                                            |
-| Teamwork            | 5  |                                                            |
-
-**LP:** 194/196
-
----
-
 ### Sciel
 
 **Level:** 82 | **Role:** Pure support | **Weapon:** Litheson (33)
@@ -131,7 +131,7 @@
 | Lumina              | LP | Notes                                                                                      |
 |---------------------|----|--------------------------------------------------------------------------------------------|
 | Accelerating Heal   | 5  | Rush on heal — synergy with Litheson AP generation                                         |
-| Base Shield         | 20 | Non-functional for Verso (Chevalam L4 prevents shields)                                    |
+| Base Shield         | 20 |                                                                                            |
 | Breaker             | 10 |                                                                                            |
 | Breaking Burn       | 5  |                                                                                            |
 | Breaking Counter    | 3  |                                                                                            |
@@ -161,6 +161,93 @@
 
 ## Reserve Party
 
-**Lune** — Level 78, DPS / healer (reserve), Kralim, LP 120/123
+### Lune
 
-**Monoco** — Level 82, Break + AP support (reserve), Joyaro, LP 91/128
+**Level:** 78 | **Role:** DPS / healer (reserve) | **Weapon:** Kralim (29)
+
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 4047     |
+| Attack  | *[unknown]* | 5401     |
+| Speed   | *[unknown]* | 1797     |
+| Defence | *[unknown]* | 1056     |
+| Crit    | *[unknown]* | 84%      |
+
+
+| Pictos            | Level | Stats                   |
+|-------------------|-------|-------------------------|
+| Powerful On Shell | 23    | Defence +874, Crit +25% |
+| Burn Affinity     | 21    | Speed +439, Crit +12%   |
+| Burning Death     | 21    | Speed +308, Crit +24%   |
+
+
+**Lumina loadout:**
+
+| Lumina             | LP | Notes                                                                        |
+|--------------------|----|------------------------------------------------------------------------------|
+| Accelerating Heal  | 5  | Rush on heal — synergy with Healing Light                                    |
+| Base Shield        | 20 |                                                                              |
+| Breaker            | 10 |                                                                              |
+| Breaking Burn      | 5  |                                                                              |
+| Breaking Counter   | 3  |                                                                              |
+| Breaking Death     | 5  |                                                                              |
+| Burning Shots      | 3  |                                                                              |
+| Critical Break     | 5  |                                                                              |
+| Dodger             | 1  |                                                                              |
+| Energising Parry   | 15 |                                                                              |
+| Energising Start I | 5  |                                                                              |
+| Energising Turn    | 20 |                                                                              |
+| Marking Shots      | 3  |                                                                              |
+| Painted Power      | 5  |                                                                              |
+| Protecting Heal    | 5  | Shell on heal — triggers Powerful On Shell Pictos and Longer Shell on Monoco |
+| Rewarding Mark     | 5  |                                                                              |
+| Teamwork           | 5  |                                                                              |
+
+**LP:** 120/123
+
+---
+
+### Monoco
+
+**Level:** 82 | **Role:** Break + AP support (reserve) | **Weapon:** Joyaro (25)
+
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 4657     |
+| Attack  | *[unknown]* | 6605     |
+| Speed   | *[unknown]* | 2189     |
+| Defence | *[unknown]* | 2301     |
+| Crit    | *[unknown]* | 62%      |
+
+
+| Pictos          | Level | Stats                       |
+|-----------------|-------|-----------------------------|
+| Longer Shell    | 29    | Health +2757, Defence +1572 |
+| Energising Turn | 14    | Speed +270                  |
+| Sniper          | 23    | Speed +525, Crit +13%       |
+
+
+**Lumina loadout:**
+
+| Lumina             | LP | Notes                                                      |
+|--------------------|----|------------------------------------------------------------|
+| Base Shield        | 20 |                                                            |
+| Breaker            | 10 |                                                            |
+| Breaking Burn      | 5  |                                                            |
+| Breaking Counter   | 3  |                                                            |
+| Breaking Death     | 5  |                                                            |
+| Burning Shots      | 3  |                                                            |
+| Critical Break     | 5  |                                                            |
+| Dodger             | 1  |                                                            |
+| Energising Parry   | 15 |                                                            |
+| Energising Start I | 5  |                                                            |
+| Energising Turn    | —  | FREE from Energising Turn Pictos                           |
+| Marking Shots      | 3  |                                                            |
+| Painted Power      | 5  |                                                            |
+| Rewarding Mark     | 5  |                                                            |
+| Staggering Attack  | 1  | Break damage on base attack — small break bar contribution |
+| Teamwork           | 5  |                                                            |
+
+**LP:** 91/128
+
+---

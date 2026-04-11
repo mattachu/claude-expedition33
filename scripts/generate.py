@@ -192,33 +192,15 @@ def pictos_lookup(pictos_lumina):
 # ---------------------------------------------------------------------------
 
 def gen_attributes(char_name, char):
-    """Attributes table: Attribute | Value | Priority."""
+    """Attributes table: Attribute | Value. Sorted by value descending, Level first."""
     level = char.get('level', '?')
     attrs = char.get('attributes', {})
     all_attrs = ['vitality', 'might', 'agility', 'defence', 'luck']
-
-    def sort_key(a):
-        v = attrs.get(a, 0)
-        return (0 if v > 0 else 1, -v)
-
-    sorted_attrs = sorted(all_attrs, key=sort_key)
-    non_zero_non_99 = [a for a in sorted_attrs if 0 < attrs.get(a, 0) < 99]
-
-    def priority(a):
-        v = attrs.get(a, 0)
-        if v == 99:
-            return 'Primary'
-        if v == 0:
-            return 'None'
-        idx = non_zero_non_99.index(a) if a in non_zero_non_99 else 0
-        return ['Secondary', 'Tertiary', 'Quaternary'][min(idx, 2)]
-
-    rows = [['Level', level, '—']]
+    sorted_attrs = sorted(all_attrs, key=lambda a: -attrs.get(a, 0))
+    rows = [['Level', level]]
     for a in sorted_attrs:
-        rows.append([a.capitalize(), attrs.get(a, 0), priority(a)])
-
-    return md_table(['Attribute', 'Value', 'Priority'], rows)
-
+        rows.append([a.capitalize(), attrs.get(a, 0)])
+    return md_table(['Attribute', 'Value'], rows)
 
 def gen_stats(char_name, char):
     """Stats table: Stat | Base | Modified."""
@@ -292,6 +274,11 @@ def gen_lumina(char_name, char, pictos_lumina, plu):
         elif name in exclusion_names:
             continue  # omit non-functional exclusions
         else:
+            # Filter notes prefixed with another character's name
+            if core_note and ':' in core_note:
+                prefix = core_note.split(':')[0].strip()
+                if prefix in CHARACTERS and prefix != char_name:
+                    core_note = ''
             rows.append([name, lp, core_note])
 
     # Character-specific extras
@@ -754,18 +741,55 @@ def generate_party_summary(data, out_path, dry_run=False):
         lines += [f'**LP:** {used}/{total}', '', '---', '']
 
     lines += ['## Reserve Party', '']
+
     for name in reserve:
         if name not in characters:
             continue
         char = characters[name]
         wname = char.get('weapon_equipped', '?')
+        wlevel = next((w.get('level', '?')
+                       for w in weapons.get(name, [])
+                       if w['name'] == wname), '?')
+
+        mod = char.get('stats_modified') or {}
+        base = char.get('stats_base') or {}
+
+        lines += [
+            f'### {name}',
+            '',
+            (f'**Level:** {char.get("level", "?")} | '
+             f'**Role:** {char.get("role", "?")} | '
+             f'**Weapon:** {wname} ({wlevel})'),
+            '',
+            md_table(
+                ['Stat', 'Base', 'Modified'],
+                [['Health',  base.get('health',  '*[unknown]*'), mod.get('health',  '*[unknown]*')],
+                 ['Attack',  base.get('attack',  '*[unknown]*'), mod.get('attack',  '*[unknown]*')],
+                 ['Speed',   base.get('speed',   '*[unknown]*'), mod.get('speed',   '*[unknown]*')],
+                 ['Defence', base.get('defence', '*[unknown]*'), mod.get('defence', '*[unknown]*')],
+                 ['Crit',    base.get('crit',    '*[unknown]*'), mod.get('crit',    '*[unknown]*')]],
+            ),
+            '',
+        ]
+
+        pictos_rows = []
+        for pname in char.get('pictos_equipped', []):
+            p = plu.get(pname, {})
+            stats = p.get('stats', {})
+            stat_parts = [f'{k.capitalize()} +{v}' for k, v in stats.items()]
+            pictos_rows.append([pname, p.get('level', '?'), ', '.join(stat_parts) or '—'])
+        if pictos_rows:
+            lines.append(md_table(['Pictos', 'Level', 'Stats'], pictos_rows))
+            lines.append('')
+
+        lumina_table = gen_lumina(name, char, pictos_lumina, plu)
+        lines.append('**Lumina loadout:**')
+        lines.append('')
+        lines.append(lumina_table)
+
         used = char.get('lp_used', '?')
         total = char.get('lp_total', '?')
-        lines.append(
-            f'**{name}** — Level {char.get("level", "?")}, '
-            f'{char.get("role", "?")}, {wname}, LP {used}/{total}'
-        )
-        lines.append('')
+        lines += [f'**LP:** {used}/{total}', '', '---', '']
 
     content = '\n'.join(lines)
     _write_file(Path(out_path), content, dry_run)
