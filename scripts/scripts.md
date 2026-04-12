@@ -66,6 +66,7 @@ Section boundaries:
 import re
 import sys
 from pathlib import Path
+import subprocess
 
 
 # ---------------------------------------------------------------------------
@@ -241,6 +242,83 @@ def parse_changelist(text):
 
 
 # ---------------------------------------------------------------------------
+# GENERATED marker detection
+# ---------------------------------------------------------------------------
+
+_GENERATED_START_RE = re.compile(r'^<!-- GENERATED:START \S+ -->$')
+_GENERATED_END_RE = re.compile(r'^<!-- GENERATED:END -->$')
+
+
+def find_generated_markers(lines):
+    """
+    Return a list of (key, start_line, end_line) tuples for all GENERATED blocks
+    found in lines. Returns an empty list if none found.
+    """
+    markers = []
+    i = 0
+    while i < len(lines):
+        m = _GENERATED_START_RE.match(lines[i].rstrip())
+        if m:
+            key = lines[i].split('GENERATED:START ')[1].split(' -->')[0].strip()
+            start = i
+            for j in range(i + 1, len(lines)):
+                if _GENERATED_END_RE.match(lines[j].rstrip()):
+                    markers.append((key, start, j))
+                    i = j
+                    break
+        i += 1
+    return markers
+
+
+def check_generated_overlap(old_lines, new_content_lines, section_id,
+                             interactive=True):
+    """
+    Check whether old section content contains GENERATED markers and whether
+    the new content changes them.
+
+    Returns True if replacement should proceed, False to skip.
+
+    - No markers in old or new: proceed silently.
+    - Same marker keys in old and new: proceed with a NOTE (generate.py will
+      refill the markers after the changelist is applied).
+    - Marker keys differ (added/removed/renamed): warn and require confirmation
+      if interactive, abort if not.
+    """
+    old_markers = find_generated_markers(old_lines)
+    new_markers = find_generated_markers(new_content_lines)
+
+    if not old_markers and not new_markers:
+        return True, None
+
+    old_keys = {key for key, _, _ in old_markers}
+    new_keys = {key for key, _, _ in new_markers}
+
+    if old_keys == new_keys:
+        note = None
+        if old_keys:
+            note = (f'NOTE: section contains GENERATED markers '
+                    f'({", ".join(sorted(old_keys))}) — '
+                    f'generate.py will refill them after this changelist.')
+        return True, note
+
+    # Keys differ — warn.
+    added = new_keys - old_keys
+    removed = old_keys - new_keys
+    print(f'\n  WARNING: GENERATED markers will change in {section_id}:')
+    if added:
+        print(f'    Added:   {", ".join(sorted(added))}')
+    if removed:
+        print(f'    Removed: {", ".join(sorted(removed))}')
+
+    if not interactive:
+        print('  Aborting — run interactively to confirm marker changes.')
+        return False, None
+
+    answer = input('  Proceed with this change? [y/N] ').strip().lower()
+    return answer == 'y', None
+
+
+# ---------------------------------------------------------------------------
 # Section finding and splicing
 # ---------------------------------------------------------------------------
 
@@ -282,10 +360,11 @@ def find_section_end(lines, start, level):
     return len(lines)
 
 
-def apply_entry(lines, entry):
+def apply_entry(lines, entry, interactive=True):
     """
     Apply a single changelist entry to a list of lines.
-    Returns new list of lines.
+    Returns (new_lines, skipped) where skipped=True means the entry was
+    skipped due to a GENERATED marker conflict.
     Raises ValueError on failure (loud failure mode).
     """
     section_level = entry['section_level']
@@ -294,11 +373,40 @@ def apply_entry(lines, entry):
     after_hint = entry['after']
     new_content_lines = entry['content'].splitlines(keepends=True)
 
+    section_id = (f'{parent_heading} > {section_heading}'
+                  if parent_heading else section_heading)
+
     if section_level == 2:
-        return _apply_h2_entry(lines, section_heading, new_content_lines)
+        note = None
+        # Extract old section content for marker check
+        h2_line = find_heading_line(lines, section_heading)
+        if h2_line is not None:
+            h2_end = find_section_end(lines, h2_line, level=2)
+            old_section_lines = lines[h2_line:h2_end]
+            proceed, note = check_generated_overlap(old_section_lines,
+                                                    new_content_lines,
+                                                    section_id, interactive)
+            if not proceed:
+                return lines, True, None
+        return _apply_h2_entry(lines, section_heading, new_content_lines), False, note
     else:
+        note = None
+        # Extract old section content for marker check
+        h2_line = find_heading_line(lines, parent_heading)
+        if h2_line is not None:
+            h2_end = find_section_end(lines, h2_line, level=2)
+            h3_line = find_heading_line(lines, section_heading,
+                                        start=h2_line + 1, end=h2_end)
+            if h3_line is not None:
+                h3_end = find_section_end(lines, h3_line, level=3)
+                old_section_lines = lines[h3_line:h3_end]
+                proceed, note = check_generated_overlap(old_section_lines,
+                                                        new_content_lines,
+                                                        section_id, interactive)
+                if not proceed:
+                    return lines, True, None
         return _apply_h3_entry(lines, parent_heading, section_heading,
-                               after_hint, new_content_lines)
+                               after_hint, new_content_lines), False, note
 
 
 def _apply_h2_entry(lines, section_heading, new_content_lines):
@@ -415,6 +523,8 @@ def main():
     parser.add_argument('--repo-root', default='.', help='Root of git repo (default: .)')
     parser.add_argument('--dry-run', action='store_true',
                         help='Show what would change without writing files')
+    parser.add_argument('--no-interactive', action='store_true',
+                        help='Abort (rather than prompt) on GENERATED marker conflicts')
     args = parser.parse_args()
 
     repo_root = Path(args.repo_root).resolve()
@@ -459,10 +569,16 @@ def main():
                           if entry['parent'] else entry['section'])
             try:
                 exists = _section_exists(lines, entry)
-                new_lines = apply_entry(lines, entry)
-                action = 'UPDATE' if exists else 'INSERT'
-                print(f'  {action}: {section_id}')
-                lines = new_lines
+                new_lines, skipped, note = apply_entry(lines, entry,
+                                                       interactive=not args.no_interactive)
+                if skipped:
+                    print(f'  SKIPPED: {section_id}')
+                else:
+                    action = 'UPDATE' if exists else 'INSERT'
+                    print(f'  {action}: {section_id}')
+                    if note:
+                        print(f'  {note}')
+                    lines = new_lines
             except ValueError as e:
                 print(f'  ERROR ({section_id}): {e}')
                 any_error = True
@@ -496,6 +612,15 @@ def main():
         print('\nCompleted with errors — some entries were not applied.')
         sys.exit(1)
     else:
+        print('\nRunning generate.py...')
+        result = subprocess.run(
+            [sys.executable,
+             str(repo_root / 'scripts' / 'generate.py'),
+             '--repo-root', str(repo_root),
+             '--no-interactive'],
+        )
+        if result.returncode != 0:
+            print('WARNING: generate.py reported errors — check output above.')
         print('\nDone.')
 
 
@@ -712,33 +837,15 @@ def pictos_lookup(pictos_lumina):
 # ---------------------------------------------------------------------------
 
 def gen_attributes(char_name, char):
-    """Attributes table: Attribute | Value | Priority."""
+    """Attributes table: Attribute | Value. Sorted by value descending, Level first."""
     level = char.get('level', '?')
     attrs = char.get('attributes', {})
     all_attrs = ['vitality', 'might', 'agility', 'defence', 'luck']
-
-    def sort_key(a):
-        v = attrs.get(a, 0)
-        return (0 if v > 0 else 1, -v)
-
-    sorted_attrs = sorted(all_attrs, key=sort_key)
-    non_zero_non_99 = [a for a in sorted_attrs if 0 < attrs.get(a, 0) < 99]
-
-    def priority(a):
-        v = attrs.get(a, 0)
-        if v == 99:
-            return 'Primary'
-        if v == 0:
-            return 'None'
-        idx = non_zero_non_99.index(a) if a in non_zero_non_99 else 0
-        return ['Secondary', 'Tertiary', 'Quaternary'][min(idx, 2)]
-
-    rows = [['Level', level, '—']]
+    sorted_attrs = sorted(all_attrs, key=lambda a: -attrs.get(a, 0))
+    rows = [['Level', level]]
     for a in sorted_attrs:
-        rows.append([a.capitalize(), attrs.get(a, 0), priority(a)])
-
-    return md_table(['Attribute', 'Value', 'Priority'], rows)
-
+        rows.append([a.capitalize(), attrs.get(a, 0)])
+    return md_table(['Attribute', 'Value'], rows)
 
 def gen_stats(char_name, char):
     """Stats table: Stat | Base | Modified."""
@@ -812,6 +919,11 @@ def gen_lumina(char_name, char, pictos_lumina, plu):
         elif name in exclusion_names:
             continue  # omit non-functional exclusions
         else:
+            # Filter notes prefixed with another character's name
+            if core_note and ':' in core_note:
+                prefix = core_note.split(':')[0].strip()
+                if prefix in CHARACTERS and prefix != char_name:
+                    core_note = ''
             rows.append([name, lp, core_note])
 
     # Character-specific extras
@@ -1274,18 +1386,55 @@ def generate_party_summary(data, out_path, dry_run=False):
         lines += [f'**LP:** {used}/{total}', '', '---', '']
 
     lines += ['## Reserve Party', '']
+
     for name in reserve:
         if name not in characters:
             continue
         char = characters[name]
         wname = char.get('weapon_equipped', '?')
+        wlevel = next((w.get('level', '?')
+                       for w in weapons.get(name, [])
+                       if w['name'] == wname), '?')
+
+        mod = char.get('stats_modified') or {}
+        base = char.get('stats_base') or {}
+
+        lines += [
+            f'### {name}',
+            '',
+            (f'**Level:** {char.get("level", "?")} | '
+             f'**Role:** {char.get("role", "?")} | '
+             f'**Weapon:** {wname} ({wlevel})'),
+            '',
+            md_table(
+                ['Stat', 'Base', 'Modified'],
+                [['Health',  base.get('health',  '*[unknown]*'), mod.get('health',  '*[unknown]*')],
+                 ['Attack',  base.get('attack',  '*[unknown]*'), mod.get('attack',  '*[unknown]*')],
+                 ['Speed',   base.get('speed',   '*[unknown]*'), mod.get('speed',   '*[unknown]*')],
+                 ['Defence', base.get('defence', '*[unknown]*'), mod.get('defence', '*[unknown]*')],
+                 ['Crit',    base.get('crit',    '*[unknown]*'), mod.get('crit',    '*[unknown]*')]],
+            ),
+            '',
+        ]
+
+        pictos_rows = []
+        for pname in char.get('pictos_equipped', []):
+            p = plu.get(pname, {})
+            stats = p.get('stats', {})
+            stat_parts = [f'{k.capitalize()} +{v}' for k, v in stats.items()]
+            pictos_rows.append([pname, p.get('level', '?'), ', '.join(stat_parts) or '—'])
+        if pictos_rows:
+            lines.append(md_table(['Pictos', 'Level', 'Stats'], pictos_rows))
+            lines.append('')
+
+        lumina_table = gen_lumina(name, char, pictos_lumina, plu)
+        lines.append('**Lumina loadout:**')
+        lines.append('')
+        lines.append(lumina_table)
+
         used = char.get('lp_used', '?')
         total = char.get('lp_total', '?')
-        lines.append(
-            f'**{name}** — Level {char.get("level", "?")}, '
-            f'{char.get("role", "?")}, {wname}, LP {used}/{total}'
-        )
-        lines.append('')
+        lines += [f'**LP:** {used}/{total}', '', '---', '']
 
     content = '\n'.join(lines)
     _write_file(Path(out_path), content, dry_run)
