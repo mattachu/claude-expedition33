@@ -295,3 +295,4 @@ These items are parked for future consideration. Do not implement without explic
 
 - **Topic switch recognition:** At the log step, check for topic shifts and split sections accordingly.
 - **DATA block support in apply_changelist.py:** Allow `DATA:` blocks to update JSON files directly, with `generate.py` running automatically after. Design documented in Changelist Format section above.
+- **Auto-enumerate chat files in LINKS.md:** Update generate_links.py to scan chats/ for index and part files and include them automatically, rather than requiring manual addition.
