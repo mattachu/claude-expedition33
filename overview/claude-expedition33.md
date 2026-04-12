@@ -279,6 +279,7 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 ---
 
 ## Section 10: Chat Logs
+
 *For reference only — do not fetch unless specifically asked. These are large files.*
 
 | Chat   | Index                                                                                                                                        | Full Transcript                     | Summary                                                                                                                                                                                                                                  |
@@ -292,6 +293,7 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 | Chat 6 | [Formatted](../chats/chat6/chat6-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat6/chat6-index.md) | [chat6.md](../chats/chat6/chat6.md) | Flying Manor ordering decided; Renoir self-nerf strategy; progression plan restructured; all character stats updated; Pictos optimisation deferred to Opus session                                                                       |
 | Chat 7 | [Formatted](../chats/chat7/chat7-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat7/chat7-index.md) | [chat7.md](../chats/chat7/chat7.md) | Pictos optimisation framework designed and prepared for Sonnet handoff; actual optimisation and assignment deferred until after Flying Manor; Colour of Lumina pool expansion mechanism documented; Pictos data rationalisation designed |
 | Chat 8 | [Formatted](../chats/chat8/chat8-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat8/chat8-index.md) | [chat8.md](../chats/chat8/chat8.md) | Monoco full skill audit; Repo restructure design: new folder structure, JSON reference files, GitHub Actions workflow; All five data files built; Session procedure updated; hand-off for script design                                  |
+| Chat 9 | [Formatted](../chats/chat9/chat9-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat9/chat9-index.md) | [chat9.md](../chats/chat9/chat9.md) | Repo restructure completed: generate_scripts_md.py built; generate.py written (unified generator for all GENERATED blocks, party-summary, Pictos catalogue); apply_changelist.py updated with GENERATED marker detection; session procedure and pipeline.md updated |
 
 ---
 
@@ -410,7 +412,6 @@ Part Files list (one entry per part, under `## Part Files (Claude-readable)`):
 Footer (after last ToC entry):
 
 ```
----
 *Generated: YYYY-MM-DD*
 ```
 
