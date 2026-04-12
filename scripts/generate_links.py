@@ -29,6 +29,7 @@ FILES = [
     "reference/pictos-lumina-catalogue.md",
     "reference/historical-errors.md",
     # Scripts
+    "scripts/pipeline.md",
     "scripts/scripts.md",
     # Chat indexes
     "chats/chat0/chat0-index.md",
