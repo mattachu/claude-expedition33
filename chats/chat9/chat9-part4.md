@@ -562,3 +562,76 @@ Done — 4 parts at roughly 50k / 75k / 28k / 32k bytes, and the index updated w
 *[Presented updated part files and index]*
 
 ---
+
+**Matt:** All files pushed. Look ok?
+
+```md
+# Session Links
+*Commit: `f2fae392`*
+Paste this file's content at session start. Claude fetches files from these URLs on demand.
+- `overview/claude-expedition33.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/overview/claude-expedition33.md
+- `overview/party-summary.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/overview/party-summary.md
+- `overview/pictos-lumina-summary.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/overview/pictos-lumina-summary.md
+- `data/playthrough.json`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/data/playthrough.json
+- `data/characters.json`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/data/characters.json
+- `data/skills.json`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/data/skills.json
+- `data/weapons.json`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/data/weapons.json
+- `data/pictos-lumina.json`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/data/pictos-lumina.json
+- `characters/maelle.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/characters/maelle.md
+- `characters/verso.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/characters/verso.md
+- `characters/sciel.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/characters/sciel.md
+- `characters/lune.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/characters/lune.md
+- `characters/monoco.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/characters/monoco.md
+- `reference/mechanics.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/reference/mechanics.md
+- `reference/pictos-lumina-catalogue.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/reference/pictos-lumina-catalogue.md
+- `reference/historical-errors.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/reference/historical-errors.md
+- `scripts/pipeline.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/scripts/pipeline.md
+- `scripts/scripts.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/scripts/scripts.md
+- `chats/chat0/chat0-index.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/chats/chat0/chat0-index.md
+- `chats/chat1/chat1-index.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/chats/chat1/chat1-index.md
+- `chats/chat2/chat2-index.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/chats/chat2/chat2-index.md
+- `chats/chat3/chat3-index.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/chats/chat3/chat3-index.md
+- `chats/chat4/chat4-index.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/chats/chat4/chat4-index.md
+- `chats/chat5/chat5-index.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/chats/chat5/chat5-index.md
+- `chats/chat6/chat6-index.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/chats/chat6/chat6-index.md
+- `chats/chat7/chat7-index.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/chats/chat7/chat7-index.md
+- `chats/chat8/chat8-index.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/chats/chat8/chat8-index.md
+- `repo-structure.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/repo-structure.md
+- `README.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@f2fae392/README.md
+```
+
+**Claude:** I notice `chats/chat9/chat9-index.md` isn't in the LINKS.md yet — the workflow may need updating to pick up new chat folders automatically, or you may need to add it manually. Let me check a few things.*[Turn 77. Last log: Turn 71.]*
+
+Scripts.md looks good — the updated `apply_changelist.py` is there with the GENERATED marker detection code visible. Overview is loading correctly.
+
+The chat9 index isn't in LINKS.md yet, which is why I can't fetch it directly — that's expected since `generate_links.py` would need to be updated to pick up chat index files, or you'd add it manually. Not a problem for now; it's in the repo and accessible via the raw GitHub URL pattern.
+
+Two things worth noting for the next session:
+
+1. **LINKS.md doesn't include chat9 index/parts** — if you want to be able to fetch them mid-session via jsDelivr, you'll need to add them to `generate_links.py`'s output. The workflow that generates LINKS.md would need to enumerate chat folders.
+
+2. **`pipeline.md` is now accessible via jsDelivr** — it appears in the new LINKS.md, which means the earlier blockage is resolved.
+
+Otherwise everything looks clean. Good session — the repo is substantially more capable now than at the start.
+
+---
+
+**Matt:** Could we add automatically picking up new chats in `generate_links.py` as a job for the future? Where should I put a note about that?
+
+**Claude:** *[Turn 78. Last log: Turn 71.]*
+
+The right place is `## Future Enhancements` in `scripts/pipeline.md` — that's where we parked the DATA block support and topic switch recognition items. It's the established holding area for "do this later, don't implement without explicit instruction."
+
+The note would be something like: "**Auto-enumerate chat files in LINKS.md:** Update `generate_links.py` to scan `chats/` for index and part files and include them automatically, rather than requiring manual addition."
+
+Worth adding as a manual edit since it's just one line — no changelist needed.
+
+---
+
+**Matt:** Ok, done. Thanks and goodbye!
+
+**Claude:** *[Turn 79. Last log: Turn 71.]*
+
+Great session — a lot of solid infrastructure work done. Good luck with Flying Manor! Goodbye!
+
+---
