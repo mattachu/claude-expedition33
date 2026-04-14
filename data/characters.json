@@ -7,7 +7,13 @@
       "agility": 99,
       "might": 60
     },
-    "stats_base": null,
+    "stats_base": {
+      "health": 2019,
+      "attack": 1205,
+      "speed": 1176,
+      "defence": 182,
+      "crit": "41%"
+    },
     "stats_modified": {
       "health": 3560,
       "attack": 10653,
@@ -86,7 +92,13 @@
       "luck": 99,
       "might": 60
     },
-    "stats_base": null,
+    "stats_base": {
+      "health": 2019,
+      "attack": 1205,
+      "speed": 1176,
+      "defence": 182,
+      "crit": "41%"
+    },
     "stats_modified": {
       "health": 4324,
       "attack": 10181,
@@ -196,7 +208,13 @@
       "luck": 99,
       "defence": 57
     },
-    "stats_base": null,
+    "stats_base": {
+      "health": 1989,
+      "attack": 1075,
+      "speed": 1168,
+      "defence": 449,
+      "crit": "54%"
+    },
     "stats_modified": {
       "health": 6959,
       "attack": 8451,
@@ -292,7 +310,13 @@
       "agility": 99,
       "luck": 48
     },
-    "stats_base": null,
+    "stats_base": {
+      "health": 3289,
+      "attack": 1019,
+      "speed": 1100,
+      "defence": 182,
+      "crit": "28%"
+    },
     "stats_modified": {
       "health": 3289,
       "attack": 6118,
@@ -377,7 +401,13 @@
       "defence": 99,
       "luck": 51
     },
-    "stats_base": null,
+    "stats_base": {
+      "health": 1930,
+      "attack": 1038,
+      "speed": 1112,
+      "defence": 729,
+      "crit": "47%"
+    },
     "stats_modified": {
       "health": 4687,
       "attack": 6624,
