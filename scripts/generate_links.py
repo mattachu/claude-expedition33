@@ -13,6 +13,7 @@ FILES = [
     "overview/party-summary.md",
     "overview/pictos-lumina-summary.md",
     # Data
+    "data/schema.md",
     "data/playthrough.json",
     "data/characters.json",
     "data/skills.json",

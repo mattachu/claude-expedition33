@@ -6,6 +6,7 @@ Paste this file's content at session start. Claude fetches files from these URLs
 - `overview/claude-expedition33.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@7606bdd1/overview/claude-expedition33.md
 - `overview/party-summary.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@7606bdd1/overview/party-summary.md
 - `overview/pictos-lumina-summary.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@7606bdd1/overview/pictos-lumina-summary.md
+- `data/schema.md`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@7606bdd1/data/schema.md
 - `data/playthrough.json`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@7606bdd1/data/playthrough.json
 - `data/characters.json`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@7606bdd1/data/characters.json
 - `data/skills.json`: https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@7606bdd1/data/skills.json
