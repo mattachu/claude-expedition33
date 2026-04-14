@@ -1104,9 +1104,11 @@ def gen_inventory(playthrough):
             f'{inv.get("chroma_catalyst_resplendent", "?")} resplendent, '
             f'{inv.get("chroma_catalyst_grandiose", "?")} grandiose, '
             f'{inv.get("chroma_catalyst_perfect", "?")} perfect')
+    chroma = inv.get('chroma', '?')
     return (f'- Colour of Lumina: {col}\n'
             f'- Recoats: {rec}\n'
-            f'- Chroma Catalysts: {cats}\n')
+            f'- Chroma Catalysts: {cats}\n'
+            f'- Chroma: {chroma}\n')
 
 
 def gen_lp_summary(characters):
@@ -1436,6 +1438,9 @@ def generate_party_summary(data, out_path, dry_run=False):
         total = char.get('lp_total', '?')
         lines += [f'**LP:** {used}/{total}', '', '---', '']
 
+    lines += ['# Inventory', '']
+    lines.append(gen_inventory(playthrough))
+
     content = '\n'.join(lines)
     _write_file(Path(out_path), content, dry_run)
 
@@ -1609,6 +1614,7 @@ FILES = [
     "overview/party-summary.md",
     "overview/pictos-lumina-summary.md",
     # Data
+    "data/schema.md",
     "data/playthrough.json",
     "data/characters.json",
     "data/skills.json",
