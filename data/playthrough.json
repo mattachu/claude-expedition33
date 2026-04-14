@@ -5,19 +5,20 @@
   "active_party": ["Maelle", "Verso", "Sciel"],
   "reserve_party": ["Lune", "Monoco"],
   "inventory": {
-    "colour_of_lumina": 164,
+    "colour_of_lumina": 167,
     "recoats": 28,
+    "chromas": 1662993,
     "chroma_catalyst": 67,
     "chroma_catalyst_polished": 65,
     "chroma_catalyst_resplendent": 83,
-    "chroma_catalyst_grandiose": 14,
-    "chroma_catalyst_perfect": 1
+    "chroma_catalyst_grandiose": 17,
+    "chroma_catalyst_perfect": 2
   },
   "current_phase_checklist": {
     "the_reacher": true,
     "chromatic_braseleur": true,
     "serpenphare": true,
-    "flying_manor": false,
+    "flying_manor": true,
     "renoir": false
   }
 }

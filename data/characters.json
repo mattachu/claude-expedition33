@@ -1,17 +1,17 @@
 {
   "Maelle": {
-    "level": 83,
+    "level": 86,
     "role": "Primary DPS",
     "attributes": {
       "luck": 99,
       "agility": 99,
-      "might": 51
+      "might": 60
     },
     "stats_base": null,
     "stats_modified": {
-      "health": 3471,
-      "attack": 10436,
-      "speed": 2027,
+      "health": 3560,
+      "attack": 10653,
+      "speed": 2049,
       "defence": 182,
       "crit": "105%",
       "_note": "Stats with Lithum (33), Burning Break (21), Gradient Break (25), Survivor (21) equipped"
@@ -22,15 +22,10 @@
       "Gradient Break",
       "Survivor"
     ],
-    "lp_total": 196,
+    "lp_total": 199,
     "lp_used": 194,
     "lumina_core_exclusions": [],
-    "lumina_extras": [
-      {
-        "name": "Energising Attack I",
-        "notes": "Added during solo build, kept — useful for Lithum rotation"
-      }
-    ],
+    "lumina_extras": [],
     "skills_equipped": [
       "Phantom Strike",
       "Fleuret Fury",
@@ -84,21 +79,21 @@
     ]
   },
   "Verso": {
-    "level": 82,
+    "level": 86,
     "role": "Endgame main DPS",
     "attributes": {
       "agility": 99,
       "luck": 99,
-      "might": 48
+      "might": 60
     },
     "stats_base": null,
     "stats_modified": {
-      "health": 4205,
-      "attack": 6282,
-      "speed": 2132,
+      "health": 4324,
+      "attack": 10181,
+      "speed": 2162,
       "defence": 182,
       "crit": "82%",
-      "_note": "Stats with Chevalam (32), Breaking Death (29), Cheater (24), Second Chance (16) equipped"
+      "_note": "Stats with Chevalam (33), Breaking Death (29), Cheater (24), Second Chance (16) equipped"
     },
     "weapon_equipped": "Chevalam",
     "pictos_equipped": [
@@ -106,7 +101,7 @@
       "Cheater",
       "Second Chance"
     ],
-    "lp_total": 194,
+    "lp_total": 198,
     "lp_used": 194,
     "lumina_core_exclusions": [
       {
@@ -147,7 +142,7 @@
     "skills_equipped": [
       "Quick Strike",
       "Light Holder",
-      "Marking Shot",
+      "Phantom Stars",
       "Perfect Break",
       "End Bringer",
       "Steeled Strike"
@@ -194,29 +189,29 @@
     ]
   },
   "Sciel": {
-    "level": 82,
+    "level": 85,
     "role": "Pure support",
     "attributes": {
       "agility": 99,
       "luck": 99,
-      "defence": 48
+      "defence": 57
     },
     "stats_base": null,
     "stats_modified": {
-      "health": 6879,
-      "attack": 5245,
-      "speed": 2014,
-      "defence": 390,
-      "crit": "108%",
-      "_note": "Stats with Litheson (32), Critical Burn (25), Energy Master (30), Quick Break (25) equipped"
+      "health": 6959,
+      "attack": 8451,
+      "speed": 2466,
+      "defence": 449,
+      "crit": "101%",
+      "_note": "Stats with Litheson (33), Painter (28), Energy Master (30), Energising Shots (28) equipped"
     },
     "weapon_equipped": "Litheson",
     "pictos_equipped": [
-      "Critical Burn",
+      "Painter",
       "Energy Master",
-      "Quick Break"
+      "Energising Shots"
     ],
-    "lp_total": 176,
+    "lp_total": 179,
     "lp_used": 175,
     "lumina_core_exclusions": [
       {
@@ -235,15 +230,11 @@
       },
       {
         "name": "Protecting Heal",
-        "notes": "Shell on heal — enables Powerful On Shell via Lune Pictos"
+        "notes": "Shell on heal"
       },
       {
         "name": "Healing Tint Energy",
         "notes": "1 AP on Healing Tint use — small AP top-up"
-      },
-      {
-        "name": "Healing Boon",
-        "notes": "15% HP on applying a buff — fires on Dark Cleansing propagation and Litheson phase changes"
       }
     ],
     "skills_equipped": [
@@ -294,29 +285,29 @@
     ]
   },
   "Lune": {
-    "level": 78,
+    "level": 82,
     "role": "DPS / healer (reserve)",
     "attributes": {
       "vitality": 99,
       "agility": 99,
-      "luck": 36
+      "luck": 48
     },
     "stats_base": null,
     "stats_modified": {
-      "health": 4047,
-      "attack": 5401,
-      "speed": 1797,
-      "defence": 1056,
-      "crit": "84%",
-      "_note": "Stats with Kralim (29), Powerful On Shell (23), Burn Affinity (21), Burning Death (21) equipped"
+      "health": 3289,
+      "attack": 6118,
+      "speed": 2519,
+      "defence": 182,
+      "crit": "100%",
+      "_note": "Stats with Kralim (32), Critical Burn (25), Burn Affinity (21), Burning Death (28) equipped"
     },
     "weapon_equipped": "Kralim",
     "pictos_equipped": [
-      "Powerful On Shell",
+      "Critical Burn",
       "Burn Affinity",
       "Burning Death"
     ],
-    "lp_total": 123,
+    "lp_total": 127,
     "lp_used": 120,
     "lumina_core_exclusions": [],
     "lumina_extras": [
@@ -326,7 +317,7 @@
       },
       {
         "name": "Protecting Heal",
-        "notes": "Shell on heal — triggers Powerful On Shell Pictos and Longer Shell on Monoco"
+        "notes": "Shell on heal"
       }
     ],
     "skills_equipped": [
@@ -379,30 +370,30 @@
     ]
   },
   "Monoco": {
-    "level": 82,
+    "level": 83,
     "role": "Break + AP support (reserve)",
     "attributes": {
       "agility": 99,
       "defence": 99,
-      "luck": 48
+      "luck": 51
     },
     "stats_base": null,
     "stats_modified": {
-      "health": 4657,
-      "attack": 6605,
-      "speed": 2189,
+      "health": 4687,
+      "attack": 6624,
+      "speed": 2201,
       "defence": 2301,
-      "crit": "62%",
-      "_note": "Stats with Joyaro (25), Longer Shell (29), Energising Turn (14), Sniper (23) equipped"
+      "crit": "63%",
+      "_note": "Stats with Joyaro (32), Longer Shell (29), Powerful Mark (28), Energising Turn (14) equipped"
     },
     "weapon_equipped": "Joyaro",
     "pictos_equipped": [
       "Longer Shell",
-      "Energising Turn",
-      "Sniper"
+      "Powerful Mark",
+      "Energising Turn"
     ],
-    "lp_total": 128,
-    "lp_used": 91,
+    "lp_total": 133,
+    "lp_used": 132,
     "lumina_core_exclusions": [
       {
         "name": "Energising Turn",
@@ -413,6 +404,14 @@
       {
         "name": "Staggering Attack",
         "notes": "Break damage on base attack — small break bar contribution"
+      },
+      {
+        "name": "Break Specialist",
+        "notes": "50% increased Break damage, 20% reduced base damage — net positive for break-focused role"
+      },
+      {
+        "name": "Cheater",
+        "notes": "Extra turn after skill — major AP and action efficiency boost"
       }
     ],
     "skills_equipped": [
