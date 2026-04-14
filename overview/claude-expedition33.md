@@ -61,6 +61,7 @@ Fetch that file only when reviewing specific past errors.
 - Colour of Lumina: 167
 - Recoats: 28
 - Chroma Catalysts: 67 standard, 65 polished, 83 resplendent, 17 grandiose, 2 perfect
+- Chroma: 1662993
 <!-- GENERATED:END -->
 
 ### LP totals

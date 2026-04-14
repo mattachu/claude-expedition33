@@ -18,7 +18,7 @@ reserve_party                string[]  Names of the two reserve party members
 inventory
   colour_of_lumina           int       Consumable — 1 per character per LP pool expansion
   recoats                    int       Consumable — used to reset attribute points
-  chromas                    int       Currency
+  chroma                     int       Currency
   chroma_catalyst            int       Weapon upgrade material (base tier)
   chroma_catalyst_polished   int
   chroma_catalyst_resplendent int
