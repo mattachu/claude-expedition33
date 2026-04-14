@@ -635,7 +635,10 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 30
+      "level": 30,
+      "stats": {
+        "health": 5591
+      }
     },
     {
       "name": "Cleansing Tint",
