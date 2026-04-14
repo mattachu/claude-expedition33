@@ -844,15 +844,18 @@ def generate_pictos_catalogue(pictos_lumina, out_path, dry_run=False):
         lines += [
             f'## {cat_name} ({len(entries)} Pictos, {obtained} obtained)',
             '',
-            ('|  | Name | Effect | LP | Equipped By | Also in |\n'
-             '|--|------|--------|----|-------------|---------|'),
+            ('|  | Name | Effect | LP | Stat boosts | Equipped By | Also in |\n'
+             '|--|------|--------|----|-------------|-------------|---------|'),
         ]
         for p in sorted(entries, key=lambda x: x['name']):
+            stats = ', '.join(f'{key.capitalize()}: {value}'
+                              for key, value in p.get('stats', {}).items())
             lines.append(
                 f'| {"✓" if p.get("obtained") else ""} '
                 f'| {p["name"]} '
                 f'| {p.get("effect", "")} '
                 f'| {p.get("lp_cost", "?")} '
+                f'| {stats} '
                 f'| {p.get("equipped_by") or ""} '
                 f'| {secondary_cats(p)} |'
             )

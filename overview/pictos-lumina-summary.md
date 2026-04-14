@@ -34,7 +34,65 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 
 ---
 
-## 3. Main Team Core Lumina Set
+## 3. Main Team Pictos
+
+### Maelle
+
+<!-- GENERATED:START characters:Maelle:Pictos -->
+| Slot | Pictos         | Level | Stat Bonus              | Effect                                             |
+|------|----------------|-------|-------------------------|----------------------------------------------------|
+| 1    | Burning Break  | 21    | Health +1541, Crit +24% | Apply 3 Burn stacks on Breaking a target.          |
+| 2    | Gradient Break | 25    | Speed +434, Crit +28%   | +50% of a Gradient Charge on Breaking a target.    |
+| 3    | Survivor       | 21    | Speed +439, Crit +12%   | Survive fatal damage with 1 Health once per battle |
+<!-- GENERATED:END -->
+
+### Verso
+
+<!-- GENERATED:START characters:Verso:Pictos -->
+| Slot | Pictos         | Level | Stat Bonus               | Effect                                        |
+|------|----------------|-------|--------------------------|-----------------------------------------------|
+| 1    | Breaking Death | 29    | Speed +586, Crit +33%    | Fully charge enemy break bar on death         |
+| 2    | Cheater        | 24    | Health +1198, Speed +400 | Extra turn after using a skill, once per turn |
+| 3    | Second Chance  | 16    | Health +1106, Crit +8%   | Revive with 100% Health. Once per battle.     |
+<!-- GENERATED:END -->
+
+### Sciel
+
+<!-- GENERATED:START characters:Sciel:Pictos -->
+| Slot | Pictos           | Level | Stat Bonus            | Effect                                       |
+|------|------------------|-------|-----------------------|----------------------------------------------|
+| 1    | Painter          | 28    | Speed +519, Crit +31% | Converts all Physical damage to Void damage. |
+| 2    | Energy Master    | 30    | Health +4979          | Every AP gain is increased by 1              |
+| 3    | Energising Shots | 28    | Speed +779, Crit +16% | 20% chance to gain 1 AP on Free Aim shot.    |
+<!-- GENERATED:END -->
+
+---
+
+## 4. Reserve Team Pictos
+
+### Lune
+
+<!-- GENERATED:START characters:Lune:Pictos -->
+| Slot | Pictos        | Level | Stat Bonus            | Effect                                     |
+|------|---------------|-------|-----------------------|--------------------------------------------|
+| 1    | Critical Burn | 25    | Speed +434, Crit +28% | 25% increased Crit rate on Burning enemies |
+| 2    | Burn Affinity | 21    | Speed +439, Crit +12% | 25% increased damage on Burning targets    |
+| 3    | Burning Death | 28    | Speed +546, Crit +32% | Apply 3 Burn to all enemies on death       |
+<!-- GENERATED:END -->
+
+### Monoco
+
+<!-- GENERATED:START characters:Monoco:Pictos -->
+| Slot | Pictos          | Level | Stat Bonus                  | Effect                                             |
+|------|-----------------|-------|-----------------------------|----------------------------------------------------|
+| 1    | Longer Shell    | 29    | Health +2757, Defence +1572 | On applying Shell, its duration is increased by 2. |
+| 2    | Powerful Mark   | 28    | Speed +819, Crit +16%       | Gain Powerful on hitting a Marked target.          |
+| 3    | Energising Turn | 14    | Speed +270                  | +1 AP on turn start.                               |
+<!-- GENERATED:END -->
+
+---
+
+## 5. Main Team Core Lumina Set
 
 <!-- GENERATED:START lumina:core:main -->
 **Total: 194 LP** — applied to Maelle, Verso, Sciel.
@@ -66,7 +124,7 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 
 ---
 
-## 4. Reserve Team Core Lumina Set
+## 6. Reserve Team Core Lumina Set
 
 <!-- GENERATED:START lumina:core:reserve -->
 **Total: 110 LP** — applied to Lune, Monoco.
@@ -94,7 +152,7 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 
 ---
 
-## 5. Situational Lumina
+## 7. Situational Lumina
 
 Add these as Lumina for specific boss fights — no need to change Pictos.
 
@@ -109,7 +167,7 @@ Add these as Lumina for specific boss fights — no need to change Pictos.
 
 ---
 
-## 6. Candidates for Future Review
+## 8. Candidates for Future Review
 
 <!-- GENERATED:START lumina:future -->
 | Lumina            | LP | Effect                                                     | Notes                                                                                    |
