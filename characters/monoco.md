@@ -56,10 +56,10 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 <!-- GENERATED:START characters:Monoco:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 82    |
+| Level     | 83    |
 | Agility   | 99    |
 | Defence   | 99    |
-| Luck      | 48    |
+| Luck      | 51    |
 | Vitality  | 0     |
 | Might     | 0     |
 <!-- GENERATED:END -->
@@ -67,15 +67,15 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 ### Combat Stats
 
 <!-- GENERATED:START characters:Monoco:stats -->
-*Stats with Joyaro (25), Longer Shell (29), Energising Turn (14), Sniper (23) equipped*
+*Stats with Joyaro (32), Longer Shell (29), Powerful Mark (28), Energising Turn (14) equipped*
 
-| Stat    | Base        | Modified |
-|---------|-------------|----------|
-| Health  | *[unknown]* | 4657     |
-| Attack  | *[unknown]* | 6605     |
-| Speed   | *[unknown]* | 2189     |
-| Defence | *[unknown]* | 2301     |
-| Crit    | *[unknown]* | 62%      |
+| Stat    | Base | Modified |
+|---------|------|----------|
+| Health  | 1930 | 4687     |
+| Attack  | 1038 | 6624     |
+| Speed   | 1112 | 2201     |
+| Defence | 729  | 2301     |
+| Crit    | 47%  | 63%      |
 <!-- GENERATED:END -->
 
 ---
@@ -84,7 +84,7 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 
 ### Current (Endgame)
 <!-- GENERATED:START weapons:Monoco:Joyaro -->
-- **Name:** Joyaro (25)
+- **Name:** Joyaro (32)
 - **Power:** 3934
 - **Element:** Lightning
 - **Scaling:** Agility A, Defence B
@@ -100,9 +100,11 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 <!-- GENERATED:START weapons:Monoco:Nusaro -->
 - **Name:** Nusaro (20)
 - **Power:** *[unknown]*
-- **Element:** *[unknown]*
-- **Scaling:** Agility A, Vitality B
+- **Element:** Moon
+- **Scaling:** Vitality B, Agility A
 - **Effects:**
+    - Level 4: Parries increase the Bestial Wheel by 1. Taking damage resets the Bestial Wheel.
+    - Level 10: Upgraded Skills deal 30% more damage.
     - Level 20: +1 AP on Mask change.
 <!-- GENERATED:END -->
 - **Notes:** Level 20: +1 AP on Mask change. Replaced by Joyaro after respec.
@@ -116,11 +118,11 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 ## Pictos
 
 <!-- GENERATED:START characters:Monoco:Pictos -->
-| Slot | Pictos          | Level | Stat Bonus                  | Effect                                                                   |
-|------|-----------------|-------|-----------------------------|--------------------------------------------------------------------------|
-| 1    | Longer Shell    | 29    | Health +2757, Defence +1572 | On applying Shell, its duration is increased by 2.                       |
-| 2    | Energising Turn | 14    | Speed +270                  | +1 AP on turn start.                                                     |
-| 3    | Sniper          | 23    | Speed +525, Crit +13%       | First Free Aim shot each turn deals 200% increased damage and can Break. |
+| Slot | Pictos          | Level | Stat Bonus                  | Effect                                             |
+|------|-----------------|-------|-----------------------------|----------------------------------------------------|
+| 1    | Longer Shell    | 29    | Health +2757, Defence +1572 | On applying Shell, its duration is increased by 2. |
+| 2    | Powerful Mark   | 28    | Speed +819, Crit +16%       | Gain Powerful on hitting a Marked target.          |
+| 3    | Energising Turn | 14    | Speed +270                  | +1 AP on turn start.                               |
 <!-- GENERATED:END -->
 
 Longer Shell's extension effect fires when Lune uses Healing Light (Protecting Heal Lumina applies Shell on heal).
@@ -135,32 +137,34 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 
 ### LP Budget
 <!-- GENERATED:START characters:Monoco:LP -->
-- **Current capacity:** 128 LP
-- **Used:** 91 LP
-- **Spare:** 37 LP
+- **Current capacity:** 133 LP
+- **Used:** 132 LP
+- **Spare:** 1 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Monoco:Lumina -->
-| Lumina             | LP | Notes                                                      |
-|--------------------|----|------------------------------------------------------------|
-| Base Shield        | 20 |                                                            |
-| Breaker            | 10 |                                                            |
-| Breaking Burn      | 5  |                                                            |
-| Breaking Counter   | 3  |                                                            |
-| Breaking Death     | 5  |                                                            |
-| Burning Shots      | 3  |                                                            |
-| Critical Break     | 5  |                                                            |
-| Dodger             | 1  |                                                            |
-| Energising Parry   | 15 |                                                            |
-| Energising Start I | 5  |                                                            |
-| Energising Turn    | —  | FREE from Energising Turn Pictos                           |
-| Marking Shots      | 3  |                                                            |
-| Painted Power      | 5  |                                                            |
-| Rewarding Mark     | 5  |                                                            |
-| Staggering Attack  | 1  | Break damage on base attack — small break bar contribution |
-| Teamwork           | 5  |                                                            |
+| Lumina             | LP | Notes                                                                                     |
+|--------------------|----|-------------------------------------------------------------------------------------------|
+| Base Shield        | 20 |                                                                                           |
+| Break Specialist   | 1  | 50% increased Break damage, 20% reduced base damage — net positive for break-focused role |
+| Breaker            | 10 |                                                                                           |
+| Breaking Burn      | 5  |                                                                                           |
+| Breaking Counter   | 3  |                                                                                           |
+| Breaking Death     | 5  |                                                                                           |
+| Burning Shots      | 3  |                                                                                           |
+| Cheater            | 40 | Extra turn after skill — major AP and action efficiency boost                             |
+| Critical Break     | 5  |                                                                                           |
+| Dodger             | 1  |                                                                                           |
+| Energising Parry   | 15 |                                                                                           |
+| Energising Start I | 5  |                                                                                           |
+| Energising Turn    | —  | FREE from Energising Turn Pictos                                                          |
+| Marking Shots      | 3  |                                                                                           |
+| Painted Power      | 5  |                                                                                           |
+| Rewarding Mark     | 5  |                                                                                           |
+| Staggering Attack  | 1  | Break damage on base attack — small break bar contribution                                |
+| Teamwork           | 5  |                                                                                           |
 <!-- GENERATED:END -->
 
 **Situational Lumina (add for specific boss fights):**

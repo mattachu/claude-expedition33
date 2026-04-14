@@ -36,10 +36,10 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 <!-- GENERATED:START characters:Sciel:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 82    |
+| Level     | 85    |
 | Agility   | 99    |
 | Luck      | 99    |
-| Defence   | 48    |
+| Defence   | 57    |
 | Vitality  | 0     |
 | Might     | 0     |
 <!-- GENERATED:END -->
@@ -47,15 +47,15 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 ### Combat Stats
 
 <!-- GENERATED:START characters:Sciel:stats -->
-*Stats with Litheson (32), Critical Burn (25), Energy Master (30), Quick Break (25) equipped*
+*Stats with Litheson (33), Painter (28), Energy Master (30), Energising Shots (28) equipped*
 
-| Stat    | Base        | Modified |
-|---------|-------------|----------|
-| Health  | *[unknown]* | 6879     |
-| Attack  | *[unknown]* | 5245     |
-| Speed   | *[unknown]* | 2014     |
-| Defence | *[unknown]* | 390      |
-| Crit    | *[unknown]* | 108%     |
+| Stat    | Base | Modified |
+|---------|------|----------|
+| Health  | 1989 | 6959     |
+| Attack  | 1075 | 8451     |
+| Speed   | 1168 | 2466     |
+| Defence | 449  | 449      |
+| Crit    | 54%  | 101%     |
 <!-- GENERATED:END -->
 
 *Critical Burn Pictos replaced Base Shield — restored intended turn order (Sciel faster than Maelle).*
@@ -69,7 +69,7 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 - **Name:** Litheson (33)
 - **Power:** 4226
 - **Element:** Physical
-- **Scaling:** Luck A, Agility B
+- **Scaling:** Luck S, Agility A
 - **Effects:**
     - Level 4: During Moon phase, all allies have Greater Rush. During Sun phase, all enemies have Greater Slow.
     - Level 10: During Twilight phase, all allies have Greater Rush AND all enemies have Greater Slow.
@@ -93,11 +93,11 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 ### Current (permanent loadout)
 
 <!-- GENERATED:START characters:Sciel:Pictos -->
-| Slot | Pictos        | Level | Stat Bonus            | Effect                                     |
-|------|---------------|-------|-----------------------|--------------------------------------------|
-| 1    | Critical Burn | 25    | Speed +434, Crit +28% | 25% increased Crit rate on Burning enemies |
-| 2    | Energy Master | 30    | Health +4979          | Every AP gain is increased by 1            |
-| 3    | Quick Break   | 25    | Speed +434, Crit +28% | Play again on Breaking a target.           |
+| Slot | Pictos           | Level | Stat Bonus            | Effect                                       |
+|------|------------------|-------|-----------------------|----------------------------------------------|
+| 1    | Painter          | 28    | Speed +519, Crit +31% | Converts all Physical damage to Void damage. |
+| 2    | Energy Master    | 30    | Health +4979          | Every AP gain is increased by 1              |
+| 3    | Energising Shots | 28    | Speed +779, Crit +16% | 20% chance to gain 1 AP on Free Aim shot.    |
 <!-- GENERATED:END -->
 
 ---
@@ -106,40 +106,39 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 ### LP Budget
 <!-- GENERATED:START characters:Sciel:LP -->
-- **Current capacity:** 176 LP
+- **Current capacity:** 179 LP
 - **Used:** 175 LP
-- **Spare:** 1 LP
+- **Spare:** 4 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Sciel:Lumina -->
-| Lumina              | LP | Notes                                                                                      |
-|---------------------|----|--------------------------------------------------------------------------------------------|
-| Accelerating Heal   | 5  | Rush on heal — synergy with Litheson AP generation                                         |
-| Base Shield         | 20 |                                                                                            |
-| Breaker             | 10 |                                                                                            |
-| Breaking Burn       | 5  |                                                                                            |
-| Breaking Counter    | 3  |                                                                                            |
-| Breaking Death      | 5  |                                                                                            |
-| Burning Shots       | 3  |                                                                                            |
-| Cheater             | 40 |                                                                                            |
-| Critical Break      | 5  |                                                                                            |
-| Dead Energy I       | 2  |                                                                                            |
-| Dead Energy II      | 2  |                                                                                            |
-| Dodger              | 1  |                                                                                            |
-| Energising Heal     | 10 | 2 AP on healing an ally — primary AP engine with Grim Harvest                              |
-| Energising Parry    | 15 |                                                                                            |
-| Energising Start I  | 5  |                                                                                            |
-| Energising Turn     | 20 | Main AP flow generator; boosted by Energy Master                                           |
-| Energy Master       | —  | FREE from Energy Master Pictos                                                             |
-| Healing Boon        | 10 | 15% HP on applying a buff — fires on Dark Cleansing propagation and Litheson phase changes |
-| Healing Tint Energy | 1  | 1 AP on Healing Tint use — small AP top-up                                                 |
-| Marking Shots       | 3  |                                                                                            |
-| Painted Power       | 5  | Essential for all characters from Act 3 onwards                                            |
-| Protecting Heal     | 5  | Shell on heal — enables Powerful On Shell via Lune Pictos                                  |
-| Rewarding Mark      | 5  |                                                                                            |
-| Teamwork            | 5  |                                                                                            |
+| Lumina              | LP | Notes                                                         |
+|---------------------|----|---------------------------------------------------------------|
+| Accelerating Heal   | 5  | Rush on heal — synergy with Litheson AP generation            |
+| Base Shield         | 20 |                                                               |
+| Breaker             | 10 |                                                               |
+| Breaking Burn       | 5  |                                                               |
+| Breaking Counter    | 3  |                                                               |
+| Breaking Death      | 5  |                                                               |
+| Burning Shots       | 3  |                                                               |
+| Cheater             | 40 |                                                               |
+| Critical Break      | 5  |                                                               |
+| Dead Energy I       | 2  |                                                               |
+| Dead Energy II      | 2  |                                                               |
+| Dodger              | 1  |                                                               |
+| Energising Heal     | 10 | 2 AP on healing an ally — primary AP engine with Grim Harvest |
+| Energising Parry    | 15 |                                                               |
+| Energising Start I  | 5  |                                                               |
+| Energising Turn     | 20 | Main AP flow generator; boosted by Energy Master              |
+| Energy Master       | —  | FREE from Energy Master Pictos                                |
+| Healing Tint Energy | 1  | 1 AP on Healing Tint use — small AP top-up                    |
+| Marking Shots       | 3  |                                                               |
+| Painted Power       | 5  | Essential for all characters from Act 3 onwards               |
+| Protecting Heal     | 5  | Shell on heal                                                 |
+| Rewarding Mark      | 5  |                                                               |
+| Teamwork            | 5  |                                                               |
 <!-- GENERATED:END -->
 
 *Burn Affinity Lumina removed — Burn Affinity Pictos replaced by Quick Break, effect no longer free.*

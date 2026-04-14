@@ -39,10 +39,10 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 <!-- GENERATED:START characters:Lune:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 78    |
+| Level     | 82    |
 | Vitality  | 99    |
 | Agility   | 99    |
-| Luck      | 36    |
+| Luck      | 48    |
 | Might     | 0     |
 | Defence   | 0     |
 <!-- GENERATED:END -->
@@ -50,15 +50,15 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 ### Combat Stats
 
 <!-- GENERATED:START characters:Lune:stats -->
-*Stats with Kralim (29), Powerful On Shell (23), Burn Affinity (21), Burning Death (21) equipped*
+*Stats with Kralim (32), Critical Burn (25), Burn Affinity (21), Burning Death (28) equipped*
 
-| Stat    | Base        | Modified |
-|---------|-------------|----------|
-| Health  | *[unknown]* | 4047     |
-| Attack  | *[unknown]* | 5401     |
-| Speed   | *[unknown]* | 1797     |
-| Defence | *[unknown]* | 1056     |
-| Crit    | *[unknown]* | 84%      |
+| Stat    | Base | Modified |
+|---------|------|----------|
+| Health  | 3289 | 3289     |
+| Attack  | 1019 | 6118     |
+| Speed   | 1100 | 2519     |
+| Defence | 182  | 182      |
+| Crit    | 28%  | 100%     |
 <!-- GENERATED:END -->
 
 ---
@@ -68,10 +68,10 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 ### Current (Endgame)
 
 <!-- GENERATED:START weapons:Lune:Kralim -->
-- **Name:** Kralim (29)
+- **Name:** Kralim (32)
 - **Power:** 4454
-- **Element:** *[unknown]*
-- **Scaling:** Vitality A, Agility B
+- **Element:** Lightning
+- **Scaling:** Agility A, Vitality B
 - **Effects:**
     - Level 4: Casting a Skill increases Skill damage of all other elements by +20%. Resets when casting a previously used element.
     - Level 10: On turn start, if no Stains, 2 random Stains generated.
@@ -87,7 +87,7 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 - **Scaling:** Vitality A, Luck B
 - **Effects:**
     - Level 4: 1 random stain on free-aim.
-    - Level 10: *[unknown]*
+    - Level 10: +1 AP when Stains are consumed.
     - Level 20: Base attack generates 2 random stains.
 <!-- GENERATED:END -->
 - **Notes:** Stain generation weapon, used with Mayhem. Replaced by Kralim for Genesis build.
@@ -96,10 +96,12 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 <!-- GENERATED:START weapons:Lune:Choralim -->
 - **Name:** Choralim (20)
 - **Power:** *[unknown]*
-- **Element:** *[unknown]*
-- **Scaling:** *[unknown]*
+- **Element:** Fire
+- **Scaling:** Defence A, Agility B
 - **Effects:**
-    - Level 4: 100% crit when 4 stains are active.
+    - Level 4: 100% Critical Chance when 4 Stains are simultaneously active.
+    - Level 10: 20% increased damage for each consecutive turn without taking damage. Can stack up to 5 times.
+    - Level 20: Critical hits apply Burn.
 <!-- GENERATED:END -->
 - **Notes:** Circular dependency as primary weapon; may serve as crit-maintenance layer once base 100% crit established. Role in endgame build needs clarification.
 
@@ -112,11 +114,11 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 ## Pictos
 
 <!-- GENERATED:START characters:Lune:Pictos -->
-| Slot | Pictos            | Level | Stat Bonus              | Effect                                  |
-|------|-------------------|-------|-------------------------|-----------------------------------------|
-| 1    | Powerful On Shell | 23    | Defence +874, Crit +25% | Apply Powerful on applying Shell.       |
-| 2    | Burn Affinity     | 21    | Speed +439, Crit +12%   | 25% increased damage on Burning targets |
-| 3    | Burning Death     | 21    | Speed +308, Crit +24%   | Apply 3 Burn to all enemies on death    |
+| Slot | Pictos        | Level | Stat Bonus            | Effect                                     |
+|------|---------------|-------|-----------------------|--------------------------------------------|
+| 1    | Critical Burn | 25    | Speed +434, Crit +28% | 25% increased Crit rate on Burning enemies |
+| 2    | Burn Affinity | 21    | Speed +439, Crit +12% | 25% increased damage on Burning targets    |
+| 3    | Burning Death | 28    | Speed +546, Crit +32% | Apply 3 Burn to all enemies on death       |
 <!-- GENERATED:END -->
 
 *Previous Pictos (Longer Shell, Healing Share, Powerful on Shell) replaced Chat 5. Longer Shell moved to Monoco; Healing Share retired.*
@@ -129,33 +131,33 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 
 ### LP Budget
 <!-- GENERATED:START characters:Lune:LP -->
-- **Current capacity:** 123 LP
+- **Current capacity:** 127 LP
 - **Used:** 120 LP
-- **Spare:** 3 LP
+- **Spare:** 7 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Lune:Lumina -->
-| Lumina             | LP | Notes                                                                        |
-|--------------------|----|------------------------------------------------------------------------------|
-| Accelerating Heal  | 5  | Rush on heal — synergy with Healing Light                                    |
-| Base Shield        | 20 |                                                                              |
-| Breaker            | 10 |                                                                              |
-| Breaking Burn      | 5  |                                                                              |
-| Breaking Counter   | 3  |                                                                              |
-| Breaking Death     | 5  |                                                                              |
-| Burning Shots      | 3  |                                                                              |
-| Critical Break     | 5  |                                                                              |
-| Dodger             | 1  |                                                                              |
-| Energising Parry   | 15 |                                                                              |
-| Energising Start I | 5  |                                                                              |
-| Energising Turn    | 20 |                                                                              |
-| Marking Shots      | 3  |                                                                              |
-| Painted Power      | 5  |                                                                              |
-| Protecting Heal    | 5  | Shell on heal — triggers Powerful On Shell Pictos and Longer Shell on Monoco |
-| Rewarding Mark     | 5  |                                                                              |
-| Teamwork           | 5  |                                                                              |
+| Lumina             | LP | Notes                                     |
+|--------------------|----|-------------------------------------------|
+| Accelerating Heal  | 5  | Rush on heal — synergy with Healing Light |
+| Base Shield        | 20 |                                           |
+| Breaker            | 10 |                                           |
+| Breaking Burn      | 5  |                                           |
+| Breaking Counter   | 3  |                                           |
+| Breaking Death     | 5  |                                           |
+| Burning Shots      | 3  |                                           |
+| Critical Break     | 5  |                                           |
+| Dodger             | 1  |                                           |
+| Energising Parry   | 15 |                                           |
+| Energising Start I | 5  |                                           |
+| Energising Turn    | 20 |                                           |
+| Marking Shots      | 3  |                                           |
+| Painted Power      | 5  |                                           |
+| Protecting Heal    | 5  | Shell on heal                             |
+| Rewarding Mark     | 5  |                                           |
+| Teamwork           | 5  |                                           |
 <!-- GENERATED:END -->
 
 ---

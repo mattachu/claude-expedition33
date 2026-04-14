@@ -57,10 +57,10 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 <!-- GENERATED:START characters:Verso:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 82    |
+| Level     | 86    |
 | Agility   | 99    |
 | Luck      | 99    |
-| Might     | 48    |
+| Might     | 60    |
 | Vitality  | 0     |
 | Defence   | 0     |
 <!-- GENERATED:END -->
@@ -68,15 +68,15 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ### Combat Stats
 
 <!-- GENERATED:START characters:Verso:stats -->
-*Stats with Chevalam (32), Breaking Death (29), Cheater (24), Second Chance (16) equipped*
+*Stats with Chevalam (33), Breaking Death (29), Cheater (24), Second Chance (16) equipped*
 
-| Stat    | Base        | Modified |
-|---------|-------------|----------|
-| Health  | *[unknown]* | 4205     |
-| Attack  | *[unknown]* | 6282     |
-| Speed   | *[unknown]* | 2132     |
-| Defence | *[unknown]* | 182      |
-| Crit    | *[unknown]* | 82%      |
+| Stat    | Base | Modified |
+|---------|------|----------|
+| Health  | 2019 | 4324     |
+| Attack  | 1205 | 10181    |
+| Speed   | 1176 | 2162     |
+| Defence | 182  | 182      |
+| Crit    | 41%  | 82%      |
 <!-- GENERATED:END -->
 
 ---
@@ -88,7 +88,7 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 - **Name:** Chevalam (33)
 - **Power:** 5173
 - **Element:** Physical
-- **Scaling:** Agility A, Luck B
+- **Scaling:** Agility S, Luck A
 - **Effects:**
     - Level 4: Start battle at Rank S, but can't be healed or gain Shields.
     - Level 10: 20% increased damage for each consecutive no-damage turn, stacks up to 5×.
@@ -121,9 +121,9 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 ### LP Budget
 <!-- GENERATED:START characters:Verso:LP -->
-- **Current capacity:** 194 LP
+- **Current capacity:** 198 LP
 - **Used:** 194 LP
-- **Spare:** 0 LP
+- **Spare:** 4 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
@@ -160,14 +160,14 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ## Skills
 
 <!-- GENERATED:START characters:Verso:skills -->
-**Currently equipped (6):** End Bringer, Light Holder, Marking Shot, Perfect Break, Quick Strike, Steeled Strike
+**Currently equipped (6):** End Bringer, Light Holder, Perfect Break, Phantom Stars, Quick Strike, Steeled Strike
 
 | Skill            | AP              | Rank Bonus                           | Equipped | Notes                                                                                    |
 |------------------|-----------------|--------------------------------------|----------|------------------------------------------------------------------------------------------|
 | End Bringer      | 8               | A: Can reapply stun on broken target | ✅        | Extreme Physical damage, 6 hits. Increased damage if target Stunned.                     |
 | Light Holder     | 4               | A: +2 AP                             | ✅        | Medium Light damage, 5 hits. Gains +1 Rank at completion.                                |
-| Marking Shot     | 2               | C: Increased damage                  | ✅        | Low damage + 100% Mark. No HP cost.                                                      |
 | Perfect Break    | 7 (5 at Rank B) | B: Reduced AP cost                   | ✅        | Very high Light damage. Can Break. Rank S on Break.                                      |
+| Phantom Stars    | 9 (5 at Rank S) | S: Reduced AP cost                   | ✅        | AoE multi-hit all enemies. Trash fights only — useless in 1v1.                           |
 | Quick Strike     | 2               | D: Gives more Perfection             | ✅        | Low Physical.                                                                            |
 | Steeled Strike   | 9               | S: Increased damage                  | ✅        | After 1 turn charge, extreme Physical damage. Interrupted if damage taken during charge. |
 | Assault Zero     | 3               | B: Increased damage                  | ❌        | Medium Physical single target.                                                           |
@@ -177,9 +177,9 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Defiant Strike   | 3               | B: Increased damage                  | ❌        | 2-hit Physical, 100% Mark. Costs 30% current HP.                                         |
 | From Fire        | 4               | B: Increased damage                  | ❌        | Healing from Burn. Situational — only useful if enemies have burn.                       |
 | Leadership       | 3               | C: +1 more AP to allies              | ❌        | Extra AP to all allies.                                                                  |
+| Marking Shot     | 2               | C: Increased damage                  | ❌        | Low damage + 100% Mark. No HP cost.                                                      |
 | Paradigm Shift   | 1               | C: Bonus only                        | ❌        | Generates 1–3 AP. C Rank: bonus only. NOT a rank jump to S.                              |
 | Perfect Recovery | 3               | C: 100% HP heal                      | ❌        | Heals Verso only. Non-functional with Chevalam.                                          |
-| Phantom Stars    | 9 (5 at Rank S) | S: Reduced AP cost                   | ❌        | AoE multi-hit all enemies. Trash fights only — useless in 1v1.                           |
 | Purification     | 5               | B: Increased damage                  | ❌        | Medium Light damage, 2 hits. Dispels self status effects.                                |
 | Strike Storm     | 7               | C: Crits give +2 Perfection          | ❌        | 5-hit high single-target weapon element.                                                 |
 <!-- GENERATED:END -->

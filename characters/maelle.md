@@ -54,10 +54,10 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 <!-- GENERATED:START characters:Maelle:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 83    |
+| Level     | 86    |
 | Agility   | 99    |
 | Luck      | 99    |
-| Might     | 51    |
+| Might     | 60    |
 | Vitality  | 0     |
 | Defence   | 0     |
 <!-- GENERATED:END -->
@@ -69,13 +69,13 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 <!-- GENERATED:START characters:Maelle:stats -->
 *Stats with Lithum (33), Burning Break (21), Gradient Break (25), Survivor (21) equipped*
 
-| Stat    | Base        | Modified |
-|---------|-------------|----------|
-| Health  | *[unknown]* | 3471     |
-| Attack  | *[unknown]* | 10436    |
-| Speed   | *[unknown]* | 2027     |
-| Defence | *[unknown]* | 182      |
-| Crit    | *[unknown]* | 105%     |
+| Stat    | Base | Modified |
+|---------|------|----------|
+| Health  | 2019 | 3560     |
+| Attack  | 1205 | 10653    |
+| Speed   | 1176 | 2049     |
+| Defence | 182  | 182      |
+| Crit    | 41%  | 105%     |
 <!-- GENERATED:END -->
 
 ---
@@ -123,36 +123,35 @@ Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina 
 
 ### LP Budget
 <!-- GENERATED:START characters:Maelle:LP -->
-- **Current capacity:** 196 LP
+- **Current capacity:** 199 LP
 - **Used:** 194 LP
-- **Spare:** 2 LP
+- **Spare:** 5 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Maelle:Lumina -->
-| Lumina              | LP | Notes                                                      |
-|---------------------|----|------------------------------------------------------------|
-| Base Shield         | 20 |                                                            |
-| Breaker             | 10 |                                                            |
-| Breaking Burn       | 5  |                                                            |
-| Breaking Counter    | 3  |                                                            |
-| Breaking Death      | 5  |                                                            |
-| Burning Shots       | 3  |                                                            |
-| Cheater             | 40 |                                                            |
-| Critical Break      | 5  |                                                            |
-| Dead Energy I       | 2  |                                                            |
-| Dead Energy II      | 2  |                                                            |
-| Dodger              | 1  |                                                            |
-| Energising Attack I | 10 | Added during solo build, kept — useful for Lithum rotation |
-| Energising Parry    | 15 |                                                            |
-| Energising Start I  | 5  |                                                            |
-| Energising Turn     | 20 | Main AP flow generator; boosted by Energy Master           |
-| Energy Master       | 40 |                                                            |
-| Marking Shots       | 3  |                                                            |
-| Painted Power       | 5  | Essential for all characters from Act 3 onwards            |
-| Rewarding Mark      | 5  |                                                            |
-| Teamwork            | 5  |                                                            |
+| Lumina             | LP | Notes                                            |
+|--------------------|----|--------------------------------------------------|
+| Base Shield        | 20 |                                                  |
+| Breaker            | 10 |                                                  |
+| Breaking Burn      | 5  |                                                  |
+| Breaking Counter   | 3  |                                                  |
+| Breaking Death     | 5  |                                                  |
+| Burning Shots      | 3  |                                                  |
+| Cheater            | 40 |                                                  |
+| Critical Break     | 5  |                                                  |
+| Dead Energy I      | 2  |                                                  |
+| Dead Energy II     | 2  |                                                  |
+| Dodger             | 1  |                                                  |
+| Energising Parry   | 15 |                                                  |
+| Energising Start I | 5  |                                                  |
+| Energising Turn    | 20 | Main AP flow generator; boosted by Energy Master |
+| Energy Master      | 40 |                                                  |
+| Marking Shots      | 3  |                                                  |
+| Painted Power      | 5  | Essential for all characters from Act 3 onwards  |
+| Rewarding Mark     | 5  |                                                  |
+| Teamwork           | 5  |                                                  |
 <!-- GENERATED:END -->
 
 ### Solo Build Swap (The Reacher)

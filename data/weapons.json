@@ -26,7 +26,7 @@
     },
     {
       "name": "Stalum",
-      "level": 23,
+      "level": 29,
       "power": null,
       "element": "Fire",
       "scaling": "Defence A, Luck B",
@@ -49,7 +49,7 @@
     },
     {
       "name": "Glaisum",
-      "level": 23,
+      "level": 29,
       "power": 3461,
       "element": "Physical",
       "scaling": "Defence A, Agility B",
@@ -91,12 +91,25 @@
     },
     {
       "name": "Battlum",
-      "level": 11,
+      "level": 28,
       "power": null,
-      "element": null,
-      "scaling": null,
+      "element": "Physical",
+      "scaling": "Defence A, Luck B",
       "obtained": true,
-      "effects": []
+      "effects": [
+        {
+          "level": 4,
+          "description": "Double Gradient generation while in Defensive Stance."
+        },
+        {
+          "level": 10,
+          "description": "If Stanceless, Base Attack switches to Defensive Stance."
+        },
+        {
+          "level": 20,
+          "description": "+5% of a Gradient Charge on Parry."
+        }
+      ]
     },
     {
       "name": "Brulerum",
@@ -196,6 +209,28 @@
       "scaling": null,
       "obtained": true,
       "effects": []
+    },
+    {
+      "name": "Facesum",
+      "level": 22,
+      "power": 2964,
+      "element": "Physical",
+      "scaling": "Vitality B, Luck A",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "In Offensive Stance, double the amount of Burn applied."
+        },
+        {
+          "level": 10,
+          "description": "50% increased Burn damage."
+        },
+        {
+          "level": 20,
+          "description": "Base Attack propagates Burn."
+        }
+      ]
     }
   ],
   "Verso": [
@@ -204,7 +239,7 @@
       "level": 33,
       "power": 5173,
       "element": "Physical",
-      "scaling": "Agility A, Luck B",
+      "scaling": "Agility S, Luck A",
       "obtained": true,
       "effects": [
         {
@@ -288,21 +323,29 @@
       "name": "Glaceso",
       "level": 29,
       "power": null,
-      "element": null,
-      "scaling": "Defence A, Luck B",
+      "element": "Ice",
+      "scaling": "Defence B, Luck A",
       "obtained": true,
       "rejected": true,
       "effects": [
         {
           "level": 4,
-          "description": "Quick Strike jumps to Rank B."
+          "description": "+1 Perfection on Critical hit."
+        },
+        {
+          "level": 10,
+          "description": "Self-Heal by 2% Health on dealing a Critical hit."
+        },
+        {
+          "level": 20,
+          "description": "Counterattack is always a Critical hit."
         }
       ],
       "notes": "Requires respec (Defence+Luck vs Agility+Luck). No forgiveness mechanic. Costs 2 Recoats net."
     },
     {
       "name": "Dualiso",
-      "level": 9,
+      "level": 28,
       "power": null,
       "element": "Lightning",
       "scaling": "Vitality A, Defence B",
@@ -366,9 +409,22 @@
       "level": 25,
       "power": null,
       "element": null,
-      "scaling": null,
+      "scaling": "Agility A, Luck B",
       "obtained": true,
-      "effects": []
+      "effects": [
+        {
+          "level": 4,
+          "description": "Can't lose Perfection. No damage increase from Rank."
+        },
+        {
+          "level": 10,
+          "description": "50% increased Base Attack damage."
+        },
+        {
+          "level": 20,
+          "description": "Base Attack gives 4 Perfection."
+        }
+      ]
     },
     {
       "name": "Cruleram",
@@ -399,12 +455,25 @@
     },
     {
       "name": "Abysseram",
-      "level": 10,
+      "level": 28,
       "power": null,
       "element": null,
-      "scaling": null,
+      "scaling": "Vitality A, Defence B",
       "obtained": true,
-      "effects": []
+      "effects": [
+        {
+          "level": 4,
+          "description": "50% increased damage on Rank D. No damage increase on other ranks."
+        },
+        {
+          "level": 10,
+          "description": "50% increased Base Attack damage."
+        },
+        {
+          "level": 20,
+          "description": "On Rank D, recover 20% Health with Base Attack."
+        }
+      ]
     },
     {
       "name": "Confuso",
@@ -476,7 +545,7 @@
       "level": 33,
       "power": 4226,
       "element": "Physical",
-      "scaling": "Luck A, Agility B",
+      "scaling": "Luck S, Agility A",
       "obtained": true,
       "effects": [
         {
@@ -516,7 +585,7 @@
     },
     {
       "name": "Chation",
-      "level": null,
+      "level": 28,
       "power": null,
       "element": null,
       "scaling": null,
@@ -542,10 +611,23 @@
       "level": null,
       "power": null,
       "element": null,
-      "scaling": null,
+      "scaling": "Vitality B, Luck A",
       "obtained": true,
       "rejected": true,
-      "effects": [],
+      "effects": [
+        {
+          "level": 4,
+          "description": "Can consume 1 Moon charge on turn start to recover 20% of each ally's Health."
+        },
+        {
+          "level": 10,
+          "description": "Base Attack gives 1 Moon charge."
+        },
+        {
+          "level": 20,
+          "description": "Moon Skills give one more charge."
+        }
+      ],
       "notes": "Passive heal does NOT trigger on-heal Lumina effects. Main support synergy inert."
     },
     {
@@ -574,15 +656,77 @@
       "rejected": true,
       "effects": [],
       "notes": "Lower power; scaling diverges from endgame."
+    },
+    {
+      "name": "Gobluson",
+      "level": 30,
+      "power": 4003,
+      "element": "Fire",
+      "scaling": "Defence A, Agility B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "During Twilight, every time Foretell is applied it also affects another random enemy."
+        },
+        {
+          "level": 10,
+          "description": "Apply 1 Burn every 3 Foretell applied with Skills."
+        },
+        {
+          "level": 20,
+          "description": "20% increased Fire damage with Skills."
+        }
+      ]
+    },
+    {
+      "name": "Minason",
+      "level": 22,
+      "power": 1998,
+      "element": "Physical",
+      "scaling": "Vitality B, Luck A",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Sun Skills have increased damage for each Foretell on the target. Moon Skills don't generate Moon charges anymore."
+        },
+        {
+          "level": 10,
+          "description": "With at least 1 active Sun charge, gain one additional AP per Foretell consumed."
+        },
+        {
+          "level": 20,
+          "description": "Base attack can consume 1 Sun charge to apply 5 Foretell."
+        }
+      ]
+    },
+    {
+      "name": "Blizzon",
+      "level": 14,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Corderon",
+      "level": 13,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
     }
   ],
   "Lune": [
     {
       "name": "Kralim",
-      "level": 29,
+      "level": 32,
       "power": 4454,
-      "element": null,
-      "scaling": "Vitality A, Agility B",
+      "element": "Lightning",
+      "scaling": "Agility A, Vitality B",
       "obtained": true,
       "effects": [
         {
@@ -615,7 +759,7 @@
         },
         {
           "level": 10,
-          "description": null
+          "description": "+1 AP when Stains are consumed."
         },
         {
           "level": 20,
@@ -628,14 +772,22 @@
       "name": "Choralim",
       "level": 20,
       "power": null,
-      "element": null,
-      "scaling": null,
+      "element": "Fire",
+      "scaling": "Defence A, Agility B",
       "obtained": true,
       "future": true,
       "effects": [
         {
           "level": 4,
-          "description": "100% crit when 4 stains are active."
+          "description": "100% Critical Chance when 4 Stains are simultaneously active."
+        },
+        {
+          "level": 10,
+          "description": "20% increased damage for each consecutive turn without taking damage. Can stack up to 5 times."
+        },
+        {
+          "level": 20,
+          "description": "Critical hits apply Burn."
         }
       ],
       "notes": "Circular dependency as primary weapon — needs base 100% crit from Luck+Pictos first. Role in endgame build needs clarification."
@@ -644,10 +796,23 @@
       "name": "Angerim",
       "level": 24,
       "power": null,
-      "element": null,
-      "scaling": null,
+      "element": "Fire",
+      "scaling": "Defence B, Luck A",
       "obtained": true,
-      "effects": []
+      "effects": [
+        {
+          "level": 4,
+          "description": "Base Attack applies 2 Burn per Fire Stain."
+        },
+        {
+          "level": 10,
+          "description": "Generate one Fire Stain at the beginning of each turn."
+        },
+        {
+          "level": 20,
+          "description": "30% increased Burn damage per Fire Stain."
+        }
+      ]
     },
     {
       "name": "Betelim",
@@ -662,10 +827,23 @@
       "name": "Benisim",
       "level": 28,
       "power": null,
-      "element": null,
-      "scaling": null,
+      "element": "Nature",
+      "scaling": "Vitality A, Defence B",
       "obtained": true,
-      "effects": []
+      "effects": [
+        {
+          "level": 4,
+          "description": "Healing Skills cost 1 less AP."
+        },
+        {
+          "level": 10,
+          "description": "Generate one Earth Stain at the beginning of each turn."
+        },
+        {
+          "level": 20,
+          "description": "Replay instantly on consuming Stains with a Healing Skill."
+        }
+      ]
     },
     {
       "name": "Braselim",
@@ -752,12 +930,25 @@
     },
     {
       "name": "Saperim",
-      "level": 14,
+      "level": 28,
       "power": null,
-      "element": null,
-      "scaling": null,
+      "element": "Lightning",
+      "scaling": "Defence A, Luck B",
       "obtained": true,
-      "effects": []
+      "effects": [
+        {
+          "level": 4,
+          "description": "Using a Gradient Attack generates 1 additional Light Stain."
+        },
+        {
+          "level": 10,
+          "description": "When a Fire Stain is generated, a Lightning Stain is also generated. Once per turn."
+        },
+        {
+          "level": 20,
+          "description": "Gradient Attacks and Gradient Counters deal 50% more damage."
+        }
+      ]
     },
     {
       "name": "Snowim",
@@ -770,18 +961,31 @@
     },
     {
       "name": "Troubadim",
-      "level": 15,
+      "level": 28,
       "power": null,
-      "element": null,
-      "scaling": null,
+      "element": "Physical",
+      "scaling": "Vitality B, Defence A",
       "obtained": true,
-      "effects": []
+      "effects": [
+        {
+          "level": 4,
+          "description": "Free Aim Shots deal damage to an additional random target."
+        },
+        {
+          "level": 10,
+          "description": "50% increased Free Aim damage."
+        },
+        {
+          "level": 20,
+          "description": "Generate a random Stain on Free Aim shot."
+        }
+      ]
     }
   ],
   "Monoco": [
     {
       "name": "Joyaro",
-      "level": 25,
+      "level": 32,
       "power": 3934,
       "element": "Lightning",
       "scaling": "Agility A, Defence B",
@@ -806,11 +1010,19 @@
       "name": "Nusaro",
       "level": 20,
       "power": null,
-      "element": null,
-      "scaling": "Agility A, Vitality B",
+      "element": "Moon",
+      "scaling": "Vitality B, Agility A",
       "obtained": true,
       "rejected": true,
       "effects": [
+        {
+          "level": 4,
+          "description": "Parries increase the Bestial Wheel by 1. Taking damage resets the Bestial Wheel."
+        },
+        {
+          "level": 10,
+          "description": "Upgraded Skills deal 30% more damage."
+        },
         {
           "level": 20,
           "description": "+1 AP on Mask change."
@@ -837,13 +1049,26 @@
       "effects": []
     },
     {
-      "name": "Grander",
+      "name": "Grandaro",
       "level": 21,
       "power": null,
-      "element": null,
-      "scaling": null,
+      "element": "Nature",
+      "scaling": "Vitality A, Defence B",
       "obtained": true,
-      "effects": []
+      "effects": [
+        {
+          "level": 4,
+          "description": "Start battle in Heavy Mask."
+        },
+        {
+          "level": 10,
+          "description": "Heavy Mask applies Shell for 3 turns."
+        },
+        {
+          "level": 20,
+          "description": "+1 AP per hit taken."
+        }
+      ]
     },
     {
       "name": "Monocaro",
@@ -860,10 +1085,23 @@
       "name": "Urnaro",
       "level": 20,
       "power": null,
-      "element": null,
-      "scaling": null,
+      "element": "Nature",
+      "scaling": "Vitality A, Luck B",
       "obtained": true,
-      "effects": []
+      "effects": [
+        {
+          "level": 4,
+          "description": "Switch to Almighty Mask on Breaking an enemy."
+        },
+        {
+          "level": 10,
+          "description": "Almighty Mask gives 2 AP to all allies."
+        },
+        {
+          "level": 20,
+          "description": "50% increased Break damage."
+        }
+      ]
     }
   ]
 }

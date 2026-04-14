@@ -4,11 +4,11 @@
 
 See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) for Pictos and Lumina currently in use.
 
-**194 Pictos total.** 133 obtained.
+**194 Pictos total.** 141 obtained.
 
 ---
 
-## AP and Energy (32 Pictos, 24 obtained)
+## AP and Energy (32 Pictos, 26 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
 |--|------|--------|----|-------------|---------|
@@ -33,12 +33,12 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Energising Revive | +3 AP to all allies when revived. | 5 |  |  |
 |  | Energising Rush | Give 2 AP on applying Rush. | 10 |  |  |
 | ✓ | Energising Shell | Give 2 AP on applying Shell. | 10 |  |  |
-|  | Energising Shots | 20% chance to gain 1 AP on Free Aim shot. | None |  | shots |
+| ✓ | Energising Shots | 20% chance to gain 1 AP on Free Aim shot. | 10 | Sciel | shots |
 | ✓ | Energising Start I | +1 AP on battle start. | 5 |  |  |
 | ✓ | Energising Start II | +1 AP on battle start. | 10 |  |  |
 | ✓ | Energising Start III | +1 AP on battle start. | 15 |  |  |
 | ✓ | Energising Start IV | +1 AP on battle start. | 20 |  |  |
-|  | Energising Stun | +1 AP on hitting a Stunned target with a Skill. | 10 |  |  |
+| ✓ | Energising Stun | +1 AP on hitting a Stunned target with a Skill. | 10 |  |  |
 | ✓ | Energising Turn | +1 AP on turn start. | 20 | Monoco |  |
 | ✓ | Energy Master | Every AP gain is increased by 1 | 40 | Sciel |  |
 | ✓ | Perilous Parry | +1 AP on Parry, but damage received is doubled. | 5 |  |  |
@@ -47,11 +47,11 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Break (13 Pictos, 8 obtained)
+## Break (13 Pictos, 9 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
 |--|------|--------|----|-------------|---------|
-|  | Break Specialist | Break damage is increased by 50%, but base damage is reduced by 20%. | 1 |  |  |
+| ✓ | Break Specialist | Break damage is increased by 50%, but base damage is reduced by 20%. | 1 |  |  |
 | ✓ | Breaker | 25% increased Break damage. | 10 |  |  |
 |  | Breaking Attack | Base Attack can Break. | 10 |  |  |
 | ✓ | Breaking Burn | 25% increased Break damage on Burning enemies. | 5 |  |  |
@@ -62,7 +62,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Fueling Break | Breaking a target also doubles its Burn amount. | 5 |  |  |
 | ✓ | Gradient Break | +50% of a Gradient Charge on Breaking a target. | 5 | Maelle | gradient |
 |  | Gradient Breaker | 50% increased Break damage with Gradient Attacks. | 5 |  | gradient |
-| ✓ | Quick Break | Play again on Breaking a target. | 3 | Sciel |  |
+| ✓ | Quick Break | Play again on Breaking a target. | 3 |  |  |
 | ✓ | Staggering Attack | 50% increased Break damage on Base Attack. | 1 |  |  |
 
 ---
@@ -76,7 +76,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Burning Death | Apply 3 Burn to all enemies on death | 5 | Lune | death |
 | ✓ | Burning Mark | Apply Burn on hitting a Marked enemy. | 15 |  | mark |
 | ✓ | Burning Shots | 20% chance to Burn on Free Aim shot. | 3 |  | shots |
-| ✓ | Critical Burn | 25% increased Crit rate on Burning enemies | 5 | Sciel |  |
+| ✓ | Critical Burn | 25% increased Crit rate on Burning enemies | 5 | Lune |  |
 | ✓ | Double Burn | On applying a Burn stack, apply a second one. | 30 |  |  |
 |  | Longer Burn | Burn duration is increased by 2. | 15 |  |  |
 
@@ -94,7 +94,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Damage Modifiers (30 Pictos, 21 obtained)
+## Damage Modifiers (30 Pictos, 22 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
 |--|------|--------|----|-------------|---------|
@@ -107,7 +107,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Augmented First Strike | 50% increased damage on the first hit. Once per battle. | 5 |  |  |
 | ✓ | Confident Fighter | 30% increased damage, but cannot be healed. | 15 |  |  |
 | ✓ | Empowering Attack | Gain Powerful for 1 turn on Base Attack. | 10 |  |  |
-|  | Empowering Break | Gain Powerful on Breaking a target. | 3 |  |  |
+| ✓ | Empowering Break | Gain Powerful on Breaking a target. | 3 |  |  |
 | ✓ | Empowering Dodge | 5% increased damage per consecutive dodge, stacks up to 10 | 5 |  |  |
 |  | Empowering Parry | Each successful Parry increases damage by 5% until end of the following turn. Taking any damage removes this buff. | 5 |  |  |
 | ✓ | Empowering Tint | Healing Tints also apply Powerful. | 5 |  | support |
@@ -143,11 +143,11 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Gradient Charge (9 Pictos, 1 obtained)
+## Gradient Charge (9 Pictos, 2 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
 |--|------|--------|----|-------------|---------|
-|  | Charging Alteration | +10% of a Gradient Charge on applying a Buff. Once per turn. | 10 |  |  |
+| ✓ | Charging Alteration | +10% of a Gradient Charge on applying a Buff. Once per turn. | 10 |  |  |
 |  | Charging Attack | +15% of a Gradient Charge on Base Attack. | 7 |  |  |
 |  | Charging Burn | +20% of a Gradient Charge on applying Burn. Once per turn. | 10 |  |  |
 |  | Charging Counter | +10% of a Gradient Charge on Counterattack. | 10 |  |  |
@@ -159,12 +159,12 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Healing (14 Pictos, 13 obtained)
+## Healing (14 Pictos, 14 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
 |--|------|--------|----|-------------|---------|
 | ✓ | Attack Lifesteal | Recover 15% Health on Base Attack. | 15 |  |  |
-|  | Clea's Life | On turn start, if no damage taken since last turn, recover 100% Health. | 30 |  |  |
+| ✓ | Clea's Life | On turn start, if no damage taken since last turn, recover 100% Health. | 30 |  |  |
 | ✓ | Effective Heal | Double all Heals received. | 30 |  |  |
 | ✓ | Healing Boon | Heal 15% HP on applying a buff | 10 |  |  |
 | ✓ | Healing Counter | Recover 25% Health on Counterattack. | 10 |  |  |
@@ -180,7 +180,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Mark (6 Pictos, 2 obtained)
+## Mark (6 Pictos, 3 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
 |--|------|--------|----|-------------|---------|
@@ -188,7 +188,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Enfeebling Mark | Marked targets deal 30% less damage. | 10 |  |  |
 |  | Marking Break | Apply Mark on Break. | 5 |  |  |
 | ✓ | Marking Shots | 20% chance to apply Mark on Free Aim shot. | 3 |  | shots |
-|  | Powerful Mark | Gain Powerful on hitting a Marked target. | 5 |  |  |
+| ✓ | Powerful Mark | Gain Powerful on hitting a Marked target. | 5 | Monoco |  |
 |  | Stay Marked | 50% chance to apply Mark when attacking a Marked target. | 10 |  |  |
 
 ---
@@ -204,7 +204,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 |  | Faster Than Strong | Always play twice in a row, but deal 50% less damage. | 10 |  |  |
 | ✓ | First Strike | Play first. | 10 |  |  |
 | ✓ | Piercing Shot | 25% increased Free Aim damage. Free Aim shots ignore Shields. | 2 |  | shots |
-| ✓ | Sniper | First Free Aim shot each turn deals 200% increased damage and can Break. | 15 | Monoco | shots |
+| ✓ | Sniper | First Free Aim shot each turn deals 200% increased damage and can Break. | 15 |  | shots |
 | ✓ | Versatile | After a Free Aim hit, Base Attack damage is increased by 50% for 1 turn. | 5 |  |  |
 
 ---
@@ -274,7 +274,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Longer Powerful | On applying Powerful, its duration is increased by 2. | 10 |  |  |
 | ✓ | Longer Rush | On applying Rush, its duration is increased by 2. | 10 |  |  |
 |  | Powerful Heal | Healing an ally also applies Powerful for 1 turn. | 5 |  |  |
-| ✓ | Powerful On Shell | Apply Powerful on applying Shell. | 10 | Lune |  |
+| ✓ | Powerful On Shell | Apply Powerful on applying Shell. | 10 |  |  |
 | ✓ | Powerful Revive | Apply Powerful for 3 turns when revived. | 3 |  |  |
 | ✓ | Powerful Shots | 20% chance to gain Powerful on Free Aim shot. | 3 |  | shots |
 | ✓ | Protecting Heal | Healing an ally also applies Shell for 1 turn. | 5 |  |  |
@@ -290,11 +290,11 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Miscellaneous (3 Pictos, 0 obtained)
+## Miscellaneous (3 Pictos, 1 obtained)
 
 |  | Name | Effect | LP | Equipped By | Also in |
 |--|------|--------|----|-------------|---------|
-|  | Painter | Converts all Physical damage to Void damage. | 10 |  |  |
+| ✓ | Painter | Converts all Physical damage to Void damage. | 10 | Sciel |  |
 |  | Pro Retreat | Allows Flee to be instantaneous. | 40 |  |  |
 |  | The One | Max Health reduced to 1. | 1 |  |  |
 

@@ -1,5 +1,5 @@
 {
-  "_notes": "Definitive Pictos/Lumina reference. 194 entries from Fandom wiki merged with player data. JSON is source of truth \u2014 generate Markdown via scripts.",
+  "_notes": "Definitive Pictos/Lumina reference. 194 entries from Fandom wiki merged with player data. JSON is source of truth — generate Markdown via scripts.",
   "pictos": [
     {
       "name": "Accelerating Heal",
@@ -87,10 +87,10 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 22,
+      "level": 29,
       "stats": {
-        "health": 1602,
-        "defence": 801
+        "health": 2757,
+        "defence": 1572
       }
     },
     {
@@ -192,7 +192,11 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 10
+      "level": 28,
+      "stats": {
+        "health": 4058,
+        "crit": "16%"
+      }
     },
     {
       "name": "Augmented Counter II",
@@ -307,7 +311,7 @@
         "speed": 399,
         "crit": "11%"
       },
-      "notes": "Moved to Lumina this session \u2014 Pictos slot freed"
+      "notes": "Moved to Lumina this session — Pictos slot freed"
     },
     {
       "name": "Beneficial Contamination",
@@ -327,9 +331,14 @@
       ],
       "effect": "Break damage is increased by 50%, but base damage is reduced by 20%.",
       "lp_cost": 1,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 28,
+      "stats": {
+        "health": 2705,
+        "speed": 546
+      }
     },
     {
       "name": "Breaker",
@@ -461,10 +470,10 @@
       "obtained": true,
       "equipped_by": "Lune",
       "lumina_learned": false,
-      "level": 21,
+      "level": 28,
       "stats": {
-        "speed": 308,
-        "crit": "24%"
+        "speed": 546,
+        "crit": "32%"
       }
     },
     {
@@ -500,9 +509,14 @@
       ],
       "effect": "+10% of a Gradient Charge on applying a Buff. Once per turn.",
       "lp_cost": 10,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 28,
+      "stats": {
+        "defence": 1426,
+        "speed": 519
+      }
     },
     {
       "name": "Charging Attack",
@@ -618,9 +632,10 @@
       ],
       "effect": "On turn start, if no damage taken since last turn, recover 100% Health.",
       "lp_cost": 30,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 30
     },
     {
       "name": "Cleansing Tint",
@@ -632,7 +647,11 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 15
+      "level": 15,
+      "stats": {
+        "health": 818,
+        "defence": 335
+      }
     },
     {
       "name": "Combo Attack I",
@@ -721,7 +740,7 @@
       "effect": "25% increased Crit rate on Burning enemies",
       "lp_cost": 5,
       "obtained": true,
-      "equipped_by": "Sciel",
+      "equipped_by": "Lune",
       "lumina_learned": false,
       "level": 25,
       "stats": {
@@ -784,7 +803,11 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 15
+      "level": 15,
+      "stats": {
+        "speed": 162,
+        "crit": "17%"
+      }
     },
     {
       "name": "Dead Energy II",
@@ -915,9 +938,14 @@
       ],
       "effect": "Gain Powerful on Breaking a target.",
       "lp_cost": 3,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 28,
+      "stats": {
+        "speed": 546,
+        "crit": "32%"
+      }
     },
     {
       "name": "Empowering Dodge",
@@ -934,7 +962,7 @@
         "speed": 162,
         "crit": "17%"
       },
-      "notes": "Reset behaviour on parry unconfirmed \u2014 test empirically"
+      "notes": "Reset behaviour on parry unconfirmed — test empirically"
     },
     {
       "name": "Empowering Last Stand",
@@ -1029,7 +1057,11 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 22
+      "level": 22,
+      "stats": {
+        "defence": 401,
+        "speed": 321
+      }
     },
     {
       "name": "Energising Cleanse",
@@ -1103,7 +1135,11 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 15
+      "level": 28,
+      "stats": {
+        "health": 3855,
+        "defence": 713
+      }
     },
     {
       "name": "Energising Parry",
@@ -1174,10 +1210,15 @@
         "shots"
       ],
       "effect": "20% chance to gain 1 AP on Free Aim shot.",
-      "lp_cost": null,
-      "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "lp_cost": 10,
+      "obtained": true,
+      "equipped_by": "Sciel",
+      "lumina_learned": false,
+      "level": 28,
+      "stats": {
+        "speed": 779,
+        "crit": "16%"
+      }
     },
     {
       "name": "Energising Start I",
@@ -1234,9 +1275,14 @@
       ],
       "effect": "+1 AP on hitting a Stunned target with a Skill.",
       "lp_cost": 10,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 28,
+      "stats": {
+        "speed": 519,
+        "crit": "31%"
+      }
     },
     {
       "name": "Energising Turn",
@@ -1252,7 +1298,7 @@
       "stats": {
         "speed": 270
       },
-      "notes": "Stats incomplete \u2014 speed only recorded"
+      "notes": "Stats incomplete — speed only recorded"
     },
     {
       "name": "Energy Master",
@@ -1439,7 +1485,11 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 16
+      "level": 16,
+      "stats": {
+        "speed": 182,
+        "crit": "18%"
+      }
     },
     {
       "name": "Greater Defenceless",
@@ -1783,9 +1833,14 @@
       ],
       "effect": "Converts all Physical damage to Void damage.",
       "lp_cost": 10,
-      "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "obtained": true,
+      "equipped_by": "Sciel",
+      "lumina_learned": false,
+      "level": 28,
+      "stats": {
+        "speed": 519,
+        "crit": "31%"
+      }
     },
     {
       "name": "Perilous Parry",
@@ -1797,10 +1852,10 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 20,
+      "level": 28,
       "stats": {
-        "speed": 280,
-        "crit": "23%"
+        "speed": 546,
+        "crit": "32%"
       },
       "notes": "Not recommended for Matt."
     },
@@ -1847,9 +1902,14 @@
       ],
       "effect": "Gain Powerful on hitting a Marked target.",
       "lp_cost": 5,
-      "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "obtained": true,
+      "equipped_by": "Monoco",
+      "lumina_learned": false,
+      "level": 28,
+      "stats": {
+        "speed": 819,
+        "crit": "16%"
+      }
     },
     {
       "name": "Powerful Revive",
@@ -1861,7 +1921,11 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 8
+      "level": 28,
+      "stats": {
+        "speed": 546,
+        "crit": "32%"
+      }
     },
     {
       "name": "Powerful Shield",
@@ -1895,7 +1959,7 @@
       "effect": "Apply Powerful on applying Shell.",
       "lp_cost": 10,
       "obtained": true,
-      "equipped_by": "Lune",
+      "equipped_by": null,
       "lumina_learned": false,
       "level": 23,
       "stats": {
@@ -2000,7 +2064,7 @@
       "effect": "Play again on Breaking a target.",
       "lp_cost": 3,
       "obtained": true,
-      "equipped_by": "Sciel",
+      "equipped_by": null,
       "lumina_learned": false,
       "level": 25,
       "stats": {
@@ -2095,7 +2159,11 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 5
+      "level": 28,
+      "stats": {
+        "defence": 1501,
+        "crit": "32%"
+      }
     },
     {
       "name": "Rush On Powerful",
@@ -2267,7 +2335,7 @@
       "effect": "First Free Aim shot each turn deals 200% increased damage and can Break.",
       "lp_cost": 15,
       "obtained": true,
-      "equipped_by": "Monoco",
+      "equipped_by": null,
       "lumina_learned": false,
       "level": 23,
       "stats": {
@@ -2467,7 +2535,6 @@
           "name": "Base Shield",
           "lp": 20,
           "notes": "Verso: non-functional with Chevalam as L4 effect prevents shields"
-
         },
         {
           "name": "Energising Turn",
@@ -2633,34 +2700,34 @@
     {
       "name": "Energising Burn",
       "lp": 10,
-      "notes": "Consider when expanding core set \u2014 all characters have Burning Shots so fires regularly."
+      "notes": "Consider when expanding core set — all characters have Burning Shots so fires regularly."
     },
     {
       "name": "Empowering Dodge",
       "lp": 5,
-      "notes": "Test empirically before committing \u2014 reset on parry unconfirmed."
+      "notes": "Test empirically before committing — reset on parry unconfirmed."
     }
   ],
   "situational_lumina": [
     {
       "name": "Anti-Blight",
       "lp": 10,
-      "notes": "All characters \u2014 vs bosses applying Blight. Add as Lumina; no need to move Pictos."
+      "notes": "All characters — vs bosses applying Blight. Add as Lumina; no need to move Pictos."
     },
     {
       "name": "Anti-Burn",
       "lp": 15,
-      "notes": "All characters \u2014 vs bosses applying Burn regularly."
+      "notes": "All characters — vs bosses applying Burn regularly."
     },
     {
       "name": "Anti-Freeze",
       "lp": 15,
-      "notes": "All characters \u2014 vs bosses applying Freeze. LP cost unconfirmed."
+      "notes": "All characters — vs bosses applying Freeze. LP cost unconfirmed."
     },
     {
       "name": "Draining Cleanse",
       "lp": 15,
-      "notes": "Status effect prevention \u2014 1AP cost per use. High LP cost; situational."
+      "notes": "Status effect prevention — 1AP cost per use. High LP cost; situational."
     }
   ]
 }
