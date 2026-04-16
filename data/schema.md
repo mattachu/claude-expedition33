@@ -25,9 +25,17 @@ inventory
   chroma_catalyst_grandiose  int
   chroma_catalyst_perfect    int       Upgrades weapons to level 33 (max)
 
-current_phase_checklist
-  <key>                      bool      true = completed. Keys are snake_case content names.
-```
+current_phase_checklist      object[]  Ordered checklist for the current phase
+
+  id                         string    Unique stable identifier (snake_case)
+  label                      string    Display text (Markdown allowed)
+  
+  done                       bool      Completion state (leaf items only)
+
+  items                      object[]  Optional child checklist items (1 level nesting supported)
+    id                       string
+    label                    string
+    done                     bool
 
 ---
 

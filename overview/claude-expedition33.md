@@ -237,30 +237,35 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 
 ### Phase 3 — Late game (Level 75–80, before Renoir)
 
-<!-- GENERATED:START playthrough:phase_3_checklist -->
 - ✅ The Reacher (Maelle solo) → Lithum weapon, Maelle Level 7, Gustave resurrection path
 - ✅ Chromatic Braseleur (inside The Reacher)
 - ✅ Serpenphare (SE Boat Graveyard)
 - ✅ Flying Manor → Clea's Life Pictos, Perfect Chroma Catalyst
 - ✅ **Renoir (final boss)** — enter Lumière → fight at end of dungeon. *[Choose Maelle → "A Life to Paint" → Gustave returns]*. Self-nerf: enter with Gaulteram/Medalum, calibrate on earlier fights, add back before final save point.
-<!-- GENERATED:END -->
 
 ### Phase 4 — Post-game (Level 80+)
 
+<!-- GENERATED:START playthrough:current_phase_checklist -->
 - ⬜ Endless Tower floors 1–20 + Chromatic Eveque (good first post-game activity; also serves as level-up fallback if Flying Manor too hard)
 - ⬜ Dark Gestral Arena
-- ⬜ Hard chromatics: Gault, Reaper Cultist, Petank, Goblu, Aberration, Lampmaster
-- ⬜ Chromatic Bourgeon (Monolith)
-- ⬜ Chromatic Clair Obscur (Monolith Peak) → Combo Attack II Pictos
-- ⬜ Chromatic Echassier (Level 80–85+)
-- ⬜ Chromatic Pétank superboss
+- ⬜ Hard chromatics (0/12)
+  - ⬜ Chromatic Echassier (Level 80–85+)
+  - ⬜ Chromatic Gault
+  - ⬜ Chromatic Reaper Cultist
+  - ⬜ Chromatic Pétank (superboss)
+  - ⬜ Chromatic Goblu
+  - ⬜ Chromatic Aberration
+  - ⬜ Chromatic Lampmaster
+  - ⬜ Chromatic Bourgeon (Monolith)
+  - ⬜ Chromatic Clair Obscur (Monolith Peak) → Combo Attack II Pictos
+  - ⬜ Chromatic Creation (Renoir's Drafts)
+  - ⬜ Chromatic Barbasucette (Verso's Drafts)
+  - ⬜ Chromatic Franctale (Verso's Drafts)
 - ⬜ Renoir's Drafts (Level 80+, recommended 90+ for Simon) — hardest optional area; Aberrations, Bouchecliers, Contorsionnistes
 - ⬜ Purchase Charnon (89,884 Chromas, Renoir's Drafts merchant) — Sciel alternative endgame weapon
-- ⬜ Chromatic Creation (Renoir's Drafts)
 - ⬜ Verso's Drafts (DLC, Level 80+) — recommended after Renoir's Drafts; final boss (Root of All Evil) is hardest boss in game, reported to beat level 99 parties
-- ⬜ Chromatic Barbasucette (Verso's Drafts)
-- ⬜ Chromatic Franctale (Verso's Drafts)
 - ⬜ Endless Tower floors 21–33 + DLC bosses (Clea Unleashed, Simon the Divergent Star — accessed via Tower canvases after beating originals; added by Thank You Update, no ordering dependency with Verso's Drafts)
+<!-- GENERATED:END -->
 
 ---
 

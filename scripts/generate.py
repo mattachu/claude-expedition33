@@ -553,26 +553,40 @@ def gen_lumina_future(pictos_lumina, plu):
 
 
 def gen_phase_checklist(playthrough):
-    # Support both old and new key names
-    checklist = (playthrough.get('current_phase_checklist')
-                 or playthrough.get('phase_3_checklist', {}))
-
-    labels = {
-        'the_reacher': ('The Reacher (Maelle solo) → Lithum weapon, Maelle Level 7, '
-                        'Gustave resurrection path'),
-        'chromatic_braseleur': 'Chromatic Braseleur (inside The Reacher)',
-        'serpenphare': 'Serpenphare (SE Boat Graveyard)',
-        'flying_manor': ('Flying Manor → Clea\'s Life Pictos, Perfect Chroma Catalyst'),
-        'renoir': ('**Renoir (final boss)** — enter Lumière → fight at end of dungeon. '
-                   '*[Choose Maelle → "A Life to Paint" → Gustave returns]*. '
-                   'Self-nerf: enter with Gaulteram/Medalum, calibrate on earlier fights, '
-                   'add back before final save point.'),
-    }
+    checklist = playthrough.get('current_phase_checklist', [])
 
     lines = []
-    for key, done in checklist.items():
-        label = labels.get(key, key.replace('_', ' ').title())
-        lines.append(f'- {"✅" if done else "⬜"} {label}')
+
+    def render_item(item, indent=0):
+        prefix = '  ' * indent
+
+        # Group (has children)
+        if 'items' in item:
+            children = item.get('items', [])
+
+            total = len(children)
+            done_count = sum(1 for c in children if c.get('done', False))
+            done = (total > 0 and done_count == total)
+
+            # Parent line with progress
+            lines.append(
+                f'{prefix}- {"✅" if done else "⬜"} {item.get("label", item.get("id", ""))} ({done_count}/{total})'
+            )
+
+            # Render children
+            for child in children:
+                render_item(child, indent + 1)
+
+        # Leaf item
+        else:
+            done = item.get('done', False)
+            lines.append(
+                f'{prefix}- {"✅" if done else "⬜"} {item.get("label", item.get("id", ""))}'
+            )
+
+    for item in checklist:
+        render_item(item)
+
     return '\n'.join(lines) + '\n'
 
 

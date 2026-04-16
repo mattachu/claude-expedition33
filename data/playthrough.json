@@ -14,11 +14,54 @@
     "chroma_catalyst_grandiose": 17,
     "chroma_catalyst_perfect": 2
   },
-  "current_phase_checklist": {
-    "the_reacher": true,
-    "chromatic_braseleur": true,
-    "serpenphare": true,
-    "flying_manor": true,
-    "renoir": true
-  }
+  "current_phase_checklist": [
+    {
+      "id": "endless_tower_1_20",
+      "label": "Endless Tower floors 1–20 + Chromatic Eveque (good first post-game activity; also serves as level-up fallback if Flying Manor too hard)",
+      "done": false
+    },
+    {
+      "id": "dark_gestral_arena",
+      "label": "Dark Gestral Arena",
+      "done": false
+    },
+    {
+      "id": "hard_chromatics",
+      "label": "Hard chromatics",
+      "items": [
+        { "id": "echassier", "label": "Chromatic Echassier (Level 80–85+)", "done": false },
+        { "id": "gault", "label": "Chromatic Gault", "done": false },
+        { "id": "reaper_cultist", "label": "Chromatic Reaper Cultist", "done": false },
+        { "id": "petank", "label": "Chromatic Pétank (superboss)", "done": false },
+        { "id": "goblu", "label": "Chromatic Goblu", "done": false },
+        { "id": "aberration", "label": "Chromatic Aberration", "done": false },
+        { "id": "lampmaster", "label": "Chromatic Lampmaster", "done": false },
+        { "id": "bourgeon", "label": "Chromatic Bourgeon (Monolith)", "done": false },
+        { "id": "clair_obscur", "label": "Chromatic Clair Obscur (Monolith Peak) → Combo Attack II Pictos", "done": false },
+        { "id": "creation", "label": "Chromatic Creation (Renoir's Drafts)", "done": false },
+        { "id": "barbasucette", "label": "Chromatic Barbasucette (Verso's Drafts)", "done": false },
+        { "id": "franctale", "label": "Chromatic Franctale (Verso's Drafts)", "done": false }
+      ]
+    },
+    {
+      "id": "renoirs_drafts",
+      "label": "Renoir's Drafts (Level 80+, recommended 90+ for Simon) — hardest optional area; Aberrations, Bouchecliers, Contorsionnistes",
+      "done": false
+    },
+    {
+      "id": "purchase_charnon",
+      "label": "Purchase Charnon (89,884 Chromas, Renoir's Drafts merchant) — Sciel alternative endgame weapon",
+      "done": false
+    },
+    {
+      "id": "versos_drafts",
+      "label": "Verso's Drafts (DLC, Level 80+) — recommended after Renoir's Drafts; final boss (Root of All Evil) is hardest boss in game, reported to beat level 99 parties",
+      "done": false
+    },
+    {
+      "id": "endless_tower_21_33",
+      "label": "Endless Tower floors 21–33 + DLC bosses (Clea Unleashed, Simon the Divergent Star — accessed via Tower canvases after beating originals; added by Thank You Update, no ordering dependency with Verso's Drafts)",
+      "done": false
+    }
+  ]
 }
