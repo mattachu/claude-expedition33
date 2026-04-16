@@ -242,7 +242,7 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 - ✅ Chromatic Braseleur (inside The Reacher)
 - ✅ Serpenphare (SE Boat Graveyard)
 - ✅ Flying Manor → Clea's Life Pictos, Perfect Chroma Catalyst
-- ⬜ **Renoir (final boss)** — enter Lumière → fight at end of dungeon. *[Choose Maelle → "A Life to Paint" → Gustave returns]*. Self-nerf: enter with Gaulteram/Medalum, calibrate on earlier fights, add back before final save point.
+- ✅ **Renoir (final boss)** — enter Lumière → fight at end of dungeon. *[Choose Maelle → "A Life to Paint" → Gustave returns]*. Self-nerf: enter with Gaulteram/Medalum, calibrate on earlier fights, add back before final save point.
 <!-- GENERATED:END -->
 
 ### Phase 4 — Post-game (Level 80+)
