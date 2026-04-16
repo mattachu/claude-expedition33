@@ -239,9 +239,9 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 
 <!-- GENERATED:START playthrough:phase_3_checklist -->
 - ✅ The Reacher (Maelle solo) → Lithum weapon, Maelle Level 7, Gustave resurrection path
-- ✅ Chromatic Braseleur (inside The Reacher) — complete (easy)
+- ✅ Chromatic Braseleur (inside The Reacher)
 - ✅ Serpenphare (SE Boat Graveyard)
-- ✅ Flying Manor (if too difficult at current level, use Endless Tower floors 1–20 first) → Clea's Life Pictos, Perfect Chroma Catalyst
+- ✅ Flying Manor → Clea's Life Pictos, Perfect Chroma Catalyst
 - ⬜ **Renoir (final boss)** — enter Lumière → fight at end of dungeon. *[Choose Maelle → "A Life to Paint" → Gustave returns]*. Self-nerf: enter with Gaulteram/Medalum, calibrate on earlier fights, add back before final save point.
 <!-- GENERATED:END -->
 

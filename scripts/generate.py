@@ -560,10 +560,9 @@ def gen_phase_checklist(playthrough):
     labels = {
         'the_reacher': ('The Reacher (Maelle solo) → Lithum weapon, Maelle Level 7, '
                         'Gustave resurrection path'),
-        'chromatic_braseleur': 'Chromatic Braseleur (inside The Reacher) — complete (easy)',
+        'chromatic_braseleur': 'Chromatic Braseleur (inside The Reacher)',
         'serpenphare': 'Serpenphare (SE Boat Graveyard)',
-        'flying_manor': ('Flying Manor (if too difficult at current level, use Endless Tower '
-                         'floors 1–20 first) → Clea\'s Life Pictos, Perfect Chroma Catalyst'),
+        'flying_manor': ('Flying Manor → Clea\'s Life Pictos, Perfect Chroma Catalyst'),
         'renoir': ('**Renoir (final boss)** — enter Lumière → fight at end of dungeon. '
                    '*[Choose Maelle → "A Life to Paint" → Gustave returns]*. '
                    'Self-nerf: enter with Gaulteram/Medalum, calibrate on earlier fights, '
