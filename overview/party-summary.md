@@ -19,11 +19,11 @@
 | Crit    | 41%  | 105%     |
 
 
-| Pictos         | Level | Stats                   |
-|----------------|-------|-------------------------|
-| Burning Break  | 21    | Health +1541, Crit +24% |
-| Gradient Break | 25    | Speed +434, Crit +28%   |
-| Survivor       | 21    | Speed +439, Crit +12%   |
+| Pictos           | Level | Stats                 |
+|------------------|-------|-----------------------|
+| Clea's Life      | 30    | Health +5591          |
+| Empowering Break | 28    | Speed +546, Crit +32% |
+| Gradient Break   | 25    | Speed +434, Crit +28% |
 
 
 **Lumina loadout:**
@@ -48,9 +48,10 @@
 | Marking Shots      | 3  |                                                  |
 | Painted Power      | 5  | Essential for all characters from Act 3 onwards  |
 | Rewarding Mark     | 5  |                                                  |
+| Second Chance      | 40 |                                                  |
 | Teamwork           | 5  |                                                  |
 
-**LP:** 194/199
+**LP:** 234/234
 
 ---
 
@@ -67,41 +68,39 @@
 | Crit    | 41%  | 82%      |
 
 
-| Pictos         | Level | Stats                    |
-|----------------|-------|--------------------------|
-| Breaking Death | 29    | Speed +586, Crit +33%    |
-| Cheater        | 24    | Health +1198, Speed +400 |
-| Second Chance  | 16    | Health +1106, Crit +8%   |
+| Pictos              | Level | Stats                   |
+|---------------------|-------|-------------------------|
+| Augmented Counter I | 28    | Health +4058, Crit +16% |
+| Breaking Death      | 29    | Speed +586, Crit +33%   |
+| Confident           | 29    | Speed +557, Crit +32%   |
 
 
 **Lumina loadout:**
 
-| Lumina             | LP | Notes                                                                 |
-|--------------------|----|-----------------------------------------------------------------------|
-| Breaker            | 10 |                                                                       |
-| Breaking Burn      | 5  |                                                                       |
-| Breaking Counter   | 3  |                                                                       |
-| Breaking Death     | —  | FREE from Breaking Death Pictos                                       |
-| Burning Shots      | 3  |                                                                       |
-| Cheater            | —  | FREE from Cheater Pictos                                              |
-| Confident          | 20 | 50% damage reduction — cost priced in via Chevalam L4 healing block   |
-| Confident Fighter  | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block   |
-| Critical Break     | 5  |                                                                       |
-| Dead Energy I      | 2  |                                                                       |
-| Dead Energy II     | 2  |                                                                       |
-| Dodger             | 1  |                                                                       |
-| Energising Parry   | 15 |                                                                       |
-| Energising Start I | 5  |                                                                       |
-| Energising Turn    | 20 | Main AP flow generator; boosted by Energy Master                      |
-| Energy Master      | 40 |                                                                       |
-| Enfeebling Mark    | 10 | Reduces damage from Marked targets — synergy with Verso's Mark skills |
-| Marking Shots      | 3  |                                                                       |
-| Painted Power      | 5  | Essential for all characters from Act 3 onwards                       |
-| Rewarding Mark     | 5  |                                                                       |
-| Survivor           | 20 | Buffer for Verso when he can't be healed                              |
-| Teamwork           | 5  |                                                                       |
+| Lumina             | LP | Notes                                                               |
+|--------------------|----|---------------------------------------------------------------------|
+| Breaker            | 10 |                                                                     |
+| Breaking Burn      | 5  |                                                                     |
+| Breaking Counter   | 3  |                                                                     |
+| Breaking Death     | —  | FREE from Breaking Death Pictos                                     |
+| Burning Shots      | 3  |                                                                     |
+| Cheater            | 40 |                                                                     |
+| Confident Fighter  | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block |
+| Critical Break     | 5  |                                                                     |
+| Dead Energy I      | 2  |                                                                     |
+| Dead Energy II     | 2  |                                                                     |
+| Dodger             | 1  |                                                                     |
+| Energising Parry   | 15 |                                                                     |
+| Energising Start I | 5  |                                                                     |
+| Energising Turn    | 20 | Main AP flow generator; boosted by Energy Master                    |
+| Energy Master      | 40 |                                                                     |
+| Marking Shots      | 3  |                                                                     |
+| Painted Power      | 5  | Essential for all characters from Act 3 onwards                     |
+| Rewarding Mark     | 5  |                                                                     |
+| Second Chance      | 40 |                                                                     |
+| Teamwork           | 5  |                                                                     |
 
-**LP:** 194/198
+**LP:** 224/224
 
 ---
 
@@ -151,9 +150,10 @@
 | Painted Power       | 5  | Essential for all characters from Act 3 onwards               |
 | Protecting Heal     | 5  | Shell on heal                                                 |
 | Rewarding Mark      | 5  |                                                               |
+| Second Chance       | 40 |                                                               |
 | Teamwork            | 5  |                                                               |
 
-**LP:** 175/179
+**LP:** 215/215
 
 ---
 
@@ -198,10 +198,11 @@
 | Marking Shots      | 3  |                                           |
 | Painted Power      | 5  |                                           |
 | Protecting Heal    | 5  | Shell on heal                             |
+| Recovery           | 10 |                                           |
 | Rewarding Mark     | 5  |                                           |
 | Teamwork           | 5  |                                           |
 
-**LP:** 120/127
+**LP:** 130/130
 
 ---
 
@@ -222,7 +223,7 @@
 |-----------------|-------|-----------------------------|
 | Longer Shell    | 29    | Health +2757, Defence +1572 |
 | Powerful Mark   | 28    | Speed +819, Crit +16%       |
-| Energising Turn | 14    | Speed +270                  |
+| Powerful Revive | 28    | Speed +546, Crit +32%       |
 
 
 **Lumina loadout:**
@@ -236,19 +237,20 @@
 | Breaking Counter   | 3  |                                                                                           |
 | Breaking Death     | 5  |                                                                                           |
 | Burning Shots      | 3  |                                                                                           |
-| Cheater            | 40 | Extra turn after skill — major AP and action efficiency boost                             |
 | Critical Break     | 5  |                                                                                           |
 | Dodger             | 1  |                                                                                           |
+| Energising Break   | 3  | Extra AP on breaking an enemy                                                             |
 | Energising Parry   | 15 |                                                                                           |
 | Energising Start I | 5  |                                                                                           |
-| Energising Turn    | —  | FREE from Energising Turn Pictos                                                          |
+| Energising Turn    | 20 |                                                                                           |
 | Marking Shots      | 3  |                                                                                           |
 | Painted Power      | 5  |                                                                                           |
+| Recovery           | 10 |                                                                                           |
 | Rewarding Mark     | 5  |                                                                                           |
 | Staggering Attack  | 1  | Break damage on base attack — small break bar contribution                                |
 | Teamwork           | 5  |                                                                                           |
 
-**LP:** 132/133
+**LP:** 125/133
 
 ---
 

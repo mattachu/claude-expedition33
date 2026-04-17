@@ -190,7 +190,7 @@
       "effect": "25% increased Counterattack damage.",
       "lp_cost": 3,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Verso",
       "lumina_learned": false,
       "level": 28,
       "stats": {
@@ -451,7 +451,7 @@
       "effect": "Apply 3 Burn stacks on Breaking a target.",
       "lp_cost": 3,
       "obtained": true,
-      "equipped_by": "Maelle",
+      "equipped_by": null,
       "lumina_learned": false,
       "level": 21,
       "stats": {
@@ -617,7 +617,7 @@
       "effect": "Extra turn after using a skill, once per turn",
       "lp_cost": 40,
       "obtained": true,
-      "equipped_by": "Verso",
+      "equipped_by": null,
       "lumina_learned": false,
       "level": 24,
       "stats": {
@@ -633,7 +633,7 @@
       "effect": "On turn start, if no damage taken since last turn, recover 100% Health.",
       "lp_cost": 30,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Maelle",
       "lumina_learned": false,
       "level": 30,
       "stats": {
@@ -698,7 +698,7 @@
       "effect": "Take 50% less damage, but can't be healed.",
       "lp_cost": 20,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Verso",
       "lumina_learned": false,
       "level": 29,
       "stats": {
@@ -942,7 +942,7 @@
       "effect": "Gain Powerful on Breaking a target.",
       "lp_cost": 3,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Maelle",
       "lumina_learned": false,
       "level": 28,
       "stats": {
@@ -1295,7 +1295,7 @@
       "effect": "+1 AP on turn start.",
       "lp_cost": 20,
       "obtained": true,
-      "equipped_by": "Monoco",
+      "equipped_by": null,
       "lumina_learned": false,
       "level": 14,
       "stats": {
@@ -1922,7 +1922,7 @@
       "effect": "Apply Powerful for 3 turns when revived.",
       "lp_cost": 3,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Monoco",
       "lumina_learned": false,
       "level": 28,
       "stats": {
@@ -2223,7 +2223,7 @@
       "effect": "Revive with 100% Health. Once per battle.",
       "lp_cost": 40,
       "obtained": true,
-      "equipped_by": "Verso",
+      "equipped_by": null,
       "lumina_learned": false,
       "level": 16,
       "stats": {
@@ -2414,7 +2414,7 @@
       "effect": "Survive fatal damage with 1 Health once per battle",
       "lp_cost": 20,
       "obtained": true,
-      "equipped_by": "Maelle",
+      "equipped_by": null,
       "lumina_learned": false,
       "level": 21,
       "stats": {
@@ -2523,7 +2523,7 @@
   ],
   "core_lumina_suite": {
     "main_team": {
-      "total_lp": 194,
+      "total_lp": 234,
       "entries": [
         {
           "name": "Painted Power",
@@ -2543,6 +2543,18 @@
           "name": "Energising Turn",
           "lp": 20,
           "notes": "Main AP flow generator; boosted by Energy Master"
+        },
+        {
+          "name": "Cheater",
+          "lp": 40
+        },
+        {
+          "name": "Energy Master",
+          "lp": 40
+        },
+        {
+          "name": "Second Chance",
+          "lp": 40
         },
         {
           "name": "Energising Parry",
@@ -2595,20 +2607,12 @@
         {
           "name": "Breaking Death",
           "lp": 5
-        },
-        {
-          "name": "Cheater",
-          "lp": 40
-        },
-        {
-          "name": "Energy Master",
-          "lp": 40
         }
       ],
       "notes": "Applied via in-game Lumina set."
     },
     "reserve_team": {
-      "total_lp": 110,
+      "total_lp": 120,
       "entries": [
         {
           "name": "Painted Power",
@@ -2625,6 +2629,10 @@
         {
           "name": "Energising Turn",
           "lp": 20
+        },
+        {
+          "name": "Recovery",
+          "lp": 10
         },
         {
           "name": "Energising Parry",
@@ -2671,7 +2679,7 @@
           "lp": 5
         }
       ],
-      "notes": "Main team core minus Cheater, Dead Energy I, Dead Energy II."
+      "notes": "Main team core minus Cheater, Dead Energy I, Dead Energy II, Second Chance; Plus Recovery."
     }
   },
   "candidates_for_review": [

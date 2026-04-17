@@ -39,21 +39,21 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 ### Maelle
 
 <!-- GENERATED:START characters:Maelle:Pictos -->
-| Slot | Pictos         | Level | Stat Bonus              | Effect                                             |
-|------|----------------|-------|-------------------------|----------------------------------------------------|
-| 1    | Burning Break  | 21    | Health +1541, Crit +24% | Apply 3 Burn stacks on Breaking a target.          |
-| 2    | Gradient Break | 25    | Speed +434, Crit +28%   | +50% of a Gradient Charge on Breaking a target.    |
-| 3    | Survivor       | 21    | Speed +439, Crit +12%   | Survive fatal damage with 1 Health once per battle |
+| Slot | Pictos           | Level | Stat Bonus            | Effect                                                                  |
+|------|------------------|-------|-----------------------|-------------------------------------------------------------------------|
+| 1    | Clea's Life      | 30    | Health +5591          | On turn start, if no damage taken since last turn, recover 100% Health. |
+| 2    | Empowering Break | 28    | Speed +546, Crit +32% | Gain Powerful on Breaking a target.                                     |
+| 3    | Gradient Break   | 25    | Speed +434, Crit +28% | +50% of a Gradient Charge on Breaking a target.                         |
 <!-- GENERATED:END -->
 
 ### Verso
 
 <!-- GENERATED:START characters:Verso:Pictos -->
-| Slot | Pictos         | Level | Stat Bonus               | Effect                                        |
-|------|----------------|-------|--------------------------|-----------------------------------------------|
-| 1    | Breaking Death | 29    | Speed +586, Crit +33%    | Fully charge enemy break bar on death         |
-| 2    | Cheater        | 24    | Health +1198, Speed +400 | Extra turn after using a skill, once per turn |
-| 3    | Second Chance  | 16    | Health +1106, Crit +8%   | Revive with 100% Health. Once per battle.     |
+| Slot | Pictos              | Level | Stat Bonus              | Effect                                     |
+|------|---------------------|-------|-------------------------|--------------------------------------------|
+| 1    | Augmented Counter I | 28    | Health +4058, Crit +16% | 25% increased Counterattack damage.        |
+| 2    | Breaking Death      | 29    | Speed +586, Crit +33%   | Fully charge enemy break bar on death      |
+| 3    | Confident           | 29    | Speed +557, Crit +32%   | Take 50% less damage, but can't be healed. |
 <!-- GENERATED:END -->
 
 ### Sciel
@@ -87,7 +87,7 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 |------|-----------------|-------|-----------------------------|----------------------------------------------------|
 | 1    | Longer Shell    | 29    | Health +2757, Defence +1572 | On applying Shell, its duration is increased by 2. |
 | 2    | Powerful Mark   | 28    | Speed +819, Crit +16%       | Gain Powerful on hitting a Marked target.          |
-| 3    | Energising Turn | 14    | Speed +270                  | +1 AP on turn start.                               |
+| 3    | Powerful Revive | 28    | Speed +546, Crit +32%       | Apply Powerful for 3 turns when revived.           |
 <!-- GENERATED:END -->
 
 ---
@@ -95,7 +95,7 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 ## 5. Main Team Core Lumina Set
 
 <!-- GENERATED:START lumina:core:main -->
-**Total: 194 LP** — applied to Maelle, Verso, Sciel.
+**Total: 234 LP** — applied to Maelle, Verso, Sciel.
 
 *Applied via in-game Lumina set.*
 
@@ -105,6 +105,9 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 | Teamwork           | 5  | 10% increased damage while all allies are alive.           |                                                                   |
 | Base Shield        | 20 | Grants 1 Shield HP buffer per turn                         | Verso: non-functional with Chevalam as L4 effect prevents shields |
 | Energising Turn    | 20 | +1 AP on turn start.                                       | Main AP flow generator; boosted by Energy Master                  |
+| Cheater            | 40 | Extra turn after using a skill, once per turn              |                                                                   |
+| Energy Master      | 40 | Every AP gain is increased by 1                            |                                                                   |
+| Second Chance      | 40 | Revive with 100% Health. Once per battle.                  |                                                                   |
 | Energising Parry   | 15 | +1 AP on successful Parry.                                 |                                                                   |
 | Energising Start I | 5  | +1 AP on battle start.                                     |                                                                   |
 | Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                 |                                                                   |
@@ -118,8 +121,6 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 | Breaking Burn      | 5  | 25% increased Break damage on Burning enemies.             |                                                                   |
 | Breaking Counter   | 3  | 50% increased Break damage on Counterattack.               |                                                                   |
 | Breaking Death     | 5  | Fully charge enemy break bar on death                      |                                                                   |
-| Cheater            | 40 | Extra turn after using a skill, once per turn              |                                                                   |
-| Energy Master      | 40 | Every AP gain is increased by 1                            |                                                                   |
 <!-- GENERATED:END -->
 
 ---
@@ -127,9 +128,9 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 ## 6. Reserve Team Core Lumina Set
 
 <!-- GENERATED:START lumina:core:reserve -->
-**Total: 110 LP** — applied to Lune, Monoco.
+**Total: 120 LP** — applied to Lune, Monoco.
 
-*Main team core minus Cheater, Dead Energy I, Dead Energy II.*
+*Main team core minus Cheater, Dead Energy I, Dead Energy II, Second Chance; Plus Recovery.*
 
 | Lumina             | LP | Effect                                                     |
 |--------------------|----|------------------------------------------------------------|
@@ -137,6 +138,7 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 | Teamwork           | 5  | 10% increased damage while all allies are alive.           |
 | Base Shield        | 20 | Grants 1 Shield HP buffer per turn                         |
 | Energising Turn    | 20 | +1 AP on turn start.                                       |
+| Recovery           | 10 | Recovers 10% Health on turn start.                         |
 | Energising Parry   | 15 | +1 AP on successful Parry.                                 |
 | Energising Start I | 5  | +1 AP on battle start.                                     |
 | Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                 |

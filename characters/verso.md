@@ -106,11 +106,11 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ## Pictos
 
 <!-- GENERATED:START characters:Verso:Pictos -->
-| Slot | Pictos         | Level | Stat Bonus               | Effect                                        |
-|------|----------------|-------|--------------------------|-----------------------------------------------|
-| 1    | Breaking Death | 29    | Speed +586, Crit +33%    | Fully charge enemy break bar on death         |
-| 2    | Cheater        | 24    | Health +1198, Speed +400 | Extra turn after using a skill, once per turn |
-| 3    | Second Chance  | 16    | Health +1106, Crit +8%   | Revive with 100% Health. Once per battle.     |
+| Slot | Pictos              | Level | Stat Bonus              | Effect                                     |
+|------|---------------------|-------|-------------------------|--------------------------------------------|
+| 1    | Augmented Counter I | 28    | Health +4058, Crit +16% | 25% increased Counterattack damage.        |
+| 2    | Breaking Death      | 29    | Speed +586, Crit +33%   | Fully charge enemy break bar on death      |
+| 3    | Confident           | 29    | Speed +557, Crit +32%   | Take 50% less damage, but can't be healed. |
 <!-- GENERATED:END -->
 
 **Breaking Death synergy:** On death → break bar fills instantly → Second Chance revives at Rank D → Perfect Break triggers break → Rank S in one move → Steeled Strike burst immediately active.
@@ -121,38 +121,36 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 ### LP Budget
 <!-- GENERATED:START characters:Verso:LP -->
-- **Current capacity:** 198 LP
-- **Used:** 194 LP
-- **Spare:** 4 LP
+- **Current capacity:** 224 LP
+- **Used:** 224 LP
+- **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Verso:Lumina -->
-| Lumina             | LP | Notes                                                                 |
-|--------------------|----|-----------------------------------------------------------------------|
-| Breaker            | 10 |                                                                       |
-| Breaking Burn      | 5  |                                                                       |
-| Breaking Counter   | 3  |                                                                       |
-| Breaking Death     | —  | FREE from Breaking Death Pictos                                       |
-| Burning Shots      | 3  |                                                                       |
-| Cheater            | —  | FREE from Cheater Pictos                                              |
-| Confident          | 20 | 50% damage reduction — cost priced in via Chevalam L4 healing block   |
-| Confident Fighter  | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block   |
-| Critical Break     | 5  |                                                                       |
-| Dead Energy I      | 2  |                                                                       |
-| Dead Energy II     | 2  |                                                                       |
-| Dodger             | 1  |                                                                       |
-| Energising Parry   | 15 |                                                                       |
-| Energising Start I | 5  |                                                                       |
-| Energising Turn    | 20 | Main AP flow generator; boosted by Energy Master                      |
-| Energy Master      | 40 |                                                                       |
-| Enfeebling Mark    | 10 | Reduces damage from Marked targets — synergy with Verso's Mark skills |
-| Marking Shots      | 3  |                                                                       |
-| Painted Power      | 5  | Essential for all characters from Act 3 onwards                       |
-| Rewarding Mark     | 5  |                                                                       |
-| Survivor           | 20 | Buffer for Verso when he can't be healed                              |
-| Teamwork           | 5  |                                                                       |
+| Lumina             | LP | Notes                                                               |
+|--------------------|----|---------------------------------------------------------------------|
+| Breaker            | 10 |                                                                     |
+| Breaking Burn      | 5  |                                                                     |
+| Breaking Counter   | 3  |                                                                     |
+| Breaking Death     | —  | FREE from Breaking Death Pictos                                     |
+| Burning Shots      | 3  |                                                                     |
+| Cheater            | 40 |                                                                     |
+| Confident Fighter  | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block |
+| Critical Break     | 5  |                                                                     |
+| Dead Energy I      | 2  |                                                                     |
+| Dead Energy II     | 2  |                                                                     |
+| Dodger             | 1  |                                                                     |
+| Energising Parry   | 15 |                                                                     |
+| Energising Start I | 5  |                                                                     |
+| Energising Turn    | 20 | Main AP flow generator; boosted by Energy Master                    |
+| Energy Master      | 40 |                                                                     |
+| Marking Shots      | 3  |                                                                     |
+| Painted Power      | 5  | Essential for all characters from Act 3 onwards                     |
+| Rewarding Mark     | 5  |                                                                     |
+| Second Chance      | 40 |                                                                     |
+| Teamwork           | 5  |                                                                     |
 <!-- GENERATED:END -->
 
 ---

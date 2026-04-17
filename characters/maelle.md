@@ -104,11 +104,11 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 ### Current (party loadout)
 
 <!-- GENERATED:START characters:Maelle:Pictos -->
-| Slot | Pictos         | Level | Stat Bonus              | Effect                                             |
-|------|----------------|-------|-------------------------|----------------------------------------------------|
-| 1    | Burning Break  | 21    | Health +1541, Crit +24% | Apply 3 Burn stacks on Breaking a target.          |
-| 2    | Gradient Break | 25    | Speed +434, Crit +28%   | +50% of a Gradient Charge on Breaking a target.    |
-| 3    | Survivor       | 21    | Speed +439, Crit +12%   | Survive fatal damage with 1 Health once per battle |
+| Slot | Pictos           | Level | Stat Bonus            | Effect                                                                  |
+|------|------------------|-------|-----------------------|-------------------------------------------------------------------------|
+| 1    | Clea's Life      | 30    | Health +5591          | On turn start, if no damage taken since last turn, recover 100% Health. |
+| 2    | Empowering Break | 28    | Speed +546, Crit +32% | Gain Powerful on Breaking a target.                                     |
+| 3    | Gradient Break   | 25    | Speed +434, Crit +28% | +50% of a Gradient Charge on Breaking a target.                         |
 <!-- GENERATED:END -->
 
 *Cheater equipped via Lumina (40 LP) rather than Pictos slot.*
@@ -123,9 +123,9 @@ Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina 
 
 ### LP Budget
 <!-- GENERATED:START characters:Maelle:LP -->
-- **Current capacity:** 199 LP
-- **Used:** 194 LP
-- **Spare:** 5 LP
+- **Current capacity:** 234 LP
+- **Used:** 234 LP
+- **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
@@ -151,6 +151,7 @@ Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina 
 | Marking Shots      | 3  |                                                  |
 | Painted Power      | 5  | Essential for all characters from Act 3 onwards  |
 | Rewarding Mark     | 5  |                                                  |
+| Second Chance      | 40 |                                                  |
 | Teamwork           | 5  |                                                  |
 <!-- GENERATED:END -->
 

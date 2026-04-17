@@ -39,7 +39,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Energising Start III | +1 AP on battle start. | 15 |  |  |  |
 | ✓ | Energising Start IV | +1 AP on battle start. | 20 |  |  |  |
 | ✓ | Energising Stun | +1 AP on hitting a Stunned target with a Skill. | 10 | Speed: 519, Crit: 31% |  |  |
-| ✓ | Energising Turn | +1 AP on turn start. | 20 | Speed: 270 | Monoco |  |
+| ✓ | Energising Turn | +1 AP on turn start. | 20 | Speed: 270 |  |  |
 | ✓ | Energy Master | Every AP gain is increased by 1 | 40 | Health: 4979 | Sciel |  |
 | ✓ | Perilous Parry | +1 AP on Parry, but damage received is doubled. | 5 | Speed: 546, Crit: 32% |  |  |
 | ✓ | Rewarding Mark | +2 AP on dealing damage to a Marked target. Once per turn. | 5 |  |  | mark |
@@ -72,7 +72,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
 | ✓ | Burn Affinity | 25% increased damage on Burning targets | 10 | Speed: 439, Crit: 12% | Lune |  |
-| ✓ | Burning Break | Apply 3 Burn stacks on Breaking a target. | 3 | Health: 1541, Crit: 24% | Maelle |  |
+| ✓ | Burning Break | Apply 3 Burn stacks on Breaking a target. | 3 | Health: 1541, Crit: 24% |  |  |
 | ✓ | Burning Death | Apply 3 Burn to all enemies on death | 5 | Speed: 546, Crit: 32% | Lune | death |
 | ✓ | Burning Mark | Apply Burn on hitting a Marked enemy. | 15 |  |  | mark |
 | ✓ | Burning Shots | 20% chance to Burn on Free Aim shot. | 3 |  |  | shots |
@@ -101,13 +101,13 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | At Death's Door | Deal 50% more damage if Health is below 10%. | 5 |  |  |  |
 | ✓ | Augmented Aim | 50% increased Free Aim damage. | 3 |  |  | shots |
 | ✓ | Augmented Attack | 50% increased Base Attack damage. | 7 |  |  |  |
-| ✓ | Augmented Counter I | 25% increased Counterattack damage. | 3 | Health: 4058, Crit: 16% |  |  |
+| ✓ | Augmented Counter I | 25% increased Counterattack damage. | 3 | Health: 4058, Crit: 16% | Verso |  |
 | ✓ | Augmented Counter II | 50% increased Counterattack damage. | 5 |  |  |  |
 |  | Augmented Counter III | 75% increased Counterattack damage. | 7 |  |  |  |
 | ✓ | Augmented First Strike | 50% increased damage on the first hit. Once per battle. | 5 |  |  |  |
 | ✓ | Confident Fighter | 30% increased damage, but cannot be healed. | 15 | Health: 222, Crit: 20% |  |  |
 | ✓ | Empowering Attack | Gain Powerful for 1 turn on Base Attack. | 10 |  |  |  |
-| ✓ | Empowering Break | Gain Powerful on Breaking a target. | 3 | Speed: 546, Crit: 32% |  |  |
+| ✓ | Empowering Break | Gain Powerful on Breaking a target. | 3 | Speed: 546, Crit: 32% | Maelle |  |
 | ✓ | Empowering Dodge | 5% increased damage per consecutive dodge, stacks up to 10 | 5 | Speed: 162, Crit: 17% |  |  |
 |  | Empowering Parry | Each successful Parry increases damage by 5% until end of the following turn. Taking any damage removes this buff. | 5 |  |  |  |
 | ✓ | Empowering Tint | Healing Tints also apply Powerful. | 5 |  |  | support |
@@ -164,7 +164,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
 | ✓ | Attack Lifesteal | Recover 15% Health on Base Attack. | 15 |  |  |  |
-| ✓ | Clea's Life | On turn start, if no damage taken since last turn, recover 100% Health. | 30 | Health: 5591 |  |  |
+| ✓ | Clea's Life | On turn start, if no damage taken since last turn, recover 100% Health. | 30 | Health: 5591 | Maelle |  |
 | ✓ | Effective Heal | Double all Heals received. | 30 |  |  |  |
 | ✓ | Healing Boon | Heal 15% HP on applying a buff | 10 | Defence: 647, Speed: 266 |  |  |
 | ✓ | Healing Counter | Recover 25% Health on Counterattack. | 10 |  |  |  |
@@ -197,7 +197,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
-| ✓ | Cheater | Extra turn after using a skill, once per turn | 40 | Health: 1198, Speed: 400 | Verso |  |
+| ✓ | Cheater | Extra turn after using a skill, once per turn | 40 | Health: 1198, Speed: 400 |  |  |
 | ✓ | Combo Attack I | Base Attack has 1 extra hit. | 10 |  |  |  |
 |  | Combo Attack II | Base Attack has 1 extra hit. | 20 |  |  |  |
 |  | Combo Attack III | Base Attack has 1 extra hit. | 30 |  |  |  |
@@ -233,7 +233,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 |  | Anti-Stun | Immune to Stun. | 5 |  |  |  |
 | ✓ | Auto Shell | Apply Shell for 3 turns on battle start. | 10 |  |  |  |
 | ✓ | Base Shield | Grants 1 Shield HP buffer per turn | 20 | Speed: 399, Crit: 11% |  |  |
-| ✓ | Confident | Take 50% less damage, but can't be healed. | 20 | Speed: 557, Crit: 32% |  |  |
+| ✓ | Confident | Take 50% less damage, but can't be healed. | 20 | Speed: 557, Crit: 32% | Verso |  |
 | ✓ | Defensive Mode | On receiving damage, consume 1 AP to take 30% less damage, if possible. | 1 |  |  |  |
 | ✓ | Draining Cleanse | Consume 1AP to prevent Status Effect application, if possible | 15 | Health: 2000, Defence: 324 |  |  |
 | ✓ | Greater Shell | +10% to Shell damage reduction. | 10 |  |  |  |
@@ -246,11 +246,11 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | SOS Power | Apply Powerful when falling below 50% Health. | 5 |  |  |  |
 | ✓ | SOS Rush | Apply Rush when falling below 50% Health. | None |  |  |  |
 | ✓ | SOS Shell | Apply Shell when falling below 50% Health. | 5 |  |  |  |
-| ✓ | Second Chance | Revive with 100% Health. Once per battle. | 40 | Health: 1106, Crit: 8% | Verso |  |
+| ✓ | Second Chance | Revive with 100% Health. Once per battle. | 40 | Health: 1106, Crit: 8% |  |  |
 |  | Shielding Tint | Healing Tints also add 2 Shields. | 10 |  |  | support |
 | ✓ | Shortcut | Immediately play when falling below 30% Health. Once per battle. | None |  |  |  |
 | ✓ | Solidifying | +2 Shields when the character's Health falls below 50%. Once per battle. | 10 |  |  |  |
-| ✓ | Survivor | Survive fatal damage with 1 Health once per battle | 20 | Speed: 439, Crit: 12% | Maelle |  |
+| ✓ | Survivor | Survive fatal damage with 1 Health once per battle | 20 | Speed: 439, Crit: 12% |  |  |
 
 ---
 
@@ -275,7 +275,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Longer Rush | On applying Rush, its duration is increased by 2. | 10 |  |  |  |
 |  | Powerful Heal | Healing an ally also applies Powerful for 1 turn. | 5 |  |  |  |
 | ✓ | Powerful On Shell | Apply Powerful on applying Shell. | 10 | Defence: 874, Crit: 25% |  |  |
-| ✓ | Powerful Revive | Apply Powerful for 3 turns when revived. | 3 | Speed: 546, Crit: 32% |  |  |
+| ✓ | Powerful Revive | Apply Powerful for 3 turns when revived. | 3 | Speed: 546, Crit: 32% | Monoco |  |
 | ✓ | Powerful Shots | 20% chance to gain Powerful on Free Aim shot. | 3 |  |  | shots |
 | ✓ | Protecting Heal | Healing an ally also applies Shell for 1 turn. | 5 |  |  |  |
 | ✓ | Rejuvenating Revive | Apply Regen for 3 turns when revived. | 3 |  |  |  |

@@ -106,9 +106,9 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 ### LP Budget
 <!-- GENERATED:START characters:Sciel:LP -->
-- **Current capacity:** 179 LP
-- **Used:** 175 LP
-- **Spare:** 4 LP
+- **Current capacity:** 215 LP
+- **Used:** 215 LP
+- **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
@@ -138,6 +138,7 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 | Painted Power       | 5  | Essential for all characters from Act 3 onwards               |
 | Protecting Heal     | 5  | Shell on heal                                                 |
 | Rewarding Mark      | 5  |                                                               |
+| Second Chance       | 40 |                                                               |
 | Teamwork            | 5  |                                                               |
 <!-- GENERATED:END -->
 

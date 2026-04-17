@@ -122,7 +122,7 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 |------|-----------------|-------|-----------------------------|----------------------------------------------------|
 | 1    | Longer Shell    | 29    | Health +2757, Defence +1572 | On applying Shell, its duration is increased by 2. |
 | 2    | Powerful Mark   | 28    | Speed +819, Crit +16%       | Gain Powerful on hitting a Marked target.          |
-| 3    | Energising Turn | 14    | Speed +270                  | +1 AP on turn start.                               |
+| 3    | Powerful Revive | 28    | Speed +546, Crit +32%       | Apply Powerful for 3 turns when revived.           |
 <!-- GENERATED:END -->
 
 Longer Shell's extension effect fires when Lune uses Healing Light (Protecting Heal Lumina applies Shell on heal).
@@ -138,8 +138,8 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 ### LP Budget
 <!-- GENERATED:START characters:Monoco:LP -->
 - **Current capacity:** 133 LP
-- **Used:** 132 LP
-- **Spare:** 1 LP
+- **Used:** 125 LP
+- **Spare:** 8 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
@@ -154,14 +154,15 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Breaking Counter   | 3  |                                                                                           |
 | Breaking Death     | 5  |                                                                                           |
 | Burning Shots      | 3  |                                                                                           |
-| Cheater            | 40 | Extra turn after skill — major AP and action efficiency boost                             |
 | Critical Break     | 5  |                                                                                           |
 | Dodger             | 1  |                                                                                           |
+| Energising Break   | 3  | Extra AP on breaking an enemy                                                             |
 | Energising Parry   | 15 |                                                                                           |
 | Energising Start I | 5  |                                                                                           |
-| Energising Turn    | —  | FREE from Energising Turn Pictos                                                          |
+| Energising Turn    | 20 |                                                                                           |
 | Marking Shots      | 3  |                                                                                           |
 | Painted Power      | 5  |                                                                                           |
+| Recovery           | 10 |                                                                                           |
 | Rewarding Mark     | 5  |                                                                                           |
 | Staggering Attack  | 1  | Break damage on base attack — small break bar contribution                                |
 | Teamwork           | 5  |                                                                                           |

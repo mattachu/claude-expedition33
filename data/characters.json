@@ -24,12 +24,12 @@
     },
     "weapon_equipped": "Lithum",
     "pictos_equipped": [
-      "Burning Break",
-      "Gradient Break",
-      "Survivor"
+      "Clea's Life",
+      "Empowering Break",
+      "Gradient Break"
     ],
-    "lp_total": 199,
-    "lp_used": 194,
+    "lp_total": 234,
+    "lp_used": 234,
     "lumina_core_exclusions": [],
     "lumina_extras": [],
     "skills_equipped": [
@@ -109,46 +109,26 @@
     },
     "weapon_equipped": "Chevalam",
     "pictos_equipped": [
+      "Augmented Counter I",
       "Breaking Death",
-      "Cheater",
-      "Second Chance"
+      "Confident"
     ],
-    "lp_total": 198,
-    "lp_used": 194,
+    "lp_total": 224,
+    "lp_used": 224,
     "lumina_core_exclusions": [
       {
         "name": "Base Shield",
         "notes": "Non-functional — Chevalam L4 prevents shields"
       },
       {
-        "name": "Cheater",
-        "notes": "Free from Cheater Pictos"
-      },
-      {
         "name": "Breaking Death",
         "notes": "Free from Breaking Death Pictos"
-      },
-      {
-        "name": "Second Chance",
-        "notes": "Free from Second Chance Pictos"
       }
     ],
     "lumina_extras": [
       {
-        "name": "Confident",
-        "notes": "50% damage reduction — cost priced in via Chevalam L4 healing block"
-      },
-      {
         "name": "Confident Fighter",
         "notes": "30% increased damage — cost priced in via Chevalam L4 healing block"
-      },
-      {
-        "name": "Enfeebling Mark",
-        "notes": "Reduces damage from Marked targets — synergy with Verso's Mark skills"
-      },
-      {
-        "name": "Survivor",
-        "notes": "Buffer for Verso when he can't be healed"
       }
     ],
     "skills_equipped": [
@@ -229,8 +209,8 @@
       "Energy Master",
       "Energising Shots"
     ],
-    "lp_total": 179,
-    "lp_used": 175,
+    "lp_total": 215,
+    "lp_used": 215,
     "lumina_core_exclusions": [
       {
         "name": "Energy Master",
@@ -331,8 +311,8 @@
       "Burn Affinity",
       "Burning Death"
     ],
-    "lp_total": 127,
-    "lp_used": 120,
+    "lp_total": 130,
+    "lp_used": 130,
     "lumina_core_exclusions": [],
     "lumina_extras": [
       {
@@ -420,16 +400,11 @@
     "pictos_equipped": [
       "Longer Shell",
       "Powerful Mark",
-      "Energising Turn"
+      "Powerful Revive"
     ],
     "lp_total": 133,
-    "lp_used": 132,
-    "lumina_core_exclusions": [
-      {
-        "name": "Energising Turn",
-        "notes": "Free from Energising Turn Pictos"
-      }
-    ],
+    "lp_used": 125,
+    "lumina_core_exclusions": [],
     "lumina_extras": [
       {
         "name": "Staggering Attack",
@@ -440,8 +415,8 @@
         "notes": "50% increased Break damage, 20% reduced base damage — net positive for break-focused role"
       },
       {
-        "name": "Cheater",
-        "notes": "Extra turn after skill — major AP and action efficiency boost"
+        "name": "Energising Break",
+        "notes": "Extra AP on breaking an enemy"
       }
     ],
     "skills_equipped": [

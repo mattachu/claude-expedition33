@@ -66,11 +66,11 @@ Fetch that file only when reviewing specific past errors.
 
 ### LP totals
 <!-- GENERATED:START characters:summary:LP -->
-- Maelle: 194/199
-- Verso: 194/198
-- Sciel: 175/179
-- Lune: 120/127
-- Monoco: 132/133
+- Maelle: 234/234
+- Verso: 224/224
+- Sciel: 215/215
+- Lune: 130/130
+- Monoco: 125/133
 <!-- GENERATED:END -->
 
 ---
@@ -155,25 +155,25 @@ Note: base speed scales with level independently of Agility — keep levels clos
 **Turn rotation (endgame burst):** Verso (base attack) → Verso(C) (Steeled Strike charge) → Sciel (Fortune's Fury on Verso) → Sciel(C) (Intervention on Verso) → Verso(Intervention) (Steeled Strike executes at Rank S with doubled damage).
 
 <!-- GENERATED:START characters:summary:party -->
-| Character | Level | Role                         | Weapon        | Pictos                                       | LP      |
-|-----------|-------|------------------------------|---------------|----------------------------------------------|---------|
-| Maelle    | 86    | Primary DPS                  | Lithum (33)   | Burning Break, Gradient Break, Survivor      | 194/199 |
-| Verso     | 86    | Endgame main DPS             | Chevalam (33) | Breaking Death, Cheater, Second Chance       | 194/198 |
-| Sciel     | 85    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots     | 175/179 |
-| Lune      | 82    | DPS / healer (reserve)       | Kralim (32)   | Critical Burn, Burn Affinity, Burning Death  | 120/127 |
-| Monoco    | 83    | Break + AP support (reserve) | Joyaro (32)   | Longer Shell, Powerful Mark, Energising Turn | 132/133 |
+| Character | Level | Role                         | Weapon        | Pictos                                         | LP      |
+|-----------|-------|------------------------------|---------------|------------------------------------------------|---------|
+| Maelle    | 86    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Gradient Break  | 234/234 |
+| Verso     | 86    | Endgame main DPS             | Chevalam (33) | Augmented Counter I, Breaking Death, Confident | 224/224 |
+| Sciel     | 85    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots       | 215/215 |
+| Lune      | 82    | DPS / healer (reserve)       | Kralim (32)   | Critical Burn, Burn Affinity, Burning Death    | 130/130 |
+| Monoco    | 83    | Break + AP support (reserve) | Joyaro (32)   | Longer Shell, Powerful Mark, Powerful Revive   | 125/133 |
 <!-- GENERATED:END -->
 
 ### Core Lumina Suite
 
 **Main team core:**
 <!-- GENERATED:START pictos:core:main -->
-**194LP** Painted Power, Teamwork, Base Shield, Energising Turn, Energising Parry, Energising Start I, Dodger, Breaker, Marking Shots, Dead Energy I, Dead Energy II, Critical Break, Rewarding Mark, Burning Shots, Breaking Burn, Breaking Counter, Breaking Death, Cheater, Energy Master. Note: Painted Power (Essential for all characters from Act 3 onwards); Base Shield (Verso: non-functional with Chevalam as L4 effect prevents shields); Energising Turn (Main AP flow generator; boosted by Energy Master).
+**234LP** Painted Power, Teamwork, Base Shield, Energising Turn, Cheater, Energy Master, Second Chance, Energising Parry, Energising Start I, Dodger, Breaker, Marking Shots, Dead Energy I, Dead Energy II, Critical Break, Rewarding Mark, Burning Shots, Breaking Burn, Breaking Counter, Breaking Death. Note: Painted Power (Essential for all characters from Act 3 onwards); Base Shield (Verso: non-functional with Chevalam as L4 effect prevents shields); Energising Turn (Main AP flow generator; boosted by Energy Master).
 <!-- GENERATED:END -->
 
 **Reserve team core:**
 <!-- GENERATED:START pictos:core:reserve -->
-**110LP** Painted Power, Teamwork, Base Shield, Energising Turn, Energising Parry, Energising Start I, Dodger, Breaker, Marking Shots, Critical Break, Rewarding Mark, Burning Shots, Breaking Burn, Breaking Counter, Breaking Death.
+**120LP** Painted Power, Teamwork, Base Shield, Energising Turn, Recovery, Energising Parry, Energising Start I, Dodger, Breaker, Marking Shots, Critical Break, Rewarding Mark, Burning Shots, Breaking Burn, Breaking Counter, Breaking Death.
 <!-- GENERATED:END -->
 
 Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.md) §3–4. Character-specific additions on top of core sets in §5.
@@ -271,17 +271,18 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 
 ## Section 9: Open Questions
 
-- **Pictos optimisation (main team):** Partially analysed in Chat 11. New findings: turn order is resolved (Sciel 2466 > Maelle 2049, gap of 417 — well above minimum, thanks to Painter + Energising Shots acquired in Chat 10). Sciel crit is at 101% (effectively at cap). New constraint identified: all three character speeds must be within ~200 of each other (current spread: Sciel 2466, Verso 2162, Maelle 2049 — total spread 417). Clea's Life confirmed as Health +5591 only, no speed or crit — no direct home on the main team. Full optimisation handed to Opus — simultaneous speed/crit/LP constraint-solving across three characters exceeded Sonnet. Key open decisions: (1) speed rebalancing across all three characters, (2) Verso crit gap (currently 82% vs 100% cap), (3) Maelle slot 3 (Survivor vs Clea's Life vs other), (4) LP reconciliation after changes.
-- **Powerful On Shell as Lumina:** Consider for Maelle (synergy with Lithum L20 Shell generation) and/or Lune. Previously held as Lune's Pictos — now freed. LP cost 10. Evaluate in Pictos optimisation session.
+- **Verso survivability without Survivor:** Survivor (20LP) dropped to test whether Second Chance alone is sufficient. If Verso dies frequently with only Second Chance, add Survivor back (20 CoL to expand pool). Monitor during Renoir and early postgame.
+- **Clea's Life + Shield interaction: ✅ CONFIRMED.** Clea's Life triggers even after Shield absorbs a hit. Reliable full-heal engine on Maelle with Lithum's Shield generation. Recovery not needed on Maelle.
+- **Recovery on Sciel:** Dropped for now to save LP. Revisit if Sciel takes more damage than expected in postgame. 10LP, would need CoL expansion.
+- **Powerful On Shell as Lumina:** Consider for Maelle (synergy with Lithum L20 Shell generation). LP cost 10. Add when levels create headroom.
+- **Energising Shell (10LP):** Alternative to Powerful On Shell for Maelle — +2 AP on Shell application. Evaluate alongside Powerful On Shell.
+- **Anti-Blight (10LP):** Near-requisite for postgame content. Add to all main team characters when levels create LP headroom. 67 CoL remaining.
+- **Second Chance upgrade:** Available at L31 from defeating Création near Grour in Renoir's Drafts. Substantially better stats than current L16.
 - **Pictos data rationalisation:** Remove character `pictos` arrays from JSON; derive from `equipped_by` field. Update `generate_pictos_lumina.py`. See framework document Section 11 for full spec.
-- **Healing Boon trigger mechanic:** "Heal 15% HP on applying a buff" — may fire on the buff *recipient* rather than the caster. Evidence: Dark Cleansing triggers it for each ally buffed. Needs in-game confirmation before building around it.
+- **Healing Boon trigger mechanic:** "Heal 15% HP on applying a buff" — may fire on the buff *recipient* rather than the caster. Needs in-game confirmation before building around it.
 - **Crit cap:** Believed to be 100%, not 99%. Verify in-game.
-- **Energising Burn (10LP):** Consider when next expanding core Lumina suite — all characters have Burning Shots so fires regularly.
-- **Full Strength Pictos:** Not yet obtained. Effect: 25% increased damage at full Health. Strong candidate for Maelle given Shell from Lithum. Find as you progress.
 - **Empowering Dodge (5LP):** Reset behaviour on parry unconfirmed — test empirically before committing LP.
 - **Session architecture:** Switched to 1 section per part from Chat 10 onwards. Splitter command: `python3 scripts/split_transcript.py --sections-per-part 1 chatN.md`. Update pipeline.md to reflect this default.
-
----
 
 ---
 
@@ -303,6 +304,7 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 | Chat 9 | [Formatted](../chats/chat9/chat9-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat9/chat9-index.md)   | [chat9.md](../chats/chat9/chat9.md)   | Repo restructure completed: generate_scripts_md.py built; generate.py written (unified generator for all GENERATED blocks, party-summary, Pictos catalogue); apply_changelist.py updated with GENERATED marker detection; session procedure and pipeline.md updated |
 | Chat 10 | [Formatted](../chats/chat10/chat10-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat10/chat10-index.md) | [chat10.md](../chats/chat10/chat10.md) | Comprehensive data update post-Flying Manor. All five characters updated via screenshot: levels, attributes, stats, Pictos, weapons, Lumina loadouts, and inventory. Extensive weapons corrections and additions. Pictos: 8 new obtains including Clea's Life; 7 level+stats updates; 4 missing stats filled.|
 | Chat 11 | [Formatted](../chats/chat11/chat11-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat11/chat11-index.md) | [chat11.md](../chats/chat11/chat11.md) | Partial Pictos optimisation session. Turn order confirmed resolved (Sciel 2466 >> Maelle 2049 via Chat 10 Pictos). Sciel crit at cap. Speed spread identified as new constraint (~200 target; current spread 417). Clea's Life stats confirmed (Health +5591 only). Session handed off to Opus for full multi-character constraint optimisation. |
+| Chat 12 | [Formatted](../chats/chat12/chat12-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat12/chat12-index.md) | [chat12.md](../chats/chat12/chat12.md) | Full Pictos optimisation (Opus). All five characters reviewed bottom-up from stat data. |
 
 ---
 

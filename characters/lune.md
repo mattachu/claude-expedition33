@@ -131,9 +131,9 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 
 ### LP Budget
 <!-- GENERATED:START characters:Lune:LP -->
-- **Current capacity:** 127 LP
-- **Used:** 120 LP
-- **Spare:** 7 LP
+- **Current capacity:** 130 LP
+- **Used:** 130 LP
+- **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
@@ -156,6 +156,7 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 | Marking Shots      | 3  |                                           |
 | Painted Power      | 5  |                                           |
 | Protecting Heal    | 5  | Shell on heal                             |
+| Recovery           | 10 |                                           |
 | Rewarding Mark     | 5  |                                           |
 | Teamwork           | 5  |                                           |
 <!-- GENERATED:END -->
