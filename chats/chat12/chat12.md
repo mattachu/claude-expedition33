@@ -1418,7 +1418,7 @@ What you'll need to finish manually:
 
 **Matt:** It said "Claude reached its tool-use limit for this turn.” Were you about to create a changelist for me?
 
-**Claude:** Yes — let me produce that now.Now let me add the JSON changes to the changelist:All files output. You'll need to:
+**Claude:** Yes — let me produce that now... Now let me add the JSON changes to the changelist:All files output. You'll need to:
 
 1. **Run the splitter** on `chat12.md` — section markers are already in place: `python3 scripts/split_transcript.py --sections-per-part 1 chat12.md`
 2. **Apply the changelist** — includes overview sections 5/9/10, JSON changes for `pictos-lumina.json` and `characters.json`, and error notes for `historical-errors.md`
