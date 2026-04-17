@@ -429,6 +429,24 @@ Footer (after last ToC entry):
 
 ### Changelist Format
 
+Two block types: `DATA:` (JSON field updates) and `FILE:` (Markdown section replacements).
+Processing order: DATA → FILE → generate.py.
+
+**DATA: blocks** — update any field in any JSON data file:
+
+```
+DATA: data/characters.json
+PATH: Maelle.level
+OP: SET
+VALUE: 87
+```
+
+- `PATH:` — dot-notation: `Maelle.level`, `pictos[name=Clea's Life].obtained`, `arr[2]`
+- `OP:` — `SET` (create or update), `ADD` (append to array), `REMOVE` (delete key, array item, or filtered object)
+- `VALUE:` — any JSON value; must be last field; omit for `REMOVE` without value
+
+**FILE: blocks** — replace or insert a Markdown section:
+
 ```
 FILE: path/to/file.md
 SECTION: ## Parent > ### Child
@@ -442,6 +460,8 @@ CONTENT:
 - `###` heading must be unique within its `##` parent; renames require direct edit
 - Separators (`---`) between `##` sections are inserted automatically by the updater script — do not include them in CONTENT or use them between FILE blocks
 - Failure mode: loud
+
+Full format reference in [`scripts/pipeline.md`](../scripts/pipeline.md).
 
 ### Session State JSON
 ```json

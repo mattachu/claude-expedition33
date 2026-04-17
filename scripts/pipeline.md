@@ -238,7 +238,93 @@ The compound log step only tracks changes in `modified_sections` — it never pr
 
 ## Changelist Format
 
-Section replacement at `###` level. Updater script (`apply_changelist.py`) locates and replaces each section in the target file.
+Two block types: `DATA:` (JSON updates) and `FILE:` (Markdown section replacements/insertions).
+
+`DATA:` blocks are applied first (updating JSON files), then `FILE:` blocks update
+Markdown sections, then `generate.py` runs to refresh all `GENERATED:` markers from
+the updated JSON.
+
+### DATA: blocks
+
+Update any field in any JSON data file.
+
+```
+DATA: data/characters.json
+PATH: Maelle.level
+OP: SET
+VALUE: 87
+```
+
+Fields:
+
+- `DATA:` — repo-relative path to the target JSON file (required)
+- `PATH:` — dot-notation path to the target field (required; see below)
+- `OP:` — `SET`, `ADD`, or `REMOVE` (required)
+- `VALUE:` — JSON value; must be last field; omit for `REMOVE` without value (optional)
+
+`VALUE:` is parsed as JSON — so `true`, `false`, `null`, `42`, `"string"`, `{"a": 1}`,
+`["x","y"]` all work. Strings must be quoted.
+
+**PATH syntax:**
+
+| Syntax                              | Meaning                                                                   |
+|-------------------------------------|---------------------------------------------------------------------------|
+| `Maelle.level`                      | Key `level` inside key `Maelle`                                           |
+| `pictos[name=Clea's Life].obtained` | Item in `pictos` array where `name == "Clea's Life"`, then key `obtained` |
+| `pictos_equipped[1]`                | Array item by integer index                                               |
+
+Filter values (`[key=value]`) are always compared as plain strings.
+
+**OP semantics:**
+
+`SET` — create or update the value at PATH. Works whether the key exists or not.
+`ADD` — append VALUE to the array at PATH.
+`REMOVE` — three sub-cases:
+- Path ends with `[filter]` or `[index]` → remove that item from the parent array (no VALUE needed)
+- Path ends with a key + VALUE given → remove that value from the array at that key
+- Path ends with a key + no VALUE → delete that key from its parent dict
+
+**Examples:**
+
+```
+DATA: data/characters.json
+PATH: Maelle.attributes.agility
+OP: SET
+VALUE: 99
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Clea's Life].obtained
+OP: SET
+VALUE: true
+
+DATA: data/playthrough.json
+PATH: inventory.colour_of_lumina
+OP: SET
+VALUE: 150
+
+DATA: data/characters.json
+PATH: Maelle.lumina_extras
+OP: ADD
+VALUE: {"name": "Full Strength", "notes": "25% damage at full HP"}
+
+DATA: data/characters.json
+PATH: Maelle.lumina_extras[name=Full Strength]
+OP: REMOVE
+
+DATA: data/characters.json
+PATH: Maelle.skills_learned
+OP: REMOVE
+VALUE: "Gommage"
+
+DATA: data/characters.json
+PATH: Maelle.notes
+OP: REMOVE
+```
+
+### FILE: blocks
+
+Section replacement at `###` level (or `##` level for full-section replacements).
+Updater script (`apply_changelist.py`) locates and replaces each section in the target file.
 
 ```
 FILE: overview/maelle.md
@@ -294,5 +380,4 @@ CONTENT:
 These items are parked for future consideration. Do not implement without explicit instruction.
 
 - **Topic switch recognition:** At the log step, check for topic shifts and split sections accordingly.
-- **DATA block support in apply_changelist.py:** Allow `DATA:` blocks to update JSON files directly, with `generate.py` running automatically after. Design documented in Changelist Format section above.
 - **Auto-enumerate chat files in LINKS.md:** Update generate_links.py to scan chats/ for index and part files and include them automatically, rather than requiring manual addition.
