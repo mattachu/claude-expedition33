@@ -281,6 +281,7 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 - **Pictos data rationalisation:** Remove character `pictos` arrays from JSON; derive from `equipped_by` field. Update `generate_pictos_lumina.py`. See framework document Section 11 for full spec.
 - **Healing Boon trigger mechanic:** "Heal 15% HP on applying a buff" — may fire on the buff *recipient* rather than the caster. Needs in-game confirmation before building around it.
 - **Crit cap:** Believed to be 100%, not 99%. Verify in-game.
+- **Full Strength Lumina:** Effect: 25% increased damage at full Health. Strong candidate for Maelle given Clea's Life Pictos.
 - **Empowering Dodge (5LP):** Reset behaviour on parry unconfirmed — test empirically before committing LP.
 - **Session architecture:** Switched to 1 section per part from Chat 10 onwards. Splitter command: `python3 scripts/split_transcript.py --sections-per-part 1 chatN.md`. Update pipeline.md to reflect this default.
 
