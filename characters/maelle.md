@@ -67,15 +67,15 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 ### Combat Stats
 
 <!-- GENERATED:START characters:Maelle:stats -->
-*Stats with Lithum (33), Burning Break (21), Gradient Break (25), Survivor (21) equipped*
+*Stats with Lithum (33), Clea's Life (30), Empowering Break (28), Gradient Break (25) equipped*
 
-| Stat    | Base | Modified |
-|---------|------|----------|
-| Health  | 2019 | 3560     |
-| Attack  | 1205 | 10653    |
-| Speed   | 1176 | 2049     |
-| Defence | 182  | 182      |
-| Crit    | 41%  | 105%     |
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 7610     |
+| Attack  | *[unknown]* | 10653    |
+| Speed   | *[unknown]* | 2156     |
+| Defence | *[unknown]* | 182      |
+| Crit    | *[unknown]* | 101%     |
 <!-- GENERATED:END -->
 
 ---

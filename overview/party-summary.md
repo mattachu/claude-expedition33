@@ -10,13 +10,13 @@
 
 **Level:** 86 | **Role:** Primary DPS | **Weapon:** Lithum (33)
 
-| Stat    | Base | Modified |
-|---------|------|----------|
-| Health  | 2019 | 3560     |
-| Attack  | 1205 | 10653    |
-| Speed   | 1176 | 2049     |
-| Defence | 182  | 182      |
-| Crit    | 41%  | 105%     |
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 7610     |
+| Attack  | *[unknown]* | 10653    |
+| Speed   | *[unknown]* | 2156     |
+| Defence | *[unknown]* | 182      |
+| Crit    | *[unknown]* | 101%     |
 
 
 | Pictos           | Level | Stats                 |
@@ -61,11 +61,11 @@
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2019 | 4324     |
+| Health  | 2019 | 6077     |
 | Attack  | 1205 | 10181    |
-| Speed   | 1176 | 2162     |
+| Speed   | 1176 | 2319     |
 | Defence | 182  | 182      |
-| Crit    | 41%  | 82%      |
+| Crit    | 41%  | 122%     |
 
 
 | Pictos              | Level | Stats                   |
@@ -214,9 +214,9 @@
 |---------|------|----------|
 | Health  | 1930 | 4687     |
 | Attack  | 1038 | 6624     |
-| Speed   | 1112 | 2201     |
+| Speed   | 1112 | 2477     |
 | Defence | 729  | 2301     |
-| Crit    | 47%  | 63%      |
+| Crit    | 47%  | 95%      |
 
 
 | Pictos          | Level | Stats                       |

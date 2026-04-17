@@ -7,7 +7,7 @@
       "agility": 99,
       "might": 60
     },
-    "stats_base": {
+    " ": {
       "health": 2019,
       "attack": 1205,
       "speed": 1176,
@@ -15,12 +15,12 @@
       "crit": "41%"
     },
     "stats_modified": {
-      "health": 3560,
+      "health": 7610,
       "attack": 10653,
-      "speed": 2049,
+      "speed": 2156,
       "defence": 182,
-      "crit": "105%",
-      "_note": "Stats with Lithum (33), Burning Break (21), Gradient Break (25), Survivor (21) equipped"
+      "crit": "101%",
+      "_note": "Stats with Lithum (33), Clea's Life (30), Empowering Break (28), Gradient Break (25) equipped"
     },
     "weapon_equipped": "Lithum",
     "pictos_equipped": [
@@ -100,12 +100,12 @@
       "crit": "41%"
     },
     "stats_modified": {
-      "health": 4324,
+      "health": 6077,
       "attack": 10181,
-      "speed": 2162,
+      "speed": 2319,
       "defence": 182,
-      "crit": "82%",
-      "_note": "Stats with Chevalam (33), Breaking Death (29), Cheater (24), Second Chance (16) equipped"
+      "crit": "122%",
+      "_note": "Stats with Chevalam (33), Augmented Counter I (28), Breaking Death (29), Confident (29) equipped"
     },
     "weapon_equipped": "Chevalam",
     "pictos_equipped": [
@@ -391,10 +391,10 @@
     "stats_modified": {
       "health": 4687,
       "attack": 6624,
-      "speed": 2201,
+      "speed": 2477,
       "defence": 2301,
-      "crit": "63%",
-      "_note": "Stats with Joyaro (32), Longer Shell (29), Powerful Mark (28), Energising Turn (14) equipped"
+      "crit": "95%",
+      "_note": "Stats with Joyaro (32), Longer Shell (29), Powerful Mark (28), Powerful Revive (28) equipped"
     },
     "weapon_equipped": "Joyaro",
     "pictos_equipped": [

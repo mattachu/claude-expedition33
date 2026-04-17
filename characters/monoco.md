@@ -67,15 +67,15 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 ### Combat Stats
 
 <!-- GENERATED:START characters:Monoco:stats -->
-*Stats with Joyaro (32), Longer Shell (29), Powerful Mark (28), Energising Turn (14) equipped*
+*Stats with Joyaro (32), Longer Shell (29), Powerful Mark (28), Powerful Revive (28) equipped*
 
 | Stat    | Base | Modified |
 |---------|------|----------|
 | Health  | 1930 | 4687     |
 | Attack  | 1038 | 6624     |
-| Speed   | 1112 | 2201     |
+| Speed   | 1112 | 2477     |
 | Defence | 729  | 2301     |
-| Crit    | 47%  | 63%      |
+| Crit    | 47%  | 95%      |
 <!-- GENERATED:END -->
 
 ---

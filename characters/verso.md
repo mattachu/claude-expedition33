@@ -68,15 +68,15 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ### Combat Stats
 
 <!-- GENERATED:START characters:Verso:stats -->
-*Stats with Chevalam (33), Breaking Death (29), Cheater (24), Second Chance (16) equipped*
+*Stats with Chevalam (33), Augmented Counter I (28), Breaking Death (29), Confident (29) equipped*
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2019 | 4324     |
+| Health  | 2019 | 6077     |
 | Attack  | 1205 | 10181    |
-| Speed   | 1176 | 2162     |
+| Speed   | 1176 | 2319     |
 | Defence | 182  | 182      |
-| Crit    | 41%  | 82%      |
+| Crit    | 41%  | 122%     |
 <!-- GENERATED:END -->
 
 ---
