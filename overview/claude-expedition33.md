@@ -46,7 +46,7 @@ Fetch that file only when reviewing specific past errors.
 - **Progress:**
   - Act 3, Phase 3.
   - Characters: Maelle L86, Verso L86, Sciel L85, Lune L82, Monoco L83.
-  - Current area: Flying Manor.
+  - Current area: Post-game.
 <!-- GENERATED:END -->
 - **Permanently missed:** Vale bosses (Jovial Moissonneuse, Sorrowful Chapelier, Seething Boucheclier); Karatom quest (requires Gustave alive).
 
@@ -221,7 +221,7 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 - ✅ The Chosen Path (Base Shield Pictos)
 - ✅ Verso solo fights
 - ✅ Sirene's Dress (Lune relationship)
-- ✅ Easy chromatics
+- ✅ Early Chromatics: Lancelier, Troubadour, Bruler, Orphelin, Jar, Luster
 - ❌ Vale bosses permanently missed
 - ❌ Karatom quest permanently missed (requires Gustave alive)
 
@@ -232,7 +232,7 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 - ✅ Chromatic Gold Chevaliere (Crimson Forest) → Chevalam for Verso
 - ✅ Dark Shore → Corpeso for Verso
 - ✅ Grosse Tete, Frost Eveque, Thunder Eveque
-- ✅ Chromatics: Veilleur, Chalier, Glaise, Demineur, Chapelier, Hexga, Ballet, Portier, Benisseur, Boucheclier, Cruler
+- ✅ Chromatics: Veilleur, Chalier, Glaise, Demineur, Chapelier, Hexga, Ballet, Portier, Benisseur, Boucheclier, Cruler, Glissando, Danseuse, Greatsword Cultist, Gold Chevaliere
 - ✅ Ultimate Sakapatate (Endless Night Sanctuary) → Joyaro for Monoco
 
 ### Phase 3 — Late game (Level 75–80, before Renoir)
@@ -240,7 +240,7 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 - ✅ The Reacher (Maelle solo) → Lithum weapon, Maelle Level 7, Gustave resurrection path
 - ✅ Chromatic Braseleur (inside The Reacher)
 - ✅ Serpenphare (SE Boat Graveyard)
-- ✅ Flying Manor → Clea's Life Pictos, Perfect Chroma Catalyst
+- ✅ Flying Manor → 4 unique enhanced bosses (Goblu, Lampmaster, Dualliste, Triple Eveque), plus Clea — these are not Chromatics. Rewards: Clea's Life Pictos, Perfect Chroma Catalyst
 - ✅ **Renoir (final boss)** — enter Lumière → fight at end of dungeon. *[Choose Maelle → "A Life to Paint" → Gustave returns]*. Self-nerf: enter with Gaulteram/Medalum, calibrate on earlier fights, add back before final save point.
 
 ### Phase 4 — Post-game (Level 80+)
@@ -248,19 +248,26 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 <!-- GENERATED:START playthrough:current_phase_checklist -->
 - ⬜ Endless Tower floors 1–20 + Chromatic Eveque (good first post-game activity; also serves as level-up fallback if Flying Manor too hard)
 - ⬜ Dark Gestral Arena
-- ⬜ Hard chromatics (0/12)
-  - ⬜ Chromatic Echassier (Level 80–85+)
-  - ⬜ Chromatic Gault
-  - ⬜ Chromatic Reaper Cultist
-  - ⬜ Chromatic Pétank (superboss)
-  - ⬜ Chromatic Goblu
-  - ⬜ Chromatic Aberration
-  - ⬜ Chromatic Lampmaster
-  - ⬜ Chromatic Bourgeon (Monolith)
-  - ⬜ Chromatic Clair Obscur (Monolith Peak) → Combo Attack II Pictos
-  - ⬜ Chromatic Creation (Renoir's Drafts)
-  - ⬜ Chromatic Barbasucette (Verso's Drafts)
-  - ⬜ Chromatic Franctale (Verso's Drafts)
+- ⬜ Hard chromatics (1/14)
+  - ✅ Chromatic Echassier — Lumiere
+  - ⬜ Chromatic Moissonneuse — The Continent, island SW of Visages (requires coral-destroy)
+  - ⬜ Chromatic Gault — Stone Wave Cliffs (Old Farm, behind Paint Spike — needs 4 Lost Gestrals)
+  - ⬜ Chromatic Reaper Cultist — The Continent, island NE of Coastal Cave (requires coral-destroy)
+  - ⬜ Chromatic Goblu — The Continent, mountaintop east of Frozen Hearts (requires flying)
+  - ⬜ Chromatic Aberration — The Continent, floating island SE of The Fountain (requires flying) — bring Anti-Blight
+  - ⬜ Chromatic Pétank — The Continent (superboss)
+  - ⬜ Chromatic Bourgeon — The Monolith
+  - ⬜ Chromatic Clair Obscur — The Monolith, top (after defeating The Paintress) → Combo Attack II Pictos
+  - ⬜ Chromatic Creation — Renoir's Drafts
+  - ⬜ Chromatic Barbasucette — Verso's Drafts
+  - ⬜ Chromatic Franctale — Verso's Drafts
+  - ⬜ Chromatic Licorne — Verso's Drafts (handholds right of Reverie Path)
+  - ⬜ Chromatic Machinapieds — Verso's Drafts (near Gestral Carousel, Candy Land)
+- ⬜ Endless Tower Chromatics (0/4)
+  - ⬜ Chromatic Eveque — Endless Tower
+  - ⬜ Chromatic Steel Chevaliere — Endless Tower floor 10-2 (trio fight with Gold and Ceramic)
+  - ⬜ Chromatic Ceramic Chevaliere — Endless Tower floor 10-2 (trio fight with Gold and Steel)
+  - ⬜ Chromatic Lampmaster — Endless Tower floor 1 (Thank You Update) — 6 health bars, gimmick-heavy
 - ⬜ Renoir's Drafts (Level 80+, recommended 90+ for Simon) — hardest optional area; Aberrations, Bouchecliers, Contorsionnistes
 - ⬜ Purchase Charnon (89,884 Chromas, Renoir's Drafts merchant) — Sciel alternative endgame weapon
 - ⬜ Verso's Drafts (DLC, Level 80+) — recommended after Renoir's Drafts; final boss (Root of All Evil) is hardest boss in game, reported to beat level 99 parties

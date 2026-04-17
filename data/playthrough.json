@@ -1,9 +1,16 @@
 {
   "act": 3,
   "phase": 3,
-  "current_area": "Flying Manor",
-  "active_party": ["Maelle", "Verso", "Sciel"],
-  "reserve_party": ["Lune", "Monoco"],
+  "current_area": "Post-game",
+  "active_party": [
+    "Maelle",
+    "Verso",
+    "Sciel"
+  ],
+  "reserve_party": [
+    "Lune",
+    "Monoco"
+  ],
   "inventory": {
     "colour_of_lumina": 167,
     "recoats": 28,
@@ -29,18 +36,102 @@
       "id": "hard_chromatics",
       "label": "Hard chromatics",
       "items": [
-        { "id": "echassier", "label": "Chromatic Echassier (Level 80–85+)", "done": false },
-        { "id": "gault", "label": "Chromatic Gault", "done": false },
-        { "id": "reaper_cultist", "label": "Chromatic Reaper Cultist", "done": false },
-        { "id": "petank", "label": "Chromatic Pétank (superboss)", "done": false },
-        { "id": "goblu", "label": "Chromatic Goblu", "done": false },
-        { "id": "aberration", "label": "Chromatic Aberration", "done": false },
-        { "id": "lampmaster", "label": "Chromatic Lampmaster", "done": false },
-        { "id": "bourgeon", "label": "Chromatic Bourgeon (Monolith)", "done": false },
-        { "id": "clair_obscur", "label": "Chromatic Clair Obscur (Monolith Peak) → Combo Attack II Pictos", "done": false },
-        { "id": "creation", "label": "Chromatic Creation (Renoir's Drafts)", "done": false },
-        { "id": "barbasucette", "label": "Chromatic Barbasucette (Verso's Drafts)", "done": false },
-        { "id": "franctale", "label": "Chromatic Franctale (Verso's Drafts)", "done": false }
+        {
+          "id": "echassier",
+          "label": "Chromatic Echassier — Lumiere",
+          "done": true
+        },
+        {
+          "id": "moissonneuse",
+          "label": "Chromatic Moissonneuse — The Continent, island SW of Visages (requires coral-destroy)",
+          "done": false
+        },
+        {
+          "id": "gault",
+          "label": "Chromatic Gault — Stone Wave Cliffs (Old Farm, behind Paint Spike — needs 4 Lost Gestrals)",
+          "done": false
+        },
+        {
+          "id": "reaper_cultist",
+          "label": "Chromatic Reaper Cultist — The Continent, island NE of Coastal Cave (requires coral-destroy)",
+          "done": false
+        },
+        {
+          "id": "goblu",
+          "label": "Chromatic Goblu — The Continent, mountaintop east of Frozen Hearts (requires flying)",
+          "done": false
+        },
+        {
+          "id": "aberration",
+          "label": "Chromatic Aberration — The Continent, floating island SE of The Fountain (requires flying) — bring Anti-Blight",
+          "done": false
+        },
+        {
+          "id": "petank",
+          "label": "Chromatic Pétank — The Continent (superboss)",
+          "done": false
+        },
+        {
+          "id": "bourgeon",
+          "label": "Chromatic Bourgeon — The Monolith",
+          "done": false
+        },
+        {
+          "id": "clair_obscur",
+          "label": "Chromatic Clair Obscur — The Monolith, top (after defeating The Paintress) → Combo Attack II Pictos",
+          "done": false
+        },
+        {
+          "id": "creation",
+          "label": "Chromatic Creation — Renoir's Drafts",
+          "done": false
+        },
+        {
+          "id": "barbasucette",
+          "label": "Chromatic Barbasucette — Verso's Drafts",
+          "done": false
+        },
+        {
+          "id": "franctale",
+          "label": "Chromatic Franctale — Verso's Drafts",
+          "done": false
+        },
+        {
+          "id": "licorne",
+          "label": "Chromatic Licorne — Verso's Drafts (handholds right of Reverie Path)",
+          "done": false
+        },
+        {
+          "id": "machinapieds",
+          "label": "Chromatic Machinapieds — Verso's Drafts (near Gestral Carousel, Candy Land)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "chromatics_tower",
+      "label": "Endless Tower Chromatics",
+      "items": [
+        {
+          "id": "eveque_tower",
+          "label": "Chromatic Eveque — Endless Tower",
+          "done": false
+        },
+        {
+          "id": "steel_chevaliere",
+          "label": "Chromatic Steel Chevaliere — Endless Tower floor 10-2 (trio fight with Gold and Ceramic)",
+          "done": false
+        },
+        {
+          "id": "ceramic_chevaliere",
+          "label": "Chromatic Ceramic Chevaliere — Endless Tower floor 10-2 (trio fight with Gold and Steel)",
+          "done": false
+        },
+        {
+          "id": "lampmaster",
+          "label": "Chromatic Lampmaster — Endless Tower floor 1 (Thank You Update) — 6 health bars, gimmick-heavy",
+          "done": false
+        }
       ]
     },
     {
