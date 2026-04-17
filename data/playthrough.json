@@ -28,11 +28,6 @@
       "done": false
     },
     {
-      "id": "dark_gestral_arena",
-      "label": "Dark Gestral Arena",
-      "done": false
-    },
-    {
       "id": "hard_chromatics",
       "label": "Hard chromatics",
       "items": [
@@ -133,6 +128,16 @@
           "done": false
         }
       ]
+    },
+    {
+      "id": "dark_gestral_arena",
+      "label": "Dark Gestral Arena",
+      "done": false
+    },
+    {
+      "id": "painting_workshop",
+      "label": "Painting Workshop Beast (Level 80+)",
+      "done": false
     },
     {
       "id": "renoirs_drafts",

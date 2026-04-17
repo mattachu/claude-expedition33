@@ -247,7 +247,6 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 
 <!-- GENERATED:START playthrough:current_phase_checklist -->
 - ⬜ Endless Tower floors 1–20 + Chromatic Eveque (good first post-game activity; also serves as level-up fallback if Flying Manor too hard)
-- ⬜ Dark Gestral Arena
 - ⬜ Hard chromatics (1/14)
   - ✅ Chromatic Echassier — Lumiere
   - ⬜ Chromatic Moissonneuse — The Continent, island SW of Visages (requires coral-destroy)
@@ -268,6 +267,8 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
   - ⬜ Chromatic Steel Chevaliere — Endless Tower floor 10-2 (trio fight with Gold and Ceramic)
   - ⬜ Chromatic Ceramic Chevaliere — Endless Tower floor 10-2 (trio fight with Gold and Steel)
   - ⬜ Chromatic Lampmaster — Endless Tower floor 1 (Thank You Update) — 6 health bars, gimmick-heavy
+- ⬜ Dark Gestral Arena
+- ⬜ Painting Workshop Beast (Level 80+)
 - ⬜ Renoir's Drafts (Level 80+, recommended 90+ for Simon) — hardest optional area; Aberrations, Bouchecliers, Contorsionnistes
 - ⬜ Purchase Charnon (89,884 Chromas, Renoir's Drafts merchant) — Sciel alternative endgame weapon
 - ⬜ Verso's Drafts (DLC, Level 80+) — recommended after Renoir's Drafts; final boss (Root of All Evil) is hardest boss in game, reported to beat level 99 parties
