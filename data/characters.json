@@ -7,7 +7,7 @@
       "agility": 99,
       "might": 60
     },
-    " ": {
+    "stats_base": {
       "health": 2019,
       "attack": 1205,
       "speed": 1176,

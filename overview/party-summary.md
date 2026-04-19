@@ -10,13 +10,13 @@
 
 **Level:** 86 | **Role:** Primary DPS | **Weapon:** Lithum (33)
 
-| Stat    | Base        | Modified |
-|---------|-------------|----------|
-| Health  | *[unknown]* | 7610     |
-| Attack  | *[unknown]* | 10653    |
-| Speed   | *[unknown]* | 2156     |
-| Defence | *[unknown]* | 182      |
-| Crit    | *[unknown]* | 101%     |
+| Stat    | Base | Modified |
+|---------|------|----------|
+| Health  | 2019 | 7610     |
+| Attack  | 1205 | 10653    |
+| Speed   | 1176 | 2156     |
+| Defence | 182  | 182      |
+| Crit    | 41%  | 101%     |
 
 
 | Pictos           | Level | Stats                 |
