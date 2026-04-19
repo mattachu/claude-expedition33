@@ -12,13 +12,13 @@
     "Monoco"
   ],
   "inventory": {
-    "colour_of_lumina": 167,
+    "colour_of_lumina": 120,
     "recoats": 28,
-    "chroma": 1662993,
+    "chroma": 2065796,
     "chroma_catalyst": 67,
     "chroma_catalyst_polished": 65,
-    "chroma_catalyst_resplendent": 83,
-    "chroma_catalyst_grandiose": 17,
+    "chroma_catalyst_resplendent": 103,
+    "chroma_catalyst_grandiose": 36,
     "chroma_catalyst_perfect": 2
   },
   "current_phase_checklist": [
@@ -26,6 +26,11 @@
       "id": "endless_tower_1_20",
       "label": "Endless Tower floors 1–20 + Chromatic Eveque (good first post-game activity; also serves as level-up fallback if Flying Manor too hard)",
       "done": false
+    },
+    {
+      "id": "dark_gestral_arena",
+      "label": "Dark Gestral Arena",
+      "done": true
     },
     {
       "id": "hard_chromatics",
@@ -37,34 +42,49 @@
           "done": true
         },
         {
+          "id": "catapult_sakapatate",
+          "label": "Chromatic Catapult Sakapatate — Dark Gestral Arena",
+          "done": true
+        },
+        {
+          "id": "ranger_sakapatate",
+          "label": "Chromatic Ranger Sakapatate — Dark Gestral Arena",
+          "done": true
+        },
+        {
+          "id": "robust_sakapatate",
+          "label": "Chromatic Robust Sakapatate — Dark Gestral Arena",
+          "done": true
+        },
+        {
           "id": "moissonneuse",
           "label": "Chromatic Moissonneuse — The Continent, island SW of Visages (requires coral-destroy)",
-          "done": false
+          "done": true
         },
         {
           "id": "gault",
           "label": "Chromatic Gault — Stone Wave Cliffs (Old Farm, behind Paint Spike — needs 4 Lost Gestrals)",
-          "done": false
+          "done": true
         },
         {
           "id": "reaper_cultist",
           "label": "Chromatic Reaper Cultist — The Continent, island NE of Coastal Cave (requires coral-destroy)",
-          "done": false
+          "done": true
         },
         {
           "id": "goblu",
           "label": "Chromatic Goblu — The Continent, mountaintop east of Frozen Hearts (requires flying)",
-          "done": false
+          "done": true
         },
         {
           "id": "aberration",
           "label": "Chromatic Aberration — The Continent, floating island SE of The Fountain (requires flying) — bring Anti-Blight",
-          "done": false
+          "done": true
         },
         {
           "id": "petank",
           "label": "Chromatic Pétank — The Continent (superboss)",
-          "done": false
+          "done": true
         },
         {
           "id": "bourgeon",
@@ -128,11 +148,6 @@
           "done": false
         }
       ]
-    },
-    {
-      "id": "dark_gestral_arena",
-      "label": "Dark Gestral Arena",
-      "done": false
     },
     {
       "id": "painting_workshop",

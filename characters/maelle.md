@@ -205,6 +205,7 @@ Net change: freed 52, added 33. 19 LP spare after swap (within 158 LP budget).
 | Rain of Fire     | 5                 | Offensive  | ❌        | Medium Fire damage + 3 burn per hit, 2 hits. Applies 2 more burn per hit if in Defensive.                                                       |
 | Spark            | 3                 | Defensive  | ❌        | Low Fire damage + 3 burn. Applies 2 more burn if in Offensive.                                                                                  |
 | Swift Stride     | 3                 | Virtuose   | ❌        | Low Physical. Switches to Virtuose if target burning. Regains 0–2 AP.                                                                           |
+| Revenge          | —                 | —          | ❌        |                                                                                                                                                 |
 <!-- GENERATED:END -->
 
 ### Solo skill loadout recommendation (The Reacher)

@@ -537,6 +537,15 @@
       "scaling": null,
       "obtained": true,
       "effects": []
+    },
+    {
+      "name": "Blodam",
+      "level": 12,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
     }
   ],
   "Sciel": [
@@ -713,6 +722,15 @@
     {
       "name": "Corderon",
       "level": 13,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Moisson",
+      "level": 17,
       "power": null,
       "element": null,
       "scaling": null,
@@ -912,7 +930,7 @@
     },
     {
       "name": "Potierim",
-      "level": 10,
+      "level": 11,
       "power": null,
       "element": null,
       "scaling": null,
@@ -1102,6 +1120,15 @@
           "description": "50% increased Break damage."
         }
       ]
+    },
+    {
+      "name": "Brumaro",
+      "level": 27,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
     }
   ]
 }

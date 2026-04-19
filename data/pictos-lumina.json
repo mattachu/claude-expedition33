@@ -127,11 +127,16 @@
       "category": [
         "survival"
       ],
-      "effect": "Immune to Stun.",
+      "effect": "Immune to Stun",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 29,
+      "stats": {
+        "health": 2757,
+        "defence": 1572
+      }
     },
     {
       "name": "At Death's Door",
@@ -412,9 +417,10 @@
       ],
       "effect": "50% increased Break damage with Free Aim shots.",
       "lp_cost": 1,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 7
     },
     {
       "name": "Breaking Slow",
@@ -684,11 +690,16 @@
       "category": [
         "combat"
       ],
-      "effect": "Base Attack has 1 extra hit.",
+      "effect": "Base attack has 1 extra hit",
       "lp_cost": 30,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 25,
+      "stats": {
+        "speed": 619,
+        "crit": "14%"
+      }
     },
     {
       "name": "Confident",
@@ -1186,9 +1197,10 @@
       ],
       "effect": "Give 2 AP on applying Rush.",
       "lp_cost": 10,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 22
     },
     {
       "name": "Energising Shell",
@@ -1501,9 +1513,10 @@
       ],
       "effect": "+15% to Defenceless damage amplification.",
       "lp_cost": 15,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 21
     },
     {
       "name": "Greater Powerful",
@@ -1743,11 +1756,16 @@
       "category": [
         "burn"
       ],
-      "effect": "Burn duration is increased by 2.",
+      "effect": "Burn duration is increased by 2",
       "lp_cost": 15,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 27,
+      "stats": {
+        "health": 2392,
+        "defence": 1292
+      }
     },
     {
       "name": "Longer Powerful",
@@ -2441,9 +2459,10 @@
       ],
       "effect": "15% increased damage for each Status Effect on self.",
       "lp_cost": null,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 20
     },
     {
       "name": "Teamwork",
@@ -2462,11 +2481,15 @@
       "category": [
         "misc"
       ],
-      "effect": "Max Health reduced to 1.",
+      "effect": "Max Health is reduced to 1",
       "lp_cost": 1,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 31,
+      "stats": {
+        "crit": "108%"
+      }
     },
     {
       "name": "Time Tint",

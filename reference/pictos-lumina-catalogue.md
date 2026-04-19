@@ -4,11 +4,11 @@
 
 See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) for Pictos and Lumina currently in use.
 
-**194 Pictos total.** 141 obtained.
+**194 Pictos total.** 149 obtained.
 
 ---
 
-## AP and Energy (32 Pictos, 26 obtained)
+## AP and Energy (32 Pictos, 27 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
@@ -31,7 +31,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Energising Parry | +1 AP on successful Parry. | 15 |  |  |  |
 |  | Energising Powerful | Give 2 AP on applying Powerful. | 10 |  |  |  |
 | ✓ | Energising Revive | +3 AP to all allies when revived. | 5 |  |  |  |
-|  | Energising Rush | Give 2 AP on applying Rush. | 10 |  |  |  |
+| ✓ | Energising Rush | Give 2 AP on applying Rush. | 10 |  |  |  |
 | ✓ | Energising Shell | Give 2 AP on applying Shell. | 10 | Defence: 319, Speed: 154 |  |  |
 | ✓ | Energising Shots | 20% chance to gain 1 AP on Free Aim shot. | 10 | Speed: 779, Crit: 16% | Sciel | shots |
 | ✓ | Energising Start I | +1 AP on battle start. | 5 |  |  |  |
@@ -47,7 +47,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Break (13 Pictos, 9 obtained)
+## Break (13 Pictos, 10 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
@@ -57,7 +57,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Breaking Burn | 25% increased Break damage on Burning enemies. | 5 |  |  |  |
 | ✓ | Breaking Counter | 50% increased Break damage on Counterattack. | 3 |  |  |  |
 | ✓ | Breaking Death | Fully charge enemy break bar on death | 5 | Speed: 586, Crit: 33% | Verso | death |
-|  | Breaking Shots | 50% increased Break damage with Free Aim shots. | 1 |  |  | shots |
+| ✓ | Breaking Shots | 50% increased Break damage with Free Aim shots. | 1 |  |  | shots |
 |  | Breaking Slow | 25% increased Break damage against Slowed enemies. | 5 |  |  |  |
 | ✓ | Fueling Break | Breaking a target also doubles its Burn amount. | 5 |  |  |  |
 | ✓ | Gradient Break | +50% of a Gradient Charge on Breaking a target. | 5 | Speed: 434, Crit: 28% | Maelle | gradient |
@@ -67,7 +67,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Burn (8 Pictos, 7 obtained)
+## Burn (8 Pictos, 8 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
@@ -78,7 +78,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Burning Shots | 20% chance to Burn on Free Aim shot. | 3 |  |  | shots |
 | ✓ | Critical Burn | 25% increased Crit rate on Burning enemies | 5 | Speed: 434, Crit: 28% | Lune |  |
 | ✓ | Double Burn | On applying a Burn stack, apply a second one. | 30 |  |  |  |
-|  | Longer Burn | Burn duration is increased by 2. | 15 |  |  |  |
+| ✓ | Longer Burn | Burn duration is increased by 2 | 15 | Health: 2392, Defence: 1292 |  |  |
 
 ---
 
@@ -94,7 +94,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Damage Modifiers (30 Pictos, 22 obtained)
+## Damage Modifiers (30 Pictos, 24 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
@@ -116,7 +116,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 |  | Full Strength | 25% increased damage on full Health. | 15 |  |  |  |
 | ✓ | Glass Canon | Deal 25% more damage, but take 25% more damage. | 10 |  |  |  |
 | ✓ | Gradient Fighter | 25% increased damage with Gradient Attacks. | 5 | Speed: 182, Crit: 18% |  | gradient |
-|  | Greater Defenceless | +15% to Defenceless damage amplification. | 15 |  |  |  |
+| ✓ | Greater Defenceless | +15% to Defenceless damage amplification. | 15 |  |  |  |
 |  | Greater Powerful | +15% to Powerful damage increase. | 10 |  |  |  |
 | ✓ | Immaculate | 30% increased damage until a hit is received. | 10 |  |  |  |
 |  | Inverted Affinity | Apply Inverted on self for 3 turns on battle start. 50% increased damage while Inverted. | 5 |  |  |  |
@@ -126,7 +126,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Roulette | Every hit has a 50% chance to deal either 50% or 200% of its damage. | 5 | Defence: 1501, Crit: 32% |  |  |
 | ✓ | Shield Affinity | 30% increased damage while having Shields, but receiving any damage always removes all Shields. | 15 |  |  |  |
 | ✓ | Stun Boost | 30% increased damage on Stunned targets. | 10 |  |  |  |
-|  | Tainted | 15% increased damage for each Status Effect on self. | None |  |  |  |
+| ✓ | Tainted | 15% increased damage for each Status Effect on self. | None |  |  |  |
 | ✓ | Warming Up | 5% increased damage per turn, stacks up to 5 | 15 | Health: 1166, Crit: 9% |  |  |
 
 ---
@@ -193,14 +193,14 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Combat Flow (9 Pictos, 6 obtained)
+## Combat Flow (9 Pictos, 7 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
 | ✓ | Cheater | Extra turn after using a skill, once per turn | 40 | Health: 1198, Speed: 400 |  |  |
 | ✓ | Combo Attack I | Base Attack has 1 extra hit. | 10 |  |  |  |
 |  | Combo Attack II | Base Attack has 1 extra hit. | 20 |  |  |  |
-|  | Combo Attack III | Base Attack has 1 extra hit. | 30 |  |  |  |
+| ✓ | Combo Attack III | Base attack has 1 extra hit | 30 | Speed: 619, Crit: 14% |  |  |
 |  | Faster Than Strong | Always play twice in a row, but deal 50% less damage. | 10 |  |  |  |
 | ✓ | First Strike | Play first. | 10 |  |  |  |
 | ✓ | Piercing Shot | 25% increased Free Aim damage. Free Aim shots ignore Shields. | 2 |  |  | shots |
@@ -221,7 +221,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Survival and Defence (26 Pictos, 21 obtained)
+## Survival and Defence (26 Pictos, 22 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
@@ -230,7 +230,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Anti-Burn | Immune to Burn | 15 | Health: 2757, Defence: 1572 |  |  |
 | ✓ | Anti-Charm | Immune to Charm. | 10 |  |  |  |
 | ✓ | Anti-Freeze | Immune to Freeze | 15 | Health: 1464, Defence: 733 |  |  |
-|  | Anti-Stun | Immune to Stun. | 5 |  |  |  |
+| ✓ | Anti-Stun | Immune to Stun | 5 | Health: 2757, Defence: 1572 |  |  |
 | ✓ | Auto Shell | Apply Shell for 3 turns on battle start. | 10 |  |  |  |
 | ✓ | Base Shield | Grants 1 Shield HP buffer per turn | 20 | Speed: 399, Crit: 11% |  |  |
 | ✓ | Confident | Take 50% less damage, but can't be healed. | 20 | Speed: 557, Crit: 32% | Verso |  |
@@ -290,12 +290,12 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Miscellaneous (3 Pictos, 1 obtained)
+## Miscellaneous (3 Pictos, 2 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
 | ✓ | Painter | Converts all Physical damage to Void damage. | 10 | Speed: 519, Crit: 31% | Sciel |  |
 |  | Pro Retreat | Allows Flee to be instantaneous. | 40 |  |  |  |
-|  | The One | Max Health reduced to 1. | 1 |  |  |  |
+| ✓ | The One | Max Health is reduced to 1 | 1 | Crit: 108% |  |  |
 
 ---

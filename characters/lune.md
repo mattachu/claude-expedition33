@@ -188,6 +188,7 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 | Rockslide         | 5  | Earth, Light         | ❌        | Medium single-target Earth damage, 2 hits. Can Break. Consumes Lightning, Ice and Fire Stains for greatly increased damage (×5).                                              |
 | Thunderfall       | 5  | Lightning, Light     | ❌        | Medium Lightning damage to random enemies, 2–6 hits. Crits trigger an additional hit. Consumes Fire Stain for increased damage (×1.5).                                        |
 | Wildfire          | 4  | Fire, Light          | ❌        | Medium Fire AoE, 1 hit. Applies 3 Burn. Consumes Ice Stain ×2 for increased damage (×2).                                                                                      |
+| Typhoon           | 8  | Ice, Light           | ❌        | Ice AoE + on turn start deals high Ice damage to all enemies and heals allies 20% HP for 3 turns. Consumes Earth Stain ×2 to extend to 5 turns.                               |
 <!-- GENERATED:END -->
 
 ---

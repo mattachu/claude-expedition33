@@ -58,10 +58,10 @@ Fetch that file only when reviewing specific past errors.
 
 ### Inventory
 <!-- GENERATED:START playthrough:inventory -->
-- Colour of Lumina: 167
+- Colour of Lumina: 120
 - Recoats: 28
-- Chroma Catalysts: 67 standard, 65 polished, 83 resplendent, 17 grandiose, 2 perfect
-- Chroma: 1662993
+- Chroma Catalysts: 67 standard, 65 polished, 103 resplendent, 36 grandiose, 2 perfect
+- Chroma: 2065796
 <!-- GENERATED:END -->
 
 ### LP totals
@@ -247,14 +247,18 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 
 <!-- GENERATED:START playthrough:current_phase_checklist -->
 - ⬜ Endless Tower floors 1–20 + Chromatic Eveque (good first post-game activity; also serves as level-up fallback if Flying Manor too hard)
-- ⬜ Hard chromatics (1/14)
+- ✅ Dark Gestral Arena
+- ⬜ Hard chromatics (10/17)
   - ✅ Chromatic Echassier — Lumiere
-  - ⬜ Chromatic Moissonneuse — The Continent, island SW of Visages (requires coral-destroy)
-  - ⬜ Chromatic Gault — Stone Wave Cliffs (Old Farm, behind Paint Spike — needs 4 Lost Gestrals)
-  - ⬜ Chromatic Reaper Cultist — The Continent, island NE of Coastal Cave (requires coral-destroy)
-  - ⬜ Chromatic Goblu — The Continent, mountaintop east of Frozen Hearts (requires flying)
-  - ⬜ Chromatic Aberration — The Continent, floating island SE of The Fountain (requires flying) — bring Anti-Blight
-  - ⬜ Chromatic Pétank — The Continent (superboss)
+  - ✅ Chromatic Catapult Sakapatate — Dark Gestral Arena
+  - ✅ Chromatic Ranger Sakapatate — Dark Gestral Arena
+  - ✅ Chromatic Robust Sakapatate — Dark Gestral Arena
+  - ✅ Chromatic Moissonneuse — The Continent, island SW of Visages (requires coral-destroy)
+  - ✅ Chromatic Gault — Stone Wave Cliffs (Old Farm, behind Paint Spike — needs 4 Lost Gestrals)
+  - ✅ Chromatic Reaper Cultist — The Continent, island NE of Coastal Cave (requires coral-destroy)
+  - ✅ Chromatic Goblu — The Continent, mountaintop east of Frozen Hearts (requires flying)
+  - ✅ Chromatic Aberration — The Continent, floating island SE of The Fountain (requires flying) — bring Anti-Blight
+  - ✅ Chromatic Pétank — The Continent (superboss)
   - ⬜ Chromatic Bourgeon — The Monolith
   - ⬜ Chromatic Clair Obscur — The Monolith, top (after defeating The Paintress) → Combo Attack II Pictos
   - ⬜ Chromatic Creation — Renoir's Drafts
@@ -267,7 +271,6 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
   - ⬜ Chromatic Steel Chevaliere — Endless Tower floor 10-2 (trio fight with Gold and Ceramic)
   - ⬜ Chromatic Ceramic Chevaliere — Endless Tower floor 10-2 (trio fight with Gold and Steel)
   - ⬜ Chromatic Lampmaster — Endless Tower floor 1 (Thank You Update) — 6 health bars, gimmick-heavy
-- ⬜ Dark Gestral Arena
 - ⬜ Painting Workshop Beast (Level 80+)
 - ⬜ Renoir's Drafts (Level 80+, recommended 90+ for Simon) — hardest optional area; Aberrations, Bouchecliers, Contorsionnistes
 - ⬜ Purchase Charnon (89,884 Chromas, Renoir's Drafts merchant) — Sciel alternative endgame weapon
