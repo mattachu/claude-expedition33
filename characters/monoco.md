@@ -56,10 +56,10 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 <!-- GENERATED:START characters:Monoco:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 83    |
+| Level     | 87    |
 | Agility   | 99    |
 | Defence   | 99    |
-| Luck      | 51    |
+| Luck      | 63    |
 | Vitality  | 0     |
 | Might     | 0     |
 <!-- GENERATED:END -->
@@ -67,15 +67,15 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 ### Combat Stats
 
 <!-- GENERATED:START characters:Monoco:stats -->
-*Stats with Joyaro (32), Longer Shell (29), Powerful Mark (28), Powerful Revive (28) equipped*
+*Stats with Joyaro (33), Longer Shell (29), Powerful Mark (28), Powerful Revive (28) equipped*
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 1930 | 4687     |
-| Attack  | 1038 | 6624     |
-| Speed   | 1112 | 2477     |
+| Health  | 2049 | 4805     |
+| Attack  | 1113 | 10863    |
+| Speed   | 1157 | 2522     |
 | Defence | 729  | 2301     |
-| Crit    | 47%  | 95%      |
+| Crit    | 50%  | 98%      |
 <!-- GENERATED:END -->
 
 ---
@@ -84,10 +84,10 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 
 ### Current (Endgame)
 <!-- GENERATED:START weapons:Monoco:Joyaro -->
-- **Name:** Joyaro (32)
-- **Power:** 3934
+- **Name:** Joyaro (33)
+- **Power:** 9750
 - **Element:** Lightning
-- **Scaling:** Agility A, Defence B
+- **Scaling:** Agility S, Defence A
 - **Effects:**
     - Level 4: Start battle in Almighty Mask.
     - Level 10: 20% increased damage for each consecutive turn without taking damage, stacks up to 5×.
@@ -229,6 +229,7 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Sakapatate Slam       | 7              | +5    | Heavy    | ❌        | High Physical AoE, 1 hit. Increased damage against Marked targets.                |
 | Sapling Absorption    | 6              | +5    | Caster   | ❌        | High Dark, 3 hits. Recovers 5% HP per hit.                                        |
 | Troubadour Trumpet    | 3              | +4    | Caster   | ❌        | Applies a random buff to 1–3 allies.                                              |
+| Sakapatate Fire       | —              | +1    | Almighty | ❌        | Extreme Fire AoE, 3 hits. Applies 3 Burn per hit.                                 |
 <!-- GENERATED:END -->
 
 *Abbest Wind should not be removed — essential for wheel cycling and free second turn on Agile Mask.*

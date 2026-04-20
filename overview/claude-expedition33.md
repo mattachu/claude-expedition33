@@ -45,7 +45,7 @@ Fetch that file only when reviewing specific past errors.
 - **Current playthrough:** First playthrough
 - **Progress:**
   - Act 3, Phase 3.
-  - Characters: Maelle L86, Verso L86, Sciel L85, Lune L82, Monoco L83.
+  - Characters: Maelle L91, Verso L91, Sciel L90, Lune L86, Monoco L87.
   - Current area: Post-game.
 <!-- GENERATED:END -->
 - **Permanently missed:** Vale bosses (Jovial Moissonneuse, Sorrowful Chapelier, Seething Boucheclier); Karatom quest (requires Gustave alive).
@@ -60,7 +60,7 @@ Fetch that file only when reviewing specific past errors.
 <!-- GENERATED:START playthrough:inventory -->
 - Colour of Lumina: 120
 - Recoats: 28
-- Chroma Catalysts: 67 standard, 65 polished, 103 resplendent, 36 grandiose, 2 perfect
+- Chroma Catalysts: 67 standard, 65 polished, 103 resplendent, 36 grandiose, 0 perfect
 - Chroma: 2065796
 <!-- GENERATED:END -->
 
@@ -157,11 +157,11 @@ Note: base speed scales with level independently of Agility — keep levels clos
 <!-- GENERATED:START characters:summary:party -->
 | Character | Level | Role                         | Weapon        | Pictos                                         | LP      |
 |-----------|-------|------------------------------|---------------|------------------------------------------------|---------|
-| Maelle    | 86    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Gradient Break  | 234/234 |
-| Verso     | 86    | Endgame main DPS             | Chevalam (33) | Augmented Counter I, Breaking Death, Confident | 224/224 |
-| Sciel     | 85    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots       | 215/215 |
-| Lune      | 82    | DPS / healer (reserve)       | Kralim (32)   | Critical Burn, Burn Affinity, Burning Death    | 130/130 |
-| Monoco    | 83    | Break + AP support (reserve) | Joyaro (32)   | Longer Shell, Powerful Mark, Powerful Revive   | 125/133 |
+| Maelle    | 91    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Gradient Break  | 234/234 |
+| Verso     | 91    | Endgame main DPS             | Chevalam (33) | Augmented Counter I, Breaking Death, Confident | 224/224 |
+| Sciel     | 90    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots       | 215/215 |
+| Lune      | 86    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death    | 130/130 |
+| Monoco    | 87    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Powerful Mark, Powerful Revive   | 125/133 |
 <!-- GENERATED:END -->
 
 ### Core Lumina Suite
@@ -246,7 +246,6 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 ### Phase 4 — Post-game (Level 80+)
 
 <!-- GENERATED:START playthrough:current_phase_checklist -->
-- ⬜ Endless Tower floors 1–20 + Chromatic Eveque (good first post-game activity; also serves as level-up fallback if Flying Manor too hard)
 - ✅ Dark Gestral Arena
 - ⬜ Hard chromatics (10/17)
   - ✅ Chromatic Echassier — Lumiere
@@ -276,6 +275,9 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 - ⬜ Purchase Charnon (89,884 Chromas, Renoir's Drafts merchant) — Sciel alternative endgame weapon
 - ⬜ Verso's Drafts (DLC, Level 80+) — recommended after Renoir's Drafts; final boss (Root of All Evil) is hardest boss in game, reported to beat level 99 parties
 - ⬜ Endless Tower floors 21–33 + DLC bosses (Clea Unleashed, Simon the Divergent Star — accessed via Tower canvases after beating originals; added by Thank You Update, no ordering dependency with Verso's Drafts)
+- ✅ Endless Tower Stages 1–10 (30 fights)
+- ⬜ Endless Tower Stage 11 — 3 fights; Trial 3 (Painted Love) gives Perfect Catalyst + Clair Outfit for Verso
+- ⬜ Endless Tower DLC superbosses (4 — accessed via canvases, Thank You Update)
 <!-- GENERATED:END -->
 
 ---

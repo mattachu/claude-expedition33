@@ -54,10 +54,10 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 <!-- GENERATED:START characters:Maelle:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 86    |
+| Level     | 91    |
 | Agility   | 99    |
 | Luck      | 99    |
-| Might     | 60    |
+| Might     | 75    |
 | Vitality  | 0     |
 | Defence   | 0     |
 <!-- GENERATED:END -->
@@ -71,9 +71,9 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2019 | 7610     |
-| Attack  | 1205 | 10653    |
-| Speed   | 1176 | 2156     |
+| Health  | 2171 | 7762     |
+| Attack  | 1322 | 11013    |
+| Speed   | 1213 | 2193     |
 | Defence | 182  | 182      |
 | Crit    | 41%  | 101%     |
 <!-- GENERATED:END -->
@@ -180,16 +180,18 @@ Net change: freed 52, added 33. 19 LP spare after swap (within 158 LP budget).
 ## Skills
 
 <!-- GENERATED:START characters:Maelle:skills -->
-**Currently equipped (6):** Phantom Strike, Fleuret Fury, Percée, Gustave's Homage, Stendhal, Sword Ballet
+**Currently equipped (6):** Phantom Strike, Fleuret Fury, Gustave's Homage, Stendhal, Last Chance, Mezzo Forte
 
 | Skill            | AP                | Stance     | Equipped | Notes                                                                                                                                           |
 |------------------|-------------------|------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | Phantom Strike   | 4                 | Defensive  | ✅        | 4-hit very high Void AoE. Switches to Defensive stance. Gives +35% of a Gradient Charge.                                                        |
 | Fleuret Fury     | 6                 | —          | ✅        | 3-hit high single-target Physical. Stays in Virtuose if already there. Can Break.                                                               |
-| Percée           | 5 (2 in Virtuose) | Stanceless | ✅        | Increased damage to Marked target. 2 AP in Virtuose but leaves Virtuose after — one use per Virtuose window.                                    |
 | Gustave's Homage | 8                 | Virtuose   | ✅        | 8-hit extreme Physical damage. Switches to Virtuose Stance.                                                                                     |
 | Stendhal         | 8                 | Stanceless | ✅        | Extreme single-target Void damage, 1 hit. Switches to Stanceless. Removes self-shields. Applies Defenceless to self. Nerfed 40% in Patch 1.2.3. |
-| Sword Ballet     | 9                 | —          | ✅        | 5-hit extreme single-target weapon element. Crits deal double damage. Primary Virtuose damage skill.                                            |
+| Last Chance      | 1                 | Virtuose   | ✅        | Reduces self-health to 1. Refills all AP.                                                                                                       |
+| Mezzo Forte      | 1                 | —          | ✅        | Reapply current stance. Give 2–4 AP.                                                                                                            |
+| Percée           | 5 (2 in Virtuose) | Stanceless | ❌        | Increased damage to Marked target. 2 AP in Virtuose but leaves Virtuose after — one use per Virtuose window.                                    |
+| Sword Ballet     | 9                 | —          | ❌        | 5-hit extreme single-target weapon element. Crits deal double damage. Primary Virtuose damage skill.                                            |
 | Breaking Rules   | 3                 | Offensive  | ❌        | Destroys all target shields. Gains 1 AP per shield destroyed. If target is Defenceless: grants a second turn.                                   |
 | Burning Canvas   | 5                 | Offensive  | ❌        | High Void damage + 1 burn per hit. Damage increased for each burn stack on target.                                                              |
 | Combustion       | 4                 | Offensive  | ❌        | Medium single target Physical damage. 2 hits. Consumes up to 10 Burn for increased damage.                                                      |
@@ -197,8 +199,6 @@ Net change: freed 52, added 33. 19 LP spare after swap (within 158 LP budget).
 | Égide            | 3                 | Defensive  | ❌        | Protects allies by taking damage in their place for 2 turns.                                                                                    |
 | Fencer's Flurry  | 4                 | Offensive  | ❌        | Medium AoE. Applies Defenceless 1 turn.                                                                                                         |
 | Guard Up         | 3                 | Offensive  | ❌        | Shell buff for allies.                                                                                                                          |
-| Last Chance      | 1                 | Virtuose   | ❌        | Reduces self-health to 1. Refills all AP.                                                                                                       |
-| Mezzo Forte      | 1                 | —          | ❌        | Reapply current stance. Give 2–4 AP.                                                                                                            |
 | Momentum Strike  | 7                 | Defensive  | ❌        | High damage. Costs 4 AP in Virtuose.                                                                                                            |
 | Offensive Switch | 1                 | Offensive  | ❌        | Low damage. Applies Defenceless to enemy.                                                                                                       |
 | Payback          | 9                 | Defensive  | ❌        | Very high Physical damage. Reduced AP cost for each attack parried since last turn. Can Break.                                                  |

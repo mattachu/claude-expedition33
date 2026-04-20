@@ -57,10 +57,10 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 <!-- GENERATED:START characters:Verso:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 86    |
+| Level     | 91    |
 | Agility   | 99    |
 | Luck      | 99    |
-| Might     | 60    |
+| Might     | 75    |
 | Vitality  | 0     |
 | Defence   | 0     |
 <!-- GENERATED:END -->
@@ -72,9 +72,9 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2019 | 6077     |
-| Attack  | 1205 | 10181    |
-| Speed   | 1176 | 2319     |
+| Health  | 2171 | 6229     |
+| Attack  | 1322 | 10529    |
+| Speed   | 1213 | 2356     |
 | Defence | 182  | 182      |
 | Crit    | 41%  | 122%     |
 <!-- GENERATED:END -->

@@ -39,26 +39,26 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 <!-- GENERATED:START characters:Lune:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 82    |
+| Level     | 86    |
 | Vitality  | 99    |
 | Agility   | 99    |
-| Luck      | 48    |
-| Might     | 0     |
+| Luck      | 51    |
+| Might     | 9     |
 | Defence   | 0     |
 <!-- GENERATED:END -->
 
 ### Combat Stats
 
 <!-- GENERATED:START characters:Lune:stats -->
-*Stats with Kralim (32), Critical Burn (25), Burn Affinity (21), Burning Death (28) equipped*
+*Stats with Kralim (33), Critical Burn (25), Burn Affinity (21), Burning Death (28) equipped*
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 3289 | 3289     |
-| Attack  | 1019 | 6118     |
-| Speed   | 1100 | 2519     |
+| Health  | 3408 | 3408     |
+| Attack  | 1106 | 10160    |
+| Speed   | 1134 | 2553     |
 | Defence | 182  | 182      |
-| Crit    | 28%  | 100%     |
+| Crit    | 29%  | 101%     |
 <!-- GENERATED:END -->
 
 ---
@@ -68,10 +68,10 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 ### Current (Endgame)
 
 <!-- GENERATED:START weapons:Lune:Kralim -->
-- **Name:** Kralim (32)
-- **Power:** 4454
+- **Name:** Kralim (33)
+- **Power:** 9054
 - **Element:** Lightning
-- **Scaling:** Agility A, Vitality B
+- **Scaling:** Agility S, Vitality A
 - **Effects:**
     - Level 4: Casting a Skill increases Skill damage of all other elements by +20%. Resets when casting a previously used element.
     - Level 10: On turn start, if no Stains, 2 random Stains generated.

@@ -36,12 +36,12 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 <!-- GENERATED:START characters:Sciel:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 85    |
+| Level     | 90    |
 | Agility   | 99    |
 | Luck      | 99    |
-| Defence   | 57    |
+| Defence   | 63    |
+| Might     | 9     |
 | Vitality  | 0     |
-| Might     | 0     |
 <!-- GENERATED:END -->
 
 ### Combat Stats
@@ -51,11 +51,11 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 1989 | 6959     |
-| Attack  | 1075 | 8451     |
-| Speed   | 1168 | 2466     |
-| Defence | 449  | 449      |
-| Crit    | 54%  | 101%     |
+| Health  | 2140 | 7110     |
+| Attack  | 1182 | 8685     |
+| Speed   | 1206 | 2504     |
+| Defence | 481  | 481      |
+| Crit    | 55%  | 102%     |
 <!-- GENERATED:END -->
 
 *Critical Burn Pictos replaced Base Shield — restored intended turn order (Sciel faster than Maelle).*

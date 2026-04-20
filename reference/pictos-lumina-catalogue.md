@@ -4,7 +4,7 @@
 
 See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) for Pictos and Lumina currently in use.
 
-**194 Pictos total.** 149 obtained.
+**194 Pictos total.** 153 obtained.
 
 ---
 
@@ -59,7 +59,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Breaking Death | Fully charge enemy break bar on death | 5 | Speed: 586, Crit: 33% | Verso | death |
 | ✓ | Breaking Shots | 50% increased Break damage with Free Aim shots. | 1 |  |  | shots |
 |  | Breaking Slow | 25% increased Break damage against Slowed enemies. | 5 |  |  |  |
-| ✓ | Fueling Break | Breaking a target also doubles its Burn amount. | 5 |  |  |  |
+| ✓ | Fueling Break | Breaking a target doubles its Burn amount. | 5 | Speed: 507, Crit: 31% |  |  |
 | ✓ | Gradient Break | +50% of a Gradient Charge on Breaking a target. | 5 | Speed: 434, Crit: 28% | Maelle | gradient |
 |  | Gradient Breaker | 50% increased Break damage with Gradient Attacks. | 5 |  |  | gradient |
 | ✓ | Quick Break | Play again on Breaking a target. | 3 | Speed: 434, Crit: 28% |  |  |
@@ -82,7 +82,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Critical Hit (5 Pictos, 2 obtained)
+## Critical Hit (5 Pictos, 3 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
@@ -90,11 +90,11 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Critical Moment | 50% increased Critical Chance if Health is below 30%. | None |  |  |  |
 |  | Critical Stun | 100% Critical Chance on hitting a Stunned target. | 5 |  |  |  |
 |  | Critical Vulnerability | 25% increased Critical Chance on Defenceless enemies. | 5 |  |  |  |
-|  | Critical Weakness | 25% increased Critical Chance on Weakness. | 5 |  |  |  |
+| ✓ | Critical Weakness | 25% increased Critical Chance on Weakness. | 5 | Speed: 705, Crit: 15% |  |  |
 
 ---
 
-## Damage Modifiers (30 Pictos, 24 obtained)
+## Damage Modifiers (30 Pictos, 25 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
@@ -103,20 +103,20 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Augmented Attack | 50% increased Base Attack damage. | 7 |  |  |  |
 | ✓ | Augmented Counter I | 25% increased Counterattack damage. | 3 | Health: 4058, Crit: 16% | Verso |  |
 | ✓ | Augmented Counter II | 50% increased Counterattack damage. | 5 |  |  |  |
-|  | Augmented Counter III | 75% increased Counterattack damage. | 7 |  |  |  |
+| ✓ | Augmented Counter III | 75% increased Counterattack damage. | 7 | Health: 1548, Crit: 10% |  |  |
 | ✓ | Augmented First Strike | 50% increased damage on the first hit. Once per battle. | 5 |  |  |  |
 | ✓ | Confident Fighter | 30% increased damage, but cannot be healed. | 15 | Health: 222, Crit: 20% |  |  |
 | ✓ | Empowering Attack | Gain Powerful for 1 turn on Base Attack. | 10 |  |  |  |
 | ✓ | Empowering Break | Gain Powerful on Breaking a target. | 3 | Speed: 546, Crit: 32% | Maelle |  |
 | ✓ | Empowering Dodge | 5% increased damage per consecutive dodge, stacks up to 10 | 5 | Speed: 162, Crit: 17% |  |  |
 |  | Empowering Parry | Each successful Parry increases damage by 5% until end of the following turn. Taking any damage removes this buff. | 5 |  |  |  |
-| ✓ | Empowering Tint | Healing Tints also apply Powerful. | 5 |  |  | support |
+| ✓ | Empowering Tint | Healing Tints also apply Powerful. | 5 | Health: 2705, Speed: 546 |  | support |
 | ✓ | Exhausting Power | 50% increased damage when Exhausted. | 2 |  |  |  |
 | ✓ | First Offensive | First hit dealt and taken deals 50% more damage. | 5 |  |  |  |
 |  | Full Strength | 25% increased damage on full Health. | 15 |  |  |  |
 | ✓ | Glass Canon | Deal 25% more damage, but take 25% more damage. | 10 |  |  |  |
 | ✓ | Gradient Fighter | 25% increased damage with Gradient Attacks. | 5 | Speed: 182, Crit: 18% |  | gradient |
-| ✓ | Greater Defenceless | +15% to Defenceless damage amplification. | 15 |  |  |  |
+| ✓ | Greater Defenceless | +15% to Defenceless damage amplification. | 15 | Speed: 293, Crit: 23% |  |  |
 |  | Greater Powerful | +15% to Powerful damage increase. | 10 |  |  |  |
 | ✓ | Immaculate | 30% increased damage until a hit is received. | 10 |  |  |  |
 |  | Inverted Affinity | Apply Inverted on self for 3 turns on battle start. 50% increased damage while Inverted. | 5 |  |  |  |
@@ -143,7 +143,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Gradient Charge (9 Pictos, 2 obtained)
+## Gradient Charge (9 Pictos, 3 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
@@ -151,7 +151,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 |  | Charging Attack | +15% of a Gradient Charge on Base Attack. | 7 |  |  |  |
 |  | Charging Burn | +20% of a Gradient Charge on applying Burn. Once per turn. | 10 |  |  |  |
 |  | Charging Counter | +10% of a Gradient Charge on Counterattack. | 10 |  |  |  |
-|  | Charging Critical | +20% of a Gradient Charge on hitting a Critical Hit. Once per turn. | 10 |  |  |  |
+| ✓ | Charging Critical | +20% of a Gradient Charge on Critical Hit. Once per turn. | 10 | Defence: 1048, Crit: 27% |  |  |
 |  | Charging Mark | +20% of a Gradient Charge on hitting a Marked target. Once per turn. | 10 |  |  | mark |
 |  | Charging Stun | +5% of a Gradient Charge on hitting a Stunned enemy. | 5 |  |  |  |
 | ✓ | Charging Tint | +5% of a Gradient Charge on using an item. | 2 |  |  | support |
@@ -230,7 +230,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Anti-Burn | Immune to Burn | 15 | Health: 2757, Defence: 1572 |  |  |
 | ✓ | Anti-Charm | Immune to Charm. | 10 |  |  |  |
 | ✓ | Anti-Freeze | Immune to Freeze | 15 | Health: 1464, Defence: 733 |  |  |
-| ✓ | Anti-Stun | Immune to Stun | 5 | Health: 2757, Defence: 1572 |  |  |
+| ✓ | Anti-Stun | Immune to Stun. | 5 | Health: 2757, Defence: 1572 |  |  |
 | ✓ | Auto Shell | Apply Shell for 3 turns on battle start. | 10 |  |  |  |
 | ✓ | Base Shield | Grants 1 Shield HP buffer per turn | 20 | Speed: 399, Crit: 11% |  |  |
 | ✓ | Confident | Take 50% less damage, but can't be healed. | 20 | Speed: 557, Crit: 32% | Verso |  |
@@ -254,7 +254,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Buffs and Support (29 Pictos, 18 obtained)
+## Buffs and Support (29 Pictos, 19 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
@@ -268,7 +268,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Enfeebling Attack | Base Attack applies Powerless for 1 turn. | 10 |  |  |  |
 | ✓ | Exposing Attack | Base Attack applies Defenceless for 1 turn. | 10 |  |  |  |
 |  | Exposing Break | Apply Defenceless on Break. | 5 |  |  |  |
-|  | Greater Powerless | +15% to Powerless damage reduction. | 15 |  |  |  |
+|  | Greater Powerless | +15% to Powerless damage reduction. | 15 | Defence: 1727, Speed: 597 |  |  |
 |  | Greater Rush | +25% to Rush Speed increase. | 10 |  |  |  |
 | ✓ | Greater Slow | +15% to Slow Speed reduction. | 15 | Defence: 647, Speed: 266 |  |  |
 | ✓ | Longer Powerful | On applying Powerful, its duration is increased by 2. | 10 |  |  |  |
@@ -281,12 +281,12 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Rejuvenating Revive | Apply Regen for 3 turns when revived. | 3 |  |  |  |
 | ✓ | Revive Paradox | Play immediately when revived. | 5 |  |  |  |
 | ✓ | Revive Tint Energy | Revive Tints also give 3 AP. | 10 |  |  |  |
-|  | Rush On Powerful | Apply Rush on applying Powerful. | 10 |  |  |  |
+| ✓ | Rush On Powerful | Apply Rush on applying Powerful. | 10 | Speed: 557, Crit: 32% |  |  |
 |  | Shell On Rush | Apply Shell on applying Rush. | 10 |  |  |  |
 |  | Slowing Attack | Base Attack applies Slow for 1 turn. | 10 |  |  |  |
 |  | Slowing Break | Apply Slow on Break. | 5 |  |  |  |
 | ✓ | Teamwork | 10% increased damage while all allies are alive. | 5 |  |  |  |
-| ✓ | Time Tint | Energy Tints also apply Rush. | 10 |  |  |  |
+| ✓ | Time Tint | Energy Tints also apply Rush. | 10 | Health: 1897, Defence: 949 |  |  |
 
 ---
 

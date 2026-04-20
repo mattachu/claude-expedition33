@@ -127,7 +127,7 @@
       "category": [
         "survival"
       ],
-      "effect": "Immune to Stun",
+      "effect": "Immune to Stun.",
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
@@ -222,9 +222,14 @@
       ],
       "effect": "75% increased Counterattack damage.",
       "lp_cost": 7,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 17,
+      "stats": {
+        "health": 1548,
+        "crit": "10%"
+      }
     },
     {
       "name": "Augmented First Strike",
@@ -562,11 +567,16 @@
       "category": [
         "gradient"
       ],
-      "effect": "+20% of a Gradient Charge on hitting a Critical Hit. Once per turn.",
+      "effect": "+20% of a Gradient Charge on Critical Hit. Once per turn.",
       "lp_cost": 10,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 25,
+      "stats": {
+        "defence": 1048,
+        "crit": "27%"
+      }
     },
     {
       "name": "Charging Mark",
@@ -803,9 +813,14 @@
       ],
       "effect": "25% increased Critical Chance on Weakness.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 26,
+      "stats": {
+        "speed": 705,
+        "crit": "15%"
+      }
     },
     {
       "name": "Dead Energy I",
@@ -1013,7 +1028,11 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 8
+      "level": 28,
+      "stats": {
+        "health": 2705,
+        "speed": 546
+      }
     },
     {
       "name": "Energetic Healer",
@@ -1430,12 +1449,16 @@
       "category": [
         "break"
       ],
-      "effect": "Breaking a target also doubles its Burn amount.",
+      "effect": "Breaking a target doubles its Burn amount.",
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 9
+      "level": 27,
+      "stats": {
+        "speed": 507,
+        "crit": "31%"
+      }
     },
     {
       "name": "Full Strength",
@@ -1516,7 +1539,11 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 21
+      "level": 21,
+      "stats": {
+        "speed": 293,
+        "crit": "23%"
+      }
     },
     {
       "name": "Greater Powerful",
@@ -1538,7 +1565,12 @@
       "lp_cost": 15,
       "obtained": false,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 30,
+      "stats": {
+        "defence": 1727,
+        "speed": 597
+      }
     },
     {
       "name": "Greater Rush",
@@ -2193,9 +2225,14 @@
       ],
       "effect": "Apply Rush on applying Powerful.",
       "lp_cost": 10,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 29,
+      "stats": {
+        "speed": 557,
+        "crit": "32%"
+      }
     },
     {
       "name": "SOS Power",
@@ -2501,7 +2538,11 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 10
+      "level": 24,
+      "stats": {
+        "health": 1897,
+        "defence": 949
+      }
     },
     {
       "name": "Versatile",

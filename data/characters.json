@@ -1,23 +1,25 @@
 {
   "Maelle": {
-    "level": 86,
+    "level": 91,
     "role": "Primary DPS",
     "attributes": {
-      "luck": 99,
+      "vitality": 0,
+      "might": 75,
       "agility": 99,
-      "might": 60
+      "defence": 0,
+      "luck": 99
     },
     "stats_base": {
-      "health": 2019,
-      "attack": 1205,
-      "speed": 1176,
+      "health": 2171,
+      "attack": 1322,
+      "speed": 1213,
       "defence": 182,
       "crit": "41%"
     },
     "stats_modified": {
-      "health": 7610,
-      "attack": 10653,
-      "speed": 2156,
+      "health": 7762,
+      "attack": 11013,
+      "speed": 2193,
       "defence": 182,
       "crit": "101%",
       "_note": "Stats with Lithum (33), Clea's Life (30), Empowering Break (28), Gradient Break (25) equipped"
@@ -35,10 +37,10 @@
     "skills_equipped": [
       "Phantom Strike",
       "Fleuret Fury",
-      "Percée",
+      "Last Chance",
+      "Mezzo Forte",
       "Gustave's Homage",
-      "Stendhal",
-      "Sword Ballet"
+      "Stendhal"
     ],
     "skills_learned": [
       "Phantom Strike",
@@ -86,24 +88,26 @@
     ]
   },
   "Verso": {
-    "level": 86,
+    "level": 91,
     "role": "Endgame main DPS",
     "attributes": {
+      "vitality": 0,
+      "might": 75,
       "agility": 99,
-      "luck": 99,
-      "might": 60
+      "defence": 0,
+      "luck": 99
     },
     "stats_base": {
-      "health": 2019,
-      "attack": 1205,
-      "speed": 1176,
+      "health": 2171,
+      "attack": 1322,
+      "speed": 1213,
       "defence": 182,
       "crit": "41%"
     },
     "stats_modified": {
-      "health": 6077,
-      "attack": 10181,
-      "speed": 2319,
+      "health": 6229,
+      "attack": 10529,
+      "speed": 2356,
       "defence": 182,
       "crit": "122%",
       "_note": "Stats with Chevalam (33), Augmented Counter I (28), Breaking Death (29), Confident (29) equipped"
@@ -182,26 +186,28 @@
     ]
   },
   "Sciel": {
-    "level": 85,
+    "level": 90,
     "role": "Pure support",
     "attributes": {
+      "vitality": 0,
+      "might": 9,
       "agility": 99,
-      "luck": 99,
-      "defence": 57
+      "defence": 63,
+      "luck": 99
     },
     "stats_base": {
-      "health": 1989,
-      "attack": 1075,
-      "speed": 1168,
-      "defence": 449,
-      "crit": "54%"
+      "health": 2140,
+      "attack": 1182,
+      "speed": 1206,
+      "defence": 481,
+      "crit": "55%"
     },
     "stats_modified": {
-      "health": 6959,
-      "attack": 8451,
-      "speed": 2466,
-      "defence": 449,
-      "crit": "101%",
+      "health": 7110,
+      "attack": 8685,
+      "speed": 2504,
+      "defence": 481,
+      "crit": "102%",
       "_note": "Stats with Litheson (33), Painter (28), Energy Master (30), Energising Shots (28) equipped"
     },
     "weapon_equipped": "Litheson",
@@ -284,27 +290,29 @@
     ]
   },
   "Lune": {
-    "level": 82,
+    "level": 86,
     "role": "DPS / healer (reserve)",
     "attributes": {
       "vitality": 99,
+      "might": 9,
       "agility": 99,
-      "luck": 48
+      "defence": 0,
+      "luck": 51
     },
     "stats_base": {
-      "health": 3289,
-      "attack": 1019,
-      "speed": 1100,
+      "health": 3408,
+      "attack": 1106,
+      "speed": 1134,
       "defence": 182,
-      "crit": "28%"
+      "crit": "29%"
     },
     "stats_modified": {
-      "health": 3289,
-      "attack": 6118,
-      "speed": 2519,
+      "health": 3408,
+      "attack": 10160,
+      "speed": 2553,
       "defence": 182,
-      "crit": "100%",
-      "_note": "Stats with Kralim (32), Critical Burn (25), Burn Affinity (21), Burning Death (28) equipped"
+      "crit": "101%",
+      "_note": "Stats with Kralim (33), Critical Burn (25), Burn Affinity (21), Burning Death (28) equipped"
     },
     "weapon_equipped": "Kralim",
     "pictos_equipped": [
@@ -376,27 +384,29 @@
     ]
   },
   "Monoco": {
-    "level": 83,
+    "level": 87,
     "role": "Break + AP support (reserve)",
     "attributes": {
+      "vitality": 0,
+      "might": 0,
       "agility": 99,
       "defence": 99,
-      "luck": 51
+      "luck": 63
     },
     "stats_base": {
-      "health": 1930,
-      "attack": 1038,
-      "speed": 1112,
+      "health": 2049,
+      "attack": 1113,
+      "speed": 1157,
       "defence": 729,
-      "crit": "47%"
+      "crit": "50%"
     },
     "stats_modified": {
-      "health": 4687,
-      "attack": 6624,
-      "speed": 2477,
+      "health": 4805,
+      "attack": 10863,
+      "speed": 2522,
       "defence": 2301,
-      "crit": "95%",
-      "_note": "Stats with Joyaro (32), Longer Shell (29), Powerful Mark (28), Powerful Revive (28) equipped"
+      "crit": "98%",
+      "_note": "Stats with Joyaro (33), Longer Shell (29), Powerful Mark (28), Powerful Revive (28) equipped"
     },
     "weapon_equipped": "Joyaro",
     "pictos_equipped": [
@@ -473,7 +483,8 @@
       "Sakapatate Slam",
       "Sapling Absorption",
       "Stalact Punches",
-      "Troubadour Trumpet"
+      "Troubadour Trumpet",
+      "Sakapatate Fire"
     ],
     "gradient_skills": [
       {

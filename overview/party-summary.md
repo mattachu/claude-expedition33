@@ -8,13 +8,13 @@
 
 ### Maelle
 
-**Level:** 86 | **Role:** Primary DPS | **Weapon:** Lithum (33)
+**Level:** 91 | **Role:** Primary DPS | **Weapon:** Lithum (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2019 | 7610     |
-| Attack  | 1205 | 10653    |
-| Speed   | 1176 | 2156     |
+| Health  | 2171 | 7762     |
+| Attack  | 1322 | 11013    |
+| Speed   | 1213 | 2193     |
 | Defence | 182  | 182      |
 | Crit    | 41%  | 101%     |
 
@@ -57,13 +57,13 @@
 
 ### Verso
 
-**Level:** 86 | **Role:** Endgame main DPS | **Weapon:** Chevalam (33)
+**Level:** 91 | **Role:** Endgame main DPS | **Weapon:** Chevalam (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2019 | 6077     |
-| Attack  | 1205 | 10181    |
-| Speed   | 1176 | 2319     |
+| Health  | 2171 | 6229     |
+| Attack  | 1322 | 10529    |
+| Speed   | 1213 | 2356     |
 | Defence | 182  | 182      |
 | Crit    | 41%  | 122%     |
 
@@ -106,15 +106,15 @@
 
 ### Sciel
 
-**Level:** 85 | **Role:** Pure support | **Weapon:** Litheson (33)
+**Level:** 90 | **Role:** Pure support | **Weapon:** Litheson (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 1989 | 6959     |
-| Attack  | 1075 | 8451     |
-| Speed   | 1168 | 2466     |
-| Defence | 449  | 449      |
-| Crit    | 54%  | 101%     |
+| Health  | 2140 | 7110     |
+| Attack  | 1182 | 8685     |
+| Speed   | 1206 | 2504     |
+| Defence | 481  | 481      |
+| Crit    | 55%  | 102%     |
 
 
 | Pictos           | Level | Stats                 |
@@ -161,15 +161,15 @@
 
 ### Lune
 
-**Level:** 82 | **Role:** DPS / healer (reserve) | **Weapon:** Kralim (32)
+**Level:** 86 | **Role:** DPS / healer (reserve) | **Weapon:** Kralim (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 3289 | 3289     |
-| Attack  | 1019 | 6118     |
-| Speed   | 1100 | 2519     |
+| Health  | 3408 | 3408     |
+| Attack  | 1106 | 10160    |
+| Speed   | 1134 | 2553     |
 | Defence | 182  | 182      |
-| Crit    | 28%  | 100%     |
+| Crit    | 29%  | 101%     |
 
 
 | Pictos        | Level | Stats                 |
@@ -208,15 +208,15 @@
 
 ### Monoco
 
-**Level:** 83 | **Role:** Break + AP support (reserve) | **Weapon:** Joyaro (32)
+**Level:** 87 | **Role:** Break + AP support (reserve) | **Weapon:** Joyaro (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 1930 | 4687     |
-| Attack  | 1038 | 6624     |
-| Speed   | 1112 | 2477     |
+| Health  | 2049 | 4805     |
+| Attack  | 1113 | 10863    |
+| Speed   | 1157 | 2522     |
 | Defence | 729  | 2301     |
-| Crit    | 47%  | 95%      |
+| Crit    | 50%  | 98%      |
 
 
 | Pictos          | Level | Stats                       |
@@ -258,5 +258,5 @@
 
 - Colour of Lumina: 120
 - Recoats: 28
-- Chroma Catalysts: 67 standard, 65 polished, 103 resplendent, 36 grandiose, 2 perfect
+- Chroma Catalysts: 67 standard, 65 polished, 103 resplendent, 36 grandiose, 0 perfect
 - Chroma: 2065796

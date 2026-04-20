@@ -741,10 +741,10 @@
   "Lune": [
     {
       "name": "Kralim",
-      "level": 32,
-      "power": 4454,
+      "level": 33,
+      "power": 9054,
       "element": "Lightning",
-      "scaling": "Agility A, Vitality B",
+      "scaling": "Agility S, Vitality A",
       "obtained": true,
       "effects": [
         {
@@ -1003,10 +1003,10 @@
   "Monoco": [
     {
       "name": "Joyaro",
-      "level": 32,
-      "power": 3934,
+      "level": 33,
+      "power": 9750,
       "element": "Lightning",
-      "scaling": "Agility A, Defence B",
+      "scaling": "Agility S, Defence A",
       "obtained": true,
       "effects": [
         {
