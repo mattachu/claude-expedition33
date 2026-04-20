@@ -183,58 +183,57 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 <!-- GENERATED:START characters:Monoco:skills -->
 **Currently equipped (6):** Abbest Wind, Chalier Combo, Moissonneuse Vendange, Portier Crash, Potier Energy, Stalact Punches
 
-| Skill                 | AP             | Wheel | Mask     | Equipped | Notes                                                                             |
-|-----------------------|----------------|-------|----------|----------|-----------------------------------------------------------------------------------|
-| Abbest Wind           | 2 (0 in Agile) | +2    | Agile    | ✅        | Low Physical single target, 1 hit. Plays a second turn.                           |
-| Chalier Combo         | 7              | +3    | Balanced | ✅        | High Physical single target, 6 hits. Interrupted if failed.                       |
-| Moissonneuse Vendange | 5              | +2    | Balanced | ✅        | High Physical single target, 3 hits. Can Break.                                   |
-| Portier Crash         | 8              | +5    | Heavy    | ✅        | High Physical AoE, 1 hit. Can Break.                                              |
-| Potier Energy         | 4              | +6    | Caster   | ✅        | Gives 1–3 AP to all allies.                                                       |
-| Stalact Punches       | 4              | +4    | Heavy    | ✅        | Medium Ice single target, 4 hits. High Break damage.                              |
-| Aberration Light      | 7              | +4    | Agile    | ❌        | High Light AoE, 2 hits. Applies 4 Burn per hit.                                   |
-| Ballet Charm          | 2              | +3    | Caster   | ❌        | Low Light single target, 1 hit. Applies Powerless 3 turns.                        |
-| Bénisseur Mortar      | 5              | +6    | Caster   | ❌        | Medium Ice single target, 3 hits. Jumps to Almighty Mask if target is Marked.     |
-| Boucheclier Fortify   | 3              | +5    | Heavy    | ❌        | Applies Shell to 1–3 allies for 3 turns.                                          |
-| Braseleur Smash       | 4              | +2    | Balanced | ❌        | Medium Fire single target, 2 hits. Applies 3 Burn.                                |
-| Bruler Bash           | 4              | +4    | Caster   | ❌        | Medium Physical single target, 3 hits. Can Break.                                 |
-| Chapelier Slash       | 7              | +4    | Agile    | ❌        | High Physical AoE, 3 hits. Applies Mark.                                          |
-| Chevalière Ice        | 6              | +2    | Balanced | ❌        | High Ice AoE, 3 hits. Applies Slow 3 turns.                                       |
-| Chevalière Piercing   | 3              | +3    | Agile    | ❌        | Physical single target through Shields, 6 hits. More damage per Shield on target. |
-| Chevalière Thrusts    | 7              | +3    | Heavy    | ❌        | High Physical AoE, 3 hits. Crits deal double damage.                              |
-| Clair Enfeeble        | 5              | +3    | Balanced | ❌        | Medium Light AoE, 1 hit. Applies Powerless 3 turns.                               |
-| Contorsionniste Blast | 6              | +2    | Balanced | ❌        | Medium Physical AoE, 1 hit. Heals all allies 10% HP per enemy hit.                |
-| Cruler Barrier        | 4              | +4    | Heavy    | ❌        | Applies 1–2 Shields to target.                                                    |
-| Cultist Blood         | 3              | +5    | Heavy    | ❌        | Medium Dark AoE, 3 hits. Sacrifices 90% HP for increased damage.                  |
-| Cultist Slashes       | 5              | +3    | Agile    | ❌        | Medium Dark single target, 3 hits. More damage the less HP Monoco has.            |
-| Danseuse Waltz        | 8              | +3    | Balanced | ❌        | High Fire single target, 3 hits. More damage against Burning targets.             |
-| Démineur Thunder      | 2              | +5    | Caster   | ❌        | Low Lightning single target, 1 hit. Extra Break damage.                           |
-| Duallist Storm        | 8              | +1    | Almighty | ❌        | Extreme Physical single target, 4 hits. Can Break.                                |
-| Échassier Stabs       | 4              | +4    | Agile    | ❌        | Medium Physical single target, 2 hits. Second hit applies Mark.                   |
-| Évêque Spear          | 6              | +3    | Heavy    | ❌        | High Earth single target, 1 hit. Applies Powerless 3 turns.                       |
-| Gault Fury            | 3              | +2    | Balanced | ❌        | Low Physical single target, 4 hits. Applies Mark.                                 |
-| Glaise Earthquakes    | 4              | +6    | Heavy    | ❌        | Medium Earth AoE, 3 hits. Applies Powerful to self.                               |
-| Grosse Tête Whack     | 6              | +4    | Heavy    | ❌        | High Physical single target, 5 hits. Applies Defenceless 3 turns.                 |
-| Hexga Crush           | 5              | +6    | Heavy    | ❌        | Medium Earth single target, 2 hits. Applies Defenceless 3 turns.                  |
-| Jar Lampstorm         | 5              | +6    | Heavy    | ❌        | Medium Physical AoE, 4 hits.                                                      |
-| Lampmaster Light      | 5              | +1    | Almighty | ❌        | High Light AoE, 1 hit. Increased damage at each cast.                             |
-| Lancelier Impale      | 2              | +4    | Agile    | ❌        | Low Ice single target, 1 hit. Slows target 3 turns.                               |
-| Luster Slices         | 3              | +3    | Agile    | ❌        | Low Physical single target, 3 hits. Applies Rush to self 3 turns.                 |
-| Obscur Sword          | 6              | +3    | Heavy    | ❌        | High Dark single target, 5 hits. More damage against Powerless targets.           |
-| Orphelin Cheers       | 3              | +3    | Caster   | ❌        | Applies Powerful to 1–3 allies.                                                   |
-| Pèlerin Heal          | 5              | +3    | Caster   | ❌        | Applies Regen to all allies. On Caster Mask heals 40% HP.                         |
-| Ramasseur Bonk        | 2              | +4    | Agile    | ❌        | Low Dark single target, 1 hit. Can Break.                                         |
-| Rocher Hammering      | 3              | +3    | Heavy    | ❌        | Medium Physical single target, 4 hits. Can Break.                                 |
-| Sakapatate Estoc      | 3              | +3    | Balanced | ❌        | Low Lightning single target, 1 hit. More damage if target is Stunned.             |
-| Sakapatate Explosion  | 4              | +6    | Caster   | ❌        | Medium Lightning random targets, 3 hits. Crits trigger an additional hit.         |
-| Sakapatate Slam       | 7              | +5    | Heavy    | ❌        | High Physical AoE, 1 hit. Increased damage against Marked targets.                |
-| Sapling Absorption    | 6              | +5    | Caster   | ❌        | High Dark, 3 hits. Recovers 5% HP per hit.                                        |
-| Troubadour Trumpet    | 3              | +4    | Caster   | ❌        | Applies a random buff to 1–3 allies.                                              |
-| Sakapatate Fire       | —              | +1    | Almighty | ❌        | Extreme Fire AoE, 3 hits. Applies 3 Burn per hit.                                 |
+| Skill                 | AP             | Wheel | Mask     | Equipped | Notes                                                                                         |
+|-----------------------|----------------|-------|----------|----------|-----------------------------------------------------------------------------------------------|
+| Abbest Wind           | 2 (0 in Agile) | +2    | Agile    | ✅        | Low Physical single target, 1 hit. Plays a second turn.                                       |
+| Chalier Combo         | 7              | +3    | Balanced | ✅        | High Physical single target, 6 hits. Interrupted if failed.                                   |
+| Moissonneuse Vendange | 5              | +2    | Balanced | ✅        | High Physical single target, 3 hits. Can Break.                                               |
+| Portier Crash         | 8              | +5    | Heavy    | ✅        | High Physical AoE, 1 hit. Can Break.                                                          |
+| Potier Energy         | 4              | +6    | Caster   | ✅        | Gives 1–3 AP to all allies.                                                                   |
+| Stalact Punches       | 4              | +4    | Heavy    | ✅        | Medium Ice single target, 4 hits. High Break damage.                                          |
+| Aberration Light      | 7              | +4    | Agile    | ❌        | High Light AoE, 2 hits. Applies 4 Burn per hit.                                               |
+| Ballet Charm          | 2              | +3    | Caster   | ❌        | Low Light single target, 1 hit. Applies Powerless 3 turns.                                    |
+| Bénisseur Mortar      | 5              | +6    | Caster   | ❌        | Medium Ice single target, 3 hits. Jumps to Almighty Mask if target is Marked.                 |
+| Boucheclier Fortify   | 3              | +5    | Heavy    | ❌        | Applies Shell to 1–3 allies for 3 turns.                                                      |
+| Braseleur Smash       | 4              | +2    | Balanced | ❌        | Medium Fire single target, 2 hits. Applies 3 Burn.                                            |
+| Bruler Bash           | 4              | +4    | Caster   | ❌        | Medium Physical single target, 3 hits. Can Break.                                             |
+| Chapelier Slash       | 7              | +4    | Agile    | ❌        | High Physical AoE, 3 hits. Applies Mark.                                                      |
+| Chevalière Ice        | 6              | +2    | Balanced | ❌        | High Ice AoE, 3 hits. Applies Slow 3 turns.                                                   |
+| Chevalière Piercing   | 3              | +3    | Agile    | ❌        | Physical single target through Shields, 6 hits. More damage per Shield on target.             |
+| Chevalière Thrusts    | 7              | +3    | Heavy    | ❌        | High Physical AoE, 3 hits. Crits deal double damage.                                          |
+| Clair Enfeeble        | 5              | +3    | Balanced | ❌        | Medium Light AoE, 1 hit. Applies Powerless 3 turns.                                           |
+| Contorsionniste Blast | 6              | +2    | Balanced | ❌        | Medium Physical AoE, 1 hit. Heals all allies 10% HP per enemy hit.                            |
+| Creation Void         | —              | +4    | Caster   | ❌        | Extreme Void damage to random targets, 3 hits. More damage if same target hit multiple times. |
+| Cruler Barrier        | 4              | +4    | Heavy    | ❌        | Applies 1–2 Shields to target.                                                                |
+| Cultist Blood         | 3              | +5    | Heavy    | ❌        | Medium Dark AoE, 3 hits. Sacrifices 90% HP for increased damage.                              |
+| Cultist Slashes       | 5              | +3    | Agile    | ❌        | Medium Dark single target, 3 hits. More damage the less HP Monoco has.                        |
+| Danseuse Waltz        | 8              | +3    | Balanced | ❌        | High Fire single target, 3 hits. More damage against Burning targets.                         |
+| Démineur Thunder      | 2              | +5    | Caster   | ❌        | Low Lightning single target, 1 hit. Extra Break damage.                                       |
+| Duallist Storm        | 8              | +1    | Almighty | ❌        | Extreme Physical single target, 4 hits. Can Break.                                            |
+| Échassier Stabs       | 4              | +4    | Agile    | ❌        | Medium Physical single target, 2 hits. Second hit applies Mark.                               |
+| Évêque Spear          | 6              | +3    | Heavy    | ❌        | High Earth single target, 1 hit. Applies Powerless 3 turns.                                   |
+| Gault Fury            | 3              | +2    | Balanced | ❌        | Low Physical single target, 4 hits. Applies Mark.                                             |
+| Glaise Earthquakes    | 4              | +6    | Heavy    | ❌        | Medium Earth AoE, 3 hits. Applies Powerful to self.                                           |
+| Grosse Tête Whack     | 6              | +4    | Heavy    | ❌        | High Physical single target, 5 hits. Applies Defenceless 3 turns.                             |
+| Hexga Crush           | 5              | +6    | Heavy    | ❌        | Medium Earth single target, 2 hits. Applies Defenceless 3 turns.                              |
+| Jar Lampstorm         | 5              | +6    | Heavy    | ❌        | Medium Physical AoE, 4 hits.                                                                  |
+| Lampmaster Light      | 5              | +1    | Almighty | ❌        | High Light AoE, 1 hit. Increased damage at each cast.                                         |
+| Lancelier Impale      | 2              | +4    | Agile    | ❌        | Low Ice single target, 1 hit. Slows target 3 turns.                                           |
+| Luster Slices         | 3              | +3    | Agile    | ❌        | Low Physical single target, 3 hits. Applies Rush to self 3 turns.                             |
+| Obscur Sword          | 6              | +3    | Heavy    | ❌        | High Dark single target, 5 hits. More damage against Powerless targets.                       |
+| Orphelin Cheers       | 3              | +3    | Caster   | ❌        | Applies Powerful to 1–3 allies.                                                               |
+| Pèlerin Heal          | 5              | +3    | Caster   | ❌        | Applies Regen to all allies. On Caster Mask heals 40% HP.                                     |
+| Ramasseur Bonk        | 2              | +4    | Agile    | ❌        | Low Dark single target, 1 hit. Can Break.                                                     |
+| Rocher Hammering      | 3              | +3    | Heavy    | ❌        | Medium Physical single target, 4 hits. Can Break.                                             |
+| Sakapatate Estoc      | 3              | +3    | Balanced | ❌        | Low Lightning single target, 1 hit. More damage if target is Stunned.                         |
+| Sakapatate Explosion  | 4              | +6    | Caster   | ❌        | Medium Lightning random targets, 3 hits. Crits trigger an additional hit.                     |
+| Sakapatate Fire       | —              | +1    | Almighty | ❌        | Extreme Fire AoE, 3 hits. Applies 3 Burn per hit.                                             |
+| Sakapatate Slam       | 7              | +5    | Heavy    | ❌        | High Physical AoE, 1 hit. Increased damage against Marked targets.                            |
+| Sapling Absorption    | 6              | +5    | Caster   | ❌        | High Dark, 3 hits. Recovers 5% HP per hit.                                                    |
+| Troubadour Trumpet    | 3              | +4    | Caster   | ❌        | Applies a random buff to 1–3 allies.                                                          |
 <!-- GENERATED:END -->
 
 *Abbest Wind should not be removed — essential for wheel cycling and free second turn on Agile Mask.*
-
-*Not yet learnt (2): Creation Void (from The Creation boss in Lumière), Sakapatate Fire (from Ultimate Sakapatate — Endless Tower Stages 7–8).*
 
 Full skill reference (AP cost, wheel move, mask, effect, mask bonus, learned/equipped status) in `data/skills.json`.
 

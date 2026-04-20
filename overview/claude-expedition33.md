@@ -247,6 +247,8 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 
 <!-- GENERATED:START playthrough:current_phase_checklist -->
 - ✅ Dark Gestral Arena
+- ✅ Endless Tower Stages 1–10 (30 fights)
+- ⬜ Endless Tower Stage 11 — 3 fights; Trial 3 (Painted Love) gives Perfect Catalyst + Clair Outfit for Verso
 - ⬜ Hard chromatics (10/17)
   - ✅ Chromatic Echassier — Lumiere
   - ✅ Chromatic Catapult Sakapatate — Dark Gestral Arena
@@ -265,19 +267,16 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
   - ⬜ Chromatic Franctale — Verso's Drafts
   - ⬜ Chromatic Licorne — Verso's Drafts (handholds right of Reverie Path)
   - ⬜ Chromatic Machinapieds — Verso's Drafts (near Gestral Carousel, Candy Land)
-- ⬜ Endless Tower Chromatics (0/4)
-  - ⬜ Chromatic Eveque — Endless Tower
-  - ⬜ Chromatic Steel Chevaliere — Endless Tower floor 10-2 (trio fight with Gold and Ceramic)
-  - ⬜ Chromatic Ceramic Chevaliere — Endless Tower floor 10-2 (trio fight with Gold and Steel)
-  - ⬜ Chromatic Lampmaster — Endless Tower floor 1 (Thank You Update) — 6 health bars, gimmick-heavy
+- ⬜ Endless Tower Chromatics (3/4)
+  - ✅ Chromatic Eveque — Endless Tower
+  - ✅ Chromatic Steel Chevaliere — Endless Tower floor 10-2 (trio fight with Gold and Ceramic)
+  - ✅ Chromatic Ceramic Chevaliere — Endless Tower floor 10-2 (trio fight with Gold and Steel)
+  - ⬜ Chromatic Lampmaster — Endless Tower superboss (Thank You Update) — 6 health bars, gimmick-heavy
 - ⬜ Painting Workshop Beast (Level 80+)
 - ⬜ Renoir's Drafts (Level 80+, recommended 90+ for Simon) — hardest optional area; Aberrations, Bouchecliers, Contorsionnistes
 - ⬜ Purchase Charnon (89,884 Chromas, Renoir's Drafts merchant) — Sciel alternative endgame weapon
 - ⬜ Verso's Drafts (DLC, Level 80+) — recommended after Renoir's Drafts; final boss (Root of All Evil) is hardest boss in game, reported to beat level 99 parties
-- ⬜ Endless Tower floors 21–33 + DLC bosses (Clea Unleashed, Simon the Divergent Star — accessed via Tower canvases after beating originals; added by Thank You Update, no ordering dependency with Verso's Drafts)
-- ✅ Endless Tower Stages 1–10 (30 fights)
-- ⬜ Endless Tower Stage 11 — 3 fights; Trial 3 (Painted Love) gives Perfect Catalyst + Clair Outfit for Verso
-- ⬜ Endless Tower DLC superbosses (4 — accessed via canvases, Thank You Update)
+- ⬜ Endless Tower DLC superbosses (4 including Clea Unleashed, Simon the Divergent Star — accessed via Tower canvases after beating originals; added by Thank You Update)
 <!-- GENERATED:END -->
 
 ---
