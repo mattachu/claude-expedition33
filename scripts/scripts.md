@@ -2164,6 +2164,9 @@ FILES = [
     "chats/chat7/chat7-index.md",
     "chats/chat8/chat8-index.md",
     "chats/chat9/chat9-index.md",
+    "chats/chat10/chat10-index.md",
+    "chats/chat11/chat11-index.md",
+    "chats/chat12/chat12-index.md",
     # Root
     "repo-structure.md",
     "README.md",
