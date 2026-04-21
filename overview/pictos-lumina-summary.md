@@ -2,7 +2,7 @@
 
 *Generated from `pictos-lumina.json`.*
 
-See [`pictos-lumina-catalogue.md`](pictos-lumina-catalogue.md) for the full list of all 194 Pictos.
+See [`reference/pictos-lumina-catalogue.md`](../reference/pictos-lumina-catalogue.md) for the full list of all 194 Pictos.
 
 ---
 
