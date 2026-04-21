@@ -125,11 +125,11 @@ Key rules: each Pictos is a unique copy (only one character can equip it); dupli
 
 **Full reference:**
 
-| File                                   | Purpose                                                                                         | When to read                                            |
-|----------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| `overview/pictos-lumina-summary.md`    | Full Pictos/Lumina mechanics, Core Lumina sets, per-character loadouts, situational, candidates | Any session involving Pictos/Lumina advice              |
-| `reference/pictos-lumina-catalogue.md` | All 194 Pictos grouped by category with effects and LP costs                                    | When browsing or searching the full catalogue           |
-| `data/pictos-lumina.json`              | Raw JSON — query directly for specific Pictos data                                              | When Claude needs to look up or modify specific entries |
+| File                                                                              | Purpose                                                                                         | When to read                                            |
+|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| [`overview/pictos-lumina-summary.md`](pictos-lumina-summary.md)                   | Full Pictos/Lumina mechanics, Core Lumina sets, per-character loadouts, situational, candidates | Any session involving Pictos/Lumina advice              |
+| [`reference/pictos-lumina-catalogue.md`](../reference/pictos-lumina-catalogue.md) | All 194 Pictos grouped by category with effects and LP costs                                    | When browsing or searching the full catalogue           |
+| [`data/pictos-lumina.json`](../data/pictos-lumina.json)                           | Raw JSON — query directly for specific Pictos data                                              | When Claude needs to look up or modify specific entries |
 
 ### Tints
 
