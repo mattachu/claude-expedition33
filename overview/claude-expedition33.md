@@ -284,18 +284,15 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 ## Section 9: Open Questions
 
 - **Verso survivability without Survivor:** Survivor (20LP) dropped to test whether Second Chance alone is sufficient. If Verso dies frequently with only Second Chance, add Survivor back (20 CoL to expand pool). Monitor during Renoir and early postgame.
-- **Clea's Life + Shield interaction: ✅ CONFIRMED.** Clea's Life triggers even after Shield absorbs a hit. Reliable full-heal engine on Maelle with Lithum's Shield generation. Recovery not needed on Maelle.
 - **Recovery on Sciel:** Dropped for now to save LP. Revisit if Sciel takes more damage than expected in postgame. 10LP, would need CoL expansion.
 - **Powerful On Shell as Lumina:** Consider for Maelle (synergy with Lithum L20 Shell generation). LP cost 10. Add when levels create headroom.
 - **Energising Shell (10LP):** Alternative to Powerful On Shell for Maelle — +2 AP on Shell application. Evaluate alongside Powerful On Shell.
 - **Anti-Blight (10LP):** Near-requisite for postgame content. Add to all main team characters when levels create LP headroom. 67 CoL remaining.
 - **Second Chance upgrade:** Available at L31 from defeating Création near Grour in Renoir's Drafts. Substantially better stats than current L16.
-- **Pictos data rationalisation:** Remove character `pictos` arrays from JSON; derive from `equipped_by` field. Update `generate_pictos_lumina.py`. See framework document Section 11 for full spec.
 - **Healing Boon trigger mechanic:** "Heal 15% HP on applying a buff" — may fire on the buff *recipient* rather than the caster. Needs in-game confirmation before building around it.
 - **Crit cap:** Believed to be 100%, not 99%. Verify in-game.
 - **Full Strength Lumina:** Effect: 25% increased damage at full Health. Strong candidate for Maelle given Clea's Life Pictos.
 - **Empowering Dodge (5LP):** Reset behaviour on parry unconfirmed — test empirically before committing LP.
-- **Session architecture:** Switched to 1 section per part from Chat 10 onwards. Splitter command: `python3 scripts/split_transcript.py --sections-per-part 1 chatN.md`. Update pipeline.md to reflect this default.
 
 ---
 
