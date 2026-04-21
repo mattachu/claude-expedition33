@@ -2122,13 +2122,18 @@ if __name__ == '__main__':
 #!/usr/bin/env python3
 """Generate LINKS.md with jsDelivr URLs pinned to the given commit hash."""
 
+import re
 import sys
+from pathlib import Path
 
 REPO = "mattachu/claude-expedition33"
 HASH = sys.argv[1][:8]
 BASE = f"https://cdn.jsdelivr.net/gh/{REPO}@{HASH}"
 
-FILES = [
+# Repo root is the parent of the scripts/ directory
+REPO_ROOT = Path(__file__).resolve().parent.parent
+
+STATIC_FILES = [
     # Overview
     "overview/claude-expedition33.md",
     "overview/party-summary.md",
@@ -2153,29 +2158,33 @@ FILES = [
     # Scripts
     "scripts/pipeline.md",
     "scripts/scripts.md",
-    # Chat indexes
-    "chats/chat0/chat0-index.md",
-    "chats/chat1/chat1-index.md",
-    "chats/chat2/chat2-index.md",
-    "chats/chat3/chat3-index.md",
-    "chats/chat4/chat4-index.md",
-    "chats/chat5/chat5-index.md",
-    "chats/chat6/chat6-index.md",
-    "chats/chat7/chat7-index.md",
-    "chats/chat8/chat8-index.md",
-    "chats/chat9/chat9-index.md",
-    "chats/chat10/chat10-index.md",
-    "chats/chat11/chat11-index.md",
-    "chats/chat12/chat12-index.md",
     # Root
     "repo-structure.md",
     "README.md",
 ]
 
+def find_chat_indexes():
+    """Scan chats/ for chatN folders that contain a chatN-index.md file."""
+    chats_dir = REPO_ROOT / "chats"
+    if not chats_dir.is_dir():
+        return []
+    entries = []
+    for folder in sorted(chats_dir.iterdir()):
+        m = re.fullmatch(r'chat(\d+)', folder.name)
+        if m and folder.is_dir():
+            index_path = f"chats/{folder.name}/{folder.name}-index.md"
+            if (REPO_ROOT / index_path).exists():
+                entries.append((int(m.group(1)), index_path))
+    return [path for _, path in sorted(entries)]
+
+chat_indexes = find_chat_indexes()
+
+FILES = STATIC_FILES[:-2] + chat_indexes + STATIC_FILES[-2:]  # insert before root files
+
 lines = [
     "# Session Links",
     "",
-    f"*Commit: `{HASH}`*"
+    f"*Commit: `{HASH}`*",
     "",
     "Paste this file's content at session start. "
     "Claude fetches files from these URLs on demand.",
@@ -2187,7 +2196,7 @@ for path in FILES:
 with open("LINKS.md", "w") as f:
     f.write("\n".join(lines) + "\n")
 
-print(f"Generated LINKS.md with hash {HASH}")
+print(f"Generated LINKS.md with hash {HASH} ({len(chat_indexes)} chat indexes found)")
 
 ```
 
