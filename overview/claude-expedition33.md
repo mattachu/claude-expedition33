@@ -9,29 +9,17 @@
 These are in addition to the general failure modes in the startup file:
 
 - **Confabulation about game content:** Training data thin and patchy. Do not give confident answers about mechanics, routes, item availability, or missable content without searching first. Example: The Glissando incident (Chat 0) — asserted a bypass existed and escalated increasingly specific hints through multiple failed attempts; no bypass exists. For any navigation, bypass, or optional enemy question, treat prior knowledge as zero and search before answering. Two failed attempts from the player is a hard stop requiring premise re-evaluation, not hint escalation.
-- **Missable/sequence-locked content:** Highest-risk category. Never assert content will be available later without verifying. Default: "I'm not certain — check the wiki." The Vale bosses incident is the clearest example of this failure mode: ChatGPT explicitly told Matt he could return to Visages after the Axon and would miss nothing. He could not. Three Vale bosses were permanently lost as a result.
+- **Missable/sequence-locked content:** Highest-risk category. Never assert content will be available later without verifying. Default: "I'm not certain — check the wiki." The Vale bosses incident is the clearest example of this failure mode.
 - **Wrong advice on record:** Previous sessions contain specific errors. Check character files before advising on that character.
 - **Recommending meta builds without checking playstyle fit:** Community recommendations often assume specific builds (e.g. Elemental Genesis). Always verify assumptions before recommending.
 - **Not simulating combat turns before recommending changes:** Abstract reasoning from tier rankings is insufficient. Always trace actual turn sequences before advising on weapon or build changes.
-- **Confabulating Lumina and skill effects:** Multiple effects described incorrectly across the session. Never assert Lumina or skill effects without verifying from a source.
-- **LP arithmetic errors:** Always verify LP point totals before finalising a loadout. Healing Counter listed as 1 LP — it is 10 LP.
+- **Confabulating Lumina and skill effects:** Multiple effects described incorrectly across sessions. Never assert Lumina or skill effects without verifying from a source.
+- **LP arithmetic errors:** Always verify LP point totals before finalising a loadout. Example: Full Strength stated as 10LP in Chat 13 — correct is 15LP.
 - **Accepting corrections without verification:** After repeated corrections, Claude began agreeing without independent checks. Default: acknowledge correction neutrally, flag whether independently verified.
-- **Weapon scaling and drop-level assumptions:** Charnon stated as Defence + Agility (correct is Defence + Luck). Nusaro stated as Monoco's endgame weapon (it is Joyaro). Chevalam stated as available "right now" — correct recommended level to attempt the boss is 70–75+. Always verify weapon scaling, drop source, and recommended level before advising.
-- **Passive vs active effect interactions:** Claimed Ramasson's passive heal triggered Energising Heal — it does not. Verify interaction type before assuming synergy.
-- **Asserting rank-jump skills without checking weapon or skill dependency:** Quick Strike jumps to Rank B only with Glaceso equipped (Level 4 ability). Paradigm Shift was claimed to jump to S Rank — it generates 1–3 AP. Rank bonuses apply ONLY at the exact rank stated, not at higher ranks. Always verify.
-- **Recommending skills the character doesn't have:** Light Holder and End Bringer recommended for Verso across multiple summaries — he now has both, but always confirm the character's actual skill list before recommending.
-- **AoE vs single-target context:** Phantom Stars recommended for Verso's solo Golgra fight — AoE is useless in 1v1. Check fight context before recommending AoE skills.
-- **Second Chance Pictos tracking:** Only one character can hold the Pictos at a time; the effect works once per battle, not repeatedly. Both constraints were forgotten at different points.
-- **Overload mechanics:** Described as giving 9 AP to spend in the same turn. Correct: AP refills for the next turn.
-- **Serpenphare difficulty:** Initially placed as Phase 2 content (level 60–70). Correct recommended level is 70–80+.
-- **Confabulated Lumina entries:** "Plentiful Harvest synergy (6)" listed as a Lumina — not a Lumina, just a description of a synergy. Auto Shell and Base Shield confused (Shell = 20% damage reduction for 3 turns; Shield = damage-blocking HP buffer, 1 per turn from Base Shield).
-- **Confirmation bias on skill recommendations:** Accepted the player's suggested skills (Évêque Spear, Chalier Combo) without independent verification. Always research before confirming.
-- **Flying Manor incorrectly stated as required:** Claimed Flying Manor was a mandatory story chapter that must be completed before Renoir. Correct: it is optional. The only mandatory pre-Renoir story content is The Reacher. The final boss is fought inside Lumière at the end of that dungeon — not at the Monument.
-- **Final boss location:** Said the Act 3 final fight was at the Monument. Correct: the final boss is fought inside Lumière at the end of that dungeon. The Monument fight was the Act 2 climax.
-- **Joyaro drop location:** Said Joyaro drops exclusively from Flying Manor Lampmaster post-game. Correct: also drops from Ultimate Sakapatate in Endless Night Sanctuary (level 25), and is purchasable from a River of Life merchant.
-- **Teamwork Lumina effect:** Said Teamwork gives AP when an ally uses a skill. Correct: passive damage bonus when the whole team is alive.
-- **Stendhal AP cost:** Said 4 AP. Correct: 8 AP. Also applies Defenceless to Maelle herself on use. Was nerfed 40% in Patch 1.2.3 — no longer one-shots Alicia.
-- **Gaulteram described as Act 3 best option:** Gaulteram is consensus Act 2 weapon. Community S-tier Act 3 weapons are Chevalam, Contorso, Corpeso, Simoso.
+- **Weapon scaling and drop-level assumptions:** Always verify weapon scaling attributes, drop source, and recommended level before advising. Do not assert weapon stats from memory.
+- **Passive vs active effect interactions:** Verify interaction type before assuming synergy. Example: Ramasson's passive heal does not trigger Energising Heal.
+- **Rank bonuses work ONLY at exact rank:** Confirmed by multiple community sources and in-game highlighting. Do not apply rank bonuses at higher ranks.
+- **AoE vs single-target context:** Check fight context before recommending AoE skills. Example: Phantom Stars recommended for Verso's solo Golgra fight — AoE is useless in 1v1.
 
 Full error log in [`reference/historical-errors.md`](../reference/historical-errors.md).
 Fetch that file only when reviewing specific past errors.
@@ -76,16 +64,17 @@ Fetch that file only when reviewing specific past errors.
 ---
 
 ## Section 3: Playstyle Notes
-*Last updated: Chat 4*
+*Last updated: Chat 13*
 
-- **Free-aim:** Used heavily with Lune (2–3 shots typically, up to 5–6 when stacking burn + mark). Each shot: shield removal, damage, burn (Burning Shots Lumina), mark (Marking Shots Lumina), stain generation (Trebuchim). Maelle uses free-aim less frequently. Free-aim usage expected to drop with Lune/Maelle not in the levelling team.
-- **Parry rate:** ~20% against unfamiliar bosses; up to ~100% against well-known enemies after extended grinding. Pattern-recognition is the bottleneck — can require 20+ attempts. Skill is developing, not absent. Dodge is used actively to learn timings: the dodge window is wider than the parry window, and Perfect Dodge shares the same timing as Parry — so Dodge rate is meaningfully higher than parry rate. Dodger Lumina gives +1 AP on Perfect Dodge. This is a persistent constraint on risky builds (Overload without Cheater, Defiant Strike's 30% HP cost, etc.).
-- **AP management:** Prefers to use skills every turn if AP allows. Values AP flow highly. **Endgame team (Maelle/Sciel/Verso) AP note:** AP flow is sustainable with Sciel's Litheson (+3 AP/turn for Sciel on buff/debuff) and Intervention, but requires active management — it is not as straightforward or as quick to refill as Monoco's Potier Energy. Do not assume freely available AP when advising on endgame team builds.
-- **Turn order (levelling team):** Sciel first (Fortune's Fury before Verso acts), Verso second (Strike Storm with doubled damage), Monoco third (Potier Energy refills AP). Turn order: Sciel ~1812 → Verso ~1436 → Monoco ~1163.
-- **Trash fights:** Maelle: Fencer's Flurry to clear turn 1. With new team: Phantom Stars (Verso AoE at S Rank).
+- **Free-aim:** Used heavily with Lune (2–3 shots typically, up to 5–6 when stacking burn + mark). Each shot: shield removal, damage, burn (Burning Shots Lumina), mark (Marking Shots Lumina), stain generation (Trebuchim). Maelle uses free-aim less frequently.
+- **Parry rate:** Improving with experience — ~20% against unfamiliar bosses initially; up to ~100% against well-known enemies after extended grinding. Pattern-recognition is the bottleneck. Dodge is used actively to learn timings: the dodge window is wider than the parry window, and Perfect Dodge shares the same timing as Parry. Dodger Lumina gives +1 AP on Perfect Dodge. This is a persistent constraint on risky builds (Overload without Cheater, etc.).
+- **AP management:** Prefers to use skills every turn if AP allows. Values AP flow highly. **Endgame team (Maelle/Sciel/Verso) AP note:** AP flow is sustainable with Sciel's Litheson (+3 AP/turn for Sciel on buff/debuff) and Intervention, but requires active management. Do not assume freely available AP when advising on endgame team builds.
+- **Turn rotation (endgame burst):** Verso (base attack) → Verso(C) (Steeled Strike charge) → Sciel (Fortune's Fury on Verso) → Sciel(C) (Intervention on Verso) → Verso(Intervention) (Steeled Strike executes at Rank S with doubled damage).
+- **Maelle Last Chance rotation:** Last Chance (1 AP) reduces HP to 1, refills all AP, switches to Virtuose. Cheater fires an immediate extra turn. Clea's Life restores HP to 100% on that turn start. Net result: full AP reset + Virtuose + full HP in one move. Used as a deliberate rotation tool, not an emergency skill.
+- **Trash fights:** Maelle: Phantom Stars (Verso AoE at S Rank) to clear turn 1.
 - **Boss fights:** Methodical; learns patterns over multiple attempts. Values break dynamics highly.
 - **Status effects:** Primarily burn and mark; limited experience with others.
-- **Risk tolerance:** Conservative while parry skills are developing. Prefers empirical testing (99-point attribute method established with Monoco and Sciel). Rejects builds that rely on low-HP states (Overload without Cheater, Berserk Slash) or skills with survival costs (Defiant Strike's HP cost).
+- **Risk tolerance:** Conservative while parry skills are developing. Prefers empirical testing. Rejects builds that rely on low-HP states (Overload without Cheater, Berserk Slash) or skills with survival costs (Defiant Strike's HP cost).
 
 ---
 
@@ -121,7 +110,7 @@ Pictos are collectible items (3 slots per character) giving stat boosts and effe
 
 Key rules: each Pictos is a unique copy (only one character can equip it); duplicates upgrade the existing copy; extra-turn effects don't stack (bonus turns can't trigger further bonus turns); passive "on turn start" effects fire on Cheater/Intervention bonus turns too; Pictos stat boosts cover Health, Defence, Speed, and Crit only — not Attack. For status immunity, add the relevant Lumina rather than swapping Pictos.
 
-**Lumina Point (LP) pools:** Each character's LP pool equals their level by default. Pools can be permanently increased by spending **Colour of Lumina** items (1 Colour = 1 LP per character). The increase is permanent and irreversible. Current stock: ~200 Colour of Lumina. Pools have already been expanded for main team members (Maelle 196, Verso 194, Sciel 176).
+**Lumina Point (LP) pools:** Each character's LP pool equals their level by default. Pools can be permanently increased by spending **Colour of Lumina** items (1 Colour = 1 LP per character). The increase is permanent and irreversible.
 
 **Full reference:**
 
@@ -142,14 +131,14 @@ If the main party is fully wiped in a battle, the player can continue the battle
 ---
 
 ## Section 5: Party
-*Last updated: Chat 6*
+*Last updated: Chat 13*
 
 <!-- GENERATED:START playthrough:party -->
 - **Active:** Maelle, Verso, Sciel
 - **Reserve:** Lune, Monoco
 <!-- GENERATED:END -->
 
-**Speed order (intended):** Verso goes first via Chevalam Rush (Rank S at battle start). Sciel second, Maelle third. Current turn order: Verso 2132 > Maelle 2027 > Sciel 2014. Needs tweaking.
+**Speed order:** Verso goes first via Chevalam Rush (Rank S at battle start). Sciel second, Maelle third. Current turn order resolved via Chat 12 Pictos optimisation.
 Note: base speed scales with level independently of Agility — keep levels close when speeds are close and turn order matters.
 
 **Turn rotation (endgame burst):** Verso (base attack) → Verso(C) (Steeled Strike charge) → Sciel (Fortune's Fury on Verso) → Sciel(C) (Intervention on Verso) → Verso(Intervention) (Steeled Strike executes at Rank S with doubled damage).
@@ -198,16 +187,15 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 - **Trebuchim over Colim for Lune:** Colim tested and rejected. 14% attack loss, no free-aim stain generation. Trebuchim optimal for Mayhem/free-aim playstyle. Colim only appropriate for Elemental Genesis builds.
 - **Monoco stat respec (Agility 72→99, Vitality 61, Luck 20, Nusaro):** Empirically tested. Key finding: Luck 2× more efficient than Defence for crit. Agility increases Speed, Attack, and Defence stat simultaneously.
 - **Sciel over Monoco in main team:** Litheson's +3 AP/turn (Sciel only, when buff/debuff applied) keeps Sciel self-sufficient. Combined with Intervention (grants extra turn +4 AP to another character), she effectively generates turns and AP for allies. Ramasson rejected after confirming its passive heal does not trigger Energising Heal.
-- **Sciel stat allocation:** Agility 99, Luck 99, Defence 48. Critical Burn Pictos fixes turn order.
-- **Gaulteram over Glaceso for Verso:** Gaulteram prevents rank loss on hit (loses 1 Perfection only). Same scaling as Chevalam (Agility + Luck) = no respec needed when swapping.
+- **Sciel stat allocation:** Agility 99, Luck 99, Defence 63. Critical Burn Pictos fixes turn order.
 - **Nusaro upgrade to 20:** Resplendent Catalysts cap at level 19; Joyaro drops at level 28. No overlap. Nusaro Level 20 (+1 AP per mask change) is worth the upgrade.
 - **Litheson is Sciel's endgame weapon:** Confirmed by multiple sources.
 - **Marking Shot over Defiant Strike for Verso:** Both apply Mark 100%. Defiant Strike costs 30% current HP per use — too risky with developing parry skills.
 - **Rank bonuses work ONLY at exact rank:** Confirmed by multiple community sources and in-game highlighting.
 - **Vale bosses missed:** Axon defeated before triggering the mask riddles. All three Vale bosses permanently inaccessible.
 - **Endgame team:** Maelle + Sciel + Verso. Turn rotation: Verso (base attack) → Verso(C) (Steeled Strike charge) → Sciel (Fortune's Fury on Verso) → Sciel(C) (Intervention on Verso) → Verso(Intervention) (Steeled Strike executes at Rank S with doubled damage).
-- **Maelle must complete The Reacher before Renoir:** Required for Lithum and Gustave resurrection path. Choose "Truth" to reach Relationship Level 7. ✅ Complete.
-- **Renoir self-nerf strategy:** Drop to Gaulteram (Verso) and Medalum (Maelle) before entering Lumière. Use earlier fights inside Lumière to calibrate — add back weapons if too hard before the final save point. Avoid removing Cheater or changing rotation; weapon downgrade is cleaner and preserves playstyle.
+- **End Bringer vs Steeled Strike for Verso:** Steeled Strike deals more damage in general; End Bringer wins when target is stunned due to stun-extension bonus at Rank A. Verso keeps both and uses situationally.
+- **Might is correct post-crit-cap:** For Maelle and Verso (A99, L99 already), additional attribute points go into Might. All weapons factor Might into power; gains scale with weapon base power (level 33 weapons = maximum return). More Luck gives nothing once crit-capped.
 
 ---
 
@@ -283,16 +271,18 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 
 ## Section 9: Open Questions
 
-- **Verso survivability without Survivor:** Survivor (20LP) dropped to test whether Second Chance alone is sufficient. If Verso dies frequently with only Second Chance, add Survivor back (20 CoL to expand pool). Monitor during Renoir and early postgame.
+- **Verso survivability without Survivor:** Survivor (20LP) dropped. Second Chance alone has been sufficient through Renoir and early post-game. Continue monitoring against harder post-game content.
 - **Recovery on Sciel:** Dropped for now to save LP. Revisit if Sciel takes more damage than expected in postgame. 10LP, would need CoL expansion.
 - **Powerful On Shell as Lumina:** Consider for Maelle (synergy with Lithum L20 Shell generation). LP cost 10. Add when levels create headroom.
 - **Energising Shell (10LP):** Alternative to Powerful On Shell for Maelle — +2 AP on Shell application. Evaluate alongside Powerful On Shell.
-- **Anti-Blight (10LP):** Near-requisite for postgame content. Add to all main team characters when levels create LP headroom. 67 CoL remaining.
+- **Anti-Blight (10LP):** Used situationally (swap in without CoL expansion, fits within existing headroom). Add permanently to main team when LP headroom grows.
 - **Second Chance upgrade:** Available at L31 from defeating Création near Grour in Renoir's Drafts. Substantially better stats than current L16.
 - **Healing Boon trigger mechanic:** "Heal 15% HP on applying a buff" — may fire on the buff *recipient* rather than the caster. Needs in-game confirmation before building around it.
 - **Crit cap:** Believed to be 100%, not 99%. Verify in-game.
-- **Full Strength Lumina:** Effect: 25% increased damage at full Health. Strong candidate for Maelle given Clea's Life Pictos.
 - **Empowering Dodge (5LP):** Reset behaviour on parry unconfirmed — test empirically before committing LP.
+- **Scaverim for Lune:** Likely already in inventory — check, as Scaverim drops from Chromatic Scavenger which was beaten during Phase 2. If obtained, evaluate as Lune best-in-slot (Dark stain generation).
+- **First Life (15LP):** Drops from Chromatic Lampmaster in Endless Tower (Stage 11 / DLC superboss area). 25% damage while alive, no downside for a well-supported DPS. Strong candidate for Maelle once obtained.
+- **Frenzy:** Drops from Licornapieds in Verso's Drafts. Unconditional skill damage boost for multi-hit skills. Relevant for Maelle (multi-hit stances) and Verso (Strike Storm). Review when Verso's Drafts is accessible.
 
 ---
 
@@ -376,7 +366,7 @@ the new section.
 
 1. Output the in-game actions checklist from `actions` for Matt to implement before the next session — **do this BEFORE step 2 so it appears verbatim in the transcript**
 2. Run compound log step — transcript and index now complete
-3. Run splitter (`split_transcript.py --sections-per-part 4`) on `chatN.md`
+3. Run splitter (`split_transcript.py --sections-per-part 4`) on `chatN.md` — default is 4; override via `sections_per_part` in session-state.json if a different value was agreed at session start
 4. Edit `chatN-index.md` directly to add Part Files list under `## Part Files (Claude-readable)`
 5. If `pictos_lumina_changes` is non-empty: apply changes to `data/pictos-lumina.json` directly or via `DATA:` blocks in the changelist. Markdown will be regenerated via `scripts/generate.py`.
 6. Produce `chatN-changelist.md`:
@@ -474,10 +464,12 @@ Full format reference in [`scripts/pipeline.md`](../scripts/pipeline.md).
 
 ### Session State JSON
 ```json
-{"chat": "chatN", "commit_hash": "abc12345", "last_write_timestamp": null, "modified_sections": [{"file": "path/to/file.md", "parent": "## Section", "section": "### Subsection", "changes": ["Change note 1", "Change note 2"]}], "actions": ["In-game action 1"], "pictos_lumina_changes": ["Mark Full Strength obtained, level 25"]}
+{"chat": "chatN", "commit_hash": "abc12345", "sections_per_part": 4, "last_write_timestamp": null, "modified_sections": [{"file": "path/to/file.md", "parent": "## Section", "section": "### Subsection", "changes": ["Change note 1", "Change note 2"]}], "actions": ["In-game action 1"], "pictos_lumina_changes": ["Mark Full Strength obtained, level 25"]}
 ```
 
 `commit_hash`: extracted from the jsDelivr URL at session start (e.g. `@6ab23396` → `"6ab23396"`). Used to construct all mid-session file fetch URLs — Claude outputs the full URL with this hash for Matt to paste. Never use `@main` for mid-session fetches.
+
+`sections_per_part`: controls the splitter at end of session. Default is 4. Override by setting a different value in session-state.json at session start if agreed with Matt.
 
 `last_write_timestamp`: only set during compaction recovery (step 3 of the compound log step), sourced from the `start_timestamp` in the JSON transcript output. In a no-compaction session it remains null throughout — this is correct, not an error.
 
@@ -485,4 +477,4 @@ Full format reference in [`scripts/pipeline.md`](../scripts/pipeline.md).
 
 `actions`: in-game actions to implement before the next session. Output as a checklist at end of session.
 
-`pictos_lumina_changes`: changes to apply to `overview/pictos-lumina.json` at end of session. Each entry is a concise note (e.g. "Mark Full Strength obtained, level 25", "Swap Maelle Pictos: Energy Master → Survivor"). At end of session, Claude applies these to the JSON and regenerates both Markdown files via `python3 scripts/generate_pictos_lumina.py`.
+`pictos_lumina_changes`: changes to apply to `data/pictos-lumina.json` at end of session. Each entry is a concise note (e.g. "Mark Full Strength obtained, level 25", "Swap Maelle Pictos: Energy Master → Survivor"). At end of session, Claude applies these to the JSON and regenerates both Markdown files via `python3 scripts/generate.py`.

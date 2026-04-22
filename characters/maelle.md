@@ -45,6 +45,20 @@ Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches
 
 **Breaking Rules:** 3 AP, switches to Offensive, destroys all shields on target, gains 1 AP per shield destroyed. **If target is Defenceless, grants a second turn.**
 
+### Key Synergies
+
+**Last Chance + Cheater + Clea's Life loop:**
+
+Last Chance (1 AP) reduces HP to 1, refills all AP, and switches to Virtuose. Cheater fires an immediate extra turn. Clea's Life triggers at the start of that extra turn (condition: no damage taken since last turn — met because Cheater bonus turn is immediate), restoring 100% HP.
+
+Net effect: full AP reset + Virtuose stance + full HP in a single 1 AP move. Full Strength Lumina (25% damage at full Health) is also active on the Cheater turn after HP is restored.
+
+Use Last Chance as a deliberate rotation tool rather than an emergency skill. Practical usage: when AP is low and you want to re-enter Virtuose with full resources.
+
+**Caveats:**
+- Stendhal applies Defenceless to Maelle on use. If Stendhal is used in the same turn sequence before Last Chance, Maelle has both HP-1 and Defenceless simultaneously — a vulnerability window if the enemy gets a turn between moves. Rare with good turn economy but plan accordingly.
+- If an enemy has any interrupt-style mechanic that allows them to act during a Cheater bonus turn, Clea's Life will not fire (condition fails if damage taken). No known enemies in the current content do this.
+
 ---
 
 ## Stats
