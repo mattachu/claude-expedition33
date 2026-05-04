@@ -47,9 +47,9 @@ Fetch that file only when reviewing specific past errors.
 ### Inventory
 <!-- GENERATED:START playthrough:inventory -->
 - Colour of Lumina: 120
-- Recoats: 28
-- Chroma Catalysts: 67 standard, 65 polished, 103 resplendent, 36 grandiose, 0 perfect
-- Chroma: 2065796
+- Recoats: 32
+- Chroma Catalysts: 67 standard, 73 polished, 124 resplendent, 67 grandiose, 1 perfect
+- Chroma: 2877098
 <!-- GENERATED:END -->
 
 ### LP totals
@@ -237,7 +237,7 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 - ✅ Dark Gestral Arena
 - ✅ Endless Tower Stages 1–10 (30 fights)
 - ⬜ Endless Tower Stage 11 — 3 fights; Trial 3 (Painted Love) gives Perfect Catalyst + Clair Outfit for Verso
-- ⬜ Hard chromatics (10/17)
+- ⬜ Hard chromatics (12/17)
   - ✅ Chromatic Echassier — Lumiere
   - ✅ Chromatic Catapult Sakapatate — Dark Gestral Arena
   - ✅ Chromatic Ranger Sakapatate — Dark Gestral Arena
@@ -248,8 +248,8 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
   - ✅ Chromatic Goblu — The Continent, mountaintop east of Frozen Hearts (requires flying)
   - ✅ Chromatic Aberration — The Continent, floating island SE of The Fountain (requires flying) — bring Anti-Blight
   - ✅ Chromatic Pétank — The Continent (superboss)
-  - ⬜ Chromatic Bourgeon — The Monolith
-  - ⬜ Chromatic Clair Obscur — The Monolith, top (after defeating The Paintress) → Combo Attack II Pictos
+  - ✅ Chromatic Bourgeon — The Monolith
+  - ✅ Chromatic Clair Obscur — The Monolith, top (after defeating The Paintress) → Combo Attack II Pictos
   - ⬜ Chromatic Creation — Renoir's Drafts
   - ⬜ Chromatic Barbasucette — Verso's Drafts
   - ⬜ Chromatic Franctale — Verso's Drafts
@@ -260,7 +260,7 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
   - ✅ Chromatic Steel Chevaliere — Endless Tower floor 10-2 (trio fight with Gold and Ceramic)
   - ✅ Chromatic Ceramic Chevaliere — Endless Tower floor 10-2 (trio fight with Gold and Steel)
   - ⬜ Chromatic Lampmaster — Endless Tower superboss (Thank You Update) — 6 health bars, gimmick-heavy
-- ⬜ Painting Workshop Beast (Level 80+)
+- ✅ Painting Workshop Beast (Level 80+)
 - ⬜ Renoir's Drafts (Level 80+, recommended 90+ for Simon) — hardest optional area; Aberrations, Bouchecliers, Contorsionnistes
 - ⬜ Purchase Charnon (89,884 Chromas, Renoir's Drafts merchant) — Sciel alternative endgame weapon
 - ⬜ Verso's Drafts (DLC, Level 80+) — recommended after Renoir's Drafts; final boss (Root of All Evil) is hardest boss in game, reported to beat level 99 parties

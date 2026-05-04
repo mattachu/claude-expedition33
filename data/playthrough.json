@@ -13,13 +13,13 @@
   ],
   "inventory": {
     "colour_of_lumina": 120,
-    "recoats": 28,
-    "chroma": 2065796,
+    "recoats": 32,
+    "chroma": 2877098,
     "chroma_catalyst": 67,
-    "chroma_catalyst_polished": 65,
-    "chroma_catalyst_resplendent": 103,
-    "chroma_catalyst_grandiose": 36,
-    "chroma_catalyst_perfect": 0
+    "chroma_catalyst_polished": 73,
+    "chroma_catalyst_resplendent": 124,
+    "chroma_catalyst_grandiose": 67,
+    "chroma_catalyst_perfect": 1
   },
   "current_phase_checklist": [
     {
@@ -94,12 +94,12 @@
         {
           "id": "bourgeon",
           "label": "Chromatic Bourgeon — The Monolith",
-          "done": false
+          "done": true
         },
         {
           "id": "clair_obscur",
           "label": "Chromatic Clair Obscur — The Monolith, top (after defeating The Paintress) → Combo Attack II Pictos",
-          "done": false
+          "done": true
         },
         {
           "id": "creation",
@@ -157,7 +157,7 @@
     {
       "id": "painting_workshop",
       "label": "Painting Workshop Beast (Level 80+)",
-      "done": false
+      "done": true
     },
     {
       "id": "renoirs_drafts",

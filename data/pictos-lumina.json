@@ -148,7 +148,11 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 8
+      "level": 30,
+      "stats": {
+        "defence": 1817,
+        "crit": "34%"
+      }
     },
     {
       "name": "Attack Lifesteal",
@@ -369,9 +373,10 @@
       ],
       "effect": "Base Attack can Break.",
       "lp_cost": 10,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 15
     },
     {
       "name": "Breaking Burn",
@@ -434,9 +439,10 @@
       ],
       "effect": "25% increased Break damage against Slowed enemies.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 15
     },
     {
       "name": "Burn Affinity",
@@ -691,9 +697,14 @@
       ],
       "effect": "Base Attack has 1 extra hit.",
       "lp_cost": 20,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 29,
+      "stats": {
+        "speed": 836,
+        "crit": "16%"
+      }
     },
     {
       "name": "Combo Attack III",
@@ -802,9 +813,10 @@
       ],
       "effect": "25% increased Critical Chance on Defenceless enemies.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 9
     },
     {
       "name": "Critical Weakness",
@@ -944,9 +956,10 @@
       ],
       "effect": "+2 AP on using an item.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 14
     },
     {
       "name": "Empowering Attack",
@@ -1013,9 +1026,10 @@
       ],
       "effect": "Each successful Parry increases damage by 5% until end of the following turn. Taking any damage removes this buff.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 15
     },
     {
       "name": "Empowering Tint",
@@ -1055,7 +1069,11 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 7
+      "level": 30,
+      "stats": {
+        "speed": 895,
+        "crit": "17%"
+      }
     },
     {
       "name": "Energising Attack II",
@@ -1905,10 +1923,10 @@
       "obtained": true,
       "equipped_by": null,
       "lumina_learned": false,
-      "level": 28,
+      "level": 29,
       "stats": {
-        "speed": 546,
-        "crit": "32%"
+        "speed": 586,
+        "crit": "33%"
       },
       "notes": "Not recommended for Matt."
     },
@@ -2132,9 +2150,10 @@
       ],
       "effect": "Damage taken is randomly multiplied by a value between 50% and 200%.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 15
     },
     {
       "name": "Recovery",
@@ -2445,9 +2464,10 @@
       ],
       "effect": "50% chance to apply Mark when attacking a Marked target.",
       "lp_cost": 10,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false
+      "lumina_learned": false,
+      "level": 15
     },
     {
       "name": "Stun Boost",

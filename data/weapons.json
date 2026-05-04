@@ -259,7 +259,7 @@
     },
     {
       "name": "Corpeso",
-      "level": 23,
+      "level": 29,
       "power": null,
       "element": "Fire",
       "scaling": "Vitality A, Agility B",
@@ -546,6 +546,15 @@
       "scaling": null,
       "obtained": true,
       "effects": []
+    },
+    {
+      "name": "Dreameso",
+      "level": 15,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
     }
   ],
   "Sciel": [
@@ -731,6 +740,24 @@
     {
       "name": "Moisson",
       "level": 17,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Bourgelon",
+      "level": 16,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
+    },
+    {
+      "name": "Garganon",
+      "level": 15,
       "power": null,
       "element": null,
       "scaling": null,
@@ -998,6 +1025,15 @@
           "description": "Generate a random Stain on Free Aim shot."
         }
       ]
+    },
+    {
+      "name": "Lithelim",
+      "level": 15,
+      "power": null,
+      "element": null,
+      "scaling": null,
+      "obtained": true,
+      "effects": []
     }
   ],
   "Monoco": [

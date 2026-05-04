@@ -4,11 +4,11 @@
 
 See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) for Pictos and Lumina currently in use.
 
-**194 Pictos total.** 153 obtained.
+**194 Pictos total.** 161 obtained.
 
 ---
 
-## AP and Energy (32 Pictos, 27 obtained)
+## AP and Energy (32 Pictos, 28 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
@@ -16,9 +16,9 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Dead Energy I | +3 AP on killing an enemy. | 2 | Speed: 162, Crit: 17% |  |  |
 | ✓ | Dead Energy II | +3 AP on killing an enemy. | 2 |  |  |  |
 | ✓ | Dodger | Gain 1 AP on Perfect Dodge. Once per turn. | 1 |  |  |  |
-|  | Effective Support | +2 AP on using an item. | 5 |  |  |  |
+| ✓ | Effective Support | +2 AP on using an item. | 5 |  |  |  |
 |  | Energetic Healer | +2 AP on Healing an ally. Once per turn. | 5 |  |  |  |
-| ✓ | Energising Attack I | +1 AP on Base Attack. | 10 |  |  |  |
+| ✓ | Energising Attack I | +1 AP on Base Attack. | 10 | Speed: 895, Crit: 17% |  |  |
 |  | Energising Attack II | +1 AP on Base Attack. | 15 |  |  |  |
 | ✓ | Energising Break | +3 AP on Breaking a target. | 3 |  |  |  |
 | ✓ | Energising Burn | +1 AP on applying Burn. Once per turn. | 10 | Defence: 401, Speed: 321 |  |  |
@@ -41,24 +41,24 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Energising Stun | +1 AP on hitting a Stunned target with a Skill. | 10 | Speed: 519, Crit: 31% |  |  |
 | ✓ | Energising Turn | +1 AP on turn start. | 20 | Speed: 270 |  |  |
 | ✓ | Energy Master | Every AP gain is increased by 1 | 40 | Health: 4979 | Sciel |  |
-| ✓ | Perilous Parry | +1 AP on Parry, but damage received is doubled. | 5 | Speed: 546, Crit: 32% |  |  |
+| ✓ | Perilous Parry | +1 AP on Parry, but damage received is doubled. | 5 | Speed: 586, Crit: 33% |  |  |
 | ✓ | Rewarding Mark | +2 AP on dealing damage to a Marked target. Once per turn. | 5 |  |  | mark |
 | ✓ | Weakness Gain | +1 AP on hitting an enemy's Weakness. Once per turn. | 3 |  |  |  |
 
 ---
 
-## Break (13 Pictos, 10 obtained)
+## Break (13 Pictos, 12 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
 | ✓ | Break Specialist | Break damage is increased by 50%, but base damage is reduced by 20%. | 1 | Health: 2705, Speed: 546 |  |  |
 | ✓ | Breaker | 25% increased Break damage. | 10 |  |  |  |
-|  | Breaking Attack | Base Attack can Break. | 10 |  |  |  |
+| ✓ | Breaking Attack | Base Attack can Break. | 10 |  |  |  |
 | ✓ | Breaking Burn | 25% increased Break damage on Burning enemies. | 5 |  |  |  |
 | ✓ | Breaking Counter | 50% increased Break damage on Counterattack. | 3 |  |  |  |
 | ✓ | Breaking Death | Fully charge enemy break bar on death | 5 | Speed: 586, Crit: 33% | Verso | death |
 | ✓ | Breaking Shots | 50% increased Break damage with Free Aim shots. | 1 |  |  | shots |
-|  | Breaking Slow | 25% increased Break damage against Slowed enemies. | 5 |  |  |  |
+| ✓ | Breaking Slow | 25% increased Break damage against Slowed enemies. | 5 |  |  |  |
 | ✓ | Fueling Break | Breaking a target doubles its Burn amount. | 5 | Speed: 507, Crit: 31% |  |  |
 | ✓ | Gradient Break | +50% of a Gradient Charge on Breaking a target. | 5 | Speed: 434, Crit: 28% | Maelle | gradient |
 |  | Gradient Breaker | 50% increased Break damage with Gradient Attacks. | 5 |  |  | gradient |
@@ -82,23 +82,23 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Critical Hit (5 Pictos, 3 obtained)
+## Critical Hit (5 Pictos, 4 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
 | ✓ | Critical Break | 25% increased Break damage on Critical hits. | 5 |  |  |  |
 | ✓ | Critical Moment | 50% increased Critical Chance if Health is below 30%. | None |  |  |  |
 |  | Critical Stun | 100% Critical Chance on hitting a Stunned target. | 5 |  |  |  |
-|  | Critical Vulnerability | 25% increased Critical Chance on Defenceless enemies. | 5 |  |  |  |
+| ✓ | Critical Vulnerability | 25% increased Critical Chance on Defenceless enemies. | 5 |  |  |  |
 | ✓ | Critical Weakness | 25% increased Critical Chance on Weakness. | 5 | Speed: 705, Crit: 15% |  |  |
 
 ---
 
-## Damage Modifiers (30 Pictos, 25 obtained)
+## Damage Modifiers (30 Pictos, 26 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
-| ✓ | At Death's Door | Deal 50% more damage if Health is below 10%. | 5 |  |  |  |
+| ✓ | At Death's Door | Deal 50% more damage if Health is below 10%. | 5 | Defence: 1817, Crit: 34% |  |  |
 | ✓ | Augmented Aim | 50% increased Free Aim damage. | 3 |  |  | shots |
 | ✓ | Augmented Attack | 50% increased Base Attack damage. | 7 |  |  |  |
 | ✓ | Augmented Counter I | 25% increased Counterattack damage. | 3 | Health: 4058, Crit: 16% | Verso |  |
@@ -109,7 +109,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Empowering Attack | Gain Powerful for 1 turn on Base Attack. | 10 |  |  |  |
 | ✓ | Empowering Break | Gain Powerful on Breaking a target. | 3 | Speed: 546, Crit: 32% | Maelle |  |
 | ✓ | Empowering Dodge | 5% increased damage per consecutive dodge, stacks up to 10 | 5 | Speed: 162, Crit: 17% |  |  |
-|  | Empowering Parry | Each successful Parry increases damage by 5% until end of the following turn. Taking any damage removes this buff. | 5 |  |  |  |
+| ✓ | Empowering Parry | Each successful Parry increases damage by 5% until end of the following turn. Taking any damage removes this buff. | 5 |  |  |  |
 | ✓ | Empowering Tint | Healing Tints also apply Powerful. | 5 | Health: 2705, Speed: 546 |  | support |
 | ✓ | Exhausting Power | 50% increased damage when Exhausted. | 2 |  |  |  |
 | ✓ | First Offensive | First hit dealt and taken deals 50% more damage. | 5 |  |  |  |
@@ -180,7 +180,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Mark (6 Pictos, 3 obtained)
+## Mark (6 Pictos, 4 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
@@ -189,17 +189,17 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 |  | Marking Break | Apply Mark on Break. | 5 |  |  |  |
 | ✓ | Marking Shots | 20% chance to apply Mark on Free Aim shot. | 3 |  |  | shots |
 | ✓ | Powerful Mark | Gain Powerful on hitting a Marked target. | 5 | Speed: 819, Crit: 16% | Monoco |  |
-|  | Stay Marked | 50% chance to apply Mark when attacking a Marked target. | 10 |  |  |  |
+| ✓ | Stay Marked | 50% chance to apply Mark when attacking a Marked target. | 10 |  |  |  |
 
 ---
 
-## Combat Flow (9 Pictos, 7 obtained)
+## Combat Flow (9 Pictos, 8 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
 | ✓ | Cheater | Extra turn after using a skill, once per turn | 40 | Health: 1198, Speed: 400 |  |  |
 | ✓ | Combo Attack I | Base Attack has 1 extra hit. | 10 |  |  |  |
-|  | Combo Attack II | Base Attack has 1 extra hit. | 20 |  |  |  |
+| ✓ | Combo Attack II | Base Attack has 1 extra hit. | 20 | Speed: 836, Crit: 16% |  |  |
 | ✓ | Combo Attack III | Base attack has 1 extra hit | 30 | Speed: 619, Crit: 14% |  |  |
 |  | Faster Than Strong | Always play twice in a row, but deal 50% less damage. | 10 |  |  |  |
 | ✓ | First Strike | Play first. | 10 |  |  |  |
@@ -221,7 +221,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Survival and Defence (26 Pictos, 22 obtained)
+## Survival and Defence (26 Pictos, 23 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
@@ -242,7 +242,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 |  | Protecting Attack | Gain Shell for 1 turn on Base Attack. | 10 |  |  |  |
 |  | Protecting Shots | 20% chance to gain Shell on Free Aim shot. | 3 |  |  | shots |
 | ✓ | Protecting Tint | Healing Tints also apply Shell | 5 | Health: 1403, Defence: 681 |  | support |
-|  | Random Defense | Damage taken is randomly multiplied by a value between 50% and 200%. | 5 |  |  |  |
+| ✓ | Random Defense | Damage taken is randomly multiplied by a value between 50% and 200%. | 5 |  |  |  |
 | ✓ | SOS Power | Apply Powerful when falling below 50% Health. | 5 |  |  |  |
 | ✓ | SOS Rush | Apply Rush when falling below 50% Health. | None |  |  |  |
 | ✓ | SOS Shell | Apply Shell when falling below 50% Health. | 5 |  |  |  |

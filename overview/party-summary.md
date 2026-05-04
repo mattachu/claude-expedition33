@@ -257,6 +257,6 @@
 # Inventory
 
 - Colour of Lumina: 120
-- Recoats: 28
-- Chroma Catalysts: 67 standard, 65 polished, 103 resplendent, 36 grandiose, 0 perfect
-- Chroma: 2065796
+- Recoats: 32
+- Chroma Catalysts: 67 standard, 73 polished, 124 resplendent, 67 grandiose, 1 perfect
+- Chroma: 2877098
