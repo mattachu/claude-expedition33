@@ -226,7 +226,7 @@ Yes please for the end-of-session log, and could you also produce a JSON snippet
 
 Fair correction — noted. The framework being Opus-designed for Sonnet to execute is a meaningful distinction, and it doesn't change the conclusion, but it's worth being precise: the issue is that this particular optimisation requires simultaneous constraint-solving across three characters, which is where I ran into trouble, not the framework itself.
 
-Let me produce the outputs now.Now the changelist and JSON snippet... All four session files above. The **JSON snippet for Clea's Life** to paste into `data/pictos-lumina.json` (replacing the existing entry):
+Let me produce the outputs now... Now the changelist and JSON snippet... All four session files above. The **JSON snippet for Clea's Life** to paste into `data/pictos-lumina.json` (replacing the existing entry):
 
 ```json
 {
