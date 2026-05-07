@@ -1,25 +1,25 @@
 {
   "Maelle": {
-    "level": 91,
+    "level": 93,
     "role": "Primary DPS",
     "attributes": {
       "vitality": 0,
-      "might": 75,
+      "might": 81,
       "agility": 99,
       "defence": 0,
       "luck": 99
     },
     "stats_base": {
-      "health": 2171,
-      "attack": 1322,
-      "speed": 1213,
+      "health": 2232,
+      "attack": 1368,
+      "speed": 1228,
       "defence": 182,
       "crit": "41%"
     },
     "stats_modified": {
-      "health": 7762,
-      "attack": 11013,
-      "speed": 2193,
+      "health": 7823,
+      "attack": 11156,
+      "speed": 2208,
       "defence": 182,
       "crit": "101%",
       "_note": "Stats with Lithum (33), Clea's Life (30), Empowering Break (28), Gradient Break (25) equipped"
@@ -30,7 +30,7 @@
       "Empowering Break",
       "Gradient Break"
     ],
-    "lp_total": 234,
+    "lp_total": 271,
     "lp_used": 234,
     "lumina_core_exclusions": [],
     "lumina_extras": [],
@@ -88,26 +88,26 @@
     ]
   },
   "Verso": {
-    "level": 91,
+    "level": 93,
     "role": "Endgame main DPS",
     "attributes": {
       "vitality": 0,
-      "might": 75,
+      "might": 81,
       "agility": 99,
       "defence": 0,
       "luck": 99
     },
     "stats_base": {
-      "health": 2171,
-      "attack": 1322,
-      "speed": 1213,
+      "health": 2232,
+      "attack": 1368,
+      "speed": 1228,
       "defence": 182,
       "crit": "41%"
     },
     "stats_modified": {
-      "health": 6229,
-      "attack": 10529,
-      "speed": 2356,
+      "health": 6290,
+      "attack": 10668,
+      "speed": 2371,
       "defence": 182,
       "crit": "122%",
       "_note": "Stats with Chevalam (33), Augmented Counter I (28), Breaking Death (29), Confident (29) equipped"
@@ -118,7 +118,7 @@
       "Breaking Death",
       "Confident"
     ],
-    "lp_total": 224,
+    "lp_total": 251,
     "lp_used": 224,
     "lumina_core_exclusions": [
       {
@@ -186,27 +186,27 @@
     ]
   },
   "Sciel": {
-    "level": 90,
+    "level": 92,
     "role": "Pure support",
     "attributes": {
       "vitality": 0,
-      "might": 9,
+      "might": 12,
       "agility": 99,
-      "defence": 63,
+      "defence": 66,
       "luck": 99
     },
     "stats_base": {
-      "health": 2140,
-      "attack": 1182,
-      "speed": 1206,
-      "defence": 481,
+      "health": 2202,
+      "attack": 1226,
+      "speed": 1221,
+      "defence": 492,
       "crit": "55%"
     },
     "stats_modified": {
-      "health": 7110,
-      "attack": 8685,
-      "speed": 2504,
-      "defence": 481,
+      "health": 7172,
+      "attack": 8771,
+      "speed": 2519,
+      "defence": 492,
       "crit": "102%",
       "_note": "Stats with Litheson (33), Painter (28), Energy Master (30), Energising Shots (28) equipped"
     },
@@ -216,7 +216,7 @@
       "Energy Master",
       "Energising Shots"
     ],
-    "lp_total": 215,
+    "lp_total": 222,
     "lp_used": 215,
     "lumina_core_exclusions": [
       {
@@ -290,26 +290,26 @@
     ]
   },
   "Lune": {
-    "level": 86,
+    "level": 88,
     "role": "DPS / healer (reserve)",
     "attributes": {
       "vitality": 99,
-      "might": 9,
+      "might": 15,
       "agility": 99,
       "defence": 0,
       "luck": 51
     },
     "stats_base": {
-      "health": 3408,
-      "attack": 1106,
-      "speed": 1134,
+      "health": 3469,
+      "attack": 1155,
+      "speed": 1149,
       "defence": 182,
       "crit": "29%"
     },
     "stats_modified": {
-      "health": 3408,
-      "attack": 10160,
-      "speed": 2553,
+      "health": 3469,
+      "attack": 10311,
+      "speed": 2568,
       "defence": 182,
       "crit": "101%",
       "_note": "Stats with Kralim (33), Critical Burn (25), Burn Affinity (21), Burning Death (28) equipped"
@@ -320,7 +320,7 @@
       "Burn Affinity",
       "Burning Death"
     ],
-    "lp_total": 130,
+    "lp_total": 136,
     "lp_used": 130,
     "lumina_core_exclusions": [],
     "lumina_extras": [
@@ -384,28 +384,28 @@
     ]
   },
   "Monoco": {
-    "level": 87,
+    "level": 88,
     "role": "Break + AP support (reserve)",
     "attributes": {
       "vitality": 0,
       "might": 0,
       "agility": 99,
       "defence": 99,
-      "luck": 63
+      "luck": 66
     },
     "stats_base": {
-      "health": 2049,
-      "attack": 1113,
-      "speed": 1157,
+      "health": 2080,
+      "attack": 1131,
+      "speed": 1168,
       "defence": 729,
-      "crit": "50%"
+      "crit": "51%"
     },
     "stats_modified": {
-      "health": 4805,
-      "attack": 10863,
-      "speed": 2522,
+      "health": 4837,
+      "attack": 10881,
+      "speed": 2533,
       "defence": 2301,
-      "crit": "98%",
+      "crit": "99%",
       "_note": "Stats with Joyaro (33), Longer Shell (29), Powerful Mark (28), Powerful Revive (28) equipped"
     },
     "weapon_equipped": "Joyaro",
@@ -414,7 +414,7 @@
       "Powerful Mark",
       "Powerful Revive"
     ],
-    "lp_total": 133,
+    "lp_total": 138,
     "lp_used": 125,
     "lumina_core_exclusions": [],
     "lumina_extras": [

@@ -8,13 +8,13 @@
 
 ### Maelle
 
-**Level:** 91 | **Role:** Primary DPS | **Weapon:** Lithum (33)
+**Level:** 93 | **Role:** Primary DPS | **Weapon:** Lithum (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2171 | 7762     |
-| Attack  | 1322 | 11013    |
-| Speed   | 1213 | 2193     |
+| Health  | 2232 | 7823     |
+| Attack  | 1368 | 11156    |
+| Speed   | 1228 | 2208     |
 | Defence | 182  | 182      |
 | Crit    | 41%  | 101%     |
 
@@ -51,19 +51,19 @@
 | Second Chance      | 40 |                                                  |
 | Teamwork           | 5  |                                                  |
 
-**LP:** 234/234
+**LP:** 234/271
 
 ---
 
 ### Verso
 
-**Level:** 91 | **Role:** Endgame main DPS | **Weapon:** Chevalam (33)
+**Level:** 93 | **Role:** Endgame main DPS | **Weapon:** Chevalam (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2171 | 6229     |
-| Attack  | 1322 | 10529    |
-| Speed   | 1213 | 2356     |
+| Health  | 2232 | 6290     |
+| Attack  | 1368 | 10668    |
+| Speed   | 1228 | 2371     |
 | Defence | 182  | 182      |
 | Crit    | 41%  | 122%     |
 
@@ -100,20 +100,20 @@
 | Second Chance      | 40 |                                                                     |
 | Teamwork           | 5  |                                                                     |
 
-**LP:** 224/224
+**LP:** 224/251
 
 ---
 
 ### Sciel
 
-**Level:** 90 | **Role:** Pure support | **Weapon:** Litheson (33)
+**Level:** 92 | **Role:** Pure support | **Weapon:** Litheson (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2140 | 7110     |
-| Attack  | 1182 | 8685     |
-| Speed   | 1206 | 2504     |
-| Defence | 481  | 481      |
+| Health  | 2202 | 7172     |
+| Attack  | 1226 | 8771     |
+| Speed   | 1221 | 2519     |
+| Defence | 492  | 492      |
 | Crit    | 55%  | 102%     |
 
 
@@ -153,7 +153,7 @@
 | Second Chance       | 40 |                                                               |
 | Teamwork            | 5  |                                                               |
 
-**LP:** 215/215
+**LP:** 215/222
 
 ---
 
@@ -161,13 +161,13 @@
 
 ### Lune
 
-**Level:** 86 | **Role:** DPS / healer (reserve) | **Weapon:** Kralim (33)
+**Level:** 88 | **Role:** DPS / healer (reserve) | **Weapon:** Kralim (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 3408 | 3408     |
-| Attack  | 1106 | 10160    |
-| Speed   | 1134 | 2553     |
+| Health  | 3469 | 3469     |
+| Attack  | 1155 | 10311    |
+| Speed   | 1149 | 2568     |
 | Defence | 182  | 182      |
 | Crit    | 29%  | 101%     |
 
@@ -202,21 +202,21 @@
 | Rewarding Mark     | 5  |                                           |
 | Teamwork           | 5  |                                           |
 
-**LP:** 130/130
+**LP:** 130/136
 
 ---
 
 ### Monoco
 
-**Level:** 87 | **Role:** Break + AP support (reserve) | **Weapon:** Joyaro (33)
+**Level:** 88 | **Role:** Break + AP support (reserve) | **Weapon:** Joyaro (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2049 | 4805     |
-| Attack  | 1113 | 10863    |
-| Speed   | 1157 | 2522     |
+| Health  | 2080 | 4837     |
+| Attack  | 1131 | 10881    |
+| Speed   | 1168 | 2533     |
 | Defence | 729  | 2301     |
-| Crit    | 50%  | 98%      |
+| Crit    | 51%  | 99%      |
 
 
 | Pictos          | Level | Stats                       |
@@ -250,13 +250,13 @@
 | Staggering Attack  | 1  | Break damage on base attack — small break bar contribution                                |
 | Teamwork           | 5  |                                                                                           |
 
-**LP:** 125/133
+**LP:** 125/138
 
 ---
 
 # Inventory
 
-- Colour of Lumina: 120
-- Recoats: 32
-- Chroma Catalysts: 67 standard, 73 polished, 124 resplendent, 67 grandiose, 1 perfect
-- Chroma: 2877098
+- Colour of Lumina: 127
+- Recoats: 33
+- Chroma Catalysts: 67 standard, 73 polished, 124 resplendent, 69 grandiose, 1 perfect
+- Chroma: 3061702

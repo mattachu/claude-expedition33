@@ -56,10 +56,10 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 <!-- GENERATED:START characters:Monoco:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 87    |
+| Level     | 88    |
 | Agility   | 99    |
 | Defence   | 99    |
-| Luck      | 63    |
+| Luck      | 66    |
 | Vitality  | 0     |
 | Might     | 0     |
 <!-- GENERATED:END -->
@@ -71,11 +71,11 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2049 | 4805     |
-| Attack  | 1113 | 10863    |
-| Speed   | 1157 | 2522     |
+| Health  | 2080 | 4837     |
+| Attack  | 1131 | 10881    |
+| Speed   | 1168 | 2533     |
 | Defence | 729  | 2301     |
-| Crit    | 50%  | 98%      |
+| Crit    | 51%  | 99%      |
 <!-- GENERATED:END -->
 
 ---
@@ -137,9 +137,9 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 
 ### LP Budget
 <!-- GENERATED:START characters:Monoco:LP -->
-- **Current capacity:** 133 LP
+- **Current capacity:** 138 LP
 - **Used:** 125 LP
-- **Spare:** 8 LP
+- **Spare:** 13 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout

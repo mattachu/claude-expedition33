@@ -39,11 +39,11 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 <!-- GENERATED:START characters:Lune:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 86    |
+| Level     | 88    |
 | Vitality  | 99    |
 | Agility   | 99    |
 | Luck      | 51    |
-| Might     | 9     |
+| Might     | 15    |
 | Defence   | 0     |
 <!-- GENERATED:END -->
 
@@ -54,9 +54,9 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 3408 | 3408     |
-| Attack  | 1106 | 10160    |
-| Speed   | 1134 | 2553     |
+| Health  | 3469 | 3469     |
+| Attack  | 1155 | 10311    |
+| Speed   | 1149 | 2568     |
 | Defence | 182  | 182      |
 | Crit    | 29%  | 101%     |
 <!-- GENERATED:END -->
@@ -131,9 +131,9 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 
 ### LP Budget
 <!-- GENERATED:START characters:Lune:LP -->
-- **Current capacity:** 130 LP
+- **Current capacity:** 136 LP
 - **Used:** 130 LP
-- **Spare:** 0 LP
+- **Spare:** 6 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout

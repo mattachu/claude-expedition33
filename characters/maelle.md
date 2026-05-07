@@ -68,10 +68,10 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 <!-- GENERATED:START characters:Maelle:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 91    |
+| Level     | 93    |
 | Agility   | 99    |
 | Luck      | 99    |
-| Might     | 75    |
+| Might     | 81    |
 | Vitality  | 0     |
 | Defence   | 0     |
 <!-- GENERATED:END -->
@@ -85,9 +85,9 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2171 | 7762     |
-| Attack  | 1322 | 11013    |
-| Speed   | 1213 | 2193     |
+| Health  | 2232 | 7823     |
+| Attack  | 1368 | 11156    |
+| Speed   | 1228 | 2208     |
 | Defence | 182  | 182      |
 | Crit    | 41%  | 101%     |
 <!-- GENERATED:END -->
@@ -137,9 +137,9 @@ Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina 
 
 ### LP Budget
 <!-- GENERATED:START characters:Maelle:LP -->
-- **Current capacity:** 234 LP
+- **Current capacity:** 271 LP
 - **Used:** 234 LP
-- **Spare:** 0 LP
+- **Spare:** 37 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout

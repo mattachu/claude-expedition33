@@ -1034,6 +1034,29 @@
       "scaling": null,
       "obtained": true,
       "effects": []
+    },
+    {
+      "name": "Scaverim",
+      "level": 14,
+      "power": 1442,
+      "element": "Dark",
+      "scaling": "Vitality B, Agility C",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "50% chance to generate a Dark Stain when consuming Stains; deal 50% more damage with Skills per active Dark Stain."
+        },
+        {
+          "level": 10,
+          "description": "Base Attacks can consume one Dark Stain to deal 200% more damage."
+        },
+        {
+          "level": 20,
+          "description": "With 4 active Dark Stains, any skill can consume them to deal 300% more damage."
+        }
+      ],
+      "notes": "Evaluated vs Kralim; not equipped. Dark Stain ramp-up incompatible with reserve role. Revisit if Lune moves to main team for sustained fights."
     }
   ],
   "Monoco": [

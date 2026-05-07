@@ -12,13 +12,13 @@
     "Monoco"
   ],
   "inventory": {
-    "colour_of_lumina": 120,
-    "recoats": 32,
-    "chroma": 2877098,
+    "colour_of_lumina": 127,
+    "recoats": 33,
+    "chroma": 3061702,
     "chroma_catalyst": 67,
     "chroma_catalyst_polished": 73,
     "chroma_catalyst_resplendent": 124,
-    "chroma_catalyst_grandiose": 67,
+    "chroma_catalyst_grandiose": 69,
     "chroma_catalyst_perfect": 1
   },
   "current_phase_checklist": [
@@ -35,7 +35,7 @@
     {
       "id": "endless_tower_stage_11",
       "label": "Endless Tower Stage 11 — 3 fights; Trial 3 (Painted Love) gives Perfect Catalyst + Clair Outfit for Verso",
-      "done": false
+      "done": true
     },
     {
       "id": "hard_chromatics",

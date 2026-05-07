@@ -36,11 +36,11 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 <!-- GENERATED:START characters:Sciel:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 90    |
+| Level     | 92    |
 | Agility   | 99    |
 | Luck      | 99    |
-| Defence   | 63    |
-| Might     | 9     |
+| Defence   | 66    |
+| Might     | 12    |
 | Vitality  | 0     |
 <!-- GENERATED:END -->
 
@@ -51,10 +51,10 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2140 | 7110     |
-| Attack  | 1182 | 8685     |
-| Speed   | 1206 | 2504     |
-| Defence | 481  | 481      |
+| Health  | 2202 | 7172     |
+| Attack  | 1226 | 8771     |
+| Speed   | 1221 | 2519     |
+| Defence | 492  | 492      |
 | Crit    | 55%  | 102%     |
 <!-- GENERATED:END -->
 
@@ -106,9 +106,9 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 ### LP Budget
 <!-- GENERATED:START characters:Sciel:LP -->
-- **Current capacity:** 215 LP
+- **Current capacity:** 222 LP
 - **Used:** 215 LP
-- **Spare:** 0 LP
+- **Spare:** 7 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
