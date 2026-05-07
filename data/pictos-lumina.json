@@ -10,7 +10,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 9
     },
     {
@@ -23,7 +22,6 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 6
     },
     {
@@ -35,8 +33,7 @@
       "effect": "20% chance to gain Rush on Free Aim shot.",
       "lp_cost": 3,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Accelerating Tint",
@@ -46,8 +43,7 @@
       "effect": "Healing Tints also apply Rush.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Aegis Revival",
@@ -58,7 +54,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 12
     },
     {
@@ -70,7 +65,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 24,
       "stats": {
         "health": 1897,
@@ -86,7 +80,6 @@
       "lp_cost": 15,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 29,
       "stats": {
         "health": 2757,
@@ -102,7 +95,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 13
     },
     {
@@ -114,7 +106,6 @@
       "lp_cost": 15,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": true,
       "level": 21,
       "stats": {
         "health": 1464,
@@ -131,7 +122,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 29,
       "stats": {
         "health": 2757,
@@ -147,7 +137,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 30,
       "stats": {
         "defence": 1817,
@@ -163,7 +152,6 @@
       "lp_cost": 15,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 4
     },
     {
@@ -176,7 +164,6 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 5
     },
     {
@@ -188,7 +175,6 @@
       "lp_cost": 7,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 2
     },
     {
@@ -200,7 +186,6 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": "Verso",
-      "lumina_learned": false,
       "level": 28,
       "stats": {
         "health": 4058,
@@ -216,7 +201,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 12
     },
     {
@@ -228,7 +212,6 @@
       "lp_cost": 7,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 17,
       "stats": {
         "health": 1548,
@@ -244,7 +227,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 6
     },
     {
@@ -256,7 +238,6 @@
       "lp_cost": 1,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 7,
       "stats": {
         "crit": "26%"
@@ -271,8 +252,7 @@
       "effect": "Apply Powerful for 3 turns on battle start.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Auto Regen",
@@ -283,7 +263,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 13
     },
     {
@@ -295,7 +274,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 10
     },
     {
@@ -307,7 +285,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 7
     },
     {
@@ -319,7 +296,6 @@
       "lp_cost": 20,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": true,
       "level": 20,
       "stats": {
         "speed": 399,
@@ -335,8 +311,7 @@
       "effect": "+2 AP on applying a Status Effect. Once per turn.",
       "lp_cost": 15,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Break Specialist",
@@ -347,7 +322,6 @@
       "lp_cost": 1,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 28,
       "stats": {
         "health": 2705,
@@ -363,7 +337,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 5
     },
     {
@@ -375,7 +348,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 15
     },
     {
@@ -387,7 +359,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 15
     },
     {
@@ -399,7 +370,6 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 7
     },
     {
@@ -412,7 +382,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": "Verso",
-      "lumina_learned": false,
       "level": 29,
       "stats": {
         "speed": 586,
@@ -429,7 +398,6 @@
       "lp_cost": 1,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 7
     },
     {
@@ -441,7 +409,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 15
     },
     {
@@ -453,7 +420,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": "Lune",
-      "lumina_learned": false,
       "level": 21,
       "stats": {
         "speed": 439,
@@ -469,7 +435,6 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 21,
       "stats": {
         "health": 1541,
@@ -486,7 +451,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": "Lune",
-      "lumina_learned": false,
       "level": 28,
       "stats": {
         "speed": 546,
@@ -503,7 +467,6 @@
       "lp_cost": 15,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 4
     },
     {
@@ -516,7 +479,6 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 1
     },
     {
@@ -528,7 +490,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 28,
       "stats": {
         "defence": 1426,
@@ -543,8 +504,7 @@
       "effect": "+15% of a Gradient Charge on Base Attack.",
       "lp_cost": 7,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Charging Burn",
@@ -554,8 +514,7 @@
       "effect": "+20% of a Gradient Charge on applying Burn. Once per turn.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Charging Counter",
@@ -565,8 +524,7 @@
       "effect": "+10% of a Gradient Charge on Counterattack.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Charging Critical",
@@ -577,7 +535,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 25,
       "stats": {
         "defence": 1048,
@@ -593,8 +550,7 @@
       "effect": "+20% of a Gradient Charge on hitting a Marked target. Once per turn.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Charging Stun",
@@ -604,8 +560,7 @@
       "effect": "+5% of a Gradient Charge on hitting a Stunned enemy.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Charging Tint",
@@ -617,7 +572,6 @@
       "lp_cost": 2,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 9
     },
     {
@@ -628,8 +582,7 @@
       "effect": "+15% of a Gradient Charge on hitting a Weakness. Once per turn.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Cheater",
@@ -640,7 +593,6 @@
       "lp_cost": 40,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 24,
       "stats": {
         "health": 1198,
@@ -656,7 +608,6 @@
       "lp_cost": 30,
       "obtained": true,
       "equipped_by": "Maelle",
-      "lumina_learned": false,
       "level": 30,
       "stats": {
         "health": 5591
@@ -671,7 +622,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 15,
       "stats": {
         "health": 818,
@@ -687,7 +637,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 9
     },
     {
@@ -699,7 +648,6 @@
       "lp_cost": 20,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 29,
       "stats": {
         "speed": 836,
@@ -715,7 +663,6 @@
       "lp_cost": 30,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 25,
       "stats": {
         "speed": 619,
@@ -731,7 +678,6 @@
       "lp_cost": 20,
       "obtained": true,
       "equipped_by": "Verso",
-      "lumina_learned": false,
       "level": 29,
       "stats": {
         "speed": 557,
@@ -748,7 +694,6 @@
       "lp_cost": 15,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 11,
       "stats": {
         "health": 222,
@@ -764,7 +709,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 14
     },
     {
@@ -776,7 +720,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": "Lune",
-      "lumina_learned": false,
       "level": 25,
       "stats": {
         "speed": 434,
@@ -792,7 +735,6 @@
       "lp_cost": null,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 5
     },
     {
@@ -803,8 +745,7 @@
       "effect": "100% Critical Chance on hitting a Stunned target.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Critical Vulnerability",
@@ -815,7 +756,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 9
     },
     {
@@ -827,7 +767,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 26,
       "stats": {
         "speed": 705,
@@ -843,7 +782,6 @@
       "lp_cost": 2,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 15,
       "stats": {
         "speed": 162,
@@ -859,7 +797,6 @@
       "lp_cost": 2,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 1
     },
     {
@@ -871,7 +808,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 7
     },
     {
@@ -883,7 +819,6 @@
       "lp_cost": 1,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 7
     },
     {
@@ -895,7 +830,6 @@
       "lp_cost": 1,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 1
     },
     {
@@ -907,7 +841,6 @@
       "lp_cost": 30,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 11
     },
     {
@@ -918,8 +851,7 @@
       "effect": "Mark requires 1 more hit to be removed.",
       "lp_cost": 20,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Draining Cleanse",
@@ -930,7 +862,6 @@
       "lp_cost": 15,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 20,
       "stats": {
         "health": 2000,
@@ -946,7 +877,6 @@
       "lp_cost": 30,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 13
     },
     {
@@ -958,7 +888,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 14
     },
     {
@@ -970,7 +899,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 1
     },
     {
@@ -982,7 +910,6 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": "Maelle",
-      "lumina_learned": false,
       "level": 28,
       "stats": {
         "speed": 546,
@@ -998,7 +925,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 15,
       "stats": {
         "speed": 162,
@@ -1016,7 +942,6 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 6
     },
     {
@@ -1028,7 +953,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 15
     },
     {
@@ -1041,7 +965,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 28,
       "stats": {
         "health": 2705,
@@ -1056,8 +979,7 @@
       "effect": "+2 AP on Healing an ally. Once per turn.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Energising Attack I",
@@ -1068,7 +990,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 30,
       "stats": {
         "speed": 895,
@@ -1083,8 +1004,7 @@
       "effect": "+1 AP on Base Attack.",
       "lp_cost": 15,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Energising Break",
@@ -1095,7 +1015,6 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 3
     },
     {
@@ -1107,7 +1026,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 22,
       "stats": {
         "defence": 401,
@@ -1123,7 +1041,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 15
     },
     {
@@ -1136,7 +1053,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 8
     },
     {
@@ -1149,7 +1065,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 17
     },
     {
@@ -1161,7 +1076,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 7
     },
     {
@@ -1173,7 +1087,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 4
     },
     {
@@ -1185,7 +1098,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 28,
       "stats": {
         "health": 3855,
@@ -1201,7 +1113,6 @@
       "lp_cost": 15,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 9
     },
     {
@@ -1212,8 +1123,7 @@
       "effect": "Give 2 AP on applying Powerful.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Energising Revive",
@@ -1224,7 +1134,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 8
     },
     {
@@ -1236,7 +1145,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 22
     },
     {
@@ -1248,7 +1156,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 15,
       "stats": {
         "defence": 319,
@@ -1265,7 +1172,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": "Sciel",
-      "lumina_learned": false,
       "level": 28,
       "stats": {
         "speed": 779,
@@ -1281,7 +1187,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 6
     },
     {
@@ -1293,7 +1198,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 4
     },
     {
@@ -1305,7 +1209,6 @@
       "lp_cost": 15,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 6
     },
     {
@@ -1317,7 +1220,6 @@
       "lp_cost": 20,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 8
     },
     {
@@ -1329,7 +1231,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 28,
       "stats": {
         "speed": 519,
@@ -1345,7 +1246,6 @@
       "lp_cost": 20,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 14,
       "stats": {
         "speed": 270
@@ -1361,7 +1261,6 @@
       "lp_cost": 40,
       "obtained": true,
       "equipped_by": "Sciel",
-      "lumina_learned": false,
       "level": 30,
       "stats": {
         "health": 4979
@@ -1377,7 +1276,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 15
     },
     {
@@ -1389,7 +1287,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 7
     },
     {
@@ -1401,7 +1298,6 @@
       "lp_cost": 2,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 8
     },
     {
@@ -1413,7 +1309,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 3
     },
     {
@@ -1424,8 +1319,7 @@
       "effect": "Apply Defenceless on Break.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Faster Than Strong",
@@ -1435,8 +1329,7 @@
       "effect": "Always play twice in a row, but deal 50% less damage.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "First Offensive",
@@ -1447,7 +1340,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 10
     },
     {
@@ -1459,7 +1351,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 7
     },
     {
@@ -1471,7 +1362,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 27,
       "stats": {
         "speed": 507,
@@ -1486,8 +1376,7 @@
       "effect": "25% increased damage on full Health.",
       "lp_cost": 15,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Glass Canon",
@@ -1498,7 +1387,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 11
     },
     {
@@ -1511,7 +1399,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": "Maelle",
-      "lumina_learned": false,
       "level": 25,
       "stats": {
         "speed": 434,
@@ -1527,8 +1414,7 @@
       "effect": "50% increased Break damage with Gradient Attacks.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Gradient Fighter",
@@ -1540,7 +1426,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 16,
       "stats": {
         "speed": 182,
@@ -1556,7 +1441,6 @@
       "lp_cost": 15,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 21,
       "stats": {
         "speed": 293,
@@ -1571,8 +1455,7 @@
       "effect": "+15% to Powerful damage increase.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Greater Powerless",
@@ -1583,7 +1466,6 @@
       "lp_cost": 15,
       "obtained": false,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 30,
       "stats": {
         "defence": 1727,
@@ -1598,8 +1480,7 @@
       "effect": "+25% to Rush Speed increase.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Greater Shell",
@@ -1610,7 +1491,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 13
     },
     {
@@ -1622,7 +1502,6 @@
       "lp_cost": 15,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 20,
       "stats": {
         "defence": 647,
@@ -1638,7 +1517,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 20,
       "stats": {
         "defence": 647,
@@ -1655,7 +1533,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 10
     },
     {
@@ -1668,7 +1545,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 10
     },
     {
@@ -1680,7 +1556,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 13
     },
     {
@@ -1692,7 +1567,6 @@
       "lp_cost": 20,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 5
     },
     {
@@ -1704,7 +1578,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 10
     },
     {
@@ -1716,7 +1589,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 11,
       "stats": {
         "health": 467,
@@ -1733,7 +1605,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 16
     },
     {
@@ -1745,7 +1616,6 @@
       "lp_cost": 1,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 7
     },
     {
@@ -1757,7 +1627,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 12
     },
     {
@@ -1769,7 +1638,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 23,
       "stats": {
         "defence": 1310,
@@ -1785,8 +1653,7 @@
       "effect": "Apply Inverted on self for 3 turns on battle start. 50% increased damage while Inverted.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Last Stand Critical",
@@ -1798,7 +1665,6 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 6
     },
     {
@@ -1810,7 +1676,6 @@
       "lp_cost": 15,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 27,
       "stats": {
         "health": 2392,
@@ -1826,7 +1691,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 10
     },
     {
@@ -1838,7 +1702,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 15
     },
     {
@@ -1850,7 +1713,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": "Monoco",
-      "lumina_learned": false,
       "level": 29,
       "stats": {
         "health": 2757,
@@ -1865,8 +1727,7 @@
       "effect": "Apply Mark on Break.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Marking Shots",
@@ -1878,7 +1739,6 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 3
     },
     {
@@ -1890,7 +1750,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 16,
       "stats": {
         "health": 1844
@@ -1906,7 +1765,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": "Sciel",
-      "lumina_learned": false,
       "level": 28,
       "stats": {
         "speed": 519,
@@ -1922,7 +1780,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 29,
       "stats": {
         "speed": 586,
@@ -1940,7 +1797,6 @@
       "lp_cost": 2,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 12
     },
     {
@@ -1952,7 +1808,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 11
     },
     {
@@ -1963,8 +1818,7 @@
       "effect": "Healing an ally also applies Powerful for 1 turn.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Powerful Mark",
@@ -1975,7 +1829,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": "Monoco",
-      "lumina_learned": false,
       "level": 28,
       "stats": {
         "speed": 819,
@@ -1991,7 +1844,6 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": "Monoco",
-      "lumina_learned": false,
       "level": 28,
       "stats": {
         "speed": 546,
@@ -2006,8 +1858,7 @@
       "effect": "10% increased damage per Shield Point on self.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Powerful Shots",
@@ -2019,7 +1870,6 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 12
     },
     {
@@ -2031,7 +1881,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 23,
       "stats": {
         "defence": 874,
@@ -2046,8 +1895,7 @@
       "effect": "Allows Flee to be instantaneous.",
       "lp_cost": 40,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Protecting Attack",
@@ -2057,8 +1905,7 @@
       "effect": "Gain Shell for 1 turn on Base Attack.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Protecting Death",
@@ -2070,7 +1917,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 13
     },
     {
@@ -2082,7 +1928,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 10
     },
     {
@@ -2095,7 +1940,6 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 6
     },
     {
@@ -2107,8 +1951,7 @@
       "effect": "20% chance to gain Shell on Free Aim shot.",
       "lp_cost": 3,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Protecting Tint",
@@ -2120,7 +1963,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 20,
       "stats": {
         "health": 1403,
@@ -2136,7 +1978,6 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 25,
       "stats": {
         "speed": 434,
@@ -2152,7 +1993,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 15
     },
     {
@@ -2164,7 +2004,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 20,
       "stats": {
         "health": 2000,
@@ -2181,7 +2020,6 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 12
     },
     {
@@ -2193,7 +2031,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 11
     },
     {
@@ -2205,7 +2042,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 8
     },
     {
@@ -2218,7 +2054,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 3
     },
     {
@@ -2230,7 +2065,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 28,
       "stats": {
         "defence": 1501,
@@ -2246,7 +2080,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 29,
       "stats": {
         "speed": 557,
@@ -2262,7 +2095,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 7
     },
     {
@@ -2274,7 +2106,6 @@
       "lp_cost": null,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 14
     },
     {
@@ -2286,7 +2117,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 3
     },
     {
@@ -2298,7 +2128,6 @@
       "lp_cost": 40,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 16,
       "stats": {
         "health": 1106,
@@ -2314,7 +2143,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 7
     },
     {
@@ -2325,8 +2153,7 @@
       "effect": "Apply Shell on applying Rush.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Shield Affinity",
@@ -2337,7 +2164,6 @@
       "lp_cost": 15,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 13
     },
     {
@@ -2350,7 +2176,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 22,
       "stats": {
         "defence": 801,
@@ -2366,8 +2191,7 @@
       "effect": "Healing Tints also add 2 Shields.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Shortcut",
@@ -2378,7 +2202,6 @@
       "lp_cost": null,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 16
     },
     {
@@ -2389,8 +2212,7 @@
       "effect": "Base Attack applies Slow for 1 turn.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Slowing Break",
@@ -2400,8 +2222,7 @@
       "effect": "Apply Slow on Break.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null,
-      "lumina_learned": false
+      "equipped_by": null
     },
     {
       "name": "Sniper",
@@ -2413,7 +2234,6 @@
       "lp_cost": 15,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 23,
       "stats": {
         "speed": 525,
@@ -2429,7 +2249,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 9
     },
     {
@@ -2442,7 +2261,6 @@
       "lp_cost": 1,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 6
     },
     {
@@ -2454,7 +2272,6 @@
       "lp_cost": 1,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 3
     },
     {
@@ -2466,7 +2283,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 15
     },
     {
@@ -2478,7 +2294,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 4
     },
     {
@@ -2490,7 +2305,6 @@
       "lp_cost": 20,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 21,
       "stats": {
         "speed": 439,
@@ -2506,7 +2320,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 8
     },
     {
@@ -2518,7 +2331,6 @@
       "lp_cost": null,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 20
     },
     {
@@ -2530,7 +2342,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 7
     },
     {
@@ -2542,7 +2353,6 @@
       "lp_cost": 1,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 31,
       "stats": {
         "crit": "108%"
@@ -2557,7 +2367,6 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 24,
       "stats": {
         "health": 1897,
@@ -2573,7 +2382,6 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 3
     },
     {
@@ -2585,7 +2393,6 @@
       "lp_cost": 15,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 15,
       "stats": {
         "health": 1166,
@@ -2601,7 +2408,6 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": null,
-      "lumina_learned": false,
       "level": 15
     }
   ],

@@ -135,8 +135,6 @@ pictos[]
   obtained                   bool         true = player owns this Pictos
   equipped_by                string|null  Character currently equipping this Pictos, or null.
                                           Only one character can hold a given Pictos at a time.
-  lumina_learned             bool         true = Lumina effect has been learned (4 battles completed).
-                                          A character with the Pictos equipped pays 0 LP regardless.
   level                      int          (optional) Current Pictos level. Higher = better stats.
   stats                      object       (optional) Stat bonuses granted by equipping this Pictos.
                                           Keys: health, attack, speed, defence, crit (string e.g. "24%")
