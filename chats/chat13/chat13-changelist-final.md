@@ -16,7 +16,7 @@ VALUE: {"health": 2232, "attack": 1368, "speed": 1228, "defence": 182, "crit": "
 DATA: data/characters.json
 PATH: Maelle.stats_modified
 OP: SET
-VALUE: {"health": 7823, "attack": 11156, "speed": 2208, "defence": 182, "crit": "101%", "_note": "Clea's Life + Empowering Break + Gradient Break; Lithum L33"}
+VALUE: {"health": 7823, "attack": 11156, "speed": 2208, "defence": 182, "crit": "101%", "_note": "Stats with Lithum (33), Clea's Life (30), Empowering Break (28), Gradient Break (25) equipped"}
 
 DATA: data/characters.json
 PATH: Maelle.lp_total
@@ -41,7 +41,7 @@ VALUE: {"health": 2232, "attack": 1368, "speed": 1228, "defence": 182, "crit": "
 DATA: data/characters.json
 PATH: Verso.stats_modified
 OP: SET
-VALUE: {"health": 6290, "attack": 10668, "speed": 2371, "defence": 182, "crit": "122%", "_note": "Augmented Counter I + Breaking Death + Confident; Chevalam L33"}
+VALUE: {"health": 6290, "attack": 10668, "speed": 2371, "defence": 182, "crit": "122%", "_note": "Stats with Chevalam (33), Augmented Counter I (28), Breaking Death (29), Confident (29) equipped"}
 
 DATA: data/characters.json
 PATH: Verso.lp_total
@@ -66,7 +66,7 @@ VALUE: {"health": 2202, "attack": 1226, "speed": 1221, "defence": 492, "crit": "
 DATA: data/characters.json
 PATH: Sciel.stats_modified
 OP: SET
-VALUE: {"health": 7172, "attack": 8771, "speed": 2519, "defence": 492, "crit": "102%", "_note": "Painter + Energy Master + Energising Shots; Litheson L33"}
+VALUE: {"health": 7172, "attack": 8771, "speed": 2519, "defence": 492, "crit": "102%", "_note": "Stats with Litheson (33), Painter (28), Energy Master (30), Energising Shots (28) equipped"}
 
 DATA: data/characters.json
 PATH: Sciel.lp_total
@@ -91,7 +91,7 @@ VALUE: {"health": 3469, "attack": 1155, "speed": 1149, "defence": 182, "crit": "
 DATA: data/characters.json
 PATH: Lune.stats_modified
 OP: SET
-VALUE: {"health": 3469, "attack": 10311, "speed": 2568, "defence": 182, "crit": "101%", "_note": "Critical Burn + Burn Affinity + Burning Death; Kralim L33"}
+VALUE: {"health": 3469, "attack": 10311, "speed": 2568, "defence": 182, "crit": "101%", "_note": "Stats with Kralim (33), Critical Burn (25), Burn Affinity (21), Burning Death (28) equipped"}
 
 DATA: data/characters.json
 PATH: Lune.lp_total
@@ -116,7 +116,7 @@ VALUE: {"health": 2080, "attack": 1131, "speed": 1168, "defence": 729, "crit": "
 DATA: data/characters.json
 PATH: Monoco.stats_modified
 OP: SET
-VALUE: {"health": 4837, "attack": 10881, "speed": 2533, "defence": 2301, "crit": "99%", "_note": "Longer Shell + Powerful Mark + Powerful Revive; Joyaro L33"}
+VALUE: {"health": 4837, "attack": 10881, "speed": 2533, "defence": 2301, "crit": "99%", "_note": "Stats with Joyaro (33), Longer Shell (29), Powerful Mark (28), Powerful Revive (28) equipped"}
 
 DATA: data/characters.json
 PATH: Monoco.lp_total
@@ -166,7 +166,30 @@ VALUE: true
 DATA: data/weapons.json
 PATH: Lune
 OP: ADD
-VALUE: {"name": "Scaverim", "level": 14, "power": 1442, "element": "Dark", "scaling": "Vitality B, Agility C", "obtained": true, "effects": ["L4: 50% chance to generate a Dark Stain when consuming Stains; deal 50% more damage with Skills per active Dark Stain.", "L10: Base Attacks can consume one Dark Stain to deal 200% more damage.", "L20: With 4 active Dark Stains, any skill can consume them to deal 300% more damage."], "notes": "Evaluated vs Kralim; not equipped. Dark Stain ramp-up incompatible with reserve role. Revisit if Lune moves to main team for sustained fights."}
+VALUE: {
+    "name": "Scaverim",
+    "level": 14,
+    "power": 1442,
+    "element": "Dark",
+    "scaling": "Vitality B, Agility C",
+    "obtained": true,
+    "effects": [
+        {
+            "level": 4,
+            "description": "50% chance to generate a Dark Stain when consuming Stains; deal 50% more damage with Skills per active Dark Stain."
+        },
+        {
+            "level": 10,
+            "description": "Base Attacks can consume one Dark Stain to deal 200% more damage."
+        },
+        {
+            "level": 20,
+            "description": "With 4 active Dark Stains, any skill can consume them to deal 300% more damage."
+        }
+    ],
+    "notes": "Evaluated vs Kralim; not equipped. Dark Stain ramp-up incompatible with reserve role. Revisit if Lune moves to main team for sustained fights."
+}
+
 
 FILE: overview/claude-expedition33.md
 SECTION: ## Section 7: Key Decisions & Context
@@ -217,30 +240,25 @@ CONTENT:
 - ✅ Ultimate Sakapatate (Endless Night Sanctuary) → Joyaro for Monoco
 
 FILE: overview/claude-expedition33.md
-SECTION: ## Section 10: Chat Log
+SECTION: ## Section 10: Chat Logs
 CONTENT:
-## Section 10: Chat Log
+## Section 10: Chat Logs
 
-| Chat | Summary |
-|------|---------|
-| Chat 0 | Initial setup. Game mechanics documented, party established, Lumina system introduced. |
-| Chat 1 | Early game progression. Vale bosses missed (Axon killed first). Lune/Monoco levelling team established. |
-| Chat 2 | Monoco respec, Nusaro upgrade. Chromatic research. Sprong, Gold Chevaliere acquired. |
-| Chat 3 | Sciel vs Monoco main team decision. Litheson confirmed endgame weapon. Marking Shot vs Defiant Strike. |
-| Chat 4 | Pictos/Lumina optimisation pass. Core Lumina suite established. Second Chance confirmed. |
-| Chat 5 | Flying Manor preparation. Rank bonus mechanics confirmed. Speed order analysis. |
-| Chat 6 | Flying Manor completed. Clea's Life acquired. Maelle solo Reacher strategy. |
-| Chat 7 | Renoir preparation. Pictos/Lumina deep dive. Base Shield interaction confirmed. |
-| Chat 8 | Post-Reacher Pictos review. Empowering Break added to Maelle. Turn rotation finalised. |
-| Chat 9 | Infrastructure: generate_links.py, apply_changelist.py DATA block support added. |
-| Chat 10 | Renoir completed. Final boss location confirmed. Endgame team locked. |
-| Chat 11 | Speed order resolved via Pictos optimisation. Opus Pictos session. |
-| Chat 12 | Final pre-Renoir build review. LP pool expansions. Lumina finalised. |
-| Chat 13 | Post-game session. Full Chromatics list researched and compiled with locations across Easy/Moderate/Hard/Tower/DLC tiers. Progress: Dark Gestral Arena, 7 Hard Chromatics (Moissonneuse, Gault, Reaper Cultist, Aberration, Pétank, Bourgeon, Clair Obscur), Endless Tower Stages 1–11, Painting Workshop. Lumina upgrades: Full Strength/Warming Up (Maelle), Warming Up/Shortcut (Verso), Shortcut (Sciel). Scaverim evaluated, Kralim retained. Simon fight team planning: Verso/Sciel/Lune + Maelle/Monoco recommended. Overview structural review: Sections 1/3/5/7/9/11 updated, Maelle Key Synergies section added to character file. 6 progress changelists produced. |
+*For reference only — do not fetch unless specifically asked. These are large files.*
 
-FILE: reference/historical-errors.md
-SECTION: ## Recent Errors
-CONTENT:
-## Recent Errors
-
-**Full Strength LP cost (Chat 13):** Stated as 10LP during Lumina planning discussion. Correct cost is 15LP, confirmed from in-game screenshot. Affected the CoL calculation; Matt applied the correct value in-game.
+| Chat    | Index                                                                                                                                            | Full Transcript                        | Summary                                                                                                                                                                                                                                  |
+|---------|--------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Chat 0  | [Formatted](../chats/chat0/chat0-index.md)   / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat0/chat0-index.md)   | [chat0.md](../chats/chat0/chat0.md)    | Prior (abandoned) conversation with ChatGPT                                                                                                                                                                                              |
+| Chat 1  | [Formatted](../chats/chat1/chat1-index.md)   / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-index.md)   | [chat1.md](../chats/chat1/chat1.md)    | Initial build analysis across all five characters; Monoco stat respec; Lune weapon comparison; Sciel and Verso builds; full progression plan                                                                                             |
+| Chat 2  | [Formatted](../chats/chat2/chat2-index.md)   / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-index.md)   | [chat2.md](../chats/chat2/chat2.md)    | Endgame skill research; character stat update via voice; chromatic progress; compaction mechanics; session procedure design                                                                                                              |
+| Chat 3  | [Formatted](../chats/chat3/chat3-index.md)   / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat3/chat3-index.md)   | [chat3.md](../chats/chat3/chat3.md)    | Endgame team transition (Cheater Pictos acquired); team role framing; burn-stacking vs stance cycling paths; Chevalam mechanics; Maelle LP planning; transcript logging problems                                                         |
+| Chat 4  | [Formatted](../chats/chat4/chat4-index.md)   / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat4/chat4-index.md)   | [chat4.md](../chats/chat4/chat4.md)    | Progress update; story ordering research; Verso weapon selection; Steeled Strike burst sequence analysis; Maelle Reacher preparation; session logging procedure improvements                                                             |
+| Chat 5  | [Formatted](../chats/chat5/chat5-index.md)   / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat5/chat5-index.md)   | [chat5.md](../chats/chat5/chat5.md)    | Maelle respec for Lithum; Gommage unlocked; full Pictos/Lumina review all five characters; core Lumina sets defined; Energy Master obtained; Pictos/Lumina reference created                                                             |
+| Chat 6  | [Formatted](../chats/chat6/chat6-index.md)   / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat6/chat6-index.md)   | [chat6.md](../chats/chat6/chat6.md)    | Flying Manor ordering decided; Renoir self-nerf strategy; progression plan restructured; all character stats updated; Pictos optimisation deferred to Opus session                                                                       |
+| Chat 7  | [Formatted](../chats/chat7/chat7-index.md)   / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat7/chat7-index.md)   | [chat7.md](../chats/chat7/chat7.md)    | Pictos optimisation framework designed and prepared for Sonnet handoff; actual optimisation and assignment deferred until after Flying Manor; Colour of Lumina pool expansion mechanism documented; Pictos data rationalisation designed |
+| Chat 8  | [Formatted](../chats/chat8/chat8-index.md)   / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat8/chat8-index.md)   | [chat8.md](../chats/chat8/chat8.md)    | Monoco full skill audit; Repo restructure design: new folder structure, JSON reference files, GitHub Actions workflow; All five data files built; Session procedure updated; hand-off for script design                                  |
+| Chat 9  | [Formatted](../chats/chat9/chat9-index.md)   / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat9/chat9-index.md)   | [chat9.md](../chats/chat9/chat9.md)    | Repo restructure completed: generate_scripts_md.py built; generate.py written; apply_changelist.py updated with GENERATED marker detection; session procedure and pipeline.md updated                                                    |
+| Chat 10 | [Formatted](../chats/chat10/chat10-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat10/chat10-index.md) | [chat10.md](../chats/chat10/chat10.md) | Comprehensive data update post-Flying Manor: all five characters updated via screenshots; extensive weapons corrections and additions; Pictos database update                                                                            |
+| Chat 11 | [Formatted](../chats/chat11/chat11-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat11/chat11-index.md) | [chat11.md](../chats/chat11/chat11.md) | Partial Pictos optimisation session; turn order confirmed resolved; Sciel crit at cap; speed spread identified as new constraint; session handed off to Opus for full multi-character constraint optimisation                            |
+| Chat 12 | [Formatted](../chats/chat12/chat12-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat12/chat12-index.md) | [chat12.md](../chats/chat12/chat12.md) | Full Pictos optimisation (Opus): all five characters reviewed bottom-up from stat data                                                                                                                                                   |
+| Chat 13 | [Formatted](../chats/chat13/chat13-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat13/chat13-index.md) | [chat13.md](../chats/chat12/chat12.md) | Post-game session: full Chromatics list researched and compiled; progress tracker updated multiple times; Lumina upgrades; Scaverim evaluated, Kralim retained; Simon fight team planning; overview structural review and rewrite        |
