@@ -2,21 +2,17 @@
 
 Chat between Matt and Claude.
 
-## Part Files (Claude-readable)
-
-- [Part 1](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat13/chat13-part1.md) — Sections 1–3
-- [Part 2](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat13/chat13-part2.md) — Sections 4–6
-- [Part 3](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat13/chat13-part3.md) — Sections 7–9
-- [Part 4](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat13/chat13-part4.md) — Sections 10–12
-- [Part 5](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat13/chat13-part5.md) — Sections 13–15
-
 ## Continuous Transcript
 
 * [Formatted](chat13.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat13/chat13.md)
 
 ## Part Files (Claude-readable)
 
-*(to be added at end of session)*
+* Part 1 — Chromatic boss list research, compilation and categorisation: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat13/chat13-part1.md)
+* Part 2 — Progress update, Pictos/Lumina gap analysis, Maelle synergy and Verso skills: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat13/chat13-part2.md)
+* Part 3 — Upgrade discussion, Endless Tower structure, Chromatics cross-reference: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat13/chat13-part3.md)
+* Part 4 — Upgrade results and major structural review of overview file: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat13/chat13-part4.md)
+* Part 5 — Scaverim evaluation, Simon fight planning and end of session: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat13/chat13-part5.md)
 
 ## Table of Contents
 
