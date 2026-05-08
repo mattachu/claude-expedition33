@@ -137,9 +137,9 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 
 ### LP Budget
 <!-- GENERATED:START characters:Monoco:LP -->
-- **Current capacity:** 138 LP
-- **Used:** 125 LP
-- **Spare:** 13 LP
+- **Current capacity:** 145 LP
+- **Used:** 145 LP
+- **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
@@ -165,6 +165,7 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Recovery           | 10 |                                                                                           |
 | Rewarding Mark     | 5  |                                                                                           |
 | Staggering Attack  | 1  | Break damage on base attack — small break bar contribution                                |
+| Survivor           | 20 |                                                                                           |
 | Teamwork           | 5  |                                                                                           |
 <!-- GENERATED:END -->
 

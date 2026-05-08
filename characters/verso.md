@@ -121,9 +121,9 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 ### LP Budget
 <!-- GENERATED:START characters:Verso:LP -->
-- **Current capacity:** 251 LP
-- **Used:** 224 LP
-- **Spare:** 27 LP
+- **Current capacity:** 274 LP
+- **Used:** 274 LP
+- **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
@@ -131,26 +131,30 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 <!-- GENERATED:START characters:Verso:Lumina -->
 | Lumina             | LP | Notes                                                               |
 |--------------------|----|---------------------------------------------------------------------|
-| Breaker            | 10 |                                                                     |
+| Anti-Blight        | 10 | Especially important in Renoir's Drafts                             |
+| Breaker            | 10 | Main break damage booster                                           |
 | Breaking Burn      | 5  |                                                                     |
 | Breaking Counter   | 3  |                                                                     |
 | Breaking Death     | —  | FREE from Breaking Death Pictos                                     |
 | Burning Shots      | 3  |                                                                     |
-| Cheater            | 40 |                                                                     |
+| Cheater            | 40 | Essential for endgame builds                                        |
 | Confident Fighter  | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block |
 | Critical Break     | 5  |                                                                     |
 | Dead Energy I      | 2  |                                                                     |
 | Dead Energy II     | 2  |                                                                     |
 | Dodger             | 1  |                                                                     |
 | Energising Parry   | 15 |                                                                     |
-| Energising Start I | 5  |                                                                     |
+| Energising Start I | 5  | Boosted by Energy Master to 8AP on battle start                     |
 | Energising Turn    | 20 | Main AP flow generator; boosted by Energy Master                    |
-| Energy Master      | 40 |                                                                     |
+| Energy Master      | 40 | Add 1 to AP boosts (not double) — game-changing for AP generation   |
 | Marking Shots      | 3  |                                                                     |
 | Painted Power      | 5  | Essential for all characters from Act 3 onwards                     |
 | Rewarding Mark     | 5  |                                                                     |
-| Second Chance      | 40 |                                                                     |
+| Second Chance      | 40 | Can save boss battles                                               |
+| Shortcut           | 5  |                                                                     |
+| Survivor           | 20 | Secondary safety net before Second Chance                           |
 | Teamwork           | 5  |                                                                     |
+| Warming Up         | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks |
 <!-- GENERATED:END -->
 
 ---

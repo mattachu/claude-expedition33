@@ -62,7 +62,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Fueling Break | Breaking a target doubles its Burn amount. | 5 | Speed: 507, Crit: 31% |  |  |
 | ✓ | Gradient Break | +50% of a Gradient Charge on Breaking a target. | 5 | Speed: 434, Crit: 28% | Maelle | gradient |
 |  | Gradient Breaker | 50% increased Break damage with Gradient Attacks. | 5 |  |  | gradient |
-| ✓ | Quick Break | Play again on Breaking a target. | 3 | Speed: 434, Crit: 28% |  |  |
+| ✓ | Quick Break | Play again on Breaking a target. | 3 | Speed: 672, Crit: 36% |  |  |
 | ✓ | Staggering Attack | 50% increased Break damage on Base Attack. | 1 |  |  |  |
 
 ---
@@ -204,7 +204,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 |  | Faster Than Strong | Always play twice in a row, but deal 50% less damage. | 10 |  |  |  |
 | ✓ | First Strike | Play first. | 10 |  |  |  |
 | ✓ | Piercing Shot | 25% increased Free Aim damage. Free Aim shots ignore Shields. | 2 |  |  | shots |
-| ✓ | Sniper | First Free Aim shot each turn deals 200% increased damage and can Break. | 15 | Speed: 525, Crit: 13% |  | shots |
+| ✓ | Sniper | First Free Aim shot each turn deals 200% increased damage and can Break. | 15 | Speed: 958, Crit: 18% |  | shots |
 | ✓ | Versatile | After a Free Aim hit, Base Attack damage is increased by 50% for 1 turn. | 5 |  |  |  |
 
 ---
@@ -246,9 +246,9 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | SOS Power | Apply Powerful when falling below 50% Health. | 5 |  |  |  |
 | ✓ | SOS Rush | Apply Rush when falling below 50% Health. | None |  |  |  |
 | ✓ | SOS Shell | Apply Shell when falling below 50% Health. | 5 |  |  |  |
-| ✓ | Second Chance | Revive with 100% Health. Once per battle. | 40 | Health: 1106, Crit: 8% |  |  |
+| ✓ | Second Chance | Revive with 100% Health. Once per battle. | 40 | Health: 3981, Crit: 15% |  |  |
 |  | Shielding Tint | Healing Tints also add 2 Shields. | 10 |  |  | support |
-| ✓ | Shortcut | Immediately play when falling below 30% Health. Once per battle. | None |  |  |  |
+| ✓ | Shortcut | Immediately play when falling below 30% Health. Once per battle. | None | Speed: 672, Crit: 36% |  |  |
 | ✓ | Solidifying | +2 Shields when the character's Health falls below 50%. Once per battle. | 10 |  |  |  |
 | ✓ | Survivor | Survive fatal damage with 1 Health once per battle | 20 | Speed: 439, Crit: 12% |  |  |
 

@@ -137,36 +137,41 @@ Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina 
 
 ### LP Budget
 <!-- GENERATED:START characters:Maelle:LP -->
-- **Current capacity:** 271 LP
-- **Used:** 234 LP
-- **Spare:** 37 LP
+- **Current capacity:** 299 LP
+- **Used:** 299 LP
+- **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Maelle:Lumina -->
-| Lumina             | LP | Notes                                            |
-|--------------------|----|--------------------------------------------------|
-| Base Shield        | 20 |                                                  |
-| Breaker            | 10 |                                                  |
-| Breaking Burn      | 5  |                                                  |
-| Breaking Counter   | 3  |                                                  |
-| Breaking Death     | 5  |                                                  |
-| Burning Shots      | 3  |                                                  |
-| Cheater            | 40 |                                                  |
-| Critical Break     | 5  |                                                  |
-| Dead Energy I      | 2  |                                                  |
-| Dead Energy II     | 2  |                                                  |
-| Dodger             | 1  |                                                  |
-| Energising Parry   | 15 |                                                  |
-| Energising Start I | 5  |                                                  |
-| Energising Turn    | 20 | Main AP flow generator; boosted by Energy Master |
-| Energy Master      | 40 |                                                  |
-| Marking Shots      | 3  |                                                  |
-| Painted Power      | 5  | Essential for all characters from Act 3 onwards  |
-| Rewarding Mark     | 5  |                                                  |
-| Second Chance      | 40 |                                                  |
-| Teamwork           | 5  |                                                  |
+| Lumina             | LP | Notes                                                                                                                                                                |
+|--------------------|----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Anti-Blight        | 10 | Especially important in Renoir's Drafts                                                                                                                              |
+| Base Shield        | 20 |                                                                                                                                                                      |
+| Breaker            | 10 | Main break damage booster                                                                                                                                            |
+| Breaking Burn      | 5  |                                                                                                                                                                      |
+| Breaking Counter   | 3  |                                                                                                                                                                      |
+| Breaking Death     | 5  | Extremely helpful in tough boss fights                                                                                                                               |
+| Burning Shots      | 3  |                                                                                                                                                                      |
+| Cheater            | 40 | Essential for endgame builds                                                                                                                                         |
+| Critical Break     | 5  |                                                                                                                                                                      |
+| Dead Energy I      | 2  |                                                                                                                                                                      |
+| Dead Energy II     | 2  |                                                                                                                                                                      |
+| Dodger             | 1  |                                                                                                                                                                      |
+| Energising Parry   | 15 |                                                                                                                                                                      |
+| Energising Start I | 5  | Boosted by Energy Master to 8AP on battle start                                                                                                                      |
+| Energising Turn    | 20 | Main AP flow generator; boosted by Energy Master                                                                                                                     |
+| Energy Master      | 40 | Add 1 to AP boosts (not double) — game-changing for AP generation                                                                                                    |
+| Full Strength      | 15 | Damage bonus while on full HP — strong synergy with Clea's Life Pictos                                                                                               |
+| Marking Shots      | 3  |                                                                                                                                                                      |
+| Painted Power      | 5  | Essential for all characters from Act 3 onwards                                                                                                                      |
+| Rewarding Mark     | 5  |                                                                                                                                                                      |
+| Second Chance      | 40 | Can save boss battles                                                                                                                                                |
+| Shortcut           | 5  |                                                                                                                                                                      |
+| Survivor           | 20 | Secondary safety net before Second Chance                                                                                                                            |
+| Teamwork           | 5  |                                                                                                                                                                      |
+| Warming Up         | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus |
 <!-- GENERATED:END -->
 
 ### Solo Build Swap (The Reacher)

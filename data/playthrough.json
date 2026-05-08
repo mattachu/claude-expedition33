@@ -1,7 +1,7 @@
 {
   "act": 3,
   "phase": 3,
-  "current_area": "Post-game",
+  "current_area": "Renoir's Drafts",
   "active_party": [
     "Maelle",
     "Verso",
@@ -12,14 +12,14 @@
     "Monoco"
   ],
   "inventory": {
-    "colour_of_lumina": 127,
+    "colour_of_lumina": 31,
     "recoats": 33,
-    "chroma": 3061702,
+    "chroma": 3199861,
     "chroma_catalyst": 67,
     "chroma_catalyst_polished": 73,
     "chroma_catalyst_resplendent": 124,
-    "chroma_catalyst_grandiose": 69,
-    "chroma_catalyst_perfect": 1
+    "chroma_catalyst_grandiose": 85,
+    "chroma_catalyst_perfect": 3
   },
   "current_phase_checklist": [
     {
@@ -104,7 +104,7 @@
         {
           "id": "creation",
           "label": "Chromatic Creation — Renoir's Drafts",
-          "done": false
+          "done": true
         },
         {
           "id": "barbasucette",

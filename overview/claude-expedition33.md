@@ -34,7 +34,7 @@ Fetch that file only when reviewing specific past errors.
 - **Progress:**
   - Act 3, Phase 3.
   - Characters: Maelle L93, Verso L93, Sciel L92, Lune L88, Monoco L88.
-  - Current area: Post-game.
+  - Current area: Renoir's Drafts.
 <!-- GENERATED:END -->
 - **Permanently missed:** Vale bosses (Jovial Moissonneuse, Sorrowful Chapelier, Seething Boucheclier); Karatom quest (requires Gustave alive).
 
@@ -46,19 +46,19 @@ Fetch that file only when reviewing specific past errors.
 
 ### Inventory
 <!-- GENERATED:START playthrough:inventory -->
-- Colour of Lumina: 127
+- Colour of Lumina: 31
 - Recoats: 33
-- Chroma Catalysts: 67 standard, 73 polished, 124 resplendent, 69 grandiose, 1 perfect
-- Chroma: 3061702
+- Chroma Catalysts: 67 standard, 73 polished, 124 resplendent, 85 grandiose, 3 perfect
+- Chroma: 3199861
 <!-- GENERATED:END -->
 
 ### LP totals
 <!-- GENERATED:START characters:summary:LP -->
-- Maelle: 234/271
-- Verso: 224/251
-- Sciel: 215/222
-- Lune: 130/136
-- Monoco: 125/138
+- Maelle: 299/299
+- Verso: 274/274
+- Sciel: 260/260
+- Lune: 150/152
+- Monoco: 145/145
 <!-- GENERATED:END -->
 
 ---
@@ -146,23 +146,23 @@ Note: base speed scales with level independently of Agility — keep levels clos
 <!-- GENERATED:START characters:summary:party -->
 | Character | Level | Role                         | Weapon        | Pictos                                         | LP      |
 |-----------|-------|------------------------------|---------------|------------------------------------------------|---------|
-| Maelle    | 93    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Gradient Break  | 234/271 |
-| Verso     | 93    | Endgame main DPS             | Chevalam (33) | Augmented Counter I, Breaking Death, Confident | 224/251 |
-| Sciel     | 92    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots       | 215/222 |
-| Lune      | 88    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death    | 130/136 |
-| Monoco    | 88    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Powerful Mark, Powerful Revive   | 125/138 |
+| Maelle    | 93    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Gradient Break  | 299/299 |
+| Verso     | 93    | Endgame main DPS             | Chevalam (33) | Augmented Counter I, Breaking Death, Confident | 274/274 |
+| Sciel     | 92    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots       | 260/260 |
+| Lune      | 88    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death    | 150/152 |
+| Monoco    | 88    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Powerful Mark, Powerful Revive   | 145/145 |
 <!-- GENERATED:END -->
 
 ### Core Lumina Suite
 
 **Main team core:**
 <!-- GENERATED:START pictos:core:main -->
-**234LP** Painted Power, Teamwork, Base Shield, Energising Turn, Cheater, Energy Master, Second Chance, Energising Parry, Energising Start I, Dodger, Breaker, Marking Shots, Dead Energy I, Dead Energy II, Critical Break, Rewarding Mark, Burning Shots, Breaking Burn, Breaking Counter, Breaking Death. Note: Painted Power (Essential for all characters from Act 3 onwards); Base Shield (Verso: non-functional with Chevalam as L4 effect prevents shields); Energising Turn (Main AP flow generator; boosted by Energy Master).
+**269LP** Painted Power, Energising Turn, Cheater, Energy Master, Second Chance, Survivor, Base Shield, Teamwork, Energising Parry, Energising Start I, Dodger, Breaker, Marking Shots, Dead Energy I, Dead Energy II, Breaking Death, Critical Break, Rewarding Mark, Burning Shots, Breaking Burn, Breaking Counter, Shortcut, Anti-Blight. Note: Painted Power (Essential for all characters from Act 3 onwards); Energising Turn (Main AP flow generator; boosted by Energy Master); Cheater (Essential for endgame builds); Energy Master (Add 1 to AP boosts (not double) — game-changing for AP generation); Second Chance (Can save boss battles); Survivor (Secondary safety net before Second Chance); Base Shield (Verso: non-functional with Chevalam as L4 effect prevents shields); Energising Start I (Boosted by Energy Master to 8AP on battle start); Breaker (Main break damage booster); Breaking Death (Extremely helpful in tough boss fights); Anti-Blight (Especially important in Renoir's Drafts).
 <!-- GENERATED:END -->
 
 **Reserve team core:**
 <!-- GENERATED:START pictos:core:reserve -->
-**120LP** Painted Power, Teamwork, Base Shield, Energising Turn, Recovery, Energising Parry, Energising Start I, Dodger, Breaker, Marking Shots, Critical Break, Rewarding Mark, Burning Shots, Breaking Burn, Breaking Counter, Breaking Death.
+**140LP** Painted Power, Energising Turn, Base Shield, Survivor, Recovery, Teamwork, Energising Parry, Energising Start I, Dodger, Breaker, Marking Shots, Critical Break, Rewarding Mark, Burning Shots, Breaking Burn, Breaking Counter, Breaking Death.
 <!-- GENERATED:END -->
 
 Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.md) §3–4. Character-specific additions on top of core sets in §5.
@@ -239,7 +239,7 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 - ✅ Dark Gestral Arena
 - ✅ Endless Tower Stages 1–10 (30 fights)
 - ✅ Endless Tower Stage 11 — 3 fights; Trial 3 (Painted Love) gives Perfect Catalyst + Clair Outfit for Verso
-- ⬜ Hard chromatics (12/17)
+- ⬜ Hard chromatics (13/17)
   - ✅ Chromatic Echassier — Lumiere
   - ✅ Chromatic Catapult Sakapatate — Dark Gestral Arena
   - ✅ Chromatic Ranger Sakapatate — Dark Gestral Arena
@@ -252,7 +252,7 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
   - ✅ Chromatic Pétank — The Continent (superboss)
   - ✅ Chromatic Bourgeon — The Monolith
   - ✅ Chromatic Clair Obscur — The Monolith, top (after defeating The Paintress) → Combo Attack II Pictos
-  - ⬜ Chromatic Creation — Renoir's Drafts
+  - ✅ Chromatic Creation — Renoir's Drafts
   - ⬜ Chromatic Barbasucette — Verso's Drafts
   - ⬜ Chromatic Franctale — Verso's Drafts
   - ⬜ Chromatic Licorne — Verso's Drafts (handholds right of Reverie Path)
@@ -273,18 +273,15 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 
 ## Section 9: Open Questions
 
-- **Verso survivability without Survivor:** Survivor (20LP) dropped. Second Chance alone has been sufficient through Renoir and early post-game. Continue monitoring against harder post-game content.
-- **Recovery on Sciel:** Dropped for now to save LP. Revisit if Sciel takes more damage than expected in postgame. 10LP, would need CoL expansion.
-- **Powerful On Shell as Lumina:** Consider for Maelle (synergy with Lithum L20 Shell generation). LP cost 10. Add when levels create headroom.
-- **Energising Shell (10LP):** Alternative to Powerful On Shell for Maelle — +2 AP on Shell application. Evaluate alongside Powerful On Shell.
-- **Anti-Blight (10LP):** Used situationally (swap in without CoL expansion, fits within existing headroom). Add permanently to main team when LP headroom grows.
-- **Second Chance upgrade:** Available at L31 from defeating Création near Grour in Renoir's Drafts. Substantially better stats than current L16.
-- **Healing Boon trigger mechanic:** "Heal 15% HP on applying a buff" — may fire on the buff *recipient* rather than the caster. Needs in-game confirmation before building around it.
-- **Crit cap:** Believed to be 100%, not 99%. Verify in-game.
-- **Empowering Dodge (5LP):** Reset behaviour on parry unconfirmed — test empirically before committing LP.
-- **Scaverim for Lune:** Likely already in inventory — check, as Scaverim drops from Chromatic Scavenger which was beaten during Phase 2. If obtained, evaluate as Lune best-in-slot (Dark stain generation).
 - **First Life (15LP):** Drops from Chromatic Lampmaster in Endless Tower (Stage 11 / DLC superboss area). 25% damage while alive, no downside for a well-supported DPS. Strong candidate for Maelle once obtained.
 - **Frenzy:** Drops from Licornapieds in Verso's Drafts. Unconditional skill damage boost for multi-hit skills. Relevant for Maelle (multi-hit stances) and Verso (Strike Storm). Review when Verso's Drafts is accessible.
+- **Cheater for reserve team (40LP each):** Desirable for Lune and Monoco but not feasible within the Chat 14 CoL spend (would have required 61 extra CoL on top of 125). Deferred; revisit when more CoL is available.
+- **Shortcut for reserve team (5LP each):** Much more affordable, and offers a lifeline when low health, which is important for reserve team.
+- **Energising Shell (10LP) and Powerful On Shell for Maelle:** Had intended to apply in chat 14, but didn't have enough CoL.
+- **Longer Shell (5LP) for Maelle:** Extends Shell duration from Lithum L20. Noted candidate; deferred — requires future CoL expansion.
+- **Empowering Dodge (5LP) for everyone:** Small damage buff but stacks when successfully dodging, which is easier than parrying. Does not reset on parrying, only on missed dodges. Deffered — requires future CoL expansion.
+- **Energising Burn (10LP) for Lune:** Synergises well with Lune's burn skills. Not enough CoL in chat 14, should be ready to add now.
+- **Anti-Blight for reserve team (10LP each):** Desirable for Renoir's Drafts in particular. Not high priority, may skip.
 
 ---
 
@@ -308,6 +305,7 @@ Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.
 | Chat 11 | [Formatted](../chats/chat11/chat11-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat11/chat11-index.md) | [chat11.md](../chats/chat11/chat11.md) | Partial Pictos optimisation session; turn order confirmed resolved; Sciel crit at cap; speed spread identified as new constraint; session handed off to Opus for full multi-character constraint optimisation                            |
 | Chat 12 | [Formatted](../chats/chat12/chat12-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat12/chat12-index.md) | [chat12.md](../chats/chat12/chat12.md) | Full Pictos optimisation (Opus): all five characters reviewed bottom-up from stat data                                                                                                                                                   |
 | Chat 13 | [Formatted](../chats/chat13/chat13-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat13/chat13-index.md) | [chat13.md](../chats/chat12/chat12.md) | Post-game session: full Chromatics list researched and compiled; progress tracker updated multiple times; Lumina upgrades; Scaverim evaluated, Kralim retained; Simon fight team planning; overview structural review and rewrite        |
+| Chat 14 | [Formatted](../chats/chat14/chat14-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat14/chat14-index.md) | [chat14.md](../chats/chat14/chat14.md) | Lumina loadout review and bulk CoL expansion; quickly ran out of tokens and abandoned further development in this chat                                                                                                                   |
 
 ---
 

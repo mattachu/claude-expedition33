@@ -95,32 +95,35 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 ## 5. Main Team Core Lumina Set
 
 <!-- GENERATED:START lumina:core:main -->
-**Total: 234 LP** — applied to Maelle, Verso, Sciel.
+**Total: 269 LP** — applied to Maelle, Verso, Sciel.
 
 *Applied via in-game Lumina set.*
 
-| Lumina             | LP | Effect                                                     | Notes                                                             |
-|--------------------|----|------------------------------------------------------------|-------------------------------------------------------------------|
-| Painted Power      | 5  | Damage can exceed 9,999.                                   | Essential for all characters from Act 3 onwards                   |
-| Teamwork           | 5  | 10% increased damage while all allies are alive.           |                                                                   |
-| Base Shield        | 20 | Grants 1 Shield HP buffer per turn                         | Verso: non-functional with Chevalam as L4 effect prevents shields |
-| Energising Turn    | 20 | +1 AP on turn start.                                       | Main AP flow generator; boosted by Energy Master                  |
-| Cheater            | 40 | Extra turn after using a skill, once per turn              |                                                                   |
-| Energy Master      | 40 | Every AP gain is increased by 1                            |                                                                   |
-| Second Chance      | 40 | Revive with 100% Health. Once per battle.                  |                                                                   |
-| Energising Parry   | 15 | +1 AP on successful Parry.                                 |                                                                   |
-| Energising Start I | 5  | +1 AP on battle start.                                     |                                                                   |
-| Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                 |                                                                   |
-| Breaker            | 10 | 25% increased Break damage.                                |                                                                   |
-| Marking Shots      | 3  | 20% chance to apply Mark on Free Aim shot.                 |                                                                   |
-| Dead Energy I      | 2  | +3 AP on killing an enemy.                                 |                                                                   |
-| Dead Energy II     | 2  | +3 AP on killing an enemy.                                 |                                                                   |
-| Critical Break     | 5  | 25% increased Break damage on Critical hits.               |                                                                   |
-| Rewarding Mark     | 5  | +2 AP on dealing damage to a Marked target. Once per turn. |                                                                   |
-| Burning Shots      | 3  | 20% chance to Burn on Free Aim shot.                       |                                                                   |
-| Breaking Burn      | 5  | 25% increased Break damage on Burning enemies.             |                                                                   |
-| Breaking Counter   | 3  | 50% increased Break damage on Counterattack.               |                                                                   |
-| Breaking Death     | 5  | Fully charge enemy break bar on death                      |                                                                   |
+| Lumina             | LP | Effect                                                           | Notes                                                             |
+|--------------------|----|------------------------------------------------------------------|-------------------------------------------------------------------|
+| Painted Power      | 5  | Damage can exceed 9,999.                                         | Essential for all characters from Act 3 onwards                   |
+| Energising Turn    | 20 | +1 AP on turn start.                                             | Main AP flow generator; boosted by Energy Master                  |
+| Cheater            | 40 | Extra turn after using a skill, once per turn                    | Essential for endgame builds                                      |
+| Energy Master      | 40 | Every AP gain is increased by 1                                  | Add 1 to AP boosts (not double) — game-changing for AP generation |
+| Second Chance      | 40 | Revive with 100% Health. Once per battle.                        | Can save boss battles                                             |
+| Survivor           | 20 | Survive fatal damage with 1 Health once per battle               | Secondary safety net before Second Chance                         |
+| Base Shield        | 20 | Grants 1 Shield HP buffer per turn                               | Verso: non-functional with Chevalam as L4 effect prevents shields |
+| Teamwork           | 5  | 10% increased damage while all allies are alive.                 |                                                                   |
+| Energising Parry   | 15 | +1 AP on successful Parry.                                       |                                                                   |
+| Energising Start I | 5  | +1 AP on battle start.                                           | Boosted by Energy Master to 8AP on battle start                   |
+| Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                       |                                                                   |
+| Breaker            | 10 | 25% increased Break damage.                                      | Main break damage booster                                         |
+| Marking Shots      | 3  | 20% chance to apply Mark on Free Aim shot.                       |                                                                   |
+| Dead Energy I      | 2  | +3 AP on killing an enemy.                                       |                                                                   |
+| Dead Energy II     | 2  | +3 AP on killing an enemy.                                       |                                                                   |
+| Breaking Death     | 5  | Fully charge enemy break bar on death                            | Extremely helpful in tough boss fights                            |
+| Critical Break     | 5  | 25% increased Break damage on Critical hits.                     |                                                                   |
+| Rewarding Mark     | 5  | +2 AP on dealing damage to a Marked target. Once per turn.       |                                                                   |
+| Burning Shots      | 3  | 20% chance to Burn on Free Aim shot.                             |                                                                   |
+| Breaking Burn      | 5  | 25% increased Break damage on Burning enemies.                   |                                                                   |
+| Breaking Counter   | 3  | 50% increased Break damage on Counterattack.                     |                                                                   |
+| Shortcut           | 5  | Immediately play when falling below 30% Health. Once per battle. |                                                                   |
+| Anti-Blight        | 10 | Immune to Blight                                                 | Especially important in Renoir's Drafts                           |
 <!-- GENERATED:END -->
 
 ---
@@ -128,17 +131,18 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 ## 6. Reserve Team Core Lumina Set
 
 <!-- GENERATED:START lumina:core:reserve -->
-**Total: 120 LP** — applied to Lune, Monoco.
+**Total: 140 LP** — applied to Lune, Monoco.
 
-*Main team core minus Cheater, Dead Energy I, Dead Energy II, Second Chance; Plus Recovery.*
+*Main team core minus Cheater, Dead Energy I, Dead Energy II, Second Chance, Shortcut; Plus Recovery.*
 
 | Lumina             | LP | Effect                                                     |
 |--------------------|----|------------------------------------------------------------|
 | Painted Power      | 5  | Damage can exceed 9,999.                                   |
-| Teamwork           | 5  | 10% increased damage while all allies are alive.           |
-| Base Shield        | 20 | Grants 1 Shield HP buffer per turn                         |
 | Energising Turn    | 20 | +1 AP on turn start.                                       |
+| Base Shield        | 20 | Grants 1 Shield HP buffer per turn                         |
+| Survivor           | 20 | Survive fatal damage with 1 Health once per battle         |
 | Recovery           | 10 | Recovers 10% Health on turn start.                         |
+| Teamwork           | 5  | 10% increased damage while all allies are alive.           |
 | Energising Parry   | 15 | +1 AP on successful Parry.                                 |
 | Energising Start I | 5  | +1 AP on battle start.                                     |
 | Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                 |
@@ -175,7 +179,6 @@ Add these as Lumina for specific boss fights — no need to change Pictos.
 | Lumina            | LP | Effect                                                     | Notes                                                                                    |
 |-------------------|----|------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | Energy Master     | 40 | Every AP gain is increased by 1                            | Game-change but expensive; consider when expanding core set.                             |
-| Healing Boon      | 10 | Heal 15% HP on applying a buff                             | Consider for Sciel with Litheson.                                                        |
 | Energising Shell  | 10 | Give 2 AP on applying Shell.                               | Consider for Maelle with Lithum.                                                         |
 | Longer Shell      | 5  | On applying Shell, its duration is increased by 2.         | Consider for Maelle with Lithum.                                                         |
 | Powerful On Shell | 10 | Apply Powerful on applying Shell.                          | Consider for Maelle with Lithum.                                                         |

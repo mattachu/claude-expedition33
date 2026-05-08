@@ -30,10 +30,19 @@
       "Empowering Break",
       "Gradient Break"
     ],
-    "lp_total": 271,
-    "lp_used": 234,
+    "lp_total": 299,
+    "lp_used": 299,
     "lumina_core_exclusions": [],
-    "lumina_extras": [],
+    "lumina_extras": [
+      {
+        "name": "Full Strength",
+        "notes": "Damage bonus while on full HP — strong synergy with Clea's Life Pictos"
+      },
+      {
+        "name": "Warming Up",
+        "notes": "Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus"
+      }
+    ],
     "skills_equipped": [
       "Phantom Strike",
       "Fleuret Fury",
@@ -118,8 +127,8 @@
       "Breaking Death",
       "Confident"
     ],
-    "lp_total": 251,
-    "lp_used": 224,
+    "lp_total": 274,
+    "lp_used": 274,
     "lumina_core_exclusions": [
       {
         "name": "Base Shield",
@@ -134,6 +143,10 @@
       {
         "name": "Confident Fighter",
         "notes": "30% increased damage — cost priced in via Chevalam L4 healing block"
+      },
+      {
+        "name": "Warming Up",
+        "notes": "Damage bonus that increases with each attack, up to 20% at 5 stacks"
       }
     ],
     "skills_equipped": [
@@ -216,8 +229,8 @@
       "Energy Master",
       "Energising Shots"
     ],
-    "lp_total": 222,
-    "lp_used": 215,
+    "lp_total": 260,
+    "lp_used": 260,
     "lumina_core_exclusions": [
       {
         "name": "Energy Master",
@@ -225,6 +238,10 @@
       }
     ],
     "lumina_extras": [
+      {
+        "name": "Recovery",
+        "notes": "Passive heal on turn start, increases survivability"
+      },
       {
         "name": "Accelerating Heal",
         "notes": "Rush on heal — synergy with Litheson AP generation"
@@ -320,8 +337,8 @@
       "Burn Affinity",
       "Burning Death"
     ],
-    "lp_total": 136,
-    "lp_used": 130,
+    "lp_total": 152,
+    "lp_used": 150,
     "lumina_core_exclusions": [],
     "lumina_extras": [
       {
@@ -414,8 +431,8 @@
       "Powerful Mark",
       "Powerful Revive"
     ],
-    "lp_total": 138,
-    "lp_used": 125,
+    "lp_total": 145,
+    "lp_used": 145,
     "lumina_core_exclusions": [],
     "lumina_extras": [
       {

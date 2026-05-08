@@ -282,7 +282,7 @@
     },
     {
       "name": "Contorso",
-      "level": 23,
+      "level": 31,
       "power": null,
       "element": "Lightning",
       "scaling": "Defence A, Agility B",
@@ -1109,7 +1109,7 @@
     },
     {
       "name": "Ballaro",
-      "level": 20,
+      "level": 31,
       "power": null,
       "element": null,
       "scaling": null,

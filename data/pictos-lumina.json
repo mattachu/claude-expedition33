@@ -1522,7 +1522,7 @@
         "defence": 647,
         "speed": 266
       },
-      "notes": "Strong candidate for Sciel"
+      "notes": "Tested with Sciel but doesn't synergise well. It does heal the targeted ally rather than self, but didn't trigger on Litheson passive Rush buffs, nor on Fortune's Fury, nor on Intervention."
     },
     {
       "name": "Healing Counter",
@@ -1978,10 +1978,10 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": null,
-      "level": 25,
+      "level": 31,
       "stats": {
-        "speed": 434,
-        "crit": "28%"
+        "speed": 672,
+        "crit": "36%"
       }
     },
     {
@@ -2128,10 +2128,10 @@
       "lp_cost": 40,
       "obtained": true,
       "equipped_by": null,
-      "level": 16,
+      "level": 31,
       "stats": {
-        "health": 1106,
-        "crit": "8%"
+        "health": 3981,
+        "crit": "15%"
       }
     },
     {
@@ -2202,7 +2202,11 @@
       "lp_cost": null,
       "obtained": true,
       "equipped_by": null,
-      "level": 16
+      "level": 31,
+      "stats": {
+        "speed": 672,
+        "crit": "36%"
+      }
     },
     {
       "name": "Slowing Attack",
@@ -2234,10 +2238,10 @@
       "lp_cost": 15,
       "obtained": true,
       "equipped_by": null,
-      "level": 23,
+      "level": 31,
       "stats": {
-        "speed": 525,
-        "crit": "13%"
+        "speed": 958,
+        "crit": "18%"
       }
     },
     {
@@ -2413,21 +2417,12 @@
   ],
   "core_lumina_suite": {
     "main_team": {
-      "total_lp": 234,
+      "total_lp": 269,
       "entries": [
         {
           "name": "Painted Power",
           "lp": 5,
           "notes": "Essential for all characters from Act 3 onwards"
-        },
-        {
-          "name": "Teamwork",
-          "lp": 5
-        },
-        {
-          "name": "Base Shield",
-          "lp": 20,
-          "notes": "Verso: non-functional with Chevalam as L4 effect prevents shields"
         },
         {
           "name": "Energising Turn",
@@ -2436,15 +2431,32 @@
         },
         {
           "name": "Cheater",
-          "lp": 40
+          "lp": 40,
+          "notes": "Essential for endgame builds"
         },
         {
           "name": "Energy Master",
-          "lp": 40
+          "lp": 40,
+          "notes": "Add 1 to AP boosts (not double) — game-changing for AP generation"
         },
         {
           "name": "Second Chance",
-          "lp": 40
+          "lp": 40,
+          "notes": "Can save boss battles"
+        },
+        {
+          "name": "Survivor",
+          "lp": 20,
+          "notes": "Secondary safety net before Second Chance"
+        },
+        {
+          "name": "Base Shield",
+          "lp": 20,
+          "notes": "Verso: non-functional with Chevalam as L4 effect prevents shields"
+        },
+        {
+          "name": "Teamwork",
+          "lp": 5
         },
         {
           "name": "Energising Parry",
@@ -2452,7 +2464,8 @@
         },
         {
           "name": "Energising Start I",
-          "lp": 5
+          "lp": 5,
+          "notes": "Boosted by Energy Master to 8AP on battle start"
         },
         {
           "name": "Dodger",
@@ -2460,7 +2473,8 @@
         },
         {
           "name": "Breaker",
-          "lp": 10
+          "lp": 10,
+          "notes": "Main break damage booster"
         },
         {
           "name": "Marking Shots",
@@ -2475,6 +2489,11 @@
           "lp": 2
         },
         {
+          "name": "Breaking Death",
+          "lp": 5,
+          "notes": "Extremely helpful in tough boss fights"
+        },
+        {
           "name": "Critical Break",
           "lp": 5
         },
@@ -2495,34 +2514,43 @@
           "lp": 3
         },
         {
-          "name": "Breaking Death",
+          "name": "Shortcut",
           "lp": 5
+        },
+        {
+          "name": "Anti-Blight",
+          "lp": 10,
+          "notes": "Especially important in Renoir's Drafts"
         }
       ],
       "notes": "Applied via in-game Lumina set."
     },
     "reserve_team": {
-      "total_lp": 120,
+      "total_lp": 140,
       "entries": [
         {
           "name": "Painted Power",
           "lp": 5
         },
         {
-          "name": "Teamwork",
-          "lp": 5
+          "name": "Energising Turn",
+          "lp": 20
         },
         {
           "name": "Base Shield",
           "lp": 20
         },
         {
-          "name": "Energising Turn",
+          "name": "Survivor",
           "lp": 20
         },
         {
           "name": "Recovery",
           "lp": 10
+        },
+        {
+          "name": "Teamwork",
+          "lp": 5
         },
         {
           "name": "Energising Parry",
@@ -2569,7 +2597,7 @@
           "lp": 5
         }
       ],
-      "notes": "Main team core minus Cheater, Dead Energy I, Dead Energy II, Second Chance; Plus Recovery."
+      "notes": "Main team core minus Cheater, Dead Energy I, Dead Energy II, Second Chance, Shortcut; Plus Recovery."
     }
   },
   "candidates_for_review": [
@@ -2577,11 +2605,6 @@
       "name": "Energy Master",
       "lp": 40,
       "notes": "Game-change but expensive; consider when expanding core set."
-    },
-    {
-      "name": "Healing Boon",
-      "lp": 10,
-      "notes": "Consider for Sciel with Litheson."
     },
     {
       "name": "Energising Shell",
