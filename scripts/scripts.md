@@ -1635,7 +1635,7 @@ def gen_party_table(characters, plu, weapons_data):
                        for w in weapons_data.get(name, [])
                        if w['name'] == wname), '?')
         rows.append([
-            name,
+            f'[{name}](../characters/{name.lower()}.md)',
             char.get('level', '?'),
             char.get('role', '?'),
             f'{wname} ({wlevel})',
@@ -1845,9 +1845,14 @@ def generate_party_summary(data, out_path, dry_run=False):
 
     lines = [
         '# Party Summary',
-        '',
         '*Generated from JSON data files. Do not edit manually.*',
-        '',
+        ''
+    ]
+
+    lines.append(gen_party_list(playthrough))
+    lines.append(gen_party_table(characters, plu, weapons))
+
+    lines += [
         '---',
         '',
         '## Active Party',
@@ -2062,12 +2067,10 @@ def run_generate(repo_root='.', interactive=True, dry_run=False):
     for name in CHARACTERS:
         update_file(repo / 'characters' / f'{name.lower()}.md', generators, dry_run)
 
-    # Update overview
-    print('\nOverview file:')
+    # Update overview files
+    print('\nOverview files:')
     update_file(repo / 'overview' / 'claude-expedition33.md', generators, dry_run)
-
-    # Update Pictos/Lumina summary
-    print('\nPictos/Lumina summary:')
+    update_file(repo / 'overview' / 'progress.md', generators, dry_run)
     update_file(repo / 'overview' / 'pictos-lumina-summary.md', generators, dry_run)
 
     # Fully generated files
