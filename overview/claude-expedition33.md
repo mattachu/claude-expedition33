@@ -44,6 +44,21 @@ Fetch that file only when reviewing specific past errors.
 - **Reserve:** Lune, Monoco
 <!-- GENERATED:END -->
 
+<!-- GENERATED:START characters:summary:party -->
+| Character                         | Level | Role                         | Weapon        | Pictos                                         | LP      |
+|-----------------------------------|-------|------------------------------|---------------|------------------------------------------------|---------|
+| [Maelle](../characters/maelle.md) | 93    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Gradient Break  | 299/299 |
+| [Verso](../characters/verso.md)   | 93    | Endgame main DPS             | Chevalam (33) | Augmented Counter I, Breaking Death, Confident | 274/274 |
+| [Sciel](../characters/sciel.md)   | 92    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots       | 260/260 |
+| [Lune](../characters/lune.md)     | 88    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death    | 150/152 |
+| [Monoco](../characters/monoco.md) | 88    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Powerful Mark, Powerful Revive   | 145/145 |
+<!-- GENERATED:END -->
+
+More details:
+- **Party composition and roles:** See [`overview/party-summary.md`](party-summary.md)
+- **Pictos/Lumina mechanics and loadouts:** See [`overview/pictos-lumina-summary.md`](pictos-lumina-summary.md)
+- **Character builds and decisions:** See character files for each character.
+
 ### Inventory
 <!-- GENERATED:START playthrough:inventory -->
 - Colour of Lumina: 31
@@ -127,58 +142,6 @@ Tints are consumable items, distinct from skills. Healing Tints restore HP, Revi
 ### Reserve Party
 
 If the main party is fully wiped in a battle, the player can continue the battle using the reserve party. This is most relevant for hard bosses.
-
----
-
-## Section 5: Party
-*Last updated: Chat 13*
-
-<!-- GENERATED:START playthrough:party -->
-- **Active:** Maelle, Verso, Sciel
-- **Reserve:** Lune, Monoco
-<!-- GENERATED:END -->
-
-**Speed order:** Verso goes first via Chevalam Rush (Rank S at battle start). Sciel second, Maelle third. Current turn order resolved via Chat 12 Pictos optimisation.
-Note: base speed scales with level independently of Agility — keep levels close when speeds are close and turn order matters.
-
-**Turn rotation (endgame burst):** Verso (base attack) → Verso(C) (Steeled Strike charge) → Sciel (Fortune's Fury on Verso) → Sciel(C) (Intervention on Verso) → Verso(Intervention) (Steeled Strike executes at Rank S with doubled damage).
-
-<!-- GENERATED:START characters:summary:party -->
-| Character | Level | Role                         | Weapon        | Pictos                                         | LP      |
-|-----------|-------|------------------------------|---------------|------------------------------------------------|---------|
-| Maelle    | 93    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Gradient Break  | 299/299 |
-| Verso     | 93    | Endgame main DPS             | Chevalam (33) | Augmented Counter I, Breaking Death, Confident | 274/274 |
-| Sciel     | 92    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots       | 260/260 |
-| Lune      | 88    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death    | 150/152 |
-| Monoco    | 88    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Powerful Mark, Powerful Revive   | 145/145 |
-<!-- GENERATED:END -->
-
-### Core Lumina Suite
-
-**Main team core:**
-<!-- GENERATED:START pictos:core:main -->
-**269LP** Painted Power, Energising Turn, Cheater, Energy Master, Second Chance, Survivor, Base Shield, Teamwork, Energising Parry, Energising Start I, Dodger, Breaker, Marking Shots, Dead Energy I, Dead Energy II, Breaking Death, Critical Break, Rewarding Mark, Burning Shots, Breaking Burn, Breaking Counter, Shortcut, Anti-Blight. Note: Painted Power (Essential for all characters from Act 3 onwards); Energising Turn (Main AP flow generator; boosted by Energy Master); Cheater (Essential for endgame builds); Energy Master (Add 1 to AP boosts (not double) — game-changing for AP generation); Second Chance (Can save boss battles); Survivor (Secondary safety net before Second Chance); Base Shield (Verso: non-functional with Chevalam as L4 effect prevents shields); Energising Start I (Boosted by Energy Master to 8AP on battle start); Breaker (Main break damage booster); Breaking Death (Extremely helpful in tough boss fights); Anti-Blight (Especially important in Renoir's Drafts).
-<!-- GENERATED:END -->
-
-**Reserve team core:**
-<!-- GENERATED:START pictos:core:reserve -->
-**140LP** Painted Power, Energising Turn, Base Shield, Survivor, Recovery, Teamwork, Energising Parry, Energising Start I, Dodger, Breaker, Marking Shots, Critical Break, Rewarding Mark, Burning Shots, Breaking Burn, Breaking Counter, Breaking Death.
-<!-- GENERATED:END -->
-
-Full breakdown with effects in [pictos-lumina-summary.md](pictos-lumina-summary.md) §3–4. Character-specific additions on top of core sets in §5.
-
----
-
-## Section 6: Character Reference Files
-*Fetch the relevant file at the start of any session focusing on that character in detail. These supersede the brief summaries in Section 5.*
-
-| Character | Role                           | File                                              |
-|-----------|--------------------------------|---------------------------------------------------|
-| Maelle    | Primary DPS                    | [`characters/maelle.md`](../characters/maelle.md) |
-| Verso     | Mid-game DPS / endgame DPS     | [`characters/verso.md`](../characters/verso.md)   |
-| Sciel     | Pure support                   | [`characters/sciel.md`](../characters/sciel.md)   |
-| Lune      | Support/healer/stain DPS       | [`characters/lune.md`](../characters/lune.md)     |
-| Monoco    | AP battery / support / breaker | [`characters/monoco.md`](../characters/monoco.md) |
 
 ---
 

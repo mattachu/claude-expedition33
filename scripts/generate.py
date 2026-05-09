@@ -486,7 +486,7 @@ def gen_party_table(characters, plu, weapons_data):
                        for w in weapons_data.get(name, [])
                        if w['name'] == wname), '?')
         rows.append([
-            name,
+            f'[{name}](../characters/{name.lower()}.md)',
             char.get('level', '?'),
             char.get('role', '?'),
             f'{wname} ({wlevel})',
