@@ -696,9 +696,14 @@ def generate_party_summary(data, out_path, dry_run=False):
 
     lines = [
         '# Party Summary',
-        '',
         '*Generated from JSON data files. Do not edit manually.*',
-        '',
+        ''
+    ]
+
+    lines.append(gen_party_list(playthrough))
+    lines.append(gen_party_table(characters, plu, weapons))
+
+    lines += [
         '---',
         '',
         '## Active Party',

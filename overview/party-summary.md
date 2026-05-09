@@ -1,6 +1,16 @@
 # Party Summary
-
 *Generated from JSON data files. Do not edit manually.*
+
+- **Active:** Maelle, Verso, Sciel
+- **Reserve:** Lune, Monoco
+
+| Character                         | Level | Role                         | Weapon        | Pictos                                         | LP      |
+|-----------------------------------|-------|------------------------------|---------------|------------------------------------------------|---------|
+| [Maelle](../characters/maelle.md) | 93    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Gradient Break  | 299/299 |
+| [Verso](../characters/verso.md)   | 93    | Endgame main DPS             | Chevalam (33) | Augmented Counter I, Breaking Death, Confident | 274/274 |
+| [Sciel](../characters/sciel.md)   | 92    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots       | 260/260 |
+| [Lune](../characters/lune.md)     | 88    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death    | 150/152 |
+| [Monoco](../characters/monoco.md) | 88    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Powerful Mark, Powerful Revive   | 145/145 |
 
 ---
 
