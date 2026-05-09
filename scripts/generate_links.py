@@ -16,6 +16,7 @@ STATIC_FILES = [
     # Overview
     "overview/claude-expedition33.md",
     "overview/party-summary.md",
+    "overview/progress.md",
     "overview/pictos-lumina-summary.md",
     # Data
     "data/schema.md",

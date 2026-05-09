@@ -8,6 +8,7 @@ claude-expedition33/
 ├── overview/
 │   ├── claude-expedition33.md
 │   ├── party-summary.md
+│   ├── progress.md
 │   └── pictos-lumina-summary.md
 ├── characters/
 │   ├── character-file-template.md
