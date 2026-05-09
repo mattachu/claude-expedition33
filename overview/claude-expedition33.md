@@ -32,7 +32,7 @@ Fetch that file only when reviewing specific past errors.
 - **Platform:** Xbox Series X
 - **Current playthrough:** First playthrough
 - **Progress:**
-  - Act 3, Phase 3.
+  - Act 3, Phase 4.
   - Characters: Maelle L93, Verso L93, Sciel L92, Lune L88, Monoco L88.
   - Current area: Renoir's Drafts.
 <!-- GENERATED:END -->
