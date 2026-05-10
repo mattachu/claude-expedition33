@@ -54,10 +54,10 @@ Fetch that file only when reviewing specific past errors.
 | [Monoco](../characters/monoco.md) | 88    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Powerful Mark, Powerful Revive   | 145/145 |
 <!-- GENERATED:END -->
 
-More details:
-- **Party composition and roles:** See [`overview/party-summary.md`](party-summary.md)
-- **Pictos/Lumina mechanics and loadouts:** See [`overview/pictos-lumina-summary.md`](pictos-lumina-summary.md)
-- **Character builds and decisions:** See character files for each character.
+**More details:**
+- **Party composition and roles:** See [`overview/party-summary.md`](party-summary.md) — fetch when comparing builds across the team or reviewing stat totals and Lumina loadouts.
+- **Pictos/Lumina mechanics and loadouts:** See [`overview/pictos-lumina-summary.md`](pictos-lumina-summary.md) — fetch when reviewing Lumina sets, evaluating Pictos candidates, or planning LP expansion.
+- **Character builds and decisions:** See character files for each character — fetch when diving into a specific character's strategy, weapon choices, or past decisions.
 
 ### Inventory
 <!-- GENERATED:START playthrough:inventory -->
