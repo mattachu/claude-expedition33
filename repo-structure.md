@@ -38,9 +38,10 @@ claude-expedition33/
 │   ├── apply_changelist.py
 │   └── split_transcript.py
 └── chats/
-    ├── chat0
+    ├── chat-index.md
+    ├── chat0/
     ├── ...
-    └── chatN
+    └── chatN/
         ├── chatN-index.md
         ├── chatN.md
         ├── chatN-part1.md
