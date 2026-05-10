@@ -2162,6 +2162,8 @@ STATIC_FILES = [
     # Scripts
     "scripts/pipeline.md",
     "scripts/scripts.md",
+    # Chats
+    "chats/chat-index.md",
     # Root
     "repo-structure.md",
     "README.md",
@@ -2182,13 +2184,15 @@ def find_chat_indexes():
     return [path for _, path in sorted(entries)]
 
 chat_indexes = find_chat_indexes()
+last_chat_num = len(chat_indexes) - 1 if chat_indexes else -1
 
 FILES = STATIC_FILES[:-2] + chat_indexes + STATIC_FILES[-2:]  # insert before root files
 
 lines = [
     "# Session Links",
     "",
-    f"*Commit: `{HASH}`*",
+    f"*Commit: `{HASH}`*  ",
+    f"*Latest chat: {last_chat_num}*  ",
     "",
     "Paste this file's content at session start. "
     "Claude fetches files from these URLs on demand.",
