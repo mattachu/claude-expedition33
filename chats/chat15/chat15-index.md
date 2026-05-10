@@ -8,7 +8,8 @@ Chat between Matt and Claude.
 
 ## Part Files (Claude-readable)
 
-*(to be added at end of session)*
+* Part 1 — Overview file restructure for short Haiku-model chats, up to section 1 review: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat15/chat15-part1.md)
+* Part 2 — Overview file restructure continued, up to section 8 review: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat15/chat15-part2.md)
 
 ## Table of Contents
 
