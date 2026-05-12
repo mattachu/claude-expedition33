@@ -27,9 +27,9 @@ claude-expedition33/
 │   ├── mechanics.md
 │   ├── pictos-lumina-catalogue.md
 │   ├── session-procedure.md
+│   ├── session-design.md
 │   └── historical-errors.md
 ├── scripts/
-│   ├── pipeline.md
 │   ├── scripts.md
 │   ├── turn_index.py
 │   ├── transcript_to_md.py
