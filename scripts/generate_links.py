@@ -34,6 +34,7 @@ STATIC_FILES = [
     # Reference
     "reference/mechanics.md",
     "reference/pictos-lumina-catalogue.md",
+    "reference/session-procedure.md",
     "reference/historical-errors.md",
     # Scripts
     "scripts/pipeline.md",

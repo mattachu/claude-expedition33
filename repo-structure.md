@@ -24,9 +24,10 @@ claude-expedition33/
 │   ├── skills.json
 │   └── pictos-lumina.json
 ├── reference/
-│   ├── historical-errors.md
 │   ├── mechanics.md
-│   └── pictos-lumina-catalogue.md
+│   ├── pictos-lumina-catalogue.md
+│   ├── session-procedure.md
+│   └── historical-errors.md
 ├── scripts/
 │   ├── pipeline.md
 │   ├── scripts.md
