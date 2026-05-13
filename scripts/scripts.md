@@ -2158,9 +2158,10 @@ STATIC_FILES = [
     # Reference
     "reference/mechanics.md",
     "reference/pictos-lumina-catalogue.md",
+    "reference/session-procedure.md",
+    "reference/session-design.md",
     "reference/historical-errors.md",
     # Scripts
-    "scripts/pipeline.md",
     "scripts/scripts.md",
     # Chats
     "chats/chat-index.md",
