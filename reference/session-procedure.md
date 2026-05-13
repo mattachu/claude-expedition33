@@ -3,6 +3,8 @@
 Full reference for the Clair Obscur: Expedition 33 AI session system.  
 Fetched at `!wrap`. Also relevant when switching from a lighter to a more capable model mid-session for complex work.
 
+For system architecture and design rationale, see [`reference/session-design.md`](session-design.md)
+
 ---
 
 ## Session Start
