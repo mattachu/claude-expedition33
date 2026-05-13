@@ -42,7 +42,6 @@ STATIC_FILES = [
     # Chats
     "chats/chat-index.md",
     # Root
-    "repo-structure.md",
     "README.md",
 ]
 
@@ -63,7 +62,7 @@ def find_chat_indexes():
 chat_indexes = find_chat_indexes()
 last_chat_num = len(chat_indexes) - 1 if chat_indexes else -1
 
-FILES = STATIC_FILES[:-2] + chat_indexes + STATIC_FILES[-2:]  # insert before root files
+FILES = STATIC_FILES[:-1] + chat_indexes + STATIC_FILES[-1:]  # insert before root files
 
 lines = [
     "# Session Links",
