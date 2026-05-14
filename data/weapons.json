@@ -384,11 +384,11 @@
     },
     {
       "name": "Dreameso",
-      "level": null,
+      "level": 15,
       "power": null,
       "element": null,
       "scaling": "Agility A, Luck B",
-      "obtained": false,
+      "obtained": true,
       "future": true,
       "effects": [],
       "notes": "Rank gain on Counterattack. Deferred until parry/counterattack rate improves."
@@ -541,15 +541,6 @@
     {
       "name": "Blodam",
       "level": 12,
-      "power": null,
-      "element": null,
-      "scaling": null,
-      "obtained": true,
-      "effects": []
-    },
-    {
-      "name": "Dreameso",
-      "level": 15,
       "power": null,
       "element": null,
       "scaling": null,
