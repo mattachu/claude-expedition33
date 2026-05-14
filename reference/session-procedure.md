@@ -32,7 +32,7 @@ Display `*[Turn N. Last log: Turn L.]*` at the top of every Claude response. Tra
 `!log` — log conversation to transcript; follow Logging Process below  
 `!check` — critical review of Claude's most recent response; does not trigger a log write  
 `!close` — end-of-session for the current chat; follow Close Steps below  
-`!wrap` — full end-of-session pass; run in a separate chat with the transcript uploaded; fetch this file and follow End-of-Session Steps below  
+`!wrap` — full end-of-session pass; run in a separate chat with the transcript uploaded; fetch this file and follow Wrap Steps below  
 
 ---
 
@@ -85,17 +85,21 @@ Triggered by `!close` in the current session chat.
 
 ---
 
-## End-of-Session Steps
+## Wrap Steps
 
-These steps run in a separate chat after `!close` completes in the original session chat. Upload `chatN.md`, fetch this file, then follow these steps in order, stopping for Matt's confirmation between each major step.
+These steps run in a separate chat after `!close` completes in the original session chat.  
+Matt will upload `chatN.md` — do not read this full file, as it is long, and will consume too many tokens.  
+Follow the steps below in order, stopping for Matt's confirmation between each major step.  
+Don't write everything to the chat, process in files as described to reduce token usage.  
+
+Throughout these steps, `N` is the chat number and `P` is the part number — replace both with actual values in all filenames, paths, URLs, and index content. Determine N from the uploaded filename before running any commands.
 
 ### Step 1 — Split transcript into sections and plan part grouping
 
 Run from `/home/claude/` as working directory:
 
 ```bash
-cp /mnt/user-data/uploads/chatN.md /home/claude/chatN.md
-csplit /home/claude/chatN.md '/^<!-- SECTION -->$/' '{*}' --prefix=/home/claude/section --suffix-format='%02d.md'
+csplit /mnt/user-data/uploads/chatN.md '/^<!-- SECTION -->$/' '{*}' --prefix=/home/claude/section --suffix-format='%02d.md'
 ```
 
 `section00.md` is the transcript title header — skip it. Sections begin at `section01.md`.
@@ -106,51 +110,77 @@ Stop and confirm grouping with Matt before continuing.
 
 ### Step 2 — Process sections one at a time
 
+First create the index file `/mnt/user-data/outputs/chatN-index.md`:
+
+```md
+# Clair Obscur: Expedition 33 — Chat N
+
+Chat between Matt and Claude.
+
+## Continuous Transcript
+
+* [Formatted](chatN.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN.md)
+
+## Part Files (Claude-readable)
+
+(part list to be added later)
+
+## Table of Contents
+```
+
 For each section from `section01.md` onward:
 
-**a. Section title**
-Write a short descriptive title for this section (unique within the transcript; qualify if needed, e.g. "Verso Build — Pre-Sprong" / "Verso Build — Post-Sprong"). Insert it into the section file immediately after the `<!-- SECTION -->` marker:
+**a. Part heading**
+If the section opens a new part, append a part heading to the index file:
+```md
+
+### [Part P](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partP.md)
 
 ```
+
+**b. Section title**
+Write a short descriptive title for this section (unique within the transcript; qualify if needed, e.g. "Verso Build — Pre-Sprong" / "Verso Build — Post-Sprong"). Insert it into the section file immediately after the `<!-- SECTION -->` marker:
+```md
 <!-- SECTION -->
 ## Section Title
 ```
 
-**b. Index entry**
-Record in memory for each section (accumulating for Step 4 assembly):
-- Which part this section belongs to (Part 1, Part 2, etc.)
-- Section title
-- 2–3 short sentences covering the topic and key decisions. Do not list every item discussed.
+**c. Index entry**
+Append the section title, section link and a section description to the index file. The description should be 2–3 concise sentences covering the topic and key decisions. Do not list every item discussed.
+```md
+- **[Section Title](chatN.md#section-title)** — description.
+```
 
-**c. Categorise ACTION flags**
-Scan the section for `**ACTION:**` flags. Reconcile against context — if a later exchange in the section modifies or retracts a flag, adjust accordingly. Add confirmed actions to the appropriate bin:
+Once all sections are processed, replace the `(part list to be added later)` placeholder in the index file with the actual part list, using `sed`. Follow the Part Files list format in the Index File Format section below. For example:
+
+```bash
+sed -i 's/(part list to be added later)/* Part 1 — Opening Title: [Raw](https:\/\/cdn.jsdelivr.net\/gh\/mattachu\/claude-expedition33@main\/chats\/chatN\/chatN-part1.md)\n* Part 2 — Closing Title: [Raw](https:\/\/cdn.jsdelivr.net\/gh\/mattachu\/claude-expedition33@main\/chats\/chatN\/chatN-part2.md)/' /mnt/user-data/outputs/chatN-index.md
+```
+
+Or write the part list to a temporary file and use `sed -i` with a file reference if the substitution string is unwieldy.
+
+Confirm with Matt when all sections are processed.
+
+### Step 3 — Pull and present raw actions
+
+Use `awk` to pull all ACTION flags from the section files, grouped by section title:
+
+```bash
+awk '/^## /{section=$0; found=0} /^\*\*ACTION:/{if(!found){print section; found=1} print}' /home/claude/section*.md
+```
+
+Present the output to Matt and stop. Matt reviews and flags any actions to drop or modify before continuing.
+
+### Step 4 — Generate action list and changelist
+
+Sort confirmed actions into bins:
 
 - **In-game actions** — things Matt needs to do in the game before the next session
 - **Data changes** — updates to JSON data files (→ `DATA:` blocks in changelist)
 - **File changes** — updates to Markdown files (→ `FILE:` blocks in changelist)
 - **Open questions** — items to add to Section 6 of the overview
 
-Report section title and action count to Matt after each section. Continue to next section.
-
-Confirm with Matt when all sections are processed.
-
-### Step 3 — Combine into part files
-
-For each part, concatenate its section files:
-
-```bash
-cat /home/claude/section01.md /home/claude/section02.md /home/claude/section03.md /home/claude/section04.md > /mnt/user-data/outputs/chatN-part1.md
-```
-
-Repeat for each part.
-
-### Step 4 — Create index file
-
-Write `/mnt/user-data/outputs/chatN-index.md` using the index entries built in Step 2, following the Index File Format section below. Construct jsDelivr URLs and section anchors at this point.
-
-### Step 5 — Generate changelist
-
-Work through the action bins and generate change blocks for `chatN-changelist.txt`. Fetch each file that has confirmed changes before writing its block.
+Work through the action bins and generate `chatN-changelist.txt`. Fetch each file that has confirmed changes before writing its block.
 
 - **Data changes** → `DATA:` blocks (one per field change)
 - **File changes** → `FILE:` blocks (one per section replacement)
@@ -164,26 +194,28 @@ Also include:
 
 See Changelist Format below for block syntax.
 
-### Step 6 — Present to Matt
+Present the in-game actions checklist and the changelist file to Matt. Matt runs `scripts/apply_changelist.py` on the changelist, makes any manual changes, and pushes all files to GitHub.
 
-**In-game actions checklist** (from in-game actions bin):
+### Step 5 — Complete transcript
 
+For each part, concatenate its section files into a part file. For example:
+
+```bash
+cat /home/claude/section01.md /home/claude/section02.md /home/claude/section03.md /home/claude/section04.md > /mnt/user-data/outputs/chatN-part1.md
+cat /home/claude/section05.md /home/claude/section06.md > /mnt/user-data/outputs/chatN-part2.md
 ```
-## In-Game Actions
 
-- [ ] Action 1
-- [ ] Action 2
-```
+Log the end-of-session chat itself as the final section. Append directly into the last part file (already written above — do not re-concatenate):
 
-**Changelist** — present file for Matt to review. Matt runs `scripts/apply_changelist.py` on the changelist, makes any manual changes, and pushes all files to GitHub.
-
-### Step 7 — Append wrap session to transcript
-
-Log the end-of-session chat itself as the final section of `chatN.md`:
-
-1. Append `<!-- SECTION -->` and `## Session Wrap` followed by a blank line
+1. Append `<!-- SECTION -->` and `## Session Wrap` followed by a blank line into the last part file `/mnt/user-data/outputs/chatN-partP.md`
 2. Append all turns from this end-of-session chat — verbatim, following the standard logging process
 3. Update the chat index to add the Session Wrap entry
+
+Then combine into the final transcript. `section00.md` contains the transcript title header, which is excluded from part files, but must be included once at the top of the full transcript. For example:
+
+```bash
+cat /home/claude/section00.md /mnt/user-data/outputs/chatN-part1.md /mnt/user-data/outputs/chatN-part2.md > /mnt/user-data/outputs/chatN.md
+```
 
 Present the completed transcript, part files, and chat index to Matt.
 
