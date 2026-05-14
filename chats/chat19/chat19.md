@@ -1,11 +1,10 @@
 # Clair Obscur: Expedition 33 — Chat 19
 
 <!-- SECTION -->
+## Session Start and Wrap Procedure Review
 
 **Matt:** Hi Claude!
 Latest startup file is at https://cdn.jsdelivr.net/gh/mattachu/claude-tools@6741561/startup.md
-
----
 
 **Claude:** *[Fetched startup.md]*
 
@@ -23,8 +22,6 @@ Read the overview file and the session procedure file only. This is chat 19 (cha
 
 The latest links file is attached, but I think there's a throttling problem on my repo, so use the attached version of the overview and session procedure file instead.
 
----
-
 **Claude:** *[Read uploaded claude-expedition33.md, LINKS.md, session-procedure.md]*
 
 Good, I have all three files. What specifically do you want to tighten up in the `!wrap` procedure? Do you have particular pain points in mind, or do you want me to review the procedure end-to-end and identify where it could be improved?
@@ -34,8 +31,6 @@ Good, I have all three files. What specifically do you want to tighten up in the
 **Matt:** *[Uploaded: adjusted-wrap-steps.md (×2)]*
 
 I just did the session wrap for chat 17, and it used up loads of tokens. I think the current step 2 in the end-of-session wrap procedure is too intensive. I've come up with some changes to make it a bit more efficient (hopefully). Read the attached `adjusted-wrap-steps.md` and let me know what you think.
-
----
 
 **Claude:** Good instinct on the token problem — the current Step 2 reads every section into context for processing, which is expensive. Let me assess your proposed changes carefully.
 
@@ -75,9 +70,11 @@ With 5, you used that terminology and assumed that placeholders would be adjuste
 
 Let's work through these one at a time.
 
----
+!log
 
-**Claude:** *[Created chat19.md]*
+**Claude:** *[Turn 3. Last log: Turn 0.]*
+
+*[Created chat19.md]*
 
 Logged. Starting with issue 2 since that's the meatiest one and you've indicated you want to work through them in order.
 
@@ -96,11 +93,12 @@ One question before drafting: should the raw action list in Step 3a include the 
 
 ---
 
+<!-- SECTION -->
+## Deterministic Action Extraction with awk
+
 **Matt:** As there's a break for confirmation in between, I would make these step 3 and step 4 rather than 3a and 3b.
 
 I like the idea of including the section title. Could you construct a grep command or similar that pulls out all section title lines and all action lines and just presents those? Then the whole process is purely deterministic and all you have to do is run the same command each time and present. No thinking required. Including all section titles means you don't really need to add line numbers or additional context. It also gives me the first opportunity to see all the section titles.
-
----
 
 **Claude:** Good call — here's a command that would do it:
 
@@ -131,9 +129,46 @@ Want me to test that grep syntax is correct, or move straight to drafting the re
 
 **Matt:** I tested it on the chat 17 log. It gave me quite a long list of sections and only two action points. It would probably be better to only include sections that do have actions, and show the relevant section number + title + action points. Would that be possible with a fixed command or would that need judgement?
 
-[output pasted]
-
----
+```md
+## Session Start — Section 11 Restructuring
+## Redesigning !log — Simplified Logging and Two-Pass End-of-Session
+## Eliminating session-state.json and Introducing ACTION Flags
+## Design Finalised — !wrap Command and Compaction Handling
+## End-of-Session Procedure Design — Four Action Bins and Spot-Check
+## Session Procedure File Scope — Single File, No Escalation Command
+## Drafting Section 11 — Iterative Refinement
+## Section 11: Session Procedure
+## Section 11: Session Procedure
+## Section 11: Session Procedure
+## Testing csplit and Fixing the Section Marker Edge Case
+## Drafting session-procedure.md — First Pass and Decision to Split Files
+## Core Principle
+## File Architecture
+## Role
+## Session Start Procedure
+## Compound Log Step
+## Compaction Detection and Response
+## End-of-Session Procedure
+## Character File Update Approach
+## Changelist Format
+## Scripts
+## Key Constraints
+## Future Enhancements
+## Reviewing and Finalising session-procedure.md — Step Structure and Index Design
+## Finalising session-procedure.md — Corrections and Section Renumbering
+## Drafting session-design.md — First Pass and Corrections
+## Referencing session-design.md and Simplifying README.md
+## Starting a Session
+## Key Files
+## Scripts
+## Starting a Session
+## Repo Structure
+## Removing repo-structure.md
+**ACTION:** Remove `repo-structure.md` from the repo
+## Files Pushed and Verified — Overview Fix and !wrap Preparation
+**ACTION:** Fix Section 7 Session Start step 4: "Review Section 9 open questions" → "Review Section 6 open questions"
+## Session Wrap
+```
 
 **Claude:** Yes, that's doable with a fixed command — `awk` can handle this:
 
@@ -160,8 +195,6 @@ One gap: this doesn't include the section *number* you mentioned wanting. The se
 
 On the filename, I guess the main point of this is coming up with an action list and a changelist, so it doesn't really matter which section it came from, because you don't need to go back and read it. So the `awk` command as you have it should be fine. Then I would flag any actions that need fixing or dropping, and you would move onto step 4.
 
----
-
 **Claude:** On the token usage: the most likely culprit is the uploaded files. The session procedure and overview files are both substantial, and they're sitting in context for the whole chat. The `adjusted-wrap-steps.md` added more. Uploaded file content counts against your context limit just like conversation turns do, and it accumulates — it doesn't drop out after you've read it.
 
 Starting a new chat would reset that. You'd just need to re-upload the adjusted wrap steps doc and paste a quick summary of where we've got to. We haven't changed any files yet, so nothing would be lost.
@@ -172,9 +205,10 @@ Should I draft the revised Step 3 and Step 4 text before you decide whether to c
 
 ---
 
-**Matt:** I subscribed to Pro because I've been using you a lot recently. Let's draft revised step 3 and 4 then move to a new chat.
+<!-- SECTION -->
+## Drafting Revised Steps 3 and 4
 
----
+**Matt:** I subscribed to Pro because I've been using you a lot recently. Let's draft revised step 3 and 4 then move to a new chat.
 
 **Claude:** **Revised Step 3 — Pull and present raw actions**
 
@@ -185,8 +219,6 @@ awk '/^## /{section=$0; found=0} /^\*\*ACTION:/{if(!found){print section; found=
 ```
 
 Present the output to Matt and stop. Matt reviews and flags any actions to drop or modify before continuing.
-
----
 
 **Revised Step 4 — Generate action list and changelist**
 
@@ -229,11 +261,7 @@ and
 
 Matt runs `scripts/apply_changelist.py` on the changelist, makes any manual changes, and pushes all files to GitHub.
 
----
-
 **Claude:** Not intentional — I was compressing without flagging it. Those details are all worth keeping. The chat-index note in particular is important guidance that affects output quality. Restored:
-
----
 
 **Revised Step 4 — Generate action list and changelist**
 
@@ -260,9 +288,10 @@ Present the in-game actions checklist and the changelist file to Matt. Matt runs
 
 ---
 
-**Matt:** Good to move to new chat. Do you want to draft a briefing block and tell me what files to share or not share?
+<!-- SECTION -->
+## Handoff to New Chat
 
----
+**Matt:** Good to move to new chat. Do you want to draft a briefing block and tell me what files to share or not share?
 
 **Claude:** Yes — here's a briefing block to paste at the start of the new chat:
 
@@ -292,4 +321,74 @@ Present the in-game actions checklist and the changelist file to Matt. Matt runs
 
 **Matt:** !close
 
+**Claude:** *[Turn 8. Last log: Turn 3.]*
+
+Running final `!log` first... Now the verbatim check — sampling turns from beginning, middle, and end... Verbatim check: **Pass** on all three samples. Beginning, middle, and end all match context accurately... Done. See you in the next chat.
+
 ---
+
+<!-- SECTION -->
+## Session Wrap
+
+**Matt:** Hi Claude!
+Latest startup file is at https://cdn.jsdelivr.net/gh/mattachu/claude-tools@6741561/startup.md
+This is a wrap session for Expedition 33 chat 19. Fetch https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@8a48750d/reference/session-procedure.md and run !wrap steps
+
+**Claude:** *[Fetched startup.md]*
+*[Fetched session-procedure.md]*
+
+Startup file and session procedure both read. This is a wrap session for chat 19.
+
+Ready to begin **Step 1**. Please upload `chat19.md` and I'll split it into sections and propose part grouping.
+
+---
+
+**Matt:** *[Uploaded: chat19.md]*
+
+**Claude:** 4 sections (excluding title header), 318 lines total. That's well under the 500–600 line target, so I'd suggest a single part:
+
+- **Part 1: sections 1–4 (318 lines)**
+
+Confirm and I'll proceed with Step 2.
+
+---
+
+**Matt:** Ok, in that case it doesn't even need part files. I know that goes against the procedure! Skip the "Part Files (Claude-readable)" section in the index and skip the part headings in step 2a. For step 5, concatenate all sections together into a new `chat19.md` and add the session wrap directly to that file.
+
+**Claude:** Got it — single part, no part files. Proceeding with Step 2.
+
+*[Read section01.md–section04.md]*
+*[Created chat19-index.md]*
+
+Step 2 complete. Now **Step 3 — Pull raw actions:**
+
+No ACTION flags in chat 19 — all `**ACTION:**` hits are example text quoted within the conversation, not actual flagged decisions.
+
+**Step 3 result: zero ACTION flags in chat 19.** This was a design/procedure session with no gameplay actions or data changes.
+
+Proceeding to **Step 4** — since there are no actions to bin, the changelist reduces to a new row for `chats/chat-index.md`. Fetching chat-index now.
+
+*[Fetched chats/chat-index.md]*
+
+Two things to flag before you run this:
+
+1. **Chat 18 is absent from the index.** The `AFTER:` in the changelist points to the chat 17 row, so chat 19 will be inserted immediately after it. If chat 18 gets added later you'll need to reorder manually, or adjust `apply_changelist.py`'s insertion to append to the table rather than insert after a specific row.
+
+2. **The FILE block uses `AFTER:` for a table row insertion** — I'm not 100% certain `apply_changelist.py` handles mid-table `AFTER:` insertions. If it doesn't, this will need a manual edit. Worth checking.
+
+*[Created chat19-changelist.txt]*
+
+---
+
+**Matt:** I have already made the changes to session procedure, so the only change is the chat index row. https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@8a48750d/chats/chat-index.md
+
+**Claude:** *[Fetched chats/chat-index.md]*
+
+*[Created chat19-changelist.txt]*
+
+Chat 18 absent from index noted. Changelist contains one FILE block — new chat 19 row in chat-index.md.
+
+Proceeding to Step 5 — concatenating sections and logging session wrap.
+
+*[Concatenated sections into chat19.md]*
+*[Appended Session Wrap section]*
