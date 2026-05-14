@@ -1,0 +1,180 @@
+FILE: overview/claude-expedition33.md
+SECTION: ## Section 7: Session Procedure > ### Commands
+CONTENT:
+### Commands
+
+Matt types these commands to trigger specific actions:
+
+`!log` — log conversation to transcript, following the logging process below
+
+`!check` — critical review of Claude's most recent response. Does not trigger a log write.
+
+`!close` — end-of-session for the current chat; follow the Close Steps below
+
+`!wrap` — full end-of-session pass; run in a separate chat with the transcript uploaded; fetch `reference/session-procedure.md` and follow the steps there
+
+### Close Steps
+
+1. Run `!log` to complete the transcript
+2. Sample 3–4 turns spread across the transcript file (beginning, middle, end) — read each from disk, compare against context, report pass/fail per sample
+3. Present `chatN.md` and stop
+
+---
+
+FILE: reference/session-procedure.md
+SECTION: ## Commands
+CONTENT:
+## Commands
+
+`!log` — log conversation to transcript; follow Logging Process below
+`!check` — critical review of Claude's most recent response; does not trigger a log write
+`!close` — end-of-session for the current chat; follow Close Steps below
+`!wrap` — full end-of-session pass; run in a separate chat with the transcript uploaded; fetch this file and follow End-of-Session Steps below
+
+---
+
+FILE: reference/session-procedure.md
+SECTION: ## Close Steps
+CONTENT:
+## Close Steps
+
+Triggered by `!close` in the current session chat.
+
+1. Run `!log` to complete the transcript
+2. Sample 3–4 turns spread across the transcript file (beginning, middle, end) — read each from disk, compare against context, report pass/fail per sample
+3. Present `chatN.md` and stop
+
+---
+
+FILE: reference/session-procedure.md
+SECTION: ## End-of-Session Steps
+CONTENT:
+## End-of-Session Steps
+
+These steps run in a separate chat after `!close` completes in the original session chat. Upload `chatN.md`, fetch this file, then follow these steps in order, stopping for Matt's confirmation between each major step.
+
+### Step 1 — Split transcript into sections and plan part grouping
+
+Run from `/home/claude/` as working directory:
+
+```bash
+cp /mnt/user-data/uploads/chatN.md /home/claude/chatN.md
+csplit /home/claude/chatN.md '/^<!-- SECTION -->$/' '{*}' --prefix=/home/claude/section --suffix-format='%02d.md'
+```
+
+`section00.md` is the transcript title header — skip it. Sections begin at `section01.md`.
+
+Report section count, count lines in all sections, and propose part grouping targeting approximately 500–600 lines per part (e.g. "8 sections found. Part 1: sections 1–4 (487 lines), Part 2: sections 5–8 (521 lines)").
+
+Stop and confirm grouping with Matt before continuing.
+
+### Step 2 — Process sections one at a time
+
+For each section from `section01.md` onward:
+
+**a. Section title**
+Write a short descriptive title for this section (unique within the transcript; qualify if needed, e.g. "Verso Build — Pre-Sprong" / "Verso Build — Post-Sprong"). Insert it into the section file immediately after the `<!-- SECTION -->` marker:
+
+```
+<!-- SECTION -->
+## Section Title
+```
+
+**b. Index entry**
+Record in memory for each section (accumulating for Step 4 assembly):
+- Which part this section belongs to (Part 1, Part 2, etc.)
+- Section title
+- 2–3 short sentences covering the topic and key decisions. Do not list every item discussed.
+
+**c. Categorise ACTION flags**
+Scan the section for `**ACTION:**` flags. Reconcile against context — if a later exchange in the section modifies or retracts a flag, adjust accordingly. Add confirmed actions to the appropriate bin:
+
+- **In-game actions** — things Matt needs to do in the game before the next session
+- **Data changes** — updates to JSON data files (→ `DATA:` blocks in changelist)
+- **File changes** — updates to Markdown files (→ `FILE:` blocks in changelist)
+- **Open questions** — items to add to Section 6 of the overview
+
+Report section title and action count to Matt after each section. Continue to next section.
+
+Confirm with Matt when all sections are processed.
+
+### Step 3 — Combine into part files
+
+For each part, concatenate its section files:
+
+```bash
+cat /home/claude/section01.md /home/claude/section02.md /home/claude/section03.md /home/claude/section04.md > /mnt/user-data/outputs/chatN-part1.md
+```
+
+Repeat for each part.
+
+### Step 4 — Create index file
+
+Write `/mnt/user-data/outputs/chatN-index.md` using the index entries built in Step 2, following the Index File Format section below. Construct jsDelivr URLs and section anchors at this point.
+
+### Step 5 — Generate changelist
+
+Work through the action bins and generate change blocks for `chatN-changelist.md`. Fetch each file that has confirmed changes before writing its block.
+
+- **Data changes** → `DATA:` blocks (one per field change)
+- **File changes** → `FILE:` blocks (one per section replacement)
+- **Open questions** → `FILE:` block targeting Section 6 of the overview
+- Processing order: `DATA:` blocks first, then `FILE:` blocks
+
+Also include:
+- New row appended to `chats/chat-index.md` (fetch existing file to match style — concise prose covering topics, decisions, infrastructure changes; do not generate mechanically from action list)
+- Any updates to Section 6 open questions (even if not specifically flagged)
+- Any new entries for `reference/historical-errors.md` if significant errors were made this session
+
+See Changelist Format below for block syntax.
+
+### Step 6 — Present to Matt
+
+**In-game actions checklist** (from in-game actions bin):
+
+```
+## In-Game Actions
+
+- [ ] Action 1
+- [ ] Action 2
+```
+
+**Changelist** — present file for Matt to review. Matt runs `scripts/apply_changelist.py` on the changelist, makes any manual changes, and pushes all files to GitHub.
+
+### Step 7 — Append wrap session to transcript
+
+Log the end-of-session chat itself as the final section of `chatN.md`:
+
+1. Append `<!-- SECTION -->` and `## Session Wrap` followed by a blank line
+2. Append all turns from this end-of-session chat — verbatim, following the standard logging process. Include the spot-check report from the `!close` step if it was reported in the transcript.
+3. Update the chat index to add the Session Wrap entry
+
+Present the completed transcript, part files, and chat index to Matt.
+
+---
+
+FILE: reference/session-procedure.md
+SECTION: ## Mid-Session Escalation
+CONTENT:
+## Mid-Session Escalation
+
+If the current model is clearly struggling — complex multi-step reasoning, build optimisation across characters, or compaction — switch to a more capable model. Either switch in-chat or start a new chat and paste the LINKS file and ask for a session summary to reconstruct context. Fetch this file if the session procedure is relevant to the work continuing in the new model.
+
+If compaction occurs and is noticed in the UI: move to `!close` and create new chat, rather than continuing.
+
+---
+
+FILE: reference/session-design.md
+SECTION: ## Key Constraints
+CONTENT:
+## Key Constraints
+
+- Claude cannot intercept its own output stream — transcripts are written explicitly at each `!log` step
+- SSH key is not accessible to Claude — `git push` is always done by Matt
+- Compaction is detected visually in the UI, not programmatically; can be verified by checking `/mnt/transcripts/` for files — if noticed, trigger `!close` immediately
+- `###` heading uniqueness within a `##` parent must be maintained for the updater script
+- Part file split targets 500–600 lines per part; grouping is determined by the end-of-session pass
+- Transcripts must be written verbatim — both Matt's turns and Claude's turns, including all pasted content
+- Bracket notation is for tool calls only — `*[Fetched X]*`, `*[Created Y]*`. Never use brackets to represent substantive response text
+- The `<!-- SECTION -->` marker must appear on a line by itself (no surrounding text) so the anchored `csplit` pattern matches correctly
+- Changelists contain only DATA: and FILE: blocks — no instructions, notes, or commentary
