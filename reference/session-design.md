@@ -235,7 +235,7 @@ CONTENT:
 
 - Claude cannot intercept its own output stream — transcripts are written explicitly at each `!log` step
 - SSH key is not accessible to Claude — `git push` is always done by Matt
-- Compaction is detected visually in the UI, not programmatically; can be verified by checking `/mnt/transcripts/` for files — if noticed, trigger `!wrap` immediately
+- Compaction is detected visually in the UI, not programmatically; can be verified by checking `/mnt/transcripts/` for files — if noticed, trigger `!close` immediately
 - `###` heading uniqueness within a `##` parent must be maintained for the updater script
 - Part file split targets 500–600 lines per part; grouping is determined by the end-of-session pass
 - Transcripts must be written verbatim — both Matt's turns and Claude's turns, including all pasted content

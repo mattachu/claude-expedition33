@@ -204,11 +204,13 @@ When a decision, in-game action, data change, or open question arises, write `**
 
 Matt types these commands to trigger specific actions:
 
-`!log` — log conversation to transcript, following logging process below
+`!log` — log conversation to transcript, following the logging process below
 
 `!check` — critical review of Claude's most recent response. Does not trigger a log write.
 
-`!wrap` — fetch `reference/session-procedure.md` and follow the end-of-session steps.
+`!close` — end-of-session for the current chat; follow the Close Steps below
+
+`!wrap` — full end-of-session pass; run in a separate chat with the transcript uploaded; fetch `reference/session-procedure.md` and follow the steps there
 
 ### Logging process
 
@@ -222,3 +224,9 @@ Matt types these commands to trigger specific actions:
 **Bracket notation:** for tool calls only: `*[Fetched X]*`, `*[Created file Y]*`. Never use brackets to summarise substantive response text.
 
 **Lists:** If Matt’s turn begins with a list, insert a blank line between `**Matt:**` and the first list item so Markdown renders correctly.
+
+### Close Steps
+
+1. Complete transcript: run a final `!log` step
+2. Verbatim check: sample 3–4 turns spread across the transcript file (beginning, middle, end) — read each from disk, compare against context, report pass/fail per sample
+3. Output transcript: present `chatN.md` and stop

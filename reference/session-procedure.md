@@ -31,7 +31,8 @@ Display `*[Turn N. Last log: Turn L.]*` at the top of every Claude response. Tra
 
 `!log` — log conversation to transcript; follow Logging Process below  
 `!check` — critical review of Claude's most recent response; does not trigger a log write  
-`!wrap` — end-of-session; fetch this file and follow End-of-Session Steps below  
+`!close` — end-of-session for the current chat; follow Close Steps below  
+`!wrap` — full end-of-session pass; run in a separate chat with the transcript uploaded; fetch this file and follow End-of-Session Steps below  
 
 ---
 
@@ -70,20 +71,30 @@ Triggered by `!log`. Two steps only:
 
 If the current model is clearly struggling — complex multi-step reasoning, build optimisation across characters, or compaction — switch to a more capable model. Either switch in-chat or start a new chat and paste the LINKS file and ask for a session summary to reconstruct context. Fetch this file if the session procedure is relevant to the work continuing in the new model.
 
-If compaction occurs and is noticed in the UI: move to `!wrap` and create new chat, rather than continuing.
+If compaction occurs and is noticed in the UI: move to `!close` and create new chat, rather than continuing.
+
+---
+
+## Close Steps
+
+Triggered by `!close` in the current session chat.
+
+1. Complete transcript: run a final `!log` step
+2. Verbatim check: sample 3–4 turns spread across the transcript file (beginning, middle, end) — read each from disk, compare against context, report pass/fail per sample
+3. Output transcript: present `chatN.md` and stop
 
 ---
 
 ## End-of-Session Steps
 
-Triggered by `!wrap`. Fetch this file if not already in context. Then follow these steps in order, stopping for Matt's confirmation between each major step.
+These steps run in a separate chat after `!close` completes in the original session chat. Upload `chatN.md`, fetch this file, then follow these steps in order, stopping for Matt's confirmation between each major step.
 
 ### Step 1 — Split transcript into sections and plan part grouping
 
 Run from `/home/claude/` as working directory:
 
 ```bash
-cp /mnt/user-data/outputs/chatN.md /home/claude/chatN.md
+cp /mnt/user-data/uploads/chatN.md /home/claude/chatN.md
 csplit /home/claude/chatN.md '/^<!-- SECTION -->$/' '{*}' --prefix=/home/claude/section --suffix-format='%02d.md'
 ```
 
@@ -97,10 +108,7 @@ Stop and confirm grouping with Matt before continuing.
 
 For each section from `section01.md` onward:
 
-**a. Verbatim spot-check**  
-Pick one Claude turn from the section at random. Compare against context memory of this chat. If it reads as a summary, paraphrase, or contains bracket notation representing substantive content, flag immediately and stop — do not proceed until Matt has reviewed. If clean, continue.
-
-**b. Section title**  
+**a. Section title**
 Write a short descriptive title for this section (unique within the transcript; qualify if needed, e.g. "Verso Build — Pre-Sprong" / "Verso Build — Post-Sprong"). Insert it into the section file immediately after the `<!-- SECTION -->` marker:
 
 ```
@@ -108,13 +116,13 @@ Write a short descriptive title for this section (unique within the transcript; 
 ## Section Title
 ```
 
-**c. Index entry**  
+**b. Index entry**
 Record in memory for each section (accumulating for Step 4 assembly):
 - Which part this section belongs to (Part 1, Part 2, etc.)
 - Section title
 - 2–3 short sentences covering the topic and key decisions. Do not list every item discussed.
 
-**d. Categorise ACTION flags**  
+**c. Categorise ACTION flags**
 Scan the section for `**ACTION:**` flags. Reconcile against context — if a later exchange in the section modifies or retracts a flag, adjust accordingly. Add confirmed actions to the appropriate bin:
 
 - **In-game actions** — things Matt needs to do in the game before the next session
@@ -142,7 +150,7 @@ Write `/mnt/user-data/outputs/chatN-index.md` using the index entries built in S
 
 ### Step 5 — Generate changelist
 
-Work through the action bins and generate change blocks for `chatN-changelist.md`. Fetch each file that has confirmed changes before writing its block.
+Work through the action bins and generate change blocks for `chatN-changelist.txt`. Fetch each file that has confirmed changes before writing its block.
 
 - **Data changes** → `DATA:` blocks (one per field change)
 - **File changes** → `FILE:` blocks (one per section replacement)
@@ -171,10 +179,10 @@ See Changelist Format below for block syntax.
 
 ### Step 7 — Append wrap session to transcript
 
-Log the `!wrap` session itself as the final section of `chatN.md`:
+Log the end-of-session chat itself as the final section of `chatN.md`:
 
 1. Append `<!-- SECTION -->` and `## Session Wrap` followed by a blank line
-2. Append all turns from `!wrap` onward — verbatim, following the standard logging process
+2. Append all turns from this end-of-session chat — verbatim, following the standard logging process
 3. Update the chat index to add the Session Wrap entry
 
 Present the completed transcript, part files, and chat index to Matt.
