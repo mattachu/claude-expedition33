@@ -1,10 +1,9 @@
 # Clair Obscur: Expedition 33 — Chat 20
 
 <!-- SECTION -->
+## Session Procedure Redesign — Issues 3, 4 and 5
 
-**Matt:**
-
-[uploaded adjusted-wrap-steps.md and session-procedure.md]
+**Matt:** *[uploaded adjusted-wrap-steps.md and session-procedure.md]*
 
 **Context:** We're revising the `!wrap` session procedure for the Clair Obscur: Expedition 33 project. This is a design session, not a gameplay session — no need to fetch the overview or playthrough data.
 
@@ -21,11 +20,7 @@ Two steps have been finalised:
 - **Issue 4** — Part Files list in the index: where to fill it in (end of Step 2 or Step 4?).
 - **Issue 5** — Making placeholder substitution (e.g. `chatN` → `chat18`) more explicit in the procedure text.
 
-**Claude:**
-
-Let me work through the three issues in turn.
-
----
+**Claude:** Let me work through the three issues in turn.
 
 **Issue 3 — Step ordering and session wrap logging**
 
@@ -55,15 +50,11 @@ This means the step order should be: Step 5 (concatenate parts without wrap) →
 
 This avoids rebuilding any file twice.
 
----
-
 **Issue 4 — Part Files list in index**
 
 The part file list requires knowing (a) how many parts there are and (b) the descriptive title for each part. Both are known at the end of Step 2 (grouping is confirmed before Step 2 begins; descriptive titles can be written as each part's sections are processed). So the Part Files list *can* be filled in at the end of Step 2.
 
 However, the jsDelivr URLs need the correct filenames, which are deterministic from the chat number — so those can also be written in Step 2. I'd suggest: at the end of Step 2, write the complete index file including the Part Files list, with a `*(Session Wrap entry to be added)*` placeholder in the Table of Contents for the final section. The wrap entry gets appended in the final step. This avoids a second index-rewrite pass and keeps the Part Files list out of Step 4 (which is already doing changelist work).
-
----
 
 **Issue 5 — Placeholder substitution**
 
@@ -72,8 +63,6 @@ The current text uses `chatN` throughout but never says explicitly "replace N wi
 > **Throughout these steps, replace `N` with the actual chat number (e.g. `chat18`, `part1`, `section01`). This applies to filenames, paths, URLs, and index content.**
 
 And the step that determines N (currently implicit — it's derived from LINKS.md in the session start, but the wrap chat doesn't fetch LINKS.md) needs to be made explicit. The wrap chat receives `chatN.md` as an upload — the filename itself gives N. Step 1 should include: "Determine N from the uploaded filename before running any commands."
-
----
 
 **Summary of proposed resolutions**
 
@@ -87,17 +76,16 @@ Want me to draft the revised step text incorporating all three, or work through 
 
 ---
 
-**Matt:**
+<!-- SECTION -->
+## Step 5 Redraft — Session Wrap Ordering
 
-Let's do these one at a time. Issue 3 — my idea was to simply swap the order in step 5:
+**Matt:** Let's do these one at a time. Issue 3 — my idea was to simply swap the order in step 5:
 
 1. For each part, concatenate its section files
 2. Append session wrap into the final part file + add row to index
 3. Combine all parts into the final transcript
 
-**Claude:**
-
-That's cleaner than my approach — fewer files, no `section_wrap.md` intermediate, and the wrap lands in the right part naturally.
+**Claude:** That's cleaner than my approach — fewer files, no `section_wrap.md` intermediate, and the wrap lands in the right part naturally.
 
 One thing to verify: step 2 appends directly into the final part file in `/mnt/user-data/outputs/`, so by the time step 3 runs, that part file already contains the wrap. The final cat command then just combines parts as-is, with `section00.md` prepended. No file gets written twice.
 
@@ -109,52 +97,40 @@ Does that match your intent, or were you thinking the append goes into the last 
 
 ---
 
-**Matt:**
+**Matt:** That matches my intention. In the previous chat, other Claude wasn't sure why I had added `section00.md` to the final concatenation. Worth making that explicit too. Can you redraft step 5?
 
-That matches my intention. In the previous chat, other Claude wasn't sure why I had added `section00.md` to the final concatenation. Worth making that explicit too. Can you redraft step 5?
+**Claude:** Here's a redraft of Step 5:
 
-**Claude:**
-
-Here's a redraft of Step 5:
-
----
-
-### Step 5 — Complete transcript
-
-For each part, concatenate its section files into a part file, for example:
-
-```bash
-cat /home/claude/section01.md /home/claude/section02.md /home/claude/section03.md /home/claude/section04.md > /mnt/user-data/outputs/chatN-part1.md
-cat /home/claude/section05.md /home/claude/section06.md > /mnt/user-data/outputs/chatN-part2.md
-```
-
-Log the end-of-session chat itself as the final section. Append directly into the last part file (already written above — do not re-concatenate):
-
-1. Append `<!-- SECTION -->` and `## Session Wrap` followed by a blank line into `/mnt/user-data/outputs/chatN-partP.md`
-2. Append all turns from this end-of-session chat — verbatim, following the standard logging process
-3. Update the chat index to add the Session Wrap entry
-
-Then combine into the final transcript. `section00.md` contains the transcript title header, which is excluded from part files but must be included once at the top of the full transcript:
-
-```bash
-cat /home/claude/section00.md /mnt/user-data/outputs/chatN-part1.md /mnt/user-data/outputs/chatN-part2.md > /mnt/user-data/outputs/chatN.md
-```
-
-Present the completed transcript, part files, and chat index to Matt.
-
----
+> ### Step 5 — Complete transcript
+> 
+> For each part, concatenate its section files into a part file, for example:
+> 
+> ```bash
+> cat /home/claude/section01.md /home/claude/section02.md /home/claude/section03.md /home/claude/section04.md > /mnt/user-data/outputs/chatN-part1.md
+> cat /home/claude/section05.md /home/claude/section06.md > /mnt/user-data/outputs/chatN-part2.md
+> ```
+> 
+> Log the end-of-session chat itself as the final section. Append directly into the last part file (already written above — do not re-concatenate):
+> 
+> 1. Append `<!-- SECTION -->` and `## Session Wrap` followed by a blank line into `/mnt/user-data/outputs/chatN-partP.md`
+> 2. Append all turns from this end-of-session chat — verbatim, following the standard logging process
+> 3. Update the chat index to add the Session Wrap entry
+> 
+> Then combine into the final transcript. `section00.md` contains the transcript title header, which is excluded from part files but must be included once at the top of the full transcript:
+> 
+> ```bash
+> cat /home/claude/section00.md /mnt/user-data/outputs/chatN-part1.md /mnt/user-data/outputs/chatN-part2.md > /mnt/user-data/outputs/chatN.md
+> ```
+> 
+> Present the completed transcript, part files, and chat index to Matt.
 
 The rationale sentence for `section00.md` might be slightly wordy — happy to trim it if you'd prefer something shorter.
 
 ---
 
-**Matt:**
+**Matt:** I think I'll just take out the bit in brackets. Is it clear from context that the `cat` statements are examples and need to be adjusted for the actual part arrangements?
 
-I think I'll just take out the bit in brackets. Is it clear from context that the `cat` statements are examples and need to be adjusted for the actual part arrangements?
-
-**Claude:**
-
-Reasonably clear, but not completely — the `cat` commands look like fixed instructions rather than examples, especially since the first one has four specific section files listed. A one-line note before the first command would remove any ambiguity:
+**Claude:** Reasonably clear, but not completely — the `cat` commands look like fixed instructions rather than examples, especially since the first one has four specific section files listed. A one-line note before the first command would remove any ambiguity:
 
 > Adjust the following commands for the actual number of parts and sections:
 
@@ -162,23 +138,18 @@ Short and unambiguous. Want me to produce the full redraft with that added and t
 
 ---
 
-**Matt:**
+**Matt:** Or just "for example:" at the end of that last line, maybe? How precise do we need to be?
 
-Or just "for example:" at the end of that last line, maybe? How precise do we need to be?
-
-**Claude:**
-
-"For example:" works fine. The step already says "for each part" which implies repetition, and Claude will know the actual grouping from Step 1. That's precise enough.
+**Claude:** "For example:" works fine. The step already says "for each part" which implies repetition, and Claude will know the actual grouping from Step 1. That's precise enough.
 
 ---
 
-**Matt:**
+<!-- SECTION -->
+## Issue 4 — Part Files Placeholder and sed Substitution
 
-Issue 4: A previous draft held all the section titles and summaries either in memory or in the chat output, which burned through tokens. The new writing direct to index is intended to avoid that. I think we add an extra instruction somewhere to use `sed` or something similar to replace the "(part list to be added later)" placeholder with the actual part list. The end of step 2 seems a sensible place. I don't think we need to worry about including the session wrap section in the part files list — it will always be at the end, and isn't likely to be something we need to read again in future.
+**Matt:** Issue 4: A previous draft held all the section titles and summaries either in memory or in the chat output, which burned through tokens. The new writing direct to index is intended to avoid that. I think we add an extra instruction somewhere to use `sed` or something similar to replace the "(part list to be added later)" placeholder with the actual part list. The end of step 2 seems a sensible place. I don't think we need to worry about including the session wrap section in the part files list — it will always be at the end, and isn't likely to be something we need to read again in future.
 
-**Claude:**
-
-Agreed on all counts. The placeholder replacement fits naturally at the end of Step 2 once all sections are processed and part titles are known. Something like:
+**Claude:** Agreed on all counts. The placeholder replacement fits naturally at the end of Step 2 once all sections are processed and part titles are known. Something like:
 
 > Once all sections are processed, replace the `(part list to be added later)` placeholder in the index file with the actual part list using `sed` or a direct file edit.
 
@@ -188,79 +159,61 @@ Want me to draft the full replacement text for the end of Step 2, or hold that u
 
 ---
 
-**Matt:**
+**Matt:** Yes, draft that now please. Probably worth being explicit about what goes in the part list, or directing to the index file format below.
 
-Yes, draft that now please. Probably worth being explicit about what goes in the part list, or directing to the index file format below.
+**Claude:** Here's the addition for the end of Step 2:
 
-**Claude:**
-
-Here's the addition for the end of Step 2:
-
----
-
-Once all sections are processed, replace the `(part list to be added later)` placeholder in the index file with the actual part list using `sed` or direct file edit. Follow the Part Files list format in the Index File Format section below. For example:
-
-```bash
-sed -i 's/(part list to be added later)/* Part 1 — Opening Title: [Raw](https:\/\/cdn.jsdelivr.net\/gh\/mattachu\/claude-expedition33@main\/chats\/chatN\/chatN-part1.md)\n* Part 2 — Closing Title: [Raw](https:\/\/cdn.jsdelivr.net\/gh\/mattachu\/claude-expedition33@main\/chats\/chatN\/chatN-part2.md)/' /mnt/user-data/outputs/chatN-index.md
-```
-
-Or write the part list to a temporary file and use `sed -i` with a file reference if the substitution string is unwieldy.
-
----
+> Once all sections are processed, replace the `(part list to be added later)` placeholder in the index file with the actual part list using `sed` or direct file edit. Follow the Part Files list format in the Index File Format section below. For example:
+>
+> ```bash
+> sed -i 's/(part list to be added later)/* Part 1 — Opening Title: [Raw](https:\/\/cdn.jsdelivr.net\/gh\/mattachu\/claude-expedition33@main\/chats\/chatN\/chatN-part1.md)\n* Part 2 — Closing Title: [Raw](https:\/\/cdn.jsdelivr.net\/gh\/mattachu\/claude-expedition33@main\/chats\/chatN\/chatN-part2.md)/' /mnt/user-data/outputs/chatN-index.md
+> ```
+>
+> Or write the part list to a temporary file and use `sed -i` with a file reference if the substitution string is unwieldy.
 
 The inline `sed` will get messy with more than two parts or long titles — hence the fallback suggestion. Alternatively, we could drop the `sed` example entirely and just say "replace the placeholder using `sed` or direct file edit" and trust Claude to pick the right approach. Up to you how prescriptive to be.
 
 ---
 
-**Matt:**
-
-I think in this context being more prescriptive actually saves tokens at the time. I think I would add "using `sed` or direct file edit" to the initial instruction, but keep the example. I'll merge that myself.
+**Matt:** I think in this context being more prescriptive actually saves tokens at the time. I think I would add "using `sed` or direct file edit" to the initial instruction, but keep the example. I'll merge that myself.
 
 !log
 
-**Claude:**
-
-Understood — more prescriptive saves Claude having to reason about approach at wrap time.
+**Claude:** Understood — more prescriptive saves Claude having to reason about approach at wrap time.
 
 Ready for Issue 5 when you are.
 
 ---
 
-**Matt:**
+<!-- SECTION -->
+## Issue 5 — Placeholder Substitution Notice
 
-!log. This is chat 20.
+**Matt:** !log. This is chat 20.
 
-**Claude:**
-
-Noted — this is chat 20. Ready for Issue 5 when you are.
+**Claude:** Noted — this is chat 20. Ready for Issue 5 when you are.
 
 ---
 
-**Matt:**
+**Matt:** Ah, you don't have the overview, so you don't know what !log means.
 
-Ah, you don't have the overview, so you don't know what !log means.
+*[pasted Section 7 of the overview]*
 
-[pasted Section 7 of the overview]
-
-**Claude:**
-
-*[Turn 1. Last log: Turn 0.]*
+**Claude:** *[Turn 1. Last log: Turn 0.]*
 
 Got it — I need to create the transcript file and log. This is chat 20, so:
 
 *[Created /mnt/user-data/outputs/chat20.md]*
 
-Now logging all turns so far:
+Now logging all turns so far... Done.
 
 ---
 
-**Matt:**
+<!-- SECTION -->
+## Final Review — Adjusted Wrap Steps
 
-Issue 5 — I think your idea of a single instruction at the top is the right answer. Might be worth mentioning that `P` is a placeholder for the part file number too, maybe?
+**Matt:** Issue 5 — I think your idea of a single instruction at the top is the right answer. Might be worth mentioning that `P` is a placeholder for the part file number too, maybe?
 
-**Claude:**
-
-*[Turn 2. Last log: Turn 1.]*
+**Claude:** *[Turn 2. Last log: Turn 1.]*
 
 Agreed — `P` appears in the step 5 text (`chatN-partP.md`) without explanation, so worth covering both in the same notice. Something like:
 
@@ -270,15 +223,11 @@ Does that cover it, or would you split the "determine N" instruction into Step 1
 
 ---
 
-**Matt:**
+**Matt:** No, I think that's good as is. Here is the file where I've put all those changes together. Is everything included? Shall we do a final review?
 
-[uploaded adjusted-wrap-steps.md]
+*[uploaded adjusted-wrap-steps.md]*
 
-No, I think that's good as is. Here is the file where I've put all those changes together. Is everything included? Shall we do a final review?
-
-**Claude:**
-
-*[Turn 2. Last log: Turn 1.]*
+**Claude:** *[Turn 2. Last log: Turn 1.]*
 
 Yes, everything is included — Issue 3 (step ordering and `section00.md` rationale), Issue 4 (placeholder replacement with `sed` example), and Issue 5 (N and P notice at the top). The wording all matches what we agreed.
 
@@ -288,13 +237,9 @@ Otherwise looks clean. Happy to do a careful read-through of the full file if yo
 
 ---
 
-**Matt:**
+**Matt:** I can  update the file manually and push to Github. Then I will test the wrap procedure for chats 18, 19 and 20. Let's have a last look through — do we think it's good to test out now? Is it significantly improved in efficiency from the previous version? Is anything from the previous version missing in the new version?
 
-I can update the file manually and push to Github. Then I will test the wrap procedure for chats 18, 19 and 20. Let's have a last look through — do we think it's good to test out now? Is it significantly improved in efficiency from the previous version? Is anything from the previous version missing in the new version?
-
-**Claude:**
-
-*[Turn 3. Last log: Turn 1.]*
+**Claude:** *[Turn 3. Last log: Turn 1.]*
 
 Working through those questions in turn.
 
@@ -323,13 +268,9 @@ The first two are significant — without those format reference sections, the c
 
 ---
 
-**Matt:**
+**Matt:** The adjusted wrap steps will replace the wrap steps section in the session procedure, so the following sections will remain the same. The `cp` command was removed intentionally, as I want to rebuild the full transcript file from the parts and not accidentally re-present the original file without the headings. Can you test a `csplit` on something that is currently in `/mnt/user-data/uploads/`?
 
-The adjusted wrap steps will replace the wrap steps section in the session procedure, so the following sections will remain the same. The `cp` command was removed intentionally, as I want to rebuild the full transcript file from the parts and not accidentally re-present the original file without the headings. Can you test a `csplit` on something that is currently in `/mnt/user-data/uploads/`?
-
-**Claude:**
-
-*[Turn 4. Last log: Turn 1.]*
+**Claude:** *[Turn 4. Last log: Turn 1.]*
 
 Good point on both — the reference sections will still be there in `session-procedure.md`, and the `cp` removal makes sense given the reconstruction approach.
 
@@ -341,13 +282,74 @@ So the file is good to test. The only thing I'd flag before you push: confirm yo
 
 ---
 
-**Matt:**
+**Matt:** !close
 
-!close
+**Claude:** *[Turn 5. Last log: Turn 1.]*
 
-**Claude:**
+Running final log first... Now verbatim check — sampling beginning, middle, and end.. All three samples pass — content matches context, verbatim throughout. Presenting transcript... Done.
 
-*[Turn 5. Last log: Turn 1.]*
+---
 
-Running final log first.
+<!-- SECTION -->
+## Session Wrap
+
+**Matt:** Hi Claude!
+Latest startup file is at https://cdn.jsdelivr.net/gh/mattachu/claude-tools@6741561/startup.md
+This is a wrap session for Expedition 33 chat 20. Fetch https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@a1ef0285/reference/session-procedure.md and run !wrap steps
+
+**Claude:** Startup file and session procedure both read. Ready to run `!wrap` steps for Chat 20.
+
+Please upload `chat20.md` and I'll begin with **Step 1** — splitting the transcript into sections and proposing part grouping.
+
+---
+
+**Matt:** *[uploaded chat20.md]*
+
+**Claude:** 5 sections (section01–05), 286 lines total. That's small enough for a single part. Proposed grouping:
+
+- **Part 1: sections 1–5 (286 lines)**
+
+Confirm this grouping and I'll proceed with Step 2.
+
+---
+
+**Matt:** Ok, in that case it doesn't even need part files. I know that goes against the procedure! Skip the "Part Files (Claude-readable)" section in the index and skip the part headings in step 2a. For step 5, concatenate all sections together into a new `chat20.md` and add the session wrap directly to that file.
+
+**Claude:** Got it — single part, no part files. Proceeding with Step 2.
+
+*[Read all five sections, created index file, inserted section titles, wrote index entries]*
+
+All sections read. Now creating the index file and writing section titles and descriptions.
+
+*[Index file created and populated with all five section entries]*
+
+Index looks good. Now Step 3 — pulling ACTION flags.
+
+*[Ran awk command — no ACTION flags found]*
+
+No ACTION flags found in the transcript — this was a pure design/discussion session with no in-game or data actions flagged.
+
+Confirming with you before proceeding to Step 4: are there any actions you want to carry forward manually (e.g. pushing the updated `adjusted-wrap-steps.md` to GitHub, or updating `session-procedure.md`)? Or shall I move straight to generating the changelist based on the session content?
+
+---
+
+**Matt:** No, I have pushed those changes already. The only change is probably the chat index table.
+
+**Claude:** Agreed. Let me fetch the current chat index to match the style.
+
+*[Fetched https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@a1ef0285/chats/chat-index.md]*
+
+Got it. Here's the new row for Chat 20:
+
+```
+| Chat 20 | [Formatted](chat20/chat20-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat20/chat20-index.md) | [chat20.md](chat20/chat20.md) | Wrap procedure redesign continued: resolved Issues 3–5 (session wrap step ordering, Part Files placeholder substitution via `sed`, N and P placeholder notice); Step 5 redrafted; `adjusted-wrap-steps.md` reviewed and approved for testing |
+```
+
+No other changelist entries needed. Shall I proceed to Step 5 — building the final transcript?
+
+---
+
+**Matt:** Yes please.
+
+**Claude:** *[Concatenated sections 01–05 into chat20.md, then appended Session Wrap section]*
 
