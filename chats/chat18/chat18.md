@@ -326,3 +326,80 @@ One thing to flag: the `apply_changelist.py` script needs the `AFTER:` insertion
 **Claude:** *[Turn 10. Last log: Turn 0.]* *[Created /mnt/user-data/outputs/chat18.md]*
 
 Running spot checks now — sampling beginning, middle, and end of transcript.
+
+---
+
+<!-- SECTION -->
+## Session Wrap
+
+**Matt:** Hi Claude!
+Latest startup file is at https://cdn.jsdelivr.net/gh/mattachu/claude-tools@6741561/startup.md
+
+**Claude:** *[Fetched startup.md]*
+
+Startup file read and confirmed. Defaults and failure mode guards are active for this session.
+
+What's today's session about?
+
+---
+
+**Matt:** This is a wrap session for Expedition 33 chat 18. Fetch https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@8a48750d/reference/session-procedure.md and run !wrap steps
+
+**Claude:** *[Fetched reference/session-procedure.md]*
+
+Session procedure fetched. This is a wrap session for **Chat 18**.
+
+Ready to begin **Step 1**. Please upload `chat18.md` and I'll split it into sections and propose part grouping.
+
+---
+
+**Matt:** *[Uploaded chat18.md]*
+
+Here is the chat transcript.
+
+**Claude:** Running Step 1 now.
+
+*[Ran csplit on chat18.md — 3 sections + title header, 328 lines total]*
+
+3 sections (excluding the title header), 328 lines total. Well under the 500–600 line threshold — **one part** is appropriate.
+
+Proposed grouping:
+- **Part 1**: Sections 1–3 (328 lines)
+
+Confirm to proceed?
+
+---
+
+**Matt:** Ok, in that case it doesn't even need part files. I know that goes against the procedure! Skip the "Part Files (Claude-readable)" section in the index and skip the part headings in step 2a. For step 5, concatenate all sections together into a new `chat18.md` and add the session wrap directly to that file.
+
+**Claude:** Got it — single part, no part files. Proceeding with Step 2.
+
+*[Read section01.md — already titled "Session Procedure Revisions — !close/!wrap Split"]*
+
+*[Read section02.md — already titled "Spot Check Strategy and Command Naming"]*
+
+*[Read section03.md — already titled "Changelist Production"]*
+
+All three sections already have titles. Now creating the index file.
+
+*[Created /mnt/user-data/outputs/chat18-index.md]*
+
+Index created. Now Step 3 — pulling ACTION flags.
+
+*[Ran awk ACTION flag extraction — no flags found]*
+
+No ACTION flags in the transcript. That's consistent with what I can see — the session was entirely discussion and changelist drafting, with the actual file changes deferred to the changelist.
+
+The effective actions are all captured in `chat18-changelist.txt` (which already exists from the original session). Do you want me to proceed to Step 4, or do you need to review/confirm the changelist content first?
+
+Also — do you still have `chat18-changelist.txt` from the original session, or do I need to reconstruct it?
+
+---
+
+**Matt:** No, I have the changelist and have in fact already applied it. Continue.
+
+**Claude:** Straight to Step 5 then.
+
+*[Concatenated section00.md + section01.md + section02.md + section03.md → chat18.md (328 lines)]*
+
+Now appending the Session Wrap section — logging this wrap chat verbatim.
