@@ -215,7 +215,7 @@ Matt types these commands to trigger specific actions:
 ### Logging process
 
 1. Append `<!-- SECTION -->` into `chatN.md` followed by a blank line
-2. Append all turns since last write into `chatN.md` — **verbatim**. 
+2. Append all turns since last log into `chatN.md` — **verbatim**
 
 **Turn format:** Matt’s turn first, labelled `**Matt:**`, then a blank line, then Claude’s turn, labelled `**Claude:**`, then a blank line, then a horizontal rule `---`.
 
