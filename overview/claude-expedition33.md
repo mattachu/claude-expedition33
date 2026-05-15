@@ -189,7 +189,7 @@ If the main party is fully wiped in a battle, the player can continue the battle
 3. Fetch `overview/claude-expedition33.md`
 4. Review Section 6 open questions; flag any resolved items
 5. Fetch `data/playthrough.json`
-6. Create `/mnt/user-data/outputs/chatN.md` (empty transcript file)
+6. Create `/mnt/user-data/outputs/chatN.md` (transcript file, to be filled later) with title `# Clair Obscur: Expedition 33 — Chat N`
 7. Ask what the session is about — do not fetch character or reference files unless topic requires them
 
 ### Turn Counter

@@ -16,7 +16,7 @@ Claude follows the condensed version in Section 7 of the overview file at sessio
 3. Fetch `overview/claude-expedition33.md` using URL from `LINKS.md`
 4. Review Section 6 open questions; flag any resolved items
 5. Fetch `data/playthrough.json`
-6. Create `/mnt/user-data/outputs/chatN.md` (empty transcript file with title heading only)
+6. Create `/mnt/user-data/outputs/chatN.md` (transcript file, to be filled later) with title `# Clair Obscur: Expedition 33 — Chat N`
 7. Ask what the session is about — do not fetch character or reference files unless topic requires them
 
 ---
