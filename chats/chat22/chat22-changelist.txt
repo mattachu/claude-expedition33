@@ -1,0 +1,451 @@
+Chat 22 Changelist
+Generated: 2026-05-15
+
+================================================================================
+DATA BLOCKS
+================================================================================
+
+--- Inventory updates ---
+
+DATA: data/playthrough.json
+PATH: inventory.colour_of_lumina
+OP: SET
+VALUE: 14
+
+DATA: data/playthrough.json
+PATH: inventory.recoats
+OP: SET
+VALUE: 36
+
+DATA: data/playthrough.json
+PATH: inventory.chroma
+OP: SET
+VALUE: 1670184
+
+DATA: data/playthrough.json
+PATH: inventory.chroma_catalyst_grandiose
+OP: SET
+VALUE: 86
+
+--- Checklist ---
+
+DATA: data/playthrough.json
+PATH: current_phase_checklist[id=purchase_charnon].done
+OP: SET
+VALUE: true
+
+--- Character levels and LP ---
+
+DATA: data/characters.json
+PATH: Maelle.level
+OP: SET
+VALUE: 94
+
+DATA: data/characters.json
+PATH: Lune.lp_total
+OP: SET
+VALUE: 175
+
+DATA: data/characters.json
+PATH: Lune.lp_used
+OP: SET
+VALUE: 175
+
+DATA: data/characters.json
+PATH: Monoco.lp_total
+OP: SET
+VALUE: 170
+
+DATA: data/characters.json
+PATH: Monoco.lp_used
+OP: SET
+VALUE: 170
+
+--- Maelle Pictos and Lumina ---
+
+DATA: data/characters.json
+PATH: Maelle.pictos_equipped
+OP: SET
+VALUE: ["Clea's Life", "Empowering Break", "Shortcut"]
+
+DATA: data/characters.json
+PATH: Maelle.lumina_extras
+OP: SET
+VALUE: [{"name": "Full Strength", "notes": "Damage bonus while on full HP — strong synergy with Clea's Life Pictos"}, {"name": "Warming Up", "notes": "Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus"}, {"name": "Gradient Break", "notes": "+50% of a Gradient Charge on Breaking a target. 5LP — Pictos slot freed by equipping Shortcut Pictos."}, {"name": "Energising Shell", "notes": "Give 2 AP on applying Shell. 10LP."}, {"name": "Powerful On Shell", "notes": "Apply Powerful on applying Shell. 10LP."}]
+
+DATA: data/characters.json
+PATH: Maelle.lp_used
+OP: SET
+VALUE: 299
+
+DATA: data/characters.json
+PATH: Maelle.stats_modified.speed
+OP: SET
+VALUE: 2446
+
+DATA: data/characters.json
+PATH: Maelle.stats_modified.crit
+OP: SET
+VALUE: "109% (approx — verify in game)"
+
+DATA: data/characters.json
+PATH: Maelle.stats_modified._note
+OP: SET
+VALUE: "Stats with Lithum (33), Clea's Life (30), Empowering Break (28), Shortcut (31) equipped. Speed and Crit approximate pending in-game verification."
+
+--- Sciel Lumina ---
+
+DATA: data/characters.json
+PATH: Sciel.lumina_extras
+OP: SET
+VALUE: [{"name": "Recovery", "notes": "Passive heal on turn start, increases survivability"}, {"name": "Accelerating Heal", "notes": "Rush on heal — synergy with Litheson AP generation"}, {"name": "Energising Heal", "notes": "2 AP on healing an ally — primary AP engine with Grim Harvest"}, {"name": "Protecting Heal", "notes": "Shell on heal"}, {"name": "Healing Tint Energy", "notes": "1 AP on Healing Tint use — small AP top-up"}, {"name": "Anti-Stun", "notes": "Immune to Stun. 5LP."}, {"name": "Empowering Dodge", "notes": "5% increased damage per consecutive dodge, stacks up to 10. 5LP. Reset behaviour on parry unconfirmed — test empirically."}, {"name": "Auto Shell", "notes": "Apply Shell for 3 turns on battle start. 10LP."}]
+
+DATA: data/characters.json
+PATH: Sciel.lp_used
+OP: SET
+VALUE: 260
+
+--- Monoco Pictos and skills ---
+
+DATA: data/characters.json
+PATH: Monoco.pictos_equipped
+OP: SET
+VALUE: ["Longer Shell", "Augmented First Strike", "Quick Break"]
+
+DATA: data/characters.json
+PATH: Monoco.skills_equipped
+OP: SET
+VALUE: ["Lancelier Impale", "Stalact Punches", "Moissonneuse Vendange", "Chalier Combo", "Grosse Tête Whack", "Potier Energy"]
+
+DATA: data/characters.json
+PATH: Monoco.stats_modified.speed
+OP: SET
+VALUE: 2848
+
+DATA: data/characters.json
+PATH: Monoco.stats_modified.crit
+OP: SET
+VALUE: "105% (approx — verify in game)"
+
+DATA: data/characters.json
+PATH: Monoco.stats_modified._note
+OP: SET
+VALUE: "Stats with Joyaro (33), Longer Shell (29), Augmented First Strike (31), Quick Break (31) equipped. Speed and Crit approximate pending in-game verification."
+
+--- Lune skills (Simon-specific) ---
+
+DATA: data/characters.json
+PATH: Lune.skills_equipped
+OP: SET
+VALUE: ["Hell", "Terraquake", "Ice Lance", "Healing Light", "Mayhem", "Elemental Genesis"]
+
+--- pictos-lumina.json equipped_by updates ---
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Gradient Break].equipped_by
+OP: SET
+VALUE: null
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Shortcut].equipped_by
+OP: SET
+VALUE: "Maelle"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Powerful Revive].equipped_by
+OP: SET
+VALUE: null
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Powerful Mark].equipped_by
+OP: SET
+VALUE: null
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Augmented First Strike].equipped_by
+OP: SET
+VALUE: "Monoco"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Augmented First Strike].level
+OP: SET
+VALUE: 31
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Augmented First Strike].stats
+OP: SET
+VALUE: {"speed": 1008, "crit": "18%"}
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Quick Break].equipped_by
+OP: SET
+VALUE: "Monoco"
+
+--- New Pictos ---
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Charging Critical", "category": ["gradient"], "effect": "+20% of a Gradient Charge on Critical Hit. Once per turn.", "lp_cost": 10, "obtained": true, "equipped_by": null, "level": 31, "stats": {"defence": 1891, "crit": "35%"}}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Charging Burn", "category": ["gradient"], "effect": "+20% of a Gradient Charge on applying Burn. Once per turn.", "lp_cost": 10, "obtained": true, "equipped_by": null, "level": 31, "stats": {"health": 3152, "speed": 639}}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Rush On Powerful", "category": ["support"], "effect": "Apply Rush on applying Powerful.", "lp_cost": 10, "obtained": true, "equipped_by": null, "level": 31, "stats": {"speed": 639, "crit": "35%"}}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Energising Turn", "category": ["ap"], "effect": "+1 AP on turn start.", "lp_cost": 20, "obtained": true, "equipped_by": null, "level": 31, "stats": {"speed": 1277}}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Energising Attack I", "category": ["ap"], "effect": "+1 AP on Base Attack.", "lp_cost": 10, "obtained": true, "equipped_by": null, "level": 31, "stats": {"speed": 958, "crit": "18%"}}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Energising Parry", "category": ["ap"], "effect": "+1 AP on successful Parry.", "lp_cost": 15, "obtained": true, "equipped_by": null, "level": 31, "stats": {"health": 6303}}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Augmented First Strike", "category": ["damage"], "effect": "50% increased damage on the first hit. Once per battle.", "lp_cost": 5, "obtained": true, "equipped_by": "Monoco", "level": 31, "stats": {"speed": 1008, "crit": "18%"}}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Aegis Revival", "category": ["survival"], "effect": "+1 Shield on being revived.", "lp_cost": 5, "obtained": true, "equipped_by": null, "level": 31, "stats": {"defence": 1990, "speed": 672}}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Solo Fighter", "category": ["solo", "damage"], "effect": "Deal 50% more damage if fighting alone.", "lp_cost": 1, "obtained": true, "equipped_by": null, "level": 31, "stats": {"health": 3317, "defence": 1990}}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Sweet Kill", "category": ["healing"], "effect": "Recover 50% Health on killing an enemy.", "lp_cost": 5, "obtained": true, "equipped_by": null, "level": 31, "stats": {"speed": 672, "crit": "36%"}}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Painerim", "category": [], "effect": null, "lp_cost": null, "obtained": true, "equipped_by": null, "level": 31, "notes": "Stub — stats and effect not recorded (no tooltip screenshot)"}
+
+--- Reserve team core Lumina set update ---
+
+DATA: data/pictos-lumina.json
+PATH: core_lumina_suite.reserve_team.total_lp
+OP: SET
+VALUE: 165
+
+DATA: data/pictos-lumina.json
+PATH: core_lumina_suite.reserve_team.entries
+OP: SET
+VALUE: [{"name": "Painted Power", "lp": 5}, {"name": "Energising Turn", "lp": 20}, {"name": "Cheater", "lp": 40}, {"name": "Shortcut", "lp": 5}, {"name": "Survivor", "lp": 20}, {"name": "Recovery", "lp": 10}, {"name": "Teamwork", "lp": 5}, {"name": "Energising Parry", "lp": 15}, {"name": "Energising Start I", "lp": 5}, {"name": "Dodger", "lp": 1}, {"name": "Breaker", "lp": 10}, {"name": "Marking Shots", "lp": 3}, {"name": "Critical Break", "lp": 5}, {"name": "Rewarding Mark", "lp": 5}, {"name": "Burning Shots", "lp": 3}, {"name": "Breaking Burn", "lp": 5}, {"name": "Breaking Counter", "lp": 3}, {"name": "Breaking Death", "lp": 5}]
+
+DATA: data/pictos-lumina.json
+PATH: core_lumina_suite.reserve_team.notes
+OP: SET
+VALUE: "Main team core minus Dead Energy I, Dead Energy II, Second Chance, Base Shield; Plus Recovery. Updated Chat 22: Base Shield removed, Cheater and Shortcut added."
+
+--- New weapons ---
+
+DATA: data/weapons.json
+PATH: Maelle
+OP: ADD
+VALUE: {"name": "Nosaram", "level": 31, "power": 6160, "element": "Physical", "scaling": "Agility A (+1623), Luck B (+927)", "obtained": true, "effects": [{"level": 4, "description": "Double Perfection on Free Aim shots."}, {"level": 10, "description": "Free Aim shots break 2 Shields."}, {"level": 20, "description": "+50% Free Aim damage."}], "notes": "Free Aim focused weapon — not suited to current Maelle build (Lithum endgame). Retain for reference."}
+
+DATA: data/weapons.json
+PATH: Sciel
+OP: ADD
+VALUE: {"name": "Yeverum", "level": 31, "power": 4291, "element": "Physical", "scaling": "Defence A, Agility B (+877)", "obtained": true, "effects": [{"level": 4, "description": "Applying Shell also applies 1 Shield."}, {"level": 10, "description": "On applying Shields, also give 1 AP."}, {"level": 20, "description": "On switching to Virtuose Stance, double all Shields on allies."}]}
+
+DATA: data/weapons.json
+PATH: Sciel
+OP: ADD
+VALUE: {"name": "Chromaro", "level": 31, "power": 4884, "element": "Ice", "scaling": "Defence B (+885), Agility A (+1549)", "obtained": true, "effects": [{"level": 4, "description": "Start battle in Caster Mask."}, {"level": 10, "description": "Caster Mask applies Regen for 3 turns."}, {"level": 20, "description": "Skills cost 1 less AP while in Caster Mask."}]}
+
+DATA: data/weapons.json
+PATH: Sciel[name=Charnon].level
+OP: SET
+VALUE: 31
+
+DATA: data/weapons.json
+PATH: Sciel[name=Charnon].power
+OP: SET
+VALUE: 4151
+
+DATA: data/weapons.json
+PATH: Sciel[name=Charnon].element
+OP: SET
+VALUE: "Earth"
+
+DATA: data/weapons.json
+PATH: Sciel[name=Charnon].obtained
+OP: SET
+VALUE: true
+
+DATA: data/weapons.json
+PATH: Sciel[name=Charnon].scaling
+OP: SET
+VALUE: "Defence B (+517), Luck A (+1358)"
+
+DATA: data/weapons.json
+PATH: Sciel[name=Charnon].effects
+OP: SET
+VALUE: [{"level": 4, "description": "100% Critical Chance during Twilight."}, {"level": 10, "description": "Apply 1 Foretell on Critical Hit."}, {"level": 20, "description": "20% increased damage per consecutive turn without taking damage, stacks up to 5 times."}]
+
+DATA: data/weapons.json
+PATH: Sciel[name=Charnon].notes
+OP: SET
+VALUE: "Purchased from Renoir's Drafts merchant (89,884 Chroma). Alternative endgame weapon; character-locked to Sciel. Not suitable for current support role. Revisit only if a dedicated Sciel DPS build is ever explored."
+
+--- New skill ---
+
+DATA: data/skills.json
+PATH: Lune
+OP: ADD
+VALUE: {"name": "Crippling Tsunami", "ap": 5, "description": "Medium Ice AoE, 1 hit. Applies Slow for 3 turns. Consumes Earth, Lightning and Fire Stains for greatly increased damage.", "stains_generated": ["Ice", "Light"], "stains_consumed": ["Earth", "Lightning", "Fire"], "_note": "Not yet learned — requires 6 skill points to unlock. Do not add to characters.json skills_learned until purchased."}
+
+================================================================================
+FILE BLOCKS
+================================================================================
+
+FILE: reference/mechanics.md
+SECTION: ## Gradient Skills
+CONTENT:
+## Gradient Skills
+
+Gradient Skills are powerful abilities with effects ranging from damage to healing to revival. Each character has three Gradient Skills, costing 1, 2, and 3 Gradient Charges (GC) respectively. Gradient charges build by spending AP on skills only — not from basic attacks, parries, or free-aim shots. Gradient Skills are powerful abilities with effects ranging from damage to healing to revival — not all are attacks, hence "Gradient Skills" rather than "Gradient Attacks."
+
+**The Gradient bar is shared across all characters.** All characters contribute charges to a single pool; using a Gradient Skill depletes the shared bar. This means spreading Charging Lumina across multiple characters (e.g. Charging Alteration on Sciel, Charging Critical on Maelle) builds the bar faster overall. The bar state persists across team switches.
+
+Individual character Gradient Skills are listed in each character file. Details for most characters are not yet confirmed in transcript — placeholders are in place.
+
+FILE: reference/mechanics.md
+SECTION: ## Reserve Party
+CONTENT:
+## Reserve Party
+
+If the main party is fully wiped in a battle, the player can continue the battle using the reserve party. This is most relevant for hard bosses. Reserve party members should not be stripped of all useful Pictos/Lumina — but main party optimisation takes priority for the vast majority of battles.
+
+**Simon fight — erasure mechanics:** Simon has two distinct erasure mechanics that affect revival strategy:
+1. **Standard death erasure:** Characters who die in Phase 3 are erased from the canvas and cannot be revived by allies. This applies throughout the fight, not only during the Phase 2 forced wipe. Second Chance (prevents knockdown entirely) counters this; Survivor (survives fatal hit at 1 HP) also counters it. A character erased after Second Chance fires and they are subsequently killed again cannot be revived.
+2. **Lumiere Strike final hit:** A specific attack that bypasses Second Chance and all revival effects entirely. The only counter is successfully parrying it.
+
+**Implication:** For Team 2 (reserve party entering Phase 3), death avoidance is critical. Survivor may be more valuable than Second Chance given that being erased after a Second Chance revival is possible.
+
+FILE: reference/session-procedure.md
+SECTION: ## Logging Process
+CONTENT:
+## Logging Process
+
+Triggered by `!log`. Two steps only:
+
+1. Append `<!-- SECTION -->` followed by a blank line to `chatN.md`
+2. Append all turns since last write — **verbatim**
+
+**Turn format:** Matt's turn first, labelled `**Matt:**`, then a blank line, then Claude's turn, labelled `**Claude:**`, then a blank line, then a horizontal rule `---`.
+
+**Verbatim logging:** Copy every turn exactly as it appears in context — Matt's turns and Claude's turns alike, including all pasted content. Do not paraphrase, compress, summarise, or represent any turn, regardless of length or content. The pull to summarise long or repetitive content is strong — resist it explicitly. If in doubt, copy more rather than less.
+
+**Bracket notation:** for tool calls only: `*[Fetched X]*`, `*[Created file Y]*`. Never use brackets to summarise substantive response text.
+
+**Lists:** If Matt's turn begins with a list, insert a blank line between `**Matt:**` and the first list item so Markdown renders correctly.
+
+**Which turns to log:** Use the turn counter display (`*[Turn N. Last log: Turn L.]*`) to determine the range — log all turns from Last log + 1 to current turn. Do not view the transcript file to determine the last logged turn; the counter is the authoritative record.
+
+**Appending to file:** Use bash `>>` redirection to append turns to the transcript file. No need to view the file before appending — just construct the content and redirect.
+
+FILE: overview/claude-expedition33.md
+SECTION: ## Section 3: Playstyle Notes
+CONTENT:
+## Section 3: Playstyle Notes
+*Last updated: Chat 22*
+
+- **Free-aim:** Used heavily by Lune with Trebuchim (2–3 shots typically, up to 5–6 when stacking burn + mark). With Kralim, Free Aim is used less frequently — Lune primarily applies Burn via the Hell skill rather than Free Aim + Burning Shots. Maelle uses free-aim less frequently.
+- **Parry rate:** Improving with experience — ~20% against unfamiliar bosses initially; up to ~100% against well-known enemies after extended grinding. Pattern-recognition is the bottleneck. Dodge is used actively to learn timings: the dodge window is wider than the parry window, and Perfect Dodge shares the same timing as Parry. Dodger Lumina gives +1 AP on Perfect Dodge. This is a persistent constraint on risky builds (Overload without Cheater, etc.).
+- **AP management:** Prefers to use skills every turn if AP allows. Values AP flow highly. **Endgame team (Maelle/Sciel/Verso) AP note:** AP flow is sustainable with Sciel's Litheson (+3 AP/turn for Sciel on buff/debuff) and Intervention, but requires active management. Do not assume freely available AP when advising on endgame team builds.
+- **Turn rotation (endgame burst):** Verso (base attack) → Verso(C) (Steeled Strike charge) → Sciel (Fortune's Fury on Verso) → Sciel(C) (Intervention on Verso) → Verso(Intervention) (Steeled Strike executes at Rank S with doubled damage).
+- **Maelle Last Chance rotation:** Last Chance (1 AP) reduces HP to 1, refills all AP, switches to Virtuose. Cheater fires an immediate extra turn. Clea's Life restores HP to 100% on that turn start. Net result: full AP reset + Virtuose + full HP in one move. Used as a deliberate rotation tool, not an emergency skill. Observed three-turn sequence: Normal turn → Cheater → Shortcut (triggered by Last Chance dropping HP below 30%). Whether this is intended behaviour is unconfirmed — monitor.
+- **Trash fights:** Maelle: Phantom Stars (Verso AoE at S Rank) to clear turn 1.
+- **Boss fights:** Methodical; learns patterns over multiple attempts. Values break dynamics highly.
+- **Status effects:** Primarily burn and mark; limited experience with others.
+- **Risk tolerance:** Conservative while parry skills are developing. Prefers empirical testing. Rejects builds that rely on low-HP states (Overload without Cheater, Berserk Slash) or skills with survival costs (Defiant Strike's HP cost).
+
+FILE: overview/claude-expedition33.md
+SECTION: ## Section 5: Key Decisions & Context
+CONTENT:
+## Section 5: Key Decisions & Context
+
+- **Trebuchim over Colim for Lune:** Colim tested and rejected. 14% attack loss, no free-aim stain generation. Trebuchim optimal for Mayhem/free-aim playstyle. Colim only appropriate for Elemental Genesis builds.
+- **Monoco stat respec (Agility 72→99, Vitality 61, Luck 20, Nusaro):** Empirically tested. Key finding: Luck 2× more efficient than Defence for crit. Agility increases Speed, Attack, and Defence stat simultaneously.
+- **Sciel over Monoco in main team:** Litheson's +3 AP/turn (Sciel only, when buff/debuff applied) keeps Sciel self-sufficient. Combined with Intervention (grants extra turn +4 AP to another character), she effectively generates turns and AP for allies. Ramasson rejected after confirming its passive heal does not trigger Energising Heal.
+- **Sciel stat allocation:** Agility 99, Luck 99, Defence 66. Critical Burn Pictos fixes turn order.
+- **Nusaro upgrade to 20:** Resplendent Catalysts cap at level 19; Joyaro drops at level 28. No overlap. Nusaro Level 20 (+1 AP per mask change) is worth the upgrade.
+- **Litheson is Sciel's endgame weapon:** Confirmed by multiple sources.
+- **Marking Shot over Defiant Strike for Verso:** Both apply Mark 100%. Defiant Strike costs 30% current HP per use — too risky with developing parry skills.
+- **Rank bonuses work ONLY at exact rank:** Confirmed by multiple community sources and in-game highlighting.
+- **Vale bosses missed:** Axon defeated before triggering the mask riddles. All three Vale bosses permanently inaccessible.
+- **Endgame team:** Maelle + Sciel + Verso. Turn rotation: Verso (base attack) → Verso(C) (Steeled Strike charge) → Sciel (Fortune's Fury on Verso) → Sciel(C) (Intervention on Verso) → Verso(Intervention) (Steeled Strike executes at Rank S with doubled damage).
+- **End Bringer vs Steeled Strike for Verso:** Steeled Strike deals more damage in general; End Bringer wins when target is stunned due to stun-extension bonus at Rank A. Verso keeps both and uses situationally.
+- **Might is correct post-crit-cap:** For Maelle and Verso (A99, L99 already), additional attribute points go into Might. All weapons factor Might into power; gains scale with weapon base power (level 33 weapons = maximum return). More Luck gives nothing once crit-capped.
+- **Scaverim evaluated for Lune, Kralim retained:** Scaverim (Dark element, Vit B/Agi C) offers high burst ceiling via Dark Stain accumulation — passive +50% skill damage per active stain at L4, 300% burst with 4 stains at L20 — but requires multi-turn ramp-up with no output during accumulation. Incompatible with reserve role where Lune enters mid-fight and needs immediate contribution. Kralim + Elemental Genesis fires effectively from turn 1. Revisit if Lune ever moves to main team for sustained fights.
+- **Simon fight team planning (Chat 22):** Team split revised to Verso/Sciel main + Maelle/Lune/Monoco reserve. Maelle uses Last Chance immediately on entry for full AP/Virtuose/Clea's Life reset from turn 1. Three configurations to try in order if needed:
+  1. **Option A (first attempt):** Verso/Sciel main, Maelle/Lune/Monoco reserve — Steeled Strike phases 1–2, Maelle self-contained burst in phase 3.
+  2. **Option C:** Verso/Lune main, Maelle/Sciel/Monoco reserve — weaker phases 1–2 but enables Fortune's Fury + Defenceless + Gommage one-shot setup in phase 3.
+  3. **Option D:** Lune/Monoco main, Maelle/Verso/Sciel reserve — phase 1 reportedly easy so may be manageable; strongest team reserved for phases 2–3.
+- **Base Shield removed from Simon fight Lumina sets:** Freed 20LP per character. Reserve team now runs Cheater + Shortcut instead.
+- **Weapons are character-locked:** One character per weapon. Recoats can realign attribute allocation to match a new weapon's scaling requirements.
+- **Charnon purchased but deferred:** Earth element, Defence B/Luck A. 100% Crit in Twilight (L4), Foretell on Crit (L10). Not suitable for Sciel's current support role. Revisit only for a dedicated DPS Sciel build.
+
+FILE: overview/claude-expedition33.md
+SECTION: ## Section 6: Open Questions
+CONTENT:
+## Section 6: Open Questions
+
+- **First Life (15LP):** Drops from Chromatic Lampmaster in Endless Tower (Stage 11 / DLC superboss area). 25% damage while alive, no downside for a well-supported DPS. Strong candidate for Maelle once obtained.
+- **Charging Lumina for Simon fight:** 14 CoL held in reserve. Charging Alteration (10LP, Sciel) and Charging Critical (10LP, Maelle/Lune) are the strongest candidates. Decision deferred until after first attempt to assess whether gradient generation is a bottleneck.
+- **Defenceless application for Simon:** Exposing Attack (Base Attack applies Defenceless 1 turn, 10LP) is the simplest option for any character. Grosse Tête Whack (Monoco, 6AP Heavy, applies Defenceless 3 turns) is now in Monoco's Simon loadout. Further options exist (Doom gradient skill on Sciel — also applies Powerless + Slow; skills with 3-turn Defenceless). Review after first attempt.
+- **Combo Attack Lumina:** Wiki recommends equipping Combo Attack I and III. Neither is currently in any character's Lumina set for Simon. Low priority unless base-attack economy becomes important.
+- **Monoco Abbest Wind:** With permanent Cheater now in reserve core, Abbest Wind's "plays a second turn" effect may be redundant. Lancelier Impale substituted for Simon fight (Slow application). Review after fight — Abbest Wind may not be worth reinstating.
+- **Sciel Charging Alteration:** 10LP, applies +10% Gradient Charge on applying a buff (once per turn). Already obtained. CoL cost to add to pool: 0 (pool has space). Worth adding before Simon if gradient generation proves slow.
+- **Maelle Last Chance + Shortcut interaction:** Observed three-turn sequence: Normal turn → Cheater → Shortcut (triggered when Last Chance drops HP below 30%). Confirm whether this is intentional/consistent in practice.
+
+FILE: chats/chat-index.md
+SECTION: ## (append row)
+AFTER: | Chat 21 |
+CONTENT:
+| Chat 22 | [Formatted](chat22/chat22-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat22/chat22-index.md) | [chat22.md](chat22/chat22.md) | Simon fight preparation: team composition revised to Verso/Sciel main + Maelle/Lune/Monoco reserve; Pictos swaps for Maelle and Monoco; Lumina additions for all characters; new Pictos and weapons recorded from screenshots; gradient bar shared-pool mechanic corrected; Defenceless and Slow application options researched |
+
+FILE: reference/historical-errors.md
+SECTION: ## (append)
+AFTER: 51.
+CONTENT:
+52. **Gradient bar per-character assumption (Chat 22):** Initially treated the Gradient bar as per-character (each character builds their own pool). Correct: the Gradient bar is shared across all characters — all contribute to one pool, and using a Gradient Skill depletes the shared bar. Matt corrected this. Affects Charging Lumina strategy: spreading Charging Lumina across characters builds the bar faster overall.
+53. **Sciel Recovery already present (Chat 22):** Suggested adding Recovery to Sciel's lumina_extras during the Lumina open questions review. Recovery was already listed in her lumina_extras in characters.json. Claude should have checked the data before suggesting additions. LP calculation corrected: Sciel has 10LP free, not 20LP.
+
+================================================================================
+IN-GAME ACTIONS CHECKLIST
+================================================================================
+
+Before next session:
+[ ] Apply Maelle Pictos swap: Gradient Break → Shortcut (L31)
+[ ] Apply Monoco Pictos swaps: Powerful Revive → Augmented First Strike (L31); Powerful Mark → Quick Break (L31)
+[ ] Add Maelle Lumina: Gradient Break (5LP), Energising Shell (10LP), Powerful On Shell (10LP)
+[ ] Add Sciel Lumina: Anti-Stun (5LP), Empowering Dodge (5LP), Auto Shell (10LP)
+[ ] Remove Base Shield from all characters' Lumina sets for Simon fight
+[ ] Verify reserve team Lumina set has Cheater (40LP) and Shortcut (5LP)
+[ ] Spend 23 CoL on Lune (pool 152→175) and 25 CoL on Monoco (pool 145→170)
+[ ] Swap Lune skills_equipped: Lightning Dance → Ice Lance (Simon-specific)
+[ ] Swap Monoco skills_equipped: Abbest Wind → Lancelier Impale; Portier Crash → Grosse Tête Whack (both Simon-specific)
+[ ] Verify updated Maelle Speed (~2446) and Crit (~109%) in game
+[ ] Verify updated Monoco Speed (~2848) and Crit (~105%) in game
+[ ] Attempt Simon fight (Option A first: Verso/Sciel main, Maelle/Lune/Monoco reserve)
