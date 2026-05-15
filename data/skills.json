@@ -388,6 +388,12 @@
       "ap": 2,
       "description": "Low single-target Physical damage. Applies 2 Foretell.",
       "charge": "Sun"
+    },
+    {
+      "name": "All Set",
+      "ap": 6,
+      "description": "Applies Shell, Powerful, and Rush to all allies for 3 turns.",
+      "charge": "Sun"
     }
   ],
   "Lune": [

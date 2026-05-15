@@ -333,6 +333,21 @@ PATH: Lune
 OP: ADD
 VALUE: {"name": "Crippling Tsunami", "ap": 5, "description": "Medium Ice AoE, 1 hit. Applies Slow for 3 turns. Consumes Earth, Lightning and Fire Stains for greatly increased damage.", "stains_generated": ["Ice", "Light"], "stains_consumed": ["Earth", "Lightning", "Fire"], "_note": "Not yet learned — requires 6 skill points to unlock. Do not add to characters.json skills_learned until purchased."}
 
+DATA: data/characters.json
+PATH: Sciel.skills_equipped
+OP: SET
+VALUE: ["Fortune's Fury", "Intervention", "Plentiful Harvest", "Final Path", "All Set", "Delaying Slash"]
+
+DATA: data/skills.json
+PATH: Sciel
+OP: ADD
+VALUE: {"name": "All Set", "ap": 6, "description": "Applies Shell, Powerful, and Rush to all allies for 3 turns.", "charge": "Sun"}
+
+DATA: data/characters.json
+PATH: Sciel.skills_learned
+OP: ADD
+VALUE: "All Set"
+
 FILE: reference/mechanics.md
 SECTION: ## Gradient Skills
 CONTENT:

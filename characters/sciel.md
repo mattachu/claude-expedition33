@@ -156,25 +156,26 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 ## Skills
 
 <!-- GENERATED:START characters:Sciel:skills -->
-**Currently equipped (6):** Final Path, Fortune's Fury, Grim Harvest, Intervention, Plentiful Harvest, Twilight Dance
+**Currently equipped (6):** Delaying Slash, Final Path, Fortune's Fury, Intervention, Plentiful Harvest, All Set
 
 | Skill             | AP | Charge | Equipped | Notes                                                                                                                        |
 |-------------------|----|--------|----------|------------------------------------------------------------------------------------------------------------------------------|
+| Delaying Slash    | 6  | Moon   | ✅        | High single-target Dark damage. Consumes Foretell for increased damage. Delays target's next turn.                           |
 | Final Path        | 9  | Sun    | ✅        | High damage, applies 10 Foretell in one turn. Fast route to big Plentiful Harvest.                                           |
 | Fortune's Fury    | 5  | —      | ✅        | Doubles one ally's damage for their next turn. Must be used before target acts.                                              |
-| Grim Harvest      | 5  | Moon   | ✅        | Medium single-target Dark damage, 1 hit. Heals all allies 30% HP + 5% per Foretell consumed.                                 |
 | Intervention      | 5  | —      | ✅        | Grants targeted ally an immediate extra turn + 4 AP (Greater Rush).                                                          |
 | Plentiful Harvest | 4  | Moon   | ✅        | Consumes all Foretell on target → 1 AP per stack, split between party. 5 stacks = +2/+2/+1; 10 stacks = +3/+3/+4.            |
-| Twilight Dance    | 9  | Moon   | ✅        | High single-target Dark damage in Twilight state. Consumes Foretell. Extends Twilight duration by 1 turn.                    |
+| All Set           | 6  | Sun    | ✅        | Applies Shell, Powerful, and Rush to all allies for 3 turns.                                                                 |
 | Dark Cleansing    | 0  | Moon   | ❌        | Cleanses an ally of their status effects and propagates that ally's buffs to all allies.                                     |
 | Dark Wave         | 6  | Moon   | ❌        | High Dark AoE, 3 hits. Consumes all Foretell for increased damage.                                                           |
-| Delaying Slash    | 6  | Moon   | ❌        | High single-target Dark damage. Consumes Foretell for increased damage. Delays target's next turn.                           |
 | Firing Shadow     | 3  | Moon   | ❌        | Low Dark AoE, 3 hits. Consumes 1 Foretell per hit for increased damage.                                                      |
 | Focused Foretell  | 2  | Sun    | ❌        | Applies 2 Foretell (or 5 if target has none). Core Foretell reset mechanic for Plentiful Harvest loop.                       |
+| Grim Harvest      | 5  | Moon   | ❌        | Medium single-target Dark damage, 1 hit. Heals all allies 30% HP + 5% per Foretell consumed.                                 |
 | Harvest           | 3  | Moon   | ❌        | Heals Sciel based on Foretell stacks consumed.                                                                               |
 | Phantom Blade     | 5  | Moon   | ❌        | High single-target Dark damage, 1 hit. Consumes all Foretell for increased damage. Can Break.                                |
 | Sealed Fate       | 4  | Moon   | ❌        | High single-target weapon element, 5–7 hits. Each hit consumes 1 Foretell for 200% more damage. Crits don't remove Foretell. |
 | Searing Bond      | 4  | Sun    | ❌        | Medium single-target Dark, 1 hit. Applies 5 Foretell. Also deals damage and applies Foretell to every other Burning enemy.   |
+| Twilight Dance    | 9  | Moon   | ❌        | High single-target Dark damage in Twilight state. Consumes Foretell. Extends Twilight duration by 1 turn.                    |
 | Twilight Slash    | 2  | Sun    | ❌        | Low single-target Physical damage. Applies 2 Foretell.                                                                       |
 <!-- GENERATED:END -->
 
