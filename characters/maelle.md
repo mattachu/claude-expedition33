@@ -68,7 +68,7 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 <!-- GENERATED:START characters:Maelle:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 93    |
+| Level     | 94    |
 | Agility   | 99    |
 | Luck      | 99    |
 | Might     | 81    |
@@ -81,15 +81,15 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 ### Combat Stats
 
 <!-- GENERATED:START characters:Maelle:stats -->
-*Stats with Lithum (33), Clea's Life (30), Empowering Break (28), Gradient Break (25) equipped*
+*Stats with Lithum (33), Clea's Life (30), Empowering Break (28), Shortcut (31) equipped. Speed and Crit approximate pending in-game verification.*
 
 | Stat    | Base | Modified |
 |---------|------|----------|
 | Health  | 2232 | 7823     |
 | Attack  | 1368 | 11156    |
-| Speed   | 1228 | 2208     |
+| Speed   | 1228 | 2446     |
 | Defence | 182  | 182      |
-| Crit    | 41%  | 101%     |
+| Crit    | 41%  | 109%     |
 <!-- GENERATED:END -->
 
 ---
@@ -122,7 +122,7 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 |------|------------------|-------|-----------------------|-------------------------------------------------------------------------|
 | 1    | Clea's Life      | 30    | Health +5591          | On turn start, if no damage taken since last turn, recover 100% Health. |
 | 2    | Empowering Break | 28    | Speed +546, Crit +32% | Gain Powerful on Breaking a target.                                     |
-| 3    | Gradient Break   | 25    | Speed +434, Crit +28% | +50% of a Gradient Charge on Breaking a target.                         |
+| 3    | Shortcut         | 31    | Speed +672, Crit +36% | Immediately play when falling below 30% Health. Once per battle.        |
 <!-- GENERATED:END -->
 
 *Cheater equipped via Lumina (40 LP) rather than Pictos slot.*
@@ -160,15 +160,18 @@ Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina 
 | Dead Energy II     | 2  |                                                                                                                                                                      |
 | Dodger             | 1  |                                                                                                                                                                      |
 | Energising Parry   | 15 |                                                                                                                                                                      |
+| Energising Shell   | 10 | Give 2 AP on applying Shell. 10LP. Synergises with Lithum.                                                                                                           |
 | Energising Start I | 5  | Boosted by Energy Master to 8AP on battle start                                                                                                                      |
 | Energising Turn    | 20 | Main AP flow generator; boosted by Energy Master                                                                                                                     |
 | Energy Master      | 40 | Add 1 to AP boosts (not double) — game-changing for AP generation                                                                                                    |
 | Full Strength      | 15 | Damage bonus while on full HP — strong synergy with Clea's Life Pictos                                                                                               |
+| Gradient Break     | 5  | +50% of a Gradient Charge on Breaking a target.                                                                                                                      |
 | Marking Shots      | 3  |                                                                                                                                                                      |
 | Painted Power      | 5  | Essential for all characters from Act 3 onwards                                                                                                                      |
+| Powerful On Shell  | 10 | Apply Powerful on applying Shell. 10LP. Synergises with Lithum.                                                                                                      |
 | Rewarding Mark     | 5  |                                                                                                                                                                      |
 | Second Chance      | 40 | Can save boss battles                                                                                                                                                |
-| Shortcut           | 5  |                                                                                                                                                                      |
+| Shortcut           | —  | FREE from Shortcut Pictos                                                                                                                                            |
 | Survivor           | 20 | Secondary safety net before Second Chance                                                                                                                            |
 | Teamwork           | 5  |                                                                                                                                                                      |
 | Warming Up         | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus |

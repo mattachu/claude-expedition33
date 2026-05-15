@@ -65,6 +65,10 @@ Triggered by `!log`. Two steps only:
 
 **Lists:** If Matt's turn begins with a list, insert a blank line between `**Matt:**` and the first list item so Markdown renders correctly.
 
+**Which turns to log:** Use the turn counter display (`*[Turn N. Last log: Turn L.]*`) to determine the range — log all turns from Last log + 1 to current turn. Do not view the transcript file to determine the last logged turn; the counter is the authoritative record.
+
+**Appending to file:** Use bash `>>` redirection to append turns to the transcript file. No need to view the file before appending — just construct the content and redirect.
+
 ---
 
 ## Mid-Session Escalation

@@ -54,7 +54,11 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "level": 12
+      "level": 31,
+      "stats": {
+        "defence": 1990,
+        "speed": 672
+      }
     },
     {
       "name": "Anti-Blight",
@@ -226,8 +230,12 @@
       "effect": "50% increased damage on the first hit. Once per battle.",
       "lp_cost": 5,
       "obtained": true,
-      "equipped_by": null,
-      "level": 6
+      "equipped_by": "Monoco",
+      "level": 31,
+      "stats": {
+        "speed": 1008,
+        "crit": "18%"
+      }
     },
     {
       "name": "Auto Death",
@@ -513,8 +521,13 @@
       ],
       "effect": "+20% of a Gradient Charge on applying Burn. Once per turn.",
       "lp_cost": 10,
-      "obtained": false,
-      "equipped_by": null
+      "obtained": true,
+      "equipped_by": null,
+      "level": 31,
+      "stats": {
+        "health": 3152,
+        "speed": 639
+      }
     },
     {
       "name": "Charging Counter",
@@ -535,10 +548,10 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "level": 25,
+      "level": 31,
       "stats": {
-        "defence": 1048,
-        "crit": "27%"
+        "defence": 1891,
+        "crit": "35%"
       }
     },
     {
@@ -990,10 +1003,10 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "level": 30,
+      "level": 31,
       "stats": {
-        "speed": 895,
-        "crit": "17%"
+        "speed": 958,
+        "crit": "18%"
       }
     },
     {
@@ -1113,7 +1126,10 @@
       "lp_cost": 15,
       "obtained": true,
       "equipped_by": null,
-      "level": 9
+      "level": 31,
+      "stats": {
+        "health": 6303
+      }
     },
     {
       "name": "Energising Powerful",
@@ -1246,11 +1262,10 @@
       "lp_cost": 20,
       "obtained": true,
       "equipped_by": null,
-      "level": 14,
+      "level": 31,
       "stats": {
-        "speed": 270
-      },
-      "notes": "Stats incomplete — speed only recorded"
+        "speed": 1277
+      }
     },
     {
       "name": "Energy Master",
@@ -1398,7 +1413,7 @@
       "effect": "+50% of a Gradient Charge on Breaking a target.",
       "lp_cost": 5,
       "obtained": true,
-      "equipped_by": "Maelle",
+      "equipped_by": null,
       "level": 25,
       "stats": {
         "speed": 434,
@@ -1828,7 +1843,7 @@
       "effect": "Gain Powerful on hitting a Marked target.",
       "lp_cost": 5,
       "obtained": true,
-      "equipped_by": "Monoco",
+      "equipped_by": null,
       "level": 28,
       "stats": {
         "speed": 819,
@@ -1843,7 +1858,7 @@
       "effect": "Apply Powerful for 3 turns when revived.",
       "lp_cost": 3,
       "obtained": true,
-      "equipped_by": "Monoco",
+      "equipped_by": null,
       "level": 28,
       "stats": {
         "speed": 546,
@@ -1977,7 +1992,7 @@
       "effect": "Play again on Breaking a target.",
       "lp_cost": 3,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Monoco",
       "level": 31,
       "stats": {
         "speed": 672,
@@ -2080,10 +2095,10 @@
       "lp_cost": 10,
       "obtained": true,
       "equipped_by": null,
-      "level": 29,
+      "level": 31,
       "stats": {
-        "speed": 557,
-        "crit": "32%"
+        "speed": 639,
+        "crit": "35%"
       }
     },
     {
@@ -2201,7 +2216,7 @@
       "effect": "Immediately play when falling below 30% Health. Once per battle.",
       "lp_cost": 5,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Maelle",
       "level": 31,
       "stats": {
         "speed": 672,
@@ -2265,7 +2280,11 @@
       "lp_cost": 1,
       "obtained": true,
       "equipped_by": null,
-      "level": 6
+      "level": 31,
+      "stats": {
+        "health": 3317,
+        "defence": 1990
+      }
     },
     {
       "name": "Staggering Attack",
@@ -2324,7 +2343,11 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "level": 8
+      "level": 31,
+      "stats": {
+        "speed": 672,
+        "crit": "36%"
+      }
     },
     {
       "name": "Tainted",
@@ -2526,7 +2549,7 @@
       "notes": "Applied via in-game Lumina set."
     },
     "reserve_team": {
-      "total_lp": 140,
+      "total_lp": 165,
       "entries": [
         {
           "name": "Painted Power",
@@ -2537,8 +2560,12 @@
           "lp": 20
         },
         {
-          "name": "Base Shield",
-          "lp": 20
+          "name": "Cheater",
+          "lp": 40
+        },
+        {
+          "name": "Shortcut",
+          "lp": 5
         },
         {
           "name": "Survivor",
@@ -2597,7 +2624,7 @@
           "lp": 5
         }
       ],
-      "notes": "Main team core minus Cheater, Dead Energy I, Dead Energy II, Second Chance, Shortcut; Plus Recovery."
+      "notes": "Main team core minus Dead Energy I, Dead Energy II, Second Chance; Plus Recovery. Updated Chat 22: Base Shield removed, Cheater and Shortcut added."
     }
   },
   "candidates_for_review": [

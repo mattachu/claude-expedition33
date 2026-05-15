@@ -12,13 +12,13 @@
     "Monoco"
   ],
   "inventory": {
-    "colour_of_lumina": 31,
-    "recoats": 33,
-    "chroma": 3199861,
+    "colour_of_lumina": 14,
+    "recoats": 36,
+    "chroma": 1670184,
     "chroma_catalyst": 67,
     "chroma_catalyst_polished": 73,
     "chroma_catalyst_resplendent": 124,
-    "chroma_catalyst_grandiose": 85,
+    "chroma_catalyst_grandiose": 86,
     "chroma_catalyst_perfect": 3
   },
   "current_phase_checklist": [
@@ -167,7 +167,7 @@
     {
       "id": "purchase_charnon",
       "label": "Purchase Charnon (89,884 Chromas, Renoir's Drafts merchant) — Sciel alternative endgame weapon",
-      "done": false
+      "done": true
     },
     {
       "id": "versos_drafts",

@@ -1,6 +1,6 @@
 {
   "Maelle": {
-    "level": 93,
+    "level": 94,
     "role": "Primary DPS",
     "attributes": {
       "vitality": 0,
@@ -19,16 +19,16 @@
     "stats_modified": {
       "health": 7823,
       "attack": 11156,
-      "speed": 2208,
+      "speed": 2446,
       "defence": 182,
-      "crit": "101%",
-      "_note": "Stats with Lithum (33), Clea's Life (30), Empowering Break (28), Gradient Break (25) equipped"
+      "crit": "109%",
+      "_note": "Stats with Lithum (33), Clea's Life (30), Empowering Break (28), Shortcut (31) equipped. Speed and Crit approximate pending in-game verification."
     },
     "weapon_equipped": "Lithum",
     "pictos_equipped": [
       "Clea's Life",
       "Empowering Break",
-      "Gradient Break"
+      "Shortcut"
     ],
     "lp_total": 299,
     "lp_used": 299,
@@ -41,6 +41,18 @@
       {
         "name": "Warming Up",
         "notes": "Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus"
+      },
+      {
+        "name": "Gradient Break",
+        "notes": "+50% of a Gradient Charge on Breaking a target."
+      },
+      {
+        "name": "Energising Shell",
+        "notes": "Give 2 AP on applying Shell. 10LP. Synergises with Lithum."
+      },
+      {
+        "name": "Powerful On Shell",
+        "notes": "Apply Powerful on applying Shell. 10LP. Synergises with Lithum."
       }
     ],
     "skills_equipped": [
@@ -244,7 +256,7 @@
       },
       {
         "name": "Accelerating Heal",
-        "notes": "Rush on heal — synergy with Litheson AP generation"
+        "notes": "Rush on heal."
       },
       {
         "name": "Energising Heal",
@@ -257,6 +269,18 @@
       {
         "name": "Healing Tint Energy",
         "notes": "1 AP on Healing Tint use — small AP top-up"
+      },
+      {
+        "name": "Anti-Stun",
+        "notes": "Immune to Stun. 5LP. Good vs Simon."
+      },
+      {
+        "name": "Empowering Dodge",
+        "notes": "5% increased damage per consecutive dodge, stacks up to 10. 5LP."
+      },
+      {
+        "name": "Auto Shell",
+        "notes": "Apply Shell for 3 turns on battle start. 10LP. Defensive boost."
       }
     ],
     "skills_equipped": [
@@ -337,8 +361,8 @@
       "Burn Affinity",
       "Burning Death"
     ],
-    "lp_total": 152,
-    "lp_used": 150,
+    "lp_total": 175,
+    "lp_used": 175,
     "lumina_core_exclusions": [],
     "lumina_extras": [
       {
@@ -353,7 +377,7 @@
     "skills_equipped": [
       "Hell",
       "Terraquake",
-      "Lightning Dance",
+      "Ice Lance",
       "Healing Light",
       "Mayhem",
       "Elemental Genesis"
@@ -420,19 +444,19 @@
     "stats_modified": {
       "health": 4837,
       "attack": 10881,
-      "speed": 2533,
+      "speed": 2848,
       "defence": 2301,
-      "crit": "99%",
-      "_note": "Stats with Joyaro (33), Longer Shell (29), Powerful Mark (28), Powerful Revive (28) equipped"
+      "crit": "105%",
+      "_note": "Stats with Joyaro (33), Longer Shell (29), Augmented First Strike (31), Quick Break (31) equipped. Speed and Crit approximate pending in-game verification."
     },
     "weapon_equipped": "Joyaro",
     "pictos_equipped": [
       "Longer Shell",
-      "Powerful Mark",
-      "Powerful Revive"
+      "Augmented First Strike",
+      "Quick Break"
     ],
-    "lp_total": 145,
-    "lp_used": 145,
+    "lp_total": 170,
+    "lp_used": 170,
     "lumina_core_exclusions": [],
     "lumina_extras": [
       {
@@ -449,11 +473,11 @@
       }
     ],
     "skills_equipped": [
-      "Abbest Wind",
+      "Lancelier Impale",
       "Stalact Punches",
       "Moissonneuse Vendange",
       "Chalier Combo",
-      "Portier Crash",
+      "Grosse Tête Whack",
       "Potier Energy"
     ],
     "skills_learned": [

@@ -67,15 +67,15 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 ### Combat Stats
 
 <!-- GENERATED:START characters:Monoco:stats -->
-*Stats with Joyaro (33), Longer Shell (29), Powerful Mark (28), Powerful Revive (28) equipped*
+*Stats with Joyaro (33), Longer Shell (29), Augmented First Strike (31), Quick Break (31) equipped. Speed and Crit approximate pending in-game verification.*
 
 | Stat    | Base | Modified |
 |---------|------|----------|
 | Health  | 2080 | 4837     |
 | Attack  | 1131 | 10881    |
-| Speed   | 1168 | 2533     |
+| Speed   | 1168 | 2848     |
 | Defence | 729  | 2301     |
-| Crit    | 51%  | 99%      |
+| Crit    | 51%  | 105%     |
 <!-- GENERATED:END -->
 
 ---
@@ -118,11 +118,11 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 ## Pictos
 
 <!-- GENERATED:START characters:Monoco:Pictos -->
-| Slot | Pictos          | Level | Stat Bonus                  | Effect                                             |
-|------|-----------------|-------|-----------------------------|----------------------------------------------------|
-| 1    | Longer Shell    | 29    | Health +2757, Defence +1572 | On applying Shell, its duration is increased by 2. |
-| 2    | Powerful Mark   | 28    | Speed +819, Crit +16%       | Gain Powerful on hitting a Marked target.          |
-| 3    | Powerful Revive | 28    | Speed +546, Crit +32%       | Apply Powerful for 3 turns when revived.           |
+| Slot | Pictos                 | Level | Stat Bonus                  | Effect                                                  |
+|------|------------------------|-------|-----------------------------|---------------------------------------------------------|
+| 1    | Longer Shell           | 29    | Health +2757, Defence +1572 | On applying Shell, its duration is increased by 2.      |
+| 2    | Augmented First Strike | 31    | Speed +1008, Crit +18%      | 50% increased damage on the first hit. Once per battle. |
+| 3    | Quick Break            | 31    | Speed +672, Crit +36%       | Play again on Breaking a target.                        |
 <!-- GENERATED:END -->
 
 Longer Shell's extension effect fires when Lune uses Healing Light (Protecting Heal Lumina applies Shell on heal).
@@ -137,8 +137,8 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 
 ### LP Budget
 <!-- GENERATED:START characters:Monoco:LP -->
-- **Current capacity:** 145 LP
-- **Used:** 145 LP
+- **Current capacity:** 170 LP
+- **Used:** 170 LP
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
@@ -147,13 +147,13 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 <!-- GENERATED:START characters:Monoco:Lumina -->
 | Lumina             | LP | Notes                                                                                     |
 |--------------------|----|-------------------------------------------------------------------------------------------|
-| Base Shield        | 20 |                                                                                           |
 | Break Specialist   | 1  | 50% increased Break damage, 20% reduced base damage — net positive for break-focused role |
 | Breaker            | 10 |                                                                                           |
 | Breaking Burn      | 5  |                                                                                           |
 | Breaking Counter   | 3  |                                                                                           |
 | Breaking Death     | 5  |                                                                                           |
 | Burning Shots      | 3  |                                                                                           |
+| Cheater            | 40 |                                                                                           |
 | Critical Break     | 5  |                                                                                           |
 | Dodger             | 1  |                                                                                           |
 | Energising Break   | 3  | Extra AP on breaking an enemy                                                             |
@@ -164,6 +164,7 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Painted Power      | 5  |                                                                                           |
 | Recovery           | 10 |                                                                                           |
 | Rewarding Mark     | 5  |                                                                                           |
+| Shortcut           | 5  |                                                                                           |
 | Staggering Attack  | 1  | Break damage on base attack — small break bar contribution                                |
 | Survivor           | 20 |                                                                                           |
 | Teamwork           | 5  |                                                                                           |
@@ -182,16 +183,17 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 ## Skills
 
 <!-- GENERATED:START characters:Monoco:skills -->
-**Currently equipped (6):** Abbest Wind, Chalier Combo, Moissonneuse Vendange, Portier Crash, Potier Energy, Stalact Punches
+**Currently equipped (6):** Chalier Combo, Grosse Tête Whack, Lancelier Impale, Moissonneuse Vendange, Potier Energy, Stalact Punches
 
 | Skill                 | AP             | Wheel | Mask     | Equipped | Notes                                                                                         |
 |-----------------------|----------------|-------|----------|----------|-----------------------------------------------------------------------------------------------|
-| Abbest Wind           | 2 (0 in Agile) | +2    | Agile    | ✅        | Low Physical single target, 1 hit. Plays a second turn.                                       |
 | Chalier Combo         | 7              | +3    | Balanced | ✅        | High Physical single target, 6 hits. Interrupted if failed.                                   |
+| Grosse Tête Whack     | 6              | +4    | Heavy    | ✅        | High Physical single target, 5 hits. Applies Defenceless 3 turns.                             |
+| Lancelier Impale      | 2              | +4    | Agile    | ✅        | Low Ice single target, 1 hit. Slows target 3 turns.                                           |
 | Moissonneuse Vendange | 5              | +2    | Balanced | ✅        | High Physical single target, 3 hits. Can Break.                                               |
-| Portier Crash         | 8              | +5    | Heavy    | ✅        | High Physical AoE, 1 hit. Can Break.                                                          |
 | Potier Energy         | 4              | +6    | Caster   | ✅        | Gives 1–3 AP to all allies.                                                                   |
 | Stalact Punches       | 4              | +4    | Heavy    | ✅        | Medium Ice single target, 4 hits. High Break damage.                                          |
+| Abbest Wind           | 2 (0 in Agile) | +2    | Agile    | ❌        | Low Physical single target, 1 hit. Plays a second turn.                                       |
 | Aberration Light      | 7              | +4    | Agile    | ❌        | High Light AoE, 2 hits. Applies 4 Burn per hit.                                               |
 | Ballet Charm          | 2              | +3    | Caster   | ❌        | Low Light single target, 1 hit. Applies Powerless 3 turns.                                    |
 | Bénisseur Mortar      | 5              | +6    | Caster   | ❌        | Medium Ice single target, 3 hits. Jumps to Almighty Mask if target is Marked.                 |
@@ -215,15 +217,14 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Évêque Spear          | 6              | +3    | Heavy    | ❌        | High Earth single target, 1 hit. Applies Powerless 3 turns.                                   |
 | Gault Fury            | 3              | +2    | Balanced | ❌        | Low Physical single target, 4 hits. Applies Mark.                                             |
 | Glaise Earthquakes    | 4              | +6    | Heavy    | ❌        | Medium Earth AoE, 3 hits. Applies Powerful to self.                                           |
-| Grosse Tête Whack     | 6              | +4    | Heavy    | ❌        | High Physical single target, 5 hits. Applies Defenceless 3 turns.                             |
 | Hexga Crush           | 5              | +6    | Heavy    | ❌        | Medium Earth single target, 2 hits. Applies Defenceless 3 turns.                              |
 | Jar Lampstorm         | 5              | +6    | Heavy    | ❌        | Medium Physical AoE, 4 hits.                                                                  |
 | Lampmaster Light      | 5              | +1    | Almighty | ❌        | High Light AoE, 1 hit. Increased damage at each cast.                                         |
-| Lancelier Impale      | 2              | +4    | Agile    | ❌        | Low Ice single target, 1 hit. Slows target 3 turns.                                           |
 | Luster Slices         | 3              | +3    | Agile    | ❌        | Low Physical single target, 3 hits. Applies Rush to self 3 turns.                             |
 | Obscur Sword          | 6              | +3    | Heavy    | ❌        | High Dark single target, 5 hits. More damage against Powerless targets.                       |
 | Orphelin Cheers       | 3              | +3    | Caster   | ❌        | Applies Powerful to 1–3 allies.                                                               |
 | Pèlerin Heal          | 5              | +3    | Caster   | ❌        | Applies Regen to all allies. On Caster Mask heals 40% HP.                                     |
+| Portier Crash         | 8              | +5    | Heavy    | ❌        | High Physical AoE, 1 hit. Can Break.                                                          |
 | Ramasseur Bonk        | 2              | +4    | Agile    | ❌        | Low Dark single target, 1 hit. Can Break.                                                     |
 | Rocher Hammering      | 3              | +3    | Heavy    | ❌        | Medium Physical single target, 4 hits. Can Break.                                             |
 | Sakapatate Estoc      | 3              | +3    | Balanced | ❌        | Low Lightning single target, 1 hit. More damage if target is Stunned.                         |

@@ -231,6 +231,29 @@
           "description": "Base Attack propagates Burn."
         }
       ]
+    },
+    {
+      "name": "Nosaram",
+      "level": 31,
+      "power": 6160,
+      "element": "Physical",
+      "scaling": "Agility A (+1623), Luck B (+927)",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Double Perfection on Free Aim shots."
+        },
+        {
+          "level": 10,
+          "description": "Free Aim shots break 2 Shields."
+        },
+        {
+          "level": 20,
+          "description": "+50% Free Aim damage."
+        }
+      ],
+      "notes": "Free Aim focused weapon — not suited to current Maelle build (Lithum endgame). Retain for reference."
     }
   ],
   "Verso": [
@@ -574,23 +597,27 @@
     },
     {
       "name": "Charnon",
-      "level": null,
-      "power": null,
-      "element": null,
-      "scaling": "Defence B, Luck C",
-      "obtained": false,
+      "level": 31,
+      "power": 4151,
+      "element": "Earth",
+      "scaling": "Defence B (+517), Luck A (+1358)",
+      "obtained": true,
       "future": true,
       "effects": [
         {
+          "level": 4,
+          "description": "100% Critical Chance during Twilight."
+        },
+        {
           "level": 10,
-          "description": "100% crit in Twilight."
+          "description": "Apply 1 Foretell on Critical Hit."
         },
         {
           "level": 20,
-          "description": "Critical hits apply 1 Foretell."
+          "description": "20% increased damage per consecutive turn without taking damage, stacks up to 5 times."
         }
       ],
-      "notes": "Post-game from Renoir's Drafts merchant (89,884 Chromas). Alternative endgame weapon."
+      "notes": "Purchased from Renoir's Drafts merchant (89,884 Chroma). Alternative endgame weapon; character-locked to Sciel. Not suitable for current support role. Revisit only if a dedicated Sciel DPS build is ever explored."
     },
     {
       "name": "Chation",
@@ -754,6 +781,50 @@
       "scaling": null,
       "obtained": true,
       "effects": []
+    },
+    {
+      "name": "Yeverum",
+      "level": 31,
+      "power": 4291,
+      "element": "Physical",
+      "scaling": "Defence A, Agility B (+877)",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Applying Shell also applies 1 Shield."
+        },
+        {
+          "level": 10,
+          "description": "On applying Shields, also give 1 AP."
+        },
+        {
+          "level": 20,
+          "description": "On switching to Virtuose Stance, double all Shields on allies."
+        }
+      ]
+    },
+    {
+      "name": "Chromaro",
+      "level": 31,
+      "power": 4884,
+      "element": "Ice",
+      "scaling": "Defence B (+885), Agility A (+1549)",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Start battle in Caster Mask."
+        },
+        {
+          "level": 10,
+          "description": "Caster Mask applies Regen for 3 turns."
+        },
+        {
+          "level": 20,
+          "description": "Skills cost 1 less AP while in Caster Mask."
+        }
+      ]
     }
   ],
   "Lune": [
@@ -1048,6 +1119,11 @@
         }
       ],
       "notes": "Evaluated vs Kralim; not equipped. Dark Stain ramp-up incompatible with reserve role. Revisit if Lune moves to main team for sustained fights."
+    },
+    {
+      "name": "Painerim",
+      "level": 31,
+      "obtained": true
     }
   ],
   "Monoco": [

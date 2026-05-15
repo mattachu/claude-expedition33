@@ -33,7 +33,7 @@ Fetch that file only when reviewing specific past errors.
 - **Current playthrough:** First playthrough
 - **Progress:**
   - Act 3, Phase 4.
-  - Characters: Maelle L93, Verso L93, Sciel L92, Lune L88, Monoco L88.
+  - Characters: Maelle L94, Verso L93, Sciel L92, Lune L88, Monoco L88.
   - Current area: Renoir's Drafts.
 <!-- GENERATED:END -->
   - For detailed progression plan, see [`overview/progress.md`](progress.md)
@@ -45,13 +45,13 @@ Fetch that file only when reviewing specific past errors.
 <!-- GENERATED:END -->
 
 <!-- GENERATED:START characters:summary:party -->
-| Character                         | Level | Role                         | Weapon        | Pictos                                         | LP      |
-|-----------------------------------|-------|------------------------------|---------------|------------------------------------------------|---------|
-| [Maelle](../characters/maelle.md) | 93    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Gradient Break  | 299/299 |
-| [Verso](../characters/verso.md)   | 93    | Endgame main DPS             | Chevalam (33) | Augmented Counter I, Breaking Death, Confident | 274/274 |
-| [Sciel](../characters/sciel.md)   | 92    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots       | 260/260 |
-| [Lune](../characters/lune.md)     | 88    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death    | 150/152 |
-| [Monoco](../characters/monoco.md) | 88    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Powerful Mark, Powerful Revive   | 145/145 |
+| Character                         | Level | Role                         | Weapon        | Pictos                                            | LP      |
+|-----------------------------------|-------|------------------------------|---------------|---------------------------------------------------|---------|
+| [Maelle](../characters/maelle.md) | 94    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut           | 299/299 |
+| [Verso](../characters/verso.md)   | 93    | Endgame main DPS             | Chevalam (33) | Augmented Counter I, Breaking Death, Confident    | 274/274 |
+| [Sciel](../characters/sciel.md)   | 92    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots          | 260/260 |
+| [Lune](../characters/lune.md)     | 88    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death       | 175/175 |
+| [Monoco](../characters/monoco.md) | 88    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Quick Break | 170/170 |
 <!-- GENERATED:END -->
 
 **More details:**
@@ -61,10 +61,10 @@ Fetch that file only when reviewing specific past errors.
 
 ### Inventory
 <!-- GENERATED:START playthrough:inventory -->
-- Colour of Lumina: 31
-- Recoats: 33
-- Chroma Catalysts: 67 standard, 73 polished, 124 resplendent, 85 grandiose, 3 perfect
-- Chroma: 3199861
+- Colour of Lumina: 14
+- Recoats: 36
+- Chroma Catalysts: 67 standard, 73 polished, 124 resplendent, 86 grandiose, 3 perfect
+- Chroma: 1670184
 <!-- GENERATED:END -->
 
 ### LP totals
@@ -72,30 +72,35 @@ Fetch that file only when reviewing specific past errors.
 - Maelle: 299/299
 - Verso: 274/274
 - Sciel: 260/260
-- Lune: 150/152
-- Monoco: 145/145
+- Lune: 175/175
+- Monoco: 170/170
 <!-- GENERATED:END -->
 
 ---
 
 ## Section 3: Playstyle Notes
-*Last updated: Chat 13*
+*Last updated: Chat 22*
 
-- **Free-aim:** Used heavily with Lune (2–3 shots typically, up to 5–6 when stacking burn + mark). Each shot: shield removal, damage, burn (Burning Shots Lumina), mark (Marking Shots Lumina), stain generation (Trebuchim). Maelle uses free-aim less frequently.
 - **Parry rate:** Improving with experience — ~20% against unfamiliar bosses initially; up to ~100% against well-known enemies after extended grinding. Pattern-recognition is the bottleneck. Dodge is used actively to learn timings: the dodge window is wider than the parry window, and Perfect Dodge shares the same timing as Parry. Dodger Lumina gives +1 AP on Perfect Dodge. This is a persistent constraint on risky builds (Overload without Cheater, etc.).
+- **Risk tolerance:** Conservative while parry skills are developing. Prefers empirical testing. Rejects builds that rely on low-HP states (Overload without Cheater, Berserk Slash) or skills with survival costs (Defiant Strike's HP cost).
 - **AP management:** Prefers to use skills every turn if AP allows. Values AP flow highly. **Endgame team (Maelle/Sciel/Verso) AP note:** AP flow is sustainable with Sciel's Litheson (+3 AP/turn for Sciel on buff/debuff) and Intervention, but requires active management. Do not assume freely available AP when advising on endgame team builds.
 - **Turn rotation (endgame burst):** Verso (base attack) → Verso(C) (Steeled Strike charge) → Sciel (Fortune's Fury on Verso) → Sciel(C) (Intervention on Verso) → Verso(Intervention) (Steeled Strike executes at Rank S with doubled damage).
-- **Maelle Last Chance rotation:** Last Chance (1 AP) reduces HP to 1, refills all AP, switches to Virtuose. Cheater fires an immediate extra turn. Clea's Life restores HP to 100% on that turn start. Net result: full AP reset + Virtuose + full HP in one move. Used as a deliberate rotation tool, not an emergency skill.
+- **Maelle Last Chance rotation:** Last Chance (1 AP) reduces HP to 1, refills all AP, switches to Virtuose. Cheater fires an immediate extra turn. Clea's Life restores HP to 100% on that turn start. Net result: full AP reset + Virtuose + full HP in one move. Used as a deliberate rotation tool, not an emergency skill. Observed three-turn sequence: Normal turn → Cheater → Shortcut (triggered by Last Chance dropping HP below 30%). Whether this is intended behaviour is unconfirmed — monitor.
 - **Trash fights:** Maelle: Phantom Stars (Verso AoE at S Rank) to clear turn 1.
 - **Boss fights:** Methodical; learns patterns over multiple attempts. Values break dynamics highly.
 - **Status effects:** Primarily burn and mark; limited experience with others.
-- **Risk tolerance:** Conservative while parry skills are developing. Prefers empirical testing. Rejects builds that rely on low-HP states (Overload without Cheater, Berserk Slash) or skills with survival costs (Defiant Strike's HP cost).
+- **Free-aim:** Previously used heavily by Lune with Trebuchim (2–3 shots typically, up to 5–6 when stacking burn + mark). With Kralim, Free Aim is used less frequently — Lune primarily applies Burn via the Hell skill rather than Free Aim + Burning Shots. Other characters use free-aim occasionally, mostly for removing shields.
 
 ---
 
 ## Section 4: Game Mechanics
 
 *More detailed descriptions of mechanics are included in [`reference/mechanics.md`](../reference/mechanics.md).*
+
+### Weapons
+
+- Weapons are character-locked: each weapon can only be used by a particular character.
+- Each weapon has attribute scaling categories that contribute to weapon damage. Recoats can realign attribute allocation to match a new weapon's scaling requirements.
 
 ### Parry, Dodge, Jump and Counterattack
 
@@ -160,7 +165,13 @@ If the main party is fully wiped in a battle, the player can continue the battle
 - **End Bringer vs Steeled Strike for Verso:** Steeled Strike deals more damage in general; End Bringer wins when target is stunned due to stun-extension bonus at Rank A. Verso keeps both and uses situationally.
 - **Might is correct post-crit-cap:** For Maelle and Verso (A99, L99 already), additional attribute points go into Might. All weapons factor Might into power; gains scale with weapon base power (level 33 weapons = maximum return). More Luck gives nothing once crit-capped.
 - **Scaverim evaluated for Lune, Kralim retained:** Scaverim (Dark element, Vit B/Agi C) offers high burst ceiling via Dark Stain accumulation — passive +50% skill damage per active stain at L4, 300% burst with 4 stains at L20 — but requires multi-turn ramp-up with no output during accumulation. Incompatible with reserve role where Lune enters mid-fight and needs immediate contribution. Kralim + Elemental Genesis fires effectively from turn 1. Revisit if Lune ever moves to main team for sustained fights.
-- **Simon fight team planning:** Best reserve-finisher pairing is Maelle/Monoco (Maelle uses Last Chance immediately on entry for full AP/Virtuose/Clea's Life heal reset from turn 1). Verso/Sciel/Lune main is strong with Sciel able to Intervention either Verso or Lune. Go in with current setup first, swap if reserve phase is the problem.
+- **Simon fight team planning (Chat 22):** Team split revised to Verso/Sciel main + Maelle/Lune/Monoco reserve. Maelle uses Last Chance immediately on entry for full AP/Virtuose/Clea's Life reset from turn 1. Three configurations to try in order if needed:
+  1. **Option A (failed):** First attempt used existing main (Maelle/Verso/Sciel) and reserve (Lune/Monoco) team. Main team found it easy, reserve team failed immediately.
+  2. **Option B (next attempt):** Verso/Sciel main, Maelle/Lune/Monoco reserve — Steeled Strike phases 1–2, Maelle self-contained burst in phase 3.
+  3. **Option C:** Verso/Lune main, Maelle/Sciel/Monoco reserve — weaker phases 1–2 but enables Fortune's Fury + Defenceless + Gommage one-shot setup in phase 3.
+  4. **Option D:** Lune/Monoco main, Maelle/Verso/Sciel reserve — phase 1 reportedly easy so may be manageable; strongest team reserved for phases 2–3.
+- **Base Shield removed from Simon fight Lumina sets:** Freed 20LP per character. Reserve team now runs Cheater + Shortcut instead.
+- **Charnon purchased but deferred:** Earth element, Defence B/Luck A. 100% Crit in Twilight (L4), Foretell on Crit (L10). Not suitable for Sciel's current support role. Revisit only for a dedicated DPS Sciel build.
 
 ---
 
@@ -168,13 +179,15 @@ If the main party is fully wiped in a battle, the player can continue the battle
 
 - **First Life (15LP):** Drops from Chromatic Lampmaster in Endless Tower (Stage 11 / DLC superboss area). 25% damage while alive, no downside for a well-supported DPS. Strong candidate for Maelle once obtained.
 - **Frenzy:** Drops from Licornapieds in Verso's Drafts. Unconditional skill damage boost for multi-hit skills. Relevant for Maelle (multi-hit stances) and Verso (Strike Storm). Review when Verso's Drafts is accessible.
-- **Cheater for reserve team (40LP each):** Desirable for Lune and Monoco but not feasible within the Chat 14 CoL spend (would have required 61 extra CoL on top of 125). Deferred; revisit when more CoL is available.
-- **Shortcut for reserve team (5LP each):** Much more affordable, and offers a lifeline when low health, which is important for reserve team.
-- **Energising Shell (10LP) and Powerful On Shell for Maelle:** Had intended to apply in chat 14, but didn't have enough CoL.
+- **Charging Lumina for Simon fight:** 14 CoL held in reserve. Charging Alteration (10LP, Sciel) and Charging Critical (10LP, Maelle/Lune) are the strongest candidates. Decision deferred until after first attempt to assess whether gradient generation is a bottleneck.
+- **Defenceless application for Simon:** Exposing Attack (Base Attack applies Defenceless 1 turn, 10LP) is the simplest option for any character. Grosse Tête Whack (Monoco, 6AP Heavy, applies Defenceless 3 turns) is now in Monoco's Simon loadout. Further options exist (Doom gradient skill on Sciel — also applies Powerless + Slow; skills with 3-turn Defenceless). Review after first attempt.
+- **Combo Attack Lumina:** Wiki recommends equipping Combo Attack I and III. Neither is currently in any character's Lumina set for Simon. Low priority unless base-attack economy becomes important.
+- **Monoco Abbest Wind:** With permanent Cheater now in reserve core, Abbest Wind's "plays a second turn" effect may be redundant. Lancelier Impale substituted for Simon fight (Slow application). Review after fight — Abbest Wind may not be worth reinstating.
+- **Sciel Charging Alteration:** 10LP, applies +10% Gradient Charge on applying a buff (once per turn). Already obtained. CoL cost to add to pool: 0 (pool has space). Worth adding before Simon if gradient generation proves slow.
 - **Longer Shell (5LP) for Maelle:** Extends Shell duration from Lithum L20. Noted candidate; deferred — requires future CoL expansion.
 - **Empowering Dodge (5LP) for everyone:** Small damage buff but stacks when successfully dodging, which is easier than parrying. Does not reset on parrying, only on missed dodges. Deffered — requires future CoL expansion.
 - **Energising Burn (10LP) for Lune:** Synergises well with Lune's burn skills. Not enough CoL in chat 14, should be ready to add now.
-- **Anti-Blight for reserve team (10LP each):** Desirable for Renoir's Drafts in particular. Not high priority, may skip.
+- **Maelle Last Chance + Shortcut interaction:** Observed three-turn sequence: Normal turn → Cheater → Shortcut (triggered when Last Chance drops HP below 30%). Confirm whether this is intentional/consistent in practice.
 
 ---
 

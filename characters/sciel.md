@@ -114,36 +114,39 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 ### Current Loadout
 
 <!-- GENERATED:START characters:Sciel:Lumina -->
-| Lumina              | LP | Notes                                                         |
-|---------------------|----|---------------------------------------------------------------|
-| Accelerating Heal   | 5  | Rush on heal — synergy with Litheson AP generation            |
-| Anti-Blight         | 10 | Especially important in Renoir's Drafts                       |
-| Base Shield         | 20 |                                                               |
-| Breaker             | 10 | Main break damage booster                                     |
-| Breaking Burn       | 5  |                                                               |
-| Breaking Counter    | 3  |                                                               |
-| Breaking Death      | 5  | Extremely helpful in tough boss fights                        |
-| Burning Shots       | 3  |                                                               |
-| Cheater             | 40 | Essential for endgame builds                                  |
-| Critical Break      | 5  |                                                               |
-| Dead Energy I       | 2  |                                                               |
-| Dead Energy II      | 2  |                                                               |
-| Dodger              | 1  |                                                               |
-| Energising Heal     | 10 | 2 AP on healing an ally — primary AP engine with Grim Harvest |
-| Energising Parry    | 15 |                                                               |
-| Energising Start I  | 5  | Boosted by Energy Master to 8AP on battle start               |
-| Energising Turn     | 20 | Main AP flow generator; boosted by Energy Master              |
-| Energy Master       | —  | FREE from Energy Master Pictos                                |
-| Healing Tint Energy | 1  | 1 AP on Healing Tint use — small AP top-up                    |
-| Marking Shots       | 3  |                                                               |
-| Painted Power       | 5  | Essential for all characters from Act 3 onwards               |
-| Protecting Heal     | 5  | Shell on heal                                                 |
-| Recovery            | 10 | Passive heal on turn start, increases survivability           |
-| Rewarding Mark      | 5  |                                                               |
-| Second Chance       | 40 | Can save boss battles                                         |
-| Shortcut            | 5  |                                                               |
-| Survivor            | 20 | Secondary safety net before Second Chance                     |
-| Teamwork            | 5  |                                                               |
+| Lumina              | LP | Notes                                                            |
+|---------------------|----|------------------------------------------------------------------|
+| Accelerating Heal   | 5  | Rush on heal.                                                    |
+| Anti-Blight         | 10 | Especially important in Renoir's Drafts                          |
+| Anti-Stun           | 5  | Immune to Stun. 5LP. Good vs Simon.                              |
+| Auto Shell          | 10 | Apply Shell for 3 turns on battle start. 10LP. Defensive boost.  |
+| Base Shield         | 20 |                                                                  |
+| Breaker             | 10 | Main break damage booster                                        |
+| Breaking Burn       | 5  |                                                                  |
+| Breaking Counter    | 3  |                                                                  |
+| Breaking Death      | 5  | Extremely helpful in tough boss fights                           |
+| Burning Shots       | 3  |                                                                  |
+| Cheater             | 40 | Essential for endgame builds                                     |
+| Critical Break      | 5  |                                                                  |
+| Dead Energy I       | 2  |                                                                  |
+| Dead Energy II      | 2  |                                                                  |
+| Dodger              | 1  |                                                                  |
+| Empowering Dodge    | 5  | 5% increased damage per consecutive dodge, stacks up to 10. 5LP. |
+| Energising Heal     | 10 | 2 AP on healing an ally — primary AP engine with Grim Harvest    |
+| Energising Parry    | 15 |                                                                  |
+| Energising Start I  | 5  | Boosted by Energy Master to 8AP on battle start                  |
+| Energising Turn     | 20 | Main AP flow generator; boosted by Energy Master                 |
+| Energy Master       | —  | FREE from Energy Master Pictos                                   |
+| Healing Tint Energy | 1  | 1 AP on Healing Tint use — small AP top-up                       |
+| Marking Shots       | 3  |                                                                  |
+| Painted Power       | 5  | Essential for all characters from Act 3 onwards                  |
+| Protecting Heal     | 5  | Shell on heal                                                    |
+| Recovery            | 10 | Passive heal on turn start, increases survivability              |
+| Rewarding Mark      | 5  |                                                                  |
+| Second Chance       | 40 | Can save boss battles                                            |
+| Shortcut            | 5  |                                                                  |
+| Survivor            | 20 | Secondary safety net before Second Chance                        |
+| Teamwork            | 5  |                                                                  |
 <!-- GENERATED:END -->
 
 *Burn Affinity Lumina removed — Burn Affinity Pictos replaced by Quick Break, effect no longer free.*

@@ -250,7 +250,7 @@
       "ap": 9,
       "ap_adjusted": "5 at Rank S",
       "description": "AoE multi-hit all enemies. Trash fights only — useless in 1v1.",
-      "rank_bonus":  {
+      "rank_bonus": {
         "rank": "S",
         "effect": "Reduced AP cost"
       }
@@ -633,6 +633,21 @@
         "Ice",
         "Ice"
       ]
+    },
+    {
+      "name": "Crippling Tsunami",
+      "ap": 5,
+      "description": "Medium Ice AoE, 1 hit. Applies Slow for 3 turns. Consumes Earth, Lightning and Fire Stains for greatly increased damage.",
+      "stains_generated": [
+        "Ice",
+        "Light"
+      ],
+      "stains_consumed": [
+        "Earth",
+        "Lightning",
+        "Fire"
+      ],
+      "_note": "Not yet learned — requires 6 skill points to unlock. Do not add to characters.json skills_learned until purchased."
     }
   ],
   "Monoco": [

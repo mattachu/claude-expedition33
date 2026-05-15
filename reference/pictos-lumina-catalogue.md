@@ -4,7 +4,7 @@
 
 See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) for Pictos and Lumina currently in use.
 
-**194 Pictos total.** 161 obtained.
+**194 Pictos total.** 162 obtained.
 
 ---
 
@@ -18,7 +18,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Dodger | Gain 1 AP on Perfect Dodge. Once per turn. | 1 |  |  |  |
 | ✓ | Effective Support | +2 AP on using an item. | 5 |  |  |  |
 |  | Energetic Healer | +2 AP on Healing an ally. Once per turn. | 5 |  |  |  |
-| ✓ | Energising Attack I | +1 AP on Base Attack. | 10 | Speed: 895, Crit: 17% |  |  |
+| ✓ | Energising Attack I | +1 AP on Base Attack. | 10 | Speed: 958, Crit: 18% |  |  |
 |  | Energising Attack II | +1 AP on Base Attack. | 15 |  |  |  |
 | ✓ | Energising Break | +3 AP on Breaking a target. | 3 |  |  |  |
 | ✓ | Energising Burn | +1 AP on applying Burn. Once per turn. | 10 | Defence: 401, Speed: 321 |  |  |
@@ -28,7 +28,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Energising Heal | On Healing an ally, also give 2 AP. | 10 |  |  |  |
 | ✓ | Energising Jump | +1 AP on Jump Counterattack. | 5 |  |  |  |
 | ✓ | Energising Pain | No longer gain AP on Parry. +1 AP on getting hit. | 10 | Health: 3855, Defence: 713 |  |  |
-| ✓ | Energising Parry | +1 AP on successful Parry. | 15 |  |  |  |
+| ✓ | Energising Parry | +1 AP on successful Parry. | 15 | Health: 6303 |  |  |
 |  | Energising Powerful | Give 2 AP on applying Powerful. | 10 |  |  |  |
 | ✓ | Energising Revive | +3 AP to all allies when revived. | 5 |  |  |  |
 | ✓ | Energising Rush | Give 2 AP on applying Rush. | 10 |  |  |  |
@@ -39,7 +39,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Energising Start III | +1 AP on battle start. | 15 |  |  |  |
 | ✓ | Energising Start IV | +1 AP on battle start. | 20 |  |  |  |
 | ✓ | Energising Stun | +1 AP on hitting a Stunned target with a Skill. | 10 | Speed: 519, Crit: 31% |  |  |
-| ✓ | Energising Turn | +1 AP on turn start. | 20 | Speed: 270 |  |  |
+| ✓ | Energising Turn | +1 AP on turn start. | 20 | Speed: 1277 |  |  |
 | ✓ | Energy Master | Every AP gain is increased by 1 | 40 | Health: 4979 | Sciel |  |
 | ✓ | Perilous Parry | +1 AP on Parry, but damage received is doubled. | 5 | Speed: 586, Crit: 33% |  |  |
 | ✓ | Rewarding Mark | +2 AP on dealing damage to a Marked target. Once per turn. | 5 |  |  | mark |
@@ -60,9 +60,9 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Breaking Shots | 50% increased Break damage with Free Aim shots. | 1 |  |  | shots |
 | ✓ | Breaking Slow | 25% increased Break damage against Slowed enemies. | 5 |  |  |  |
 | ✓ | Fueling Break | Breaking a target doubles its Burn amount. | 5 | Speed: 507, Crit: 31% |  |  |
-| ✓ | Gradient Break | +50% of a Gradient Charge on Breaking a target. | 5 | Speed: 434, Crit: 28% | Maelle | gradient |
+| ✓ | Gradient Break | +50% of a Gradient Charge on Breaking a target. | 5 | Speed: 434, Crit: 28% |  | gradient |
 |  | Gradient Breaker | 50% increased Break damage with Gradient Attacks. | 5 |  |  | gradient |
-| ✓ | Quick Break | Play again on Breaking a target. | 3 | Speed: 672, Crit: 36% |  |  |
+| ✓ | Quick Break | Play again on Breaking a target. | 3 | Speed: 672, Crit: 36% | Monoco |  |
 | ✓ | Staggering Attack | 50% increased Break damage on Base Attack. | 1 |  |  |  |
 
 ---
@@ -104,7 +104,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Augmented Counter I | 25% increased Counterattack damage. | 3 | Health: 4058, Crit: 16% | Verso |  |
 | ✓ | Augmented Counter II | 50% increased Counterattack damage. | 5 |  |  |  |
 | ✓ | Augmented Counter III | 75% increased Counterattack damage. | 7 | Health: 1548, Crit: 10% |  |  |
-| ✓ | Augmented First Strike | 50% increased damage on the first hit. Once per battle. | 5 |  |  |  |
+| ✓ | Augmented First Strike | 50% increased damage on the first hit. Once per battle. | 5 | Speed: 1008, Crit: 18% | Monoco |  |
 | ✓ | Confident Fighter | 30% increased damage, but cannot be healed. | 15 | Health: 222, Crit: 20% |  |  |
 | ✓ | Empowering Attack | Gain Powerful for 1 turn on Base Attack. | 10 |  |  |  |
 | ✓ | Empowering Break | Gain Powerful on Breaking a target. | 3 | Speed: 546, Crit: 32% | Maelle |  |
@@ -143,15 +143,15 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Gradient Charge (9 Pictos, 3 obtained)
+## Gradient Charge (9 Pictos, 4 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
 | ✓ | Charging Alteration | +10% of a Gradient Charge on applying a Buff. Once per turn. | 10 | Defence: 1426, Speed: 519 |  |  |
 |  | Charging Attack | +15% of a Gradient Charge on Base Attack. | 7 |  |  |  |
-|  | Charging Burn | +20% of a Gradient Charge on applying Burn. Once per turn. | 10 |  |  |  |
+| ✓ | Charging Burn | +20% of a Gradient Charge on applying Burn. Once per turn. | 10 | Health: 3152, Speed: 639 |  |  |
 |  | Charging Counter | +10% of a Gradient Charge on Counterattack. | 10 |  |  |  |
-| ✓ | Charging Critical | +20% of a Gradient Charge on Critical Hit. Once per turn. | 10 | Defence: 1048, Crit: 27% |  |  |
+| ✓ | Charging Critical | +20% of a Gradient Charge on Critical Hit. Once per turn. | 10 | Defence: 1891, Crit: 35% |  |  |
 |  | Charging Mark | +20% of a Gradient Charge on hitting a Marked target. Once per turn. | 10 |  |  | mark |
 |  | Charging Stun | +5% of a Gradient Charge on hitting a Stunned enemy. | 5 |  |  |  |
 | ✓ | Charging Tint | +5% of a Gradient Charge on using an item. | 2 |  |  | support |
@@ -176,7 +176,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Healing Tint Energy | Healing Tints also give 1 AP. | 1 |  |  |  |
 | ✓ | Recovery | Recovers 10% Health on turn start. | 10 | Health: 2000, Defence: 324 |  |  |
 | ✓ | Shared Care | When Healing an ally, also Heal self for 50% of that value. | 10 |  |  |  |
-| ✓ | Sweet Kill | Recover 50% Health on killing an enemy. | 5 |  |  |  |
+| ✓ | Sweet Kill | Recover 50% Health on killing an enemy. | 5 | Speed: 672, Crit: 36% |  |  |
 
 ---
 
@@ -188,7 +188,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Enfeebling Mark | Marked targets deal 30% less damage. | 10 |  |  |  |
 |  | Marking Break | Apply Mark on Break. | 5 |  |  |  |
 | ✓ | Marking Shots | 20% chance to apply Mark on Free Aim shot. | 3 |  |  | shots |
-| ✓ | Powerful Mark | Gain Powerful on hitting a Marked target. | 5 | Speed: 819, Crit: 16% | Monoco |  |
+| ✓ | Powerful Mark | Gain Powerful on hitting a Marked target. | 5 | Speed: 819, Crit: 16% |  |  |
 | ✓ | Stay Marked | 50% chance to apply Mark when attacking a Marked target. | 10 |  |  |  |
 
 ---
@@ -217,7 +217,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Empowering Last Stand | Gain Powerful if fighting alone. | 3 |  |  | damage |
 | ✓ | Last Stand Critical | 100% Critical Chance while fighting alone. | 3 |  |  | critical |
 | ✓ | Protecting Last Stand | Gain Shell if fighting alone. | 3 |  |  | survival |
-| ✓ | Solo Fighter | Deal 50% more damage if fighting alone. | 1 |  |  | damage |
+| ✓ | Solo Fighter | Deal 50% more damage if fighting alone. | 1 | Health: 3317, Defence: 1990 |  | damage |
 
 ---
 
@@ -225,7 +225,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
-| ✓ | Aegis Revival | +1 Shield on being revived. | 5 |  |  |  |
+| ✓ | Aegis Revival | +1 Shield on being revived. | 5 | Defence: 1990, Speed: 672 |  |  |
 | ✓ | Anti-Blight | Immune to Blight | 10 | Health: 1897, Defence: 949 |  |  |
 | ✓ | Anti-Burn | Immune to Burn | 15 | Health: 2757, Defence: 1572 |  |  |
 | ✓ | Anti-Charm | Immune to Charm. | 10 |  |  |  |
@@ -248,7 +248,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | SOS Shell | Apply Shell when falling below 50% Health. | 5 |  |  |  |
 | ✓ | Second Chance | Revive with 100% Health. Once per battle. | 40 | Health: 3981, Crit: 15% |  |  |
 |  | Shielding Tint | Healing Tints also add 2 Shields. | 10 |  |  | support |
-| ✓ | Shortcut | Immediately play when falling below 30% Health. Once per battle. | None | Speed: 672, Crit: 36% |  |  |
+| ✓ | Shortcut | Immediately play when falling below 30% Health. Once per battle. | 5 | Speed: 672, Crit: 36% | Maelle |  |
 | ✓ | Solidifying | +2 Shields when the character's Health falls below 50%. Once per battle. | 10 |  |  |  |
 | ✓ | Survivor | Survive fatal damage with 1 Health once per battle | 20 | Speed: 439, Crit: 12% |  |  |
 
@@ -275,13 +275,13 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Longer Rush | On applying Rush, its duration is increased by 2. | 10 |  |  |  |
 |  | Powerful Heal | Healing an ally also applies Powerful for 1 turn. | 5 |  |  |  |
 | ✓ | Powerful On Shell | Apply Powerful on applying Shell. | 10 | Defence: 874, Crit: 25% |  |  |
-| ✓ | Powerful Revive | Apply Powerful for 3 turns when revived. | 3 | Speed: 546, Crit: 32% | Monoco |  |
+| ✓ | Powerful Revive | Apply Powerful for 3 turns when revived. | 3 | Speed: 546, Crit: 32% |  |  |
 | ✓ | Powerful Shots | 20% chance to gain Powerful on Free Aim shot. | 3 |  |  | shots |
 | ✓ | Protecting Heal | Healing an ally also applies Shell for 1 turn. | 5 |  |  |  |
 | ✓ | Rejuvenating Revive | Apply Regen for 3 turns when revived. | 3 |  |  |  |
 | ✓ | Revive Paradox | Play immediately when revived. | 5 |  |  |  |
 | ✓ | Revive Tint Energy | Revive Tints also give 3 AP. | 10 |  |  |  |
-| ✓ | Rush On Powerful | Apply Rush on applying Powerful. | 10 | Speed: 557, Crit: 32% |  |  |
+| ✓ | Rush On Powerful | Apply Rush on applying Powerful. | 10 | Speed: 639, Crit: 35% |  |  |
 |  | Shell On Rush | Apply Shell on applying Rush. | 10 |  |  |  |
 |  | Slowing Attack | Base Attack applies Slow for 1 turn. | 10 |  |  |  |
 |  | Slowing Break | Apply Slow on Break. | 5 |  |  |  |

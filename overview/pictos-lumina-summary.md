@@ -43,7 +43,7 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 |------|------------------|-------|-----------------------|-------------------------------------------------------------------------|
 | 1    | Clea's Life      | 30    | Health +5591          | On turn start, if no damage taken since last turn, recover 100% Health. |
 | 2    | Empowering Break | 28    | Speed +546, Crit +32% | Gain Powerful on Breaking a target.                                     |
-| 3    | Gradient Break   | 25    | Speed +434, Crit +28% | +50% of a Gradient Charge on Breaking a target.                         |
+| 3    | Shortcut         | 31    | Speed +672, Crit +36% | Immediately play when falling below 30% Health. Once per battle.        |
 <!-- GENERATED:END -->
 
 ### Verso
@@ -83,11 +83,11 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 ### Monoco
 
 <!-- GENERATED:START characters:Monoco:Pictos -->
-| Slot | Pictos          | Level | Stat Bonus                  | Effect                                             |
-|------|-----------------|-------|-----------------------------|----------------------------------------------------|
-| 1    | Longer Shell    | 29    | Health +2757, Defence +1572 | On applying Shell, its duration is increased by 2. |
-| 2    | Powerful Mark   | 28    | Speed +819, Crit +16%       | Gain Powerful on hitting a Marked target.          |
-| 3    | Powerful Revive | 28    | Speed +546, Crit +32%       | Apply Powerful for 3 turns when revived.           |
+| Slot | Pictos                 | Level | Stat Bonus                  | Effect                                                  |
+|------|------------------------|-------|-----------------------------|---------------------------------------------------------|
+| 1    | Longer Shell           | 29    | Health +2757, Defence +1572 | On applying Shell, its duration is increased by 2.      |
+| 2    | Augmented First Strike | 31    | Speed +1008, Crit +18%      | 50% increased damage on the first hit. Once per battle. |
+| 3    | Quick Break            | 31    | Speed +672, Crit +36%       | Play again on Breaking a target.                        |
 <!-- GENERATED:END -->
 
 ---
@@ -131,29 +131,30 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 ## 6. Reserve Team Core Lumina Set
 
 <!-- GENERATED:START lumina:core:reserve -->
-**Total: 140 LP** — applied to Lune, Monoco.
+**Total: 165 LP** — applied to Lune, Monoco.
 
-*Main team core minus Cheater, Dead Energy I, Dead Energy II, Second Chance, Shortcut; Plus Recovery.*
+*Main team core minus Dead Energy I, Dead Energy II, Second Chance; Plus Recovery. Updated Chat 22: Base Shield removed, Cheater and Shortcut added.*
 
-| Lumina             | LP | Effect                                                     |
-|--------------------|----|------------------------------------------------------------|
-| Painted Power      | 5  | Damage can exceed 9,999.                                   |
-| Energising Turn    | 20 | +1 AP on turn start.                                       |
-| Base Shield        | 20 | Grants 1 Shield HP buffer per turn                         |
-| Survivor           | 20 | Survive fatal damage with 1 Health once per battle         |
-| Recovery           | 10 | Recovers 10% Health on turn start.                         |
-| Teamwork           | 5  | 10% increased damage while all allies are alive.           |
-| Energising Parry   | 15 | +1 AP on successful Parry.                                 |
-| Energising Start I | 5  | +1 AP on battle start.                                     |
-| Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                 |
-| Breaker            | 10 | 25% increased Break damage.                                |
-| Marking Shots      | 3  | 20% chance to apply Mark on Free Aim shot.                 |
-| Critical Break     | 5  | 25% increased Break damage on Critical hits.               |
-| Rewarding Mark     | 5  | +2 AP on dealing damage to a Marked target. Once per turn. |
-| Burning Shots      | 3  | 20% chance to Burn on Free Aim shot.                       |
-| Breaking Burn      | 5  | 25% increased Break damage on Burning enemies.             |
-| Breaking Counter   | 3  | 50% increased Break damage on Counterattack.               |
-| Breaking Death     | 5  | Fully charge enemy break bar on death                      |
+| Lumina             | LP | Effect                                                           |
+|--------------------|----|------------------------------------------------------------------|
+| Painted Power      | 5  | Damage can exceed 9,999.                                         |
+| Energising Turn    | 20 | +1 AP on turn start.                                             |
+| Cheater            | 40 | Extra turn after using a skill, once per turn                    |
+| Shortcut           | 5  | Immediately play when falling below 30% Health. Once per battle. |
+| Survivor           | 20 | Survive fatal damage with 1 Health once per battle               |
+| Recovery           | 10 | Recovers 10% Health on turn start.                               |
+| Teamwork           | 5  | 10% increased damage while all allies are alive.                 |
+| Energising Parry   | 15 | +1 AP on successful Parry.                                       |
+| Energising Start I | 5  | +1 AP on battle start.                                           |
+| Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                       |
+| Breaker            | 10 | 25% increased Break damage.                                      |
+| Marking Shots      | 3  | 20% chance to apply Mark on Free Aim shot.                       |
+| Critical Break     | 5  | 25% increased Break damage on Critical hits.                     |
+| Rewarding Mark     | 5  | +2 AP on dealing damage to a Marked target. Once per turn.       |
+| Burning Shots      | 3  | 20% chance to Burn on Free Aim shot.                             |
+| Breaking Burn      | 5  | 25% increased Break damage on Burning enemies.                   |
+| Breaking Counter   | 3  | 50% increased Break damage on Counterattack.                     |
+| Breaking Death     | 5  | Fully charge enemy break bar on death                            |
 <!-- GENERATED:END -->
 
 ---
