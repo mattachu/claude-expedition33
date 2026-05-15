@@ -1,12 +1,3 @@
-Chat 22 Changelist
-Generated: 2026-05-15
-
-================================================================================
-DATA BLOCKS
-================================================================================
-
---- Inventory updates ---
-
 DATA: data/playthrough.json
 PATH: inventory.colour_of_lumina
 OP: SET
@@ -27,14 +18,10 @@ PATH: inventory.chroma_catalyst_grandiose
 OP: SET
 VALUE: 86
 
---- Checklist ---
-
 DATA: data/playthrough.json
 PATH: current_phase_checklist[id=purchase_charnon].done
 OP: SET
 VALUE: true
-
---- Character levels and LP ---
 
 DATA: data/characters.json
 PATH: Maelle.level
@@ -61,8 +48,6 @@ PATH: Monoco.lp_used
 OP: SET
 VALUE: 170
 
---- Maelle Pictos and Lumina ---
-
 DATA: data/characters.json
 PATH: Maelle.pictos_equipped
 OP: SET
@@ -71,7 +56,7 @@ VALUE: ["Clea's Life", "Empowering Break", "Shortcut"]
 DATA: data/characters.json
 PATH: Maelle.lumina_extras
 OP: SET
-VALUE: [{"name": "Full Strength", "notes": "Damage bonus while on full HP — strong synergy with Clea's Life Pictos"}, {"name": "Warming Up", "notes": "Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus"}, {"name": "Gradient Break", "notes": "+50% of a Gradient Charge on Breaking a target. 5LP — Pictos slot freed by equipping Shortcut Pictos."}, {"name": "Energising Shell", "notes": "Give 2 AP on applying Shell. 10LP."}, {"name": "Powerful On Shell", "notes": "Apply Powerful on applying Shell. 10LP."}]
+VALUE: [{"name": "Full Strength", "notes": "Damage bonus while on full HP — strong synergy with Clea's Life Pictos"}, {"name": "Warming Up", "notes": "Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus"}, {"name": "Gradient Break", "notes": "+50% of a Gradient Charge on Breaking a target."}, {"name": "Energising Shell", "notes": "Give 2 AP on applying Shell. 10LP. Synergises with Lithum."}, {"name": "Powerful On Shell", "notes": "Apply Powerful on applying Shell. 10LP. Synergises with Lithum."}]
 
 DATA: data/characters.json
 PATH: Maelle.lp_used
@@ -86,26 +71,22 @@ VALUE: 2446
 DATA: data/characters.json
 PATH: Maelle.stats_modified.crit
 OP: SET
-VALUE: "109% (approx — verify in game)"
+VALUE: "109%"
 
 DATA: data/characters.json
 PATH: Maelle.stats_modified._note
 OP: SET
 VALUE: "Stats with Lithum (33), Clea's Life (30), Empowering Break (28), Shortcut (31) equipped. Speed and Crit approximate pending in-game verification."
 
---- Sciel Lumina ---
-
 DATA: data/characters.json
 PATH: Sciel.lumina_extras
 OP: SET
-VALUE: [{"name": "Recovery", "notes": "Passive heal on turn start, increases survivability"}, {"name": "Accelerating Heal", "notes": "Rush on heal — synergy with Litheson AP generation"}, {"name": "Energising Heal", "notes": "2 AP on healing an ally — primary AP engine with Grim Harvest"}, {"name": "Protecting Heal", "notes": "Shell on heal"}, {"name": "Healing Tint Energy", "notes": "1 AP on Healing Tint use — small AP top-up"}, {"name": "Anti-Stun", "notes": "Immune to Stun. 5LP."}, {"name": "Empowering Dodge", "notes": "5% increased damage per consecutive dodge, stacks up to 10. 5LP. Reset behaviour on parry unconfirmed — test empirically."}, {"name": "Auto Shell", "notes": "Apply Shell for 3 turns on battle start. 10LP."}]
+VALUE: [{"name": "Recovery", "notes": "Passive heal on turn start, increases survivability"}, {"name": "Accelerating Heal", "notes": "Rush on heal."}, {"name": "Energising Heal", "notes": "2 AP on healing an ally — primary AP engine with Grim Harvest"}, {"name": "Protecting Heal", "notes": "Shell on heal"}, {"name": "Healing Tint Energy", "notes": "1 AP on Healing Tint use — small AP top-up"}, {"name": "Anti-Stun", "notes": "Immune to Stun. 5LP. Good vs Simon."}, {"name": "Empowering Dodge", "notes": "5% increased damage per consecutive dodge, stacks up to 10. 5LP."}, {"name": "Auto Shell", "notes": "Apply Shell for 3 turns on battle start. 10LP. Defensive boost."}]
 
 DATA: data/characters.json
 PATH: Sciel.lp_used
 OP: SET
 VALUE: 260
-
---- Monoco Pictos and skills ---
 
 DATA: data/characters.json
 PATH: Monoco.pictos_equipped
@@ -125,21 +106,17 @@ VALUE: 2848
 DATA: data/characters.json
 PATH: Monoco.stats_modified.crit
 OP: SET
-VALUE: "105% (approx — verify in game)"
+VALUE: "105%"
 
 DATA: data/characters.json
 PATH: Monoco.stats_modified._note
 OP: SET
 VALUE: "Stats with Joyaro (33), Longer Shell (29), Augmented First Strike (31), Quick Break (31) equipped. Speed and Crit approximate pending in-game verification."
 
---- Lune skills (Simon-specific) ---
-
 DATA: data/characters.json
 PATH: Lune.skills_equipped
 OP: SET
 VALUE: ["Hell", "Terraquake", "Ice Lance", "Healing Light", "Mayhem", "Elemental Genesis"]
-
---- pictos-lumina.json equipped_by updates ---
 
 DATA: data/pictos-lumina.json
 PATH: pictos[name=Gradient Break].equipped_by
@@ -181,64 +158,104 @@ PATH: pictos[name=Quick Break].equipped_by
 OP: SET
 VALUE: "Monoco"
 
---- New Pictos ---
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Charging Critical].level
+OP: SET
+VALUE: 31
 
 DATA: data/pictos-lumina.json
-PATH: pictos
-OP: ADD
-VALUE: {"name": "Charging Critical", "category": ["gradient"], "effect": "+20% of a Gradient Charge on Critical Hit. Once per turn.", "lp_cost": 10, "obtained": true, "equipped_by": null, "level": 31, "stats": {"defence": 1891, "crit": "35%"}}
+PATH: pictos[name=Charging Critical].stats
+OP: SET
+VALUE: {"defence": 1891, "crit": "35%"}
 
 DATA: data/pictos-lumina.json
-PATH: pictos
-OP: ADD
-VALUE: {"name": "Charging Burn", "category": ["gradient"], "effect": "+20% of a Gradient Charge on applying Burn. Once per turn.", "lp_cost": 10, "obtained": true, "equipped_by": null, "level": 31, "stats": {"health": 3152, "speed": 639}}
+PATH: pictos[name=Charging Burn].obtained
+OP: SET
+VALUE: true
 
 DATA: data/pictos-lumina.json
-PATH: pictos
-OP: ADD
-VALUE: {"name": "Rush On Powerful", "category": ["support"], "effect": "Apply Rush on applying Powerful.", "lp_cost": 10, "obtained": true, "equipped_by": null, "level": 31, "stats": {"speed": 639, "crit": "35%"}}
+PATH: pictos[name=Charging Burn].level
+OP: SET
+VALUE: 31
 
 DATA: data/pictos-lumina.json
-PATH: pictos
-OP: ADD
-VALUE: {"name": "Energising Turn", "category": ["ap"], "effect": "+1 AP on turn start.", "lp_cost": 20, "obtained": true, "equipped_by": null, "level": 31, "stats": {"speed": 1277}}
+PATH: pictos[name=Charging Burn].stats
+OP: SET
+VALUE: {"health": 3152, "speed": 639}
 
 DATA: data/pictos-lumina.json
-PATH: pictos
-OP: ADD
-VALUE: {"name": "Energising Attack I", "category": ["ap"], "effect": "+1 AP on Base Attack.", "lp_cost": 10, "obtained": true, "equipped_by": null, "level": 31, "stats": {"speed": 958, "crit": "18%"}}
+PATH: pictos[name=Rush On Powerful].level
+OP: SET
+VALUE: 31
 
 DATA: data/pictos-lumina.json
-PATH: pictos
-OP: ADD
-VALUE: {"name": "Energising Parry", "category": ["ap"], "effect": "+1 AP on successful Parry.", "lp_cost": 15, "obtained": true, "equipped_by": null, "level": 31, "stats": {"health": 6303}}
+PATH: pictos[name=Rush On Powerful].stats
+OP: SET
+VALUE: {"speed": 639, "crit": "35%"}
 
 DATA: data/pictos-lumina.json
-PATH: pictos
-OP: ADD
-VALUE: {"name": "Augmented First Strike", "category": ["damage"], "effect": "50% increased damage on the first hit. Once per battle.", "lp_cost": 5, "obtained": true, "equipped_by": "Monoco", "level": 31, "stats": {"speed": 1008, "crit": "18%"}}
+PATH: pictos[name=Energising Turn].level
+OP: SET
+VALUE: 31
 
 DATA: data/pictos-lumina.json
-PATH: pictos
-OP: ADD
-VALUE: {"name": "Aegis Revival", "category": ["survival"], "effect": "+1 Shield on being revived.", "lp_cost": 5, "obtained": true, "equipped_by": null, "level": 31, "stats": {"defence": 1990, "speed": 672}}
+PATH: pictos[name=Energising Turn].stats
+OP: SET
+VALUE: {"speed": 1277}
 
 DATA: data/pictos-lumina.json
-PATH: pictos
-OP: ADD
-VALUE: {"name": "Solo Fighter", "category": ["solo", "damage"], "effect": "Deal 50% more damage if fighting alone.", "lp_cost": 1, "obtained": true, "equipped_by": null, "level": 31, "stats": {"health": 3317, "defence": 1990}}
+PATH: pictos[name=Energising Turn].notes
+OP: REMOVE
 
 DATA: data/pictos-lumina.json
-PATH: pictos
-OP: ADD
-VALUE: {"name": "Sweet Kill", "category": ["healing"], "effect": "Recover 50% Health on killing an enemy.", "lp_cost": 5, "obtained": true, "equipped_by": null, "level": 31, "stats": {"speed": 672, "crit": "36%"}}
+PATH: pictos[name=Energising Attack I].level
+OP: SET
+VALUE: 31
 
 DATA: data/pictos-lumina.json
-PATH: pictos
-OP: ADD
-VALUE: {"name": "Painerim", "category": [], "effect": null, "lp_cost": null, "obtained": true, "equipped_by": null, "level": 31, "notes": "Stub — stats and effect not recorded (no tooltip screenshot)"}
+PATH: pictos[name=Energising Attack I].stats
+OP: SET
+VALUE: {"speed": 958, "crit": "18%"}
 
---- Reserve team core Lumina set update ---
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Energising Parry].level
+OP: SET
+VALUE: 31
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Energising Parry].stats
+OP: SET
+VALUE: {"health": 6303}
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Aegis Revival].level
+OP: SET
+VALUE: 31
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Aegis Revival].stats
+OP: SET
+VALUE: {"defence": 1990, "speed": 672}
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Solo Fighter].level
+OP: SET
+VALUE: 31
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Solo Fighter].stats
+OP: SET
+VALUE: {"health": 3317, "defence": 1990}
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Sweet Kill].level
+OP: SET
+VALUE: 31
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Sweet Kill].stats
+OP: SET
+VALUE: {"speed": 672, "crit": "36%"}
 
 DATA: data/pictos-lumina.json
 PATH: core_lumina_suite.reserve_team.total_lp
@@ -253,9 +270,7 @@ VALUE: [{"name": "Painted Power", "lp": 5}, {"name": "Energising Turn", "lp": 20
 DATA: data/pictos-lumina.json
 PATH: core_lumina_suite.reserve_team.notes
 OP: SET
-VALUE: "Main team core minus Dead Energy I, Dead Energy II, Second Chance, Base Shield; Plus Recovery. Updated Chat 22: Base Shield removed, Cheater and Shortcut added."
-
---- New weapons ---
+VALUE: "Main team core minus Dead Energy I, Dead Energy II, Second Chance; Plus Recovery. Updated Chat 22: Base Shield removed, Cheater and Shortcut added."
 
 DATA: data/weapons.json
 PATH: Maelle
@@ -271,6 +286,12 @@ DATA: data/weapons.json
 PATH: Sciel
 OP: ADD
 VALUE: {"name": "Chromaro", "level": 31, "power": 4884, "element": "Ice", "scaling": "Defence B (+885), Agility A (+1549)", "obtained": true, "effects": [{"level": 4, "description": "Start battle in Caster Mask."}, {"level": 10, "description": "Caster Mask applies Regen for 3 turns."}, {"level": 20, "description": "Skills cost 1 less AP while in Caster Mask."}]}
+
+DATA: data/weapons.json
+PATH: Lune
+OP: ADD
+VALUE: {"name": "Painerim", "level": 31, "obtained": true}
+
 
 DATA: data/weapons.json
 PATH: Sciel[name=Charnon].level
@@ -307,16 +328,10 @@ PATH: Sciel[name=Charnon].notes
 OP: SET
 VALUE: "Purchased from Renoir's Drafts merchant (89,884 Chroma). Alternative endgame weapon; character-locked to Sciel. Not suitable for current support role. Revisit only if a dedicated Sciel DPS build is ever explored."
 
---- New skill ---
-
 DATA: data/skills.json
 PATH: Lune
 OP: ADD
 VALUE: {"name": "Crippling Tsunami", "ap": 5, "description": "Medium Ice AoE, 1 hit. Applies Slow for 3 turns. Consumes Earth, Lightning and Fire Stains for greatly increased damage.", "stains_generated": ["Ice", "Light"], "stains_consumed": ["Earth", "Lightning", "Fire"], "_note": "Not yet learned — requires 6 skill points to unlock. Do not add to characters.json skills_learned until purchased."}
-
-================================================================================
-FILE BLOCKS
-================================================================================
 
 FILE: reference/mechanics.md
 SECTION: ## Gradient Skills
@@ -418,34 +433,3 @@ CONTENT:
 - **Monoco Abbest Wind:** With permanent Cheater now in reserve core, Abbest Wind's "plays a second turn" effect may be redundant. Lancelier Impale substituted for Simon fight (Slow application). Review after fight — Abbest Wind may not be worth reinstating.
 - **Sciel Charging Alteration:** 10LP, applies +10% Gradient Charge on applying a buff (once per turn). Already obtained. CoL cost to add to pool: 0 (pool has space). Worth adding before Simon if gradient generation proves slow.
 - **Maelle Last Chance + Shortcut interaction:** Observed three-turn sequence: Normal turn → Cheater → Shortcut (triggered when Last Chance drops HP below 30%). Confirm whether this is intentional/consistent in practice.
-
-FILE: chats/chat-index.md
-SECTION: ## (append row)
-AFTER: | Chat 21 |
-CONTENT:
-| Chat 22 | [Formatted](chat22/chat22-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat22/chat22-index.md) | [chat22.md](chat22/chat22.md) | Simon fight preparation: team composition revised to Verso/Sciel main + Maelle/Lune/Monoco reserve; Pictos swaps for Maelle and Monoco; Lumina additions for all characters; new Pictos and weapons recorded from screenshots; gradient bar shared-pool mechanic corrected; Defenceless and Slow application options researched |
-
-FILE: reference/historical-errors.md
-SECTION: ## (append)
-AFTER: 51.
-CONTENT:
-52. **Gradient bar per-character assumption (Chat 22):** Initially treated the Gradient bar as per-character (each character builds their own pool). Correct: the Gradient bar is shared across all characters — all contribute to one pool, and using a Gradient Skill depletes the shared bar. Matt corrected this. Affects Charging Lumina strategy: spreading Charging Lumina across characters builds the bar faster overall.
-53. **Sciel Recovery already present (Chat 22):** Suggested adding Recovery to Sciel's lumina_extras during the Lumina open questions review. Recovery was already listed in her lumina_extras in characters.json. Claude should have checked the data before suggesting additions. LP calculation corrected: Sciel has 10LP free, not 20LP.
-
-================================================================================
-IN-GAME ACTIONS CHECKLIST
-================================================================================
-
-Before next session:
-[ ] Apply Maelle Pictos swap: Gradient Break → Shortcut (L31)
-[ ] Apply Monoco Pictos swaps: Powerful Revive → Augmented First Strike (L31); Powerful Mark → Quick Break (L31)
-[ ] Add Maelle Lumina: Gradient Break (5LP), Energising Shell (10LP), Powerful On Shell (10LP)
-[ ] Add Sciel Lumina: Anti-Stun (5LP), Empowering Dodge (5LP), Auto Shell (10LP)
-[ ] Remove Base Shield from all characters' Lumina sets for Simon fight
-[ ] Verify reserve team Lumina set has Cheater (40LP) and Shortcut (5LP)
-[ ] Spend 23 CoL on Lune (pool 152→175) and 25 CoL on Monoco (pool 145→170)
-[ ] Swap Lune skills_equipped: Lightning Dance → Ice Lance (Simon-specific)
-[ ] Swap Monoco skills_equipped: Abbest Wind → Lancelier Impale; Portier Crash → Grosse Tête Whack (both Simon-specific)
-[ ] Verify updated Maelle Speed (~2446) and Crit (~109%) in game
-[ ] Verify updated Monoco Speed (~2848) and Crit (~105%) in game
-[ ] Attempt Simon fight (Option A first: Verso/Sciel main, Maelle/Lune/Monoco reserve)
