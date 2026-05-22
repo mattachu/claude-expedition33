@@ -100,7 +100,9 @@ FILE: behaviour:
     Update (### exists):    Replace the existing ### section with new content.
     Insert (### missing):   Insert after the last ### sibling in the ## parent,
                             or after the AFTER: sibling if specified.
-    ## missing:             Fail loudly — structural changes require manual edit.
+    ## missing, no AFTER:   Fail loudly — position requires manual decision.
+    ## missing, AFTER: set: Insert after the named ## sibling (AFTER: target not
+                            found → fail loudly). EOF is not used as a fallback.
     ## -level entry:        Replace the entire ## section (no ### child specified).
 
     Note: the script operates at heading level only. Individual bullet points,
@@ -910,7 +912,7 @@ def apply_entry(lines, entry, interactive=True):
                                                     section_id, interactive)
             if not proceed:
                 return lines, True, None
-        return _apply_h2_entry(lines, section_heading, new_content_lines), False, note
+        return _apply_h2_entry(lines, section_heading, after_hint, new_content_lines), False, note
     else:
         note = None
         h2_line = find_heading_line(lines, parent_heading)
@@ -930,26 +932,42 @@ def apply_entry(lines, entry, interactive=True):
                                after_hint, new_content_lines), False, note
 
 
-def _apply_h2_entry(lines, section_heading, new_content_lines):
-    """Replace an entire ## section."""
+def _apply_h2_entry(lines, section_heading, after_hint, new_content_lines):
+    """Replace an existing ## section, or insert a new one if AFTER: is specified."""
     h2_line = find_heading_line(lines, section_heading)
-    if h2_line is None:
+
+    if h2_line is not None:
+        # UPDATE: replace existing ## section
+        section_end = find_section_end(lines, h2_line, level=2)
+        prefix = lines[:h2_line]
+        suffix = lines[section_end:]
+        while prefix and prefix[-1].strip() == '':
+            prefix.pop()
+        post_sep = ['\n'] if suffix and suffix[0].strip() != '' else []
+        return prefix + new_content_lines + post_sep + suffix
+
+    # Section does not exist — insert only if AFTER: was specified
+    if not after_hint:
         raise ValueError(
             f'## section not found: "{section_heading}"\n'
-            f'Structural changes require manual edit.'
+            f'To insert a new ## section, specify AFTER: with the preceding ## heading.\n'
+            f'To replace or restructure, edit the file manually.'
         )
 
-    section_end = find_section_end(lines, h2_line, level=2)
+    after_line = find_heading_line(lines, after_hint)
+    if after_line is None:
+        raise ValueError(
+            f'AFTER: target not found: "{after_hint}"\n'
+            f'Cannot insert "{section_heading}" — named sibling does not exist.'
+        )
 
-    prefix = lines[:h2_line]
-    suffix = lines[section_end:]
-
+    insert_pos = find_section_end(lines, after_line, level=2)
+    prefix = lines[:insert_pos]
+    suffix = lines[insert_pos:]
     while prefix and prefix[-1].strip() == '':
         prefix.pop()
-
     post_sep = ['\n'] if suffix and suffix[0].strip() != '' else []
-
-    return prefix + new_content_lines + post_sep + suffix
+    return prefix + ['\n'] + new_content_lines + post_sep + suffix
 
 
 def _apply_h3_entry(lines, parent_heading, section_heading, after_hint, new_content_lines):
