@@ -1,6 +1,6 @@
 APPEND: chats/chat-index.md
 CONTENT:
-| Chat 23 | [Formatted](chat23/chat23-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat23/chat23-index.md) | [chat23.md](chat23/chat23.md) | Simon boss fight attempts: character stat/level corrections; phase structure analysis including Light Speed survival, Twilight entry via Fortune's Fury + Intervention, and GP carry-over into Phase 3; Lune/Monoco main team attempt (Plan E); Monoco wheel rotation optimised for Simon; Plan F stunlock build (End Bringer + Seeram) identified; Plan E finalised with Lune/Verso skill swaps; Alternate Builds sections added to all character files |
+| Chat 23 | [Formatted](chat23/chat23-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat23/chat23-index.md) | [chat23.md](chat23/chat23.md) | Simon boss fight attempts: phase structure analysis including Light Speed survival and GP carry-over into Phase 3; Plan E finalised with Lune/Verso skill swaps; Plan F stunlock build identified (End Bringer + Seeram)                 |
 
 
 DATA: data/characters.json
@@ -186,7 +186,7 @@ VALUE: {"name": "Seeram", "level": 33, "power": 3713, "element": "Light", "scali
 
 FILE: reference/mechanics.md
 SECTION: ## Status Effects
-AFTER: ## Reserve Party
+AFTER: ## Tints
 CONTENT:
 ## Status Effects
 
@@ -226,15 +226,29 @@ CONTENT:
 - Purchase Seeram from Cruler and Bruler blacksmiths in Coastal Cave
 - Not yet attempted; flagged as alternative if Plan E fails
 
+**Lumina changes:** Base Shield excluded from main team core for Simon fight (non-functional vs Simon's damage output; Verso's Base Shield already excluded permanently due to Chevalam). No further Lumina changes.
+
+**Skills changes (from standard):**
+- Swap: Light Holder → Overload (better AP generation for sustained fight; functionally similar Rank climbing)
+
+**Role:** Main DPS in Team 1 (Verso + Lune + Monoco). Primary damage dealer across all three phases. Angel Eyes gradient used both offensively and defensively (Aureole auto-revive). Second Chance provides revival safety net.
+
+**Plan F:** Verso/Sciel/Maelle — same composition as Plans A and B. Sciel sets up Twilight for speed advantage; Verso stunlocks using Overload + End Bringer (stunlock is Verso's mechanic; the team around him is unchanged). Maelle executes Gommage burst. Equip Seeram instead of Chevalam — caps Verso at Rank A, required for the End Bringer loop. Not yet attempted.
+
 **Revert after Simon:** swap Overload → Light Holder (or reassess); re-equip Chevalam if Seeram was used.
 
 
 
 FILE: characters/maelle.md
-SECTION: ## Alternate Builds
-AFTER: ## Build Options
+SECTION: ## Build Options
 CONTENT:
-## Alternate Builds
+## Build Options
+
+| Build         | Role      | Key Skills                                                                         | Key Lumina                       | Status                                                                                   | Notes                                                                 |
+|---------------|-----------|------------------------------------------------------------------------------------|----------------------------------|------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| Standard DPS  | Main DPS  | Gustave's Homage, Sword Ballet, Fleuret Fury, Percée, Phantom Strike, Stendhal.    | Full 158 LP loadout (149 used)  | Current                                                                                   | Cheater via Lumina (40 LP)                                            |
+| Solo          | Solo DPS  | Stendhal, Phantom Strike, Last Chance, Gustave's Homage, Fleuret Fury, Mezzo Forte | Swap Cheater to Pictos; add Last Stand suite + Recovery + Energising Attack I; remove Teamwork/Breaking Counter/Dead Energy | Previous / Shelved | Borrow Cheater Pictos + Second Chance from Verso |
+| Burn-stacking | Burn DPS  | Burning Canvas as primary; Stalum weapon; Swift Stride for Virtuose entry          | Investigate separately           | Future                                                                                   | Synergises with Corpeso (Verso), Kralim (Lune)                        |
 
 ### Solo build (The Reacher)
 
@@ -264,10 +278,14 @@ CONTENT:
 **Revert after Simon:** Remove First Strike Lumina; restore Base Shield (20LP).
 
 FILE: characters/sciel.md
-SECTION: ## Alternate Builds
-AFTER: ## Build Options
+SECTION: ## Build Options
 CONTENT:
-## Alternate Builds
+## Build Options
+
+| Build Name         | Role         | Key Skills                                                                                    | Key Lumina                              | Status   | Notes                                                |
+|--------------------|--------------|-----------------------------------------------------------------------------------------------|-----------------------------------------|----------|------------------------------------------------------|
+| Pure Support       | Support      | Fortune's Fury, Intervention, Plentiful Harvest, Focused Foretell, Twilight Dance, Final Path | Core suite + Energising Heal/Parry/Heal | Current  | Litheson Level 20 essential for AP generation        |
+| Chation DPS-hybrid | Support/DPS  | Twilight-focused skills                                                                       | TBD                                     | Deferred | Double damage risk; revisit when parry rate improves |
 
 ### Simon fight
 
@@ -281,30 +299,15 @@ CONTENT:
 
 **Revert after Simon:** Remove Anti-Stun (5LP), Auto Shell (10LP), First Strike Lumina; restore Base Shield (20LP).
 
-FILE: characters/verso.md
-SECTION: ## Alternate Builds
-AFTER: ## Build Options
-CONTENT:
-## Alternate Builds
-
-### Simon fight
-
-**Lumina changes:** Base Shield excluded from main team core for Simon fight (non-functional vs Simon's damage output; Verso's Base Shield already excluded permanently due to Chevalam). No further Lumina changes.
-
-**Skills changes (from standard):**
-- Swap: Light Holder → Overload (better AP generation for sustained fight; functionally similar Rank climbing)
-
-**Role:** Main DPS in Team 1 (Verso + Lune + Monoco). Primary damage dealer across all three phases. Angel Eyes gradient used both offensively and defensively (Aureole auto-revive). Second Chance provides revival safety net.
-
-**Plan F:** Verso/Sciel/Maelle — same composition as Plans A and B. Sciel sets up Twilight for speed advantage; Verso stunlocks using Overload + End Bringer (stunlock is Verso's mechanic; the team around him is unchanged). Maelle executes Gommage burst. Equip Seeram instead of Chevalam — caps Verso at Rank A, required for the End Bringer loop. Not yet attempted.
-
-**Revert after Simon:** Swap Overload → Light Holder (or reassess based on performance).
-
 FILE: characters/lune.md
-SECTION: ## Alternate Builds
-AFTER: ## Build Options
+SECTION: ## Build Options
 CONTENT:
-## Alternate Builds
+## Build Options
+
+| Build                | Role              | Key Skills                                                                  | Key Weapon | Status   | Notes                                                                                             |
+|----------------------|-------------------|-----------------------------------------------------------------------------|------------|----------|---------------------------------------------------------------------------------------------------|
+| Mayhem               | DPS / healer      | Mayhem, Wildfire, Crustal Crush, Thunderfall, Healing Light, Rebirth        | Trebuchim  | Previous | Use Trebuchim + skills to generate stains, Mayhem for damage + break. Heavily used in Acts 1 & 2. |
+| Elemental Genesis    | DPS / healer      | Hell, Terraquake, Lightning Dance, Elemental Genesis, Mayhem, Healing Light | Kralim     | Current  | Vitality 99, Agility 99, Luck 30. Reserve team role.                                              |
 
 ### Simon fight
 
@@ -323,10 +326,14 @@ CONTENT:
 **Revert after Simon:** Swap Ice Lance → Lightning Dance; swap Rebirth → Mayhem (or reassess — Rebirth may be worth keeping permanently).
 
 FILE: characters/monoco.md
-SECTION: ## Alternate Builds
-AFTER: ## Build Options
+SECTION: ## Build Options
 CONTENT:
-## Alternate Builds
+## Build Options
+
+| Build          | Role                 | Key Skills                                                                                       | Key Lumina                                        | Status   | Notes                                                       |
+|----------------|----------------------|--------------------------------------------------------------------------------------------------|---------------------------------------------------|----------|-------------------------------------------------------------|
+| Levelling team | Break + support/heal | Potier Energy, Stalact Punches, Abbest Wind, Moissonneuse Vendange, Chalier Combo, Pelerin Heal  |                                                   | Previous | Versatile; can cover Lune's roles                           |
+| Reserve team   | Break + AP support   | Potier Energy, Stalact Punches, Abbest Wind, Moissonneuse Vendange, Chalier Combo, Portier Crash | Reserve core + Staggering Attack + Breaking Death | Current  | Joyaro equipped; Longer Shell/Energising Turn/Sniper Pictos |
 
 ### Simon fight
 
@@ -373,11 +380,6 @@ CONTENT:
 **Lists:** If Matt's turn begins with a list, insert a blank line between `**Matt:**` and the first list item so Markdown renders correctly.
 
 **Appending to file:** Use bash `>>` redirection to append turns to the transcript file. No need to view the file before appending — just construct the content and redirect.
-
-
-1. Complete transcript: run a final `!log` step
-2. Verbatim check: sample 3–4 turns spread across the transcript file (beginning, middle, end) — read each from disk, compare against context, report pass/fail per sample
-3. Output transcript: present `chatN.md` and stop
 
 
 FILE: overview/claude-expedition33.md
