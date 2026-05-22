@@ -569,6 +569,24 @@
       "scaling": null,
       "obtained": true,
       "effects": []
+    },
+    {
+      "name": "Seeram",
+      "level": 33,
+      "power": 3713,
+      "element": "Light",
+      "scaling": {
+        "primary": "Vitality A",
+        "secondary": "Agility S"
+      },
+      "obtained": false,
+      "future": true,
+      "effects": {
+        "level_4": "+1 to all Perfection gain but can't reach Rank S.",
+        "level_10": "Base Attack gives 4 Perfection.",
+        "level_20": "20% increased Light damage with Skills."
+      },
+      "notes": "Purchased from Cruler and Bruler blacksmiths in Coastal Cave. Required for End Bringer stunlock build (Plan F)."
     }
   ],
   "Sciel": [

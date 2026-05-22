@@ -33,7 +33,7 @@ Fetch that file only when reviewing specific past errors.
 - **Current playthrough:** First playthrough
 - **Progress:**
   - Act 3, Phase 4.
-  - Characters: Maelle L94, Verso L93, Sciel L92, Lune L88, Monoco L88.
+  - Characters: Maelle L94, Verso L94, Sciel L94, Lune L89, Monoco L89.
   - Current area: Renoir's Drafts.
 <!-- GENERATED:END -->
   - For detailed progression plan, see [`overview/progress.md`](progress.md)
@@ -47,11 +47,11 @@ Fetch that file only when reviewing specific past errors.
 <!-- GENERATED:START characters:summary:party -->
 | Character                         | Level | Role                         | Weapon        | Pictos                                            | LP      |
 |-----------------------------------|-------|------------------------------|---------------|---------------------------------------------------|---------|
-| [Maelle](../characters/maelle.md) | 94    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut           | 299/299 |
-| [Verso](../characters/verso.md)   | 93    | Endgame main DPS             | Chevalam (33) | Augmented Counter I, Breaking Death, Confident    | 274/274 |
-| [Sciel](../characters/sciel.md)   | 92    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots          | 260/260 |
-| [Lune](../characters/lune.md)     | 88    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death       | 175/175 |
-| [Monoco](../characters/monoco.md) | 88    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Quick Break | 170/170 |
+| [Maelle](../characters/maelle.md) | 94    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut           | 299/300 |
+| [Verso](../characters/verso.md)   | 94    | Endgame main DPS             | Chevalam (33) | Augmented Counter I, Breaking Death, Confident    | 274/275 |
+| [Sciel](../characters/sciel.md)   | 94    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots          | 260/262 |
+| [Lune](../characters/lune.md)     | 89    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death       | 175/175 |
+| [Monoco](../characters/monoco.md) | 89    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Quick Break | 170/170 |
 <!-- GENERATED:END -->
 
 **More details:**
@@ -69,9 +69,9 @@ Fetch that file only when reviewing specific past errors.
 
 ### LP totals
 <!-- GENERATED:START characters:summary:LP -->
-- Maelle: 299/299
-- Verso: 274/274
-- Sciel: 260/260
+- Maelle: 299/300
+- Verso: 274/275
+- Sciel: 260/262
 - Lune: 175/175
 - Monoco: 170/170
 <!-- GENERATED:END -->
@@ -189,6 +189,17 @@ If the main party is fully wiped in a battle, the player can continue the battle
 - **Energising Burn (10LP) for Lune:** Synergises well with Lune's burn skills. Not enough CoL in chat 14, should be ready to add now.
 - **Maelle Last Chance + Shortcut interaction:** Observed three-turn sequence: Normal turn → Cheater → Shortcut (triggered when Last Chance drops HP below 30%). Confirm whether this is intentional/consistent in practice.
 
+### Simon Fight Plan Tracker
+
+| Plan | Team 1 (main)          | Team 2 (reserve)        | Status     | Notes |
+|------|------------------------|-------------------------|------------|-------|
+|  A   | Verso / Sciel / Maelle | Lune / Monoco           | ❌ Failed  | Phase 1 & 2 easy with main team; reserves wiped almost instantly in phase 2 |
+|  B   | Verso / Sciel          | Maelle / Lune / Monoco  | ❌ Failed  | Struggled to complete phase 2; often wiped by Light Speed attack |
+|  C   | Verso / Lune           | Maelle / Sciel / Monoco | ⏭ Skipped | Weaker phases 1–2 than Plan B; enables Fortune's Fury + Defenceless + Gommage in phase 3; skipped as phase 2 too hard |
+|  D   | Lune / Monoco          | Maelle / Verso / Sciel  | ⏭ Skipped | Strongest team reserved for phase 3 burst; unlikely to survive phase 2 |
+|  E   | Verso / Lune / Monoco  | Maelle / Sciel          | 🔄 Current | Strength in numbers for phases 1–2; best DPS + best support for phase 3 |
+|  F   | Verso / Sciel / Maelle | —                       | 🔮 Future  | Sciel sets up Twilight for speed advantage; Verso stunlocks with Overload + End Bringer (Seeram); Maelle executes Gommage burst |
+
 ---
 
 ## Section 7: Session Procedure
@@ -237,6 +248,8 @@ Matt types these commands to trigger specific actions:
 **Bracket notation:** for tool calls only: `*[Fetched X]*`, `*[Created file Y]*`. Never use brackets to summarise substantive response text.
 
 **Lists:** If Matt’s turn begins with a list, insert a blank line between `**Matt:**` and the first list item so Markdown renders correctly.
+
+**Appending to file:** Use bash `>>` redirection to append turns to the transcript file. No need to view the file before appending — just construct the content and redirect.
 
 ### Close Steps
 

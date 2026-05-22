@@ -253,7 +253,8 @@
       "rank_bonus": {
         "rank": "S",
         "effect": "Reduced AP cost"
-      }
+      },
+      "notes": "Clears trash fights instantly — less effective in boss fights."
     },
     {
       "name": "Purification",
@@ -333,7 +334,7 @@
       "name": "Fortune's Fury",
       "ap": 5,
       "description": "Doubles one ally's damage for their next turn. Must be used before target acts.",
-      "charge": null
+      "charge": "Sun"
     },
     {
       "name": "Grim Harvest",
@@ -351,7 +352,7 @@
       "name": "Intervention",
       "ap": 5,
       "description": "Grants targeted ally an immediate extra turn + 4 AP (Greater Rush).",
-      "charge": null
+      "charge": "Moon"
     },
     {
       "name": "Phantom Blade",

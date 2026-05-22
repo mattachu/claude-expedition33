@@ -85,6 +85,21 @@ Tints are consumable items, distinct from skills. There are three types: Healing
 
 ---
 
+## Status Effects
+
+| Status      | Effect                                                              | Persistent? |
+|-------------|---------------------------------------------------------------------|-------------|
+| Mark        | +50% damage to next single hit on target. Consumed on hit.         | No          |
+| Defenceless | +25% damage taken.                                                  | Yes         |
+| Powerful    | +25% damage dealt.                                                  | Yes         |
+| Powerless   | -20% damage dealt.                                                  | Yes         |
+| Slow        | Reduces target's turn frequency.                                    | Yes         |
+| Rush        | Increases character's turn frequency.                               | Yes         |
+
+**1–3 ally targeting:** Skills that apply to "1–3 allies" (e.g. Orphelin Cheers) target the player's chosen ally first, with one additional target per successful QTE. The first target is always player-chosen.
+
+---
+
 ## Attribute System
 
 Characters gain 3 attribute points per level up. Points are held in reserve and can be spent at any Flag. Points committed to an attribute are permanent unless a Recoat is used (resets all attributes and skill points to zero, returning all spent points). Attributes cap at 99 — points cannot be spent on an attribute already at 99.

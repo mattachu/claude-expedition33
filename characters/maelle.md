@@ -137,9 +137,9 @@ Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina 
 
 ### LP Budget
 <!-- GENERATED:START characters:Maelle:LP -->
-- **Current capacity:** 299 LP
+- **Current capacity:** 300 LP
 - **Used:** 299 LP
-- **Spare:** 0 LP
+- **Spare:** 1 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
@@ -165,7 +165,7 @@ Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina 
 | Energising Turn    | 20 | Main AP flow generator; boosted by Energy Master                                                                                                                     |
 | Energy Master      | 40 | Add 1 to AP boosts (not double) — game-changing for AP generation                                                                                                    |
 | Full Strength      | 15 | Damage bonus while on full HP — strong synergy with Clea's Life Pictos                                                                                               |
-| Gradient Break     | 5  | +50% of a Gradient Charge on Breaking a target.                                                                                                                      |
+| Gradient Fighter   | 5  | Damage bonus on Gradient Skill use. 5LP. Verify exact effect description in-game.                                                                                    |
 | Marking Shots      | 3  |                                                                                                                                                                      |
 | Painted Power      | 5  | Essential for all characters from Act 3 onwards                                                                                                                      |
 | Powerful On Shell  | 10 | Apply Powerful on applying Shell. 10LP. Synergises with Lithum.                                                                                                      |
@@ -257,6 +257,33 @@ Alternative: swap Fleuret Fury for Sword Ballet if preferring burst over Break u
 | Standard DPS  | Main DPS  | Gustave's Homage, Sword Ballet, Fleuret Fury, Percée, Phantom Strike, Stendhal.    | Full 158 LP loadout (149 used)  | Current                                                                                   | Cheater via Lumina (40 LP)                                            |
 | Solo          | Solo DPS  | Stendhal, Phantom Strike, Last Chance, Gustave's Homage, Fleuret Fury, Mezzo Forte | Swap Cheater to Pictos; add Last Stand suite + Recovery + Energising Attack I; remove Teamwork/Breaking Counter/Dead Energy | Previous / Shelved | Borrow Cheater Pictos + Second Chance from Verso |
 | Burn-stacking | Burn DPS  | Burning Canvas as primary; Stalum weapon; Swift Stride for Virtuose entry          | Investigate separately           | Future                                                                                   | Synergises with Corpeso (Verso), Kralim (Lune)                        |
+
+### Solo build (The Reacher)
+
+**Pictos:** Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina build applied and reversed after completing The Reacher.
+
+**Lumina changes (from standard loadout):**
+- Remove: Cheater (40LP, swap to Pictos), Teamwork (5LP), Breaking Counter (3LP), Dead Energy I (2LP), Dead Energy II (2LP) — total freed: 52LP
+- Add: Solo Fighter (1LP), Last Stand Critical (3LP), Accelerating Last Stand (3LP), Empowering Last Stand (3LP), Protecting Last Stand (3LP), Recovery (10LP), Energising Attack I (10LP) — total added: 33LP
+- Net: 19LP spare within 158LP budget at time
+
+**Skills:** Community standard — Stendhal, Phantom Strike, Last Chance, Gustave's Homage, Fleuret Fury, Mezzo Forte. Alternative: swap Fleuret Fury for Sword Ballet if preferring burst over Break utility.
+
+**Gradient Break over Burning Break:** Chosen for speed advantage (1821 vs 1397) to handle Alicia's Rush phase at 25% HP. Second Chance covers survivability.
+
+**Revert:** Return Cheater and Second Chance Pictos to Verso. Remove Last Stand suite + Recovery + Energising Attack I. Restore Teamwork, Breaking Counter, Dead Energy I+II. ✅ Completed.
+
+### Simon fight
+
+**Lumina changes (from standard loadout):**
+- Remove: Base Shield (20LP) — not effective given Simon's damage output; frees LP for other options
+- Add: First Strike Lumina — for Simon fight only; revert after
+
+**Skills:** Standard loadout. Maelle enters as reserve (Team 2: Maelle + Sciel) with Last Chance providing full AP reset on cold entry into Phase 3. Key role: apply Defenceless (via Offensive Switch) then use Last Chance → Gommage burst sequence. Maelle must act before Sciel in Phase 3 for Defenceless to be active during Gommage.
+
+**Gradient skill priority:** Gommage (3GP) is the primary Phase 3 burst. Requires 3GP banked before Phase 3 starts — GP carries over from Phase 2.
+
+**Revert after Simon:** Remove First Strike Lumina; restore Base Shield (20LP).
 
 ---
 

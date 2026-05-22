@@ -39,7 +39,7 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 <!-- GENERATED:START characters:Lune:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 88    |
+| Level     | 89    |
 | Vitality  | 99    |
 | Agility   | 99    |
 | Luck      | 51    |
@@ -54,9 +54,9 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 3469 | 3469     |
-| Attack  | 1155 | 10311    |
-| Speed   | 1149 | 2568     |
+| Health  | 3469 | 3499     |
+| Attack  | 1155 | 10386    |
+| Speed   | 1149 | 2575     |
 | Defence | 182  | 182      |
 | Crit    | 29%  | 101%     |
 <!-- GENERATED:END -->
@@ -168,7 +168,7 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 ## Skills
 
 <!-- GENERATED:START characters:Lune:skills -->
-**Currently equipped (6):** Elemental Genesis, Healing Light, Hell, Ice Lance, Mayhem, Terraquake
+**Currently equipped (6):** Elemental Genesis, Healing Light, Hell, Ice Lance, Rebirth, Terraquake
 
 | Skill             | AP | Stains Generated     | Equipped | Notes                                                                                                                                                                         |
 |-------------------|----|----------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -176,7 +176,7 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 | Healing Light     | 3  | Light                | ✅        | Heals targeted ally 30–50% HP and dispels all status effects. Consumes Earth Stain ×2 for 0 AP cost. Generates Light Stain.                                                   |
 | Hell              | 9  | Fire, Light          | ✅        | Very high Fire AoE, 2 hits. Applies 5 Burn per hit. Deals self-damage if failed. Consumes Ice, Earth and Lightning Stains for greatly increased damage (×3).                  |
 | Ice Lance         | 4  | Ice, Light           | ✅        | Medium single-target Ice damage, 1 hit. Slows target 3 turns. Consumes Earth Stain for increased damage (×1.5).                                                               |
-| Mayhem            | 3  | —                    | ✅        | Consumes all Stains to deal high elemental damage, 1–4 hits. Can Break if 4 Stains consumed.                                                                                  |
+| Rebirth           | 5  | Light                | ✅        | Revives an ally with 30–70% Health and 2 AP. Consumes Lightning Stain ×3 for 0 AP cost.                                                                                       |
 | Terraquake        | 5  | Earth, Light         | ✅        | Earth AoE + deals Earth and Break damage to all enemies every turn for 3 turns. Increases all Break damage received by 50%. Consumes Lightning Stain ×2 to extend to 5 turns. |
 | Crustal Crush     | 7  | Earth, Light         | ❌        | High single-target Earth damage + Break damage, 5 hits. Consumes Lightning Stain ×2 for increased damage (×3).                                                                |
 | Earth Rising      | 3  | Earth                | ❌        | Low Earth AoE, 1 hit. Consumes Lightning Stain for increased damage (×1.5).                                                                                                   |
@@ -185,7 +185,7 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 | Fire Rage         | 5  | Fire, Light          | ❌        | Increasingly high Fire AoE every turn until Lune receives damage. Stuns itself if interrupted. Consumes Ice Stain ×2 for increased damage (×2).                               |
 | Immolation        | 2  | Fire                 | ❌        | Low single-target Fire damage, 1 hit. Applies 3 Burn. Applies 2 more Burn if target is Marked. Consumes Ice Stain for increased damage (×1.5).                                |
 | Lightning Dance   | 7  | Lightning, Light     | ❌        | Very high single-target Lightning damage, 6 hits. Crits trigger an additional hit. Consumes Earth, Ice and Fire Stains for greatly increased damage (×5).                     |
-| Rebirth           | 5  | Light                | ❌        | Revives an ally with 30–70% Health and 2 AP. Consumes Lightning Stain ×3 for 0 AP cost.                                                                                       |
+| Mayhem            | 3  | —                    | ❌        | Consumes all Stains to deal high elemental damage, 1–4 hits. Can Break if 4 Stains consumed.                                                                                  |
 | Revitalisation    | 5  | Light                | ❌        | Heals 1–3 allies 40–60% Health. Consumes Fire Stain ×3 to also apply Regen for 3 turns.                                                                                       |
 | Rockslide         | 5  | Earth, Light         | ❌        | Medium single-target Earth damage, 2 hits. Can Break. Consumes Lightning, Ice and Fire Stains for greatly increased damage (×5).                                              |
 | Thunderfall       | 5  | Lightning, Light     | ❌        | Medium Lightning damage to random enemies, 2–6 hits. Crits trigger an additional hit. Consumes Fire Stain for increased damage (×1.5).                                        |
@@ -213,6 +213,22 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 |----------------------|-------------------|-----------------------------------------------------------------------------|------------|----------|---------------------------------------------------------------------------------------------------|
 | Mayhem               | DPS / healer      | Mayhem, Wildfire, Crustal Crush, Thunderfall, Healing Light, Rebirth        | Trebuchim  | Previous | Use Trebuchim + skills to generate stains, Mayhem for damage + break. Heavily used in Acts 1 & 2. |
 | Elemental Genesis    | DPS / healer      | Hell, Terraquake, Lightning Dance, Elemental Genesis, Mayhem, Healing Light | Kralim     | Current  | Vitality 99, Agility 99, Luck 30. Reserve team role.                                              |
+
+### Simon fight
+
+**Party position:** Main team (Team 1) with Verso and Lune.
+
+**Lumina changes:** Base Shield not in reserve team core — no change needed.
+
+**Skills changes (from standard):**
+- Swap: Mayhem → Rebirth (better utility in boss fight; Mayhem less effective in 1v1)
+- Note: Lightning Dance → Ice Lance swap was applied in Chat 22 for Simon (Ice Lance applies Slow, useful for turn order control)
+
+**Current equipped:** Hell, Terraquake, Ice Lance, Healing Light, Rebirth, Elemental Genesis
+
+**Role in Simon Phase 3:** Elemental Genesis for damage; Ice Lance to apply Slow on Simon; Healing Light for party sustain; Rebirth to revive fallen allies. Lune contributes AP generation for Verso via Overload if Verso is active. Healing less effective given Simon's high damage output.
+
+**Revert after Simon:** Swap Ice Lance → Lightning Dance; swap Rebirth → Mayhem (or reassess — Rebirth may be worth keeping permanently).
 
 ---
 

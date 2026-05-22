@@ -56,7 +56,7 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 <!-- GENERATED:START characters:Monoco:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 88    |
+| Level     | 89    |
 | Agility   | 99    |
 | Defence   | 99    |
 | Luck      | 66    |
@@ -71,11 +71,11 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2080 | 4837     |
-| Attack  | 1131 | 10881    |
-| Speed   | 1168 | 2848     |
+| Health  | 2080 | 4867     |
+| Attack  | 1131 | 10900    |
+| Speed   | 1168 | 2858     |
 | Defence | 729  | 2301     |
-| Crit    | 51%  | 105%     |
+| Crit    | 51%  | 106%     |
 <!-- GENERATED:END -->
 
 ---
@@ -183,16 +183,16 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 ## Skills
 
 <!-- GENERATED:START characters:Monoco:skills -->
-**Currently equipped (6):** Chalier Combo, Grosse Tête Whack, Lancelier Impale, Moissonneuse Vendange, Potier Energy, Stalact Punches
+**Currently equipped (6):** Chapelier Slash, Grosse Tête Whack, Lancelier Impale, Moissonneuse Vendange, Orphelin Cheers, Potier Energy
 
 | Skill                 | AP             | Wheel | Mask     | Equipped | Notes                                                                                         |
 |-----------------------|----------------|-------|----------|----------|-----------------------------------------------------------------------------------------------|
-| Chalier Combo         | 7              | +3    | Balanced | ✅        | High Physical single target, 6 hits. Interrupted if failed.                                   |
+| Chapelier Slash       | 7              | +4    | Agile    | ✅        | High Physical AoE, 3 hits. Applies Mark.                                                      |
 | Grosse Tête Whack     | 6              | +4    | Heavy    | ✅        | High Physical single target, 5 hits. Applies Defenceless 3 turns.                             |
 | Lancelier Impale      | 2              | +4    | Agile    | ✅        | Low Ice single target, 1 hit. Slows target 3 turns.                                           |
 | Moissonneuse Vendange | 5              | +2    | Balanced | ✅        | High Physical single target, 3 hits. Can Break.                                               |
+| Orphelin Cheers       | 3              | +3    | Caster   | ✅        | Applies Powerful to 1–3 allies.                                                               |
 | Potier Energy         | 4              | +6    | Caster   | ✅        | Gives 1–3 AP to all allies.                                                                   |
-| Stalact Punches       | 4              | +4    | Heavy    | ✅        | Medium Ice single target, 4 hits. High Break damage.                                          |
 | Abbest Wind           | 2 (0 in Agile) | +2    | Agile    | ❌        | Low Physical single target, 1 hit. Plays a second turn.                                       |
 | Aberration Light      | 7              | +4    | Agile    | ❌        | High Light AoE, 2 hits. Applies 4 Burn per hit.                                               |
 | Ballet Charm          | 2              | +3    | Caster   | ❌        | Low Light single target, 1 hit. Applies Powerless 3 turns.                                    |
@@ -200,7 +200,7 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Boucheclier Fortify   | 3              | +5    | Heavy    | ❌        | Applies Shell to 1–3 allies for 3 turns.                                                      |
 | Braseleur Smash       | 4              | +2    | Balanced | ❌        | Medium Fire single target, 2 hits. Applies 3 Burn.                                            |
 | Bruler Bash           | 4              | +4    | Caster   | ❌        | Medium Physical single target, 3 hits. Can Break.                                             |
-| Chapelier Slash       | 7              | +4    | Agile    | ❌        | High Physical AoE, 3 hits. Applies Mark.                                                      |
+| Chalier Combo         | 7              | +3    | Balanced | ❌        | High Physical single target, 6 hits. Interrupted if failed.                                   |
 | Chevalière Ice        | 6              | +2    | Balanced | ❌        | High Ice AoE, 3 hits. Applies Slow 3 turns.                                                   |
 | Chevalière Piercing   | 3              | +3    | Agile    | ❌        | Physical single target through Shields, 6 hits. More damage per Shield on target.             |
 | Chevalière Thrusts    | 7              | +3    | Heavy    | ❌        | High Physical AoE, 3 hits. Crits deal double damage.                                          |
@@ -222,7 +222,6 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Lampmaster Light      | 5              | +1    | Almighty | ❌        | High Light AoE, 1 hit. Increased damage at each cast.                                         |
 | Luster Slices         | 3              | +3    | Agile    | ❌        | Low Physical single target, 3 hits. Applies Rush to self 3 turns.                             |
 | Obscur Sword          | 6              | +3    | Heavy    | ❌        | High Dark single target, 5 hits. More damage against Powerless targets.                       |
-| Orphelin Cheers       | 3              | +3    | Caster   | ❌        | Applies Powerful to 1–3 allies.                                                               |
 | Pèlerin Heal          | 5              | +3    | Caster   | ❌        | Applies Regen to all allies. On Caster Mask heals 40% HP.                                     |
 | Portier Crash         | 8              | +5    | Heavy    | ❌        | High Physical AoE, 1 hit. Can Break.                                                          |
 | Ramasseur Bonk        | 2              | +4    | Agile    | ❌        | Low Dark single target, 1 hit. Can Break.                                                     |
@@ -232,6 +231,7 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Sakapatate Fire       | —              | +1    | Almighty | ❌        | Extreme Fire AoE, 3 hits. Applies 3 Burn per hit.                                             |
 | Sakapatate Slam       | 7              | +5    | Heavy    | ❌        | High Physical AoE, 1 hit. Increased damage against Marked targets.                            |
 | Sapling Absorption    | 6              | +5    | Caster   | ❌        | High Dark, 3 hits. Recovers 5% HP per hit.                                                    |
+| Stalact Punches       | 4              | +4    | Heavy    | ❌        | Medium Ice single target, 4 hits. High Break damage.                                          |
 | Troubadour Trumpet    | 3              | +4    | Caster   | ❌        | Applies a random buff to 1–3 allies.                                                          |
 <!-- GENERATED:END -->
 
@@ -259,6 +259,34 @@ Full skill reference (AP cost, wheel move, mask, effect, mask bonus, learned/equ
 |----------------|----------------------|--------------------------------------------------------------------------------------------------|---------------------------------------------------|----------|-------------------------------------------------------------|
 | Levelling team | Break + support/heal | Potier Energy, Stalact Punches, Abbest Wind, Moissonneuse Vendange, Chalier Combo, Pelerin Heal  |                                                   | Previous | Versatile; can cover Lune's roles                           |
 | Reserve team   | Break + AP support   | Potier Energy, Stalact Punches, Abbest Wind, Moissonneuse Vendange, Chalier Combo, Portier Crash | Reserve core + Staggering Attack + Breaking Death | Current  | Joyaro equipped; Longer Shell/Energising Turn/Sniper Pictos |
+
+### Simon fight
+
+**Party position:** Main team (Team 1) with Verso and Lune.
+
+**Lumina changes:** Base Shield not in reserve team core — no change needed.
+
+**Skills changes (from standard):**
+- Chat 22: Abbest Wind → Lancelier Impale (applies Slow — useful for Simon turn order control)
+- Chat 22: Portier Crash → Grosse Tête Whack (applies Defenceless — essential for burst setup)
+- Chat 23: Chalier Combo → Orphelin Cheers (applies Powerful to 1–3 allies; first target player-chosen)
+- Chat 23: Stalact Punches → Chapelier Slash (AoE Mark — supports burst damage via Mark debuff)
+
+**Current equipped:** Lancelier Impale, Orphelin Cheers, Chapelier Slash, Moissonneuse Vendange, Grosse Tête Whack, Potier Energy
+
+**Wheel rotation for Simon (optimised):**
+Start: Almighty Mask (Joyaro L4). Suggested opening sequence:
+1. Grosse Tête Whack (+4 → Heavy) — Almighty bonus, applies Defenceless
+2. Lancelier Impale (+4 → Agile) — applies Slow
+3. Moissonneuse Vendange (+2 → Balanced) — can Break; lands on Balanced ready for Vendange → Caster path
+4. Chapelier Slash (+4 → Agile via Caster) — applies Mark (AoE)
+5. Orphelin Cheers (+3 → Caster) — applies Powerful to Verso (first target) + 1–2 more allies
+
+Keep Mark and Defenceless persistent throughout fight (not saved for burst only).
+
+**Post-Simon review needed:** Abbest Wind was removed for Simon but is noted as essential for general wheel cycling and free second turn on Agile Mask. Reassess after fight whether to reinstate it. Abbest Wind may not be worth reinstating if Cheater gives sufficient extra turns.
+
+**Revert after Simon:** Reassess full skill loadout — don't automatically restore pre-Simon set. Review Abbest Wind, Stalact Punches, Portier Crash, Chalier Combo relevance for post-Simon content.
 
 ---
 

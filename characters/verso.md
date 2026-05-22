@@ -57,7 +57,7 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 <!-- GENERATED:START characters:Verso:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 93    |
+| Level     | 94    |
 | Agility   | 99    |
 | Luck      | 99    |
 | Might     | 81    |
@@ -72,11 +72,11 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2232 | 6290     |
-| Attack  | 1368 | 10668    |
-| Speed   | 1228 | 2371     |
+| Health  | 2232 | 7239     |
+| Attack  | 1368 | 10736    |
+| Speed   | 1228 | 2379     |
 | Defence | 182  | 182      |
-| Crit    | 41%  | 122%     |
+| Crit    | 41%  | 124%     |
 <!-- GENERATED:END -->
 
 ---
@@ -121,9 +121,9 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 ### LP Budget
 <!-- GENERATED:START characters:Verso:LP -->
-- **Current capacity:** 274 LP
+- **Current capacity:** 275 LP
 - **Used:** 274 LP
-- **Spare:** 0 LP
+- **Spare:** 1 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
@@ -206,7 +206,32 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 |------------------------------|----------|---------------------------------------------------------------------------------------------|-------------|----------|---------------------------------------------------------------------------|
 | Levelling team (pre-Cheater) | DPS      | Quick Strike, Assault Zero, Strike Storm, Marking Shot, Phantom Stars, Perfect Break        | Core suite  | Complete | Rank build via Strike Storm crits; Perfect Break for S Rank jump          |
 | Solo fights (completed)      | Solo DPS | Quick Strike, Assault Zero, Defiant Strike, Perfect Break, Perfect Recovery, Paradigm Shift | Solo Pictos | Complete | Second Chance borrowed from Maelle; now returned                          |
-| Endgame (post-Cheater)       | Main DPS | Quick Strike, Assault Zero, Strike Storm, Marking Shot, Perfect Break, Steeled Strike       | Core suite  | Current  | Phantom Stars → Steeled Strike confirmed. Second Chance → Cheater Pictos. |
+| Endgame (post-Cheater)       | Main DPS | Quick Strike, End Bringer, Phantom Stars, Perfect Break, Steeled Strike, Overload           | Core suite  | Current  | Light Holder → Overload swap Chat 23.                                     |
+| End Bringer stunlock         | DPS      | End Bringer, Overload, Perfect Break, Quick Strike, Phantom Stars, Steeled Strike           | Core suite  | Future   | Seeram caps at Rank A, Overload jumps to A + End Bringer reapplies stun   |
+
+### Simon fight
+
+**Plan E:** Verso in main party (Team 1: Verso + Lune + Monoco). Standard endgame loadout applies with the following notes:
+- Base Shield excluded (20LP freed) — not useful given Simon's damage output
+- Overload replaces Light Holder — better AP generation for Verso in sustained fight
+- Angel Eyes gradient skill used defensively as well as offensively (applies Aureole auto-revive)
+
+**Plan F:** Team: Verso/Sciel/Maelle (same as Plan A/B). Sciel sets up Twilight for speed advantage; Verso stunlocks using Overload + End Bringer; Maelle executes Gommage burst as in other plans.
+- Equip Seeram instead of Chevalam — caps Verso at Rank A (cannot reach Rank S), which is required for the End Bringer loop
+- At Rank A, End Bringer reapplies stun on a broken target indefinitely
+- Purchase Seeram from Cruler and Bruler blacksmiths in Coastal Cave
+- Not yet attempted; flagged as alternative if Plan E fails
+
+**Lumina changes:** Base Shield excluded from main team core for Simon fight (non-functional vs Simon's damage output; Verso's Base Shield already excluded permanently due to Chevalam). No further Lumina changes.
+
+**Skills changes (from standard):**
+- Swap: Light Holder → Overload (better AP generation for sustained fight; functionally similar Rank climbing)
+
+**Role:** Main DPS in Team 1 (Verso + Lune + Monoco). Primary damage dealer across all three phases. Angel Eyes gradient used both offensively and defensively (Aureole auto-revive). Second Chance provides revival safety net.
+
+**Plan F:** Verso/Sciel/Maelle — same composition as Plans A and B. Sciel sets up Twilight for speed advantage; Verso stunlocks using Overload + End Bringer (stunlock is Verso's mechanic; the team around him is unchanged). Maelle executes Gommage burst. Equip Seeram instead of Chevalam — caps Verso at Rank A, required for the End Bringer loop. Not yet attempted.
+
+**Revert after Simon:** swap Overload → Light Holder (or reassess); re-equip Chevalam if Seeram was used.
 
 ---
 

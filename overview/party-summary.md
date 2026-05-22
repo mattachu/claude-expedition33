@@ -6,11 +6,11 @@
 
 | Character                         | Level | Role                         | Weapon        | Pictos                                            | LP      |
 |-----------------------------------|-------|------------------------------|---------------|---------------------------------------------------|---------|
-| [Maelle](../characters/maelle.md) | 94    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut           | 299/299 |
-| [Verso](../characters/verso.md)   | 93    | Endgame main DPS             | Chevalam (33) | Augmented Counter I, Breaking Death, Confident    | 274/274 |
-| [Sciel](../characters/sciel.md)   | 92    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots          | 260/260 |
-| [Lune](../characters/lune.md)     | 88    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death       | 175/175 |
-| [Monoco](../characters/monoco.md) | 88    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Quick Break | 170/170 |
+| [Maelle](../characters/maelle.md) | 94    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut           | 299/300 |
+| [Verso](../characters/verso.md)   | 94    | Endgame main DPS             | Chevalam (33) | Augmented Counter I, Breaking Death, Confident    | 274/275 |
+| [Sciel](../characters/sciel.md)   | 94    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots          | 260/262 |
+| [Lune](../characters/lune.md)     | 89    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death       | 175/175 |
+| [Monoco](../characters/monoco.md) | 89    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Quick Break | 170/170 |
 
 ---
 
@@ -58,7 +58,7 @@
 | Energising Turn    | 20 | Main AP flow generator; boosted by Energy Master                                                                                                                     |
 | Energy Master      | 40 | Add 1 to AP boosts (not double) — game-changing for AP generation                                                                                                    |
 | Full Strength      | 15 | Damage bonus while on full HP — strong synergy with Clea's Life Pictos                                                                                               |
-| Gradient Break     | 5  | +50% of a Gradient Charge on Breaking a target.                                                                                                                      |
+| Gradient Fighter   | 5  | Damage bonus on Gradient Skill use. 5LP. Verify exact effect description in-game.                                                                                    |
 | Marking Shots      | 3  |                                                                                                                                                                      |
 | Painted Power      | 5  | Essential for all characters from Act 3 onwards                                                                                                                      |
 | Powerful On Shell  | 10 | Apply Powerful on applying Shell. 10LP. Synergises with Lithum.                                                                                                      |
@@ -69,21 +69,21 @@
 | Teamwork           | 5  |                                                                                                                                                                      |
 | Warming Up         | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus |
 
-**LP:** 299/299
+**LP:** 299/300
 
 ---
 
 ### Verso
 
-**Level:** 93 | **Role:** Endgame main DPS | **Weapon:** Chevalam (33)
+**Level:** 94 | **Role:** Endgame main DPS | **Weapon:** Chevalam (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2232 | 6290     |
-| Attack  | 1368 | 10668    |
-| Speed   | 1228 | 2371     |
+| Health  | 2232 | 7239     |
+| Attack  | 1368 | 10736    |
+| Speed   | 1228 | 2379     |
 | Defence | 182  | 182      |
-| Crit    | 41%  | 122%     |
+| Crit    | 41%  | 124%     |
 
 
 | Pictos              | Level | Stats                   |
@@ -122,19 +122,19 @@
 | Teamwork           | 5  |                                                                     |
 | Warming Up         | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks |
 
-**LP:** 274/274
+**LP:** 274/275
 
 ---
 
 ### Sciel
 
-**Level:** 92 | **Role:** Pure support | **Weapon:** Litheson (33)
+**Level:** 94 | **Role:** Pure support | **Weapon:** Litheson (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2202 | 7172     |
-| Attack  | 1226 | 8771     |
-| Speed   | 1221 | 2519     |
+| Health  | 2202 | 7233     |
+| Attack  | 1226 | 8906     |
+| Speed   | 1221 | 2534     |
 | Defence | 492  | 492      |
 | Crit    | 55%  | 102%     |
 
@@ -182,7 +182,7 @@
 | Survivor            | 20 | Secondary safety net before Second Chance                        |
 | Teamwork            | 5  |                                                                  |
 
-**LP:** 260/260
+**LP:** 260/262
 
 ---
 
@@ -190,13 +190,13 @@
 
 ### Lune
 
-**Level:** 88 | **Role:** DPS / healer (reserve) | **Weapon:** Kralim (33)
+**Level:** 89 | **Role:** DPS / healer (reserve) | **Weapon:** Kralim (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 3469 | 3469     |
-| Attack  | 1155 | 10311    |
-| Speed   | 1149 | 2568     |
+| Health  | 3469 | 3499     |
+| Attack  | 1155 | 10386    |
+| Speed   | 1149 | 2575     |
 | Defence | 182  | 182      |
 | Crit    | 29%  | 101%     |
 
@@ -239,15 +239,15 @@
 
 ### Monoco
 
-**Level:** 88 | **Role:** Break + AP support (reserve) | **Weapon:** Joyaro (33)
+**Level:** 89 | **Role:** Break + AP support (reserve) | **Weapon:** Joyaro (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2080 | 4837     |
-| Attack  | 1131 | 10881    |
-| Speed   | 1168 | 2848     |
+| Health  | 2080 | 4867     |
+| Attack  | 1131 | 10900    |
+| Speed   | 1168 | 2858     |
 | Defence | 729  | 2301     |
-| Crit    | 51%  | 105%     |
+| Crit    | 51%  | 106%     |
 
 
 | Pictos                 | Level | Stats                       |

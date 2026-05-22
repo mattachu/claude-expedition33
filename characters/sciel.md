@@ -36,7 +36,7 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 <!-- GENERATED:START characters:Sciel:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 92    |
+| Level     | 94    |
 | Agility   | 99    |
 | Luck      | 99    |
 | Defence   | 66    |
@@ -51,9 +51,9 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2202 | 7172     |
-| Attack  | 1226 | 8771     |
-| Speed   | 1221 | 2519     |
+| Health  | 2202 | 7233     |
+| Attack  | 1226 | 8906     |
+| Speed   | 1221 | 2534     |
 | Defence | 492  | 492      |
 | Crit    | 55%  | 102%     |
 <!-- GENERATED:END -->
@@ -106,9 +106,9 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 ### LP Budget
 <!-- GENERATED:START characters:Sciel:LP -->
-- **Current capacity:** 260 LP
+- **Current capacity:** 262 LP
 - **Used:** 260 LP
-- **Spare:** 0 LP
+- **Spare:** 2 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
@@ -162,8 +162,8 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 |-------------------|----|--------|----------|------------------------------------------------------------------------------------------------------------------------------|
 | Delaying Slash    | 6  | Moon   | ✅        | High single-target Dark damage. Consumes Foretell for increased damage. Delays target's next turn.                           |
 | Final Path        | 9  | Sun    | ✅        | High damage, applies 10 Foretell in one turn. Fast route to big Plentiful Harvest.                                           |
-| Fortune's Fury    | 5  | —      | ✅        | Doubles one ally's damage for their next turn. Must be used before target acts.                                              |
-| Intervention      | 5  | —      | ✅        | Grants targeted ally an immediate extra turn + 4 AP (Greater Rush).                                                          |
+| Fortune's Fury    | 5  | Sun    | ✅        | Doubles one ally's damage for their next turn. Must be used before target acts.                                              |
+| Intervention      | 5  | Moon   | ✅        | Grants targeted ally an immediate extra turn + 4 AP (Greater Rush).                                                          |
 | Plentiful Harvest | 4  | Moon   | ✅        | Consumes all Foretell on target → 1 AP per stack, split between party. 5 stacks = +2/+2/+1; 10 stacks = +3/+3/+4.            |
 | All Set           | 6  | Sun    | ✅        | Applies Shell, Powerful, and Rush to all allies for 3 turns.                                                                 |
 | Dark Cleansing    | 0  | Moon   | ❌        | Cleanses an ally of their status effects and propagates that ally's buffs to all allies.                                     |
@@ -201,6 +201,18 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 |--------------------|--------------|-----------------------------------------------------------------------------------------------|-----------------------------------------|----------|------------------------------------------------------|
 | Pure Support       | Support      | Fortune's Fury, Intervention, Plentiful Harvest, Focused Foretell, Twilight Dance, Final Path | Core suite + Energising Heal/Parry/Heal | Current  | Litheson Level 20 essential for AP generation        |
 | Chation DPS-hybrid | Support/DPS  | Twilight-focused skills                                                                       | TBD                                     | Deferred | Double damage risk; revisit when parry rate improves |
+
+### Simon fight
+
+**Lumina changes (from standard loadout):**
+- Remove: Base Shield (20LP) — not effective given Simon's damage output
+- Add (Simon-specific, revert after): Anti-Stun (5LP) — immune to Stun, important vs Simon; Auto Shell (10LP) — Shell for 3 turns on battle start, defensive boost; First Strike Lumina — revert after fight
+
+**Skills:** Standard loadout (Fortune's Fury, Intervention, Plentiful Harvest, Final Path, All Set, Delaying Slash). Key role: apply Fortune's Fury + Intervention to support Verso in Phases 1–2; enter Twilight via Fortune's Fury (Sun) + Intervention (Moon) — no Energising Start II needed. Delaying Slash not confirmed to work on Simon — may be wasted slot.
+
+**Phase 3 role:** Sciel joins Phase 3 fresh (no state). Applies Foretell to support Maelle's Gommage burst if sequence allows.
+
+**Revert after Simon:** Remove Anti-Stun (5LP), Auto Shell (10LP), First Strike Lumina; restore Base Shield (20LP).
 
 ---
 
