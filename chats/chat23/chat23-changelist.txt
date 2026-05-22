@@ -1,0 +1,398 @@
+# Chat 23 Changelist
+# Generated: 2026-05-21
+# Apply with: scripts/apply_changelist.py
+# Processing order: DATA blocks first, then FILE blocks, then run generate.py
+#
+# MANUAL STEPS (not handled by apply_changelist.py):
+# 1. Add Chat 23 row to chats/chat-index.md (see below)
+# 2. In-game actions — see separate checklist
+#
+# Chat-index row to add after Chat 22:
+# | Chat 23 | [Formatted](chat23/chat23-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat23/chat23-index.md) | [chat23.md](chat23/chat23.md) | Simon boss fight attempts: character stat/level corrections; phase structure analysis including Light Speed survival, Twilight entry via Fortune's Fury + Intervention, and GP carry-over into Phase 3; Lune/Monoco main team attempt (Plan E); Monoco wheel rotation optimised for Simon; Plan F stunlock build (End Bringer + Seeram) identified; Plan E finalised with Lune/Verso skill swaps; Alternate Builds sections added to all character files |
+
+
+DATA: data/characters.json
+PATH: Maelle.lp_total
+OP: SET
+VALUE: 300
+
+DATA: data/characters.json
+PATH: Maelle.lumina_extras[name=Gradient Break]
+OP: REMOVE
+
+DATA: data/characters.json
+PATH: Maelle.lumina_extras
+OP: ADD
+VALUE: {"name": "Gradient Fighter", "notes": "Damage bonus on Gradient Skill use. 5LP. Verify exact effect description in-game."}
+
+DATA: data/characters.json
+PATH: Verso.level
+OP: SET
+VALUE: 94
+
+DATA: data/characters.json
+PATH: Verso.lp_total
+OP: SET
+VALUE: 275
+
+DATA: data/characters.json
+PATH: Verso.stats_modified.health
+OP: SET
+VALUE: 7239
+
+DATA: data/characters.json
+PATH: Verso.stats_modified.attack
+OP: SET
+VALUE: 10736
+
+DATA: data/characters.json
+PATH: Verso.stats_modified.speed
+OP: SET
+VALUE: 2379
+
+DATA: data/characters.json
+PATH: Verso.stats_modified.defence
+OP: SET
+VALUE: 182
+
+DATA: data/characters.json
+PATH: Verso.stats_modified.crit
+OP: SET
+VALUE: "124%"
+
+DATA: data/characters.json
+PATH: Verso.stats_modified._note
+OP: SET
+VALUE: "Stats with Chevalam (33), Augmented Counter I (28), Breaking Death (29), Confident (29) equipped"
+
+DATA: data/characters.json
+PATH: Sciel.level
+OP: SET
+VALUE: 94
+
+DATA: data/characters.json
+PATH: Sciel.lp_total
+OP: SET
+VALUE: 262
+
+DATA: data/characters.json
+PATH: Sciel.stats_modified.health
+OP: SET
+VALUE: 7233
+
+DATA: data/characters.json
+PATH: Sciel.stats_modified.attack
+OP: SET
+VALUE: 8906
+
+DATA: data/characters.json
+PATH: Sciel.stats_modified.speed
+OP: SET
+VALUE: 2534
+
+DATA: data/characters.json
+PATH: Sciel.stats_modified.defence
+OP: SET
+VALUE: 492
+
+DATA: data/characters.json
+PATH: Sciel.stats_modified.crit
+OP: SET
+VALUE: "102%"
+
+DATA: data/characters.json
+PATH: Lune.level
+OP: SET
+VALUE: 89
+
+DATA: data/characters.json
+PATH: Lune.stats_modified.health
+OP: SET
+VALUE: 3499
+
+DATA: data/characters.json
+PATH: Lune.stats_modified.attack
+OP: SET
+VALUE: 10386
+
+DATA: data/characters.json
+PATH: Lune.stats_modified.speed
+OP: SET
+VALUE: 2575
+
+DATA: data/characters.json
+PATH: Lune.stats_modified.defence
+OP: SET
+VALUE: 182
+
+DATA: data/characters.json
+PATH: Lune.stats_modified.crit
+OP: SET
+VALUE: "101%"
+
+DATA: data/characters.json
+PATH: Lune.skills_equipped
+OP: SET
+VALUE: ["Hell", "Terraquake", "Ice Lance", "Healing Light", "Rebirth", "Elemental Genesis"]
+
+DATA: data/characters.json
+PATH: Monoco.level
+OP: SET
+VALUE: 89
+
+DATA: data/characters.json
+PATH: Monoco.stats_modified.health
+OP: SET
+VALUE: 4867
+
+DATA: data/characters.json
+PATH: Monoco.stats_modified.attack
+OP: SET
+VALUE: 10900
+
+DATA: data/characters.json
+PATH: Monoco.stats_modified.speed
+OP: SET
+VALUE: 2858
+
+DATA: data/characters.json
+PATH: Monoco.stats_modified.defence
+OP: SET
+VALUE: 2301
+
+DATA: data/characters.json
+PATH: Monoco.stats_modified.crit
+OP: SET
+VALUE: "106%"
+
+DATA: data/characters.json
+PATH: Monoco.skills_equipped
+OP: SET
+VALUE: ["Lancelier Impale", "Orphelin Cheers", "Chapelier Slash", "Moissonneuse Vendange", "Grosse Tête Whack", "Potier Energy"]
+
+DATA: data/skills.json
+PATH: skills[character=Sciel,name=Fortune's Fury].charge
+OP: SET
+VALUE: "Sun"
+
+DATA: data/skills.json
+PATH: skills[character=Sciel,name=Intervention].charge
+OP: SET
+VALUE: "Moon"
+
+DATA: data/skills.json
+PATH: skills[character=Verso,name=Phantom Stars].notes
+OP: SET
+VALUE: "Clears trash fights instantly — less effective in boss fights."
+
+DATA: data/weapons.json
+PATH: Verso.weapons
+OP: ADD
+VALUE: {"name": "Seeram", "level": 33, "power": 3713, "element": "Light", "scaling": {"primary": "Vitality A", "secondary": "Agility S"}, "obtained": false, "future": true, "effects": {"level_4": "+1 to all Perfection gain but can't reach Rank S.", "level_10": "Base Attack gives 4 Perfection.", "level_20": "20% increased Light damage with Skills."}, "notes": "Purchased from Cruler and Bruler blacksmiths in Coastal Cave. Required for End Bringer stunlock build (Plan F)."}
+
+
+
+FILE: reference/mechanics.md
+SECTION: ## Status Effects
+AFTER: ## Reserve Party
+CONTENT:
+
+| Status      | Effect                                                              | Persistent? |
+|-------------|---------------------------------------------------------------------|-------------|
+| Mark        | +50% damage to next single hit on target. Consumed on hit.         | No          |
+| Defenceless | +25% damage taken.                                                  | Yes         |
+| Powerful    | +25% damage dealt.                                                  | Yes         |
+| Powerless   | -20% damage dealt.                                                  | Yes         |
+| Slow        | Reduces target's turn frequency.                                    | Yes         |
+| Rush        | Increases character's turn frequency.                               | Yes         |
+
+**1–3 ally targeting:** Skills that apply to "1–3 allies" (e.g. Orphelin Cheers) target the player's chosen ally first, with one additional target per successful QTE. The first target is always player-chosen.
+
+FILE: characters/verso.md
+SECTION: ## Build Options
+CONTENT:
+
+| Build Name                   | Role     | Key Skills                                                                                  | Key Lumina  | Status   | Notes                                                                     |
+|------------------------------|----------|---------------------------------------------------------------------------------------------|-------------|----------|---------------------------------------------------------------------------|
+| Levelling team (pre-Cheater) | DPS      | Quick Strike, Assault Zero, Strike Storm, Marking Shot, Phantom Stars, Perfect Break        | Core suite  | Complete | Rank build via Strike Storm crits; Perfect Break for S Rank jump          |
+| Solo fights (completed)      | Solo DPS | Quick Strike, Assault Zero, Defiant Strike, Perfect Break, Perfect Recovery, Paradigm Shift | Solo Pictos | Complete | Second Chance borrowed from Maelle; now returned                          |
+| Endgame (post-Cheater)       | Main DPS | Quick Strike, End Bringer, Phantom Stars, Perfect Break, Steeled Strike, Overload           | Core suite  | Current  | Light Holder → Overload swap Chat 23.                                     |
+| Plan F — End Bringer stunlock | DPS     | End Bringer, Overload, Perfect Break, Quick Strike, Phantom Stars, Steeled Strike           | Core suite + Seeram | Future | Team: Verso/Sciel/Maelle. Sciel sets up Twilight for speed advantage; Verso stunlocks with Overload + End Bringer (Seeram caps at Rank A, required for loop); Maelle executes Gommage burst. |
+
+
+
+**Plan E (current attempt):** Verso in main party (Team 1: Verso + Lune + Monoco). Standard endgame loadout applies with the following notes:
+- Base Shield excluded (20LP freed) — not useful given Simon's damage output
+- Overload replaces Light Holder — better AP generation for Verso in sustained fight
+- Angel Eyes gradient skill used defensively as well as offensively (applies Aureole auto-revive)
+
+**Plan F (stunlock — future option):** Team: Verso/Sciel/Maelle (same as Plan A/B). Sciel sets up Twilight for speed advantage; Verso stunlocks using Overload + End Bringer; Maelle executes Gommage burst as in other plans.
+- Equip Seeram instead of Chevalam — caps Verso at Rank A (cannot reach Rank S), which is required for the End Bringer loop
+- At Rank A, End Bringer reapplies stun on a broken target indefinitely
+- Purchase Seeram from Cruler and Bruler blacksmiths in Coastal Cave
+- Not yet attempted; flagged as alternative if Plan E fails
+
+**Revert after Simon:** swap Overload → Light Holder (or reassess); re-equip Chevalam if Seeram was used.
+
+
+
+FILE: characters/maelle.md
+SECTION: ## Alternate Builds
+AFTER: ## Build Options
+CONTENT:
+
+
+Consolidated from Maelle's Skills and Lumina sections.
+
+**Pictos:** Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina build applied and reversed after completing The Reacher.
+
+**Lumina changes (from standard loadout):**
+- Remove: Cheater (40LP, swap to Pictos), Teamwork (5LP), Breaking Counter (3LP), Dead Energy I (2LP), Dead Energy II (2LP) — total freed: 52LP
+- Add: Solo Fighter (1LP), Last Stand Critical (3LP), Accelerating Last Stand (3LP), Empowering Last Stand (3LP), Protecting Last Stand (3LP), Recovery (10LP), Energising Attack I (10LP) — total added: 33LP
+- Net: 19LP spare within 158LP budget at time
+
+**Skills:** Community standard — Stendhal, Phantom Strike, Last Chance, Gustave's Homage, Fleuret Fury, Mezzo Forte. Alternative: swap Fleuret Fury for Sword Ballet if preferring burst over Break utility.
+
+**Gradient Break over Burning Break:** Chosen for speed advantage (1821 vs 1397) to handle Alicia's Rush phase at 25% HP. Second Chance covers survivability.
+
+**Revert:** Return Cheater and Second Chance Pictos to Verso. Remove Last Stand suite + Recovery + Energising Attack I. Restore Teamwork, Breaking Counter, Dead Energy I+II. ✅ Completed.
+
+---
+
+
+**Lumina changes (from standard loadout):**
+- Remove: Base Shield (20LP) — not effective given Simon's damage output; frees LP for other options
+- Add: First Strike Lumina — for Simon fight only; revert after
+
+**Skills:** Standard loadout. Maelle enters as reserve (Team 2: Maelle + Sciel) with Last Chance providing full AP reset on cold entry into Phase 3. Key role: apply Defenceless (via Offensive Switch) then use Last Chance → Gommage burst sequence. Maelle must act before Sciel in Phase 3 for Defenceless to be active during Gommage.
+
+**Gradient skill priority:** Gommage (3GP) is the primary Phase 3 burst. Requires 3GP banked before Phase 3 starts — GP carries over from Phase 2.
+
+**Revert after Simon:** Remove First Strike Lumina; restore Base Shield (20LP).
+
+FILE: characters/sciel.md
+SECTION: ## Alternate Builds
+AFTER: ## Build Options
+CONTENT:
+
+
+**Lumina changes (from standard loadout):**
+- Remove: Base Shield (20LP) — not effective given Simon's damage output
+- Add (Simon-specific, revert after): Anti-Stun (5LP) — immune to Stun, important vs Simon; Auto Shell (10LP) — Shell for 3 turns on battle start, defensive boost; First Strike Lumina — revert after fight
+
+**Skills:** Standard loadout (Fortune's Fury, Intervention, Plentiful Harvest, Final Path, All Set, Delaying Slash). Key role: apply Fortune's Fury + Intervention to support Verso in Phases 1–2; enter Twilight via Fortune's Fury (Sun) + Intervention (Moon) — no Energising Start II needed. Delaying Slash not confirmed to work on Simon — may be wasted slot.
+
+**Phase 3 role:** Sciel joins Phase 3 fresh (no state). Applies Foretell to support Maelle's Gommage burst if sequence allows.
+
+**Revert after Simon:** Remove Anti-Stun (5LP), Auto Shell (10LP), First Strike Lumina; restore Base Shield (20LP).
+
+FILE: characters/verso.md
+SECTION: ## Alternate Builds
+AFTER: ## Build Options
+CONTENT:
+
+
+**Lumina changes:** Base Shield excluded from main team core for Simon fight (non-functional vs Simon's damage output; Verso's Base Shield already excluded permanently due to Chevalam). No further Lumina changes.
+
+**Skills changes (from standard):**
+- Swap: Light Holder → Overload (better AP generation for sustained fight; functionally similar Rank climbing)
+
+**Role:** Main DPS in Team 1 (Verso + Lune + Monoco). Primary damage dealer across all three phases. Angel Eyes gradient used both offensively and defensively (Aureole auto-revive). Second Chance provides revival safety net.
+
+**Revert after Simon:** Swap Overload → Light Holder (or reassess based on performance).
+
+
+Team: Verso/Sciel/Maelle — same composition as Plans A and B. Sciel sets up Twilight for speed advantage; Verso stunlocks using Overload + End Bringer (stunlock is Verso's mechanic; the team around him is unchanged). Maelle executes Gommage burst. Equip Seeram instead of Chevalam — caps Verso at Rank A, required for the End Bringer loop. Not yet attempted.
+
+FILE: characters/lune.md
+SECTION: ## Alternate Builds
+AFTER: ## Build Options
+CONTENT:
+
+
+**Party position:** Main team (Team 1) with Verso and Lune.
+
+**Lumina changes:** Base Shield not in reserve team core — no change needed.
+
+**Skills changes (from standard):**
+- Swap: Mayhem → Rebirth (better utility in boss fight; Mayhem less effective in 1v1)
+- Note: Lightning Dance → Ice Lance swap was applied in Chat 22 for Simon (Ice Lance applies Slow, useful for turn order control)
+
+**Current equipped:** Hell, Terraquake, Ice Lance, Healing Light, Rebirth, Elemental Genesis
+
+**Role in Simon Phase 3:** Elemental Genesis for damage; Ice Lance to apply Slow on Simon; Healing Light for party sustain; Rebirth to revive fallen allies. Lune contributes AP generation for Verso via Overload if Verso is active. Healing less effective given Simon's high damage output.
+
+**Revert after Simon:** Swap Ice Lance → Lightning Dance; swap Rebirth → Mayhem (or reassess — Rebirth may be worth keeping permanently).
+
+FILE: characters/monoco.md
+SECTION: ## Alternate Builds
+AFTER: ## Build Options
+CONTENT:
+
+
+**Party position:** Main team (Team 1) with Verso and Monoco.
+
+**Lumina changes:** Base Shield not in reserve team core — no change needed.
+
+**Skills changes (from standard):**
+- Chat 22: Abbest Wind → Lancelier Impale (applies Slow — useful for Simon turn order control)
+- Chat 22: Portier Crash → Grosse Tête Whack (applies Defenceless — essential for burst setup)
+- Chat 23: Chalier Combo → Orphelin Cheers (applies Powerful to 1–3 allies; first target player-chosen)
+- Chat 23: Stalact Punches → Chapelier Slash (AoE Mark — supports burst damage via Mark debuff)
+
+**Current equipped:** Lancelier Impale, Orphelin Cheers, Chapelier Slash, Moissonneuse Vendange, Grosse Tête Whack, Potier Energy
+
+**Wheel rotation for Simon (optimised):**
+Start: Almighty Mask (Joyaro L4). Suggested opening sequence:
+1. Grosse Tête Whack (+4 → Heavy) — Almighty bonus, applies Defenceless
+2. Lancelier Impale (+4 → Agile) — applies Slow
+3. Moissonneuse Vendange (+2 → Balanced) — can Break; lands on Balanced ready for Vendange → Caster path
+4. Chapelier Slash (+4 → Agile via Caster) — applies Mark (AoE)
+5. Orphelin Cheers (+3 → Caster) — applies Powerful to Verso (first target) + 1–2 more allies
+
+Keep Mark and Defenceless persistent throughout fight (not saved for burst only).
+
+**Post-Simon review needed:** Abbest Wind was removed for Simon but is noted as essential for general wheel cycling and free second turn on Agile Mask. Reassess after fight whether to reinstate it. Abbest Wind may not be worth reinstating if Cheater gives sufficient extra turns.
+
+**Revert after Simon:** Reassess full skill loadout — don't automatically restore pre-Simon set. Review Abbest Wind, Stalact Punches, Portier Crash, Chalier Combo relevance for post-Simon content.
+
+
+
+FILE: overview/claude-expedition33.md
+SECTION: ## Section 7: Session Procedure > ### Logging process
+CONTENT:
+
+1. Append `<!-- SECTION -->` into `chatN.md` followed by a blank line
+2. Append all turns since last log into `chatN.md` — **verbatim**
+
+**Turn format:** Matt's turn first, labelled `**Matt:**`, then a blank line, then Claude's turn, labelled `**Claude:**`, then a blank line, then a horizontal rule `---`.
+
+**Verbatim logging:** Copy every turn exactly as it appears in context — Matt's turns and Claude's turns alike, including all pasted content. Do not paraphrase, compress, summarise, or represent any turn, regardless of length or content. The pull to summarise long or repetitive content is strong — resist it explicitly. If in doubt, copy more rather than less.
+
+**Bracket notation:** for tool calls only: `*[Fetched X]*`, `*[Created file Y]*`. Never use brackets to summarise substantive response text.
+
+**Lists:** If Matt's turn begins with a list, insert a blank line between `**Matt:**` and the first list item so Markdown renders correctly.
+
+**Appending to file:** Use bash `>>` redirection to append turns to the transcript file. No need to view the file before appending — just construct the content and redirect.
+
+
+1. Complete transcript: run a final `!log` step
+2. Verbatim check: sample 3–4 turns spread across the transcript file (beginning, middle, end) — read each from disk, compare against context, report pass/fail per sample
+3. Output transcript: present `chatN.md` and stop
+
+
+FILE: overview/claude-expedition33.md
+SECTION: ## Section 6: Open Questions > ### Simon Fight Plan Tracker
+AFTER: ## Section 6: Open Questions
+CONTENT:
+### Simon Fight Plan Tracker
+
+| Plan | Team 1 (main) | Team 2 (reserve) | Status | Notes |
+|------|--------------|-----------------|--------|-------|
+| A | Verso / Sciel / Maelle | Lune / Monoco | ❌ Failed | Phase 1 & 2 easy with main team; reserves wiped almost instantly in phase 2 |
+| B | Verso / Sciel | Maelle / Lune / Monoco | ❌ Failed | Struggled to complete phase 2; often wiped by Light Speed attack |
+| C | Verso / Lune | Maelle / Sciel / Monoco | ⏭ Skipped | Weaker phases 1–2 than Plan B; enables Fortune's Fury + Defenceless + Gommage in phase 3; skipped as phase 2 too hard |
+| D | Lune / Monoco | Maelle / Verso / Sciel | ⏭ Skipped | Strongest team reserved for phase 3 burst; unlikely to survive phase 2 |
+| E | Verso / Lune / Monoco | Maelle / Sciel | 🔄 Current | Strength in numbers for phases 1–2; best DPS + best support for phase 3 |
+| F | Verso / Sciel / Maelle | — | 🔮 Future | Sciel sets up Twilight for speed advantage; Verso stunlocks with Overload + End Bringer (Seeram); Maelle executes Gommage burst |
+
