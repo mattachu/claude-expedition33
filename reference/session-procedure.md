@@ -189,12 +189,12 @@ Work through the action bins and generate `chatN-changelist.txt`. Fetch each fil
 - **Data changes** → `DATA:` blocks (one per field change)
 - **File changes** → `FILE:` blocks (one per section replacement)
 - **Open questions** → `FILE:` block targeting Section 6 of the overview
-- Processing order: `DATA:` blocks first, then `FILE:` blocks
+- Processing order: `DATA:` blocks first, then `FILE:` blocks, then `APPEND:` blocks
 
 Also include:
-- New row appended to `chats/chat-index.md` (fetch existing file to match style — concise prose covering topics, decisions, infrastructure changes; do not generate mechanically from action list)
-- Any updates to Section 6 open questions (even if not specifically flagged)
-- Any new entries for `reference/historical-errors.md` if significant errors were made this session
+- New row appended to `chats/chat-index.md` → `APPEND:` block (fetch existing file to match table row style — concise prose covering topics, decisions, infrastructure changes; do not generate mechanically from action list)
+- Any updates to Section 6 open questions (even if not specifically flagged) → `FILE:` block
+- Any new entries for `reference/historical-errors.md` → `APPEND:` block if significant errors were made this session
 
 See Changelist Format below for block syntax.
 
@@ -227,8 +227,8 @@ Present the completed transcript, part files, and chat index to Matt.
 
 ## Changelist Format
 
-Two block types: `DATA:` (JSON field updates) and `FILE:` (Markdown section replacements).  
-Processing order: DATA → FILE → `generate.py`.
+Three block types: `DATA:` (JSON field updates), `FILE:` (Markdown section replacements), and `APPEND:` (raw append to end of file).
+Processing order: DATA → FILE → APPEND → `generate.py`.
 
 ### DATA: blocks
 
@@ -264,6 +264,21 @@ CONTENT:
 - `###` heading must be unique within its `##` parent; renames require direct edit
 - Separators (`---`) between `##` sections are inserted automatically by the updater script — do not include them in `CONTENT:` or between FILE blocks
 - Failure mode: loud
+
+### APPEND: blocks
+
+Append content verbatim to the end of a file:
+
+```
+APPEND: chats/chat-index.md
+CONTENT:
+| Chat 23 | [Formatted](...) / [Raw](...) | [chat23.md](...) | Summary text. |
+```
+
+- No section targeting — content is appended directly after the last line of the file
+- No reformatting — separator stripping, blank-line normalisation, and `##` separator insertion are not applied
+- Intended for flat-structure files where `FILE:` section targeting is not applicable: `chats/chat-index.md` (table rows) and `reference/historical-errors.md` (numbered list items)
+- The script ensures the file ends with exactly one newline before appending
 
 ---
 

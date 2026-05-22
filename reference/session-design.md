@@ -114,9 +114,9 @@ Character files (`characters/*.md`) and data files (`data/*.json`) are the two l
 
 ## Changelist Format
 
-Two block types: `DATA:` (JSON updates) and `FILE:` (Markdown section replacements/insertions).
+Three block types: `DATA:` (JSON updates), `FILE:` (Markdown section replacements/insertions), and `APPEND:` (raw append to end of file).
 
-Processing order: `DATA:` blocks first (updating JSON), then `FILE:` blocks (updating Markdown), then `generate.py` runs automatically to refresh all `GENERATED:` markers. The updater script (`apply_changelist.py`) handles this sequence.
+Processing order: `DATA:` blocks first (updating JSON), then `FILE:` blocks (updating Markdown), then `APPEND:` blocks (appending content verbatim), then `generate.py` runs automatically to refresh all `GENERATED:` markers. The updater script (`apply_changelist.py`) handles this sequence.
 
 ### DATA: blocks
 
@@ -215,13 +215,28 @@ CONTENT:
 - Failure mode: loud — no silent corruption
 - **Maintenance discipline:** `###` heading text must be unique within its `##` parent. Renaming a heading requires a direct file edit, not a changelist entry.
 
+### APPEND: blocks
+
+Verbatim append to the end of a file. Does not parse or reformat the file — no separator stripping, no blank-line normalisation, no `##` separator insertion.
+
+```
+APPEND: chats/chat-index.md
+CONTENT:
+| Chat 23 | [Formatted](...) / [Raw](...) | [chat23.md](...) | Summary text. |
+```
+
+- `APPEND:` — repo-relative path to the target file (required)
+- `CONTENT:` — text to append verbatim; must be last field (required)
+- Intended for flat-structure files where `FILE:` section targeting is not applicable: `chats/chat-index.md` (table rows) and `reference/historical-errors.md` (numbered list items)
+- The script ensures the file ends with exactly one newline before appending
+
 ---
 
 ## Scripts
 
 | Script          | File                     | Description                                                                                                                                                                                                                         |
 |-----------------|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Updater         | `apply_changelist.py`    | Applies DATA: and FILE: blocks from a changelist file. Calls `generate.py` after applying all blocks. Matt runs this on the changelist at end-of-session.                                                                           |
+| Updater         | `apply_changelist.py`    | Applies DATA:, FILE:, and APPEND: blocks from a changelist file. Calls `generate.py` after applying all blocks. Matt runs this on the changelist at end-of-session.                                                                 |
 | Generator       | `generate.py`            | Reads JSON data files and regenerates all GENERATED blocks in character files, plus `party-summary.md`, `pictos-lumina-summary.md`, and the catalogue. Called automatically by the updater.                                         |
 | Splitter        | `split_transcript.py`    | Splits a completed Markdown transcript into part files at `<!-- SECTION -->` markers. Available as fallback; not used in current workflow.                                                                                          |
 | Converter       | `transcript_to_md.py`    | Converts the Claude.ai JSON transcript format to Markdown. More efficient than Claude reading raw JSON directly. Timestamp mode (`--after-timestamp`) targets turns after a given point, useful for post-compaction reconstruction. |
@@ -241,7 +256,7 @@ CONTENT:
 - Transcripts must be written verbatim — both Matt's turns and Claude's turns, including all pasted content
 - Bracket notation is for tool calls only — `*[Fetched X]*`, `*[Created Y]*`. Never use brackets to represent substantive response text
 - The `<!-- SECTION -->` marker must appear on a line by itself (no surrounding text) so the anchored `csplit` pattern matches correctly
-- Changelists contain only DATA: and FILE: blocks — no instructions, notes, or commentary
+- Changelists contain only `DATA:`, `FILE:`, and `APPEND:` blocks — no instructions, notes, or commentary
 
 ---
 
