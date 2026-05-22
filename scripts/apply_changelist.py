@@ -757,14 +757,15 @@ def apply_append(target_path, content):
     Ensures the file ends with exactly one newline before appending, so
     content always starts on a new line.
     """
-    with open(target_path, 'a+', encoding='utf-8') as f:
-        f.seek(0, 2)  # seek to end
+    with open(target_path, 'rb') as f:
+        f.seek(0, 2)
         if f.tell() > 0:
             f.seek(-1, 2)
-            if f.read(1) != '\n':
-                f.write('\n')
+            if f.read(1) != b'\n':
+                with open(target_path, 'a', encoding='utf-8') as fa:
+                    fa.write('\n')
+    with open(target_path, 'a', encoding='utf-8') as f:
         f.write(content)
-
 
 # ---------------------------------------------------------------------------
 # GENERATED marker detection
