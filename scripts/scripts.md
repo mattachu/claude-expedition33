@@ -15,8 +15,9 @@ Usage:
     --dry-run       Show what would change without writing files
 
 Changelist format:
-    One or more entries. Each entry is either a DATA: block (JSON update) or a
-    FILE: block (Markdown section replacement/insertion).
+    One or more entries. Each entry is a DATA: block (JSON update), a FILE: block
+    (Markdown section replacement/insertion), or an APPEND: block (raw append to
+    end of file).
 
     DATA: data/characters.json
     PATH: Maelle.level
@@ -59,6 +60,14 @@ Changelist format:
 
     Some new content here.
 
+    APPEND: chats/chat-index.md
+    CONTENT:
+    | Chat 23 | [Formatted](chat23/chat23-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat23/chat23-index.md) | [chat23.md](chat23/chat23.md) | Summary text here |
+
+    APPEND: reference/historical-errors.md
+    CONTENT:
+    53. **Error title:** Description of what went wrong and the correct answer.
+
 DATA: block fields:
     DATA:     Repo-relative path to the target JSON file (required)
     PATH:     Dot-notation path to the target field (required; see below)
@@ -81,7 +90,8 @@ OP semantics:
 
 Processing order:
     DATA blocks are applied first (updating JSON), then FILE blocks update Markdown
-    sections, then generate.py runs to refresh GENERATED markers from the updated JSON.
+    sections, then APPEND blocks append raw content to files, then generate.py runs
+    to refresh GENERATED markers from the updated JSON.
 
 FILE: block fields:
     FILE:     Repo-relative path to the target file (required)
@@ -95,7 +105,9 @@ FILE: behaviour:
     Update (### exists):    Replace the existing ### section with new content.
     Insert (### missing):   Insert after the last ### sibling in the ## parent,
                             or after the AFTER: sibling if specified.
-    ## missing:             Fail loudly — structural changes require manual edit.
+    ## missing, no AFTER:   Fail loudly — position requires manual decision.
+    ## missing, AFTER: set: Insert after the named ## sibling (AFTER: target not
+                            found → fail loudly). EOF is not used as a fallback.
     ## -level entry:        Replace the entire ## section (no ### child specified).
 
     Note: the script operates at heading level only. Individual bullet points,
@@ -108,6 +120,17 @@ Section boundaries:
     or ## heading, or EOF. Horizontal rules (--- or -----) are not used as
     boundaries and are stripped from files on load; --- separators are written
     between ## sections on output for readability.
+
+APPEND: block fields:
+    APPEND:   Repo-relative path to the target file (required)
+    CONTENT:  Marks the start of content to append (required; must be last header field)
+
+APPEND: behaviour:
+    Appends content verbatim to the end of the file. Does not parse or reformat
+    the file — no separator stripping, no blank-line normalisation, no ## separator
+    insertion. Intended for files with flat structure (tables, numbered lists) where
+    section-level targeting is not applicable. The script ensures the file ends with
+    exactly one newline before appending.
 """
 
 import json
@@ -155,7 +178,7 @@ def normalise_blank_lines(lines):
 
 def insert_h2_separators(lines):
     """
-    Insert a '---\\n' line before every ## heading (except the very first line
+    Insert a '---\n' line before every ## heading (except the very first line
     of the file), skipping any ## lines that appear inside fenced code blocks.
 
     Layout produced:
@@ -529,7 +552,7 @@ def parse_changelist(text):
     """
     Parse changelist text into a list of entry dicts.
 
-    Each entry has a 'type' field: 'data' or 'file'.
+    Each entry has a 'type' field: 'data', 'file', or 'append'.
 
     DATA entries:
         {
@@ -552,12 +575,19 @@ def parse_changelist(text):
             'section_level': int,   # 2 for ##, 3 for ###
         }
 
+    APPEND entries:
+        {
+            'type':    'append',
+            'file':    str,    # repo-relative path
+            'content': str,    # text to append verbatim
+        }
+
     Raises ValueError on malformed entries.
     """
     entries = []
 
-    # Split on DATA: or FILE: boundaries (keep the marker with its block)
-    raw_blocks = re.split(r'(?m)^(?=(?:DATA:|FILE:))', text)
+    # Split on DATA:, FILE:, or APPEND: boundaries (keep the marker with its block)
+    raw_blocks = re.split(r'(?m)^(?=(?:DATA:|FILE:|APPEND:))', text)
 
     for block in raw_blocks:
         block = block.strip()
@@ -568,6 +598,8 @@ def parse_changelist(text):
             entries.append(_parse_data_block(block))
         elif block.startswith('FILE:'):
             entries.append(_parse_file_block(block))
+        elif block.startswith('APPEND:'):
+            entries.append(_parse_append_block(block))
         # Anything else (preamble text etc.) is silently ignored
 
     return entries
@@ -631,7 +663,7 @@ def _parse_data_block(block):
 
 
 def _parse_file_block(block):
-    """Parse one FILE: block. Returns a file entry dict. (Extracted from parse_changelist.)"""
+    """Parse one FILE: block. Returns a file entry dict."""
 
     # Split header from content at CONTENT: marker
     content_match = re.search(r'(?m)^CONTENT:\s*\n', block)
@@ -690,6 +722,55 @@ def _parse_file_block(block):
         'section_level': section_level,
     }
 
+
+def _parse_append_block(block):
+    """Parse one APPEND: block. Returns an append entry dict."""
+
+    # Split header from content at CONTENT: marker
+    content_match = re.search(r'(?m)^CONTENT:\s*\n', block)
+    if not content_match:
+        raise ValueError(f'Missing CONTENT: marker in APPEND block:\n{block[:200]}')
+
+    header_text  = block[:content_match.start()]
+    content_text = block[content_match.end():]
+
+    # Strip trailing blank lines from content, then add exactly one trailing newline.
+    content_text = content_text.rstrip('\n') + '\n'
+
+    m = re.search(r'(?m)^APPEND:\s*(.+)$', header_text)
+    if not m:
+        raise ValueError(f'Missing APPEND: file path in block:\n{header_text[:200]}')
+    file_path = m.group(1).strip()
+
+    return {
+        'type':    'append',
+        'file':    file_path,
+        'content': content_text,
+    }
+
+
+# ---------------------------------------------------------------------------
+# APPEND: block — file operation
+# ---------------------------------------------------------------------------
+
+def apply_append(target_path, content):
+    """
+    Append content verbatim to the end of target_path.
+
+    Does not load/save through the section-aware pipeline — no separator
+    stripping, no blank-line normalisation, no ## separator insertion.
+    Ensures the file ends with exactly one newline before appending, so
+    content always starts on a new line.
+    """
+    with open(target_path, 'rb') as f:
+        f.seek(0, 2)
+        if f.tell() > 0:
+            f.seek(-1, 2)
+            if f.read(1) != b'\n':
+                with open(target_path, 'a', encoding='utf-8') as fa:
+                    fa.write('\n')
+    with open(target_path, 'a', encoding='utf-8') as f:
+        f.write(content)
 
 # ---------------------------------------------------------------------------
 # GENERATED marker detection
@@ -837,7 +918,7 @@ def apply_entry(lines, entry, interactive=True):
                                                     section_id, interactive)
             if not proceed:
                 return lines, True, None
-        return _apply_h2_entry(lines, section_heading, new_content_lines), False, note
+        return _apply_h2_entry(lines, section_heading, after_hint, new_content_lines), False, note
     else:
         note = None
         h2_line = find_heading_line(lines, parent_heading)
@@ -857,26 +938,42 @@ def apply_entry(lines, entry, interactive=True):
                                after_hint, new_content_lines), False, note
 
 
-def _apply_h2_entry(lines, section_heading, new_content_lines):
-    """Replace an entire ## section."""
+def _apply_h2_entry(lines, section_heading, after_hint, new_content_lines):
+    """Replace an existing ## section, or insert a new one if AFTER: is specified."""
     h2_line = find_heading_line(lines, section_heading)
-    if h2_line is None:
+
+    if h2_line is not None:
+        # UPDATE: replace existing ## section
+        section_end = find_section_end(lines, h2_line, level=2)
+        prefix = lines[:h2_line]
+        suffix = lines[section_end:]
+        while prefix and prefix[-1].strip() == '':
+            prefix.pop()
+        post_sep = ['\n'] if suffix and suffix[0].strip() != '' else []
+        return prefix + new_content_lines + post_sep + suffix
+
+    # Section does not exist — insert only if AFTER: was specified
+    if not after_hint:
         raise ValueError(
             f'## section not found: "{section_heading}"\n'
-            f'Structural changes require manual edit.'
+            f'To insert a new ## section, specify AFTER: with the preceding ## heading.\n'
+            f'To replace or restructure, edit the file manually.'
         )
 
-    section_end = find_section_end(lines, h2_line, level=2)
+    after_line = find_heading_line(lines, after_hint)
+    if after_line is None:
+        raise ValueError(
+            f'AFTER: target not found: "{after_hint}"\n'
+            f'Cannot insert "{section_heading}" — named sibling does not exist.'
+        )
 
-    prefix = lines[:h2_line]
-    suffix = lines[section_end:]
-
+    insert_pos = find_section_end(lines, after_line, level=2)
+    prefix = lines[:insert_pos]
+    suffix = lines[insert_pos:]
     while prefix and prefix[-1].strip() == '':
         prefix.pop()
-
     post_sep = ['\n'] if suffix and suffix[0].strip() != '' else []
-
-    return prefix + new_content_lines + post_sep + suffix
+    return prefix + ['\n'] + new_content_lines + post_sep + suffix
 
 
 def _apply_h3_entry(lines, parent_heading, section_heading, after_hint, new_content_lines):
@@ -972,9 +1069,11 @@ def main():
         print(f'ERROR parsing changelist: {e}')
         sys.exit(1)
 
-    data_entries = [e for e in entries if e['type'] == 'data']
-    file_entries = [e for e in entries if e['type'] == 'file']
-    print(f'  {len(data_entries)} DATA entries, {len(file_entries)} FILE entries parsed')
+    data_entries   = [e for e in entries if e['type'] == 'data']
+    file_entries   = [e for e in entries if e['type'] == 'file']
+    append_entries = [e for e in entries if e['type'] == 'append']
+    print(f'  {len(data_entries)} DATA entries, {len(file_entries)} FILE entries, '
+          f'{len(append_entries)} APPEND entries parsed')
 
     any_error = False
 
@@ -1034,7 +1133,7 @@ def main():
                     print(f'  Written: {target_path}')
 
     if any_error:
-        print('\nCompleted with errors in DATA phase — skipping FILE phase and generate.py.')
+        print('\nCompleted with errors in DATA phase — skipping FILE, APPEND phases and generate.py.')
         sys.exit(1)
 
     # ----------------------------------------------------------------
@@ -1102,24 +1201,53 @@ def main():
                     save_file(target_path, lines)
                     print(f'  Written: {target_path}')
 
-    # ----------------------------------------------------------------
-    # Phase 3: generate.py — refresh GENERATED blocks from updated JSON
-    # ----------------------------------------------------------------
-    if not any_error:
-        print('\nRunning generate.py...')
-        generate_args = [
-            sys.executable,
-            str(repo_root / 'scripts' / 'generate.py'),
-            '--repo-root', str(repo_root),
-            '--no-interactive',
-        ]
-        if args.dry_run:
-            generate_args.append('--dry-run')
+    if any_error:
+        print('\nCompleted with errors in FILE phase — skipping APPEND phase and generate.py.')
+        sys.exit(1)
 
-        result = subprocess.run(generate_args)
-        if result.returncode != 0:
-            print('WARNING: generate.py reported errors — check output above.')
-            any_error = True
+    # ----------------------------------------------------------------
+    # Phase 3: APPEND entries — append raw content to files
+    # ----------------------------------------------------------------
+    if append_entries:
+        print('\nPhase 3: Applying APPEND entries...')
+
+        for entry in append_entries:
+            rel_path    = entry['file']
+            target_path = repo_root / rel_path
+
+            if not target_path.exists():
+                print(f'  ERROR: File not found: {target_path}')
+                any_error = True
+                continue
+
+            if args.dry_run:
+                preview = entry['content'].splitlines()[0][:80]
+                print(f'  [dry-run] would append to {rel_path}: {preview!r}...')
+            else:
+                apply_append(target_path, entry['content'])
+                print(f'  APPEND: {rel_path}')
+
+    if any_error:
+        print('\nCompleted with errors in APPEND phase — skipping generate.py.')
+        sys.exit(1)
+
+    # ----------------------------------------------------------------
+    # Phase 4: generate.py — refresh GENERATED blocks from updated JSON
+    # ----------------------------------------------------------------
+    print('\nRunning generate.py...')
+    generate_args = [
+        sys.executable,
+        str(repo_root / 'scripts' / 'generate.py'),
+        '--repo-root', str(repo_root),
+        '--no-interactive',
+    ]
+    if args.dry_run:
+        generate_args.append('--dry-run')
+
+    result = subprocess.run(generate_args)
+    if result.returncode != 0:
+        print('WARNING: generate.py reported errors — check output above.')
+        any_error = True
 
     if any_error:
         print('\nCompleted with errors.')
