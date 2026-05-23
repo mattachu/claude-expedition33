@@ -1,10 +1,10 @@
 {
   "Maelle": {
-    "level": 94,
+    "level": 95,
     "role": "Primary DPS",
     "attributes": {
       "vitality": 0,
-      "might": 81,
+      "might": 87,
       "agility": 99,
       "defence": 0,
       "luck": 99
@@ -17,12 +17,14 @@
       "crit": "41%"
     },
     "stats_modified": {
-      "health": 7823,
-      "attack": 11156,
-      "speed": 2446,
+      "health": 7885,
+      "attack": 11298,
+      "speed": 2462,
       "defence": 182,
       "crit": "109%",
-      "_note": "Stats with Lithum (33), Clea's Life (30), Empowering Break (28), Shortcut (31) equipped. Speed and Crit approximate pending in-game verification."
+      "_note": "Stats with Lithum (33), Clea's Life (30), Empowering Break (28), Shortcut (31) equipped. Speed and Crit approximate pending in-game verification.",
+      "crit_rate": "109%",
+      "defense": 182
     },
     "weapon_equipped": "Lithum",
     "pictos_equipped": [
@@ -43,16 +45,16 @@
         "notes": "Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus"
       },
       {
-        "name": "Energising Shell",
-        "notes": "Give 2 AP on applying Shell. 10LP. Synergises with Lithum."
-      },
-      {
         "name": "Powerful On Shell",
         "notes": "Apply Powerful on applying Shell. 10LP. Synergises with Lithum."
       },
       {
         "name": "Gradient Fighter",
         "notes": "Damage bonus on Gradient Skill use. 5LP. Verify exact effect description in-game."
+      },
+      {
+        "name": "Solo Fighter",
+        "notes": "Rounds up LP to cap."
       }
     ],
     "skills_equipped": [
@@ -85,7 +87,8 @@
       "Rain of Fire",
       "Spark",
       "Swift Stride",
-      "Revenge"
+      "Revenge",
+      "Pyrolyse"
     ],
     "gradient_skills": [
       {
@@ -112,11 +115,12 @@
     "level": 94,
     "role": "Endgame main DPS",
     "attributes": {
-      "vitality": 0,
-      "might": 81,
+      "vitality": 99,
+      "might": 62,
       "agility": 99,
       "defence": 0,
-      "luck": 99
+      "luck": 22,
+      "defense": 0
     },
     "stats_base": {
       "health": 2232,
@@ -126,14 +130,16 @@
       "crit": "41%"
     },
     "stats_modified": {
-      "health": 7239,
-      "attack": 10736,
-      "speed": 2379,
+      "health": 8628,
+      "attack": 10841,
+      "speed": 2284,
       "defence": 182,
       "crit": "124%",
-      "_note": "Stats with Chevalam (33), Augmented Counter I (28), Breaking Death (29), Confident (29) equipped"
+      "_note": "Stats with Chevalam (33), Augmented Counter I (28), Breaking Death (29), Confident (29) equipped",
+      "defense": 182,
+      "crit_rate": "100%"
     },
-    "weapon_equipped": "Chevalam",
+    "weapon_equipped": "Simoso",
     "pictos_equipped": [
       "Augmented Counter I",
       "Breaking Death",
@@ -159,14 +165,23 @@
       {
         "name": "Warming Up",
         "notes": "Damage bonus that increases with each attack, up to 20% at 5 stacks"
+      },
+      {
+        "name": "Energising Attack I"
+      },
+      {
+        "name": "Energising Start II"
+      },
+      {
+        "name": "Staggering Attack"
       }
     ],
     "skills_equipped": [
-      "Quick Strike",
-      "Light Holder",
-      "Phantom Stars",
-      "Perfect Break",
       "End Bringer",
+      "Light Holder",
+      "Perfect Break",
+      "Phantom Stars",
+      "Overload",
       "Steeled Strike"
     ],
     "skills_learned": [
@@ -187,7 +202,11 @@
       "Purification",
       "Quick Strike",
       "Steeled Strike",
-      "Strike Storm"
+      "Strike Storm",
+      "Ascending Assault",
+      "Follow Up",
+      "Overload",
+      "Radiant Slash"
     ],
     "gradient_skills": [
       {
@@ -215,7 +234,7 @@
     "role": "Pure support",
     "attributes": {
       "vitality": 0,
-      "might": 12,
+      "might": 18,
       "agility": 99,
       "defence": 66,
       "luck": 99
@@ -271,16 +290,7 @@
         "notes": "1 AP on Healing Tint use — small AP top-up"
       },
       {
-        "name": "Anti-Stun",
-        "notes": "Immune to Stun. 5LP. Good vs Simon."
-      },
-      {
-        "name": "Empowering Dodge",
-        "notes": "5% increased damage per consecutive dodge, stacks up to 10. 5LP."
-      },
-      {
-        "name": "Auto Shell",
-        "notes": "Apply Shell for 3 turns on battle start. 10LP. Defensive boost."
+        "name": "Breaking Attack"
       }
     ],
     "skills_equipped": [
@@ -336,7 +346,7 @@
     "role": "DPS / healer (reserve)",
     "attributes": {
       "vitality": 99,
-      "might": 15,
+      "might": 18,
       "agility": 99,
       "defence": 0,
       "luck": 51
@@ -378,9 +388,9 @@
     "skills_equipped": [
       "Hell",
       "Terraquake",
-      "Ice Lance",
+      "Lightning Dance",
       "Healing Light",
-      "Rebirth",
+      "Thermal Transfer",
       "Elemental Genesis"
     ],
     "skills_learned": [
@@ -402,7 +412,8 @@
       "Terraquake",
       "Thunderfall",
       "Wildfire",
-      "Typhoon"
+      "Typhoon",
+      "Thermal Transfer"
     ],
     "gradient_skills": [
       {
@@ -433,7 +444,7 @@
       "might": 0,
       "agility": 99,
       "defence": 99,
-      "luck": 66
+      "luck": 69
     },
     "stats_base": {
       "health": 2080,
@@ -471,15 +482,18 @@
       {
         "name": "Energising Break",
         "notes": "Extra AP on breaking an enemy"
+      },
+      {
+        "name": "Augmented First Strike"
       }
     ],
     "skills_equipped": [
-      "Lancelier Impale",
-      "Orphelin Cheers",
+      "Stalact Punches",
       "Chapelier Slash",
-      "Moissonneuse Vendange",
       "Grosse Tête Whack",
-      "Potier Energy"
+      "Orphelin Cheers",
+      "Potier Energy",
+      "Moissonneuse Vendange"
     ],
     "skills_learned": [
       "Abbest Wind",

@@ -572,7 +572,7 @@
       ],
       "effect": "+5% of a Gradient Charge on hitting a Stunned enemy.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null
     },
     {
@@ -2440,7 +2440,7 @@
   ],
   "core_lumina_suite": {
     "main_team": {
-      "total_lp": 269,
+      "total_lp": 249,
       "entries": [
         {
           "name": "Painted Power",
@@ -2475,15 +2475,11 @@
         {
           "name": "Base Shield",
           "lp": 20,
-          "notes": "Verso: non-functional with Chevalam as L4 effect prevents shields"
+          "notes": "Verso: previously non-functional with Chevalam L4; now available with Simoso — see open question."
         },
         {
           "name": "Teamwork",
           "lp": 5
-        },
-        {
-          "name": "Energising Parry",
-          "lp": 15
         },
         {
           "name": "Energising Start I",
@@ -2518,10 +2514,6 @@
         },
         {
           "name": "Critical Break",
-          "lp": 5
-        },
-        {
-          "name": "Rewarding Mark",
           "lp": 5
         },
         {
@@ -2580,10 +2572,6 @@
           "lp": 5
         },
         {
-          "name": "Energising Parry",
-          "lp": 15
-        },
-        {
           "name": "Energising Start I",
           "lp": 5
         },
@@ -2604,10 +2592,6 @@
           "lp": 5
         },
         {
-          "name": "Rewarding Mark",
-          "lp": 5
-        },
-        {
           "name": "Burning Shots",
           "lp": 3
         },
@@ -2622,9 +2606,13 @@
         {
           "name": "Breaking Death",
           "lp": 5
+        },
+        {
+          "name": "Base Shield",
+          "lp": 20
         }
       ],
-      "notes": "Main team core minus Dead Energy I, Dead Energy II, Second Chance; Plus Recovery. Updated Chat 22: Base Shield removed, Cheater and Shortcut added."
+      "notes": "Main team core minus Dead Energy I, Dead Energy II, Second Chance; plus Recovery and Base Shield."
     }
   },
   "candidates_for_review": [

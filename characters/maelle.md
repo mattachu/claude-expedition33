@@ -68,10 +68,10 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 <!-- GENERATED:START characters:Maelle:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 94    |
+| Level     | 95    |
 | Agility   | 99    |
 | Luck      | 99    |
-| Might     | 81    |
+| Might     | 87    |
 | Vitality  | 0     |
 | Defence   | 0     |
 <!-- GENERATED:END -->
@@ -85,9 +85,9 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2232 | 7823     |
-| Attack  | 1368 | 11156    |
-| Speed   | 1228 | 2446     |
+| Health  | 2232 | 7885     |
+| Attack  | 1368 | 11298    |
+| Speed   | 1228 | 2462     |
 | Defence | 182  | 182      |
 | Crit    | 41%  | 109%     |
 <!-- GENERATED:END -->
@@ -159,8 +159,6 @@ Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina 
 | Dead Energy I      | 2  |                                                                                                                                                                      |
 | Dead Energy II     | 2  |                                                                                                                                                                      |
 | Dodger             | 1  |                                                                                                                                                                      |
-| Energising Parry   | 15 |                                                                                                                                                                      |
-| Energising Shell   | 10 | Give 2 AP on applying Shell. 10LP. Synergises with Lithum.                                                                                                           |
 | Energising Start I | 5  | Boosted by Energy Master to 8AP on battle start                                                                                                                      |
 | Energising Turn    | 20 | Main AP flow generator; boosted by Energy Master                                                                                                                     |
 | Energy Master      | 40 | Add 1 to AP boosts (not double) — game-changing for AP generation                                                                                                    |
@@ -169,9 +167,9 @@ Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina 
 | Marking Shots      | 3  |                                                                                                                                                                      |
 | Painted Power      | 5  | Essential for all characters from Act 3 onwards                                                                                                                      |
 | Powerful On Shell  | 10 | Apply Powerful on applying Shell. 10LP. Synergises with Lithum.                                                                                                      |
-| Rewarding Mark     | 5  |                                                                                                                                                                      |
 | Second Chance      | 40 | Can save boss battles                                                                                                                                                |
 | Shortcut           | —  | FREE from Shortcut Pictos                                                                                                                                            |
+| Solo Fighter       | 1  | Rounds up LP to cap.                                                                                                                                                 |
 | Survivor           | 20 | Secondary safety net before Second Chance                                                                                                                            |
 | Teamwork           | 5  |                                                                                                                                                                      |
 | Warming Up         | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus |
@@ -228,6 +226,7 @@ Net change: freed 52, added 33. 19 LP spare after swap (within 158 LP budget).
 | Spark            | 3                 | Defensive  | ❌        | Low Fire damage + 3 burn. Applies 2 more burn if in Offensive.                                                                                  |
 | Swift Stride     | 3                 | Virtuose   | ❌        | Low Physical. Switches to Virtuose if target burning. Regains 0–2 AP.                                                                           |
 | Revenge          | —                 | —          | ❌        |                                                                                                                                                 |
+| Pyrolyse         | —                 | —          | ❌        |                                                                                                                                                 |
 <!-- GENERATED:END -->
 
 ### Solo skill loadout recommendation (The Reacher)

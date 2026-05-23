@@ -59,7 +59,7 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 | Level     | 89    |
 | Agility   | 99    |
 | Defence   | 99    |
-| Luck      | 66    |
+| Luck      | 69    |
 | Vitality  | 0     |
 | Might     | 0     |
 <!-- GENERATED:END -->
@@ -145,29 +145,29 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 ### Current Loadout
 
 <!-- GENERATED:START characters:Monoco:Lumina -->
-| Lumina             | LP | Notes                                                                                     |
-|--------------------|----|-------------------------------------------------------------------------------------------|
-| Break Specialist   | 1  | 50% increased Break damage, 20% reduced base damage — net positive for break-focused role |
-| Breaker            | 10 |                                                                                           |
-| Breaking Burn      | 5  |                                                                                           |
-| Breaking Counter   | 3  |                                                                                           |
-| Breaking Death     | 5  |                                                                                           |
-| Burning Shots      | 3  |                                                                                           |
-| Cheater            | 40 |                                                                                           |
-| Critical Break     | 5  |                                                                                           |
-| Dodger             | 1  |                                                                                           |
-| Energising Break   | 3  | Extra AP on breaking an enemy                                                             |
-| Energising Parry   | 15 |                                                                                           |
-| Energising Start I | 5  |                                                                                           |
-| Energising Turn    | 20 |                                                                                           |
-| Marking Shots      | 3  |                                                                                           |
-| Painted Power      | 5  |                                                                                           |
-| Recovery           | 10 |                                                                                           |
-| Rewarding Mark     | 5  |                                                                                           |
-| Shortcut           | 5  |                                                                                           |
-| Staggering Attack  | 1  | Break damage on base attack — small break bar contribution                                |
-| Survivor           | 20 |                                                                                           |
-| Teamwork           | 5  |                                                                                           |
+| Lumina                 | LP | Notes                                                                                     |
+|------------------------|----|-------------------------------------------------------------------------------------------|
+| Augmented First Strike | —  | FREE from Augmented First Strike Pictos                                                   |
+| Base Shield            | 20 |                                                                                           |
+| Break Specialist       | 1  | 50% increased Break damage, 20% reduced base damage — net positive for break-focused role |
+| Breaker                | 10 |                                                                                           |
+| Breaking Burn          | 5  |                                                                                           |
+| Breaking Counter       | 3  |                                                                                           |
+| Breaking Death         | 5  |                                                                                           |
+| Burning Shots          | 3  |                                                                                           |
+| Cheater                | 40 |                                                                                           |
+| Critical Break         | 5  |                                                                                           |
+| Dodger                 | 1  |                                                                                           |
+| Energising Break       | 3  | Extra AP on breaking an enemy                                                             |
+| Energising Start I     | 5  |                                                                                           |
+| Energising Turn        | 20 |                                                                                           |
+| Marking Shots          | 3  |                                                                                           |
+| Painted Power          | 5  |                                                                                           |
+| Recovery               | 10 |                                                                                           |
+| Shortcut               | 5  |                                                                                           |
+| Staggering Attack      | 1  | Break damage on base attack — small break bar contribution                                |
+| Survivor               | 20 |                                                                                           |
+| Teamwork               | 5  |                                                                                           |
 <!-- GENERATED:END -->
 
 **Situational Lumina (add for specific boss fights):**
@@ -183,16 +183,16 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 ## Skills
 
 <!-- GENERATED:START characters:Monoco:skills -->
-**Currently equipped (6):** Chapelier Slash, Grosse Tête Whack, Lancelier Impale, Moissonneuse Vendange, Orphelin Cheers, Potier Energy
+**Currently equipped (6):** Chapelier Slash, Grosse Tête Whack, Moissonneuse Vendange, Orphelin Cheers, Potier Energy, Stalact Punches
 
 | Skill                 | AP             | Wheel | Mask     | Equipped | Notes                                                                                         |
 |-----------------------|----------------|-------|----------|----------|-----------------------------------------------------------------------------------------------|
 | Chapelier Slash       | 7              | +4    | Agile    | ✅        | High Physical AoE, 3 hits. Applies Mark.                                                      |
 | Grosse Tête Whack     | 6              | +4    | Heavy    | ✅        | High Physical single target, 5 hits. Applies Defenceless 3 turns.                             |
-| Lancelier Impale      | 2              | +4    | Agile    | ✅        | Low Ice single target, 1 hit. Slows target 3 turns.                                           |
 | Moissonneuse Vendange | 5              | +2    | Balanced | ✅        | High Physical single target, 3 hits. Can Break.                                               |
 | Orphelin Cheers       | 3              | +3    | Caster   | ✅        | Applies Powerful to 1–3 allies.                                                               |
 | Potier Energy         | 4              | +6    | Caster   | ✅        | Gives 1–3 AP to all allies.                                                                   |
+| Stalact Punches       | 4              | +4    | Heavy    | ✅        | Medium Ice single target, 4 hits. High Break damage.                                          |
 | Abbest Wind           | 2 (0 in Agile) | +2    | Agile    | ❌        | Low Physical single target, 1 hit. Plays a second turn.                                       |
 | Aberration Light      | 7              | +4    | Agile    | ❌        | High Light AoE, 2 hits. Applies 4 Burn per hit.                                               |
 | Ballet Charm          | 2              | +3    | Caster   | ❌        | Low Light single target, 1 hit. Applies Powerless 3 turns.                                    |
@@ -220,6 +220,7 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Hexga Crush           | 5              | +6    | Heavy    | ❌        | Medium Earth single target, 2 hits. Applies Defenceless 3 turns.                              |
 | Jar Lampstorm         | 5              | +6    | Heavy    | ❌        | Medium Physical AoE, 4 hits.                                                                  |
 | Lampmaster Light      | 5              | +1    | Almighty | ❌        | High Light AoE, 1 hit. Increased damage at each cast.                                         |
+| Lancelier Impale      | 2              | +4    | Agile    | ❌        | Low Ice single target, 1 hit. Slows target 3 turns.                                           |
 | Luster Slices         | 3              | +3    | Agile    | ❌        | Low Physical single target, 3 hits. Applies Rush to self 3 turns.                             |
 | Obscur Sword          | 6              | +3    | Heavy    | ❌        | High Dark single target, 5 hits. More damage against Powerless targets.                       |
 | Pèlerin Heal          | 5              | +3    | Caster   | ❌        | Applies Regen to all allies. On Caster Mask heals 40% HP.                                     |
@@ -231,7 +232,6 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Sakapatate Fire       | —              | +1    | Almighty | ❌        | Extreme Fire AoE, 3 hits. Applies 3 Burn per hit.                                             |
 | Sakapatate Slam       | 7              | +5    | Heavy    | ❌        | High Physical AoE, 1 hit. Increased damage against Marked targets.                            |
 | Sapling Absorption    | 6              | +5    | Caster   | ❌        | High Dark, 3 hits. Recovers 5% HP per hit.                                                    |
-| Stalact Punches       | 4              | +4    | Heavy    | ❌        | Medium Ice single target, 4 hits. High Break damage.                                          |
 | Troubadour Trumpet    | 3              | +4    | Caster   | ❌        | Applies a random buff to 1–3 allies.                                                          |
 <!-- GENERATED:END -->
 

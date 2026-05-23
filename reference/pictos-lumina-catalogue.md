@@ -4,7 +4,7 @@
 
 See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) for Pictos and Lumina currently in use.
 
-**194 Pictos total.** 162 obtained.
+**194 Pictos total.** 163 obtained.
 
 ---
 
@@ -143,7 +143,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Gradient Charge (9 Pictos, 4 obtained)
+## Gradient Charge (9 Pictos, 5 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
@@ -153,7 +153,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 |  | Charging Counter | +10% of a Gradient Charge on Counterattack. | 10 |  |  |  |
 | ✓ | Charging Critical | +20% of a Gradient Charge on Critical Hit. Once per turn. | 10 | Defence: 1891, Crit: 35% |  |  |
 |  | Charging Mark | +20% of a Gradient Charge on hitting a Marked target. Once per turn. | 10 |  |  | mark |
-|  | Charging Stun | +5% of a Gradient Charge on hitting a Stunned enemy. | 5 |  |  |  |
+| ✓ | Charging Stun | +5% of a Gradient Charge on hitting a Stunned enemy. | 5 |  |  |  |
 | ✓ | Charging Tint | +5% of a Gradient Charge on using an item. | 2 |  |  | support |
 |  | Charging Weakness | +15% of a Gradient Charge on hitting a Weakness. Once per turn. | 5 |  |  |  |
 

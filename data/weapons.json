@@ -391,13 +391,21 @@
     },
     {
       "name": "Simoso",
-      "level": null,
-      "power": null,
-      "element": null,
-      "scaling": "Vitality A, Agility B",
-      "obtained": false,
+      "level": 33,
+      "power": 9480,
+      "element": "Light",
+      "scaling": "Vitality A, Agility S",
+      "obtained": true,
       "future": true,
       "effects": [
+        {
+          "level": 4,
+          "description": "An ethereal Sword deals Light damage on any damage dealt with Skills."
+        },
+        {
+          "level": 10,
+          "description": "20% chance to apply Burn on dealing Light damage."
+        },
         {
           "level": 20,
           "description": "Can't die if at least Rank A."
@@ -558,6 +566,30 @@
       "scaling": null,
       "obtained": true,
       "effects": []
+    },
+    {
+      "name": "Seeram",
+      "level": 32,
+      "power": 5755,
+      "element": "Light",
+      "scaling": "Vitality B, Agility A",
+      "obtained": true,
+      "future": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "+1 to all Perfection gain but can't reach Rank S."
+        },
+        {
+          "level": 10,
+          "description": "Base Attack gives 4 Perfection."
+        },
+        {
+          "level": 20,
+          "description": "20% increased Light damage with Skills."
+        }
+      ],
+      "notes": "Can't reach Rank S. Required for End Bringer stunlock build (Plan F). Purchased from merchant in Renoir's Drafts area. Scaling becomes Vitality A, Agility S at L33."
     }
   ],
   "Sciel": [

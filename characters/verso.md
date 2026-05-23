@@ -58,10 +58,10 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Attribute | Value |
 |-----------|-------|
 | Level     | 94    |
+| Vitality  | 99    |
 | Agility   | 99    |
-| Luck      | 99    |
-| Might     | 81    |
-| Vitality  | 0     |
+| Might     | 62    |
+| Luck      | 22    |
 | Defence   | 0     |
 <!-- GENERATED:END -->
 
@@ -72,9 +72,9 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2232 | 7239     |
-| Attack  | 1368 | 10736    |
-| Speed   | 1228 | 2379     |
+| Health  | 2232 | 8628     |
+| Attack  | 1368 | 10841    |
+| Speed   | 1228 | 2284     |
 | Defence | 182  | 182      |
 | Crit    | 41%  | 124%     |
 <!-- GENERATED:END -->
@@ -129,32 +129,33 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ### Current Loadout
 
 <!-- GENERATED:START characters:Verso:Lumina -->
-| Lumina             | LP | Notes                                                               |
-|--------------------|----|---------------------------------------------------------------------|
-| Anti-Blight        | 10 | Especially important in Renoir's Drafts                             |
-| Breaker            | 10 | Main break damage booster                                           |
-| Breaking Burn      | 5  |                                                                     |
-| Breaking Counter   | 3  |                                                                     |
-| Breaking Death     | —  | FREE from Breaking Death Pictos                                     |
-| Burning Shots      | 3  |                                                                     |
-| Cheater            | 40 | Essential for endgame builds                                        |
-| Confident Fighter  | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block |
-| Critical Break     | 5  |                                                                     |
-| Dead Energy I      | 2  |                                                                     |
-| Dead Energy II     | 2  |                                                                     |
-| Dodger             | 1  |                                                                     |
-| Energising Parry   | 15 |                                                                     |
-| Energising Start I | 5  | Boosted by Energy Master to 8AP on battle start                     |
-| Energising Turn    | 20 | Main AP flow generator; boosted by Energy Master                    |
-| Energy Master      | 40 | Add 1 to AP boosts (not double) — game-changing for AP generation   |
-| Marking Shots      | 3  |                                                                     |
-| Painted Power      | 5  | Essential for all characters from Act 3 onwards                     |
-| Rewarding Mark     | 5  |                                                                     |
-| Second Chance      | 40 | Can save boss battles                                               |
-| Shortcut           | 5  |                                                                     |
-| Survivor           | 20 | Secondary safety net before Second Chance                           |
-| Teamwork           | 5  |                                                                     |
-| Warming Up         | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks |
+| Lumina              | LP | Notes                                                               |
+|---------------------|----|---------------------------------------------------------------------|
+| Anti-Blight         | 10 | Especially important in Renoir's Drafts                             |
+| Breaker             | 10 | Main break damage booster                                           |
+| Breaking Burn       | 5  |                                                                     |
+| Breaking Counter    | 3  |                                                                     |
+| Breaking Death      | —  | FREE from Breaking Death Pictos                                     |
+| Burning Shots       | 3  |                                                                     |
+| Cheater             | 40 | Essential for endgame builds                                        |
+| Confident Fighter   | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block |
+| Critical Break      | 5  |                                                                     |
+| Dead Energy I       | 2  |                                                                     |
+| Dead Energy II      | 2  |                                                                     |
+| Dodger              | 1  |                                                                     |
+| Energising Attack I | 10 |                                                                     |
+| Energising Start I  | 5  | Boosted by Energy Master to 8AP on battle start                     |
+| Energising Start II | 10 |                                                                     |
+| Energising Turn     | 20 | Main AP flow generator; boosted by Energy Master                    |
+| Energy Master       | 40 | Add 1 to AP boosts (not double) — game-changing for AP generation   |
+| Marking Shots       | 3  |                                                                     |
+| Painted Power       | 5  | Essential for all characters from Act 3 onwards                     |
+| Second Chance       | 40 | Can save boss battles                                               |
+| Shortcut            | 5  |                                                                     |
+| Staggering Attack   | 1  |                                                                     |
+| Survivor            | 20 | Secondary safety net before Second Chance                           |
+| Teamwork            | 5  |                                                                     |
+| Warming Up          | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks |
 <!-- GENERATED:END -->
 
 ---
@@ -162,28 +163,32 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ## Skills
 
 <!-- GENERATED:START characters:Verso:skills -->
-**Currently equipped (6):** End Bringer, Light Holder, Perfect Break, Phantom Stars, Quick Strike, Steeled Strike
+**Currently equipped (6):** End Bringer, Light Holder, Perfect Break, Phantom Stars, Steeled Strike, Overload
 
-| Skill            | AP              | Rank Bonus                           | Equipped | Notes                                                                                    |
-|------------------|-----------------|--------------------------------------|----------|------------------------------------------------------------------------------------------|
-| End Bringer      | 8               | A: Can reapply stun on broken target | ✅        | Extreme Physical damage, 6 hits. Increased damage if target Stunned.                     |
-| Light Holder     | 4               | A: +2 AP                             | ✅        | Medium Light damage, 5 hits. Gains +1 Rank at completion.                                |
-| Perfect Break    | 7 (5 at Rank B) | B: Reduced AP cost                   | ✅        | Very high Light damage. Can Break. Rank S on Break.                                      |
-| Phantom Stars    | 9 (5 at Rank S) | S: Reduced AP cost                   | ✅        | AoE multi-hit all enemies. Trash fights only — useless in 1v1.                           |
-| Quick Strike     | 2               | D: Gives more Perfection             | ✅        | Low Physical.                                                                            |
-| Steeled Strike   | 9               | S: Increased damage                  | ✅        | After 1 turn charge, extreme Physical damage. Interrupted if damage taken during charge. |
-| Assault Zero     | 3               | B: Increased damage                  | ❌        | Medium Physical single target.                                                           |
-| Berserk Slash    | 4               | C: Increased damage                  | ❌        | Medium Physical, 3 hits. Damage scales with missing HP.                                  |
-| Blitz            | 3               | B: Bonus only                        | ❌        | Insta-kills low-health enemies; otherwise deals damage.                                  |
-| Burden           | 1               | —                                    | ❌        | Removes status effects from all allies.                                                  |
-| Defiant Strike   | 3               | B: Increased damage                  | ❌        | 2-hit Physical, 100% Mark. Costs 30% current HP.                                         |
-| From Fire        | 4               | B: Increased damage                  | ❌        | Healing from Burn. Situational — only useful if enemies have burn.                       |
-| Leadership       | 3               | C: +1 more AP to allies              | ❌        | Extra AP to all allies.                                                                  |
-| Marking Shot     | 2               | C: Increased damage                  | ❌        | Low damage + 100% Mark. No HP cost.                                                      |
-| Paradigm Shift   | 1               | C: Bonus only                        | ❌        | Generates 1–3 AP. C Rank: bonus only. NOT a rank jump to S.                              |
-| Perfect Recovery | 3               | C: 100% HP heal                      | ❌        | Heals Verso only. Non-functional with Chevalam.                                          |
-| Purification     | 5               | B: Increased damage                  | ❌        | Medium Light damage, 2 hits. Dispels self status effects.                                |
-| Strike Storm     | 7               | C: Crits give +2 Perfection          | ❌        | 5-hit high single-target weapon element.                                                 |
+| Skill             | AP              | Rank Bonus                           | Equipped | Notes                                                                                    |
+|-------------------|-----------------|--------------------------------------|----------|------------------------------------------------------------------------------------------|
+| End Bringer       | 8               | A: Can reapply stun on broken target | ✅        | Extreme Physical damage, 6 hits. Increased damage if target Stunned.                     |
+| Light Holder      | 4               | A: +2 AP                             | ✅        | Medium Light damage, 5 hits. Gains +1 Rank at completion.                                |
+| Perfect Break     | 7 (5 at Rank B) | B: Reduced AP cost                   | ✅        | Very high Light damage. Can Break. Rank S on Break.                                      |
+| Phantom Stars     | 9 (5 at Rank S) | S: Reduced AP cost                   | ✅        | AoE multi-hit all enemies. Trash fights only — useless in 1v1.                           |
+| Steeled Strike    | 9               | S: Increased damage                  | ✅        | After 1 turn charge, extreme Physical damage. Interrupted if damage taken during charge. |
+| Overload          | —               | —                                    | ✅        |                                                                                          |
+| Assault Zero      | 3               | B: Increased damage                  | ❌        | Medium Physical single target.                                                           |
+| Berserk Slash     | 4               | C: Increased damage                  | ❌        | Medium Physical, 3 hits. Damage scales with missing HP.                                  |
+| Blitz             | 3               | B: Bonus only                        | ❌        | Insta-kills low-health enemies; otherwise deals damage.                                  |
+| Burden            | 1               | —                                    | ❌        | Removes status effects from all allies.                                                  |
+| Defiant Strike    | 3               | B: Increased damage                  | ❌        | 2-hit Physical, 100% Mark. Costs 30% current HP.                                         |
+| From Fire         | 4               | B: Increased damage                  | ❌        | Healing from Burn. Situational — only useful if enemies have burn.                       |
+| Leadership        | 3               | C: +1 more AP to allies              | ❌        | Extra AP to all allies.                                                                  |
+| Marking Shot      | 2               | C: Increased damage                  | ❌        | Low damage + 100% Mark. No HP cost.                                                      |
+| Paradigm Shift    | 1               | C: Bonus only                        | ❌        | Generates 1–3 AP. C Rank: bonus only. NOT a rank jump to S.                              |
+| Perfect Recovery  | 3               | C: 100% HP heal                      | ❌        | Heals Verso only. Non-functional with Chevalam.                                          |
+| Purification      | 5               | B: Increased damage                  | ❌        | Medium Light damage, 2 hits. Dispels self status effects.                                |
+| Quick Strike      | 2               | D: Gives more Perfection             | ❌        | Low Physical.                                                                            |
+| Strike Storm      | 7               | C: Crits give +2 Perfection          | ❌        | 5-hit high single-target weapon element.                                                 |
+| Ascending Assault | —               | —                                    | ❌        |                                                                                          |
+| Follow Up         | —               | —                                    | ❌        |                                                                                          |
+| Radiant Slash     | —               | —                                    | ❌        |                                                                                          |
 <!-- GENERATED:END -->
 
 ---

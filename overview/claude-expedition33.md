@@ -33,7 +33,7 @@ Fetch that file only when reviewing specific past errors.
 - **Current playthrough:** First playthrough
 - **Progress:**
   - Act 3, Phase 4.
-  - Characters: Maelle L94, Verso L94, Sciel L94, Lune L89, Monoco L89.
+  - Characters: Maelle L95, Verso L94, Sciel L94, Lune L89, Monoco L89.
   - Current area: Renoir's Drafts.
 <!-- GENERATED:END -->
   - For detailed progression plan, see [`overview/progress.md`](progress.md)
@@ -47,8 +47,8 @@ Fetch that file only when reviewing specific past errors.
 <!-- GENERATED:START characters:summary:party -->
 | Character                         | Level | Role                         | Weapon        | Pictos                                            | LP      |
 |-----------------------------------|-------|------------------------------|---------------|---------------------------------------------------|---------|
-| [Maelle](../characters/maelle.md) | 94    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut           | 299/300 |
-| [Verso](../characters/verso.md)   | 94    | Endgame main DPS             | Chevalam (33) | Augmented Counter I, Breaking Death, Confident    | 274/275 |
+| [Maelle](../characters/maelle.md) | 95    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut           | 299/300 |
+| [Verso](../characters/verso.md)   | 94    | Endgame main DPS             | Simoso (33)   | Augmented Counter I, Breaking Death, Confident    | 274/275 |
 | [Sciel](../characters/sciel.md)   | 94    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots          | 260/262 |
 | [Lune](../characters/lune.md)     | 89    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death       | 175/175 |
 | [Monoco](../characters/monoco.md) | 89    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Quick Break | 170/170 |
@@ -62,9 +62,9 @@ Fetch that file only when reviewing specific past errors.
 ### Inventory
 <!-- GENERATED:START playthrough:inventory -->
 - Colour of Lumina: 14
-- Recoats: 36
+- Recoats: 37
 - Chroma Catalysts: 67 standard, 73 polished, 124 resplendent, 86 grandiose, 3 perfect
-- Chroma: 1670184
+- Chroma: 1727213
 <!-- GENERATED:END -->
 
 ### LP totals
@@ -165,40 +165,31 @@ If the main party is fully wiped in a battle, the player can continue the battle
 - **End Bringer vs Steeled Strike for Verso:** Steeled Strike deals more damage in general; End Bringer wins when target is stunned due to stun-extension bonus at Rank A. Verso keeps both and uses situationally.
 - **Might is correct post-crit-cap:** For Maelle and Verso (A99, L99 already), additional attribute points go into Might. All weapons factor Might into power; gains scale with weapon base power (level 33 weapons = maximum return). More Luck gives nothing once crit-capped.
 - **Scaverim evaluated for Lune, Kralim retained:** Scaverim (Dark element, Vit B/Agi C) offers high burst ceiling via Dark Stain accumulation — passive +50% skill damage per active stain at L4, 300% burst with 4 stains at L20 — but requires multi-turn ramp-up with no output during accumulation. Incompatible with reserve role where Lune enters mid-fight and needs immediate contribution. Kralim + Elemental Genesis fires effectively from turn 1. Revisit if Lune ever moves to main team for sustained fights.
-- **Simon fight team planning (Chat 22):** Team split revised to Verso/Sciel main + Maelle/Lune/Monoco reserve. Maelle uses Last Chance immediately on entry for full AP/Virtuose/Clea's Life reset from turn 1. Three configurations to try in order if needed:
-  1. **Option A (failed):** First attempt used existing main (Maelle/Verso/Sciel) and reserve (Lune/Monoco) team. Main team found it easy, reserve team failed immediately.
-  2. **Option B (next attempt):** Verso/Sciel main, Maelle/Lune/Monoco reserve — Steeled Strike phases 1–2, Maelle self-contained burst in phase 3.
-  3. **Option C:** Verso/Lune main, Maelle/Sciel/Monoco reserve — weaker phases 1–2 but enables Fortune's Fury + Defenceless + Gommage one-shot setup in phase 3.
-  4. **Option D:** Lune/Monoco main, Maelle/Verso/Sciel reserve — phase 1 reportedly easy so may be manageable; strongest team reserved for phases 2–3.
-- **Base Shield removed from Simon fight Lumina sets:** Freed 20LP per character. Reserve team now runs Cheater + Shortcut instead.
+- **Simon fight (Plan F) — complete (Chat 24):** 30-minute controlled fight. Sciel's Twilight + Litheson applied Greater Rush to allies / Greater Slow to Simon for turn-order dominance. Overload + End Bringer maintained near-continuous stun through all phases. Seeram L4 kept Verso at Rank A throughout (enabling stun extension). Simon never vanished the party. One slip when Sciel briefly left Twilight.
+- **Simoso acquired (Chat 24):** Verso's endgame weapon. Power 9480, Light element, Vitality A / Agility S scaling. L4: ethereal Sword on any skill damage. L10: 20% chance Burn on Light damage. L20: Can't die at Rank A or above. Verso respecced to Vitality 99 / Agility 99 / Might 62 / Luck 22 — Luck 22 is the minimum to maintain 100% crit; do not reduce further.
+- **Verso Overload replaces Quick Strike (Chat 24):** Same D→S rank climb in two moves, but Overload forks at Rank A: Light Holder→S for Steeled Strike burst, or End Bringer for stunlock. AP refill from Overload funds both. Simoso L20 mitigates 1HP risk at Rank A+. Multi-hit rank-drop edge case (does Simoso L20 protect if rank drops mid-sequence?) flagged for in-game testing.
+- **Lune Thermal Transfer replaces Rebirth (Chat 24):** Standard loadout: Hell, Terraquake, Lightning Dance, Healing Light, Thermal Transfer, Elemental Genesis. Loop: Hell (Burn + stains) → Thermal Transfer (AP recoup) → Genesis. Keeps Burn Affinity 25% bonus active in practice. Mayhem retained as situational for break utility; Rebirth retained as situational for boss attrition fights.
+- **Lune damage vs main team (Chat 24):** Genesis hitting ~1m vs Maelle/Verso at 4m+ in Simon fight. Gap partly reflects absence of Fortune's Fury/Intervention multiplier. Frenzy (drops from Licornapieds, Verso's Drafts) identified as the most direct damage multiplier for Genesis (8 hits). Burn Affinity 25% was underused in Simon because Hell was AP-constrained; Thermal Transfer loop should fix this.
+- **Monoco post-Simon loadout (Chat 24):** Abbest Wind confirmed redundant with Cheater (extra turn doesn't stack). Final reserve loadout: Stalact Punches (Break, Almighty opener), Chapelier Slash (Mark, Agile), Grosse Tête Whack (Defenceless, Heavy), Orphelin Cheers (Powerful support), Potier Energy (AP), Moissonneuse Vendange (wheel cycling, Can Break). Lancelier Impale retained as situational for Slow. Creation Void and Duallist Storm noted as future main-team DPS candidates.
 - **Charnon purchased but deferred:** Earth element, Defence B/Luck A. 100% Crit in Twilight (L4), Foretell on Crit (L10). Not suitable for Sciel's current support role. Revisit only for a dedicated DPS Sciel build.
+- **Base Shield removed from Simon fight Lumina sets:** Freed 20LP per character. Reserve team now runs Cheater + Shortcut instead. Base Shield restored post-Simon for all characters.
+- **Energy Master confirmed on Sciel permanently (Chat 24).**
 
 ---
 
 ## Section 6: Open Questions
 
 - **First Life (15LP):** Drops from Chromatic Lampmaster in Endless Tower (Stage 11 / DLC superboss area). 25% damage while alive, no downside for a well-supported DPS. Strong candidate for Maelle once obtained.
-- **Frenzy:** Drops from Licornapieds in Verso's Drafts. Unconditional skill damage boost for multi-hit skills. Relevant for Maelle (multi-hit stances) and Verso (Strike Storm). Review when Verso's Drafts is accessible.
-- **Charging Lumina for Simon fight:** 14 CoL held in reserve. Charging Alteration (10LP, Sciel) and Charging Critical (10LP, Maelle/Lune) are the strongest candidates. Decision deferred until after first attempt to assess whether gradient generation is a bottleneck.
-- **Defenceless application for Simon:** Exposing Attack (Base Attack applies Defenceless 1 turn, 10LP) is the simplest option for any character. Grosse Tête Whack (Monoco, 6AP Heavy, applies Defenceless 3 turns) is now in Monoco's Simon loadout. Further options exist (Doom gradient skill on Sciel — also applies Powerless + Slow; skills with 3-turn Defenceless). Review after first attempt.
-- **Combo Attack Lumina:** Wiki recommends equipping Combo Attack I and III. Neither is currently in any character's Lumina set for Simon. Low priority unless base-attack economy becomes important.
-- **Monoco Abbest Wind:** With permanent Cheater now in reserve core, Abbest Wind's "plays a second turn" effect may be redundant. Lancelier Impale substituted for Simon fight (Slow application). Review after fight — Abbest Wind may not be worth reinstating.
-- **Sciel Charging Alteration:** 10LP, applies +10% Gradient Charge on applying a buff (once per turn). Already obtained. CoL cost to add to pool: 0 (pool has space). Worth adding before Simon if gradient generation proves slow.
+- **Frenzy:** Drops from Licornapieds in Verso's Drafts. Unconditional skill damage boost for multi-hit skills. High priority pickup — relevant for Verso (Steeled Strike, End Bringer), Lune (Elemental Genesis 8 hits), and potentially others.
+- **Verso Base Shield (Chat 24):** Now available with Simoso (no "can't be healed" restriction unlike Chevalam). Requires either spending CoL to increase LP pool or removing another Lumina to make room. Review in dedicated session.
+- **Recovery for main team core suite (Chat 24):** Currently only in reserve core. All three main team characters have significant LP pools — evaluate whether room exists.
+- **Breaking Attack for all characters (Chat 24):** Currently active on Sciel only. Evaluate effect and LP cost for main and reserve teams.
+- **Second Chance (L31) and/or Cheater (L24) as Pictos (Chat 24):** Both obtained but equipped as Lumina (40LP each). Equipping as Pictos frees 40LP at cost of replacing a current Pictos. Verso strongest candidate for Second Chance — swap Augmented Counter I: net -77 HP, -1% Crit, +40LP freed. Full analysis deferred to dedicated Opus session.
+- **Simoso L20 multi-hit edge case (Chat 24):** "Can't die at Rank A" — unclear whether protection is removed mid-sequence if a multi-hit attack drops rank below A. Test empirically before committing to 1HP + Confident Lumina strategy.
 - **Longer Shell (5LP) for Maelle:** Extends Shell duration from Lithum L20. Noted candidate; deferred — requires future CoL expansion.
-- **Empowering Dodge (5LP) for everyone:** Small damage buff but stacks when successfully dodging, which is easier than parrying. Does not reset on parrying, only on missed dodges. Deffered — requires future CoL expansion.
-- **Energising Burn (10LP) for Lune:** Synergises well with Lune's burn skills. Not enough CoL in chat 14, should be ready to add now.
+- **Empowering Dodge (5LP) for everyone:** Small damage buff but stacks when successfully dodging, which is easier than parrying. Does not reset on parrying, only on missed dodges. Deferred — requires future CoL expansion.
+- **Energising Burn (10LP) for Lune:** Synergises well with Lune's burn skills. Not enough CoL in chat 14, should be ready to add now (CoL now 70).
 - **Maelle Last Chance + Shortcut interaction:** Observed three-turn sequence: Normal turn → Cheater → Shortcut (triggered when Last Chance drops HP below 30%). Confirm whether this is intentional/consistent in practice.
-
-### Simon Fight Plan Tracker
-
-| Plan | Team 1 (main)          | Team 2 (reserve)        | Status     | Notes |
-|------|------------------------|-------------------------|------------|-------|
-|  A   | Verso / Sciel / Maelle | Lune / Monoco           | ❌ Failed  | Phase 1 & 2 easy with main team; reserves wiped almost instantly in phase 2 |
-|  B   | Verso / Sciel          | Maelle / Lune / Monoco  | ❌ Failed  | Struggled to complete phase 2; often wiped by Light Speed attack |
-|  C   | Verso / Lune           | Maelle / Sciel / Monoco | ⏭ Skipped | Weaker phases 1–2 than Plan B; enables Fortune's Fury + Defenceless + Gommage in phase 3; skipped as phase 2 too hard |
-|  D   | Lune / Monoco          | Maelle / Verso / Sciel  | ⏭ Skipped | Strongest team reserved for phase 3 burst; unlikely to survive phase 2 |
-|  E   | Verso / Lune / Monoco  | Maelle / Sciel          | 🔄 Current | Strength in numbers for phases 1–2; best DPS + best support for phase 3 |
-|  F   | Verso / Sciel / Maelle | —                       | 🔮 Future  | Sciel sets up Twilight for speed advantage; Verso stunlocks with Overload + End Bringer (Seeram); Maelle executes Gommage burst |
 
 ---
 
