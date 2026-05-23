@@ -1,7 +1,3 @@
-# Chat 24 Changelist
-
----
-
 DATA: data/playthrough.json
 PATH: inventory.chroma
 OP: SET
@@ -43,37 +39,37 @@ OP: SET
 VALUE: 37
 
 DATA: data/weapons.json
-PATH: verso.weapons[name=Seeram]
-OP: SET
+PATH: Verso
+OP: ADD
 VALUE: {"name": "Seeram", "level": 32, "power": 5755, "element": "Light", "scaling": "Vitality B, Agility A", "obtained": true, "future": true, "effects": [{"level": 4, "description": "+1 to all Perfection gain but can't reach Rank S."}, {"level": 10, "description": "Base Attack gives 4 Perfection."}, {"level": 20, "description": "20% increased Light damage with Skills."}], "notes": "Can't reach Rank S. Required for End Bringer stunlock build (Plan F). Purchased from merchant in Renoir's Drafts area. Scaling becomes Vitality A, Agility S at L33."}
 
 DATA: data/weapons.json
-PATH: verso.weapons[name=Simoso].level
+PATH: Verso[name=Simoso].level
 OP: SET
 VALUE: 33
 
 DATA: data/weapons.json
-PATH: verso.weapons[name=Simoso].power
+PATH: Verso[name=Simoso].power
 OP: SET
 VALUE: 9480
 
 DATA: data/weapons.json
-PATH: verso.weapons[name=Simoso].element
+PATH: Verso[name=Simoso].element
 OP: SET
 VALUE: "Light"
 
 DATA: data/weapons.json
-PATH: verso.weapons[name=Simoso].scaling
+PATH: Verso[name=Simoso].scaling
 OP: SET
 VALUE: "Vitality A, Agility S"
 
 DATA: data/weapons.json
-PATH: verso.weapons[name=Simoso].obtained
+PATH: Verso[name=Simoso].obtained
 OP: SET
 VALUE: true
 
 DATA: data/weapons.json
-PATH: verso.weapons[name=Simoso].effects
+PATH: Verso[name=Simoso].effects
 OP: SET
 VALUE: [{"level": 4, "description": "An ethereal Sword deals Light damage on any damage dealt with Skills."}, {"level": 10, "description": "20% chance to apply Burn on dealing Light damage."}, {"level": 20, "description": "Can't die if at least Rank A."}]
 
@@ -160,17 +156,17 @@ VALUE: "Radiant Slash"
 DATA: data/characters.json
 PATH: Verso.lumina_extras
 OP: ADD
-VALUE: "Energising Attack I"
+VALUE: {"name": "Energising Attack I"}
 
 DATA: data/characters.json
 PATH: Verso.lumina_extras
 OP: ADD
-VALUE: "Energising Start II"
+VALUE: {"name": "Energising Start II"}
 
 DATA: data/characters.json
 PATH: Verso.lumina_extras
 OP: ADD
-VALUE: "Staggering Attack"
+VALUE: {"name": "Staggering Attack"}
 
 DATA: data/characters.json
 PATH: Maelle.level
@@ -214,13 +210,8 @@ VALUE: "Pyrolyse"
 
 DATA: data/characters.json
 PATH: Maelle.lumina_extras
-OP: ADD
-VALUE: "Solo Fighter"
-
-DATA: data/characters.json
-PATH: Maelle.lumina_extras
-OP: REMOVE
-VALUE: "Energising Shell"
+OP: SET
+VALUE: [{"name": "Full Strength", "notes": "Damage bonus while on full HP — strong synergy with Clea's Life Pictos"}, {"name": "Warming Up", "notes": "Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus"}, {"name": "Powerful On Shell", "notes": "Apply Powerful on applying Shell. 10LP. Synergises with Lithum."}, {"name": "Gradient Fighter", "notes": "Damage bonus on Gradient Skill use. 5LP. Verify exact effect description in-game."}, {"name": "Solo Fighter", "notes": "Rounds up LP to cap."}]
 
 DATA: data/characters.json
 PATH: Sciel.attributes.might
@@ -229,23 +220,8 @@ VALUE: 18
 
 DATA: data/characters.json
 PATH: Sciel.lumina_extras
-OP: ADD
-VALUE: "Breaking Attack"
-
-DATA: data/characters.json
-PATH: Sciel.lumina_extras
-OP: REMOVE
-VALUE: "Anti-Stun"
-
-DATA: data/characters.json
-PATH: Sciel.lumina_extras
-OP: REMOVE
-VALUE: "Empowering Dodge"
-
-DATA: data/characters.json
-PATH: Sciel.lumina_extras
-OP: REMOVE
-VALUE: "Auto Shell"
+OP: SET
+VALUE: [{"name": "Recovery", "notes": "Passive heal on turn start, increases survivability"}, {"name": "Accelerating Heal", "notes": "Rush on heal."}, {"name": "Energising Heal", "notes": "2 AP on healing an ally — primary AP engine with Grim Harvest"}, {"name": "Protecting Heal", "notes": "Shell on heal"}, {"name": "Healing Tint Energy", "notes": "1 AP on Healing Tint use — small AP top-up"}, {"name": "Breaking Attack"}]
 
 DATA: data/characters.json
 PATH: Lune.attributes.might
@@ -275,7 +251,7 @@ VALUE: ["Stalact Punches", "Chapelier Slash", "Grosse Tête Whack", "Orphelin Ch
 DATA: data/characters.json
 PATH: Monoco.lumina_extras
 OP: ADD
-VALUE: "Augmented First Strike"
+VALUE: {"name": "Augmented First Strike"}
 
 DATA: data/pictos-lumina.json
 PATH: pictos[name=Charging Stun].obtained
@@ -283,29 +259,29 @@ OP: SET
 VALUE: true
 
 DATA: data/pictos-lumina.json
-PATH: core_lumina_suite.main_team.lumina
-OP: REMOVE
-VALUE: "Energising Parry"
+PATH: core_lumina_suite.main_team.entries
+OP: SET
+VALUE: [{"name": "Painted Power", "lp": 5, "notes": "Essential for all characters from Act 3 onwards"}, {"name": "Energising Turn", "lp": 20, "notes": "Main AP flow generator; boosted by Energy Master"}, {"name": "Cheater", "lp": 40, "notes": "Essential for endgame builds"}, {"name": "Energy Master", "lp": 40, "notes": "Add 1 to AP boosts (not double) — game-changing for AP generation"}, {"name": "Second Chance", "lp": 40, "notes": "Can save boss battles"}, {"name": "Survivor", "lp": 20, "notes": "Secondary safety net before Second Chance"}, {"name": "Base Shield", "lp": 20, "notes": "Verso: previously non-functional with Chevalam L4; now available with Simoso — see open question."}, {"name": "Teamwork", "lp": 5}, {"name": "Energising Start I", "lp": 5, "notes": "Boosted by Energy Master to 8AP on battle start"}, {"name": "Dodger", "lp": 1}, {"name": "Breaker", "lp": 10, "notes": "Main break damage booster"}, {"name": "Marking Shots", "lp": 3}, {"name": "Dead Energy I", "lp": 2}, {"name": "Dead Energy II", "lp": 2}, {"name": "Breaking Death", "lp": 5, "notes": "Extremely helpful in tough boss fights"}, {"name": "Critical Break", "lp": 5}, {"name": "Burning Shots", "lp": 3}, {"name": "Breaking Burn", "lp": 5}, {"name": "Breaking Counter", "lp": 3}, {"name": "Shortcut", "lp": 5}, {"name": "Anti-Blight", "lp": 10, "notes": "Especially important in Renoir's Drafts"}]
 
 DATA: data/pictos-lumina.json
-PATH: core_lumina_suite.main_team.lumina
-OP: REMOVE
-VALUE: "Rewarding Mark"
+PATH: core_lumina_suite.main_team.total_lp
+OP: SET
+VALUE: 249
 
 DATA: data/pictos-lumina.json
-PATH: core_lumina_suite.reserve_team.lumina
-OP: REMOVE
-VALUE: "Energising Parry"
+PATH: core_lumina_suite.reserve_team.entries
+OP: SET
+VALUE: [{"name": "Painted Power", "lp": 5}, {"name": "Energising Turn", "lp": 20}, {"name": "Cheater", "lp": 40}, {"name": "Shortcut", "lp": 5}, {"name": "Survivor", "lp": 20}, {"name": "Recovery", "lp": 10}, {"name": "Teamwork", "lp": 5}, {"name": "Energising Start I", "lp": 5}, {"name": "Dodger", "lp": 1}, {"name": "Breaker", "lp": 10}, {"name": "Marking Shots", "lp": 3}, {"name": "Critical Break", "lp": 5}, {"name": "Burning Shots", "lp": 3}, {"name": "Breaking Burn", "lp": 5}, {"name": "Breaking Counter", "lp": 3}, {"name": "Breaking Death", "lp": 5}, {"name": "Base Shield", "lp": 20}]
 
 DATA: data/pictos-lumina.json
-PATH: core_lumina_suite.reserve_team.lumina
-OP: REMOVE
-VALUE: "Rewarding Mark"
+PATH: core_lumina_suite.reserve_team.total_lp
+OP: SET
+VALUE: 165
 
 DATA: data/pictos-lumina.json
-PATH: core_lumina_suite.reserve_team.lumina
-OP: ADD
-VALUE: "Base Shield"
+PATH: core_lumina_suite.reserve_team.notes
+OP: SET
+VALUE: "Main team core minus Dead Energy I, Dead Energy II, Second Chance; plus Recovery and Base Shield."
 
 FILE: overview/claude-expedition33.md
 SECTION: ## Section 2: Playthrough Status
@@ -405,45 +381,6 @@ CONTENT:
 - **Energising Burn (10LP) for Lune:** Synergises well with Lune's burn skills. Not enough CoL in chat 14, should be ready to add now (CoL now 70).
 - **Maelle Last Chance + Shortcut interaction:** Observed three-turn sequence: Normal turn → Cheater → Shortcut (triggered when Last Chance drops HP below 30%). Confirm whether this is intentional/consistent in practice.
 
-FILE: overview/progress.md
-SECTION: ## Phase 4 — Post-game (Level 80+)
-CONTENT:
-## Phase 4 — Post-game (Level 80+)
-
-<!-- GENERATED:START playthrough:current_phase_checklist -->
-- ✅ Dark Gestral Arena
-- ✅ Endless Tower Stages 1–10 (30 fights)
-- ✅ Endless Tower Stage 11 — 3 fights; Trial 3 (Painted Love) gives Perfect Catalyst + Clair Outfit for Verso
-- ⬜ Hard chromatics (13/17)
-  - ✅ Chromatic Echassier — Lumiere
-  - ✅ Chromatic Catapult Sakapatate — Dark Gestral Arena
-  - ✅ Chromatic Ranger Sakapatate — Dark Gestral Arena
-  - ✅ Chromatic Robust Sakapatate — Dark Gestral Arena
-  - ✅ Chromatic Moissonneuse — The Continent, island SW of Visages (requires coral-destroy)
-  - ✅ Chromatic Gault — Stone Wave Cliffs (Old Farm, behind Paint Spike — needs 4 Lost Gestrals)
-  - ✅ Chromatic Reaper Cultist — The Continent, island NE of Coastal Cave (requires coral-destroy)
-  - ✅ Chromatic Goblu — The Continent, mountaintop east of Frozen Hearts (requires flying)
-  - ✅ Chromatic Aberration — The Continent, floating island SE of The Fountain (requires flying) — bring Anti-Blight
-  - ✅ Chromatic Pétank — The Continent (superboss)
-  - ✅ Chromatic Bourgeon — The Monolith
-  - ✅ Chromatic Clair Obscur — The Monolith, top (after defeating The Paintress) → Combo Attack II Pictos
-  - ✅ Chromatic Creation — Renoir's Drafts
-  - ⬜ Chromatic Barbasucette — Verso's Drafts
-  - ⬜ Chromatic Franctale — Verso's Drafts
-  - ⬜ Chromatic Licorne — Verso's Drafts (handholds right of Reverie Path)
-  - ⬜ Chromatic Machinapieds — Verso's Drafts (near Gestral Carousel, Candy Land)
-- ⬜ Endless Tower Chromatics (3/4)
-  - ✅ Chromatic Eveque — Endless Tower
-  - ✅ Chromatic Steel Chevaliere — Endless Tower floor 10-2 (trio fight with Gold and Ceramic)
-  - ✅ Chromatic Ceramic Chevaliere — Endless Tower floor 10-2 (trio fight with Gold and Steel)
-  - ⬜ Chromatic Lampmaster — Endless Tower superboss (Thank You Update) — 6 health bars, gimmick-heavy
-- ✅ Painting Workshop Beast (Level 80+)
-- ✅ Renoir's Drafts (Level 80+, recommended 90+ for Simon) — complete. Simon (Plan F) defeated Chat 24.
-- ✅ Purchase Charnon (89,884 Chromas, Renoir's Drafts merchant) — Sciel alternative endgame weapon
-- ⬜ Verso's Drafts (DLC, Level 80+) — recommended after Renoir's Drafts; final boss (Root of All Evil) is hardest boss in game, reported to beat level 99 parties
-- ⬜ Endless Tower DLC superbosses (4 including Clea Unleashed, Simon the Divergent Star — accessed via Tower canvases after beating originals; added by Thank You Update)
-<!-- GENERATED:END -->
-
 APPEND: chats/chat-index.md
 CONTENT:
-| Chat 24 | [Formatted](https://github.com/mattachu/claude-expedition33/blob/main/chats/chat24/chat24.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat24/chat24.md) | [chat24-index.md](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat24/chat24-index.md) | Simon defeated (Plan F). Simoso acquired and Verso respecced. Post-Simon reverts for all five characters, with extended Monoco skill reassessment and Lune build review (Thermal Transfer added for Hell→Genesis loop). Extensive data verification: attributes, combat stats, inventory, Pictos, weapons, skills learned, Lumina sets. Core Lumina suite audited; Energising Parry and Rewarding Mark removed, Base Shield added to reserve core. High-cost Lumina reviewed; Second Chance/Cheater as Pictos deferred to dedicated session. |
+| Chat 24 | [Formatted](chat24/chat24-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat24/chat24-index.md) | [chat24.md](chat24/chat24.md) | Simon defeated (using Plan F). Simoso acquired and Verso respecced. Post-Simon reverts for all five characters, with extended Monoco skill reassessment and Lune build review. Extensive data verification and review.                   |
