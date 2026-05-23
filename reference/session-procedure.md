@@ -114,7 +114,7 @@ Stop and confirm grouping with Matt before continuing.
 
 ### Step 2 — Process sections one at a time
 
-First create the index file `/mnt/user-data/outputs/chatN-index.md`:
+Before reading any section files, first create the index file `/mnt/user-data/outputs/chatN-index.md`:
 
 ```md
 # Clair Obscur: Expedition 33 — Chat N
@@ -132,7 +132,7 @@ Chat between Matt and Claude.
 ## Table of Contents
 ```
 
-For each section from `section01.md` onward:
+For each section from `section01.md` onward, follow the steps below. Read one section at a time. Do not read ahead. Read `sectionN.md`, complete all sub-steps (a, b, c) for that section, then read `section(N+1).md`. Do not batch reads across multiple sections.
 
 **a. Part heading**
 If the section opens a new part, append a part heading to the index file:
@@ -244,6 +244,8 @@ VALUE: 87
 - `PATH:` — dot-notation: `Maelle.level`, `pictos[name=Clea's Life].obtained`, `arr[2]`
 - `OP:` — `SET` (create or update), `ADD` (append to array), `REMOVE` (delete key, array item, or filtered object)
 - `VALUE:` — any JSON value; must be last field; omit for `REMOVE` without value
+
+**Array element type:** When using `ADD` to append to an array field, the `VALUE` must match the type of the existing elements. If the array contains objects (e.g. `lumina_extras`, which holds `{"name": "...", "notes": "..."}` entries), use `VALUE: {"name": "..."}` — not a plain string. A plain string `ADD` will succeed without error but will corrupt the data and cause `generate.py` to fail with `TypeError: string indices must be integers`.
 
 ### FILE: blocks
 
