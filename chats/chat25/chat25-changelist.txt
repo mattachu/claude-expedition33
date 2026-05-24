@@ -1,0 +1,176 @@
+# Chat 25 Changelist
+
+---
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=First Strike].lp_cost
+OP: SET
+VALUE: 10
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Greater Powerful].obtained
+OP: SET
+VALUE: true
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Augmented Counter I].equipped_by
+OP: SET
+VALUE: null
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Second Chance].equipped_by
+OP: SET
+VALUE: "Verso"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Quick Break].equipped_by
+OP: SET
+VALUE: null
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Cheater].equipped_by
+OP: SET
+VALUE: "Monoco"
+
+DATA: data/pictos-lumina.json
+PATH: core_lumina_suite.main_team.entries[name=Marking Shots]
+OP: REMOVE
+
+DATA: data/pictos-lumina.json
+PATH: core_lumina_suite.main_team.total_lp
+OP: SET
+VALUE: 246
+
+DATA: data/pictos-lumina.json
+PATH: core_lumina_suite.reserve_team.entries[name=Marking Shots]
+OP: REMOVE
+
+DATA: data/pictos-lumina.json
+PATH: core_lumina_suite.reserve_team.total_lp
+OP: SET
+VALUE: 162
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Base Shield].notes
+OP: SET
+VALUE: "Now confirmed functional with Simoso — no heal restriction. Previously non-functional with Chevalam L4."
+
+DATA: data/characters.json
+PATH: Verso.pictos_equipped
+OP: SET
+VALUE: ["Second Chance", "Breaking Death", "Confident"]
+
+DATA: data/characters.json
+PATH: Verso.lumina_core_exclusions
+OP: SET
+VALUE: [{"name": "Breaking Death", "notes": "Free from Breaking Death Pictos"}, {"name": "Second Chance", "notes": "Free from Second Chance Pictos"}]
+
+DATA: data/characters.json
+PATH: Verso.lp_total
+OP: SET
+VALUE: 285
+
+DATA: data/characters.json
+PATH: Verso.lp_used
+OP: SET
+VALUE: 285
+
+DATA: data/characters.json
+PATH: Verso.lumina_extras
+OP: SET
+VALUE: [{"name": "Confident Fighter", "notes": "30% increased damage — cost priced in via Chevalam L4 healing block"}, {"name": "Warming Up", "notes": "Damage bonus that increases with each attack, up to 20% at 5 stacks"}, {"name": "Energising Attack I"}, {"name": "Energising Start II"}, {"name": "Staggering Attack"}, {"name": "Base Shield", "notes": "20LP. Confirmed functional with Simoso."}, {"name": "Augmented First Strike", "notes": "5LP."}, {"name": "Auto Rush", "notes": "10LP. Applies Rush for 3 turns on battle start."}, {"name": "Empowering Parry", "notes": "5LP. Each successful Parry increases damage by 5% until end of following turn."}, {"name": "Charging Critical", "notes": "10LP. +20% Gradient Charge on Critical Hit, once per turn."}]
+
+DATA: data/characters.json
+PATH: Monoco.pictos_equipped
+OP: SET
+VALUE: ["Longer Shell", "Augmented First Strike", "Cheater"]
+
+DATA: data/characters.json
+PATH: Monoco.lp_total
+OP: SET
+VALUE: 175
+
+DATA: data/characters.json
+PATH: Monoco.lp_used
+OP: SET
+VALUE: 175
+
+DATA: data/characters.json
+PATH: Monoco.lumina_extras
+OP: SET
+VALUE: [{"name": "Staggering Attack", "notes": "Break damage on base attack — small break bar contribution"}, {"name": "Break Specialist", "notes": "50% increased Break damage, 20% reduced base damage — net positive for break-focused role"}, {"name": "Energising Break", "notes": "Extra AP on breaking an enemy"}, {"name": "Augmented First Strike"}, {"name": "Second Chance", "notes": "40LP. Revive with 100% Health, once per battle."}, {"name": "Empowering Break", "notes": "3LP. Gain Powerful on Breaking a target."}, {"name": "Gradient Fighter", "notes": "5LP. 25% increased damage with Gradient Attacks."}]
+
+DATA: data/characters.json
+PATH: Lune.lp_total
+OP: SET
+VALUE: 212
+
+DATA: data/characters.json
+PATH: Lune.lp_used
+OP: SET
+VALUE: 212
+
+DATA: data/characters.json
+PATH: Lune.lumina_extras
+OP: SET
+VALUE: [{"name": "Accelerating Heal", "notes": "Rush on heal — synergy with Healing Light"}, {"name": "Protecting Heal", "notes": "Shell on heal"}, {"name": "Second Chance", "notes": "40LP. Revive with 100% Health, once per battle."}, {"name": "Energising Burn", "notes": "10LP. +1 AP on applying Burn, once per turn."}, {"name": "Gradient Fighter", "notes": "5LP. 25% increased damage with Gradient Attacks."}, {"name": "Charging Critical", "notes": "10LP. +20% Gradient Charge on Critical Hit, once per turn."}]
+
+DATA: data/characters.json
+PATH: Maelle.lp_total
+OP: SET
+VALUE: 318
+
+DATA: data/characters.json
+PATH: Maelle.lp_used
+OP: SET
+VALUE: 318
+
+DATA: data/characters.json
+PATH: Maelle.lumina_extras
+OP: SET
+VALUE: [{"name": "Full Strength", "notes": "Damage bonus while on full HP — strong synergy with Clea's Life Pictos"}, {"name": "Warming Up", "notes": "Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus"}, {"name": "Gradient Fighter", "notes": "Damage bonus on Gradient Skill use. 5LP. Verify exact effect description in-game."}, {"name": "Solo Fighter", "notes": "Rounds up LP to cap."}, {"name": "Energising Break", "notes": "3LP. +3 AP on Breaking a target."}, {"name": "Augmented First Strike", "notes": "5LP. 50% increased damage on the first hit, once per battle."}, {"name": "Greater Powerful", "notes": "10LP. +15% to Powerful damage increase."}, {"name": "Charging Critical", "notes": "10LP. +20% Gradient Charge on Critical Hit, once per turn."}]
+
+DATA: data/characters.json
+PATH: Maelle.lp_total
+OP: SET
+VALUE: 318
+
+DATA: data/characters.json
+PATH: Maelle.lp_used
+OP: SET
+VALUE: 318
+
+DATA: data/playthrough.json
+PATH: inventory.colour_of_lumina
+OP: SET
+VALUE: 14
+
+
+DATA: data/playthrough.json
+PATH: inventory.colour_of_lumina
+OP: SET
+VALUE: 0
+
+DATA: data/playthrough.json
+PATH: inventory.colours_of_lumina
+OP: SET
+VALUE: 0
+
+FILE: overview/claude-expedition33.md
+SECTION: ## Section 6: Open Questions
+CONTENT:
+## Section 6: Open Questions
+
+- **First Life (15LP):** Drops from Chromatic Lampmaster in Endless Tower (Stage 11 / DLC superboss area). 25% damage while alive, no downside for a well-supported DPS. Strong candidate for Maelle once obtained.
+- **Frenzy:** Drops from Licornapieds in Verso's Drafts. Unconditional skill damage boost for multi-hit skills. High priority pickup — relevant for Verso (Steeled Strike, End Bringer), Lune (Elemental Genesis 8 hits), and potentially others.
+- **Simoso L20 multi-hit edge case (Chat 24):** "Can't die at Rank A" — unclear whether protection is removed mid-sequence if a multi-hit attack drops rank below A. Test empirically before committing to 1HP + Confident Lumina strategy.
+- **Maelle Last Chance + Shortcut interaction:** Observed three-turn sequence: Normal turn → Cheater → Shortcut (triggered when Last Chance drops HP below 30%). Confirm whether this is intentional/consistent in practice.
+- **Charging Critical for Maelle, Verso, Lune (Chat 25):** All three now have Charging Critical (10LP). Observe gradient charge build rate in practice — confirm whether the +20% per crit is meaningfully accelerating gradient skill access.
+- **Greater Powerful value for Maelle (Chat 25):** Added (+15% to Powerful → ~40% total bonus). Confirm uplift feels meaningful in practice vs pre-chat-25 baseline.
+- **Empowering Parry for Verso (Chat 25):** Added (5LP). Practical value depends on how consistently parrying is achieved — monitor in Verso's Drafts.
+
+
+APPEND: chats/chat-index.md
+CONTENT:
+| Chat 25 | [Formatted](chat25/chat25-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat25/chat25-index.md) | [chat25.md](chat25/chat25.md) | Full Lumina loadout review across all five characters. Cheater and Second Chance swapped from Lumina to Pictos on Monoco and Verso respectively, freeing 40LP each. 70 Colour of Lumina spent: all five characters received new Lumina additions including Charging Critical (Maelle, Verso, Lune), Greater Powerful (Maelle), Base Shield/Auto Rush/Empowering Parry/Augmented First Strike (Verso), Second Chance/Empowering Break/Gradient Fighter (Monoco), Energising Burn/Gradient Fighter/Second Chance (Lune). First Strike LP cost corrected in data (1LP → 10LP). |
+
