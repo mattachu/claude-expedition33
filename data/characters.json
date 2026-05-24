@@ -32,8 +32,8 @@
       "Empowering Break",
       "Shortcut"
     ],
-    "lp_total": 300,
-    "lp_used": 299,
+    "lp_total": 318,
+    "lp_used": 318,
     "lumina_core_exclusions": [],
     "lumina_extras": [
       {
@@ -45,16 +45,28 @@
         "notes": "Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus"
       },
       {
-        "name": "Powerful On Shell",
-        "notes": "Apply Powerful on applying Shell. 10LP. Synergises with Lithum."
-      },
-      {
         "name": "Gradient Fighter",
         "notes": "Damage bonus on Gradient Skill use. 5LP. Verify exact effect description in-game."
       },
       {
         "name": "Solo Fighter",
         "notes": "Rounds up LP to cap."
+      },
+      {
+        "name": "Energising Break",
+        "notes": "3LP. +3 AP on Breaking a target."
+      },
+      {
+        "name": "Augmented First Strike",
+        "notes": "5LP. 50% increased damage on the first hit, once per battle."
+      },
+      {
+        "name": "Greater Powerful",
+        "notes": "10LP. +15% to Powerful damage increase."
+      },
+      {
+        "name": "Charging Critical",
+        "notes": "10LP. +20% Gradient Charge on Critical Hit, once per turn."
       }
     ],
     "skills_equipped": [
@@ -141,20 +153,20 @@
     },
     "weapon_equipped": "Simoso",
     "pictos_equipped": [
-      "Augmented Counter I",
+      "Second Chance",
       "Breaking Death",
       "Confident"
     ],
-    "lp_total": 275,
-    "lp_used": 274,
+    "lp_total": 285,
+    "lp_used": 285,
     "lumina_core_exclusions": [
-      {
-        "name": "Base Shield",
-        "notes": "Non-functional — Chevalam L4 prevents shields"
-      },
       {
         "name": "Breaking Death",
         "notes": "Free from Breaking Death Pictos"
+      },
+      {
+        "name": "Second Chance",
+        "notes": "Free from Second Chance Pictos"
       }
     ],
     "lumina_extras": [
@@ -174,6 +186,26 @@
       },
       {
         "name": "Staggering Attack"
+      },
+      {
+        "name": "Base Shield",
+        "notes": "20LP. Confirmed functional with Simoso."
+      },
+      {
+        "name": "Augmented First Strike",
+        "notes": "5LP."
+      },
+      {
+        "name": "Auto Rush",
+        "notes": "10LP. Applies Rush for 3 turns on battle start."
+      },
+      {
+        "name": "Empowering Parry",
+        "notes": "5LP. Each successful Parry increases damage by 5% until end of following turn."
+      },
+      {
+        "name": "Charging Critical",
+        "notes": "10LP. +20% Gradient Charge on Critical Hit, once per turn."
       }
     ],
     "skills_equipped": [
@@ -372,8 +404,8 @@
       "Burn Affinity",
       "Burning Death"
     ],
-    "lp_total": 175,
-    "lp_used": 175,
+    "lp_total": 212,
+    "lp_used": 212,
     "lumina_core_exclusions": [],
     "lumina_extras": [
       {
@@ -383,6 +415,22 @@
       {
         "name": "Protecting Heal",
         "notes": "Shell on heal"
+      },
+      {
+        "name": "Second Chance",
+        "notes": "40LP. Revive with 100% Health, once per battle."
+      },
+      {
+        "name": "Energising Burn",
+        "notes": "10LP. +1 AP on applying Burn, once per turn."
+      },
+      {
+        "name": "Gradient Fighter",
+        "notes": "5LP. 25% increased damage with Gradient Attacks."
+      },
+      {
+        "name": "Charging Critical",
+        "notes": "10LP. +20% Gradient Charge on Critical Hit, once per turn."
       }
     ],
     "skills_equipped": [
@@ -465,10 +513,10 @@
     "pictos_equipped": [
       "Longer Shell",
       "Augmented First Strike",
-      "Quick Break"
+      "Cheater"
     ],
-    "lp_total": 170,
-    "lp_used": 170,
+    "lp_total": 175,
+    "lp_used": 175,
     "lumina_core_exclusions": [],
     "lumina_extras": [
       {
@@ -485,6 +533,18 @@
       },
       {
         "name": "Augmented First Strike"
+      },
+      {
+        "name": "Second Chance",
+        "notes": "40LP. Revive with 100% Health, once per battle."
+      },
+      {
+        "name": "Empowering Break",
+        "notes": "3LP. Gain Powerful on Breaking a target."
+      },
+      {
+        "name": "Gradient Fighter",
+        "notes": "5LP. 25% increased damage with Gradient Attacks."
       }
     ],
     "skills_equipped": [

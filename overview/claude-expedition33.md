@@ -45,13 +45,13 @@ Fetch that file only when reviewing specific past errors.
 <!-- GENERATED:END -->
 
 <!-- GENERATED:START characters:summary:party -->
-| Character                         | Level | Role                         | Weapon        | Pictos                                            | LP      |
-|-----------------------------------|-------|------------------------------|---------------|---------------------------------------------------|---------|
-| [Maelle](../characters/maelle.md) | 95    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut           | 299/300 |
-| [Verso](../characters/verso.md)   | 94    | Endgame main DPS             | Simoso (33)   | Augmented Counter I, Breaking Death, Confident    | 274/275 |
-| [Sciel](../characters/sciel.md)   | 94    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots          | 260/262 |
-| [Lune](../characters/lune.md)     | 89    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death       | 175/175 |
-| [Monoco](../characters/monoco.md) | 89    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Quick Break | 170/170 |
+| Character                         | Level | Role                         | Weapon        | Pictos                                        | LP      |
+|-----------------------------------|-------|------------------------------|---------------|-----------------------------------------------|---------|
+| [Maelle](../characters/maelle.md) | 95    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut       | 318/318 |
+| [Verso](../characters/verso.md)   | 94    | Endgame main DPS             | Simoso (33)   | Second Chance, Breaking Death, Confident      | 285/285 |
+| [Sciel](../characters/sciel.md)   | 94    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots      | 260/262 |
+| [Lune](../characters/lune.md)     | 89    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death   | 212/212 |
+| [Monoco](../characters/monoco.md) | 89    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Cheater | 175/175 |
 <!-- GENERATED:END -->
 
 **More details:**
@@ -61,7 +61,7 @@ Fetch that file only when reviewing specific past errors.
 
 ### Inventory
 <!-- GENERATED:START playthrough:inventory -->
-- Colour of Lumina: 14
+- Colour of Lumina: 0
 - Recoats: 37
 - Chroma Catalysts: 67 standard, 73 polished, 124 resplendent, 86 grandiose, 3 perfect
 - Chroma: 1727213
@@ -69,11 +69,11 @@ Fetch that file only when reviewing specific past errors.
 
 ### LP totals
 <!-- GENERATED:START characters:summary:LP -->
-- Maelle: 299/300
-- Verso: 274/275
+- Maelle: 318/318
+- Verso: 285/285
 - Sciel: 260/262
-- Lune: 175/175
-- Monoco: 170/170
+- Lune: 212/212
+- Monoco: 175/175
 <!-- GENERATED:END -->
 
 ---
@@ -181,15 +181,11 @@ If the main party is fully wiped in a battle, the player can continue the battle
 
 - **First Life (15LP):** Drops from Chromatic Lampmaster in Endless Tower (Stage 11 / DLC superboss area). 25% damage while alive, no downside for a well-supported DPS. Strong candidate for Maelle once obtained.
 - **Frenzy:** Drops from Licornapieds in Verso's Drafts. Unconditional skill damage boost for multi-hit skills. High priority pickup — relevant for Verso (Steeled Strike, End Bringer), Lune (Elemental Genesis 8 hits), and potentially others.
-- **Verso Base Shield (Chat 24):** Now available with Simoso (no "can't be healed" restriction unlike Chevalam). Requires either spending CoL to increase LP pool or removing another Lumina to make room. Review in dedicated session.
-- **Recovery for main team core suite (Chat 24):** Currently only in reserve core. All three main team characters have significant LP pools — evaluate whether room exists.
-- **Breaking Attack for all characters (Chat 24):** Currently active on Sciel only. Evaluate effect and LP cost for main and reserve teams.
-- **Second Chance (L31) and/or Cheater (L24) as Pictos (Chat 24):** Both obtained but equipped as Lumina (40LP each). Equipping as Pictos frees 40LP at cost of replacing a current Pictos. Verso strongest candidate for Second Chance — swap Augmented Counter I: net -77 HP, -1% Crit, +40LP freed. Full analysis deferred to dedicated Opus session.
 - **Simoso L20 multi-hit edge case (Chat 24):** "Can't die at Rank A" — unclear whether protection is removed mid-sequence if a multi-hit attack drops rank below A. Test empirically before committing to 1HP + Confident Lumina strategy.
-- **Longer Shell (5LP) for Maelle:** Extends Shell duration from Lithum L20. Noted candidate; deferred — requires future CoL expansion.
-- **Empowering Dodge (5LP) for everyone:** Small damage buff but stacks when successfully dodging, which is easier than parrying. Does not reset on parrying, only on missed dodges. Deferred — requires future CoL expansion.
-- **Energising Burn (10LP) for Lune:** Synergises well with Lune's burn skills. Not enough CoL in chat 14, should be ready to add now (CoL now 70).
 - **Maelle Last Chance + Shortcut interaction:** Observed three-turn sequence: Normal turn → Cheater → Shortcut (triggered when Last Chance drops HP below 30%). Confirm whether this is intentional/consistent in practice.
+- **Charging Critical for Maelle, Verso, Lune (Chat 25):** All three now have Charging Critical (10LP). Observe gradient charge build rate in practice — confirm whether the +20% per crit is meaningfully accelerating gradient skill access.
+- **Greater Powerful value for Maelle (Chat 25):** Added (+15% to Powerful → ~40% total bonus). Confirm uplift feels meaningful in practice vs pre-chat-25 baseline.
+- **Empowering Parry for Verso (Chat 25):** Added (5LP). Practical value depends on how consistently parrying is achieved — monitor in Verso's Drafts.
 
 ---
 

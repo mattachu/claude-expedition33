@@ -122,7 +122,7 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 |------|------------------------|-------|-----------------------------|---------------------------------------------------------|
 | 1    | Longer Shell           | 29    | Health +2757, Defence +1572 | On applying Shell, its duration is increased by 2.      |
 | 2    | Augmented First Strike | 31    | Speed +1008, Crit +18%      | 50% increased damage on the first hit. Once per battle. |
-| 3    | Quick Break            | 31    | Speed +672, Crit +36%       | Play again on Breaking a target.                        |
+| 3    | Cheater                | 24    | Health +1198, Speed +400    | Extra turn after using a skill, once per turn           |
 <!-- GENERATED:END -->
 
 Longer Shell's extension effect fires when Lune uses Healing Light (Protecting Heal Lumina applies Shell on heal).
@@ -137,8 +137,8 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 
 ### LP Budget
 <!-- GENERATED:START characters:Monoco:LP -->
-- **Current capacity:** 170 LP
-- **Used:** 170 LP
+- **Current capacity:** 175 LP
+- **Used:** 175 LP
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
@@ -155,15 +155,17 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Breaking Counter       | 3  |                                                                                           |
 | Breaking Death         | 5  |                                                                                           |
 | Burning Shots          | 3  |                                                                                           |
-| Cheater                | 40 |                                                                                           |
+| Cheater                | —  | FREE from Cheater Pictos                                                                  |
 | Critical Break         | 5  |                                                                                           |
 | Dodger                 | 1  |                                                                                           |
+| Empowering Break       | 3  | 3LP. Gain Powerful on Breaking a target.                                                  |
 | Energising Break       | 3  | Extra AP on breaking an enemy                                                             |
 | Energising Start I     | 5  |                                                                                           |
 | Energising Turn        | 20 |                                                                                           |
-| Marking Shots          | 3  |                                                                                           |
+| Gradient Fighter       | 5  | 5LP. 25% increased damage with Gradient Attacks.                                          |
 | Painted Power          | 5  |                                                                                           |
 | Recovery               | 10 |                                                                                           |
+| Second Chance          | 40 | 40LP. Revive with 100% Health, once per battle.                                           |
 | Shortcut               | 5  |                                                                                           |
 | Staggering Attack      | 1  | Break damage on base attack — small break bar contribution                                |
 | Survivor               | 20 |                                                                                           |

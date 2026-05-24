@@ -131,35 +131,38 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 
 ### LP Budget
 <!-- GENERATED:START characters:Lune:LP -->
-- **Current capacity:** 175 LP
-- **Used:** 175 LP
+- **Current capacity:** 212 LP
+- **Used:** 212 LP
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Lune:Lumina -->
-| Lumina             | LP | Notes                                     |
-|--------------------|----|-------------------------------------------|
-| Accelerating Heal  | 5  | Rush on heal — synergy with Healing Light |
-| Base Shield        | 20 |                                           |
-| Breaker            | 10 |                                           |
-| Breaking Burn      | 5  |                                           |
-| Breaking Counter   | 3  |                                           |
-| Breaking Death     | 5  |                                           |
-| Burning Shots      | 3  |                                           |
-| Cheater            | 40 |                                           |
-| Critical Break     | 5  |                                           |
-| Dodger             | 1  |                                           |
-| Energising Start I | 5  |                                           |
-| Energising Turn    | 20 |                                           |
-| Marking Shots      | 3  |                                           |
-| Painted Power      | 5  |                                           |
-| Protecting Heal    | 5  | Shell on heal                             |
-| Recovery           | 10 |                                           |
-| Shortcut           | 5  |                                           |
-| Survivor           | 20 |                                           |
-| Teamwork           | 5  |                                           |
+| Lumina             | LP | Notes                                                      |
+|--------------------|----|------------------------------------------------------------|
+| Accelerating Heal  | 5  | Rush on heal — synergy with Healing Light                  |
+| Base Shield        | 20 |                                                            |
+| Breaker            | 10 |                                                            |
+| Breaking Burn      | 5  |                                                            |
+| Breaking Counter   | 3  |                                                            |
+| Breaking Death     | 5  |                                                            |
+| Burning Shots      | 3  |                                                            |
+| Charging Critical  | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn. |
+| Cheater            | 40 |                                                            |
+| Critical Break     | 5  |                                                            |
+| Dodger             | 1  |                                                            |
+| Energising Burn    | 10 | 10LP. +1 AP on applying Burn, once per turn.               |
+| Energising Start I | 5  |                                                            |
+| Energising Turn    | 20 |                                                            |
+| Gradient Fighter   | 5  | 5LP. 25% increased damage with Gradient Attacks.           |
+| Painted Power      | 5  |                                                            |
+| Protecting Heal    | 5  | Shell on heal                                              |
+| Recovery           | 10 |                                                            |
+| Second Chance      | 40 | 40LP. Revive with 100% Health, once per battle.            |
+| Shortcut           | 5  |                                                            |
+| Survivor           | 20 |                                                            |
+| Teamwork           | 5  |                                                            |
 <!-- GENERATED:END -->
 
 ---

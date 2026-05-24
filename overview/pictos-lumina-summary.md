@@ -49,11 +49,11 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 ### Verso
 
 <!-- GENERATED:START characters:Verso:Pictos -->
-| Slot | Pictos              | Level | Stat Bonus              | Effect                                     |
-|------|---------------------|-------|-------------------------|--------------------------------------------|
-| 1    | Augmented Counter I | 28    | Health +4058, Crit +16% | 25% increased Counterattack damage.        |
-| 2    | Breaking Death      | 29    | Speed +586, Crit +33%   | Fully charge enemy break bar on death      |
-| 3    | Confident           | 29    | Speed +557, Crit +32%   | Take 50% less damage, but can't be healed. |
+| Slot | Pictos         | Level | Stat Bonus              | Effect                                     |
+|------|----------------|-------|-------------------------|--------------------------------------------|
+| 1    | Second Chance  | 31    | Health +3981, Crit +15% | Revive with 100% Health. Once per battle.  |
+| 2    | Breaking Death | 29    | Speed +586, Crit +33%   | Fully charge enemy break bar on death      |
+| 3    | Confident      | 29    | Speed +557, Crit +32%   | Take 50% less damage, but can't be healed. |
 <!-- GENERATED:END -->
 
 ### Sciel
@@ -87,7 +87,7 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 |------|------------------------|-------|-----------------------------|---------------------------------------------------------|
 | 1    | Longer Shell           | 29    | Health +2757, Defence +1572 | On applying Shell, its duration is increased by 2.      |
 | 2    | Augmented First Strike | 31    | Speed +1008, Crit +18%      | 50% increased damage on the first hit. Once per battle. |
-| 3    | Quick Break            | 31    | Speed +672, Crit +36%       | Play again on Breaking a target.                        |
+| 3    | Cheater                | 24    | Health +1198, Speed +400    | Extra turn after using a skill, once per turn           |
 <!-- GENERATED:END -->
 
 ---
@@ -95,7 +95,7 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 ## 5. Main Team Core Lumina Set
 
 <!-- GENERATED:START lumina:core:main -->
-**Total: 249 LP** — applied to Maelle, Verso, Sciel.
+**Total: 246 LP** — applied to Maelle, Verso, Sciel.
 
 *Applied via in-game Lumina set.*
 
@@ -112,7 +112,6 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 | Energising Start I | 5  | +1 AP on battle start.                                           | Boosted by Energy Master to 8AP on battle start                                                   |
 | Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                       |                                                                                                   |
 | Breaker            | 10 | 25% increased Break damage.                                      | Main break damage booster                                                                         |
-| Marking Shots      | 3  | 20% chance to apply Mark on Free Aim shot.                       |                                                                                                   |
 | Dead Energy I      | 2  | +3 AP on killing an enemy.                                       |                                                                                                   |
 | Dead Energy II     | 2  | +3 AP on killing an enemy.                                       |                                                                                                   |
 | Breaking Death     | 5  | Fully charge enemy break bar on death                            | Extremely helpful in tough boss fights                                                            |
@@ -129,7 +128,7 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 ## 6. Reserve Team Core Lumina Set
 
 <!-- GENERATED:START lumina:core:reserve -->
-**Total: 165 LP** — applied to Lune, Monoco.
+**Total: 162 LP** — applied to Lune, Monoco.
 
 *Main team core minus Dead Energy I, Dead Energy II, Second Chance; plus Recovery and Base Shield.*
 
@@ -145,7 +144,6 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 | Energising Start I | 5  | +1 AP on battle start.                                           |
 | Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                       |
 | Breaker            | 10 | 25% increased Break damage.                                      |
-| Marking Shots      | 3  | 20% chance to apply Mark on Free Aim shot.                       |
 | Critical Break     | 5  | 25% increased Break damage on Critical hits.                     |
 | Burning Shots      | 3  | 20% chance to Burn on Free Aim shot.                             |
 | Breaking Burn      | 5  | 25% increased Break damage on Burning enemies.                   |

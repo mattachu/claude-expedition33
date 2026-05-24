@@ -135,7 +135,6 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 | Energising Turn     | 20 | Main AP flow generator; boosted by Energy Master              |
 | Energy Master       | —  | FREE from Energy Master Pictos                                |
 | Healing Tint Energy | 1  | 1 AP on Healing Tint use — small AP top-up                    |
-| Marking Shots       | 3  |                                                               |
 | Painted Power       | 5  | Essential for all characters from Act 3 onwards               |
 | Protecting Heal     | 5  | Shell on heal                                                 |
 | Recovery            | 10 | Passive heal on turn start, increases survivability           |

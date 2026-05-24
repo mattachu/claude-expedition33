@@ -4,7 +4,7 @@
 
 See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) for Pictos and Lumina currently in use.
 
-**194 Pictos total.** 163 obtained.
+**194 Pictos total.** 164 obtained.
 
 ---
 
@@ -62,7 +62,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Fueling Break | Breaking a target doubles its Burn amount. | 5 | Speed: 507, Crit: 31% |  |  |
 | ✓ | Gradient Break | +50% of a Gradient Charge on Breaking a target. | 5 | Speed: 434, Crit: 28% |  | gradient |
 |  | Gradient Breaker | 50% increased Break damage with Gradient Attacks. | 5 |  |  | gradient |
-| ✓ | Quick Break | Play again on Breaking a target. | 3 | Speed: 672, Crit: 36% | Monoco |  |
+| ✓ | Quick Break | Play again on Breaking a target. | 3 | Speed: 672, Crit: 36% |  |  |
 | ✓ | Staggering Attack | 50% increased Break damage on Base Attack. | 1 |  |  |  |
 
 ---
@@ -94,14 +94,14 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Damage Modifiers (30 Pictos, 26 obtained)
+## Damage Modifiers (30 Pictos, 27 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
 | ✓ | At Death's Door | Deal 50% more damage if Health is below 10%. | 5 | Defence: 1817, Crit: 34% |  |  |
 | ✓ | Augmented Aim | 50% increased Free Aim damage. | 3 |  |  | shots |
 | ✓ | Augmented Attack | 50% increased Base Attack damage. | 7 |  |  |  |
-| ✓ | Augmented Counter I | 25% increased Counterattack damage. | 3 | Health: 4058, Crit: 16% | Verso |  |
+| ✓ | Augmented Counter I | 25% increased Counterattack damage. | 3 | Health: 4058, Crit: 16% |  |  |
 | ✓ | Augmented Counter II | 50% increased Counterattack damage. | 5 |  |  |  |
 | ✓ | Augmented Counter III | 75% increased Counterattack damage. | 7 | Health: 1548, Crit: 10% |  |  |
 | ✓ | Augmented First Strike | 50% increased damage on the first hit. Once per battle. | 5 | Speed: 1008, Crit: 18% | Monoco |  |
@@ -117,7 +117,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Glass Canon | Deal 25% more damage, but take 25% more damage. | 10 |  |  |  |
 | ✓ | Gradient Fighter | 25% increased damage with Gradient Attacks. | 5 | Speed: 182, Crit: 18% |  | gradient |
 | ✓ | Greater Defenceless | +15% to Defenceless damage amplification. | 15 | Speed: 293, Crit: 23% |  |  |
-|  | Greater Powerful | +15% to Powerful damage increase. | 10 |  |  |  |
+| ✓ | Greater Powerful | +15% to Powerful damage increase. | 10 |  |  |  |
 | ✓ | Immaculate | 30% increased damage until a hit is received. | 10 |  |  |  |
 |  | Inverted Affinity | Apply Inverted on self for 3 turns on battle start. 50% increased damage while Inverted. | 5 |  |  |  |
 | ✓ | Painted Power | Damage can exceed 9,999. | 5 | Health: 1844 |  |  |
@@ -197,7 +197,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
-| ✓ | Cheater | Extra turn after using a skill, once per turn | 40 | Health: 1198, Speed: 400 |  |  |
+| ✓ | Cheater | Extra turn after using a skill, once per turn | 40 | Health: 1198, Speed: 400 | Monoco |  |
 | ✓ | Combo Attack I | Base Attack has 1 extra hit. | 10 |  |  |  |
 | ✓ | Combo Attack II | Base Attack has 1 extra hit. | 20 | Speed: 836, Crit: 16% |  |  |
 | ✓ | Combo Attack III | Base attack has 1 extra hit | 30 | Speed: 619, Crit: 14% |  |  |
@@ -246,7 +246,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | SOS Power | Apply Powerful when falling below 50% Health. | 5 |  |  |  |
 | ✓ | SOS Rush | Apply Rush when falling below 50% Health. | None |  |  |  |
 | ✓ | SOS Shell | Apply Shell when falling below 50% Health. | 5 |  |  |  |
-| ✓ | Second Chance | Revive with 100% Health. Once per battle. | 40 | Health: 3981, Crit: 15% |  |  |
+| ✓ | Second Chance | Revive with 100% Health. Once per battle. | 40 | Health: 3981, Crit: 15% | Verso |  |
 |  | Shielding Tint | Healing Tints also add 2 Shields. | 10 |  |  | support |
 | ✓ | Shortcut | Immediately play when falling below 30% Health. Once per battle. | 5 | Speed: 672, Crit: 36% | Maelle |  |
 | ✓ | Solidifying | +2 Shields when the character's Health falls below 50%. Once per battle. | 10 |  |  |  |

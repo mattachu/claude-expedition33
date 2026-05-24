@@ -4,13 +4,13 @@
 - **Active:** Maelle, Verso, Sciel
 - **Reserve:** Lune, Monoco
 
-| Character                         | Level | Role                         | Weapon        | Pictos                                            | LP      |
-|-----------------------------------|-------|------------------------------|---------------|---------------------------------------------------|---------|
-| [Maelle](../characters/maelle.md) | 95    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut           | 299/300 |
-| [Verso](../characters/verso.md)   | 94    | Endgame main DPS             | Simoso (33)   | Augmented Counter I, Breaking Death, Confident    | 274/275 |
-| [Sciel](../characters/sciel.md)   | 94    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots          | 260/262 |
-| [Lune](../characters/lune.md)     | 89    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death       | 175/175 |
-| [Monoco](../characters/monoco.md) | 89    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Quick Break | 170/170 |
+| Character                         | Level | Role                         | Weapon        | Pictos                                        | LP      |
+|-----------------------------------|-------|------------------------------|---------------|-----------------------------------------------|---------|
+| [Maelle](../characters/maelle.md) | 95    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut       | 318/318 |
+| [Verso](../characters/verso.md)   | 94    | Endgame main DPS             | Simoso (33)   | Second Chance, Breaking Death, Confident      | 285/285 |
+| [Sciel](../characters/sciel.md)   | 94    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots      | 260/262 |
+| [Lune](../characters/lune.md)     | 89    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death   | 212/212 |
+| [Monoco](../characters/monoco.md) | 89    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Cheater | 175/175 |
 
 ---
 
@@ -38,36 +38,38 @@
 
 **Lumina loadout:**
 
-| Lumina             | LP | Notes                                                                                                                                                                |
-|--------------------|----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Anti-Blight        | 10 | Especially important in Renoir's Drafts                                                                                                                              |
-| Base Shield        | 20 |                                                                                                                                                                      |
-| Breaker            | 10 | Main break damage booster                                                                                                                                            |
-| Breaking Burn      | 5  |                                                                                                                                                                      |
-| Breaking Counter   | 3  |                                                                                                                                                                      |
-| Breaking Death     | 5  | Extremely helpful in tough boss fights                                                                                                                               |
-| Burning Shots      | 3  |                                                                                                                                                                      |
-| Cheater            | 40 | Essential for endgame builds                                                                                                                                         |
-| Critical Break     | 5  |                                                                                                                                                                      |
-| Dead Energy I      | 2  |                                                                                                                                                                      |
-| Dead Energy II     | 2  |                                                                                                                                                                      |
-| Dodger             | 1  |                                                                                                                                                                      |
-| Energising Start I | 5  | Boosted by Energy Master to 8AP on battle start                                                                                                                      |
-| Energising Turn    | 20 | Main AP flow generator; boosted by Energy Master                                                                                                                     |
-| Energy Master      | 40 | Add 1 to AP boosts (not double) — game-changing for AP generation                                                                                                    |
-| Full Strength      | 15 | Damage bonus while on full HP — strong synergy with Clea's Life Pictos                                                                                               |
-| Gradient Fighter   | 5  | Damage bonus on Gradient Skill use. 5LP. Verify exact effect description in-game.                                                                                    |
-| Marking Shots      | 3  |                                                                                                                                                                      |
-| Painted Power      | 5  | Essential for all characters from Act 3 onwards                                                                                                                      |
-| Powerful On Shell  | 10 | Apply Powerful on applying Shell. 10LP. Synergises with Lithum.                                                                                                      |
-| Second Chance      | 40 | Can save boss battles                                                                                                                                                |
-| Shortcut           | —  | FREE from Shortcut Pictos                                                                                                                                            |
-| Solo Fighter       | 1  | Rounds up LP to cap.                                                                                                                                                 |
-| Survivor           | 20 | Secondary safety net before Second Chance                                                                                                                            |
-| Teamwork           | 5  |                                                                                                                                                                      |
-| Warming Up         | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus |
+| Lumina                 | LP | Notes                                                                                                                                                                |
+|------------------------|----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Anti-Blight            | 10 | Especially important in Renoir's Drafts                                                                                                                              |
+| Augmented First Strike | 5  | 5LP. 50% increased damage on the first hit, once per battle.                                                                                                         |
+| Base Shield            | 20 |                                                                                                                                                                      |
+| Breaker                | 10 | Main break damage booster                                                                                                                                            |
+| Breaking Burn          | 5  |                                                                                                                                                                      |
+| Breaking Counter       | 3  |                                                                                                                                                                      |
+| Breaking Death         | 5  | Extremely helpful in tough boss fights                                                                                                                               |
+| Burning Shots          | 3  |                                                                                                                                                                      |
+| Charging Critical      | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn.                                                                                                           |
+| Cheater                | 40 | Essential for endgame builds                                                                                                                                         |
+| Critical Break         | 5  |                                                                                                                                                                      |
+| Dead Energy I          | 2  |                                                                                                                                                                      |
+| Dead Energy II         | 2  |                                                                                                                                                                      |
+| Dodger                 | 1  |                                                                                                                                                                      |
+| Energising Break       | 3  | 3LP. +3 AP on Breaking a target.                                                                                                                                     |
+| Energising Start I     | 5  | Boosted by Energy Master to 8AP on battle start                                                                                                                      |
+| Energising Turn        | 20 | Main AP flow generator; boosted by Energy Master                                                                                                                     |
+| Energy Master          | 40 | Add 1 to AP boosts (not double) — game-changing for AP generation                                                                                                    |
+| Full Strength          | 15 | Damage bonus while on full HP — strong synergy with Clea's Life Pictos                                                                                               |
+| Gradient Fighter       | 5  | Damage bonus on Gradient Skill use. 5LP. Verify exact effect description in-game.                                                                                    |
+| Greater Powerful       | 10 | 10LP. +15% to Powerful damage increase.                                                                                                                              |
+| Painted Power          | 5  | Essential for all characters from Act 3 onwards                                                                                                                      |
+| Second Chance          | 40 | Can save boss battles                                                                                                                                                |
+| Shortcut               | —  | FREE from Shortcut Pictos                                                                                                                                            |
+| Solo Fighter           | 1  | Rounds up LP to cap.                                                                                                                                                 |
+| Survivor               | 20 | Secondary safety net before Second Chance                                                                                                                            |
+| Teamwork               | 5  |                                                                                                                                                                      |
+| Warming Up             | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus |
 
-**LP:** 299/300
+**LP:** 318/318
 
 ---
 
@@ -84,44 +86,49 @@
 | Crit    | 41%  | 124%     |
 
 
-| Pictos              | Level | Stats                   |
-|---------------------|-------|-------------------------|
-| Augmented Counter I | 28    | Health +4058, Crit +16% |
-| Breaking Death      | 29    | Speed +586, Crit +33%   |
-| Confident           | 29    | Speed +557, Crit +32%   |
+| Pictos         | Level | Stats                   |
+|----------------|-------|-------------------------|
+| Second Chance  | 31    | Health +3981, Crit +15% |
+| Breaking Death | 29    | Speed +586, Crit +33%   |
+| Confident      | 29    | Speed +557, Crit +32%   |
 
 
 **Lumina loadout:**
 
-| Lumina              | LP | Notes                                                               |
-|---------------------|----|---------------------------------------------------------------------|
-| Anti-Blight         | 10 | Especially important in Renoir's Drafts                             |
-| Breaker             | 10 | Main break damage booster                                           |
-| Breaking Burn       | 5  |                                                                     |
-| Breaking Counter    | 3  |                                                                     |
-| Breaking Death      | —  | FREE from Breaking Death Pictos                                     |
-| Burning Shots       | 3  |                                                                     |
-| Cheater             | 40 | Essential for endgame builds                                        |
-| Confident Fighter   | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block |
-| Critical Break      | 5  |                                                                     |
-| Dead Energy I       | 2  |                                                                     |
-| Dead Energy II      | 2  |                                                                     |
-| Dodger              | 1  |                                                                     |
-| Energising Attack I | 10 |                                                                     |
-| Energising Start I  | 5  | Boosted by Energy Master to 8AP on battle start                     |
-| Energising Start II | 10 |                                                                     |
-| Energising Turn     | 20 | Main AP flow generator; boosted by Energy Master                    |
-| Energy Master       | 40 | Add 1 to AP boosts (not double) — game-changing for AP generation   |
-| Marking Shots       | 3  |                                                                     |
-| Painted Power       | 5  | Essential for all characters from Act 3 onwards                     |
-| Second Chance       | 40 | Can save boss battles                                               |
-| Shortcut            | 5  |                                                                     |
-| Staggering Attack   | 1  |                                                                     |
-| Survivor            | 20 | Secondary safety net before Second Chance                           |
-| Teamwork            | 5  |                                                                     |
-| Warming Up          | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks |
+| Lumina                 | LP | Notes                                                                                             |
+|------------------------|----|---------------------------------------------------------------------------------------------------|
+| Anti-Blight            | 10 | Especially important in Renoir's Drafts                                                           |
+| Augmented First Strike | 5  | 5LP.                                                                                              |
+| Auto Rush              | 10 | 10LP. Applies Rush for 3 turns on battle start.                                                   |
+| Base Shield            | 20 | Verso: previously non-functional with Chevalam L4; now available with Simoso — see open question. |
+| Base Shield            | 20 | 20LP. Confirmed functional with Simoso.                                                           |
+| Breaker                | 10 | Main break damage booster                                                                         |
+| Breaking Burn          | 5  |                                                                                                   |
+| Breaking Counter       | 3  |                                                                                                   |
+| Breaking Death         | —  | FREE from Breaking Death Pictos                                                                   |
+| Burning Shots          | 3  |                                                                                                   |
+| Charging Critical      | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn.                                        |
+| Cheater                | 40 | Essential for endgame builds                                                                      |
+| Confident Fighter      | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block                               |
+| Critical Break         | 5  |                                                                                                   |
+| Dead Energy I          | 2  |                                                                                                   |
+| Dead Energy II         | 2  |                                                                                                   |
+| Dodger                 | 1  |                                                                                                   |
+| Empowering Parry       | 5  | 5LP. Each successful Parry increases damage by 5% until end of following turn.                    |
+| Energising Attack I    | 10 |                                                                                                   |
+| Energising Start I     | 5  | Boosted by Energy Master to 8AP on battle start                                                   |
+| Energising Start II    | 10 |                                                                                                   |
+| Energising Turn        | 20 | Main AP flow generator; boosted by Energy Master                                                  |
+| Energy Master          | 40 | Add 1 to AP boosts (not double) — game-changing for AP generation                                 |
+| Painted Power          | 5  | Essential for all characters from Act 3 onwards                                                   |
+| Second Chance          | —  | FREE from Second Chance Pictos                                                                    |
+| Shortcut               | 5  |                                                                                                   |
+| Staggering Attack      | 1  |                                                                                                   |
+| Survivor               | 20 | Secondary safety net before Second Chance                                                         |
+| Teamwork               | 5  |                                                                                                   |
+| Warming Up             | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks                               |
 
-**LP:** 274/275
+**LP:** 285/285
 
 ---
 
@@ -168,7 +175,6 @@
 | Energising Turn     | 20 | Main AP flow generator; boosted by Energy Master              |
 | Energy Master       | —  | FREE from Energy Master Pictos                                |
 | Healing Tint Energy | 1  | 1 AP on Healing Tint use — small AP top-up                    |
-| Marking Shots       | 3  |                                                               |
 | Painted Power       | 5  | Essential for all characters from Act 3 onwards               |
 | Protecting Heal     | 5  | Shell on heal                                                 |
 | Recovery            | 10 | Passive heal on turn start, increases survivability           |
@@ -205,29 +211,32 @@
 
 **Lumina loadout:**
 
-| Lumina             | LP | Notes                                     |
-|--------------------|----|-------------------------------------------|
-| Accelerating Heal  | 5  | Rush on heal — synergy with Healing Light |
-| Base Shield        | 20 |                                           |
-| Breaker            | 10 |                                           |
-| Breaking Burn      | 5  |                                           |
-| Breaking Counter   | 3  |                                           |
-| Breaking Death     | 5  |                                           |
-| Burning Shots      | 3  |                                           |
-| Cheater            | 40 |                                           |
-| Critical Break     | 5  |                                           |
-| Dodger             | 1  |                                           |
-| Energising Start I | 5  |                                           |
-| Energising Turn    | 20 |                                           |
-| Marking Shots      | 3  |                                           |
-| Painted Power      | 5  |                                           |
-| Protecting Heal    | 5  | Shell on heal                             |
-| Recovery           | 10 |                                           |
-| Shortcut           | 5  |                                           |
-| Survivor           | 20 |                                           |
-| Teamwork           | 5  |                                           |
+| Lumina             | LP | Notes                                                      |
+|--------------------|----|------------------------------------------------------------|
+| Accelerating Heal  | 5  | Rush on heal — synergy with Healing Light                  |
+| Base Shield        | 20 |                                                            |
+| Breaker            | 10 |                                                            |
+| Breaking Burn      | 5  |                                                            |
+| Breaking Counter   | 3  |                                                            |
+| Breaking Death     | 5  |                                                            |
+| Burning Shots      | 3  |                                                            |
+| Charging Critical  | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn. |
+| Cheater            | 40 |                                                            |
+| Critical Break     | 5  |                                                            |
+| Dodger             | 1  |                                                            |
+| Energising Burn    | 10 | 10LP. +1 AP on applying Burn, once per turn.               |
+| Energising Start I | 5  |                                                            |
+| Energising Turn    | 20 |                                                            |
+| Gradient Fighter   | 5  | 5LP. 25% increased damage with Gradient Attacks.           |
+| Painted Power      | 5  |                                                            |
+| Protecting Heal    | 5  | Shell on heal                                              |
+| Recovery           | 10 |                                                            |
+| Second Chance      | 40 | 40LP. Revive with 100% Health, once per battle.            |
+| Shortcut           | 5  |                                                            |
+| Survivor           | 20 |                                                            |
+| Teamwork           | 5  |                                                            |
 
-**LP:** 175/175
+**LP:** 212/212
 
 ---
 
@@ -248,7 +257,7 @@
 |------------------------|-------|-----------------------------|
 | Longer Shell           | 29    | Health +2757, Defence +1572 |
 | Augmented First Strike | 31    | Speed +1008, Crit +18%      |
-| Quick Break            | 31    | Speed +672, Crit +36%       |
+| Cheater                | 24    | Health +1198, Speed +400    |
 
 
 **Lumina loadout:**
@@ -263,27 +272,29 @@
 | Breaking Counter       | 3  |                                                                                           |
 | Breaking Death         | 5  |                                                                                           |
 | Burning Shots          | 3  |                                                                                           |
-| Cheater                | 40 |                                                                                           |
+| Cheater                | —  | FREE from Cheater Pictos                                                                  |
 | Critical Break         | 5  |                                                                                           |
 | Dodger                 | 1  |                                                                                           |
+| Empowering Break       | 3  | 3LP. Gain Powerful on Breaking a target.                                                  |
 | Energising Break       | 3  | Extra AP on breaking an enemy                                                             |
 | Energising Start I     | 5  |                                                                                           |
 | Energising Turn        | 20 |                                                                                           |
-| Marking Shots          | 3  |                                                                                           |
+| Gradient Fighter       | 5  | 5LP. 25% increased damage with Gradient Attacks.                                          |
 | Painted Power          | 5  |                                                                                           |
 | Recovery               | 10 |                                                                                           |
+| Second Chance          | 40 | 40LP. Revive with 100% Health, once per battle.                                           |
 | Shortcut               | 5  |                                                                                           |
 | Staggering Attack      | 1  | Break damage on base attack — small break bar contribution                                |
 | Survivor               | 20 |                                                                                           |
 | Teamwork               | 5  |                                                                                           |
 
-**LP:** 170/170
+**LP:** 175/175
 
 ---
 
 # Inventory
 
-- Colour of Lumina: 14
+- Colour of Lumina: 0
 - Recoats: 37
 - Chroma Catalysts: 67 standard, 73 polished, 124 resplendent, 86 grandiose, 3 perfect
 - Chroma: 1727213

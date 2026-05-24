@@ -189,7 +189,7 @@
       "effect": "25% increased Counterattack damage.",
       "lp_cost": 3,
       "obtained": true,
-      "equipped_by": "Verso",
+      "equipped_by": null,
       "level": 28,
       "stats": {
         "health": 4058,
@@ -309,7 +309,7 @@
         "speed": 399,
         "crit": "11%"
       },
-      "notes": "Moved to Lumina this session — Pictos slot freed"
+      "notes": "Now confirmed functional with Simoso — no heal restriction. Previously non-functional with Chevalam L4."
     },
     {
       "name": "Beneficial Contamination",
@@ -605,7 +605,7 @@
       "effect": "Extra turn after using a skill, once per turn",
       "lp_cost": 40,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Monoco",
       "level": 24,
       "stats": {
         "health": 1198,
@@ -1469,7 +1469,7 @@
       ],
       "effect": "+15% to Powerful damage increase.",
       "lp_cost": 10,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null
     },
     {
@@ -1992,7 +1992,7 @@
       "effect": "Play again on Breaking a target.",
       "lp_cost": 3,
       "obtained": true,
-      "equipped_by": "Monoco",
+      "equipped_by": null,
       "level": 31,
       "stats": {
         "speed": 672,
@@ -2142,7 +2142,7 @@
       "effect": "Revive with 100% Health. Once per battle.",
       "lp_cost": 40,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Verso",
       "level": 31,
       "stats": {
         "health": 3981,
@@ -2440,7 +2440,7 @@
   ],
   "core_lumina_suite": {
     "main_team": {
-      "total_lp": 249,
+      "total_lp": 246,
       "entries": [
         {
           "name": "Painted Power",
@@ -2496,10 +2496,6 @@
           "notes": "Main break damage booster"
         },
         {
-          "name": "Marking Shots",
-          "lp": 3
-        },
-        {
           "name": "Dead Energy I",
           "lp": 2
         },
@@ -2541,7 +2537,7 @@
       "notes": "Applied via in-game Lumina set."
     },
     "reserve_team": {
-      "total_lp": 165,
+      "total_lp": 162,
       "entries": [
         {
           "name": "Painted Power",
@@ -2582,10 +2578,6 @@
         {
           "name": "Breaker",
           "lp": 10
-        },
-        {
-          "name": "Marking Shots",
-          "lp": 3
         },
         {
           "name": "Critical Break",
