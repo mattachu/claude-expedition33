@@ -1,7 +1,3 @@
-# Chat 25 Changelist
-
----
-
 DATA: data/pictos-lumina.json
 PATH: pictos[name=First Strike].lp_cost
 OP: SET
@@ -130,31 +126,12 @@ PATH: Maelle.lumina_extras
 OP: SET
 VALUE: [{"name": "Full Strength", "notes": "Damage bonus while on full HP — strong synergy with Clea's Life Pictos"}, {"name": "Warming Up", "notes": "Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus"}, {"name": "Gradient Fighter", "notes": "Damage bonus on Gradient Skill use. 5LP. Verify exact effect description in-game."}, {"name": "Solo Fighter", "notes": "Rounds up LP to cap."}, {"name": "Energising Break", "notes": "3LP. +3 AP on Breaking a target."}, {"name": "Augmented First Strike", "notes": "5LP. 50% increased damage on the first hit, once per battle."}, {"name": "Greater Powerful", "notes": "10LP. +15% to Powerful damage increase."}, {"name": "Charging Critical", "notes": "10LP. +20% Gradient Charge on Critical Hit, once per turn."}]
 
-DATA: data/characters.json
-PATH: Maelle.lp_total
-OP: SET
-VALUE: 318
-
-DATA: data/characters.json
-PATH: Maelle.lp_used
-OP: SET
-VALUE: 318
-
-DATA: data/playthrough.json
-PATH: inventory.colour_of_lumina
-OP: SET
-VALUE: 14
-
 
 DATA: data/playthrough.json
 PATH: inventory.colour_of_lumina
 OP: SET
 VALUE: 0
 
-DATA: data/playthrough.json
-PATH: inventory.colours_of_lumina
-OP: SET
-VALUE: 0
 
 FILE: overview/claude-expedition33.md
 SECTION: ## Section 6: Open Questions
@@ -172,5 +149,4 @@ CONTENT:
 
 APPEND: chats/chat-index.md
 CONTENT:
-| Chat 25 | [Formatted](chat25/chat25-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat25/chat25-index.md) | [chat25.md](chat25/chat25.md) | Full Lumina loadout review across all five characters. Cheater and Second Chance swapped from Lumina to Pictos on Monoco and Verso respectively, freeing 40LP each. 70 Colour of Lumina spent: all five characters received new Lumina additions including Charging Critical (Maelle, Verso, Lune), Greater Powerful (Maelle), Base Shield/Auto Rush/Empowering Parry/Augmented First Strike (Verso), Second Chance/Empowering Break/Gradient Fighter (Monoco), Energising Burn/Gradient Fighter/Second Chance (Lune). First Strike LP cost corrected in data (1LP → 10LP). |
-
+| Chat 25 | [Formatted](chat25/chat25-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat25/chat25-index.md) | [chat25.md](chat25/chat25.md) | Full Lumina loadout review across all five characters, spending 70 CoL and adding various Lumina to all characters including Cheater, Second Chance, Charging Critical, Greater Powerful, Empowering Break, Energising Burn and others.  |
