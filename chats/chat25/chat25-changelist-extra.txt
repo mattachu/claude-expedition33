@@ -1,0 +1,27 @@
+DATA: data/pictos-lumina.json
+PATH: core_lumina_suite.reserve_team.entries
+OP: ADD
+VALUE: {"name": "Second Chance", "lp": 40, "notes": "Revive with 100% Health, once per battle."}
+
+DATA: data/pictos-lumina.json
+PATH: core_lumina_suite.reserve_team.total_lp
+OP: SET
+VALUE: 202
+
+DATA: data/characters.json
+PATH: Lune.lumina_extras[name=Second Chance]
+OP: REMOVE
+
+DATA: data/characters.json
+PATH: Monoco.lumina_extras[name=Second Chance]
+OP: REMOVE
+
+DATA: data/characters.json
+PATH: Lune.lumina_core_exclusions
+OP: ADD
+VALUE: {"name": "Survivor", "notes": "Not enough LP for both Second Chance and Survivor"}
+
+DATA: data/characters.json
+PATH: Lune.lumina_core_exclusions
+OP: ADD
+VALUE: {"name": "Critical Break", "notes": "Dropped to save LP, as not her primary role"}

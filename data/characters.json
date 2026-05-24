@@ -406,7 +406,16 @@
     ],
     "lp_total": 212,
     "lp_used": 212,
-    "lumina_core_exclusions": [],
+    "lumina_core_exclusions": [
+      {
+        "name": "Survivor",
+        "notes": "Not enough LP for both Second Chance and Survivor"
+      },
+      {
+        "name": "Critical Break",
+        "notes": "Dropped to save LP, as not her primary role"
+      }
+    ],
     "lumina_extras": [
       {
         "name": "Accelerating Heal",
@@ -415,10 +424,6 @@
       {
         "name": "Protecting Heal",
         "notes": "Shell on heal"
-      },
-      {
-        "name": "Second Chance",
-        "notes": "40LP. Revive with 100% Health, once per battle."
       },
       {
         "name": "Energising Burn",
@@ -533,10 +538,6 @@
       },
       {
         "name": "Augmented First Strike"
-      },
-      {
-        "name": "Second Chance",
-        "notes": "40LP. Revive with 100% Health, once per battle."
       },
       {
         "name": "Empowering Break",

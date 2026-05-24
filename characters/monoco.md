@@ -165,7 +165,7 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Gradient Fighter       | 5  | 5LP. 25% increased damage with Gradient Attacks.                                          |
 | Painted Power          | 5  |                                                                                           |
 | Recovery               | 10 |                                                                                           |
-| Second Chance          | 40 | 40LP. Revive with 100% Health, once per battle.                                           |
+| Second Chance          | 40 | Revive with 100% Health, once per battle.                                                 |
 | Shortcut               | 5  |                                                                                           |
 | Staggering Attack      | 1  | Break damage on base attack — small break bar contribution                                |
 | Survivor               | 20 |                                                                                           |

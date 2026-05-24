@@ -2537,7 +2537,7 @@
       "notes": "Applied via in-game Lumina set."
     },
     "reserve_team": {
-      "total_lp": 162,
+      "total_lp": 202,
       "entries": [
         {
           "name": "Painted Power",
@@ -2602,6 +2602,11 @@
         {
           "name": "Base Shield",
           "lp": 20
+        },
+        {
+          "name": "Second Chance",
+          "lp": 40,
+          "notes": "Revive with 100% Health, once per battle."
         }
       ],
       "notes": "Main team core minus Dead Energy I, Dead Energy II, Second Chance; plus Recovery and Base Shield."

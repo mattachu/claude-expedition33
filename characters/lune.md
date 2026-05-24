@@ -150,7 +150,6 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 | Burning Shots      | 3  |                                                            |
 | Charging Critical  | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn. |
 | Cheater            | 40 |                                                            |
-| Critical Break     | 5  |                                                            |
 | Dodger             | 1  |                                                            |
 | Energising Burn    | 10 | 10LP. +1 AP on applying Burn, once per turn.               |
 | Energising Start I | 5  |                                                            |
@@ -159,9 +158,8 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 | Painted Power      | 5  |                                                            |
 | Protecting Heal    | 5  | Shell on heal                                              |
 | Recovery           | 10 |                                                            |
-| Second Chance      | 40 | 40LP. Revive with 100% Health, once per battle.            |
+| Second Chance      | 40 | Revive with 100% Health, once per battle.                  |
 | Shortcut           | 5  |                                                            |
-| Survivor           | 20 |                                                            |
 | Teamwork           | 5  |                                                            |
 <!-- GENERATED:END -->
 

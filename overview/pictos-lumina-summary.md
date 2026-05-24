@@ -128,7 +128,7 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 ## 6. Reserve Team Core Lumina Set
 
 <!-- GENERATED:START lumina:core:reserve -->
-**Total: 162 LP** — applied to Lune, Monoco.
+**Total: 202 LP** — applied to Lune, Monoco.
 
 *Main team core minus Dead Energy I, Dead Energy II, Second Chance; plus Recovery and Base Shield.*
 
@@ -150,6 +150,7 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 | Breaking Counter   | 3  | 50% increased Break damage on Counterattack.                     |
 | Breaking Death     | 5  | Fully charge enemy break bar on death                            |
 | Base Shield        | 20 | Grants 1 Shield HP buffer per turn                               |
+| Second Chance      | 40 | Revive with 100% Health. Once per battle.                        |
 <!-- GENERATED:END -->
 
 ---
