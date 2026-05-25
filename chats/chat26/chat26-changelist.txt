@@ -1,9 +1,3 @@
-## Chat 26 Changelist
-
-Processing order: DATA → FILE → APPEND → generate.py
-
----
-
 DATA: data/characters.json
 PATH: Verso.lumina_extras
 OP: ADD
@@ -48,7 +42,6 @@ PATH: inventory.colour_of_lumina
 OP: SET
 VALUE: 2
 
----
 
 FILE: overview/claude-expedition33.md
 SECTION: ## Section 6: Open Questions
@@ -64,11 +57,10 @@ CONTENT:
 - **Empowering Parry for Verso (Chat 25):** Added (5LP). Practical value depends on how consistently parrying is achieved — monitor in Verso's Drafts.
 - **Verso Energising Break rotation (Chat 26):** Energising Break (3LP) added. Theoretical rotation: Perfect Break (7 AP) → Energising Break trigger (+3 AP via Energy Master) → Cheater turn (+3 AP) → End Bringer (9 AP) on Stunned target. Confirm this fires cleanly in practice.
 
----
 
 APPEND: chats/chat-index.md
 CONTENT:
-| Chat 26 | [Formatted](chat26/chat26-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat26/chat26-index.md) | [chat26.md](chat26/chat26.md) | LP corrections from Chat 25 resolved: Verso gains Energising Break (3LP, 285/285), enabling a Perfect Break → Stun → End Bringer rotation; Lune drops Burning Shots and gains Survivor (20LP) via 17 CoL spend (224/224); Gradient Break added to Sciel's data (already in-game, 262/262). Sciel LP audit via screenshot identified arithmetic errors and a missing Lumina in the data file. |
+| Chat 26 | [Formatted](chat26/chat26-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat26/chat26-index.md) | [chat26.md](chat26/chat26.md) | LP corrections and improvements: Verso gains Energising Break, enabling a Perfect Break → Stun → End Bringer rotation; Lune gains Survivor (20LP); Sciel gains Gradient Break.                                                           |
 
 APPEND: reference/historical-errors.md
 CONTENT:
