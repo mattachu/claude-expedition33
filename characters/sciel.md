@@ -210,6 +210,10 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 **Revert after Simon:** Remove Anti-Stun (5LP), Auto Shell (10LP), First Strike Lumina; restore Base Shield (20LP).
 
+### Charnon DPS build
+
+Charnon is best suited to a DPS build, not support.
+
 ---
 
 ## Key Decisions
@@ -218,16 +222,6 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 - **Ramasson rejected:** Passive heal does not trigger Energising Heal or Accelerating Heal. Confirmed from wiki. Renders the weapon's main support synergy inert.
 - **Agility 99 over Luck 89 allocation:** Speed guarantee (1812, goes first) valued over marginal Attack gain from higher Luck. Chosen after Pictos changed from Recovery to Base Shield + Survivor.
 - **Burning Break over Burn Affinity:** Burning Break gives +1541 Health and +24% Crit vs Burn Affinity's +439 Speed and +12% Crit. Speed is already sufficient at 1812 — health and crit more valuable.
-
----
-
-## Open Questions
-
-- **Grim Harvest timing:** Available via Recoat (27 available) or 5 more levels. Not urgent before The Reacher (Maelle solo). Aim for before Flying Manor / final boss.
-- **Burn Affinity Lumina:** Now that Burn Affinity Pictos is replaced by Quick Break, the free Lumina effect is lost. Worth paying 10 LP to retain the effect? Probably not given burn is less active without Lune. 14 LP spare after Breaking Burn removal.
-- **Delaying Slash:** Listed in available skills; community sources describe it as a standout support skill that delays an enemy's next turn (boss control). Effect not yet confirmed in transcript — verify in-game and document if accurate.
-- **Charnon vs Litheson comparison:** Post-game option — assess when relevant.
-- **Double Third, Frenzy, Feint Pictos:** Post-launch Pictos flagged as synergising with Verso's Steeled Strike. May be connected to Verso's Drafts DLC. Research when discussing Verso next session.
 
 ---
 

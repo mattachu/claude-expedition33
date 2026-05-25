@@ -67,15 +67,6 @@ Fetch that file only when reviewing specific past errors.
 - Chroma: 1616433
 <!-- GENERATED:END -->
 
-### LP totals
-<!-- GENERATED:START characters:summary:LP -->
-- Maelle: 305/305
-- Verso: 282/285
-- Sciel: 260/262
-- Lune: 207/207
-- Monoco: 175/175
-<!-- GENERATED:END -->
-
 ---
 
 ## Section 3: Playstyle Notes
@@ -152,28 +143,19 @@ If the main party is fully wiped in a battle, the player can continue the battle
 
 ## Section 5: Key Decisions & Context
 
-- **Trebuchim over Colim for Lune:** Colim tested and rejected. 14% attack loss, no free-aim stain generation. Trebuchim optimal for Mayhem/free-aim playstyle. Colim only appropriate for Elemental Genesis builds.
-- **Monoco stat respec (Agility 72→99, Vitality 61, Luck 20, Nusaro):** Empirically tested. Key finding: Luck 2× more efficient than Defence for crit. Agility increases Speed, Attack, and Defence stat simultaneously.
 - **Sciel over Monoco in main team:** Litheson's +3 AP/turn (Sciel only, when buff/debuff applied) keeps Sciel self-sufficient. Combined with Intervention (grants extra turn +4 AP to another character), she effectively generates turns and AP for allies. Ramasson rejected after confirming its passive heal does not trigger Energising Heal.
-- **Sciel stat allocation:** Agility 99, Luck 99, Defence 66. Critical Burn Pictos fixes turn order.
-- **Nusaro upgrade to 20:** Resplendent Catalysts cap at level 19; Joyaro drops at level 28. No overlap. Nusaro Level 20 (+1 AP per mask change) is worth the upgrade.
 - **Litheson is Sciel's endgame weapon:** Confirmed by multiple sources.
-- **Marking Shot over Defiant Strike for Verso:** Both apply Mark 100%. Defiant Strike costs 30% current HP per use — too risky with developing parry skills.
-- **Rank bonuses work ONLY at exact rank:** Confirmed by multiple community sources and in-game highlighting.
+- **Verso's Rank bonuses work ONLY at exact Rank:** Confirmed by multiple community sources and in-game highlighting.
 - **Vale bosses missed:** Axon defeated before triggering the mask riddles. All three Vale bosses permanently inaccessible.
 - **Endgame team:** Maelle + Sciel + Verso. Turn rotation: Verso (base attack) → Verso(C) (Steeled Strike charge) → Sciel (Fortune's Fury on Verso) → Sciel(C) (Intervention on Verso) → Verso(Intervention) (Steeled Strike executes at Rank S with doubled damage).
-- **End Bringer vs Steeled Strike for Verso:** Steeled Strike deals more damage in general; End Bringer wins when target is stunned due to stun-extension bonus at Rank A. Verso keeps both and uses situationally.
+- **End Bringer vs Steeled Strike for Verso:** Steeled Strike deals more damage in general; End Bringer wins when target is stunned. Verso keeps both and uses situationally.
 - **Might is correct post-crit-cap:** For Maelle and Verso (A99, L99 already), additional attribute points go into Might. All weapons factor Might into power; gains scale with weapon base power (level 33 weapons = maximum return). More Luck gives nothing once crit-capped.
 - **Scaverim evaluated for Lune, Kralim retained:** Scaverim (Dark element, Vit B/Agi C) offers high burst ceiling via Dark Stain accumulation — passive +50% skill damage per active stain at L4, 300% burst with 4 stains at L20 — but requires multi-turn ramp-up with no output during accumulation. Incompatible with reserve role where Lune enters mid-fight and needs immediate contribution. Kralim + Elemental Genesis fires effectively from turn 1. Revisit if Lune ever moves to main team for sustained fights.
 - **Simon fight (Plan F) — complete (Chat 24):** 30-minute controlled fight. Sciel's Twilight + Litheson applied Greater Rush to allies / Greater Slow to Simon for turn-order dominance. Overload + End Bringer maintained near-continuous stun through all phases. Seeram L4 kept Verso at Rank A throughout (enabling stun extension). Simon never vanished the party. One slip when Sciel briefly left Twilight.
 - **Simoso acquired (Chat 24):** Verso's endgame weapon. Power 9480, Light element, Vitality A / Agility S scaling. L4: ethereal Sword on any skill damage. L10: 20% chance Burn on Light damage. L20: Can't die at Rank A or above. Verso respecced to Vitality 99 / Agility 99 / Might 62 / Luck 22 — Luck 22 is the minimum to maintain 100% crit; do not reduce further.
-- **Verso Overload replaces Quick Strike (Chat 24):** Same D→S rank climb in two moves, but Overload forks at Rank A: Light Holder→S for Steeled Strike burst, or End Bringer for stunlock. AP refill from Overload funds both. Simoso L20 mitigates 1HP risk at Rank A+. Multi-hit rank-drop edge case (does Simoso L20 protect if rank drops mid-sequence?) flagged for in-game testing.
-- **Lune Thermal Transfer replaces Rebirth (Chat 24):** Standard loadout: Hell, Terraquake, Lightning Dance, Healing Light, Thermal Transfer, Elemental Genesis. Loop: Hell (Burn + stains) → Thermal Transfer (AP recoup) → Genesis. Keeps Burn Affinity 25% bonus active in practice. Mayhem retained as situational for break utility; Rebirth retained as situational for boss attrition fights.
 - **Lune damage vs main team (Chat 24):** Genesis hitting ~1m vs Maelle/Verso at 4m+ in Simon fight. Gap partly reflects absence of Fortune's Fury/Intervention multiplier. Frenzy (drops from Licornapieds, Verso's Drafts) identified as the most direct damage multiplier for Genesis (8 hits). Burn Affinity 25% was underused in Simon because Hell was AP-constrained; Thermal Transfer loop should fix this.
 - **Monoco post-Simon loadout (Chat 24):** Abbest Wind confirmed redundant with Cheater (extra turn doesn't stack). Final reserve loadout: Stalact Punches (Break, Almighty opener), Chapelier Slash (Mark, Agile), Grosse Tête Whack (Defenceless, Heavy), Orphelin Cheers (Powerful support), Potier Energy (AP), Moissonneuse Vendange (wheel cycling, Can Break). Lancelier Impale retained as situational for Slow. Creation Void and Duallist Storm noted as future main-team DPS candidates.
 - **Charnon purchased but deferred:** Earth element, Defence B/Luck A. 100% Crit in Twilight (L4), Foretell on Crit (L10). Not suitable for Sciel's current support role. Revisit only for a dedicated DPS Sciel build.
-- **Base Shield removed from Simon fight Lumina sets:** Freed 20LP per character. Reserve team now runs Cheater + Shortcut instead. Base Shield restored post-Simon for all characters.
-- **Energy Master confirmed on Sciel permanently (Chat 24).**
 
 ---
 

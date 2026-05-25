@@ -242,15 +242,6 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 
 ---
 
-## Open Questions
-
-- **Kralim element:** Not confirmed in transcript — verify in game.
-- **Choralim role in Genesis build:** Can it serve as crit-maintenance layer alongside Kralim? Needs clarification before next Lune build session.
-- **Reserve team optimisation:** Lune as DPS + healing, Monoco as break + AP flow — roles agreed; builds reviewed Chat 5.
-- **Cheater deferred:** 40LP — not added to reserve team core yet. May add in future if Speed proves insufficient substitute.
-
----
-
 ## Errors to Avoid
 
 - **Colim recommendation:** Recommended over Trebuchim based on Light stain wildcards and community meta. Wrong for this playstyle. Root cause: didn't simulate turns, didn't check playstyle assumptions.

@@ -257,6 +257,8 @@ Full skill reference (AP cost, wheel move, mask, effect, mask bonus, learned/equ
 
 ## Build Options
 
+Monoco is very versatile and can be built many different ways. Below are some that I have tried.
+
 | Build          | Role                 | Key Skills                                                                                       | Key Lumina                                        | Status   | Notes                                                       |
 |----------------|----------------------|--------------------------------------------------------------------------------------------------|---------------------------------------------------|----------|-------------------------------------------------------------|
 | Levelling team | Break + support/heal | Potier Energy, Stalact Punches, Abbest Wind, Moissonneuse Vendange, Chalier Combo, Pelerin Heal  |                                                   | Previous | Versatile; can cover Lune's roles                           |
@@ -290,6 +292,12 @@ Keep Mark and Defenceless persistent throughout fight (not saved for burst only)
 
 **Revert after Simon:** Reassess full skill loadout — don't automatically restore pre-Simon set. Review Abbest Wind, Stalact Punches, Portier Crash, Chalier Combo relevance for post-Simon content.
 
+### Alternative skills
+
+- **Évêque Spear:** Situational debuff (Powerless 3 turns) — worth having for specific boss fights.
+- **Creation Void:** Major damage skill for Monoco as DPS.
+- **Duallist Storm:** Major damage skill that Can Break, but more AP-expensive than Moissonneuse Vendange.
+
 ---
 
 ## Key Decisions
@@ -298,16 +306,7 @@ Keep Mark and Defenceless persistent throughout fight (not saved for burst only)
 - **Longer Shell over Anti-Burn/Anti-Blight as permanent Pictos:** Stats (Health +2757, Defence +1572) serve the survivability role well. Anti-Burn and Anti-Blight available as situational Lumina when needed.
 - **Sniper as third Pictos:** Speed +529, Crit +13% — best available stat stick for Monoco's reserve DPS support role. Effect wasted on Joyaro build but stats are strong.
 - **Chalier Combo retained:** Community verified 6-hit high damage with no conditionals. Better than Bénisseur Mortar (requires Mark on target for Almighty jump — unreliable without Lune/Maelle).
-- **Abbest Wind non-negotiable:** Wheel cycling and Agile free turn are essential. Cannot be displaced.
-
----
-
-## Open Questions
-
-- **Reserve team optimisation:** Roles confirmed — Lune as DPS + healing, Monoco as break + AP flow. Builds reviewed Chat 5.
-- **Portier Crash in rotation:** Wheel movement +5 (Heavy Mask). Two Heavy skills (Stalact Punches +4, Portier Crash +5) in loadout — monitor wheel impact in practice.
-- **Évêque Spear:** Available but not equipped. Situational debuff (Powerless 3 turns) — worth having for specific boss fights.
-- **Energising Turn Pictos swap:** If paying 20LP for Energising Turn Lumina, what replaces the slot? Deferred until Pictos catalogue complete.
+- **Abbest Wind unneeded with Cheater:** Free turns don't work with Cheater. Abbest Wind much less useful than previously.
 
 ---
 

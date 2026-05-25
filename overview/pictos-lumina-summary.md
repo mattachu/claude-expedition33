@@ -30,7 +30,7 @@ Passive Lumina effects that trigger "on turn start" (e.g. Recovery: 10% health r
 
 For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather than swapping Pictos. The Pictos stays on its holder for the stat boosts; Lumina is the situational layer.
 
-**In-game Lumina Sets:** The game allows saving up to 50 Lumina Sets per character. Sets apply a group of Lumina in one action. The recommended workflow is: apply core set first, then add character-specific extras on top.
+**In-game Lumina Sets:** The game allows saving up to 50 Lumina Sets. Sets apply a group of Lumina in one action. The recommended workflow is: apply core set first, then add character-specific extras on top.
 
 ---
 

@@ -33,17 +33,11 @@ Maelle's central system is **stances**. She starts each battle in Stanceless (un
 - Percée costs 2 AP instead of 5 in Virtuose — but Maelle **leaves Virtuose after using it**; cannot be spammed at 2 AP (one use per Virtuose window)
 - Using the same stance trigger twice in succession puts Maelle into Stanceless — e.g. two consecutive Virtuose-entry skills will leave her Stanceless after the second
 - Fleuret Fury keeps her in Virtuose if already there
-- Medalum Level 10: every Burn applied is doubled while in Virtuose
-- Medalum Level 20: Burn deals double damage while in Virtuose
 - Entering Virtuose triples the damage of follow-up skills (e.g. Sword Ballet deals 3× damage after Gustave's Homage switches to Virtuose)
 
 Lithum (endgame weapon) changes the entry mechanic: re-enters Virtuose after every successful counterattack (repeatable), does not remove Mark when hitting in Virtuose, and grants a free Shell charge on leaving Virtuose.
 
 Stendhal is the Virtuose nuke — 8 AP, extreme single-hit Void damage, switches to Stanceless, applies Defenceless to Maelle herself. Nerfed 40% in Patch 1.2.3 — no longer guaranteed to one-shot Alicia.
-
-**Burn-stacking:** Burning Canvas (5 AP, switches to Offensive, high Void damage + 1 burn per hit) deals increased damage for each burn stack on target. Corpeso (Verso's weapon) applies 2 burn per Rank on base attack — synergises to stack burn quickly before Maelle fires Burning Canvas.
-
-**Breaking Rules:** 3 AP, switches to Offensive, destroys all shields on target, gains 1 AP per shield destroyed. **If target is Defenceless, grants a second turn.**
 
 ### Key Synergies
 
@@ -127,10 +121,6 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 
 *Cheater equipped via Lumina (40 LP) rather than Pictos slot.*
 
-### Solo loadout (as used for The Reacher)
-
-Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina build applied and reversed after completing The Reacher.
-
 ---
 
 ## Lumina
@@ -177,26 +167,6 @@ Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina 
 | Warming Up             | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus |
 <!-- GENERATED:END -->
 
-### Solo Build Swap (The Reacher)
-
-Remove from standard loadout:
-- Cheater (40) — swap to Pictos
-- Teamwork (5) — useless solo (whole-team bonus)
-- Breaking Counter (3) — situational
-- Dead Energy I (2) — AP on enemy death; fires once at best in solo boss
-- Dead Energy II (2) — same
-- **Total freed: 52 LP** (40 from Cheater swap + 12 from removals)
-
-Add for solo:
-- Last Stand suite: Solo Fighter (1), Last Stand Critical (3), Accelerating Last Stand (3), Empowering Last Stand (3), Protecting Last Stand (3) = **13 LP**
-- Recovery (10) — 10% health per turn start; strong solo healer substitute
-- Energising Attack I (10) — +1 AP per base attack; important for solo AP generation without teammates
-- **Total added: 33 LP**
-
-Net change: freed 52, added 33. 19 LP spare after swap (within 158 LP budget).
-
-**Note:** Recovery Lumina costs 10 LP. Consider adding to Core Suite for party play too — worth discussing.
-
 ---
 
 ## Skills
@@ -230,12 +200,6 @@ Net change: freed 52, added 33. 19 LP spare after swap (within 158 LP budget).
 | Revenge          | —                 | —          | ❌        |                                                                                                                                                 |
 | Pyrolyse         | —                 | —          | ❌        |                                                                                                                                                 |
 <!-- GENERATED:END -->
-
-### Solo skill loadout recommendation (The Reacher)
-
-Community standard core three: Stendhal, Phantom Strike, Last Chance.
-Remaining 3 slots: Gustave's Homage (Virtuose entry), Fleuret Fury (sustained Virtuose, can Break), Mezzo Forte (AP generation in Virtuose).
-Alternative: swap Fleuret Fury for Sword Ballet if preferring burst over Break utility.
 
 ---
 
@@ -286,6 +250,11 @@ Alternative: swap Fleuret Fury for Sword Ballet if preferring burst over Break u
 
 **Revert after Simon:** Remove First Strike Lumina; restore Base Shield (20LP).
 
+### Burn-stacking
+
+Burning Canvas (5 AP, switches to Offensive, high Void damage + 1 burn per hit) deals increased damage for each burn stack on target. Corpeso (Verso's weapon) applies 2 burn per Rank on base attack — synergises to stack burn quickly before Maelle fires Burning Canvas.
+
+
 ---
 
 ## Key Decisions
@@ -297,19 +266,6 @@ Alternative: swap Fleuret Fury for Sword Ballet if preferring burst over Break u
 - **Phantom Strike over Fencer's Flurry:** Phantom Strike replaced Fencer's Flurry. Better damage, adds Defensive stance utility and Gradient generation. AoE function preserved.
 - **Solo Lumina build:** Swap Cheater to Pictos + borrow Second Chance from Verso + remove Teamwork/Breaking Counter/Dead Energy I+II + add Last Stand suite + Recovery + Energising Attack I.
 - **Gradient Break over Burning Break for solo:** For The Reacher, Gradient Break chosen for speed advantage (1821 vs 1397) to handle Alicia's Rush phase at 25% HP. Second Chance covers survivability.
-
----
-
-## Open Questions
-
-- **Lithum ability order:** Sources conflict on whether Level 4 = Virtuose on Counterattack or Level 10. Verify in game on equipping.
-- **Maelle's relationship level:** Confirmed at Level 5. The Reacher available. Must reach Level 7 (via "Truth") to unlock Gommage.
-- **Gommage:** Not yet obtained. Unlocks after The Reacher, choosing "Truth."
-- **Melarum source:** Previously noted as "Old Lumiere post-Renoir" — this is likely wrong since you have it at level 10 pre-Renoir. Source unknown.
-- **Recovery Lumina in Core Suite:** Currently solo-only recommendation. Worth adding to core suite for 10% health/turn in party play? Costs 10 LP.
-- **Burn-stacking build:** Requires Stalum, Burning Canvas, potentially Kralim (Lune) and Corpeso (Verso). When to develop this build path?
-- **Breaking Rules second turn:** Confirmed from search: triggers on Defenseless target. Useful with Offensive Switch (1 AP, applies Defenceless) as setup. Worth exploring.
-- **Phantom Strike Gradient generation:** +35% per use — how many uses to fill a Gradient charge?
 
 ---
 

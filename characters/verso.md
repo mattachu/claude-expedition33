@@ -225,11 +225,7 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 - Overload replaces Light Holder — better AP generation for Verso in sustained fight
 - Angel Eyes gradient skill used defensively as well as offensively (applies Aureole auto-revive)
 
-**Plan F:** Team: Verso/Sciel/Maelle (same as Plan A/B). Sciel sets up Twilight for speed advantage; Verso stunlocks using Overload + End Bringer; Maelle executes Gommage burst as in other plans.
-- Equip Seeram instead of Chevalam — caps Verso at Rank A (cannot reach Rank S), which is required for the End Bringer loop
-- At Rank A, End Bringer reapplies stun on a broken target indefinitely
-- Purchase Seeram from Cruler and Bruler blacksmiths in Coastal Cave
-- Not yet attempted; flagged as alternative if Plan E fails
+**Plan F:** Team: Verso/Sciel/Maelle (same as Plan A/B). Sciel sets up Twilight for speed advantage; Verso stunlocks using Overload + End Bringer (see stunlock build); Maelle executes Gommage burst as in other plans.
 
 **Lumina changes:** Base Shield excluded from main team core for Simon fight (non-functional vs Simon's damage output; Verso's Base Shield already excluded permanently due to Chevalam). No further Lumina changes.
 
@@ -242,6 +238,14 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 **Revert after Simon:** swap Overload → Light Holder (or reassess); re-equip Chevalam if Seeram was used.
 
+### Stunlock
+
+- Equip Seeram — caps Verso at Rank A (cannot reach Rank S), which is required for the End Bringer to reapply stun
+- Overload jumps to Rank A and fills to 9AP, ready for End Bringer
+- End Bringer does massive damage to stunned targets
+- At Rank A, End Bringer also reapplies stun on a broken target and this can be repeated each turn as long as Verso goes between target turns
+- Use Sciel for tempo control so Verso can act every turn
+
 ---
 
 ## Key Decisions
@@ -251,17 +255,6 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 - **Strike Storm over Defiant Strike (damage slot):** More damage, synergises with Fortune's Fury. Mark handled by Marking Shot.
 - **Phantom Stars retained:** Essential for AoE in Visages and multi-enemy areas. Useless in 1v1 — never use in boss fights.
 - **Steeled Strike deferred:** Available but requires Cheater Pictos for safe use. Obtain Cheater (Sprong) first.
-
----
-
-## Open Questions
-
-- **Recovery + Chevalam interaction:** Chevalam prevents healing and shields. Does Recovery Lumina (10% health per turn start) count as healing? Unverified — worth testing in practice.
-- **Defiant Strike timing:** When parry rate improves enough to justify 30% HP cost per use.
-- **Dreameso timing:** When parry/counterattack rate is high enough to make Rank gain on Counterattack reliable. Post-game.
-- **Seeram + End Bringer stunlock build:** Worth investigating for post-game Simon fight specifically.
-- **Verso stat allocation:** Agility 99, Luck 99, Might 27. Whether Might is optimal over other allocations — unconfirmed.
-- **Unconfirmed weapon details:** Sakaram, Cruleram, Lanceram, Liteso, Abysseram, Confuso, Danseso, Delaram, Demonam, Noahram, Sireso, Verleso — abilities/scaling not yet documented.
 
 ---
 
