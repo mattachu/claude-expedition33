@@ -122,62 +122,64 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ### LP Budget
 <!-- GENERATED:START characters:Verso:LP -->
 - **Current capacity:** 285 LP
-- **Used:** 282 LP
-- **Spare:** 3 LP
+- **Used:** 285 LP
+- **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Lumina Adjustments
 
 <!-- GENERATED:START characters:Verso:Lumina:adjustments -->
-| Lumina                 | Change   | LP | Notes                                                                          |
-|------------------------|----------|----|--------------------------------------------------------------------------------|
-| Breaking Death         | Excluded | 5  | Free from Breaking Death Pictos                                                |
-| Second Chance          | Excluded | 40 | Free from Second Chance Pictos                                                 |
-| Confident Fighter      | Added    | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block            |
-| Warming Up             | Added    | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks            |
-| Energising Attack I    | Added    | 10 |                                                                                |
-| Energising Start II    | Added    | 10 |                                                                                |
-| Staggering Attack      | Added    | 1  |                                                                                |
-| Augmented First Strike | Added    | 5  | 5LP.                                                                           |
-| Auto Rush              | Added    | 10 | 10LP. Applies Rush for 3 turns on battle start.                                |
-| Empowering Parry       | Added    | 5  | 5LP. Each successful Parry increases damage by 5% until end of following turn. |
-| Charging Critical      | Added    | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn.                     |
+| Lumina                 | Change   | LP | Notes                                                                                                |
+|------------------------|----------|----|------------------------------------------------------------------------------------------------------|
+| Breaking Death         | Excluded | 5  | Free from Breaking Death Pictos                                                                      |
+| Second Chance          | Excluded | 40 | Free from Second Chance Pictos                                                                       |
+| Confident Fighter      | Added    | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block                                  |
+| Warming Up             | Added    | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks                                  |
+| Energising Attack I    | Added    | 10 |                                                                                                      |
+| Energising Start II    | Added    | 10 |                                                                                                      |
+| Staggering Attack      | Added    | 1  |                                                                                                      |
+| Augmented First Strike | Added    | 5  | 5LP.                                                                                                 |
+| Auto Rush              | Added    | 10 | 10LP. Applies Rush for 3 turns on battle start.                                                      |
+| Empowering Parry       | Added    | 5  | 5LP. Each successful Parry increases damage by 5% until end of following turn.                       |
+| Charging Critical      | Added    | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn.                                           |
+| Energising Break       | Added    | 3  | 3LP. +3 AP on Breaking a target. Enables Perfect Break → Stun → Cheater turn → End Bringer rotation. |
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Verso:Lumina -->
-| Lumina                 | LP | Notes                                                                                             |
-|------------------------|----|---------------------------------------------------------------------------------------------------|
-| Anti-Blight            | 10 | Especially important in Renoir's Drafts                                                           |
-| Augmented First Strike | 5  | 5LP.                                                                                              |
-| Auto Rush              | 10 | 10LP. Applies Rush for 3 turns on battle start.                                                   |
-| Base Shield            | 20 | Verso: previously non-functional with Chevalam L4; now available with Simoso — see open question. |
-| Breaker                | 10 | Main break damage booster                                                                         |
-| Breaking Burn          | 5  |                                                                                                   |
-| Breaking Counter       | 3  |                                                                                                   |
-| Breaking Death         | —  | FREE from Breaking Death Pictos                                                                   |
-| Burning Shots          | 3  |                                                                                                   |
-| Charging Critical      | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn.                                        |
-| Cheater                | 40 | Essential for endgame builds                                                                      |
-| Confident Fighter      | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block                               |
-| Critical Break         | 5  |                                                                                                   |
-| Dead Energy I          | 2  |                                                                                                   |
-| Dead Energy II         | 2  |                                                                                                   |
-| Dodger                 | 1  |                                                                                                   |
-| Empowering Parry       | 5  | 5LP. Each successful Parry increases damage by 5% until end of following turn.                    |
-| Energising Attack I    | 10 |                                                                                                   |
-| Energising Start I     | 5  | Boosted by Energy Master to 8AP on battle start                                                   |
-| Energising Start II    | 10 |                                                                                                   |
-| Energising Turn        | 20 | Main AP flow generator; boosted by Energy Master                                                  |
-| Energy Master          | 40 | Add 1 to AP boosts (not double) — game-changing for AP generation                                 |
-| Painted Power          | 5  | Essential for all characters from Act 3 onwards                                                   |
-| Second Chance          | —  | FREE from Second Chance Pictos                                                                    |
-| Shortcut               | 5  |                                                                                                   |
-| Staggering Attack      | 1  |                                                                                                   |
-| Survivor               | 20 | Secondary safety net before Second Chance                                                         |
-| Teamwork               | 5  |                                                                                                   |
-| Warming Up             | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks                               |
+| Lumina                 | LP | Notes                                                                                                |
+|------------------------|----|------------------------------------------------------------------------------------------------------|
+| Anti-Blight            | 10 | Especially important in Renoir's Drafts                                                              |
+| Augmented First Strike | 5  | 5LP.                                                                                                 |
+| Auto Rush              | 10 | 10LP. Applies Rush for 3 turns on battle start.                                                      |
+| Base Shield            | 20 | Verso: previously non-functional with Chevalam L4; now available with Simoso — see open question.    |
+| Breaker                | 10 | Main break damage booster                                                                            |
+| Breaking Burn          | 5  |                                                                                                      |
+| Breaking Counter       | 3  |                                                                                                      |
+| Breaking Death         | —  | FREE from Breaking Death Pictos                                                                      |
+| Burning Shots          | 3  |                                                                                                      |
+| Charging Critical      | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn.                                           |
+| Cheater                | 40 | Essential for endgame builds                                                                         |
+| Confident Fighter      | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block                                  |
+| Critical Break         | 5  |                                                                                                      |
+| Dead Energy I          | 2  |                                                                                                      |
+| Dead Energy II         | 2  |                                                                                                      |
+| Dodger                 | 1  |                                                                                                      |
+| Empowering Parry       | 5  | 5LP. Each successful Parry increases damage by 5% until end of following turn.                       |
+| Energising Attack I    | 10 |                                                                                                      |
+| Energising Break       | 3  | 3LP. +3 AP on Breaking a target. Enables Perfect Break → Stun → Cheater turn → End Bringer rotation. |
+| Energising Start I     | 5  | Boosted by Energy Master to 8AP on battle start                                                      |
+| Energising Start II    | 10 |                                                                                                      |
+| Energising Turn        | 20 | Main AP flow generator; boosted by Energy Master                                                     |
+| Energy Master          | 40 | Add 1 to AP boosts (not double) — game-changing for AP generation                                    |
+| Painted Power          | 5  | Essential for all characters from Act 3 onwards                                                      |
+| Second Chance          | —  | FREE from Second Chance Pictos                                                                       |
+| Shortcut               | 5  |                                                                                                      |
+| Staggering Attack      | 1  |                                                                                                      |
+| Survivor               | 20 | Secondary safety net before Second Chance                                                            |
+| Teamwork               | 5  |                                                                                                      |
+| Warming Up             | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks                                  |
 <!-- GENERATED:END -->
 
 ---

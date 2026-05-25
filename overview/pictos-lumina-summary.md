@@ -177,34 +177,36 @@ Adjustments each character makes to their team's core Lumina set — exclusions 
 ### Verso
 
 <!-- GENERATED:START characters:Verso:Lumina:adjustments -->
-| Lumina                 | Change   | LP | Notes                                                                          |
-|------------------------|----------|----|--------------------------------------------------------------------------------|
-| Breaking Death         | Excluded | 5  | Free from Breaking Death Pictos                                                |
-| Second Chance          | Excluded | 40 | Free from Second Chance Pictos                                                 |
-| Confident Fighter      | Added    | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block            |
-| Warming Up             | Added    | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks            |
-| Energising Attack I    | Added    | 10 |                                                                                |
-| Energising Start II    | Added    | 10 |                                                                                |
-| Staggering Attack      | Added    | 1  |                                                                                |
-| Augmented First Strike | Added    | 5  | 5LP.                                                                           |
-| Auto Rush              | Added    | 10 | 10LP. Applies Rush for 3 turns on battle start.                                |
-| Empowering Parry       | Added    | 5  | 5LP. Each successful Parry increases damage by 5% until end of following turn. |
-| Charging Critical      | Added    | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn.                     |
+| Lumina                 | Change   | LP | Notes                                                                                                |
+|------------------------|----------|----|------------------------------------------------------------------------------------------------------|
+| Breaking Death         | Excluded | 5  | Free from Breaking Death Pictos                                                                      |
+| Second Chance          | Excluded | 40 | Free from Second Chance Pictos                                                                       |
+| Confident Fighter      | Added    | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block                                  |
+| Warming Up             | Added    | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks                                  |
+| Energising Attack I    | Added    | 10 |                                                                                                      |
+| Energising Start II    | Added    | 10 |                                                                                                      |
+| Staggering Attack      | Added    | 1  |                                                                                                      |
+| Augmented First Strike | Added    | 5  | 5LP.                                                                                                 |
+| Auto Rush              | Added    | 10 | 10LP. Applies Rush for 3 turns on battle start.                                                      |
+| Empowering Parry       | Added    | 5  | 5LP. Each successful Parry increases damage by 5% until end of following turn.                       |
+| Charging Critical      | Added    | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn.                                           |
+| Energising Break       | Added    | 3  | 3LP. +3 AP on Breaking a target. Enables Perfect Break → Stun → Cheater turn → End Bringer rotation. |
 <!-- GENERATED:END -->
 
 ### Sciel
 
 <!-- GENERATED:START characters:Sciel:Lumina:adjustments -->
-| Lumina              | Change   | LP | Notes                                                         |
-|---------------------|----------|----|---------------------------------------------------------------|
-| Energy Master       | Excluded | 40 | Free from Energy Master Pictos                                |
-| Recovery            | Added    | 10 | Passive heal on turn start, increases survivability           |
-| Accelerating Heal   | Added    | 5  | Rush on heal.                                                 |
-| Energising Heal     | Added    | 10 | 2 AP on healing an ally — primary AP engine with Grim Harvest |
-| Protecting Heal     | Added    | 5  | Shell on heal                                                 |
-| Healing Tint Energy | Added    | 1  | 1 AP on Healing Tint use — small AP top-up                    |
-| Breaking Attack     | Added    | 10 | Can Break on base attack — cheaper than Final Path            |
-| Charging Alteration | Added    | 10 | Build Gradient Charge on applying buffs such as All Set       |
+| Lumina              | Change   | LP | Notes                                                                   |
+|---------------------|----------|----|-------------------------------------------------------------------------|
+| Energy Master       | Excluded | 40 | Free from Energy Master Pictos                                          |
+| Recovery            | Added    | 10 | Passive heal on turn start, increases survivability                     |
+| Accelerating Heal   | Added    | 5  | Rush on heal.                                                           |
+| Energising Heal     | Added    | 10 | 2 AP on healing an ally — primary AP engine with Grim Harvest           |
+| Protecting Heal     | Added    | 5  | Shell on heal                                                           |
+| Healing Tint Energy | Added    | 1  | 1 AP on Healing Tint use — small AP top-up                              |
+| Breaking Attack     | Added    | 10 | Can Break on base attack — cheaper than Final Path                      |
+| Charging Alteration | Added    | 10 | Build Gradient Charge on applying buffs such as All Set                 |
+| Gradient Break      | Added    | 5  | 5LP. +50% Gradient Charge on Breaking. Synergises with Breaking Attack. |
 <!-- GENERATED:END -->
 
 ### Lune
@@ -212,8 +214,8 @@ Adjustments each character makes to their team's core Lumina set — exclusions 
 <!-- GENERATED:START characters:Lune:Lumina:adjustments -->
 | Lumina            | Change   | LP | Notes                                                      |
 |-------------------|----------|----|------------------------------------------------------------|
-| Survivor          | Excluded | 20 | Not enough LP for both Second Chance and Survivor          |
 | Critical Break    | Excluded | 5  | Dropped to save LP, as not her primary role                |
+| Burning Shots     | Excluded | 3  | Dropped to free LP for Survivor                            |
 | Accelerating Heal | Added    | 5  | Rush on heal — synergy with Healing Light                  |
 | Protecting Heal   | Added    | 5  | Shell on heal                                              |
 | Energising Burn   | Added    | 10 | 10LP. +1 AP on applying Burn, once per turn.               |

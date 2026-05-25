@@ -158,7 +158,7 @@
       "Confident"
     ],
     "lp_total": 285,
-    "lp_used": 282,
+    "lp_used": 285,
     "lumina_core_exclusions": [
       {
         "name": "Breaking Death",
@@ -202,6 +202,10 @@
       {
         "name": "Charging Critical",
         "notes": "10LP. +20% Gradient Charge on Critical Hit, once per turn."
+      },
+      {
+        "name": "Energising Break",
+        "notes": "3LP. +3 AP on Breaking a target. Enables Perfect Break → Stun → Cheater turn → End Bringer rotation."
       }
     ],
     "skills_equipped": [
@@ -289,7 +293,7 @@
       "Energising Shots"
     ],
     "lp_total": 262,
-    "lp_used": 257,
+    "lp_used": 262,
     "lumina_core_exclusions": [
       {
         "name": "Energy Master",
@@ -324,6 +328,10 @@
       {
         "name": "Charging Alteration",
         "notes": "Build Gradient Charge on applying buffs such as All Set"
+      },
+      {
+        "name": "Gradient Break",
+        "notes": "5LP. +50% Gradient Charge on Breaking. Synergises with Breaking Attack."
       }
     ],
     "skills_equipped": [
@@ -405,16 +413,16 @@
       "Burn Affinity",
       "Burning Death"
     ],
-    "lp_total": 207,
-    "lp_used": 207,
+    "lp_total": 224,
+    "lp_used": 224,
     "lumina_core_exclusions": [
-      {
-        "name": "Survivor",
-        "notes": "Not enough LP for both Second Chance and Survivor"
-      },
       {
         "name": "Critical Break",
         "notes": "Dropped to save LP, as not her primary role"
+      },
+      {
+        "name": "Burning Shots",
+        "notes": "Dropped to free LP for Survivor"
       }
     ],
     "lumina_extras": [

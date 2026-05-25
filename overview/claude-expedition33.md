@@ -49,9 +49,9 @@ Fetch that file only when reviewing specific past errors.
 | Character                         | Level | Role                         | Weapon        | Pictos                                        | LP      |
 |-----------------------------------|-------|------------------------------|---------------|-----------------------------------------------|---------|
 | [Maelle](../characters/maelle.md) | 95    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut       | 305/305 |
-| [Verso](../characters/verso.md)   | 94    | Endgame main DPS             | Simoso (33)   | Second Chance, Breaking Death, Confident      | 282/285 |
-| [Sciel](../characters/sciel.md)   | 94    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots      | 257/262 |
-| [Lune](../characters/lune.md)     | 89    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death   | 207/207 |
+| [Verso](../characters/verso.md)   | 94    | Endgame main DPS             | Simoso (33)   | Second Chance, Breaking Death, Confident      | 285/285 |
+| [Sciel](../characters/sciel.md)   | 94    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots      | 262/262 |
+| [Lune](../characters/lune.md)     | 89    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death   | 224/224 |
 | [Monoco](../characters/monoco.md) | 89    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Cheater | 175/175 |
 <!-- GENERATED:END -->
 
@@ -62,7 +62,7 @@ Fetch that file only when reviewing specific past errors.
 
 ### Inventory
 <!-- GENERATED:START playthrough:inventory -->
-- Colour of Lumina: 19
+- Colour of Lumina: 2
 - Recoats: 37
 - Chroma Catalysts: 67 standard, 74 polished, 101 resplendent, 53 grandiose, 5 perfect
 - Chroma: 1616433
@@ -169,6 +169,7 @@ If the main party is fully wiped in a battle, the player can continue the battle
 - **Charging Critical for Maelle, Verso, Lune (Chat 25):** All three now have Charging Critical (10LP). Observe gradient charge build rate in practice — confirm whether the +20% per crit is meaningfully accelerating gradient skill access.
 - **Greater Powerful value for Maelle (Chat 25):** Added (+15% to Powerful → ~40% total bonus). Confirm uplift feels meaningful in practice vs pre-chat-25 baseline.
 - **Empowering Parry for Verso (Chat 25):** Added (5LP). Practical value depends on how consistently parrying is achieved — monitor in Verso's Drafts.
+- **Verso Energising Break rotation (Chat 26):** Energising Break (3LP) added. Theoretical rotation: Perfect Break (7 AP) → Energising Break trigger (+3 AP via Energy Master) → Cheater turn (+3 AP) → End Bringer (9 AP) on Stunned target. Confirm this fires cleanly in practice.
 
 ---
 

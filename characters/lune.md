@@ -131,8 +131,8 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 
 ### LP Budget
 <!-- GENERATED:START characters:Lune:LP -->
-- **Current capacity:** 207 LP
-- **Used:** 207 LP
+- **Current capacity:** 224 LP
+- **Used:** 224 LP
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
@@ -141,8 +141,8 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 <!-- GENERATED:START characters:Lune:Lumina:adjustments -->
 | Lumina            | Change   | LP | Notes                                                      |
 |-------------------|----------|----|------------------------------------------------------------|
-| Survivor          | Excluded | 20 | Not enough LP for both Second Chance and Survivor          |
 | Critical Break    | Excluded | 5  | Dropped to save LP, as not her primary role                |
+| Burning Shots     | Excluded | 3  | Dropped to free LP for Survivor                            |
 | Accelerating Heal | Added    | 5  | Rush on heal — synergy with Healing Light                  |
 | Protecting Heal   | Added    | 5  | Shell on heal                                              |
 | Energising Burn   | Added    | 10 | 10LP. +1 AP on applying Burn, once per turn.               |
@@ -160,7 +160,6 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 | Breaking Burn      | 5  |                                                            |
 | Breaking Counter   | 3  |                                                            |
 | Breaking Death     | 5  |                                                            |
-| Burning Shots      | 3  |                                                            |
 | Charging Critical  | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn. |
 | Cheater            | 40 |                                                            |
 | Dodger             | 1  |                                                            |
@@ -172,6 +171,7 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 | Recovery           | 10 |                                                            |
 | Second Chance      | 40 | Revive with 100% Health, once per battle.                  |
 | Shortcut           | 5  |                                                            |
+| Survivor           | 20 |                                                            |
 | Teamwork           | 5  |                                                            |
 <!-- GENERATED:END -->
 
