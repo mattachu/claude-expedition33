@@ -1306,8 +1306,6 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 
 CHARACTERS = ['Maelle', 'Verso', 'Sciel', 'Lune', 'Monoco']
-MAIN_TEAM = {'Maelle', 'Verso', 'Sciel'}
-RESERVE_TEAM = {'Lune', 'Monoco'}
 
 GENERATED_RE = re.compile(
     r'<!-- GENERATED:START (\S+) -->\n(.*?)<!-- GENERATED:END -->',
@@ -1352,11 +1350,12 @@ def load_data(repo_root):
 
 
 # ---------------------------------------------------------------------------
-# Validation
+# Validation — Pictos assignments
 # ---------------------------------------------------------------------------
 
-def validate_pictos(data, interactive=True):
-    """Cross-check characters.json pictos_equipped vs pictos-lumina.json equipped_by."""
+def validate_pictos(data, repo_root, interactive=True, dry_run=False):
+    """Cross-check characters.json pictos_equipped vs pictos-lumina.json equipped_by.
+    Writes corrected JSON back to disk on fix."""
     characters = data['characters']
     pictos_list = data['pictos_lumina']['pictos']
 
@@ -1397,7 +1396,7 @@ def validate_pictos(data, interactive=True):
         print(f'    characters.json  pictos_equipped = {c["characters_says"]}')
 
     if not interactive:
-        print('\nERROR: Resolve conflicts before running generate.py.')
+        print('\nERROR: Resolve Pictos conflicts before running generate.py.')
         return False
 
     print('\n[1] Use pictos-lumina.json (equipped_by) as source of truth')
@@ -1421,6 +1420,8 @@ def validate_pictos(data, interactive=True):
                 if name not in eq:
                     eq.append(name)
         print('  Applied: characters.json updated to match pictos-lumina.json')
+        if not dry_run:
+            _write_json(Path(repo_root) / 'data' / 'characters.json', data['characters'])
 
     elif choice == '2':
         for c in conflicts:
@@ -1430,8 +1431,186 @@ def validate_pictos(data, interactive=True):
                     p['equipped_by'] = correct
                     break
         print('  Applied: pictos-lumina.json updated to match characters.json')
+        if not dry_run:
+            _write_json(Path(repo_root) / 'data' / 'pictos-lumina.json', data['pictos_lumina'])
+
+    else:
+        return False
 
     return True
+
+
+# ---------------------------------------------------------------------------
+# Validation — LP totals
+# ---------------------------------------------------------------------------
+
+def validate_lp(data, repo_root, interactive=True, dry_run=False):
+    """Check LP totals for consistency across core sets and per-character loadouts.
+
+    Four checks:
+      1. core total_lp vs sum of entry lp fields (stale total after core list change)
+      2. sum of entry lp fields vs sum of plu lp_cost (core entry lp drifted from catalogue)
+      3. lp_used per character vs computed from active Lumina list (stale after loadout change)
+      4. lp_used > lp_total per character (over-budget)
+
+    Checks 1 and 3 are fixable interactively; 2 and 4 require manual correction.
+    Writes corrected JSON back to disk on fix.
+    """
+    characters = data['characters']
+    pictos_lumina = data['pictos_lumina']
+    playthrough = data['playthrough']
+    plu = pictos_lookup(pictos_lumina)
+
+    active_party_set = set(playthrough.get('active_party', []))
+    reserve_party_set = set(playthrough.get('reserve_party', []))
+
+    issues = []
+
+    # --- Check core sets ---
+    for team in ('main', 'reserve'):
+        core = pictos_lumina.get('core_lumina_suite', {}).get(f'{team}_team', {})
+        stored_total = core.get('total_lp')
+        entries = core.get('entries', [])
+
+        # Check 1: stored total_lp vs sum of entry lp fields
+        sum_entry_lp = sum(e.get('lp', 0) for e in entries)
+        if stored_total is not None and stored_total != sum_entry_lp:
+            issues.append({
+                'type': 'core_total',
+                'team': team,
+                'path': f'core_lumina_suite.{team}_team.total_lp',
+                'stored': stored_total,
+                'computed': sum_entry_lp,
+                'description': (f'{team} team core total_lp: stored {stored_total}, '
+                                f'sum of entries {sum_entry_lp}'),
+            })
+
+        # Check 2: sum of entry lp fields vs sum of plu lp_cost
+        mismatched = []
+        for e in entries:
+            entry_lp = e.get('lp', 0)
+            plu_lp = plu.get(e['name'], {}).get('lp_cost')
+            if plu_lp is not None and entry_lp != plu_lp:
+                mismatched.append((e['name'], entry_lp, plu_lp))
+        if mismatched:
+            issues.append({
+                'type': 'core_entry_vs_plu',
+                'team': team,
+                'mismatched': mismatched,
+                'description': (f'{team} team: {len(mismatched)} core entry lp field(s) '
+                                f'differ from plu catalogue lp_cost'),
+            })
+
+    # --- Check per-character LP ---
+    for char_name, char in characters.items():
+        is_main = char_name in active_party_set
+        core_key = 'main_team' if is_main else 'reserve_team'
+        core_entries = (pictos_lumina.get('core_lumina_suite', {})
+                        .get(core_key, {}).get('entries', []))
+
+        pictos_equipped = set(char.get('pictos_equipped', []))
+        exclusion_names = {e['name'] for e in char.get('lumina_core_exclusions', [])}
+        extras = char.get('lumina_extras', [])
+
+        # Compute expected lp_used from plu as source of truth
+        computed_used = 0
+        for entry in core_entries:
+            name = entry['name']
+            if name in exclusion_names or name in pictos_equipped:
+                continue
+            computed_used += plu.get(name, {}).get('lp_cost', 0)
+        for extra in extras:
+            name = extra['name']
+            if name in pictos_equipped:
+                continue
+            computed_used += plu.get(name, {}).get('lp_cost', 0)
+
+        stored_used = char.get('lp_used')
+        stored_total = char.get('lp_total')
+
+        # Check 3: stored lp_used vs computed
+        if stored_used is not None and stored_used != computed_used:
+            issues.append({
+                'type': 'char_lp_used',
+                'char': char_name,
+                'path': f'{char_name}.lp_used',
+                'stored': stored_used,
+                'computed': computed_used,
+                'description': (f'{char_name} lp_used: stored {stored_used}, '
+                                f'computed {computed_used}'),
+            })
+
+        # Check 4: lp_used > lp_total
+        if (stored_used is not None and stored_total is not None
+                and stored_used > stored_total):
+            issues.append({
+                'type': 'char_over_budget',
+                'char': char_name,
+                'description': (f'{char_name} over LP budget: '
+                                f'lp_used {stored_used} > lp_total {stored_total}'),
+            })
+
+    if not issues:
+        return True
+
+    print(f'\n{len(issues)} LP issue(s):')
+    for issue in issues:
+        print(f'  {issue["description"]}')
+        if issue['type'] == 'core_entry_vs_plu':
+            for name, entry_lp, plu_lp in issue['mismatched']:
+                print(f'    {name}: entry lp={entry_lp}, plu lp_cost={plu_lp}')
+
+    fixable = [i for i in issues if i['type'] in ('core_total', 'char_lp_used')]
+    unfixable = [i for i in issues if i['type'] not in ('core_total', 'char_lp_used')]
+
+    if unfixable:
+        print('\nThe following issues require manual correction before proceeding:')
+        for issue in unfixable:
+            print(f'  {issue["description"]}')
+        return False
+
+    if not interactive:
+        print('\nERROR: Resolve LP issues before running generate.py.')
+        return False
+
+    print('\n[1] Update stored values to match computed and continue')
+    print('[2] Abort')
+    choice = input('Choice: ').strip()
+
+    if choice != '1':
+        return False
+
+    # Apply fixes to in-memory data
+    chars_changed = False
+    pl_changed = False
+    for issue in fixable:
+        if issue['type'] == 'core_total':
+            team = issue['team']
+            pictos_lumina['core_lumina_suite'][f'{team}_team']['total_lp'] = issue['computed']
+            print(f'  Fixed: {issue["path"]} → {issue["computed"]}')
+            pl_changed = True
+        elif issue['type'] == 'char_lp_used':
+            char_name = issue['char']
+            characters[char_name]['lp_used'] = issue['computed']
+            print(f'  Fixed: {issue["path"]} → {issue["computed"]}')
+            chars_changed = True
+
+    # Write back to disk
+    if not dry_run:
+        if chars_changed:
+            _write_json(Path(repo_root) / 'data' / 'characters.json', characters)
+        if pl_changed:
+            _write_json(Path(repo_root) / 'data' / 'pictos-lumina.json', pictos_lumina)
+
+    return True
+
+
+def _write_json(path, data):
+    """Write a JSON data structure back to disk."""
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+        f.write('\n')
+    print(f'  Written: {path}')
 
 
 # ---------------------------------------------------------------------------
@@ -1478,6 +1657,7 @@ def gen_attributes(char_name, char):
     for a in sorted_attrs:
         rows.append([a.capitalize(), attrs.get(a, 0)])
     return md_table(['Attribute', 'Value'], rows)
+
 
 def gen_stats(char_name, char):
     """Stats table: Stat | Base | Modified."""
@@ -1530,9 +1710,9 @@ def gen_lp(char_name, char):
             f'- **Spare:** {spare} LP\n')
 
 
-def gen_lumina(char_name, char, pictos_lumina, plu):
-    """Lumina loadout table."""
-    is_main = char_name in MAIN_TEAM
+def gen_lumina(char_name, char, pictos_lumina, plu, active_party_set, reserve_party_set):
+    """Full Lumina loadout table (all active Lumina, alphabetical)."""
+    is_main = char_name in active_party_set
     core_key = 'main_team' if is_main else 'reserve_team'
     core_entries = (pictos_lumina.get('core_lumina_suite', {})
                     .get(core_key, {}).get('entries', []))
@@ -1570,6 +1750,41 @@ def gen_lumina(char_name, char, pictos_lumina, plu):
 
     rows.sort(key=lambda r: r[0])
     return md_table(['Lumina', 'LP', 'Notes'], rows)
+
+
+def gen_lumina_adjustments(char_name, char, pictos_lumina, plu,
+                           active_party_set, reserve_party_set):
+    """Adjustments table: departures from the core Lumina set for this character.
+
+    Exclusions (core Lumina this character doesn't use) appear first,
+    then additions (character-specific extras). Returns a note if there
+    are no adjustments.
+    """
+    is_main = char_name in active_party_set
+    core_key = 'main_team' if is_main else 'reserve_team'
+
+    pictos_equipped = set(char.get('pictos_equipped', []))
+    exclusions = char.get('lumina_core_exclusions', [])
+    extras = char.get('lumina_extras', [])
+
+    if not exclusions and not extras:
+        return '*No adjustments to core set.*\n'
+
+    rows = []
+
+    for excl in exclusions:
+        name = excl['name']
+        notes = excl.get('notes', excl.get('note', ''))
+        lp = plu.get(name, {}).get('lp_cost', '?')
+        rows.append([name, 'Excluded', lp, notes])
+
+    for extra in extras:
+        name = extra['name']
+        notes = extra.get('notes', extra.get('note', ''))
+        lp = '—' if name in pictos_equipped else plu.get(name, {}).get('lp_cost', '?')
+        rows.append([name, 'Added', lp, notes])
+
+    return md_table(['Lumina', 'Change', 'LP', 'Notes'], rows)
 
 
 # ---------------------------------------------------------------------------
@@ -1786,12 +2001,13 @@ def gen_core_lumina(pictos_lumina, team):
     return line + '\n'
 
 
-def gen_lumina_core_table(pictos_lumina, team, plu):
-    """Full table for pictos-lumina-summary.md."""
+def gen_lumina_core_table(pictos_lumina, team, plu, active_party, reserve_party):
+    """Full core Lumina table for pictos-lumina-summary.md and party-summary.md."""
     core = pictos_lumina.get('core_lumina_suite', {}).get(f'{team}_team', {})
     total_lp = core.get('total_lp', '?')
     entries = core.get('entries', [])
-    char_labels = 'Maelle, Verso, Sciel' if team == 'main' else 'Lune, Monoco'
+    char_list = active_party if team == 'main' else reserve_party
+    char_labels = ', '.join(char_list)
 
     notes = core.get('notes', '')
     header = f'**Total: {total_lp} LP** — applied to {char_labels}.\n'
@@ -1837,24 +2053,16 @@ def gen_phase_checklist(playthrough):
     def render_item(item, indent=0):
         prefix = '  ' * indent
 
-        # Group (has children)
         if 'items' in item:
             children = item.get('items', [])
-
             total = len(children)
             done_count = sum(1 for c in children if c.get('done', False))
             done = (total > 0 and done_count == total)
-
-            # Parent line with progress
             lines.append(
                 f'{prefix}- {"✅" if done else "⬜"} {item.get("label", item.get("id", ""))} ({done_count}/{total})'
             )
-
-            # Render children
             for child in children:
                 render_item(child, indent + 1)
-
-        # Leaf item
         else:
             done = item.get('done', False)
             lines.append(
@@ -1879,35 +2087,54 @@ def build_generators(data):
     playthrough = data['playthrough']
     plu = pictos_lookup(pictos_lumina)
 
+    active_party = playthrough.get('active_party', [])
+    reserve_party = playthrough.get('reserve_party', [])
+    active_party_set = set(active_party)
+    reserve_party_set = set(reserve_party)
+
+    # Warn if any character is in neither team
+    for name in CHARACTERS:
+        if name in characters and name not in active_party_set and name not in reserve_party_set:
+            print(f'  WARNING: {name} is in characters.json but not in active or reserve party')
+
     gens = {}
 
     for name in CHARACTERS:
         if name not in characters:
             continue
         char = characters[name]
-        gens[f'characters:{name}:attributes'] = gen_attributes(name, char)
-        gens[f'characters:{name}:stats']      = gen_stats(name, char)
-        gens[f'characters:{name}:Pictos']     = gen_pictos(name, char, plu)
-        gens[f'characters:{name}:LP']         = gen_lp(name, char)
-        gens[f'characters:{name}:Lumina']     = gen_lumina(name, char, pictos_lumina, plu)
-        gens[f'characters:{name}:skills']     = gen_skills(name, char, skills)
-        gens[f'characters:{name}:gradients']  = gen_gradients(name, char)
+        gens[f'characters:{name}:attributes']         = gen_attributes(name, char)
+        gens[f'characters:{name}:stats']              = gen_stats(name, char)
+        gens[f'characters:{name}:Pictos']             = gen_pictos(name, char, plu)
+        gens[f'characters:{name}:LP']                 = gen_lp(name, char)
+        gens[f'characters:{name}:Lumina']             = gen_lumina(name, char, pictos_lumina, plu,
+                                                                    active_party_set, reserve_party_set)
+        gens[f'characters:{name}:Lumina:adjustments'] = gen_lumina_adjustments(name, char,
+                                                                                pictos_lumina, plu,
+                                                                                active_party_set,
+                                                                                reserve_party_set)
+        gens[f'characters:{name}:skills']             = gen_skills(name, char, skills)
+        gens[f'characters:{name}:gradients']          = gen_gradients(name, char)
         for w in weapons.get(name, []):
             gens[f'weapons:{name}:{w["name"]}'] = gen_weapon(name, w['name'], weapons)
 
-    gens['playthrough:summary']             = gen_playthrough_summary(playthrough, characters)
-    gens['playthrough:party']               = gen_party_list(playthrough)
-    gens['playthrough:inventory']           = gen_inventory(playthrough)
-    gens['characters:summary:LP']           = gen_lp_summary(characters)
-    gens['characters:summary:party']        = gen_party_table(characters, plu, weapons)
-    gens['pictos:core:main']                = gen_core_lumina(pictos_lumina, 'main')
-    gens['pictos:core:reserve']             = gen_core_lumina(pictos_lumina, 'reserve')
-    gens['lumina:core:main']               = gen_lumina_core_table(pictos_lumina, 'main', plu)
-    gens['lumina:core:reserve']            = gen_lumina_core_table(pictos_lumina, 'reserve', plu)
-    gens['lumina:situational']             = gen_lumina_situational(pictos_lumina, plu)
-    gens['lumina:future']                  = gen_lumina_future(pictos_lumina, plu)
-    gens['playthrough:current_phase_checklist'] = gen_phase_checklist(playthrough)
-    gens['playthrough:phase_3_checklist']   = gen_phase_checklist(playthrough)  # compat
+    gens['playthrough:summary']                  = gen_playthrough_summary(playthrough, characters)
+    gens['playthrough:party']                    = gen_party_list(playthrough)
+    gens['playthrough:inventory']                = gen_inventory(playthrough)
+    gens['characters:summary:LP']                = gen_lp_summary(characters)
+    gens['characters:summary:party']             = gen_party_table(characters, plu, weapons)
+    gens['pictos:core:main']                     = gen_core_lumina(pictos_lumina, 'main')
+    gens['pictos:core:reserve']                  = gen_core_lumina(pictos_lumina, 'reserve')
+    gens['lumina:core:main']                     = gen_lumina_core_table(pictos_lumina, 'main',
+                                                                          plu, active_party,
+                                                                          reserve_party)
+    gens['lumina:core:reserve']                  = gen_lumina_core_table(pictos_lumina, 'reserve',
+                                                                          plu, active_party,
+                                                                          reserve_party)
+    gens['lumina:situational']                   = gen_lumina_situational(pictos_lumina, plu)
+    gens['lumina:future']                        = gen_lumina_future(pictos_lumina, plu)
+    gens['playthrough:current_phase_checklist']  = gen_phase_checklist(playthrough)
+    gens['playthrough:phase_3_checklist']        = gen_phase_checklist(playthrough)  # compat
 
     return gens
 
@@ -1970,6 +2197,8 @@ def generate_party_summary(data, out_path, dry_run=False):
 
     active = playthrough.get('active_party', [])
     reserve = playthrough.get('reserve_party', [])
+    active_party_set = set(active)
+    reserve_party_set = set(reserve)
 
     lines = [
         '# Party Summary',
@@ -1986,6 +2215,12 @@ def generate_party_summary(data, out_path, dry_run=False):
         '## Active Party',
         '',
     ]
+
+    # Core Lumina set for the active team — shown once at top of section
+    lines.append('### Core Lumina Set')
+    lines.append('')
+    lines.append(gen_lumina_core_table(pictos_lumina, 'main', plu, active, reserve))
+    lines.append('')
 
     for name in active:
         if name not in characters:
@@ -2027,17 +2262,24 @@ def generate_party_summary(data, out_path, dry_run=False):
             lines.append(md_table(['Pictos', 'Level', 'Stats'], pictos_rows))
             lines.append('')
 
-        # Lumina loadout
-        lumina_table = gen_lumina(name, char, pictos_lumina, plu)
-        lines.append('**Lumina loadout:**')
+        # Lumina adjustments
+        adjustments = gen_lumina_adjustments(name, char, pictos_lumina, plu,
+                                             active_party_set, reserve_party_set)
+        lines.append('**Lumina adjustments:**')
         lines.append('')
-        lines.append(lumina_table)
+        lines.append(adjustments)
 
         used = char.get('lp_used', '?')
         total = char.get('lp_total', '?')
         lines += [f'**LP:** {used}/{total}', '', '---', '']
 
     lines += ['## Reserve Party', '']
+
+    # Core Lumina set for the reserve team — shown once at top of section
+    lines.append('### Core Lumina Set')
+    lines.append('')
+    lines.append(gen_lumina_core_table(pictos_lumina, 'reserve', plu, active, reserve))
+    lines.append('')
 
     for name in reserve:
         if name not in characters:
@@ -2079,10 +2321,11 @@ def generate_party_summary(data, out_path, dry_run=False):
             lines.append(md_table(['Pictos', 'Level', 'Stats'], pictos_rows))
             lines.append('')
 
-        lumina_table = gen_lumina(name, char, pictos_lumina, plu)
-        lines.append('**Lumina loadout:**')
+        adjustments = gen_lumina_adjustments(name, char, pictos_lumina, plu,
+                                             active_party_set, reserve_party_set)
+        lines.append('**Lumina adjustments:**')
         lines.append('')
-        lines.append(lumina_table)
+        lines.append(adjustments)
 
         used = char.get('lp_used', '?')
         total = char.get('lp_total', '?')
@@ -2183,25 +2426,26 @@ def run_generate(repo_root='.', interactive=True, dry_run=False):
         return False
 
     print('Validating Pictos assignments...')
-    if not validate_pictos(data, interactive=interactive):
+    if not validate_pictos(data, repo, interactive=interactive, dry_run=dry_run):
         return False
 
-    print(f'Building generators...')
+    print('Validating LP totals...')
+    if not validate_lp(data, repo, interactive=interactive, dry_run=dry_run):
+        return False
+
+    print('Building generators...')
     generators = build_generators(data)
     print(f'  {len(generators)} keys ready')
 
-    # Update character files
     print('\nCharacter files:')
     for name in CHARACTERS:
         update_file(repo / 'characters' / f'{name.lower()}.md', generators, dry_run)
 
-    # Update overview files
     print('\nOverview files:')
     update_file(repo / 'overview' / 'claude-expedition33.md', generators, dry_run)
     update_file(repo / 'overview' / 'progress.md', generators, dry_run)
     update_file(repo / 'overview' / 'pictos-lumina-summary.md', generators, dry_run)
 
-    # Fully generated files
     print('\nGenerating party-summary.md...')
     generate_party_summary(data, repo / 'overview' / 'party-summary.md', dry_run)
 
