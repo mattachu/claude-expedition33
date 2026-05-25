@@ -8,7 +8,7 @@
 |-----------------------------------|-------|------------------------------|---------------|-----------------------------------------------|---------|
 | [Maelle](../characters/maelle.md) | 95    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut       | 305/305 |
 | [Verso](../characters/verso.md)   | 94    | Endgame main DPS             | Simoso (33)   | Second Chance, Breaking Death, Confident      | 282/285 |
-| [Sciel](../characters/sciel.md)   | 94    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots      | 260/262 |
+| [Sciel](../characters/sciel.md)   | 94    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots      | 257/262 |
 | [Lune](../characters/lune.md)     | 89    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death   | 207/207 |
 | [Monoco](../characters/monoco.md) | 89    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Cheater | 175/175 |
 
@@ -183,7 +183,7 @@
 | Survivor            | 20 | Secondary safety net before Second Chance                     |
 | Teamwork            | 5  |                                                               |
 
-**LP:** 260/262
+**LP:** 257/262
 
 ---
 

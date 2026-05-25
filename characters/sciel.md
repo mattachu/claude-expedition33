@@ -107,8 +107,8 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 ### LP Budget
 <!-- GENERATED:START characters:Sciel:LP -->
 - **Current capacity:** 262 LP
-- **Used:** 260 LP
-- **Spare:** 2 LP
+- **Used:** 257 LP
+- **Spare:** 5 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
