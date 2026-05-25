@@ -1,6 +1,7 @@
-<!-- SECTION -->
+# Clair Obscur: Expedition 33 — Chat 26
 
----
+<!-- SECTION -->
+## LP Audit and Lumina Updates
 
 **Matt:** Hi Claude! Let’s continue to chat about Expedition 33.
 
@@ -240,6 +241,7 @@ Do you want me to log this session now, or continue with more decisions first?
 ---
 
 <!-- SECTION -->
+## Sciel Lumina LP Verification
 
 **Matt:** Sciel seems to be on 262/262 in-game. Can you check the maths on her equipped Lumina please? I've attached the data files. Read the schema first, then query characters.json to get her equipped Lumina and query pictos-lumina.json to get the LP costs. *[Attached five data files and schema.md]*
 
@@ -428,6 +430,7 @@ What's the next step?
 ---
 
 <!-- SECTION -->
+## Sciel Data File Audit
 
 **Matt:** Now take that table from turn 10 and add three more columns: "Cost on File" (sourced from pictos-lumina.json), "In main team core" (boolean, sourced from pictos-lumina.json), "In Sciel's exclusions/additions" (cross for exclusions, tick for additions, or blank, sourced from characters.json)
 
@@ -524,6 +527,7 @@ Maybe I just decided to add that myself after the last chat. I remember thinking
 ---
 
 <!-- SECTION -->
+## Session Close
 
 **Matt:** You don't need to repeat actions that I've written. The wrap session will pull it from my turns as easily as from yours.
 
@@ -571,3 +575,178 @@ Sciel LP audit completed. Identified and reconciled discrepancies between in-gam
 **Transcript:** `/mnt/user-data/outputs/chat26.md` ✓
 
 ---
+
+<!-- SECTION -->
+## Session Wrap
+
+**Matt:** Hi Claude!
+
+Latest startup file is at https://cdn.jsdelivr.net/gh/mattachu/claude-tools@6741561/startup.md
+
+This is a wrap session for the latest Expedition 33 chat. Links file attached. Fetch `reference/session-procedure.md` and run `!wrap` steps.
+
+**Claude:** *[Fetched startup file and session-procedure.md]*
+
+Both files read. Ready to run `!wrap` for chat 25.
+
+Per the procedure, I need `chat25.md` uploaded to start Step 1. Please upload the transcript file and I'll begin.
+
+---
+
+**Matt:** I've had some issues with you not following wrap instructions very well. Please tell me what is step 1 for wrap?
+
+**Claude:** Step 1 is:
+
+**Split the transcript into sections and plan part grouping.**
+
+Run this bash command from `/home/claude/` as working directory:
+
+```bash
+csplit /mnt/user-data/uploads/chatN.md '/^<!-- SECTION -->$/' '{*}' --prefix=/home/claude/section --suffix-format='%02d.md'
+```
+
+`section00.md` is the transcript title header — skip it. Sections begin at `section01.md`.
+
+Then report:
+- Section count
+- Line count for all sections
+- Proposed part grouping targeting approximately 500–600 lines per part
+
+**Stop and confirm the grouping with you before continuing to Step 2.**
+
+---
+
+**Matt:** Ok, here's the transcript. Run step 1. *[Uploaded chat26.md]*
+
+**Claude:** Noted — the file is `chat26.md`, so N = 26.
+
+*[Ran csplit on /mnt/user-data/uploads/chat26.md]*
+
+4 sections found (plus the title header in `section00.md`). Line counts:
+
+| Section | Lines |
+|---------|-------|
+| section01 | 241 |
+| section02 | 188 |
+| section03 | 96 |
+| section04 | 48 |
+| **Total** | **573** |
+
+573 lines total fits comfortably within the 500–600 line target for a single part, so I'd propose:
+
+**Part 1: sections 01–04 (573 lines)**
+
+Just one part for this chat. Confirm and I'll move to Step 2.
+
+---
+
+**Matt:** Ok, in that case adjust the instructions as we go through — there will be no chat26-part1.md file, just the chat26.md full transcript. There will be no Part files list in the index and no part file separators in the table of contents.
+
+**Claude:** Understood. For chat 26:
+- No part files
+- No "Part Files" section in the index
+- Table of contents is a flat list of section entries with no part headings
+
+Moving to Step 2. Creating the index file first.
+
+*[Created /mnt/user-data/outputs/chat26-index.md]*
+
+Now processing section01.md:
+
+*[Read section01, inserted title "LP Audit and Lumina Updates", appended index entry]*
+
+*[Read section02, inserted title "Sciel Lumina LP Verification", appended index entry]*
+
+*[Read section03, inserted title "Sciel Data File Audit", appended index entry]*
+
+*[Read section04, inserted title "Session Close", appended index entry]*
+
+All sections processed. Confirming with you before moving to Step 3.
+
+The index looks like this so far:
+
+- **LP Audit and Lumina Updates** — Session startup; LP audit found no outstanding candidates from Chat 25; Verso gains Energising Break (3 LP); Lune drops Burning Shots, gains Survivor (20 LP), 17 CoL spent.
+- **Sciel Lumina LP Verification** — In-game LP cross-checked against data and screenshot; Claude made arithmetic errors; Matt corrected misclassified free Lumina; ACTION protocol established.
+- **Sciel Data File Audit** — Table comparing in-game vs file data revealed Gradient Break missing from Sciel's data; ACTION to add it.
+- **Session Close** — !close triggered; transcript verified; 2 CoL and some LP headroom remaining.
+
+Ready to move to Step 3 (pull ACTION flags) on your confirmation.
+
+---
+
+**Matt:** Looks good. What does step 3 say exactly?
+
+**Claude:** Step 3 says:
+
+> Use `awk` to pull all ACTION flags from the section files, grouped by section title:
+> 
+> ```bash
+> awk '/^## /{section=$0; found=0} /^\*\*ACTION:/{if(!found){print section; found=1} print}' /home/claude/section*.md
+> ```
+> 
+> Present the output to Matt and stop. Matt reviews and flags any actions to drop or modify before continuing.
+
+---
+
+**Matt:** Ok, do that please
+
+**Claude:** *[Ran awk command]*
+
+Here's the full output:
+
+**LP Audit and Lumina Updates**
+- `Remove Burning Shots (3 LP) from Lune's Lumina; add Survivor (20 LP); spend 17 CoL to increase Lune's LP capacity to 224.`
+- `Add Energising Break (3AP) to Verso in-game and in data files. LP 285/285.`
+
+**Sciel Lumina LP Verification**
+- `Check which Lumina in Sciel's loadout have null or missing lp_cost in the pictos file, or verify the costs of Accelerating Heal, Healing Tint Energy, or Energising Heal in-game.` ← superseded by `Discount last action`
+
+**Sciel Data File Audit**
+- `Update Sciel's Lumina additions in the data with Gradient Break (which has already been added in-game). Note that it synergises with Breaking Attack.`
+
+The discounted action in section02 is clearly dropped. That leaves three live candidates. Please review and flag any further drops or modifications before I move to Step 4.
+
+---
+
+**Matt:** Ok, just those three remaining to act on then. Continue.
+
+**Claude:** *[Fetched data/characters.json, data/playthrough.json, chats/chat-index.md, overview/claude-expedition33.md, reference/historical-errors.md]*
+
+*[Created /mnt/user-data/outputs/chat26-changelist.txt]*
+
+Done. Here's a summary before presenting:
+
+**In-game actions checklist** (confirm these are already done, as Matt said he was making them before !close):
+- [ ] Verso: Add Energising Break
+- [ ] Lune: Remove Burning Shots, add Survivor, spend 17 CoL (capacity → 224)
+- [ ] Sciel: Gradient Break already in-game ✓
+
+**DATA blocks (9):** Verso lp_used + Energising Break; Lune Survivor restored + Burning Shots excluded + lp_used + lp_total; Sciel Gradient Break + lp_used; playthrough colour_of_lumina 19 → 2
+
+**FILE block (1):** Section 6 updated with new Verso Energising Break monitoring item
+
+**APPEND blocks (2):** New chat-index row; two new historical errors (LP arithmetic, ACTION without confirmation)
+
+No open questions were resolved this session — they carry forward as-is, plus the new one.
+
+---
+
+**Matt:** Do you think the arithmetic error is worth including in section 1?
+
+**Claude:** Probably yes, but it's a different failure mode from the existing LP arithmetic entry in Section 1. That one covers *wrong LP costs* (e.g. misremembering Full Strength as 10LP). Chat 26's error was *correct individual costs, wrong sum* — Claude attempted mental addition on a 30-item list rather than computing it programmatically.
+
+The actionable rule would be something like: "For any sum over more than a handful of values, use bash rather than mental arithmetic." That's specific and preventable — it's not about knowledge, it's about tool choice.
+
+If you want to add it, I'd suggest a new bullet in Section 1 rather than folding it into the existing LP arithmetic one, since they have different root causes and different remedies. Worth it if you think Claude is likely to repeat this pattern; Section 1 is most valuable when it targets real recurring tendencies rather than one-off slips.
+
+---
+
+**Matt:** Yes, agreed. I'll add that in manually.
+
+**Claude:** Noted. Ready for Step 5 whenever you are — just confirm and I'll assemble the final transcript.
+
+---
+
+**Matt:** Ok, all changes applied, seems ok. Ready for step 5.
+
+**Claude:** *[Checked section00 — empty; concatenated sections 01–04 into /mnt/user-data/outputs/chat26.md; appended Session Wrap section with verbatim turns; updated chat index with Session Wrap entry; presented completed files]*
