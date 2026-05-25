@@ -126,6 +126,24 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 - **Spare:** 3 LP
 <!-- GENERATED:END -->
 
+### Lumina Adjustments
+
+<!-- GENERATED:START characters:Verso:Lumina:adjustments -->
+| Lumina                 | Change   | LP | Notes                                                                          |
+|------------------------|----------|----|--------------------------------------------------------------------------------|
+| Breaking Death         | Excluded | 5  | Free from Breaking Death Pictos                                                |
+| Second Chance          | Excluded | 40 | Free from Second Chance Pictos                                                 |
+| Confident Fighter      | Added    | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block            |
+| Warming Up             | Added    | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks            |
+| Energising Attack I    | Added    | 10 |                                                                                |
+| Energising Start II    | Added    | 10 |                                                                                |
+| Staggering Attack      | Added    | 1  |                                                                                |
+| Augmented First Strike | Added    | 5  | 5LP.                                                                           |
+| Auto Rush              | Added    | 10 | 10LP. Applies Rush for 3 turns on battle start.                                |
+| Empowering Parry       | Added    | 5  | 5LP. Each successful Parry increases damage by 5% until end of following turn. |
+| Charging Critical      | Added    | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn.                     |
+<!-- GENERATED:END -->
+
 ### Current Loadout
 
 <!-- GENERATED:START characters:Verso:Lumina -->

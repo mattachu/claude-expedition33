@@ -136,6 +136,19 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
+### Lumina Adjustments
+
+<!-- GENERATED:START characters:Lune:Lumina:adjustments -->
+| Lumina            | Change   | LP | Notes                                                      |
+|-------------------|----------|----|------------------------------------------------------------|
+| Survivor          | Excluded | 20 | Not enough LP for both Second Chance and Survivor          |
+| Critical Break    | Excluded | 5  | Dropped to save LP, as not her primary role                |
+| Accelerating Heal | Added    | 5  | Rush on heal — synergy with Healing Light                  |
+| Protecting Heal   | Added    | 5  | Shell on heal                                              |
+| Energising Burn   | Added    | 10 | 10LP. +1 AP on applying Burn, once per turn.               |
+| Charging Critical | Added    | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn. |
+<!-- GENERATED:END -->
+
 ### Current Loadout
 
 <!-- GENERATED:START characters:Lune:Lumina -->

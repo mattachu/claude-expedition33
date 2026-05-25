@@ -111,6 +111,21 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 - **Spare:** 5 LP
 <!-- GENERATED:END -->
 
+### Lumina Adjustments
+
+<!-- GENERATED:START characters:Sciel:Lumina:adjustments -->
+| Lumina              | Change   | LP | Notes                                                         |
+|---------------------|----------|----|---------------------------------------------------------------|
+| Energy Master       | Excluded | 40 | Free from Energy Master Pictos                                |
+| Recovery            | Added    | 10 | Passive heal on turn start, increases survivability           |
+| Accelerating Heal   | Added    | 5  | Rush on heal.                                                 |
+| Energising Heal     | Added    | 10 | 2 AP on healing an ally — primary AP engine with Grim Harvest |
+| Protecting Heal     | Added    | 5  | Shell on heal                                                 |
+| Healing Tint Energy | Added    | 1  | 1 AP on Healing Tint use — small AP top-up                    |
+| Breaking Attack     | Added    | 10 | Can Break on base attack — cheaper than Final Path            |
+| Charging Alteration | Added    | 10 | Build Gradient Charge on applying buffs such as All Set       |
+<!-- GENERATED:END -->
+
 ### Current Loadout
 
 <!-- GENERATED:START characters:Sciel:Lumina -->

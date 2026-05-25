@@ -142,6 +142,19 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
+### Lumina Adjustments
+
+<!-- GENERATED:START characters:Monoco:Lumina:adjustments -->
+| Lumina                 | Change | LP | Notes                                                                                     |
+|------------------------|--------|----|-------------------------------------------------------------------------------------------|
+| Staggering Attack      | Added  | 1  | Break damage on base attack — small break bar contribution                                |
+| Break Specialist       | Added  | 1  | 50% increased Break damage, 20% reduced base damage — net positive for break-focused role |
+| Energising Break       | Added  | 3  | Extra AP on breaking an enemy                                                             |
+| Augmented First Strike | Added  | —  |                                                                                           |
+| Empowering Break       | Added  | 3  | 3LP. Gain Powerful on Breaking a target.                                                  |
+| Gradient Break         | Added  | 5  | Earn 50% of Gradient Charge when breaking an enemy.                                       |
+<!-- GENERATED:END -->
+
 ### Current Loadout
 
 <!-- GENERATED:START characters:Monoco:Lumina -->

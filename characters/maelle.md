@@ -132,6 +132,21 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
+### Lumina Adjustments
+
+<!-- GENERATED:START characters:Maelle:Lumina:adjustments -->
+| Lumina                 | Change | LP | Notes                                                                                                                                                                |
+|------------------------|--------|----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Full Strength          | Added  | 15 | Damage bonus while on full HP — strong synergy with Clea's Life Pictos                                                                                               |
+| Warming Up             | Added  | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus |
+| Gradient Fighter       | Added  | 5  | Damage bonus on Gradient Skill use. 5LP. Verify exact effect description in-game.                                                                                    |
+| Solo Fighter           | Added  | 1  | Rounds up LP to cap.                                                                                                                                                 |
+| Energising Break       | Added  | 3  | 3LP. +3 AP on Breaking a target.                                                                                                                                     |
+| Augmented First Strike | Added  | 5  | 5LP. 50% increased damage on the first hit, once per battle.                                                                                                         |
+| Greater Powerful       | Added  | 10 | 10LP. +15% to Powerful damage increase.                                                                                                                              |
+| Charging Critical      | Added  | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn.                                                                                                           |
+<!-- GENERATED:END -->
+
 ### Current Loadout
 
 <!-- GENERATED:START characters:Maelle:Lumina -->
@@ -253,7 +268,6 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 ### Burn-stacking
 
 Burning Canvas (5 AP, switches to Offensive, high Void damage + 1 burn per hit) deals increased damage for each burn stack on target. Corpeso (Verso's weapon) applies 2 burn per Rank on base attack — synergises to stack burn quickly before Maelle fires Burning Canvas.
-
 
 ---
 
