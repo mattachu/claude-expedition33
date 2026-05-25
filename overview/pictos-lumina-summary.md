@@ -155,37 +155,7 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 
 ---
 
-## 7. Situational Lumina
-
-Add these as Lumina for specific boss fights — no need to change Pictos.
-
-<!-- GENERATED:START lumina:situational -->
-| Lumina           | LP | Effect                                                        | Notes                                                                              |
-|------------------|----|---------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Anti-Blight      | 10 | Immune to Blight                                              | All characters — vs bosses applying Blight. Add as Lumina; no need to move Pictos. |
-| Anti-Burn        | 15 | Immune to Burn                                                | All characters — vs bosses applying Burn regularly.                                |
-| Anti-Freeze      | 15 | Immune to Freeze                                              | All characters — vs bosses applying Freeze. LP cost unconfirmed.                   |
-| Draining Cleanse | 15 | Consume 1AP to prevent Status Effect application, if possible | Status effect prevention — 1AP cost per use. High LP cost; situational.            |
-<!-- GENERATED:END -->
-
----
-
-## 8. Candidates for Future Review
-
-<!-- GENERATED:START lumina:future -->
-| Lumina            | LP | Effect                                                     | Notes                                                                                    |
-|-------------------|----|------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Energy Master     | 40 | Every AP gain is increased by 1                            | Game-change but expensive; consider when expanding core set.                             |
-| Energising Shell  | 10 | Give 2 AP on applying Shell.                               | Consider for Maelle with Lithum.                                                         |
-| Longer Shell      | 5  | On applying Shell, its duration is increased by 2.         | Consider for Maelle with Lithum.                                                         |
-| Powerful On Shell | 10 | Apply Powerful on applying Shell.                          | Consider for Maelle with Lithum.                                                         |
-| Energising Burn   | 10 | +1 AP on applying Burn. Once per turn.                     | Consider when expanding core set — all characters have Burning Shots so fires regularly. |
-| Empowering Dodge  | 5  | 5% increased damage per consecutive dodge, stacks up to 10 | Test empirically before committing — reset on parry unconfirmed.                         |
-<!-- GENERATED:END -->
-
----
-
-## 9. Character Loadouts
+## 7. Character Loadouts
 
 Adjustments each character makes to their team's core Lumina set — exclusions first, then additions.
 
@@ -262,3 +232,35 @@ Adjustments each character makes to their team's core Lumina set — exclusions 
 | Empowering Break       | Added  | 3  | 3LP. Gain Powerful on Breaking a target.                                                  |
 | Gradient Break         | Added  | 5  | Earn 50% of Gradient Charge when breaking an enemy.                                       |
 <!-- GENERATED:END -->
+
+---
+
+## 8. Situational Lumina
+
+Add these as Lumina for specific boss fights — no need to change Pictos.
+
+<!-- GENERATED:START lumina:situational -->
+| Lumina           | LP | Effect                                                        | Notes                                                                              |
+|------------------|----|---------------------------------------------------------------|------------------------------------------------------------------------------------|
+| Anti-Blight      | 10 | Immune to Blight                                              | All characters — vs bosses applying Blight. Add as Lumina; no need to move Pictos. |
+| Anti-Burn        | 15 | Immune to Burn                                                | All characters — vs bosses applying Burn regularly.                                |
+| Anti-Freeze      | 15 | Immune to Freeze                                              | All characters — vs bosses applying Freeze. LP cost unconfirmed.                   |
+| Draining Cleanse | 15 | Consume 1AP to prevent Status Effect application, if possible | Status effect prevention — 1AP cost per use. High LP cost; situational.            |
+<!-- GENERATED:END -->
+
+---
+
+## 9. Candidates for Future Review
+
+<!-- GENERATED:START lumina:future -->
+| Lumina            | LP | Effect                                                     | Notes                                                                                    |
+|-------------------|----|------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| Energy Master     | 40 | Every AP gain is increased by 1                            | Game-change but expensive; consider when expanding core set.                             |
+| Energising Shell  | 10 | Give 2 AP on applying Shell.                               | Consider for Maelle with Lithum.                                                         |
+| Longer Shell      | 5  | On applying Shell, its duration is increased by 2.         | Consider for Maelle with Lithum.                                                         |
+| Powerful On Shell | 10 | Apply Powerful on applying Shell.                          | Consider for Maelle with Lithum.                                                         |
+| Energising Burn   | 10 | +1 AP on applying Burn. Once per turn.                     | Consider when expanding core set — all characters have Burning Shots so fires regularly. |
+| Empowering Dodge  | 5  | 5% increased damage per consecutive dodge, stacks up to 10 | Test empirically before committing — reset on parry unconfirmed.                         |
+<!-- GENERATED:END -->
+
+---
