@@ -1,0 +1,76 @@
+## Chat 26 Changelist
+
+Processing order: DATA → FILE → APPEND → generate.py
+
+---
+
+DATA: data/characters.json
+PATH: Verso.lumina_extras
+OP: ADD
+VALUE: {"name": "Energising Break", "notes": "3LP. +3 AP on Breaking a target. Enables Perfect Break → Stun → Cheater turn → End Bringer rotation."}
+
+DATA: data/characters.json
+PATH: Verso.lp_used
+OP: SET
+VALUE: 285
+
+DATA: data/characters.json
+PATH: Lune.lumina_core_exclusions[name=Survivor]
+OP: REMOVE
+
+DATA: data/characters.json
+PATH: Lune.lumina_core_exclusions
+OP: ADD
+VALUE: {"name": "Burning Shots", "notes": "Dropped to free LP for Survivor"}
+
+DATA: data/characters.json
+PATH: Lune.lp_used
+OP: SET
+VALUE: 224
+
+DATA: data/characters.json
+PATH: Lune.lp_total
+OP: SET
+VALUE: 224
+
+DATA: data/characters.json
+PATH: Sciel.lumina_extras
+OP: ADD
+VALUE: {"name": "Gradient Break", "notes": "5LP. +50% Gradient Charge on Breaking. Synergises with Breaking Attack."}
+
+DATA: data/characters.json
+PATH: Sciel.lp_used
+OP: SET
+VALUE: 262
+
+DATA: data/playthrough.json
+PATH: inventory.colour_of_lumina
+OP: SET
+VALUE: 2
+
+---
+
+FILE: overview/claude-expedition33.md
+SECTION: ## Section 6: Open Questions
+CONTENT:
+## Section 6: Open Questions
+
+- **First Life (15LP):** Drops from Chromatic Lampmaster in Endless Tower (Stage 11 / DLC superboss area). 25% damage while alive, no downside for a well-supported DPS. Strong candidate for Maelle once obtained.
+- **Frenzy:** Drops from Licornapieds in Verso's Drafts. Unconditional skill damage boost for multi-hit skills. High priority pickup — relevant for Verso (Steeled Strike, End Bringer), Lune (Elemental Genesis 8 hits), and potentially others.
+- **Simoso L20 multi-hit edge case (Chat 24):** "Can't die at Rank A" — unclear whether protection is removed mid-sequence if a multi-hit attack drops rank below A. Test empirically before committing to 1HP + Confident Lumina strategy.
+- **Maelle Last Chance + Shortcut interaction:** Observed three-turn sequence: Normal turn → Cheater → Shortcut (triggered when Last Chance drops HP below 30%). Confirm whether this is intentional/consistent in practice.
+- **Charging Critical for Maelle, Verso, Lune (Chat 25):** All three now have Charging Critical (10LP). Observe gradient charge build rate in practice — confirm whether the +20% per crit is meaningfully accelerating gradient skill access.
+- **Greater Powerful value for Maelle (Chat 25):** Added (+15% to Powerful → ~40% total bonus). Confirm uplift feels meaningful in practice vs pre-chat-25 baseline.
+- **Empowering Parry for Verso (Chat 25):** Added (5LP). Practical value depends on how consistently parrying is achieved — monitor in Verso's Drafts.
+- **Verso Energising Break rotation (Chat 26):** Energising Break (3LP) added. Theoretical rotation: Perfect Break (7 AP) → Energising Break trigger (+3 AP via Energy Master) → Cheater turn (+3 AP) → End Bringer (9 AP) on Stunned target. Confirm this fires cleanly in practice.
+
+---
+
+APPEND: chats/chat-index.md
+CONTENT:
+| Chat 26 | [Formatted](chat26/chat26-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat26/chat26-index.md) | [chat26.md](chat26/chat26.md) | LP corrections from Chat 25 resolved: Verso gains Energising Break (3LP, 285/285), enabling a Perfect Break → Stun → End Bringer rotation; Lune drops Burning Shots and gains Survivor (20LP) via 17 CoL spend (224/224); Gradient Break added to Sciel's data (already in-game, 262/262). Sciel LP audit via screenshot identified arithmetic errors and a missing Lumina in the data file. |
+
+APPEND: reference/historical-errors.md
+CONTENT:
+42. **Screenshot LP arithmetic errors (Chat 26):** When reading Sciel's Lumina screenshot, Claude missed Painter from the visual list (listed 29 of 30 Lumina) and made compounding arithmetic errors, first reporting the total as 257 LP then 237 LP before Matt corrected it to 262 LP. Root error: attempted mental arithmetic on a 30-item sum rather than using bash to compute programmatically.
+43. **ACTION written without confirmation (Chat 26):** Claude wrote an ACTION flag to check null LP costs in pictos-lumina.json without first confirming the action with Matt. Matt discounted it and established the rule: confirm specifics before writing ACTION flags.
