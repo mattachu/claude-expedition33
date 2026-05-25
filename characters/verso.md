@@ -122,8 +122,8 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ### LP Budget
 <!-- GENERATED:START characters:Verso:LP -->
 - **Current capacity:** 285 LP
-- **Used:** 285 LP
-- **Spare:** 0 LP
+- **Used:** 282 LP
+- **Spare:** 3 LP
 <!-- GENERATED:END -->
 
 ### Current Loadout
@@ -135,7 +135,6 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Augmented First Strike | 5  | 5LP.                                                                                              |
 | Auto Rush              | 10 | 10LP. Applies Rush for 3 turns on battle start.                                                   |
 | Base Shield            | 20 | Verso: previously non-functional with Chevalam L4; now available with Simoso — see open question. |
-| Base Shield            | 20 | 20LP. Confirmed functional with Simoso.                                                           |
 | Breaker                | 10 | Main break damage booster                                                                         |
 | Breaking Burn          | 5  |                                                                                                   |
 | Breaking Counter       | 3  |                                                                                                   |
@@ -172,7 +171,7 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 | Skill             | AP              | Rank Bonus                           | Equipped | Notes                                                                                    |
 |-------------------|-----------------|--------------------------------------|----------|------------------------------------------------------------------------------------------|
-| End Bringer       | 8               | A: Can reapply stun on broken target | ✅        | Extreme Physical damage, 6 hits. Increased damage if target Stunned.                     |
+| End Bringer       | 9               | A: Can reapply stun on broken target | ✅        | Extreme Physical damage, 6 hits. Increased damage if target Stunned.                     |
 | Light Holder      | 4               | A: +2 AP                             | ✅        | Medium Light damage, 5 hits. Gains +1 Rank at completion.                                |
 | Perfect Break     | 7 (5 at Rank B) | B: Reduced AP cost                   | ✅        | Very high Light damage. Can Break. Rank S on Break.                                      |
 | Phantom Stars     | 9 (5 at Rank S) | S: Reduced AP cost                   | ✅        | AoE multi-hit all enemies. Trash fights only — useless in 1v1.                           |

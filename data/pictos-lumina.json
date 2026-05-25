@@ -863,8 +863,9 @@
       ],
       "effect": "Mark requires 1 more hit to be removed.",
       "lp_cost": 20,
-      "obtained": false,
-      "equipped_by": null
+      "obtained": true,
+      "equipped_by": null,
+      "level": 13
     },
     {
       "name": "Draining Cleanse",
@@ -1016,8 +1017,9 @@
       ],
       "effect": "+1 AP on Base Attack.",
       "lp_cost": 15,
-      "obtained": false,
-      "equipped_by": null
+      "obtained": true,
+      "equipped_by": null,
+      "level": 13
     },
     {
       "name": "Energising Break",
@@ -1470,7 +1472,8 @@
       "effect": "+15% to Powerful damage increase.",
       "lp_cost": 10,
       "obtained": true,
-      "equipped_by": null
+      "equipped_by": null,
+      "level": 13
     },
     {
       "name": "Greater Powerless",
@@ -1479,7 +1482,7 @@
       ],
       "effect": "+15% to Powerless damage reduction.",
       "lp_cost": 15,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
       "level": 30,
       "stats": {
@@ -2609,7 +2612,7 @@
           "notes": "Revive with 100% Health, once per battle."
         }
       ],
-      "notes": "Main team core minus Dead Energy I, Dead Energy II, Second Chance; plus Recovery and Base Shield."
+      "notes": "Main team core minus Dead Energy I, Dead Energy II, Energy Master, Anti-Blight; plus Recovery."
     }
   },
   "candidates_for_review": [

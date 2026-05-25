@@ -120,11 +120,12 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 | Anti-Blight         | 10 | Especially important in Renoir's Drafts                       |
 | Base Shield         | 20 |                                                               |
 | Breaker             | 10 | Main break damage booster                                     |
-| Breaking Attack     | 10 |                                                               |
+| Breaking Attack     | 10 | Can Break on base attack — cheaper than Final Path            |
 | Breaking Burn       | 5  |                                                               |
 | Breaking Counter    | 3  |                                                               |
 | Breaking Death      | 5  | Extremely helpful in tough boss fights                        |
 | Burning Shots       | 3  |                                                               |
+| Charging Alteration | 10 | Build Gradient Charge on applying buffs such as All Set       |
 | Cheater             | 40 | Essential for endgame builds                                  |
 | Critical Break      | 5  |                                                               |
 | Dead Energy I       | 2  |                                                               |

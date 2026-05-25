@@ -162,7 +162,7 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Energising Break       | 3  | Extra AP on breaking an enemy                                                             |
 | Energising Start I     | 5  |                                                                                           |
 | Energising Turn        | 20 |                                                                                           |
-| Gradient Fighter       | 5  | 5LP. 25% increased damage with Gradient Attacks.                                          |
+| Gradient Break         | 5  | Earn 50% of Gradient Charge when breaking an enemy.                                       |
 | Painted Power          | 5  |                                                                                           |
 | Recovery               | 10 |                                                                                           |
 | Second Chance          | 40 | Revive with 100% Health, once per battle.                                                 |

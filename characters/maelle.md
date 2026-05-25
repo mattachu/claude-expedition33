@@ -137,8 +137,8 @@ Cheater (from Verso) / Second Chance (from Verso) / Gradient Break. Solo Lumina 
 
 ### LP Budget
 <!-- GENERATED:START characters:Maelle:LP -->
-- **Current capacity:** 318 LP
-- **Used:** 318 LP
+- **Current capacity:** 305 LP
+- **Used:** 305 LP
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 

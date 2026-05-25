@@ -130,7 +130,7 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 <!-- GENERATED:START lumina:core:reserve -->
 **Total: 202 LP** — applied to Lune, Monoco.
 
-*Main team core minus Dead Energy I, Dead Energy II, Second Chance; plus Recovery and Base Shield.*
+*Main team core minus Dead Energy I, Dead Energy II, Energy Master, Anti-Blight; plus Recovery.*
 
 | Lumina             | LP | Effect                                                           |
 |--------------------|----|------------------------------------------------------------------|

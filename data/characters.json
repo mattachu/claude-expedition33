@@ -32,8 +32,8 @@
       "Empowering Break",
       "Shortcut"
     ],
-    "lp_total": 318,
-    "lp_used": 318,
+    "lp_total": 305,
+    "lp_used": 305,
     "lumina_core_exclusions": [],
     "lumina_extras": [
       {
@@ -158,7 +158,7 @@
       "Confident"
     ],
     "lp_total": 285,
-    "lp_used": 285,
+    "lp_used": 282,
     "lumina_core_exclusions": [
       {
         "name": "Breaking Death",
@@ -186,10 +186,6 @@
       },
       {
         "name": "Staggering Attack"
-      },
-      {
-        "name": "Base Shield",
-        "notes": "20LP. Confirmed functional with Simoso."
       },
       {
         "name": "Augmented First Strike",
@@ -322,7 +318,12 @@
         "notes": "1 AP on Healing Tint use — small AP top-up"
       },
       {
-        "name": "Breaking Attack"
+        "name": "Breaking Attack",
+        "notes": "Can Break on base attack — cheaper than Final Path"
+      },
+      {
+        "name": "Charging Alteration",
+        "notes": "Build Gradient Charge on applying buffs such as All Set"
       }
     ],
     "skills_equipped": [
@@ -404,8 +405,8 @@
       "Burn Affinity",
       "Burning Death"
     ],
-    "lp_total": 212,
-    "lp_used": 212,
+    "lp_total": 207,
+    "lp_used": 207,
     "lumina_core_exclusions": [
       {
         "name": "Survivor",
@@ -428,10 +429,6 @@
       {
         "name": "Energising Burn",
         "notes": "10LP. +1 AP on applying Burn, once per turn."
-      },
-      {
-        "name": "Gradient Fighter",
-        "notes": "5LP. 25% increased damage with Gradient Attacks."
       },
       {
         "name": "Charging Critical",
@@ -544,8 +541,8 @@
         "notes": "3LP. Gain Powerful on Breaking a target."
       },
       {
-        "name": "Gradient Fighter",
-        "notes": "5LP. 25% increased damage with Gradient Attacks."
+        "name": "Gradient Break",
+        "notes": "Earn 50% of Gradient Charge when breaking an enemy."
       }
     ],
     "skills_equipped": [

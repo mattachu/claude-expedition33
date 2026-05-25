@@ -131,8 +131,8 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 
 ### LP Budget
 <!-- GENERATED:START characters:Lune:LP -->
-- **Current capacity:** 212 LP
-- **Used:** 212 LP
+- **Current capacity:** 207 LP
+- **Used:** 207 LP
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
@@ -154,7 +154,6 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 | Energising Burn    | 10 | 10LP. +1 AP on applying Burn, once per turn.               |
 | Energising Start I | 5  |                                                            |
 | Energising Turn    | 20 |                                                            |
-| Gradient Fighter   | 5  | 5LP. 25% increased damage with Gradient Attacks.           |
 | Painted Power      | 5  |                                                            |
 | Protecting Heal    | 5  | Shell on heal                                              |
 | Recovery           | 10 |                                                            |

@@ -4,11 +4,11 @@
 
 See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) for Pictos and Lumina currently in use.
 
-**194 Pictos total.** 164 obtained.
+**194 Pictos total.** 167 obtained.
 
 ---
 
-## AP and Energy (32 Pictos, 28 obtained)
+## AP and Energy (32 Pictos, 29 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
@@ -19,7 +19,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Effective Support | +2 AP on using an item. | 5 |  |  |  |
 |  | Energetic Healer | +2 AP on Healing an ally. Once per turn. | 5 |  |  |  |
 | ✓ | Energising Attack I | +1 AP on Base Attack. | 10 | Speed: 958, Crit: 18% |  |  |
-|  | Energising Attack II | +1 AP on Base Attack. | 15 |  |  |  |
+| ✓ | Energising Attack II | +1 AP on Base Attack. | 15 |  |  |  |
 | ✓ | Energising Break | +3 AP on Breaking a target. | 3 |  |  |  |
 | ✓ | Energising Burn | +1 AP on applying Burn. Once per turn. | 10 | Defence: 401, Speed: 321 |  |  |
 | ✓ | Energising Cleanse | Dispel the first negative Status Effect received and gain 2 AP. | 10 |  |  |  |
@@ -180,11 +180,11 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Mark (6 Pictos, 4 obtained)
+## Mark (6 Pictos, 5 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
-|  | Double Mark | Mark requires 1 more hit to be removed. | 20 |  |  |  |
+| ✓ | Double Mark | Mark requires 1 more hit to be removed. | 20 |  |  |  |
 | ✓ | Enfeebling Mark | Marked targets deal 30% less damage. | 10 |  |  |  |
 |  | Marking Break | Apply Mark on Break. | 5 |  |  |  |
 | ✓ | Marking Shots | 20% chance to apply Mark on Free Aim shot. | 3 |  |  | shots |
@@ -254,7 +254,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Buffs and Support (29 Pictos, 19 obtained)
+## Buffs and Support (29 Pictos, 20 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
@@ -268,7 +268,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Enfeebling Attack | Base Attack applies Powerless for 1 turn. | 10 |  |  |  |
 | ✓ | Exposing Attack | Base Attack applies Defenceless for 1 turn. | 10 |  |  |  |
 |  | Exposing Break | Apply Defenceless on Break. | 5 |  |  |  |
-|  | Greater Powerless | +15% to Powerless damage reduction. | 15 | Defence: 1727, Speed: 597 |  |  |
+| ✓ | Greater Powerless | +15% to Powerless damage reduction. | 15 | Defence: 1727, Speed: 597 |  |  |
 |  | Greater Rush | +25% to Rush Speed increase. | 10 |  |  |  |
 | ✓ | Greater Slow | +15% to Slow Speed reduction. | 15 | Defence: 647, Speed: 266 |  |  |
 | ✓ | Longer Powerful | On applying Powerful, its duration is increased by 2. | 10 |  |  |  |

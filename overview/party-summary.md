@@ -6,10 +6,10 @@
 
 | Character                         | Level | Role                         | Weapon        | Pictos                                        | LP      |
 |-----------------------------------|-------|------------------------------|---------------|-----------------------------------------------|---------|
-| [Maelle](../characters/maelle.md) | 95    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut       | 318/318 |
-| [Verso](../characters/verso.md)   | 94    | Endgame main DPS             | Simoso (33)   | Second Chance, Breaking Death, Confident      | 285/285 |
+| [Maelle](../characters/maelle.md) | 95    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut       | 305/305 |
+| [Verso](../characters/verso.md)   | 94    | Endgame main DPS             | Simoso (33)   | Second Chance, Breaking Death, Confident      | 282/285 |
 | [Sciel](../characters/sciel.md)   | 94    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots      | 260/262 |
-| [Lune](../characters/lune.md)     | 89    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death   | 212/212 |
+| [Lune](../characters/lune.md)     | 89    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death   | 207/207 |
 | [Monoco](../characters/monoco.md) | 89    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Cheater | 175/175 |
 
 ---
@@ -69,7 +69,7 @@
 | Teamwork               | 5  |                                                                                                                                                                      |
 | Warming Up             | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks — strong synergy with multi-hit skills and Clea's Life Pictos enabling long uptime on this bonus |
 
-**LP:** 318/318
+**LP:** 305/305
 
 ---
 
@@ -101,7 +101,6 @@
 | Augmented First Strike | 5  | 5LP.                                                                                              |
 | Auto Rush              | 10 | 10LP. Applies Rush for 3 turns on battle start.                                                   |
 | Base Shield            | 20 | Verso: previously non-functional with Chevalam L4; now available with Simoso — see open question. |
-| Base Shield            | 20 | 20LP. Confirmed functional with Simoso.                                                           |
 | Breaker                | 10 | Main break damage booster                                                                         |
 | Breaking Burn          | 5  |                                                                                                   |
 | Breaking Counter       | 3  |                                                                                                   |
@@ -128,7 +127,7 @@
 | Teamwork               | 5  |                                                                                                   |
 | Warming Up             | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks                               |
 
-**LP:** 285/285
+**LP:** 282/285
 
 ---
 
@@ -160,11 +159,12 @@
 | Anti-Blight         | 10 | Especially important in Renoir's Drafts                       |
 | Base Shield         | 20 |                                                               |
 | Breaker             | 10 | Main break damage booster                                     |
-| Breaking Attack     | 10 |                                                               |
+| Breaking Attack     | 10 | Can Break on base attack — cheaper than Final Path            |
 | Breaking Burn       | 5  |                                                               |
 | Breaking Counter    | 3  |                                                               |
 | Breaking Death      | 5  | Extremely helpful in tough boss fights                        |
 | Burning Shots       | 3  |                                                               |
+| Charging Alteration | 10 | Build Gradient Charge on applying buffs such as All Set       |
 | Cheater             | 40 | Essential for endgame builds                                  |
 | Critical Break      | 5  |                                                               |
 | Dead Energy I       | 2  |                                                               |
@@ -226,7 +226,6 @@
 | Energising Burn    | 10 | 10LP. +1 AP on applying Burn, once per turn.               |
 | Energising Start I | 5  |                                                            |
 | Energising Turn    | 20 |                                                            |
-| Gradient Fighter   | 5  | 5LP. 25% increased damage with Gradient Attacks.           |
 | Painted Power      | 5  |                                                            |
 | Protecting Heal    | 5  | Shell on heal                                              |
 | Recovery           | 10 |                                                            |
@@ -234,7 +233,7 @@
 | Shortcut           | 5  |                                                            |
 | Teamwork           | 5  |                                                            |
 
-**LP:** 212/212
+**LP:** 207/207
 
 ---
 
@@ -277,7 +276,7 @@
 | Energising Break       | 3  | Extra AP on breaking an enemy                                                             |
 | Energising Start I     | 5  |                                                                                           |
 | Energising Turn        | 20 |                                                                                           |
-| Gradient Fighter       | 5  | 5LP. 25% increased damage with Gradient Attacks.                                          |
+| Gradient Break         | 5  | Earn 50% of Gradient Charge when breaking an enemy.                                       |
 | Painted Power          | 5  |                                                                                           |
 | Recovery               | 10 |                                                                                           |
 | Second Chance          | 40 | Revive with 100% Health, once per battle.                                                 |
@@ -292,7 +291,7 @@
 
 # Inventory
 
-- Colour of Lumina: 0
+- Colour of Lumina: 19
 - Recoats: 37
-- Chroma Catalysts: 67 standard, 73 polished, 124 resplendent, 86 grandiose, 3 perfect
-- Chroma: 1727213
+- Chroma Catalysts: 67 standard, 74 polished, 101 resplendent, 53 grandiose, 5 perfect
+- Chroma: 1616433

@@ -174,7 +174,7 @@
     },
     {
       "name": "End Bringer",
-      "ap": 8,
+      "ap": 9,
       "description": "Extreme Physical damage, 6 hits. Increased damage if target Stunned.",
       "rank_bonus": {
         "rank": "A",

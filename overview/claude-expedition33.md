@@ -34,7 +34,7 @@ Fetch that file only when reviewing specific past errors.
 - **Progress:**
   - Act 3, Phase 4.
   - Characters: Maelle L95, Verso L94, Sciel L94, Lune L89, Monoco L89.
-  - Current area: Renoir's Drafts.
+  - Current area: Exploring.
 <!-- GENERATED:END -->
   - For detailed progression plan, see [`overview/progress.md`](progress.md)
 
@@ -47,10 +47,10 @@ Fetch that file only when reviewing specific past errors.
 <!-- GENERATED:START characters:summary:party -->
 | Character                         | Level | Role                         | Weapon        | Pictos                                        | LP      |
 |-----------------------------------|-------|------------------------------|---------------|-----------------------------------------------|---------|
-| [Maelle](../characters/maelle.md) | 95    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut       | 318/318 |
-| [Verso](../characters/verso.md)   | 94    | Endgame main DPS             | Simoso (33)   | Second Chance, Breaking Death, Confident      | 285/285 |
+| [Maelle](../characters/maelle.md) | 95    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut       | 305/305 |
+| [Verso](../characters/verso.md)   | 94    | Endgame main DPS             | Simoso (33)   | Second Chance, Breaking Death, Confident      | 282/285 |
 | [Sciel](../characters/sciel.md)   | 94    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots      | 260/262 |
-| [Lune](../characters/lune.md)     | 89    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death   | 212/212 |
+| [Lune](../characters/lune.md)     | 89    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death   | 207/207 |
 | [Monoco](../characters/monoco.md) | 89    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Cheater | 175/175 |
 <!-- GENERATED:END -->
 
@@ -61,18 +61,18 @@ Fetch that file only when reviewing specific past errors.
 
 ### Inventory
 <!-- GENERATED:START playthrough:inventory -->
-- Colour of Lumina: 0
+- Colour of Lumina: 19
 - Recoats: 37
-- Chroma Catalysts: 67 standard, 73 polished, 124 resplendent, 86 grandiose, 3 perfect
-- Chroma: 1727213
+- Chroma Catalysts: 67 standard, 74 polished, 101 resplendent, 53 grandiose, 5 perfect
+- Chroma: 1616433
 <!-- GENERATED:END -->
 
 ### LP totals
 <!-- GENERATED:START characters:summary:LP -->
-- Maelle: 318/318
-- Verso: 285/285
+- Maelle: 305/305
+- Verso: 282/285
 - Sciel: 260/262
-- Lune: 212/212
+- Lune: 207/207
 - Monoco: 175/175
 <!-- GENERATED:END -->
 
