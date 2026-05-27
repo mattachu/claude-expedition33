@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate LINKS.md with jsDelivr URLs pinned to the given commit hash."""
+"""Generate LINKS.md with raw.githubusercontent.com URLs pinned to the given commit hash."""
 
 import re
 import sys

@@ -2495,7 +2495,7 @@ if __name__ == '__main__':
 
 ```python
 #!/usr/bin/env python3
-"""Generate LINKS.md with jsDelivr URLs pinned to the given commit hash."""
+"""Generate LINKS.md with raw.githubusercontent.com URLs pinned to the given commit hash."""
 
 import re
 import sys
@@ -2503,7 +2503,7 @@ from pathlib import Path
 
 REPO = "mattachu/claude-expedition33"
 HASH = sys.argv[1][:8]
-BASE = f"https://cdn.jsdelivr.net/gh/{REPO}@{HASH}"
+BASE = f"https://raw.githubusercontent.com/{REPO}/{HASH}"
 
 # Repo root is the parent of the scripts/ directory
 REPO_ROOT = Path(__file__).resolve().parent.parent

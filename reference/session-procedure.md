@@ -158,7 +158,7 @@ Append the section title, section link and a section description to the index fi
 Once all sections are processed, replace the `(part list to be added later)` placeholder in the index file with the actual part list, using `sed`. Follow the Part Files list format in the Index File Format section below. For example:
 
 ```bash
-sed -i 's/(part list to be added later)/* Part 1 — Opening Title: [Raw](https:\/\/cdn.jsdelivr.net\/gh\/mattachu\/claude-expedition33@main\/chats\/chatN\/chatN-part1.md)\n* Part 2 — Closing Title: [Raw](https:\/\/cdn.jsdelivr.net\/gh\/mattachu\/claude-expedition33@main\/chats\/chatN\/chatN-part2.md)/' /mnt/user-data/outputs/chatN-index.md
+sed -i 's/(part list to be added later)/* Part 1 — Opening Title: [Raw](https:\/\/raw.githubusercontent.com\/mattachu\/claude-expedition33\/main\/chats\/chatN\/chatN-part1.md)\n* Part 2 — Closing Title: [Raw](https:\/\/raw.githubusercontent.com\/mattachu\/claude-expedition33\/main\/chats\/chatN\/chatN-part2.md)/' /mnt/user-data/outputs/chatN-index.md
 ```
 
 Or write the part list to a temporary file and use `sed -i` with a file reference if the substitution string is unwieldy.
@@ -315,7 +315,7 @@ Chat between Matt and Claude.
 ```
 
 Key notes:
-- jsDelivr URLs use `@main` (not a pinned hash) — these are valid after pushing
+- raw.githubusercontent.com URLs use `main` (not a pinned hash) — these are valid after pushing
 - Section anchors: lowercase title, spaces to hyphens, punctuation removed
 - Part descriptive titles: short evocative label for the part's content as a whole
 - Section descriptions: 2–3 sentences, topic and key decisions only
