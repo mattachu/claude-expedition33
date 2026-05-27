@@ -109,7 +109,7 @@ CONTENT:
 - **Powerful Shield + Base Shield synergy (Chat 27):** Investigate whether Powerful Shield's damage boost is triggered by Base Shield (the basic shield action), or only by Shield skills. High value if it applies to Base Shield.
 
 FILE: overview/claude-expedition33.md
-SECTION: ### Logging process
+SECTION: ## Section 7: Session Procedure > ### Logging process
 CONTENT:
 ### Logging process
 
@@ -130,7 +130,7 @@ Triggered by `!log`. Follow these two steps exactly, adhering to all constraints
 
 APPEND: chats/chat-index.md
 CONTENT:
-| Chat 27 | [Formatted](chat27/chat27-index.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat27/chat27.md) | [chat27.md](chat27/chat27.md) | Progress review: Renoir's Drafts marked complete; NG+ mechanics researched; missability check for Verso's Drafts. Logging procedure issues diagnosed and partially fixed. Postgame content verified complete. 14 missing Verso's Drafts Pictos identified for data file. Infrastructure: raw GitHub URLs confirmed working as jsDelivr replacement. |
+| Chat 27 | [Formatted](chat27/chat27-index.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat27/chat27-index.md) | [chat27.md](chat27/chat27.md) | Progress review: Renoir's Drafts marked complete; NG+ mechanics researched; missability check for Verso's Drafts. Logging procedure issues diagnosed and partially fixed. Raw GitHub URLs confirmed working as jsDelivr replacement.     |
 
 APPEND: reference/historical-errors.md
 CONTENT:
