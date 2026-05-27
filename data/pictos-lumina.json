@@ -1345,8 +1345,9 @@
       ],
       "effect": "Always play twice in a row, but deal 50% less damage.",
       "lp_cost": 10,
-      "obtained": false,
-      "equipped_by": null
+      "obtained": true,
+      "equipped_by": null,
+      "level": 16
     },
     {
       "name": "First Offensive",
@@ -1392,8 +1393,9 @@
       ],
       "effect": "25% increased damage on full Health.",
       "lp_cost": 15,
-      "obtained": false,
-      "equipped_by": null
+      "obtained": true,
+      "equipped_by": null,
+      "level": 16
     },
     {
       "name": "Glass Canon",
@@ -2439,6 +2441,154 @@
       "obtained": true,
       "equipped_by": null,
       "level": 15
+    },
+    {
+      "name": "Alternating Critical",
+      "category": [
+        "damage",
+        "critical"
+      ],
+      "effect": "On Critical hit, 100% increased damage of the next non-Critical hit.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null
+    },
+    {
+      "name": "AP Discount",
+      "category": [
+        "ap"
+      ],
+      "effect": "Skills cost 1 less AP.",
+      "lp_cost": 30,
+      "obtained": false,
+      "equipped_by": null
+    },
+    {
+      "name": "Consuming Attack",
+      "category": [
+        "damage",
+        "burn"
+      ],
+      "effect": "Base attack consumes up to 100 Burns to deal 10% more damage per Burn consumed.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null
+    },
+    {
+      "name": "Damage Share",
+      "category": [
+        "support",
+        "survival"
+      ],
+      "effect": "50% damage taken is redirected to other allies (if possible).",
+      "lp_cost": 30,
+      "obtained": false,
+      "equipped_by": null
+    },
+    {
+      "name": "Double Third",
+      "category": [
+        "damage"
+      ],
+      "effect": "Every third hit of a Skill deals double damage.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null
+    },
+    {
+      "name": "Empowered Healer",
+      "category": [
+        "healing",
+        "support"
+      ],
+      "effect": "Using a Healing Skill gives 50% more damage for 1 turn.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null
+    },
+    {
+      "name": "Empowering Jumps",
+      "category": [
+        "damage"
+      ],
+      "effect": "Counters deal 100% more damage for each successful Jump Counter this turn.",
+      "lp_cost": 5,
+      "obtained": false,
+      "equipped_by": null
+    },
+    {
+      "name": "Feint",
+      "category": [
+        "damage"
+      ],
+      "effect": "Start each turn with 4 Barbapapa stacks. Every 5th hit with a Skill deals 600% more damage.",
+      "lp_cost": 15,
+      "obtained": false,
+      "equipped_by": null
+    },
+    {
+      "name": "Frenzy",
+      "category": [
+        "damage"
+      ],
+      "effect": "Each successive Skill hit deals 10% more damage.",
+      "lp_cost": 20,
+      "obtained": false,
+      "equipped_by": null
+    },
+    {
+      "name": "Gradient Overcharge",
+      "category": [
+        "damage",
+        "gradient"
+      ],
+      "effect": "On turn start, consume 3 Gradient Charges (if able) to deal 200% more damage this turn.",
+      "lp_cost": 15,
+      "obtained": false,
+      "equipped_by": null
+    },
+    {
+      "name": "Gradient Parry",
+      "category": [
+        "gradient"
+      ],
+      "effect": "+5% of a Gradient charge on Parry.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null
+    },
+    {
+      "name": "Longer Break",
+      "category": [
+        "break"
+      ],
+      "effect": "Breaks last 1 more turn but the target can't be Broken twice.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null
+    },
+    {
+      "name": "SOS Healing Tint",
+      "category": [
+        "survival",
+        "healing"
+      ],
+      "effect": "Consume a Healing Tint when falling below 50% Health.",
+      "lp_cost": 10,
+      "obtained": false,
+      "equipped_by": null
+    },
+    {
+      "name": "Trigger-Happy",
+      "category": [
+        "shots",
+        "ap",
+        "damage"
+      ],
+      "effect": "After shooting 10 times in the same turn, gain +2 AP (once). And following Shots this turn deal 200% more damage.",
+      "lp_cost": 20,
+      "obtained": false,
+      "equipped_by": null
     }
   ],
   "core_lumina_suite": {

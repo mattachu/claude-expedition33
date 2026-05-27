@@ -170,6 +170,7 @@ If the main party is fully wiped in a battle, the player can continue the battle
 - **Greater Powerful value for Maelle (Chat 25):** Added (+15% to Powerful → ~40% total bonus). Confirm uplift feels meaningful in practice vs pre-chat-25 baseline.
 - **Empowering Parry for Verso (Chat 25):** Added (5LP). Practical value depends on how consistently parrying is achieved — monitor in Verso's Drafts.
 - **Verso Energising Break rotation (Chat 26):** Energising Break (3LP) added. Theoretical rotation: Perfect Break (7 AP) → Energising Break trigger (+3 AP via Energy Master) → Cheater turn (+3 AP) → End Bringer (9 AP) on Stunned target. Confirm this fires cleanly in practice.
+- **Powerful Shield + Base Shield synergy (Chat 27):** Investigate whether Powerful Shield's damage boost is triggered by Base Shield (the basic shield action), or only by Shield skills. High value if it applies to Base Shield.
 
 ---
 
@@ -209,16 +210,18 @@ Matt types these commands to trigger specific actions:
 
 ### Logging process
 
+Triggered by `!log`. Follow these two steps exactly, adhering to all constraints detailed in the paragraphs below:
+
 1. Append `<!-- SECTION -->` into `chatN.md` followed by a blank line
 2. Append all turns since last log into `chatN.md` — **verbatim**
 
-**Turn format:** Matt’s turn first, labelled `**Matt:**`, then a blank line, then Claude’s turn, labelled `**Claude:**`, then a blank line, then a horizontal rule `---`.
+**Turn format:** Matt's turn first, labelled `**Matt:**`, then a blank line, then Claude's turn, labelled `**Claude:**`, then a blank line, then a horizontal rule `---`.
 
 **Verbatim logging:** Copy every turn exactly as it appears in context — Matt's turns and Claude's turns alike, including all pasted content. Do not paraphrase, compress, summarise, or represent any turn, regardless of length or content. The pull to summarise long or repetitive content is strong — resist it explicitly. If in doubt, copy more rather than less.
 
 **Bracket notation:** for tool calls only: `*[Fetched X]*`, `*[Created file Y]*`. Never use brackets to summarise substantive response text.
 
-**Lists:** If Matt’s turn begins with a list, insert a blank line between `**Matt:**` and the first list item so Markdown renders correctly.
+**Lists:** If Matt's turn begins with a list, insert a blank line between `**Matt:**` and the first list item so Markdown renders correctly.
 
 **Appending to file:** Use bash `>>` redirection to append turns to the transcript file. No need to view the file before appending — just construct the content and redirect.
 
