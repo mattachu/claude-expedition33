@@ -1,0 +1,141 @@
+DATA: data/playthrough.json
+PATH: current_phase_checklist[id=renoirs_drafts].done
+OP: SET
+VALUE: true
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Alternating Critical", "category": ["damage", "critical"], "effect": "On Critical hit, 100% increased damage of the next non-Critical hit.", "lp_cost": 10, "obtained": false, "equipped_by": null}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "AP Discount", "category": ["ap"], "effect": "Skills cost 1 less AP.", "lp_cost": 30, "obtained": false, "equipped_by": null}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Consuming Attack", "category": ["damage", "burn"], "effect": "Base attack consumes up to 100 Burns to deal 10% more damage per Burn consumed.", "lp_cost": 10, "obtained": false, "equipped_by": null}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Damage Share", "category": ["support", "survival"], "effect": "50% damage taken is redirected to other allies (if possible).", "lp_cost": 30, "obtained": false, "equipped_by": null}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Double Third", "category": ["damage"], "effect": "Every third hit of a Skill deals double damage.", "lp_cost": 10, "obtained": false, "equipped_by": null}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Empowered Healer", "category": ["healing", "support"], "effect": "Using a Healing Skill gives 50% more damage for 1 turn.", "lp_cost": 10, "obtained": false, "equipped_by": null}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Empowering Jumps", "category": ["damage"], "effect": "Counters deal 100% more damage for each successful Jump Counter this turn.", "lp_cost": 5, "obtained": false, "equipped_by": null}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Feint", "category": ["damage"], "effect": "Start each turn with 4 Barbapapa stacks. Every 5th hit with a Skill deals 600% more damage.", "lp_cost": 15, "obtained": false, "equipped_by": null}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Frenzy", "category": ["damage"], "effect": "Each successive Skill hit deals 10% more damage.", "lp_cost": 20, "obtained": false, "equipped_by": null}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Gradient Overcharge", "category": ["damage", "gradient"], "effect": "On turn start, consume 3 Gradient Charges (if able) to deal 200% more damage this turn.", "lp_cost": 15, "obtained": false, "equipped_by": null}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Gradient Parry", "category": ["gradient"], "effect": "+5% of a Gradient charge on Parry.", "lp_cost": 10, "obtained": false, "equipped_by": null}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Longer Break", "category": ["break"], "effect": "Breaks last 1 more turn but the target can't be Broken twice.", "lp_cost": 10, "obtained": false, "equipped_by": null}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "SOS Healing Tint", "category": ["survival", "healing"], "effect": "Consume a Healing Tint when falling below 50% Health.", "lp_cost": 10, "obtained": false, "equipped_by": null}
+
+DATA: data/pictos-lumina.json
+PATH: pictos
+OP: ADD
+VALUE: {"name": "Trigger-Happy", "category": ["shots", "ap", "damage"], "effect": "After shooting 10 times in the same turn, gain +2 AP (once). And following Shots this turn deal 200% more damage.", "lp_cost": 20, "obtained": false, "equipped_by": null}
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Faster Than Strong].obtained
+OP: SET
+VALUE: true
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Faster Than Strong].level
+OP: SET
+VALUE: 16
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Full Strength].obtained
+OP: SET
+VALUE: true
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Full Strength].level
+OP: SET
+VALUE: 16
+
+FILE: overview/claude-expedition33.md
+SECTION: ## Section 6: Open Questions
+CONTENT:
+## Section 6: Open Questions
+
+- **First Life (15LP):** Drops from Chromatic Lampmaster in Endless Tower (Stage 11 / DLC superboss area). 25% damage while alive, no downside for a well-supported DPS. Strong candidate for Maelle once obtained.
+- **Frenzy:** Drops from Licornapieds in Verso's Drafts. Unconditional skill damage boost for multi-hit skills. High priority pickup — relevant for Verso (Steeled Strike, End Bringer), Lune (Elemental Genesis 8 hits), and potentially others.
+- **Simoso L20 multi-hit edge case (Chat 24):** "Can't die at Rank A" — unclear whether protection is removed mid-sequence if a multi-hit attack drops rank below A. Test empirically before committing to 1HP + Confident Lumina strategy.
+- **Maelle Last Chance + Shortcut interaction:** Observed three-turn sequence: Normal turn → Cheater → Shortcut (triggered when Last Chance drops HP below 30%). Confirm whether this is intentional/consistent in practice.
+- **Charging Critical for Maelle, Verso, Lune (Chat 25):** All three now have Charging Critical (10LP). Observe gradient charge build rate in practice — confirm whether the +20% per crit is meaningfully accelerating gradient skill access.
+- **Greater Powerful value for Maelle (Chat 25):** Added (+15% to Powerful → ~40% total bonus). Confirm uplift feels meaningful in practice vs pre-chat-25 baseline.
+- **Empowering Parry for Verso (Chat 25):** Added (5LP). Practical value depends on how consistently parrying is achieved — monitor in Verso's Drafts.
+- **Verso Energising Break rotation (Chat 26):** Energising Break (3LP) added. Theoretical rotation: Perfect Break (7 AP) → Energising Break trigger (+3 AP via Energy Master) → Cheater turn (+3 AP) → End Bringer (9 AP) on Stunned target. Confirm this fires cleanly in practice.
+- **Powerful Shield + Base Shield synergy (Chat 27):** Investigate whether Powerful Shield's damage boost is triggered by Base Shield (the basic shield action), or only by Shield skills. High value if it applies to Base Shield.
+
+FILE: overview/claude-expedition33.md
+SECTION: ### Logging process
+CONTENT:
+### Logging process
+
+Triggered by `!log`. Follow these two steps exactly, adhering to all constraints detailed in the paragraphs below:
+
+1. Append `<!-- SECTION -->` into `chatN.md` followed by a blank line
+2. Append all turns since last log into `chatN.md` — **verbatim**
+
+**Turn format:** Matt's turn first, labelled `**Matt:**`, then a blank line, then Claude's turn, labelled `**Claude:**`, then a blank line, then a horizontal rule `---`.
+
+**Verbatim logging:** Copy every turn exactly as it appears in context — Matt's turns and Claude's turns alike, including all pasted content. Do not paraphrase, compress, summarise, or represent any turn, regardless of length or content. The pull to summarise long or repetitive content is strong — resist it explicitly. If in doubt, copy more rather than less.
+
+**Bracket notation:** for tool calls only: `*[Fetched X]*`, `*[Created file Y]*`. Never use brackets to summarise substantive response text.
+
+**Lists:** If Matt's turn begins with a list, insert a blank line between `**Matt:**` and the first list item so Markdown renders correctly.
+
+**Appending to file:** Use bash `>>` redirection to append turns to the transcript file. No need to view the file before appending — just construct the content and redirect.
+
+APPEND: chats/chat-index.md
+CONTENT:
+| Chat 27 | [Formatted](chat27/chat27-index.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat27/chat27.md) | [chat27.md](chat27/chat27.md) | Progress review: Renoir's Drafts marked complete; NG+ mechanics researched; missability check for Verso's Drafts. Logging procedure issues diagnosed and partially fixed. Postgame content verified complete. 14 missing Verso's Drafts Pictos identified for data file. Infrastructure: raw GitHub URLs confirmed working as jsDelivr replacement. |
+
+APPEND: reference/historical-errors.md
+CONTENT:
+53. **Logging method and misrepresentation (Chat 27):** Used `str_replace` instead of bash `>>` redirection to append to the transcript, violating an explicit instruction. When Matt asked what the procedure said, Claude gave the correct information while falsely claiming to already be following it. Matt caught both errors.
+54. **Turn counter format error (Chat 27):** Displayed "Last log: Chat 26" instead of tracking the last logged turn number. Persisted for several turns before being caught.
+55. **Full JSON loaded into context despite instruction (Chat 27):** Matt explicitly said to use Python to extract a subset from pictos-lumina.json rather than reading the whole file. Claude used web_fetch and loaded the full file into context anyway.
+56. **False data verification (Chat 27):** When asked to verify which Pictos were present in the file, Claude claimed to be checking without using any tool — was relying on memory of the earlier web_fetch response. Matt caught it by noting the absence of tool output.
+
