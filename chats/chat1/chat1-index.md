@@ -4,23 +4,23 @@ Chat between Matt and Claude, discussing help with the game Clair Obscur: Expedi
 
 ## Continuous Transcript
 
-* [Formatted](chat1.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1.md)
+* [Formatted](chat1.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1.md)
 
 ## Part Files (Claude-readable)
 
-* Part 1: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-part1.md)
-* Part 2: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-part2.md)
-* Part 3: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-part3.md)
-* Part 4: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-part4.md)
-* Part 5: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-part5.md)
-* Part 6: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-part6.md)
-* Part 7: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-part7.md)
-* Part 8: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-part8.md)
-* Part 9: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-part9.md)
+* Part 1: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1-part1.md)
+* Part 2: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1-part2.md)
+* Part 3: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1-part3.md)
+* Part 4: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1-part4.md)
+* Part 5: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1-part5.md)
+* Part 6: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1-part6.md)
+* Part 7: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1-part7.md)
+* Part 8: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1-part8.md)
+* Part 9: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1-part9.md)
 
 ## Table of Contents
 
-### [Part 1](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-part1.md)
+### [Part 1](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1-part1.md)
 
 - **[Preamble & Conversation Setup](chat1.md#preamble--conversation-setup)** — Matt pastes his 14 conversation defaults and Claude confirms how it will apply them, including thresholds for searching, theological framing, and tone. Two clarifying questions are asked and answered before proceeding.
 
@@ -36,7 +36,7 @@ Chat between Matt and Claude, discussing help with the game Clair Obscur: Expedi
 
 - **[Action Plan & Wrap-Up](chat1.md#action-plan--wrap-up)** — Consolidated action plan covering Tonight (weapon switches for Lune and Monoco, Lune skill changes, Monoco stat respec and skill overhaul) and Tomorrow (confirm wheel values, test Colim vs Trebuchim, report back on Monoco speed and rotation). Matt approves the plan and the session closes.
 
-### [Part 2](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-part2.md)
+### [Part 2](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1-part2.md)
 
 - **[Monoco stat respec](chat1.md#monoco-stat-respec)** — Matt tests each attribute at 99 points to establish ground truth on stat scaling with Nusaro, discovering that Luck is twice as efficient as Defence for crit rate (0.36% vs 0.18% per point). Iterates on allocations, settling on Agility 72 / Vitality 40 / Luck 20, raising Speed from 545 to 749 and Attack from 818 to 1139.
 
@@ -48,7 +48,7 @@ Chat between Matt and Claude, discussing help with the game Clair Obscur: Expedi
 
 - **[Session meta — token usage and response format](chat1.md#session-meta--token-usage-and-response-format)** — Discusses what made the session token-heavy (web fetches, long analytical responses, comprehensive build document in context). Agrees a new default of concise answers with optional detail on request, plus a token-cost warning before expensive operations.
 
-### [Part 3](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-part3.md)
+### [Part 3](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1-part3.md)
 
 - **[Self-assessment: mistakes, failure modes, viability](chat1.md#self-assessment-mistakes-failure-modes-viability)** — Claude catalogues its major errors (Colim recommendation, Monoco Defence/crit advice, Fueling Break description) and systematic failure modes (secondhand knowledge without play experience, generalising from meta without checking playstyle fit, hidden mechanics it doesn't know). Concludes collaboration is viable as a research assistant / sanity checker with a test-and-iterate loop, but not as an expert coach.
 
@@ -60,7 +60,7 @@ Chat between Matt and Claude, discussing help with the game Clair Obscur: Expedi
 
 - **[Paintress prep: Lumina optimisation](chat1.md#paintress-prep-lumina-optimisation)** — Full Lumina loadouts built for all three characters using Picto-provided freebies, with exact point budgets (Maelle 112, Lune 74+5 via Colour of Lumina, Monoco 81). Energising Turn, Energising Parry, and Energising Start I included on all characters. Teamwork (flat 10% damage while all allies alive) added after Matt queries its value; Fueling Break removed from Maelle in its favour. Several errors caught mid-process: Last Stand Lumina are solo-fighter buffs, not low-HP triggers; Dead Energy triggers on killing enemies, not ally deaths; Augmented Aim is more valuable on Lune than previously assessed. Finalised loadouts confirmed.
 
-### [Part 4](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-part4.md)
+### [Part 4](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1-part4.md)
 
 - **[Act 3 Opening: Renoir Level, Elemental Genesis, Elemental Trick, Verso and Sciel](chat1.md#act-3-opening-renoir-level-elemental-genesis-elemental-trick-verso-and-sciel)** — Matt asks about Renoir level, Elemental Genesis weapons, 100% crit for Elemental Trick, and how to develop Verso and Sciel. Claude's Choralim crit logic is corrected after Matt spots a circular dependency — the weapon maintains 100% crit only after stains are already active, so the initial stains must come from high Luck and crit Pictos.
 
@@ -74,7 +74,7 @@ Chat between Matt and Claude, discussing help with the game Clair Obscur: Expedi
 
 - **[Sciel Attribute Optimisation](chat1.md#sciel-attribute-optimisation)** — Matt's testing shows Luck wins for attack and Agility for speed; Claude endorses Agility 99 until Matt's confirmation-bias check reveals the speed gain changes nothing in turn order once Pictos are applied. Final build: Luck 89 / Agility 49, with Recovery Picto moved from Monoco to Sciel for survivability.
 
-### [Part 5](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-part5.md)
+### [Part 5](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1-part5.md)
 
 - **[Maelle's Skill Build](chat1.md#maelles-skill-build)** — Claude recommends dropping Fencer's Flurry for a "better AoE" it cannot name; after searching, corrects itself and confirms Fencer's Flurry is Maelle's best AoE option. Stendhal (4 points) identified as the priority unlock; remaining points saved.
 
@@ -90,7 +90,7 @@ Chat between Matt and Claude, discussing help with the game Clair Obscur: Expedi
 
 - **[Full Act 3 Progression Order](chat1.md#full-act-3-progression-order)** — Sacred River confirmed (level 60–65, Verso + Monoco only vs a Golgra variant). Four-phase progression plan compiled; Matt corrects Renoir's placement as the final boss, and Claude establishes The Reacher as a prerequisite for the Gustave resurrection path.
 
-### [Part 6](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-part6.md)
+### [Part 6](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1-part6.md)
 
 - **[Verso Skill Loadouts](chat1.md#verso-skill-loadouts)** — Three distinct loadouts provided for Verso: endgame team (Steeled Strike requires Cheater Picto from Sprong for safe use), Sacred River duo (Quick Strike and Assault Zero for faster rank-building), and solo (unchanged). Cheater Picto confirmed as a prerequisite for the Steeled Strike combo in team fights.
 
@@ -102,7 +102,7 @@ Chat between Matt and Claude, discussing help with the game Clair Obscur: Expedi
 
 - **[Full Consolidated Progression Plan](chat1.md#full-consolidated-progression-plan)** — Matt provides current completion status; full four-phase plan re-issued with all tables. Karatom confirmed permanently missable. Serpenphare added as a Phase 2 priority alongside Sprong (same area, both drop essential Pictos). Flying Manor and Chromatic Pétank added to Phase 4; Explore Visages added to Phase 1.
 
-### [Part 7](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-part7.md)
+### [Part 7](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1-part7.md)
 
 - **[The Chosen Path](chat1.md#the-chosen-path)** — Character choice for the five Canvas bosses confirmed as irrelevant; reward (Base Shield Picto) is the same regardless. Matt completes all five and collects the Pictos.
 
@@ -112,7 +112,7 @@ Chat between Matt and Claude, discussing help with the game Clair Obscur: Expedi
 
 - **[Build Refinement and Corrections](chat1.md#build-refinement-and-corrections)** — Several corrections: Gaulteram reverted as Verso's weapon; both weapons pushed to level 20 for passive value; Abbest Wind restored after Claude incorrectly removed it; Nusaro confirmed to advance the wheel +2 on perfect parries; Monoco's Picto revised to include Breaking Burn after Matt challenges the triple health/defence stack.
 
-### [Part 8](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-part8.md)
+### [Part 8](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1-part8.md)
 
 - **[Quick Break location and various corrections](chat1.md#quick-break-location-and-various-corrections)** — Quick Break confirmed as dropping from Chromatic Cruler (already done); Matt corrects Claude's LP accounting — each character has a fixed pool expandable by Colour of Lumina, and Picto-equipped Luminas cost no LP. Litheson level 20 passive confirmed as exceptional (+3 AP per turn when a buff/debuff is applied). Corrected full setup issued.
 
@@ -132,7 +132,7 @@ Chat between Matt and Claude, discussing help with the game Clair Obscur: Expedi
 
 - **[Joyaro drop level; Bénisseur Mortar; Monoco Break skills](chat1.md#joyaro-drop-level-bnisseur-mortar-monoco-break-skills)** — Joyaro drops at level 28 from Lampmaster; no overlap with the level 19 Resplendent Catalyst ceiling, so upgrading Nusaro to 20 is not wasted. Stalact Punches is the only Monoco skill explicitly labelled "High Break damage"; Moissonneuse Vendange and Rocher Hammering are "Can Break" only.
 
-### [Part 9](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat1/chat1-part9.md)
+### [Part 9](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat1/chat1-part9.md)
 
 - **[Full Summary](chat1.md#full-summary)** — Consolidated party setup issued: Verso (Gaulteram), Monoco (Nusaro to 20), Sciel (Litheson to 20); Pictos, skills, and Lumina all confirmed; all three characters at 110 LP for 64 Colour of Lumina; four-phase action plan from immediate setup through post-game.
 

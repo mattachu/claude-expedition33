@@ -57,7 +57,7 @@ Changelist format:
 
     APPEND: chats/chat-index.md
     CONTENT:
-    | Chat 23 | [Formatted](chat23/chat23-index.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat23/chat23-index.md) | [chat23.md](chat23/chat23.md) | Summary text here |
+    | Chat 23 | [Formatted](chat23/chat23-index.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat23/chat23-index.md) | [chat23.md](chat23/chat23.md) | Summary text here |
 
     APPEND: reference/historical-errors.md
     CONTENT:

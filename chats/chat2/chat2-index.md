@@ -4,24 +4,24 @@ Chat between Matt and Claude.
 
 ## Continuous Transcript
 
-* [Formatted](chat2.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2.md)
+* [Formatted](chat2.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat2/chat2.md)
 
 ## Part Files (Claude-readable)
 
-* Part 1 — Session Setup & Overview Load: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-part1.md)
-* Part 2 — Endgame Skills, Progression Planning & Level Update: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-part2.md)
-* Part 3 — Voice Chat Capabilities & !check Discussion: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-part3.md)
-* Part 4 — State of Play Update & Chromatic Progress: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-part4.md)
-* Part 5 — Phase Review, Compaction & Transcript Discovery: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-part5.md)
-* Part 6 — File Changes & Session Procedure: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-part6.md)
+* Part 1 — Session Setup & Overview Load: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat2/chat2-part1.md)
+* Part 2 — Endgame Skills, Progression Planning & Level Update: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat2/chat2-part2.md)
+* Part 3 — Voice Chat Capabilities & !check Discussion: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat2/chat2-part3.md)
+* Part 4 — State of Play Update & Chromatic Progress: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat2/chat2-part4.md)
+* Part 5 — Phase Review, Compaction & Transcript Discovery: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat2/chat2-part5.md)
+* Part 6 — File Changes & Session Procedure: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat2/chat2-part6.md)
 
 ## Table of Contents
 
-### [Part 1: Session Setup & Overview Load](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-part1.md)
+### [Part 1: Session Setup & Overview Load](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat2/chat2-part1.md)
 
 - **[Session Setup & Overview Load](chat2.md#session-setup--overview-load)** — Claude asks for startup file URL and reads it. First fetch of the overview file returns a cached placeholder version; Matt provides a commit-hash URL to get the correct version. Full overview read including error log and progression plan.
 
-### [Part 2: Endgame Skills, Progression Planning & Level Update](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-part2.md)
+### [Part 2: Endgame Skills, Progression Planning & Level Update](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat2/chat2-part2.md)
 
 - **[Endgame Skill Recommendations — Maelle, Verso, Sciel](chat2.md#endgame-skill-recommendations--maelle-verso-sciel)** — Claude researches and recommends six skills per character for the endgame team. Maelle: Stendhal, Burning Canvas, Sword Ballet, Fleuret Fury, Last Chance, Payback. Verso with Chevalam: Steeled Strike, End Bringer, Quick Strike, Assault Zero, Marking Shot, Perfect Break — with caveat that Steeled Strike requires Cheater Pictos from Sprong. Sciel: Fortune's Fury, Intervention, Delaying Slash, Plentiful Harvest, Focused Foretell, Final Path. Uncertainty flagged on flex slot priorities.
 
@@ -37,7 +37,7 @@ Chat between Matt and Claude.
 
 - **[State of Play Update Request](chat2.md#state-of-play-update-request)** — Matt reveals levels have risen significantly since Chat 1 (Sciel, Verso, Monoco all around 58–61). Claude requests current skills, weapons, Pictos, attribute allocation, chromatic progress, and resources to be able to give accurate advice.
 
-### [Part 3: Voice Chat Capabilities & !check Discussion](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-part3.md)
+### [Part 3: Voice Chat Capabilities & !check Discussion](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat2/chat2-part3.md)
 
 - **[!check Misses Voice Chat Error](chat2.md#check-misses-voice-chat-error)** — Claude falsely claims to have no voice chat capability. Matt runs !check; Claude reviews earlier session content rather than scrutinising the immediately preceding response and fails to catch the error. Matt corrects the voice claim; Claude accepts it without searching, then searches when pressed and confirms voice mode is available on mobile, web, and desktop as of early 2026.
 
@@ -47,7 +47,7 @@ Chat between Matt and Claude.
 
 *[Compaction occurred between Part 3 and Part 4]*
 
-### [Part 4: State of Play Update & Chromatic Progress](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-part4.md)
+### [Part 4: State of Play Update & Chromatic Progress](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat2/chat2-part4.md)
 
 - **[Character Stats Submitted via Voice](chat2.md#character-stats-submitted-via-voice)** — Matt submits current stats for all five characters via voice (with several garbled attempts) then pastes clean text. Claude checks internal consistency (3× level in allocated stat points). Maelle's Defence 79 flagged as unusual until Matt explains it's Medalum's B-scaling attribute — intentional and correct to keep.
 
@@ -57,7 +57,7 @@ Chat between Matt and Claude.
 
 - **[Chromatic Progress — Danseuse and Jar Cleared; Echassier Reclassified](chat2.md#chromatic-progress--danseuse-and-jar-cleared-echassier-reclassified)** — Matt clears Chromatic Danseuse and Jar. Asks about Chromatic Echassier location; Claude locates it in Lumiere (Shattered Alley, in front of the Opera House) and describes mechanics (weak point, Fire weakness, Blight stacks). Matt challenges the "easy" categorisation given it's in Lumiere; Claude accepts and searches — confirmed Level 80–85+ endgame content per IGN wiki. Error acknowledged; Echassier deferred.
 
-### [Part 5: Phase Review, Compaction & Transcript Discovery](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-part5.md)
+### [Part 5: Phase Review, Compaction & Transcript Discovery](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat2/chat2-part5.md)
 
 - **[Phase 1 Completion and Echassier Reclassification](chat2.md#phase-1-completion-and-echassier-reclassification)** — Matt asks to see Phase 1 from the progression plan. Claude incorrectly asks for the overview URL despite having fetched it earlier in the session — Matt catches this as a compaction continuity failure. Overview re-fetched. Phase 1 reviewed: Greatsword Cultist, Danseuse, and Jar now complete; Echassier confirmed as Level 80–85+ endgame content and moved to Phase 4. Phase 1 otherwise complete.
 
@@ -67,7 +67,7 @@ Chat between Matt and Claude.
 
 - **[Transcript Discovery — Structure and Cross-Chat Limitation](chat2.md#transcript-discovery--structure-and-cross-chat-limitation)** — Matt asks whether `/mnt/transcripts` persists across chats. Claude surfaces the pre-compaction transcript for download. Matt tests in a new chat and confirms the directory is session-specific and inaccessible cross-chat. Phase 2 list reviewed from re-fetched overview, with Jar ticked off.
 
-### [Part 6: File Changes & Session Procedure](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat2/chat2-part6.md)
+### [Part 6: File Changes & Session Procedure](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat2/chat2-part6.md)
 
 - **[Session Procedure Design](chat2.md#session-procedure-design)** — Matt asks whether adding transcript download as a standard end-of-session step makes sense. Claude confirms presenting the transcript file is a low-token file system operation. End-of-session procedure drafted: (1) open questions, (2) file changes, (3) transcript download, (4) new chat recommendation. Session start steps also drafted. Step ordering clarified (file changes before transcript). Procedure agreed for addition to overview file as Section 12.
 

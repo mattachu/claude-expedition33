@@ -4,18 +4,18 @@ Chat between Matt and Claude.
 
 ## Continuous Transcript
 
-* [Formatted](chat24.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat24/chat24.md)
+* [Formatted](chat24.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat24/chat24.md)
 
 ## Part Files (Claude-readable)
 
-* Part 1 — Simon Down, Lune Reworked: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat24/chat24-part1.md)
-* Part 2 — Post-Simon Reverts: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat24/chat24-part2.md)
-* Part 3 — Data Verification Marathon: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat24/chat24-part3.md)
-* Part 4 — Lumina Cost Review and Session Wrap: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat24/chat24-part4.md)
+* Part 1 — Simon Down, Lune Reworked: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat24/chat24-part1.md)
+* Part 2 — Post-Simon Reverts: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat24/chat24-part2.md)
+* Part 3 — Data Verification Marathon: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat24/chat24-part3.md)
+* Part 4 — Lumina Cost Review and Session Wrap: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat24/chat24-part4.md)
 
 ## Table of Contents
 
-### [Part 1](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat24/chat24-part1.md)
+### [Part 1](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat24/chat24-part1.md)
 
 - **[Session Startup and Seeram Purchase](chat24.md#session-startup-and-seeram-purchase)** — Session opens with Matt purchasing and levelling Seeram for Verso. Claude reads the screenshots, extracts weapon stats and inventory data, flags a duplicate Seeram entry in weapons.json, and drafts data update actions.
 
@@ -23,7 +23,7 @@ Chat between Matt and Claude.
 
 - **[Post-Simon Reverts — Lune](chat24.md#post-simon-reverts--lune)** — Matt revisits Lune's post-Simon skill loadout and damage output. Discussion covers Thermal Transfer for the Hell → Genesis AP loop, Frenzy Lumina (dropping from Licornapieds), and Burn Affinity as the key damage multiplier she was underusing. Decision: swap Rebirth → Thermal Transfer as standard loadout.
 
-### [Part 2](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat24/chat24-part2.md)
+### [Part 2](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat24/chat24-part2.md)
 
 - **[Post-Simon Reverts — Verso](chat24.md#post-simon-reverts--verso)** — Verso's skill loadout updated: Overload replaces Quick Strike, enabling a fork at Rank A between Steeled Strike burst and End Bringer stunlock. Simoso L20 "can't die at Rank A" discussed; multi-hit rank-drop edge case flagged for in-game testing before committing to 1HP + Confident strategy.
 
@@ -33,7 +33,7 @@ Chat between Matt and Claude.
 
 - **[In-Game Reverts Applied and Attribute Verification](chat24.md#in-game-reverts-applied-and-attribute-verification)** — Matt applies all reverts in-game and uploads character attribute screenshots. Claude compares against characters.json; finds Might increases (Maelle +6, Sciel +6, Lune +3) and Monoco Luck increase (+3) from levelling since last data update. jsDelivr JSON access issue encountered; resolved via raw GitHub. Maelle combat stats also updated.
 
-### [Part 3](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat24/chat24-part3.md)
+### [Part 3](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat24/chat24-part3.md)
 
 - **[Inventory, Pictos and Weapons Verification](chat24.md#inventory-pictos-and-weapons-verification)** — Inventory updated from screenshots (CoL 14→70 and Perfect 3→5 from Simon rewards). Pictos file checked: Charging Stun found marked unobtained but in inventory, actioned. future=true flag misread as "not yet obtained" — corrected by Matt, cancelled action written.
 
@@ -45,7 +45,7 @@ Chat between Matt and Claude.
 
 - **[Core Lumina Suite and Extras Audit](chat24.md#core-lumina-suite-and-extras-audit)** — core_lumina_suite compared against actual active Lumina. Energising Parry and Rewarding Mark removed from both cores. Base Shield added to reserve core. lumina_extras and lumina_core_exclusions audited for all characters; several missing extras identified and actioned. Open questions added for Verso Base Shield, Recovery for main core, Breaking Attack for all characters.
 
-### [Part 4](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat24/chat24-part4.md)
+### [Part 4](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat24/chat24-part4.md)
 
 - **[High-Cost Lumina Review — 40LP and 30LP](chat24.md#high-cost-lumina-review--40lp-and-30lp)** — Matt queries all 40LP and 30LP Lumina. Double Burn identified as obtained but unequipped. Energy Master confirmed on Sciel permanently (open question closed).
 

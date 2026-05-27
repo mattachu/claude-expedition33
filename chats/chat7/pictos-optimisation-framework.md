@@ -291,7 +291,7 @@ def get_character_pictos(data, character_name):
     return [p for p in data['pictos'] if p.get('equipped_by') == character_name]
 ```
 
-Fetch the current script from: `https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@d5d4d353/scripts/generate_pictos_lumina.py`
+Fetch the current script from: `https://raw.githubusercontent.com/mattachu/claude-expedition33/d5d4d353/scripts/generate_pictos_lumina.py`
 
 (Note: jsDelivr may return .py files as binary — if so, Matt can paste the script content directly or upload as a file.)
 

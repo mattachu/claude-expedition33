@@ -7,7 +7,7 @@ from pathlib import Path
 
 REPO = "mattachu/claude-expedition33"
 HASH = sys.argv[1][:8]
-BASE = f"https://cdn.jsdelivr.net/gh/{REPO}@{HASH}"
+BASE = f"https://raw.githubusercontent.com/{REPO}/{HASH}"
 
 # Repo root is the parent of the scripts/ directory
 REPO_ROOT = Path(__file__).resolve().parent.parent

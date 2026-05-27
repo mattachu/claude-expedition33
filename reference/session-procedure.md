@@ -123,7 +123,7 @@ Chat between Matt and Claude.
 
 ## Continuous Transcript
 
-* [Formatted](chatN.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN.md)
+* [Formatted](chatN.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chatN/chatN.md)
 
 ## Part Files (Claude-readable)
 
@@ -138,7 +138,7 @@ For each section from `section01.md` onward, follow the steps below. Read one se
 If the section opens a new part, append a part heading to the index file:
 ```md
 
-### [Part P](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-partP.md)
+### [Part P](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chatN/chatN-partP.md)
 
 ```
 
@@ -293,21 +293,21 @@ Chat between Matt and Claude.
 
 ## Continuous Transcript
 
-* [Formatted](chatN.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN.md)
+* [Formatted](chatN.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chatN/chatN.md)
 
 ## Part Files (Claude-readable)
 
-* Part 1 — Descriptive Title: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-part1.md)
-* Part 2 — Descriptive Title: [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-part2.md)
+* Part 1 — Descriptive Title: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chatN/chatN-part1.md)
+* Part 2 — Descriptive Title: [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chatN/chatN-part2.md)
 
 ## Table of Contents
 
-### [Part 1](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-part1.md)
+### [Part 1](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chatN/chatN-part1.md)
 
 - **[Section Title](chatN.md#section-title)** — description.
 - **[Section Title](chatN.md#section-title)** — description.
 
-### [Part 2](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chatN/chatN-part2.md)
+### [Part 2](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chatN/chatN-part2.md)
 
 - **[Section Title](chatN.md#section-title)** — description.
 

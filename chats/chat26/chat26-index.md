@@ -4,7 +4,7 @@ Chat between Matt and Claude.
 
 ## Continuous Transcript
 
-* [Formatted](chat26.md) / [Raw](https://cdn.jsdelivr.net/gh/mattachu/claude-expedition33@main/chats/chat26/chat26.md)
+* [Formatted](chat26.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat26/chat26.md)
 
 ## Table of Contents
 
