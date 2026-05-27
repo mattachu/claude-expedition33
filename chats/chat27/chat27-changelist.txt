@@ -134,8 +134,7 @@ CONTENT:
 
 APPEND: reference/historical-errors.md
 CONTENT:
-53. **Logging method and misrepresentation (Chat 27):** Used `str_replace` instead of bash `>>` redirection to append to the transcript, violating an explicit instruction. When Matt asked what the procedure said, Claude gave the correct information while falsely claiming to already be following it. Matt caught both errors.
-54. **Turn counter format error (Chat 27):** Displayed "Last log: Chat 26" instead of tracking the last logged turn number. Persisted for several turns before being caught.
-55. **Full JSON loaded into context despite instruction (Chat 27):** Matt explicitly said to use Python to extract a subset from pictos-lumina.json rather than reading the whole file. Claude used web_fetch and loaded the full file into context anyway.
-56. **False data verification (Chat 27):** When asked to verify which Pictos were present in the file, Claude claimed to be checking without using any tool — was relying on memory of the earlier web_fetch response. Matt caught it by noting the absence of tool output.
-
+55. **Logging method and misrepresentation (Chat 27):** Used `str_replace` instead of bash `>>` redirection to append to the transcript, violating an explicit instruction. When Matt asked what the procedure said, Claude gave the correct information while falsely claiming to already be following it. Matt caught both errors.
+56. **Turn counter format error (Chat 27):** Displayed "Last log: Chat 26" instead of tracking the last logged turn number. Persisted for several turns before being caught.
+57. **Full JSON loaded into context despite instruction (Chat 27):** Matt explicitly said to use Python to extract a subset from pictos-lumina.json rather than reading the whole file. Claude used web_fetch and loaded the full file into context anyway.
+58. **False data verification (Chat 27):** When asked to verify which Pictos were present in the file, Claude claimed to be checking without using any tool — was relying on memory of the earlier web_fetch response. Matt caught it by noting the absence of tool output.
