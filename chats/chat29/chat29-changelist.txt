@@ -23,12 +23,12 @@ PATH: inventory.chroma
 OP: SET
 VALUE: 1399559
 DATA: data/playthrough.json
-PATH: current_phase_checklist[id=franctale].done
+PATH: current_phase_checklist[id=hard_chromatics].items[id=franctale].done
 OP: SET
 VALUE: true
 
 DATA: data/playthrough.json
-PATH: current_phase_checklist[id=licorne].done
+PATH: current_phase_checklist[id=hard_chromatics].items[id=licorne].done
 OP: SET
 VALUE: true
 DATA: data/pictos-lumina.json
@@ -142,9 +142,20 @@ OP: SET
 VALUE: {"health": 2757, "crit": "32%"}
 
 DATA: data/pictos-lumina.json
-PATH: pictos
-OP: ADD
-VALUE: {"name": "Trigger-happy", "category": ["ap", "damage"], "effect": "After shooting 10 times in the same turn, gain +2 AP (once). Following Shots this turn deal 200% more damage.", "lp_cost": 20, "obtained": true, "equipped_by": null, "level": 29, "stats": {"speed": 1114}, "notes": "Verso's Drafts"}
+PATH: pictos[name=Trigger-Happy].obtained
+OP: SET
+VALUE: true
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Trigger-Happy].level
+OP: SET
+VALUE: 29
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Trigger-Happy].stats
+OP: SET
+VALUE: {"speed": 1114}
+
 DATA: data/weapons.json
 PATH: Lune[name=Esquim].power
 OP: SET
