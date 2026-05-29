@@ -193,3 +193,25 @@ DATA: data/weapons.json
 PATH: Maelle
 OP: ADD
 VALUE: {"name": "Licorum", "level": 29, "power": 5722, "element": "Physical", "scaling": "Agility B, Luck A", "obtained": true, "effects": [{"level": 4, "description": "Each successive Skill hit deals 10% more damage."}, {"level": 10, "description": "First hit of a Skill applies Mark."}, {"level": 20, "description": "Second hit of a Skill and following hits don't consume Mark."}]}
+
+FILE: overview/claude-expedition33.md
+SECTION: ## Section 6: Open Questions
+CONTENT:
+## Section 6: Open Questions
+
+- **First Life (15LP):** Drops from Chromatic Lampmaster in Endless Tower (Stage 11 / DLC superboss area). 25% damage while alive, no downside for a well-supported DPS. Strong candidate for Maelle once obtained.
+- **Simoso L20 multi-hit edge case (Chat 24):** "Can't die at Rank A" — unclear whether protection is removed mid-sequence if a multi-hit attack drops rank below A. Test empirically before committing to 1HP + Confident Lumina strategy.
+- **Maelle Last Chance + Shortcut interaction:** Observed three-turn sequence: Normal turn → Cheater → Shortcut (triggered when Last Chance drops HP below 30%). Confirm whether this is intentional/consistent in practice.
+- **Charging Critical for Maelle, Verso, Lune (Chat 25):** All three now have Charging Critical (10LP). Observe gradient charge build rate in practice — confirm whether the +20% per crit is meaningfully accelerating gradient skill access.
+- **Greater Powerful value for Maelle (Chat 25):** Added (+15% to Powerful → ~40% total bonus). Confirm uplift feels meaningful in practice vs pre-chat-25 baseline.
+- **Empowering Parry for Verso (Chat 25):** Added (5LP). Practical value depends on how consistently parrying is achieved — monitor in Verso's Drafts.
+- **Verso Energising Break rotation (Chat 26):** Energising Break (3LP) added. Theoretical rotation: Perfect Break (7 AP) → Energising Break trigger (+3 AP via Energy Master) → Cheater turn (+3 AP) → End Bringer (9 AP) on Stunned target. Confirm this fires cleanly in practice.
+- **Powerful Shield + Base Shield synergy (Chat 27):** Investigate whether Powerful Shield's damage boost is triggered by Base Shield (the basic shield action), or only by Shield skills. High value if it applies to Base Shield.
+- **Alternating Critical + Simoso interaction (Chat 28/29):** Alternating Critical now obtained. Does it trigger on Simoso Light hits? If yes (Case A), all-Pictos combination gives 12.48x multiplier on Steeled Strike. If no (Case B), 4.59x. Test on a tough Verso's Drafts enemy before the final boss.
+- **Frenzy + Simoso stacking (Chat 28/29):** Frenzy now obtained. Does Frenzy count Simoso Light hits for its successive-hit stacking? Case A gives 5.6x (Frenzy alone), Case B gives 3.56x. Test alongside Alternating Critical.
+- **Licorum L4 + Frenzy stacking (Chat 29):** Licorum (Physical, for Maelle) has an L4 effect with identical wording to the Frenzy Pictos: "Each successive Skill hit deals 10% more damage." Do these stack multiplicatively, additively, or not at all? If they stack, Licorum is a strong candidate to replace Lithum for multi-hit builds. Evaluate after confirming stacking behaviour.
+- **Tool result clearing (Chat 28):** `[Older tool result cleared to save context]` observed ~6–7 times in a long Haiku chat, silently discarding fetched file content. Unknown whether this is a Haiku token limitation or a system-wide change affecting all models. If system-wide, impacts reliability of any workflow depending on file fetches persisting across many turns.
+
+APPEND: chats/chat-index.md
+CONTENT:
+| Chat 29 | [Formatted](chat29/chat29-index.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat29/chat29-index.md) | [chat29.md](chat29/chat29.md) | Verso's Drafts near-complete: Franctale and Licorne chromatics confirmed done; screenshot data extraction covering 8 new Pictos, 4 new weapons and inventory.                                                                            |
