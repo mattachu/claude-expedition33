@@ -1,13 +1,3 @@
-# Chat 28 Changelist
-
-## In-Game Actions
-
-- [ ] Find the remaining 2 Lost Gestrals (7/9 found; Pro Retreat rewarded by Sastro for finding all 9)
-
----
-
-## Data Changes
-
 DATA: data/playthrough.json
 PATH: current_phase_checklist
 OP: ADD
@@ -303,7 +293,7 @@ CONTENT:
 
 APPEND: chats/chat-index.md
 CONTENT:
-| Chat 28 | [Formatted](chat28/chat28-index.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat28/chat28-index.md) | [chat28.md](chat28/chat28.md) | Verso's Drafts session: 7 Pictos found (Longer Break, SOS Healing Tint, Alternating Critical, Double Third, Damage Share, Feint, Slowing Attack), 5 weapons found (Esquion, Baguettaro, Cannaro, Esquim, Sucetton), 2 Chromatics defeated (Barbasucette, Machinapieds). Locations researched for all unobtained Pictos and stored as JSON notes. Multi-hit damage simulation for Verso's Steeled Strike with new Pictos: best case 12.48x, worst case 4.59x; key unknown is Alternating Critical + Simoso interaction. Logging violations: bracket summaries required manual transcript correction. |
+| Chat 28 | [Formatted](chat28/chat28-index.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat28/chat28-index.md) | [chat28.md](chat28/chat28.md) | Verso's Drafts update: 7 Pictos found, 5 weapons found, 2 Chromatics defeated; locations researched for unobtained Pictos; multi-hit damage simulation for Verso's Steeled Strike with new Pictos; logging and procedure violations.     |
 
 APPEND: reference/historical-errors.md
 CONTENT:
