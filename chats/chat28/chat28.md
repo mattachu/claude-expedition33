@@ -1,6 +1,7 @@
 # Clair Obscur: Expedition 33 — Chat 28
 
 <!-- SECTION -->
+## Session Start — Lost Gestrals Tracker
 
 **Matt:** Hi Claude! Let's continue to chat about Expedition 33.
 
@@ -66,6 +67,7 @@ I'll note that when we wrap.
 ---
 
 <!-- SECTION -->
+## Logging Process Corrections
 
 **Matt:** What are the instructions in section 7 for the log step?
 
@@ -122,6 +124,7 @@ What would you like to work on in this session?
 ---
 
 <!-- SECTION -->
+## Unobtained Pictos Locations
 
 **Matt:** Please can you download data/pictos-lumina.json using curl but don’t read it into context.
 
@@ -386,6 +389,7 @@ You're right — I should keep Last Log fixed at Turn 0 until the next !log comm
 ---
 
 <!-- SECTION -->
+## Transcript Logging Violations — Bracket Summaries
 
 **Matt:** What does section 7 say about the logging procedure?
 
@@ -446,6 +450,7 @@ Done. Old file deleted, corrected version in place. Ready to continue logging fr
 ---
 
 <!-- SECTION -->
+## Turn Counter Corrections — Post-Upload
 
 **Matt:** Your turn marker is still incorrect.
 
@@ -530,6 +535,7 @@ Then at wrap, the changelist builder can expand that into the specific JSON upda
 ---
 
 <!-- SECTION -->
+## Multi-Hit Damage Simulation — Steeled Strike with New Pictos
 
 **Matt:** With some of these new Pictos, there are some complex multipliers for multi-hit skills.
 
@@ -846,6 +852,7 @@ That's an incredible range — 50x to 180x on a single skill depending on how th
 ---
 
 <!-- SECTION -->
+## Damage Simulation — Feint Removed, Double Third Correction
 
 **Matt:** Quick follow up — do the same two simulations without Feint and without the Barbapapa. I feel like it does more harm than good.
 
@@ -1039,6 +1046,7 @@ So without Feint, Barbapapa, or Alternating Critical working on Simoso hits, you
 ---
 
 <!-- SECTION -->
+## Damage Simulation — Frenzy and Double Third Isolated
 
 **Matt:** So baseline = 13  
 Add 100% Critical = 19.5 (x1.5)  
@@ -1284,6 +1292,7 @@ That's where we are now.
 ---
 
 <!-- SECTION -->
+## Damage Simulation — Feint Isolated and All-Effects Combination
 
 **Matt:** You’re not updating Last log when you do a log.
 
@@ -1563,6 +1572,7 @@ Testing on a tough Verso's Drafts enemy will answer that quickly.
 ---
 
 <!-- SECTION -->
+## Session Close — Context Clearing Discussion
 
 **Matt:** !close
 
@@ -1732,5 +1742,297 @@ From context: ✓ Matches exactly.
 **Verdict: PASS** — All sampled turns are verbatim.
 
 Now presenting the transcript: *[Presented chat28.md]*
+
+---
+
+<!-- SECTION -->
+## Session Wrap
+
+**Matt:** Hi Claude!
+
+Latest startup file is at https://raw.githubusercontent.com/mattachu/claude-tools/6741561/startup.md
+
+This is a wrap session for the latest Expedition 33 chat. Links file attached. Fetch `reference/session-procedure.md` and run `!wrap` steps
+
+**Claude:** Hi Matt! Let me fetch the startup file and session procedure right away.
+
+*[Fetched startup.md]*
+
+*[Fetched reference/session-procedure.md]*
+
+Both files read. Starting `!wrap` for **Chat 28** (determined from uploaded filename `chat28.md`).
+
+**Step 1 — Split transcript into sections and plan part grouping**
+
+*[Split chat28.md into sections using csplit]*
+
+*[Counted lines in each section]*
+
+**10 sections found** (sections 01–10). Total lines: 1,734.
+
+Here's the proposed part grouping (targeting ~500–600 lines per part):
+
+| Part | Sections | Lines |
+|------|----------|-------|
+| Part 1 | 1–4 | 445 |
+| Part 2 | 5–7 | 593 |
+| Part 3 | 8–10 | 696 |
+
+Part 3 is slightly over target (696) — I could alternatively split into 4 parts (e.g. 1–4: 445 / 5–7: 593 / 8–9: 524 / 10: 172), but that leaves Part 4 very short. 3 parts seems cleaner.
+
+Does this grouping work, or would you prefer something different? Confirm and I'll proceed to Step 2.
+
+---
+
+**Matt:** There will also be the transcript of this wrap session itself to add to the end. How long are parts 7 and 9? Could we do 1–4, 5–6, 7–8, 9–10+wrap?
+
+**Claude:** Good call. Here are the relevant counts:
+
+- **Section 7:** 193 lines
+- **Section 9:** 279 lines
+
+So the proposed 4-part split would be:
+
+| Part | Sections | Lines |
+|------|----------|-------|
+| Part 1 | 1–4 | 445 |
+| Part 2 | 5–6 | 400 |
+| Part 3 | 7–8 | 438 |
+| Part 4 | 9–10 + wrap | 451 + wrap |
+
+All four parts land in the 400–450 range before the wrap session is added, which should bring Part 4 up nicely into the 500–600 zone depending on how long this chat runs. That's a clean and well-balanced split. Confirm and I'll move to Step 2?
+
+---
+
+**Matt:** What are the instructions for step 2?
+
+**Claude:** From the session procedure, Step 2 is:
+
+**Before reading any sections**, create the index file `/mnt/user-data/outputs/chat28-index.md` with the standard template (transcript link, placeholder for part list, empty table of contents).
+
+Then, **for each section from `section01.md` onward**, read one at a time — no batching, no reading ahead — and do three sub-steps:
+
+- **a. Part heading** — if this section opens a new part, append the part heading to the index file
+- **b. Section title** — write a short descriptive title, insert it into the section file immediately after the `<!-- SECTION -->` marker
+- **c. Index entry** — append the section title (with link) and a 2–3 sentence description to the index file
+
+Once all sections are done, replace the `(part list to be added later)` placeholder with the actual part list using `sed`.
+
+Then confirm with you before continuing.
+
+Ready to proceed?
+
+---
+
+**Matt:** Ok, continue
+
+**Claude:** Creating the index file first.
+
+*[Created chat28-index.md]*
+
+*[Read and processed section01.md — Session Start — Lost Gestrals Tracker — Part 1 heading appended]*
+
+*[Read and processed section02.md — Logging Process Corrections]*
+
+*[Read and processed section03.md — Unobtained Pictos Locations]*
+
+*[Read and processed section04.md — Transcript Logging Violations — Bracket Summaries]*
+
+*[Read and processed section05.md — Turn Counter Corrections — Post-Upload — Part 2 heading appended]*
+
+*[Read and processed section06.md — Multi-Hit Damage Simulation — Steeled Strike with New Pictos]*
+
+*[Read and processed section07.md — Damage Simulation — Feint Removed, Double Third Correction — Part 3 heading appended]*
+
+*[Read and processed section08.md — Damage Simulation — Frenzy and Double Third Isolated]*
+
+*[Read and processed section09.md — Damage Simulation — Feint Isolated and All-Effects Combination — Part 4 heading appended]*
+
+*[Read and processed section10.md — Session Close — Context Clearing Discussion]*
+
+*[Replaced part list placeholder in chat28-index.md using sed]*
+
+All 10 sections processed. Index complete. Confirming with you before moving to Step 3.
+
+**Summary of sections:**
+- Part 1 (sections 1–4): Session start, logging corrections, Pictos locations, bracket-summary violations
+- Part 2 (sections 5–6): Turn counter fix, Verso's Drafts progress report, damage simulation begins
+- Part 3 (sections 7–8): Feint/Barbapapa removed, Double Third corrected, Frenzy/Double Third isolated
+- Part 4 (sections 9–10): Feint isolated, all-effects combination, close procedure and context clearing discussion
+
+Ready to proceed to Step 3 — pulling ACTION flags?
+
+---
+
+**Matt:** What do the instructions for step 3 say?
+
+**Claude:** From the session procedure:
+
+> Use `awk` to pull all ACTION flags from the section files, grouped by section title:
+>
+> ```bash
+> awk '/^## /{section=$0; found=0} /^\*\*ACTION:/{if(!found){print section; found=1} print}' /home/claude/section*.md
+> ```
+>
+> Present the output to Matt and stop. Matt reviews and flags any actions to drop or modify before continuing.
+
+Ready to run it?
+
+---
+
+**Matt:** Yes
+
+**Claude:** *[Ran awk ACTION flag extraction]*
+
+Three actions found:
+
+**Section: Session Start — Lost Gestrals Tracker**
+> **ACTION:** Add Lost Gestrals tracker to Phase 4 checklist: "Find all Lost Gestrals (7/9)" — location to be determined. Note: 4 Lost Gestrals required for Chromatic Gault fight (Stone Wave Cliffs / Old Farm).
+
+**Section: Unobtained Pictos Locations**
+> **ACTION:** Add locations to notes fields for each unobtained Pictos, using the locations in the table in this section (note the Pro Retreat amendment).
+
+**Section: Turn Counter Corrections — Post-Upload**
+> **ACTION:** Verso's Drafts session — ingest 6 Pictos, 5 weapons, 2 Chromatic defeats, and updated inventory (61 Grandiose, 15 CoL).
+
+Note on Action 1: the Gault dependency note was the content you asked Claude to drop during the session ("I'll tidy it up at wrap"). Do you want to strip that back to just "Find all Lost Gestrals (7/9)", or handle it differently? Please review all three and flag any drops or modifications before I move to Step 4.
+
+---
+
+**Matt:** Yes, strip the first action back to just "Find all Lost Gestrals (7/9)".
+
+The other two actions will need cross-referencing when we build the changelist.
+
+What does step 4 say?
+
+**Claude:** Noted on Action 1. Step 4 says:
+
+Sort confirmed actions into bins:
+- **In-game actions** — things Matt needs to do in the game before the next session
+- **Data changes** — updates to JSON data files (→ `DATA:` blocks in changelist)
+- **File changes** — updates to Markdown files (→ `FILE:` blocks in changelist)
+- **Open questions** — items to add to Section 6 of the overview
+
+Then work through the bins and generate `chat28-changelist.txt`, fetching each file that has confirmed changes before writing its block. Data changes → `DATA:` blocks, file changes → `FILE:` blocks, open questions → `FILE:` block targeting Section 6 of the overview.
+
+Also include:
+- New row appended to `chats/chat-index.md` → `APPEND:` block (fetch existing file to match table row style)
+- Any updates to Section 6 open questions (even if not specifically flagged) → `FILE:` block
+- Any new entries for `reference/historical-errors.md` → `APPEND:` block if significant errors were made this session
+
+Then present the in-game actions checklist and the changelist file to Matt.
+
+There's quite a lot to cross-reference here — particularly Action 2 (24 Picto location `SET`s needing the table from section 3) and Action 3 (weapons and Pictos needing the data from section 5). I'll need to read those section files when building. Shall I proceed?
+
+---
+
+**Matt:** Ok, I think they are all data changes. The progress tracker is in data/playthrough.json. The Pictos data is in data/pictos-lumina.json and the weapons data is in data/weapons.json. You can fetch the files, but you don't need read the whole thing, as they are long and dense. You can query the JSON to get what you need.
+
+**Claude:** Good. I'll need to query three files, plus read the relevant section files for the data. Let me download everything and query what I need.
+
+*[Downloaded data/playthrough.json, data/pictos-lumina.json, data/weapons.json]*
+
+*[Queried current_phase_checklist and inventory structure from playthrough.json]*
+
+*[Queried pictos structure and stats field names from pictos-lumina.json]*
+
+*[Queried weapons structure per character from weapons.json]*
+
+*[Downloaded and queried chats/chat-index.md]*
+
+*[Downloaded and queried reference/historical-errors.md]*
+
+*[Downloaded and queried Section 6 of overview/claude-expedition33.md]*
+
+Good — I have all the data I need. One thing to flag before writing: **Frenzy** appears in the damage simulation as a "new Picto" (section 6 onwards), but it's not in the data dump from section 5. The 7 found Pictos listed there are Longer Break, SOS Healing Tint, Alternating Critical, Double Third, Damage Share, Feint, and Slowing Attack. Was Frenzy also found this session, or was it included in the simulation speculatively?
+
+While you consider that, I'll start writing the changelist with everything I'm certain about.
+
+*[Created chat28-changelist.txt]*
+
+**In-game actions checklist:**
+- [ ] Find the remaining 2 Lost Gestrals (7/9 found; Pro Retreat rewarded by Sastro for finding all 9)
+
+**Changelist summary:**
+- **playthrough.json:** Add Lost Gestrals checklist item; mark Barbasucette and Machinapieds done; update inventory (61 Grandiose, 15 CoL)
+- **pictos-lumina.json:** 7 Pictos set obtained + level + stats; 25 location notes added
+- **weapons.json:** 5 new weapons added (Esquion/Sciel, Baguettaro/Monoco, Cannaro/Monoco, Esquim/Lune, Sucetton/Sciel)
+- **overview Section 6:** 3 new open questions (Alternating Critical + Simoso, Frenzy + Simoso, tool result clearing); Frenzy entry updated to note Chat 28 simulation
+- **chat-index:** New Chat 28 row
+- **historical-errors:** Errors 59 (bracket summaries) and 60 (!close/!wrap confusion)
+
+**Pending question:** Was **Frenzy** found this session? It's in the simulation as a "new Picto" but not in the section 5 data dump. If it was found, I need to add its obtained/level/stats DATA blocks (no stats were recorded for it in the session).
+
+---
+
+**Matt:** Frenzy is a Pictos found in Verso's Drafts, but I haven't yet obtained it.
+
+It looks like the Verso's Drafts Pictos were not included in the list of locations to add to notes. Could you please add "Verso's Drafts" as "note" for each of these: Alternating Critical, AP Discount, Consuming Attack, Damage Share, Double Third, Empowered Healer, Empowering Jumps, Feint, Frenzy, Gradient Overcharge, Gradient Parry, Longer Break, SOS Healing Tint, Slowing Attack, Trigger-Happy
+
+**Claude:** Good, that's clear. I'll update the Slowing Attack notes entry (which currently has the more specific string) and add the other 14. Simplest to append all 15 — the script will use the last value for Slowing Attack.
+
+*[Appended 15 Verso's Drafts Picto notes DATA blocks to chat28-changelist.txt]*
+
+*[Presented chat28-changelist.txt]*
+
+Done. The 15 Verso's Drafts Pictos all get `"Verso's Drafts"` as their notes — the earlier Slowing Attack entry with the longer string will be overwritten by the last block. Ready to run `apply_changelist.py` whenever you are, then we'll move to Step 5.
+
+---
+
+**Matt:** What are the instructions for step 5?
+
+**Claude:** From the session procedure:
+
+**Step 5 — Complete transcript**
+
+For each part, concatenate its section files into a part file. Then log the end-of-session chat (this wrap session) as the final section:
+
+1. Append `<!-- SECTION -->` and `## Session Wrap` followed by a blank line into the last part file
+2. Append all turns from this wrap chat — verbatim, following the standard logging process
+3. Update the chat index to add the Session Wrap entry
+
+Then combine into the final transcript, with `section00.md` (the title header) at the top once:
+
+```bash
+cat /home/claude/section00.md /mnt/user-data/outputs/chat28-part1.md ... > /mnt/user-data/outputs/chat28.md
+```
+
+Finally, present the completed transcript, part files, and chat index to Matt.
+
+One thing to flag: the wrap session logging needs to happen **after** you've confirmed the changelist is done, since the transcript of this chat is appended last. Should I wait until you've run `apply_changelist.py` and confirmed everything before logging the wrap, or shall we proceed now?
+
+---
+
+**Matt:** Ok, all the changes seem to have applied ok. Go for step 5.
+
+**Claude:** Starting with the part file concatenations...
+
+*[Concatenated section files into part files]*
+
+Now appending the Session Wrap section to part 4, then logging this wrap chat verbatim...
+
+*[Appended Session Wrap section and wrap chat transcript to chat28-part4.md]*
+
+
+Now update the index to add the Session Wrap entry...
+
+*[Updated chat28-index.md with Session Wrap entry]*
+
+Now combine everything into the final transcript...
+
+*[Combined all parts into chat28.md]*
+
+All done. Final transcript is 2,018 lines. Files to push to GitHub:
+
+- `chats/chat28/chat28.md`
+- `chats/chat28/chat28-part1.md`
+- `chats/chat28/chat28-part2.md`
+- `chats/chat28/chat28-part3.md`
+- `chats/chat28/chat28-part4.md`
+- `chats/chat28/chat28-index.md`
+
+Plus the files already updated by `apply_changelist.py`, and a `LINKS.md` update to bump the commit hash and latest chat number to 28.
+
+*[Presented chat28.md, part files, and chat28-index.md]*
 
 ---
