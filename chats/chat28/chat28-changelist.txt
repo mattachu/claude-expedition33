@@ -1,0 +1,386 @@
+# Chat 28 Changelist
+
+## In-Game Actions
+
+- [ ] Find the remaining 2 Lost Gestrals (7/9 found; Pro Retreat rewarded by Sastro for finding all 9)
+
+---
+
+## Data Changes
+
+DATA: data/playthrough.json
+PATH: current_phase_checklist
+OP: ADD
+VALUE: {"id": "lost_gestrals", "label": "Find all Lost Gestrals (7/9)", "done": false}
+
+DATA: data/playthrough.json
+PATH: current_phase_checklist[id=hard_chromatics].items[id=barbasucette].done
+OP: SET
+VALUE: true
+
+DATA: data/playthrough.json
+PATH: current_phase_checklist[id=hard_chromatics].items[id=machinapieds].done
+OP: SET
+VALUE: true
+
+DATA: data/playthrough.json
+PATH: inventory.chroma_catalyst_grandiose
+OP: SET
+VALUE: 61
+
+DATA: data/playthrough.json
+PATH: inventory.colour_of_lumina
+OP: SET
+VALUE: 15
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Longer Break].obtained
+OP: SET
+VALUE: true
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Longer Break].level
+OP: SET
+VALUE: 29
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Longer Break].stats
+OP: SET
+VALUE: {"health": 2757, "defence": 786, "speed": 279}
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=SOS Healing Tint].obtained
+OP: SET
+VALUE: true
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=SOS Healing Tint].level
+OP: SET
+VALUE: 29
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=SOS Healing Tint].stats
+OP: SET
+VALUE: {"defence": 1572}
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Alternating Critical].obtained
+OP: SET
+VALUE: true
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Alternating Critical].level
+OP: SET
+VALUE: 29
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Alternating Critical].stats
+OP: SET
+VALUE: {"speed": 293, "crit": "50%"}
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Double Third].obtained
+OP: SET
+VALUE: true
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Double Third].level
+OP: SET
+VALUE: 29
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Damage Share].obtained
+OP: SET
+VALUE: true
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Damage Share].level
+OP: SET
+VALUE: 29
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Damage Share].stats
+OP: SET
+VALUE: {"health": 2612, "defence": 1489}
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Feint].obtained
+OP: SET
+VALUE: true
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Feint].level
+OP: SET
+VALUE: 29
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Feint].stats
+OP: SET
+VALUE: {"crit": "66%"}
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Slowing Attack].obtained
+OP: SET
+VALUE: true
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Slowing Attack].level
+OP: SET
+VALUE: 29
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Slowing Attack].stats
+OP: SET
+VALUE: {"health": 2757, "speed": 557}
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Accelerating Shots].notes
+OP: SET
+VALUE: "Gestral Merchant (Flying Manor)"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Accelerating Tint].notes
+OP: SET
+VALUE: "Gestral Merchant (Sanctuary of Endless Night)"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Auto Powerful].notes
+OP: SET
+VALUE: "Floating Cemetery — grant Chalier his wish for death"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Beneficial Contamination].notes
+OP: SET
+VALUE: "Falling Leaves merchant"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Charging Attack].notes
+OP: SET
+VALUE: "The Reacher"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Charging Counter].notes
+OP: SET
+VALUE: "The Reacher (guarded by two Echassiers in Mountain area)"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Charging Mark].notes
+OP: SET
+VALUE: "Gestral Merchant (Sanctuary of Endless Night)"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Charging Weakness].notes
+OP: SET
+VALUE: "Gestral Merchant (The Reacher)"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Critical Stun].notes
+OP: SET
+VALUE: "Gestral Merchant (Sacred River)"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Energetic Healer].notes
+OP: SET
+VALUE: "Flying Manor (left of Lampmaster boss, near frame)"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Energising Powerful].notes
+OP: SET
+VALUE: "Lumiere rooftop"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Exposing Break].notes
+OP: SET
+VALUE: "Gestral Merchant (The Reacher)"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Gradient Breaker].notes
+OP: SET
+VALUE: "Gestral Merchant (Flying Manor)"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Greater Rush].notes
+OP: SET
+VALUE: "Monoco's Station merchant"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Inverted Affinity].notes
+OP: SET
+VALUE: "Gestral Merchant (Forgotten Battlefield)"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Marking Break].notes
+OP: SET
+VALUE: "Gestral Merchant (Sanctuary of Endless Night)"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Powerful Heal].notes
+OP: SET
+VALUE: "Gestral Merchant (Sanctuary of Endless Night)"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Powerful Shield].notes
+OP: SET
+VALUE: "Gestral Merchant (Sanctuary of Endless Night)"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Pro Retreat].notes
+OP: SET
+VALUE: "Rewarded by Sastro for finding all 9 Lost Gestrals"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Protecting Attack].notes
+OP: SET
+VALUE: "Gestral Merchant (Sanctuary of Endless Night)"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Protecting Shots].notes
+OP: SET
+VALUE: "Flying Manor (right ledge from starting stairs, going down)"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Shell On Rush].notes
+OP: SET
+VALUE: "Endless Night Sanctuary merchant"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Shielding Tint].notes
+OP: SET
+VALUE: "The Continent, under wooden crates southeast of Forgotten Battlefield"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Slowing Attack].notes
+OP: SET
+VALUE: "Verso's Drafts (varies, dropped by enemies in starting area)"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Slowing Break].notes
+OP: SET
+VALUE: "Gestral Merchant (Flying Manor)"
+
+DATA: data/weapons.json
+PATH: Sciel
+OP: ADD
+VALUE: {"name": "Esquion", "level": 29, "power": 4362, "element": "Physical", "scaling": "Luck A, Vitality B", "obtained": true, "effects": [{"level": 4, "description": "Can't enter Twilight. On turn start, if Moon and Sun charges are balanced, deal 100% more damage and apply double Foretell."}, {"level": 10, "description": "On turn start, remove all Sun and Moon charges. Then, randomly gain 1 Sun or 1 Moon charge."}, {"level": 20, "description": "Base attack adds 1 Sun charge. Using a Tint adds 1 Moon charge."}]}
+
+DATA: data/weapons.json
+PATH: Monoco
+OP: ADD
+VALUE: {"name": "Baguettaro", "level": 29, "power": 4448, "element": "Fire", "scaling": "Luck A, Defense B", "obtained": true, "effects": [{"level": 4, "description": "Critical hits apply Burn."}, {"level": 10, "description": "Almighty Mask gives 50% increased damage (cumulative) and doubles enemies' Burn."}, {"level": 20, "description": "Almighty Mask Skills consume up to 100 Burn to deal 2% more damage per Burn consumed."}]}
+
+DATA: data/weapons.json
+PATH: Monoco
+OP: ADD
+VALUE: {"name": "Cannaro", "level": 29, "power": 2404, "element": "Light", "scaling": "Ability A, Luck B", "obtained": true, "effects": [{"level": 4, "description": "Free Aim Shots move the Bestial Wheel 1 step forward."}, {"level": 10, "description": "25% increased damage per Mask change this turn."}, {"level": 20, "description": "Free Aim shots deal double damage while in Almighty Mask."}]}
+
+DATA: data/weapons.json
+PATH: Lune
+OP: ADD
+VALUE: {"name": "Esquim", "level": 29, "power": 4105, "element": "Dark", "scaling": "Agility A, Defense B", "obtained": true, "effects": [{"level": 4, "description": "Using a Skill that doesn't consume Stains increases damage by 20%. Resets on using a Skill that consumes Stains."}, {"level": 10, "description": "Base attack changes all current Stains into Dark Stains."}, {"level": 20, "description": "With 4 active Dark Stains, any Skill can consume them to deal 300% more damage."}]}
+
+DATA: data/weapons.json
+PATH: Sciel
+OP: ADD
+VALUE: {"name": "Sucetton", "level": 29, "power": 2489, "element": "Fire", "scaling": "Luck A, Agility B", "obtained": true, "effects": [{"level": 4, "description": "Every fourth hit with a Skill generates 1 Sun charge and applies 5 Foretell."}, {"level": 10, "description": "+20% increased damage per Sun charge."}, {"level": 20, "description": "Sun Skills cost 1 less AP."}]}
+
+FILE: overview/claude-expedition33.md
+SECTION: ## Section 6: Open Questions
+CONTENT:
+## Section 6: Open Questions
+
+- **First Life (15LP):** Drops from Chromatic Lampmaster in Endless Tower (Stage 11 / DLC superboss area). 25% damage while alive, no downside for a well-supported DPS. Strong candidate for Maelle once obtained.
+- **Frenzy:** Drops from Licornapieds in Verso's Drafts. Unconditional skill damage boost for multi-hit skills. High priority pickup — relevant for Verso (Steeled Strike, End Bringer), Lune (Elemental Genesis 8 hits), and potentially others. Simulated in Chat 28 (see below for interaction questions).
+- **Simoso L20 multi-hit edge case (Chat 24):** "Can't die at Rank A" — unclear whether protection is removed mid-sequence if a multi-hit attack drops rank below A. Test empirically before committing to 1HP + Confident Lumina strategy.
+- **Maelle Last Chance + Shortcut interaction:** Observed three-turn sequence: Normal turn → Cheater → Shortcut (triggered when Last Chance drops HP below 30%). Confirm whether this is intentional/consistent in practice.
+- **Charging Critical for Maelle, Verso, Lune (Chat 25):** All three now have Charging Critical (10LP). Observe gradient charge build rate in practice — confirm whether the +20% per crit is meaningfully accelerating gradient skill access.
+- **Greater Powerful value for Maelle (Chat 25):** Added (+15% to Powerful → ~40% total bonus). Confirm uplift feels meaningful in practice vs pre-chat-25 baseline.
+- **Empowering Parry for Verso (Chat 25):** Added (5LP). Practical value depends on how consistently parrying is achieved — monitor in Verso's Drafts.
+- **Verso Energising Break rotation (Chat 26):** Energising Break (3LP) added. Theoretical rotation: Perfect Break (7 AP) → Energising Break trigger (+3 AP via Energy Master) → Cheater turn (+3 AP) → End Bringer (9 AP) on Stunned target. Confirm this fires cleanly in practice.
+- **Powerful Shield + Base Shield synergy (Chat 27):** Investigate whether Powerful Shield's damage boost is triggered by Base Shield (the basic shield action), or only by Shield skills. High value if it applies to Base Shield.
+- **Alternating Critical + Simoso interaction (Chat 28):** Does Alternating Critical trigger on Simoso Light hits? If yes (Case A), all-Pictos combination gives 12.48x multiplier on Steeled Strike. If no (Case B), 4.59x. This is the critical unknown from the Chat 28 damage simulation — test on a tough Verso's Drafts enemy.
+- **Frenzy + Simoso stacking (Chat 28):** Does Frenzy count Simoso Light hits for its successive-hit stacking? Case A gives 5.6x (Frenzy alone), Case B gives 3.56x. Test alongside Alternating Critical.
+- **Tool result clearing (Chat 28):** `[Older tool result cleared to save context]` observed ~6–7 times in a long Haiku chat, silently discarding fetched file content. Unknown whether this is a Haiku token limitation or a system-wide change affecting all models. If system-wide, impacts reliability of any workflow depending on file fetches persisting across many turns.
+
+APPEND: chats/chat-index.md
+CONTENT:
+| Chat 28 | [Formatted](chat28/chat28-index.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat28/chat28-index.md) | [chat28.md](chat28/chat28.md) | Verso's Drafts session: 7 Pictos found (Longer Break, SOS Healing Tint, Alternating Critical, Double Third, Damage Share, Feint, Slowing Attack), 5 weapons found (Esquion, Baguettaro, Cannaro, Esquim, Sucetton), 2 Chromatics defeated (Barbasucette, Machinapieds). Locations researched for all unobtained Pictos and stored as JSON notes. Multi-hit damage simulation for Verso's Steeled Strike with new Pictos: best case 12.48x, worst case 4.59x; key unknown is Alternating Critical + Simoso interaction. Logging violations: bracket summaries required manual transcript correction. |
+
+APPEND: reference/historical-errors.md
+CONTENT:
+59. **Bracket summaries in transcript (Chat 28):** Used bracket notation to summarise two substantive responses — the Pictos location table and a JSON structure explanation — rather than logging them verbatim. Violated the explicit rule: "Never use brackets to summarise substantive response text." Required Matt to manually correct and re-upload the transcript. Recurring pattern (see also error 55, Chat 27).
+60. **!close confused with !wrap (Chat 28):** When Matt triggered `!close`, Claude began running the `!wrap` changelist-building procedure instead. The two commands have distinct, documented procedures; Claude conflated them.
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Alternating Critical].notes
+OP: SET
+VALUE: "Verso's Drafts"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=AP Discount].notes
+OP: SET
+VALUE: "Verso's Drafts"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Consuming Attack].notes
+OP: SET
+VALUE: "Verso's Drafts"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Damage Share].notes
+OP: SET
+VALUE: "Verso's Drafts"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Double Third].notes
+OP: SET
+VALUE: "Verso's Drafts"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Empowered Healer].notes
+OP: SET
+VALUE: "Verso's Drafts"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Empowering Jumps].notes
+OP: SET
+VALUE: "Verso's Drafts"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Feint].notes
+OP: SET
+VALUE: "Verso's Drafts"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Frenzy].notes
+OP: SET
+VALUE: "Verso's Drafts"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Gradient Overcharge].notes
+OP: SET
+VALUE: "Verso's Drafts"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Gradient Parry].notes
+OP: SET
+VALUE: "Verso's Drafts"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Longer Break].notes
+OP: SET
+VALUE: "Verso's Drafts"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=SOS Healing Tint].notes
+OP: SET
+VALUE: "Verso's Drafts"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Slowing Attack].notes
+OP: SET
+VALUE: "Verso's Drafts"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Trigger-Happy].notes
+OP: SET
+VALUE: "Verso's Drafts"
