@@ -1,5 +1,5 @@
 <!-- SECTION -->
-## Turn Counter Corrections — Post-Upload
+## Verso's Draft Update
 
 **Matt:** Your turn marker is still incorrect.
 
@@ -21,7 +21,8 @@ You're right. I miscounted — Turn 11 was when I set up the corrected file, so 
 
 **Matt:** I have a lot of progress to report. Should these be actioned as separate items, or one catch-all action and get the wrap session to build changelist entries directly from this list?
 
-Location:  Verso's Drafts
+Location: Verso's Drafts
+
 Found:
 * Pictos
     * Longer Break, level 29, health 2757, defence 786, speed 279
@@ -55,6 +56,7 @@ Found:
 * Inventory (updated totals)
     * 61 Grandiose
     * 15 CoL
+
 Defeated:
 * Chromatic Machinapieds
 * Chromatic Barbasucette
@@ -399,4 +401,3 @@ That's an incredible range — 50x to 180x on a single skill depending on how th
 *[Appended to chat28.md]*
 
 ---
-
