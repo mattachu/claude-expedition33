@@ -59,7 +59,7 @@ But you're right: the action is just to track the 7/9 finder progress. The Gault
 
 **Matt:** Seeing as I already have 7, and the Chromatic Gault is already marked complete, it definitely doesn't seem worth including.
 
-**Claude:** Exactly right. That was unnecessary context. The action should just be: "Add Lost Gestrals tracker to Phase 4 checklist: Find all Lost Gestrals (7/9)." 
+**Claude:** Exactly right. That was unnecessary context. The action should just be: "Add Lost Gestrals tracker to Phase 4 checklist: Find all Lost Gestrals (7/9)..
 
 I'll note that when we wrap.
 
@@ -439,6 +439,12 @@ I need to fix the transcript to correct those bracket summaries and update the l
 
 *[Uploaded fixed chat28.md]*
 
+**Claude:** *[Turn 11. Last log: Turn 7.]*
+
+Done. Old file deleted, corrected version in place. Ready to continue logging from Turn 11 onwards.
+
+---
+
 <!-- SECTION -->
 
 **Matt:** Your turn marker is still incorrect.
@@ -527,11 +533,28 @@ Then at wrap, the changelist builder can expand that into the specific JSON upda
 
 **Matt:** With some of these new Pictos, there are some complex multipliers for multi-hit skills.
 
-[Table with Picto effects and LP costs]
+| Picto                | Effect                                                                                                            | LP Cost |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
+| Alternating Critical | On Critical hit, 100% increased damage of the next non-Critical hit.                                              | 10      |
+| Double Third         | Every third hit of a Skill deals double damage.                                                                   | 10      |
+| Feint                | Start each turn with 4 Barbapapa stacks. Every 5th hit with a Skill deals 600% more damage.                       | 15      |
+| Frenzy               | Each successive Skill hit deals 10% more damage.                                                                  | 20      |
 
 Can we simulate a multi-hit skill if I gave all of these to Verso?
 
-[Detailed setup: Verso 100% Crit, Steeled Strike 13 hits, Simoso doubles every hit, etc.]
+Assume Verso has 100% Crit rate, so every normal hit is a critical hit. Critical hits deal 50% more damage.
+
+Having N Barbapapa stacks mean that the first N hits of a skill only do 1 damage. So Feint effectively takes out the first four hits and replaces them with a 600% 5th hit. Hits after the 5th are not affected by Feint.
+
+Steeled Strike does 13 hits of extreme Physical damage. Let’s take a single Steeled Strike hit without multipliers as the baseline, rather than worrying about what “extreme” means. We’re interested in what effect the Pictos add rather than a quantitative damage number.
+
+Simoso has an effect that doubles every hit: “An ethereal Sword deals Light damage on any damage dealt with Skills.” So each of the 13 hits is followed by an additional Light hit. Let’s assume the element doesn’t matter for simplicity. It looks like Crit multipliers are not applied to the additional Light hits, at least by the colours of the text.
+
+So a standard Steeled Strike does “13” damage.
+
+Adding 100% Crit boosts every hit by 50%, so that’s 19.5.
+
+Simoso: Adding an extra hit after every normal hit gives a +13, so 32.5.
 
 Now I want you to simulate each hit:
 
@@ -548,7 +571,42 @@ Can you continue this for the next 20 hits?
 
 I'll work through this carefully. Let me track the state through each hit:
 
-[Clarified Feint interaction and asked for assumptions about Alternating Critical, Frenzy reset, Simoso Light hits, and hit ordering]
+**Setup:**
+- Base hit = 1
+- Crit multiplier = 1.5x (applied to physical hits only)
+- Simoso adds a second hit = +1 (no crit applied)
+- Frenzy: stacking 10% per successive hit (resets per skill? I'll assume per skill, so it stacks continuously through all 13 hits)
+- Double Third: every 3rd hit = 2x
+- Alternating Critical: after Crit hit, next non-Crit is 2x
+- Feint: first 4 hits do 1 damage, 5th hit does 6x (600% more = 7x total but baseline is 1, so 6x added? Or 6x multiplier of the hit itself?)
+
+Wait — I need clarification on Feint. You said "the first four hits... only do 1 damage" and "replaces them with a 600% 5th hit". Does that mean:
+- Hits 1-4 deal 1 damage each (regardless of other multipliers)
+- Hit 5 deals 600% *more* damage, so 7x baseline?
+
+And for Alternating Critical: does it reset per skill or per turn? I'm assuming per skill through all 13 hits.
+
+Also, does Frenzy reset between the physical hit and its Simoso Light companion, or do they count as consecutive for the stacking?
+
+Let me make reasonable assumptions and proceed:
+- Feint: hits 1-4 = 1 damage flat, hit 5 = 7x damage
+- Alternating Critical: tracks across all hits in the skill
+- Frenzy: counts every hit (physical + Simoso) as successive
+- Simoso Light hits don't get Crit multiplier
+
+Let me recalculate your examples first to verify my understanding:
+
+**Hit 1:** Crit + Barbapapa = 0 ✓ (Barbapapa cancels it)
+**Hit 2:** Simoso + Frenzy(10%) + Alt Crit + Barbapapa = 0 ✓ (Barbapapa cancels)
+**Hit 3:** Crit + Frenzy(20%) + Double Third + Barbapapa = 0 ✓ (Barbapapa cancels)
+**Hit 4:** Simoso + Frenzy(30%) + Alt Crit + Barbapapa = 0 ✓ (Barbapapa cancels)
+**Hit 5:** Crit(1.5) + Frenzy(40%) + Feint(7x) = 1 × 1.5 × 1.4 × 7 = **14.7** (but you said 7?)
+
+I'm off. Let me re-read: you said hit 5 = 7. If that's Feint alone (600% more on a baseline 1), that's 7x base. But with Crit (1.5x) and Frenzy (40% more = 1.4x), shouldn't it be higher?
+
+Unless Feint's "600% more" *caps* or *overrides* other multipliers? Or does Crit not apply to Feint's bonus hit?
+
+Can you clarify the interaction rules?
 
 ---
 
@@ -558,20 +616,91 @@ I'll work through this carefully. Let me track the state through each hit:
 
 Ah, that makes sense. So Feint hit 5 should be: 1 × 1.5 (Crit) × 1.4 (Frenzy +40%) × 7 (Feint 600% more = 7x multiplier) = **14.7** damage, not 7.
 
-[Clarified remaining assumptions]
+Let me clarify the remaining assumptions before I simulate all 25 hits:
+
+1. **Alternating Critical state:** Does it track as "last hit was Crit, so next non-Crit gets 2x"? And does the Simoso Light hit count as a "non-Crit hit" that can consume this bonus?
+2. **Frenzy reset:** Does the 10% stacking reset between Steeled Strike casts, or does it run continuously through all 13 hits of a single cast?
+3. **Simoso Light hits and Crit:** You said Crit multipliers don't apply to them. Should Frenzy, Double Third, Alternating Critical, and Feint also not apply to the Light hits, or only Crit is excluded?
+4. **Hit ordering:** When you list "Hit 5: Critical (50%) + Frenzy (50%)...", is that the 5th physical hit, or the 5th "action" (mixing physical and Light)? I'm assuming physical hits are numbered sequentially through the skill.
+
+Once I have those clarified, I can simulate all 25 accurately.
 
 ---
 
-**Matt:** 1. I think so. Needs testing. But if it does, it's a perfect synergy with Simoso that alternates Crit and non-Crit hits. 
-2. All 13 hits are from one cast of Steeled Strike, so Frenzy should run continuously. 
-3. I think you're probably right about the other effects not applying to them. I'm not sure. If Alternating Critical doesn't apply, that synergy is non-existent. Needs testing. 
-4. I'm pretty sure Simoso hits count for removing shields, so I think they should count for removing Barbapapa stacks. But I could be wrong. 
+**Matt:**
+
+1. I think so. Needs testing. But if it does, it's a perfect synergy with Simoso that alternates Crit and non-Crit hits.
+2. All 13 hits are from one cast of Steeled Strike, so Frenzy should run continuously.
+3. I think you're probably right about the other effects not applying to them. I'm not sure. If Alternating Critical doesn't apply, that synergy is non-existent. Needs testing.
+4. I'm pretty sure Simoso hits count for removing shields, so I think they should count for removing Barbapapa stacks. But I could be wrong.
 
 Quite a lot of ambiguity there.
 
 **Claude:** *[Turn 16. Last log: Turn 11.]*
 
-[Simulated 13-hit table with charitable assumptions, total 54.9x baseline]
+There's definitely a lot to test. For now, let me simulate with the most charitable assumptions (the ones that make the synergies work):
+
+- **Alternating Critical:** applies to both physical and Light hits, alternating Crit/non-Crit
+- **Simoso Light hits:** count as "hits" for Frenzy, Double Third, Feint (Barbapapa), and Alternating Critical
+- **Feint/Barbapapa:** both physical and Light hits consume stacks
+
+This gives maximum synergy. If testing shows otherwise, the numbers drop.
+
+**26-hit simulation (13 physical + 13 Simoso Light):**
+
+| Hit | Type | Crit? | Barbapapa | Frenzy | Double Third | Alt Crit | Feint | Multipliers | Damage |
+|-----|------|-------|-----------|--------|--------------|----------|-------|-------------|--------|
+| 1 | Phys | Yes | -1 stack | — | — | — | — | (Barbapapa: 1) | 1 |
+| 2 | Light | No | -1 stack | +10% | — | 2x | — | (Barbapapa: 1) | 1 |
+| 3 | Phys | Yes | -1 stack | +20% | 2x | — | — | 1.5 × 1.2 × 2 | 3.6 |
+| 4 | Light | No | -1 stack | +30% | — | 2x | — | (Barbapapa: 1) | 1 |
+| 5 | Phys | Yes | expired | +40% | — | — | 7x | 1.5 × 1.4 × 7 | 14.7 |
+| 6 | Light | No | — | +50% | 2x | 2x | — | 1 × 1.5 × 2 × 2 | 6 |
+| 7 | Phys | Yes | — | +60% | — | — | — | 1.5 × 1.6 | 2.4 |
+| 8 | Light | No | — | +70% | 2x | 2x | — | 1 × 1.7 × 2 × 2 | 6.8 |
+| 9 | Phys | Yes | — | +80% | — | — | — | 1.5 × 1.8 | 2.7 |
+| 10 | Light | No | — | +90% | 2x | 2x | — | 1 × 1.9 × 2 × 2 | 7.6 |
+| 11 | Phys | Yes | — | +100% | — | — | — | 1.5 × 2 | 3 |
+| 12 | Light | No | — | +110% | 2x | 2x | — | 1 × 2.1 × 2 × 2 | 8.4 |
+| 13 | Phys | Yes | — | +120% | — | — | — | 1.5 × 2.2 | 3.3 |
+
+**Total damage (optimistic): 1 + 1 + 3.6 + 1 + 14.7 + 6 + 2.4 + 6.8 + 2.7 + 7.6 + 3 + 8.4 + 3.3 = 61.5x baseline**
+
+(vs baseline 32.5x with just Crit + Simoso)
+
+The Feint spike at hit 5 is massive. And Double Third + Alternating Critical on the Light hits creates a nice secondary multiplier chain.
+
+Does this logic track, or are my assumptions clearly wrong?
+
+---
+
+**Matt:** Barbapapa is effectively a x0. My “1” baseline here is about 23,000 damage, and Barbapapa reduces that to 1.
+
+**Claude:** *[Turn 17. Last log: Turn 11.]*
+
+Ah — so Barbapapa doesn't just reduce to 1, it *sets* damage to 1 regardless of multipliers. So hits 1-4 are all 1 damage, full stop, no matter what other effects stack on them.
+
+That means my table needs adjustment:
+
+| Hit | Type | Crit? | Barbapapa | Frenzy | Double Third | Alt Crit | Feint | Damage |
+|-----|------|-------|-----------|--------|--------------|----------|-------|--------|
+| 1 | Phys | Yes | ✓ (1 stack) | — | — | — | — | **1** |
+| 2 | Light | No | ✓ (2 stacks) | — | — | — | — | **1** |
+| 3 | Phys | Yes | ✓ (3 stacks) | — | — | — | — | **1** |
+| 4 | Light | No | ✓ (4 stacks) | — | — | — | — | **1** |
+| 5 | Phys | Yes | expired | +40% | — | — | 7x | 1.5 × 1.4 × 7 = **14.7** |
+| 6 | Light | No | — | +50% | 2x | 2x | — | 1 × 1.5 × 2 × 2 = **6** |
+| 7 | Phys | Yes | — | +60% | — | — | — | 1.5 × 1.6 = **2.4** |
+| 8 | Light | No | — | +70% | 2x | 2x | — | 1 × 1.7 × 2 × 2 = **6.8** |
+| 9 | Phys | Yes | — | +80% | — | — | — | 1.5 × 1.8 = **2.7** |
+| 10 | Light | No | — | +90% | 2x | 2x | — | 1 × 1.9 × 2 × 2 = **7.6** |
+| 11 | Phys | Yes | — | +100% | — | — | — | 1.5 × 2 = **3** |
+| 12 | Light | No | — | +110% | 2x | 2x | — | 1 × 2.1 × 2 × 2 = **8.4** |
+| 13 | Phys | Yes | — | +120% | — | — | — | 1.5 × 2.2 = **3.3** |
+
+**Total: 4 + 14.7 + 6 + 2.4 + 6.8 + 2.7 + 7.6 + 3 + 8.4 + 3.3 = 58.9x baseline**
+
+That's a more realistic picture. The first 4 hits are "wasted" on Barbapapa, then Feint/Crit/Frenzy spike at hit 5, and the pattern stabilizes into a solid rhythm afterward.
 
 ---
 
@@ -579,7 +708,29 @@ Quite a lot of ambiguity there.
 
 **Claude:** *[Turn 17. Last log: Turn 11.]*
 
-[Corrected to show Barbapapa hits as 0, same total 54.9x baseline]
+Ah! Right — you're saying Barbapapa reduces the ~23,000 baseline damage to literally 1 damage. So in my simulation where baseline = 1, Barbapapa hits should show **0** (or effectively 0, rounding down).
+
+Let me recalculate:
+
+| Hit | Type | Crit? | Barbapapa | Frenzy | Double Third | Alt Crit | Feint | Damage |
+|-----|------|-------|-----------|--------|--------------|----------|-------|--------|
+| 1 | Phys | Yes | ✓ (1 stack) | — | — | — | — | **0** |
+| 2 | Light | No | ✓ (2 stacks) | — | — | — | — | **0** |
+| 3 | Phys | Yes | ✓ (3 stacks) | — | — | — | — | **0** |
+| 4 | Light | No | ✓ (4 stacks) | — | — | — | — | **0** |
+| 5 | Phys | Yes | expired | +40% | — | — | 7x | 1.5 × 1.4 × 7 = **14.7** |
+| 6 | Light | No | — | +50% | 2x | 2x | — | 1 × 1.5 × 2 × 2 = **6** |
+| 7 | Phys | Yes | — | +60% | — | — | — | 1.5 × 1.6 = **2.4** |
+| 8 | Light | No | — | +70% | 2x | 2x | — | 1 × 1.7 × 2 × 2 = **6.8** |
+| 9 | Phys | Yes | — | +80% | — | — | — | 1.5 × 1.8 = **2.7** |
+| 10 | Light | No | — | +90% | 2x | 2x | — | 1 × 1.9 × 2 × 2 = **7.6** |
+| 11 | Phys | Yes | — | +100% | — | — | — | 1.5 × 2 = **3** |
+| 12 | Light | No | — | +110% | 2x | 2x | — | 1 × 2.1 × 2 × 2 = **8.4** |
+| 13 | Phys | Yes | — | +120% | — | — | — | 1.5 × 2.2 = **3.3** |
+
+**Total: 0 + 0 + 0 + 0 + 14.7 + 6 + 2.4 + 6.8 + 2.7 + 7.6 + 3 + 8.4 + 3.3 = 54.9x baseline**
+
+Much more punishing — you lose the first four hits entirely to Barbapapa setup, then explode at hit 5.
 
 ---
 
@@ -587,7 +738,40 @@ Quite a lot of ambiguity there.
 
 **Claude:** *[Turn 17. Last log: Turn 11.]*
 
-[Extended table to 26 hits with Frenzy reaching 250%, total 180.2x baseline]
+Right, I need to continue through the Simoso Light hits. Let me extend the table to all 26 hits:
+
+| Hit | Type | Crit? | Barbapapa | Frenzy | Double Third | Alt Crit | Feint | Damage |
+|-----|------|-------|-----------|--------|--------------|----------|-------|--------|
+| 1 | Phys | Yes | ✓ (1) | — | — | — | — | **0** |
+| 2 | Light | No | ✓ (2) | — | — | — | — | **0** |
+| 3 | Phys | Yes | ✓ (3) | — | — | — | — | **0** |
+| 4 | Light | No | ✓ (4) | — | — | — | — | **0** |
+| 5 | Phys | Yes | expired | +40% | — | — | 7x | 1.5 × 1.4 × 7 = **14.7** |
+| 6 | Light | No | — | +50% | 2x | 2x | — | 1 × 1.5 × 2 × 2 = **6** |
+| 7 | Phys | Yes | — | +60% | — | — | — | 1.5 × 1.6 = **2.4** |
+| 8 | Light | No | — | +70% | 2x | 2x | — | 1 × 1.7 × 2 × 2 = **6.8** |
+| 9 | Phys | Yes | — | +80% | — | — | — | 1.5 × 1.8 = **2.7** |
+| 10 | Light | No | — | +90% | 2x | 2x | — | 1 × 1.9 × 2 × 2 = **7.6** |
+| 11 | Phys | Yes | — | +100% | — | — | — | 1.5 × 2 = **3** |
+| 12 | Light | No | — | +110% | 2x | 2x | — | 1 × 2.1 × 2 × 2 = **8.4** |
+| 13 | Phys | Yes | — | +120% | — | — | — | 1.5 × 2.2 = **3.3** |
+| 14 | Light | No | — | +130% | 2x | 2x | — | 1 × 2.3 × 2 × 2 = **9.2** |
+| 15 | Phys | Yes | — | +140% | — | — | — | 1.5 × 2.4 = **3.6** |
+| 16 | Light | No | — | +150% | 2x | 2x | — | 1 × 2.5 × 2 × 2 = **10** |
+| 17 | Phys | Yes | — | +160% | — | — | — | 1.5 × 2.6 = **3.9** |
+| 18 | Light | No | — | +170% | 2x | 2x | — | 1 × 2.7 × 2 × 2 = **10.8** |
+| 19 | Phys | Yes | — | +180% | — | — | — | 1.5 × 2.8 = **4.2** |
+| 20 | Light | No | — | +190% | 2x | 2x | — | 1 × 2.9 × 2 × 2 = **11.6** |
+| 21 | Phys | Yes | — | +200% | — | — | — | 1.5 × 3 = **4.5** |
+| 22 | Light | No | — | +210% | 2x | 2x | — | 1 × 3.1 × 2 × 2 = **12.4** |
+| 23 | Phys | Yes | — | +220% | — | — | — | 1.5 × 3.2 = **4.8** |
+| 24 | Light | No | — | +230% | 2x | 2x | — | 1 × 3.3 × 2 × 2 = **13.2** |
+| 25 | Phys | Yes | — | +240% | — | — | — | 1.5 × 3.4 = **5.1** |
+| 26 | Light | No | — | +250% | 2x | 2x | — | 1 × 3.5 × 2 × 2 = **14** |
+
+**Total: 0 + 0 + 0 + 0 + 14.7 + 6 + 2.4 + 6.8 + 2.7 + 7.6 + 3 + 8.4 + 3.3 + 9.2 + 3.6 + 10 + 3.9 + 10.8 + 4.2 + 11.6 + 4.5 + 12.4 + 4.8 + 13.2 + 5.1 + 14 = 180.2x baseline**
+
+That's a dramatic multiplier — Frenzy stacking through 26 hits creates huge growth, and the alternating Crit/non-Crit pattern feeds Double Third and Alternating Critical perfectly.
 
 ---
 
@@ -597,11 +781,59 @@ Now let's do the worst-case, where nothing counts on Simoso Light hits. Count th
 
 **Claude:** *[Turn 18. Last log: Turn 11.]*
 
-[Worst-case table with Simoso as pure +1 after multipliers, Alternating Critical disabled, Frenzy to 120%, total 56.7x baseline]
+**Worst-case scenario:** Simoso Light hits are pure +1 baseline, Alternating Critical doesn't apply to anything, Frenzy only reaches 120%.
+
+| Hit | Type | Crit? | Barbapapa | Frenzy | Double Third | Alt Crit | Feint | Damage |
+|-----|------|-------|-----------|--------|--------------|----------|-------|--------|
+| 1 | Phys | Yes | ✓ (1) | — | — | — | — | **0** |
+| 2 | Light | — | ✓ (2) | — | — | — | — | **1** |
+| 3 | Phys | Yes | ✓ (3) | — | — | — | — | **0** |
+| 4 | Light | — | ✓ (4) | — | — | — | — | **1** |
+| 5 | Phys | Yes | expired | +40% | — | — | 7x | 1.5 × 1.4 × 7 = **14.7** |
+| 6 | Light | — | — | — | — | — | — | **1** |
+| 7 | Phys | Yes | — | +60% | — | — | — | 1.5 × 1.6 = **2.4** |
+| 8 | Light | — | — | — | — | — | — | **1** |
+| 9 | Phys | Yes | — | +80% | — | — | — | 1.5 × 1.8 = **2.7** |
+| 10 | Light | — | — | — | — | — | — | **1** |
+| 11 | Phys | Yes | — | +100% | — | — | — | 1.5 × 2 = **3** |
+| 12 | Light | — | — | — | — | — | — | **1** |
+| 13 | Phys | Yes | — | +120% | — | — | — | 1.5 × 2.2 = **3.3** |
+
+**Total: 0 + 1 + 0 + 1 + 14.7 + 1 + 2.4 + 1 + 2.7 + 1 + 3 + 1 + 3.3 = 31.8x baseline**
+
+The Feint spike at hit 5 is still the standout moment, but without Frenzy scaling through all 26 hits and without the Double Third synergy on Light hits, you drop from **180.2x down to 31.8x**. Still respectable, but the synergy matters enormously.
 
 ---
 
-**Matt:** So, worst case 50x damage, best case 180x damage! I'll have to find a tough enemy to test it out on. 
+**Matt:** Hmm, not quite what I meant. Add a column for Simoso as a +1 just before Damage, but this is also set to zero by Barbapapa. Then Type is Physical for every hit, Crit is Yes for every hit, apply all the multipliers first then just add 1 for the Simoso hit. Make sense?
+
+**Claude:** *[Turn 18. Last log: Turn 11.]*
+
+Ah, I see — every physical hit gets its Simoso companion added as +1 at the end, but Barbapapa zeros out both. Let me redo it:
+
+| Hit | Type | Crit | Barbapapa | Frenzy | Double Third | Feint | Base Damage | Simoso | Total |
+|-----|------|------|-----------|--------|--------------|-------|------------|--------|-------|
+| 1 | Phys | Yes | ✓ (1) | — | — | — | **0** | **0** | **0** |
+| 2 | Phys | Yes | ✓ (2) | +10% | — | — | **0** | **0** | **0** |
+| 3 | Phys | Yes | ✓ (3) | +20% | 2x | — | **0** | **0** | **0** |
+| 4 | Phys | Yes | ✓ (4) | +30% | — | — | **0** | **0** | **0** |
+| 5 | Phys | Yes | expired | +40% | — | 7x | 1.5 × 1.4 × 7 = **14.7** | **1** | **15.7** |
+| 6 | Phys | Yes | — | +50% | 2x | — | 1.5 × 1.5 × 2 = **4.5** | **1** | **5.5** |
+| 7 | Phys | Yes | — | +60% | — | — | 1.5 × 1.6 = **2.4** | **1** | **3.4** |
+| 8 | Phys | Yes | — | +70% | 2x | — | 1.5 × 1.7 × 2 = **5.1** | **1** | **6.1** |
+| 9 | Phys | Yes | — | +80% | — | — | 1.5 × 1.8 = **2.7** | **1** | **3.7** |
+| 10 | Phys | Yes | — | +90% | 2x | — | 1.5 × 1.9 × 2 = **5.7** | **1** | **6.7** |
+| 11 | Phys | Yes | — | +100% | — | — | 1.5 × 2 = **3** | **1** | **4** |
+| 12 | Phys | Yes | — | +110% | 2x | — | 1.5 × 2.1 × 2 = **6.3** | **1** | **7.3** |
+| 13 | Phys | Yes | — | +120% | — | — | 1.5 × 2.2 = **3.3** | **1** | **4.3** |
+
+**Total: 0 + 0 + 0 + 0 + 15.7 + 5.5 + 3.4 + 6.1 + 3.7 + 6.7 + 4 + 7.3 + 4.3 = 56.7x baseline**
+
+Much closer to the original 54.9x — the Simoso companions add ~1.8x total.
+
+---
+
+**Matt:** So, worst case 50x damage, best case 180x damage! I'll have to find a tough enemy to test it out on.
 
 !log
 
@@ -611,6 +843,7 @@ That's an incredible range — 50x to 180x on a single skill depending on how th
 
 *[Appended to chat28.md]*
 
+---
 
 <!-- SECTION -->
 
@@ -618,9 +851,60 @@ That's an incredible range — 50x to 180x on a single skill depending on how th
 
 **Claude:** *[Turn 20. Last log: Turn 11.]*
 
-[Best case 26-hit table with Alternating Critical on Light hits, total 168.9x baseline]
+**Best case (no Feint, no Barbapapa, 26 hits):**
 
-[Worst case 13-hit table with Simoso +1, total 60.4x baseline]
+| Hit | Type | Crit | Frenzy | Double Third | Alt Crit | Damage |
+|-----|------|------|--------|--------------|----------|--------|
+| 1 | Phys | Yes | +10% | — | — | 1.5 × 1.1 = **1.65** |
+| 2 | Light | No | +20% | 2x | 2x | 1 × 1.2 × 2 × 2 = **4.8** |
+| 3 | Phys | Yes | +30% | — | — | 1.5 × 1.3 = **1.95** |
+| 4 | Light | No | +40% | 2x | 2x | 1 × 1.4 × 2 × 2 = **5.6** |
+| 5 | Phys | Yes | +50% | — | — | 1.5 × 1.5 = **2.25** |
+| 6 | Light | No | +60% | 2x | 2x | 1 × 1.6 × 2 × 2 = **6.4** |
+| 7 | Phys | Yes | +70% | — | — | 1.5 × 1.7 = **2.55** |
+| 8 | Light | No | +80% | 2x | 2x | 1 × 1.8 × 2 × 2 = **7.2** |
+| 9 | Phys | Yes | +90% | — | — | 1.5 × 1.9 = **2.85** |
+| 10 | Light | No | +100% | 2x | 2x | 1 × 2 × 2 × 2 = **8** |
+| 11 | Phys | Yes | +110% | — | — | 1.5 × 2.1 = **3.15** |
+| 12 | Light | No | +120% | 2x | 2x | 1 × 2.2 × 2 × 2 = **8.8** |
+| 13 | Phys | Yes | +130% | — | — | 1.5 × 2.3 = **3.45** |
+| 14 | Light | No | +140% | 2x | 2x | 1 × 2.4 × 2 × 2 = **9.6** |
+| 15 | Phys | Yes | +150% | — | — | 1.5 × 2.5 = **3.75** |
+| 16 | Light | No | +160% | 2x | 2x | 1 × 2.6 × 2 × 2 = **10.4** |
+| 17 | Phys | Yes | +170% | — | — | 1.5 × 2.7 = **4.05** |
+| 18 | Light | No | +180% | 2x | 2x | 1 × 2.8 × 2 × 2 = **11.2** |
+| 19 | Phys | Yes | +190% | — | — | 1.5 × 2.9 = **4.35** |
+| 20 | Light | No | +200% | 2x | 2x | 1 × 3 × 2 × 2 = **12** |
+| 21 | Phys | Yes | +210% | — | — | 1.5 × 3.1 = **4.65** |
+| 22 | Light | No | +220% | 2x | 2x | 1 × 3.2 × 2 × 2 = **12.8** |
+| 23 | Phys | Yes | +230% | — | — | 1.5 × 3.3 = **4.95** |
+| 24 | Light | No | +240% | 2x | 2x | 1 × 3.4 × 2 × 2 = **13.6** |
+| 25 | Phys | Yes | +250% | — | — | 1.5 × 3.5 = **5.25** |
+| 26 | Light | No | +260% | 2x | 2x | 1 × 3.6 × 2 × 2 = **14.4** |
+
+**Total: 1.65 + 4.8 + 1.95 + 5.6 + 2.25 + 6.4 + 2.55 + 7.2 + 2.85 + 8 + 3.15 + 8.8 + 3.45 + 9.6 + 3.75 + 10.4 + 4.05 + 11.2 + 4.35 + 12 + 4.65 + 12.8 + 4.95 + 13.6 + 5.25 + 14.4 = 168.9x baseline**
+
+---
+
+**Worst case (no Feint, no Barbapapa, 13 hits):**
+
+| Hit | Type | Crit | Frenzy | Double Third | Base | Simoso | Total |
+|-----|------|------|--------|--------------|------|--------|-------|
+| 1 | Phys | Yes | +10% | — | 1.5 × 1.1 = **1.65** | **1** | **2.65** |
+| 2 | Phys | Yes | +20% | 2x | 1.5 × 1.2 × 2 = **3.6** | **1** | **4.6** |
+| 3 | Phys | Yes | +30% | — | 1.5 × 1.3 = **1.95** | **1** | **2.95** |
+| 4 | Phys | Yes | +40% | 2x | 1.5 × 1.4 × 2 = **4.2** | **1** | **5.2** |
+| 5 | Phys | Yes | +50% | — | 1.5 × 1.5 = **2.25** | **1** | **3.25** |
+| 6 | Phys | Yes | +60% | 2x | 1.5 × 1.6 × 2 = **4.8** | **1** | **5.8** |
+| 7 | Phys | Yes | +70% | — | 1.5 × 1.7 = **2.55** | **1** | **3.55** |
+| 8 | Phys | Yes | +80% | 2x | 1.5 × 1.8 × 2 = **5.4** | **1** | **6.4** |
+| 9 | Phys | Yes | +90% | — | 1.5 × 1.9 = **2.85** | **1** | **3.85** |
+| 10 | Phys | Yes | +100% | 2x | 1.5 × 2 × 2 = **6** | **1** | **7** |
+| 11 | Phys | Yes | +110% | — | 1.5 × 2.1 = **3.15** | **1** | **4.15** |
+| 12 | Phys | Yes | +120% | 2x | 1.5 × 2.2 × 2 = **6.6** | **1** | **7.6** |
+| 13 | Phys | Yes | +130% | — | 1.5 × 2.3 = **3.45** | **1** | **4.45** |
+
+**Total: 2.65 + 4.6 + 2.95 + 5.2 + 3.25 + 5.8 + 3.55 + 6.4 + 3.85 + 7 + 4.15 + 7.6 + 4.45 = 60.4x baseline**
 
 Much cleaner — no 4-hit penalty, and the worst case actually beats the old best case without Simoso synergy. Best case still 168.9x, which is very close to the old 180x.
 
@@ -640,9 +924,60 @@ You're welcome. Ready for the next thing, or shall we wrap the session?
 
 You're right — Double Third triggers on every *third* hit (3, 6, 9, 12, 15, 18, 21, 24...), not every other hit. Let me recalculate both tables:
 
-[Best case 26-hit table corrected, total 106.2x baseline]
+**Best case (26 hits):**
 
-[Worst case 13-hit table with alternating Crit/non-Crit, total 48.7x baseline]
+| Hit | Frenzy | Double Third | Damage |
+|-----|--------|--------------|--------|
+| 1 | +10% | — | 1.5 × 1.1 = **1.65** |
+| 2 | +20% | — | 1 × 1.2 = **1.2** |
+| 3 | +30% | 2x | 1.5 × 1.3 × 2 = **3.9** |
+| 4 | +40% | — | 1 × 1.4 = **1.4** |
+| 5 | +50% | — | 1.5 × 1.5 = **2.25** |
+| 6 | +60% | 2x | 1 × 1.6 × 2 = **3.2** |
+| 7 | +70% | — | 1.5 × 1.7 = **2.55** |
+| 8 | +80% | — | 1 × 1.8 = **1.8** |
+| 9 | +90% | 2x | 1.5 × 1.9 × 2 = **5.7** |
+| 10 | +100% | — | 1 × 2 = **2** |
+| 11 | +110% | — | 1.5 × 2.1 = **3.15** |
+| 12 | +120% | 2x | 1 × 2.2 × 2 = **4.4** |
+| 13 | +130% | — | 1.5 × 2.3 = **3.45** |
+| 14 | +140% | — | 1 × 2.4 = **2.4** |
+| 15 | +150% | 2x | 1.5 × 2.5 × 2 = **7.5** |
+| 16 | +160% | — | 1 × 2.6 = **2.6** |
+| 17 | +170% | — | 1.5 × 2.7 = **4.05** |
+| 18 | +180% | 2x | 1 × 2.8 × 2 = **5.6** |
+| 19 | +190% | — | 1.5 × 2.9 = **4.35** |
+| 20 | +200% | — | 1 × 3 = **3** |
+| 21 | +210% | 2x | 1.5 × 3.1 × 2 = **9.3** |
+| 22 | +220% | — | 1 × 3.2 = **3.2** |
+| 23 | +230% | — | 1.5 × 3.3 = **4.95** |
+| 24 | +240% | 2x | 1 × 3.4 × 2 = **6.8** |
+| 25 | +250% | — | 1.5 × 3.5 = **5.25** |
+| 26 | +260% | — | 1 × 3.6 = **3.6** |
+
+**Total: 1.65 + 1.2 + 3.9 + 1.4 + 2.25 + 3.2 + 2.55 + 1.8 + 5.7 + 2 + 3.15 + 4.4 + 3.45 + 2.4 + 7.5 + 2.6 + 4.05 + 5.6 + 4.35 + 3 + 9.3 + 3.2 + 4.95 + 6.8 + 5.25 + 3.6 = 106.2x baseline**
+
+That's significantly lower without the Alternating Critical synergy creating every-other-hit doubles.
+
+**Worst case (13 hits):**
+
+| Hit | Frenzy | Double Third | Base | Simoso | Total |
+|-----|--------|--------------|------|--------|-------|
+| 1 | +10% | — | 1.5 × 1.1 = **1.65** | **1** | **2.65** |
+| 2 | +20% | — | 1 × 1.2 = **1.2** | **1** | **2.2** |
+| 3 | +30% | 2x | 1.5 × 1.3 × 2 = **3.9** | **1** | **4.9** |
+| 4 | +40% | — | 1 × 1.4 = **1.4** | **1** | **2.4** |
+| 5 | +50% | — | 1.5 × 1.5 = **2.25** | **1** | **3.25** |
+| 6 | +60% | 2x | 1 × 1.6 × 2 = **3.2** | **1** | **4.2** |
+| 7 | +70% | — | 1.5 × 1.7 = **2.55** | **1** | **3.55** |
+| 8 | +80% | — | 1 × 1.8 = **1.8** | **1** | **2.8** |
+| 9 | +90% | 2x | 1.5 × 1.9 × 2 = **5.7** | **1** | **6.7** |
+| 10 | +100% | — | 1 × 2 = **2** | **1** | **3** |
+| 11 | +110% | — | 1.5 × 2.1 = **3.15** | **1** | **4.15** |
+| 12 | +120% | 2x | 1 × 2.2 × 2 = **4.4** | **1** | **5.4** |
+| 13 | +130% | — | 1.5 × 2.3 = **3.45** | **1** | **4.45** |
+
+**Total: 2.65 + 2.2 + 4.9 + 2.4 + 3.25 + 4.2 + 3.55 + 2.8 + 6.7 + 3 + 4.15 + 5.4 + 4.45 = 48.7x baseline**
 
 Much more realistic. Best case 106x, worst case 49x.
 
@@ -654,7 +989,25 @@ Much more realistic. Best case 106x, worst case 49x.
 
 You're right — in the worst case, there's no Alternating Critical at all. So it's just Crit on physical hits, no Crit on the Simoso +1. Let me fix it:
 
-[Worst case 13-hit table corrected with all physical hits Crit Yes, total 56.2x baseline]
+**Worst case (13 hits, no Alternating Critical):**
+
+| Hit | Type | Crit | Frenzy | Double Third | Base | Simoso | Total |
+|-----|------|------|--------|--------------|------|--------|-------|
+| 1 | Phys | Yes | +10% | — | 1.5 × 1.1 = **1.65** | **1** | **2.65** |
+| 2 | Phys | Yes | +20% | — | 1.5 × 1.2 = **1.8** | **1** | **2.8** |
+| 3 | Phys | Yes | +30% | 2x | 1.5 × 1.3 × 2 = **3.9** | **1** | **4.9** |
+| 4 | Phys | Yes | +40% | — | 1.5 × 1.4 = **2.1** | **1** | **3.1** |
+| 5 | Phys | Yes | +50% | — | 1.5 × 1.5 = **2.25** | **1** | **3.25** |
+| 6 | Phys | Yes | +60% | 2x | 1.5 × 1.6 × 2 = **4.8** | **1** | **5.8** |
+| 7 | Phys | Yes | +70% | — | 1.5 × 1.7 = **2.55** | **1** | **3.55** |
+| 8 | Phys | Yes | +80% | — | 1.5 × 1.8 = **2.7** | **1** | **3.7** |
+| 9 | Phys | Yes | +90% | 2x | 1.5 × 1.9 × 2 = **5.7** | **1** | **6.7** |
+| 10 | Phys | Yes | +100% | — | 1.5 × 2 = **3** | **1** | **4** |
+| 11 | Phys | Yes | +110% | — | 1.5 × 2.1 = **3.15** | **1** | **4.15** |
+| 12 | Phys | Yes | +120% | 2x | 1.5 × 2.2 × 2 = **6.6** | **1** | **7.6** |
+| 13 | Phys | Yes | +130% | — | 1.5 × 2.3 = **3.45** | **1** | **4.45** |
+
+**Total: 2.65 + 2.8 + 4.9 + 3.1 + 3.25 + 5.8 + 3.55 + 3.7 + 6.7 + 4 + 4.15 + 7.6 + 4.45 = 56.2x baseline**
 
 That's the corrected worst case without Alternating Critical.
 
@@ -675,7 +1028,7 @@ So without Feint, Barbapapa, or Alternating Critical working on Simoso hits, you
 
 ---
 
-**Matt:** Right, that seems less impressive now. 
+**Matt:** Right, that seems less impressive now.
 
 !log
 
@@ -683,22 +1036,78 @@ So without Feint, Barbapapa, or Alternating Critical working on Simoso hits, you
 
 *[Appended to chat28.md]*
 
+---
 
 <!-- SECTION -->
 
-**Matt:** So baseline = 13
-Add 100% Critical = 19.5 (x1.5)
-Add Simoso = 32.5 (x2.5)
+**Matt:** So baseline = 13  
+Add 100% Critical = 19.5 (x1.5)  
+Add Simoso = 32.5 (x2.5)  
 
-That's where we are now without any of the new Pictos. 
+That's where we are now without any of the new Pictos.
 
 Now add just Frenzy, and do the two tables for whether Frenzy counts Simoso hits or not.
 
 **Claude:** *[Turn 23. Last log: Turn 11.]*
 
-[Case A: Frenzy counts Simoso hits, 26 hits, total 93.85x, 3.61x multiplier]
+**Case A: Frenzy counts Simoso hits (26 hits total):**
 
-[Case B: Frenzy counts only physical hits, 13 hits, total 56.2x, 4.33x multiplier]
+| Hit | Type | Frenzy | Double Third | Damage |
+|-----|------|--------|--------------|--------|
+| 1 | Phys | +10% | — | 1.5 × 1.1 = **1.65** |
+| 2 | Light | +20% | — | 1 × 1.2 = **1.2** |
+| 3 | Phys | +30% | — | 1.5 × 1.3 = **1.95** |
+| 4 | Light | +40% | — | 1 × 1.4 = **1.4** |
+| 5 | Phys | +50% | — | 1.5 × 1.5 = **2.25** |
+| 6 | Light | +60% | 2x | 1 × 1.6 × 2 = **3.2** |
+| 7 | Phys | +70% | — | 1.5 × 1.7 = **2.55** |
+| 8 | Light | +80% | — | 1 × 1.8 = **1.8** |
+| 9 | Phys | +90% | — | 1.5 × 1.9 = **2.85** |
+| 10 | Light | +100% | 2x | 1 × 2 × 2 = **4** |
+| 11 | Phys | +110% | — | 1.5 × 2.1 = **3.15** |
+| 12 | Light | +120% | — | 1 × 2.2 = **2.2** |
+| 13 | Phys | +130% | — | 1.5 × 2.3 = **3.45** |
+| 14 | Light | +140% | 2x | 1 × 2.4 × 2 = **4.8** |
+| 15 | Phys | +150% | — | 1.5 × 2.5 = **3.75** |
+| 16 | Light | +160% | — | 1 × 2.6 = **2.6** |
+| 17 | Phys | +170% | — | 1.5 × 2.7 = **4.05** |
+| 18 | Light | +180% | 2x | 1 × 2.8 × 2 = **5.6** |
+| 19 | Phys | +190% | — | 1.5 × 2.9 = **4.35** |
+| 20 | Light | +200% | — | 1 × 3 = **3** |
+| 21 | Phys | +210% | — | 1.5 × 3.1 = **4.65** |
+| 22 | Light | +220% | 2x | 1 × 3.2 × 2 = **6.4** |
+| 23 | Phys | +230% | — | 1.5 × 3.3 = **4.95** |
+| 24 | Light | +240% | — | 1 × 3.4 = **3.4** |
+| 25 | Phys | +250% | — | 1.5 × 3.5 = **5.25** |
+| 26 | Light | +260% | 2x | 1 × 3.6 × 2 = **7.2** |
+
+**Total: 1.65 + 1.2 + 1.95 + 1.4 + 2.25 + 3.2 + 2.55 + 1.8 + 2.85 + 4 + 3.15 + 2.2 + 3.45 + 4.8 + 3.75 + 2.6 + 4.05 + 5.6 + 4.35 + 3 + 4.65 + 6.4 + 4.95 + 3.4 + 5.25 + 7.2 = 93.85x**
+
+**93.85 ÷ 26 = 3.61x multiplier**
+
+---
+
+**Case B: Frenzy counts only physical hits (13 hits):**
+
+| Hit | Type | Frenzy | Double Third | Base | Simoso | Total |
+|-----|------|--------|--------------|------|--------|-------|
+| 1 | Phys | +10% | — | 1.5 × 1.1 = **1.65** | **1** | **2.65** |
+| 2 | Phys | +20% | — | 1.5 × 1.2 = **1.8** | **1** | **2.8** |
+| 3 | Phys | +30% | 2x | 1.5 × 1.3 × 2 = **3.9** | **1** | **4.9** |
+| 4 | Phys | +40% | — | 1.5 × 1.4 = **2.1** | **1** | **3.1** |
+| 5 | Phys | +50% | — | 1.5 × 1.5 = **2.25** | **1** | **3.25** |
+| 6 | Phys | +60% | 2x | 1.5 × 1.6 × 2 = **4.8** | **1** | **5.8** |
+| 7 | Phys | +70% | — | 1.5 × 1.7 = **2.55** | **1** | **3.55** |
+| 8 | Phys | +80% | — | 1.5 × 1.8 = **2.7** | **1** | **3.7** |
+| 9 | Phys | +90% | 2x | 1.5 × 1.9 × 2 = **5.7** | **1** | **6.7** |
+| 10 | Phys | +100% | — | 1.5 × 2 = **3** | **1** | **4** |
+| 11 | Phys | +110% | — | 1.5 × 2.1 = **3.15** | **1** | **4.15** |
+| 12 | Phys | +120% | 2x | 1.5 × 2.2 × 2 = **6.6** | **1** | **7.6** |
+| 13 | Phys | +130% | — | 1.5 × 2.3 = **3.45** | **1** | **4.45** |
+
+**Total: 2.65 + 2.8 + 4.9 + 3.1 + 3.25 + 5.8 + 3.55 + 3.7 + 6.7 + 4 + 4.15 + 7.6 + 4.45 = 56.2x**
+
+**56.2 ÷ 13 = 4.33x multiplier**
 
 So Frenzy alone adds about 1.2x in the best case (Simoso included) and 1.8x in the worst case (Simoso separate). Still modest.
 
@@ -708,32 +1117,146 @@ So Frenzy alone adds about 1.2x in the best case (Simoso included) and 1.8x in t
 
 **Claude:** *[Turn 23. Last log: Turn 11.]*
 
-[Case A: Frenzy only, 26 hits, total 72.85x, 2.80x multiplier]
+**Case A: Frenzy counts Simoso hits (26 hits total, no Double Third):**
 
-[Case B: Frenzy only, 13 hits, total 46.2x, 3.56x multiplier]
+| Hit | Frenzy | Damage |
+|-----|--------|--------|
+| 1 | +10% | 1.5 × 1.1 = **1.65** |
+| 2 | +20% | 1 × 1.2 = **1.2** |
+| 3 | +30% | 1.5 × 1.3 = **1.95** |
+| 4 | +40% | 1 × 1.4 = **1.4** |
+| 5 | +50% | 1.5 × 1.5 = **2.25** |
+| 6 | +60% | 1 × 1.6 = **1.6** |
+| 7 | +70% | 1.5 × 1.7 = **2.55** |
+| 8 | +80% | 1 × 1.8 = **1.8** |
+| 9 | +90% | 1.5 × 1.9 = **2.85** |
+| 10 | +100% | 1 × 2 = **2** |
+| 11 | +110% | 1.5 × 2.1 = **3.15** |
+| 12 | +120% | 1 × 2.2 = **2.2** |
+| 13 | +130% | 1.5 × 2.3 = **3.45** |
+| 14 | +140% | 1 × 2.4 = **2.4** |
+| 15 | +150% | 1.5 × 2.5 = **3.75** |
+| 16 | +160% | 1 × 2.6 = **2.6** |
+| 17 | +170% | 1.5 × 2.7 = **4.05** |
+| 18 | +180% | 1 × 2.8 = **2.8** |
+| 19 | +190% | 1.5 × 2.9 = **4.35** |
+| 20 | +200% | 1 × 3 = **3** |
+| 21 | +210% | 1.5 × 3.1 = **4.65** |
+| 22 | +220% | 1 × 3.2 = **3.2** |
+| 23 | +230% | 1.5 × 3.3 = **4.95** |
+| 24 | +240% | 1 × 3.4 = **3.4** |
+| 25 | +250% | 1.5 × 3.5 = **5.25** |
+| 26 | +260% | 1 × 3.6 = **3.6** |
+
+**Total: 1.65 + 1.2 + 1.95 + 1.4 + 2.25 + 1.6 + 2.55 + 1.8 + 2.85 + 2 + 3.15 + 2.2 + 3.45 + 2.4 + 3.75 + 2.6 + 4.05 + 2.8 + 4.35 + 3 + 4.65 + 3.2 + 4.95 + 3.4 + 5.25 + 3.6 = 72.85x**
+
+**72.85 ÷ 26 = 2.80x multiplier**
+
+---
+
+**Case B: Frenzy counts only physical hits (13 hits, no Double Third):**
+
+| Hit | Frenzy | Base | Simoso | Total |
+|-----|--------|------|--------|-------|
+| 1 | +10% | 1.5 × 1.1 = **1.65** | **1** | **2.65** |
+| 2 | +20% | 1.5 × 1.2 = **1.8** | **1** | **2.8** |
+| 3 | +30% | 1.5 × 1.3 = **1.95** | **1** | **2.95** |
+| 4 | +40% | 1.5 × 1.4 = **2.1** | **1** | **3.1** |
+| 5 | +50% | 1.5 × 1.5 = **2.25** | **1** | **3.25** |
+| 6 | +60% | 1.5 × 1.6 = **2.4** | **1** | **3.4** |
+| 7 | +70% | 1.5 × 1.7 = **2.55** | **1** | **3.55** |
+| 8 | +80% | 1.5 × 1.8 = **2.7** | **1** | **3.7** |
+| 9 | +90% | 1.5 × 1.9 = **2.85** | **1** | **3.85** |
+| 10 | +100% | 1.5 × 2 = **3** | **1** | **4** |
+| 11 | +110% | 1.5 × 2.1 = **3.15** | **1** | **4.15** |
+| 12 | +120% | 1.5 × 2.2 = **3.3** | **1** | **4.3** |
+| 13 | +130% | 1.5 × 2.3 = **3.45** | **1** | **4.45** |
+
+**Total: 2.65 + 2.8 + 2.95 + 3.1 + 3.25 + 3.4 + 3.55 + 3.7 + 3.85 + 4 + 4.15 + 4.3 + 4.45 = 46.2x**
+
+**46.2 ÷ 13 = 3.56x multiplier**
 
 So with just Frenzy: Case A (counts Simoso) is 2.80x, Case B (doesn't count Simoso) is 3.56x.
 
 ---
 
-**Matt:** Case A is actually x5.6 as the base is 13, not 26. 
+**Matt:** Case A is actually x5.6 as the base is 13, not 26.
 
-So baseline = 13
-Add 100% Critical = 19.5 (x1.5)
-Add Simoso = 32.5 (x2.5)
+So baseline = 13  
+Add 100% Critical = 19.5 (x1.5)  
+Add Simoso = 32.5 (x2.5)  
 
 That's where we are now.
 
-With Frenzy Case A = 72.85 (x5.6)
-With Frenzy Case B = 46.2 (x3.56)
+With Frenzy Case A = 72.85 (x5.6)  
+With Frenzy Case B = 46.2 (x3.56)  
 
 Now let's do Double Third only, so remove Frenzy. Make it repeat every 3 hits for both cases.
 
 **Claude:** *[Turn 24. Last log: Turn 11.]*
 
-[Case A: Double Third counts Simoso hits, 26 hits, total 46.5x, 3.58x multiplier]
+**Case A: Double Third counts Simoso hits (26 hits total, no Frenzy):**
 
-[Case B: Double Third counts only physical hits, 13 hits, total 38.5x, 2.96x multiplier]
+Double Third triggers on hits 3, 6, 9, 12, 15, 18, 21, 24.
+
+| Hit | Double Third | Damage |
+|-----|--------------|--------|
+| 1 | — | 1.5 = **1.5** |
+| 2 | — | 1 = **1** |
+| 3 | 2x | 1.5 × 2 = **3** |
+| 4 | — | 1.5 = **1.5** |
+| 5 | — | 1 = **1** |
+| 6 | 2x | 1.5 × 2 = **3** |
+| 7 | — | 1.5 = **1.5** |
+| 8 | — | 1 = **1** |
+| 9 | 2x | 1.5 × 2 = **3** |
+| 10 | — | 1.5 = **1.5** |
+| 11 | — | 1 = **1** |
+| 12 | 2x | 1.5 × 2 = **3** |
+| 13 | — | 1.5 = **1.5** |
+| 14 | — | 1 = **1** |
+| 15 | 2x | 1.5 × 2 = **3** |
+| 16 | — | 1.5 = **1.5** |
+| 17 | — | 1 = **1** |
+| 18 | 2x | 1.5 × 2 = **3** |
+| 19 | — | 1.5 = **1.5** |
+| 20 | — | 1 = **1** |
+| 21 | 2x | 1.5 × 2 = **3** |
+| 22 | — | 1.5 = **1.5** |
+| 23 | — | 1 = **1** |
+| 24 | 2x | 1.5 × 2 = **3** |
+| 25 | — | 1.5 = **1.5** |
+| 26 | — | 1 = **1** |
+
+**Total: (1.5 + 1 + 3) × 8 + 1.5 + 1 = 5.5 × 8 + 2.5 = 44 + 2.5 = 46.5x**
+
+**46.5 ÷ 13 = 3.58x multiplier**
+
+---
+
+**Case B: Double Third counts only physical hits (13 hits, no Frenzy):**
+
+Double Third triggers on hits 3, 6, 9, 12.
+
+| Hit | Double Third | Base | Simoso | Total |
+|-----|--------------|------|--------|-------|
+| 1 | — | 1.5 = **1.5** | **1** | **2.5** |
+| 2 | — | 1.5 = **1.5** | **1** | **2.5** |
+| 3 | 2x | 1.5 × 2 = **3** | **1** | **4** |
+| 4 | — | 1.5 = **1.5** | **1** | **2.5** |
+| 5 | — | 1.5 = **1.5** | **1** | **2.5** |
+| 6 | 2x | 1.5 × 2 = **3** | **1** | **4** |
+| 7 | — | 1.5 = **1.5** | **1** | **2.5** |
+| 8 | — | 1.5 = **1.5** | **1** | **2.5** |
+| 9 | 2x | 1.5 × 2 = **3** | **1** | **4** |
+| 10 | — | 1.5 = **1.5** | **1** | **2.5** |
+| 11 | — | 1.5 = **1.5** | **1** | **2.5** |
+| 12 | 2x | 1.5 × 2 = **3** | **1** | **4** |
+| 13 | — | 1.5 = **1.5** | **1** | **2.5** |
+
+**Total: (2.5 + 2.5 + 4) × 4 + 2.5 = 9 × 4 + 2.5 = 36 + 2.5 = 38.5x**
+
+**38.5 ÷ 13 = 2.96x multiplier**
 
 So with just Double Third: Case A (counts Simoso) is 3.58x, Case B (doesn't count Simoso) is 2.96x.
 
@@ -758,8 +1281,232 @@ That's where we are now.
 
 *[Appended to chat28.md]*
 
+---
 
 <!-- SECTION -->
+
+**Matt:** You’re not updating Last log when you do a log.
+
+**Claude:** *[Turn 25. Last log: Turn 24.]*
+
+You're absolutely right — when I append to the transcript with `!log`, I should update Last Log to the current turn number. So that last one should have been `*[Turn 25. Last log: Turn 24.]*` since the log happened at Turn 24.
+
+Going forward, after every `!log`, the next Claude response will have Last Log set to the turn where the log occurred.
+
+---
+
+**Matt:** Let’s do Feint by itself for comparison. First four hits are zero, fifth hit has a x7 multiplier.
+
+**Claude:** *[Turn 26. Last log: Turn 24.]*
+
+**Case A: Feint only (26 hits, Feint applies to both physical and Light):**
+
+| Hit | Feint | Damage |
+|-----|-------|--------|
+| 1 | 0 | **0** |
+| 2 | 0 | **0** |
+| 3 | 0 | **0** |
+| 4 | 0 | **0** |
+| 5 | 7x | 1.5 × 7 = **10.5** |
+| 6 | — | 1 = **1** |
+| 7 | — | 1.5 = **1.5** |
+| 8 | — | 1 = **1** |
+| 9 | — | 1.5 = **1.5** |
+| 10 | — | 1 = **1** |
+| 11 | — | 1.5 = **1.5** |
+| 12 | — | 1 = **1** |
+| 13 | — | 1.5 = **1.5** |
+| 14 | — | 1 = **1** |
+| 15 | — | 1.5 = **1.5** |
+| 16 | — | 1 = **1** |
+| 17 | — | 1.5 = **1.5** |
+| 18 | — | 1 = **1** |
+| 19 | — | 1.5 = **1.5** |
+| 20 | — | 1 = **1** |
+| 21 | — | 1.5 = **1.5** |
+| 22 | — | 1 = **1** |
+| 23 | — | 1.5 = **1.5** |
+| 24 | — | 1 = **1** |
+| 25 | — | 1.5 = **1.5** |
+| 26 | — | 1 = **1** |
+
+**Total: 0 + 0 + 0 + 0 + 10.5 + (1 + 1.5) × 10 + 1.5 = 10.5 + 25 + 1.5 = 37x**
+
+**37 ÷ 13 = 2.85x multiplier**
+
+---
+
+**Case B: Feint only (13 hits, Feint applies to physical only):**
+
+| Hit | Feint | Base | Simoso | Total |
+|-----|-------|------|--------|-------|
+| 1 | 0 | **0** | **1** | **1** |
+| 2 | 0 | **0** | **1** | **1** |
+| 3 | 0 | **0** | **1** | **1** |
+| 4 | 0 | **0** | **1** | **1** |
+| 5 | 7x | 1.5 × 7 = **10.5** | **1** | **11.5** |
+| 6 | — | 1.5 = **1.5** | **1** | **2.5** |
+| 7 | — | 1.5 = **1.5** | **1** | **2.5** |
+| 8 | — | 1.5 = **1.5** | **1** | **2.5** |
+| 9 | — | 1.5 = **1.5** | **1** | **2.5** |
+| 10 | — | 1.5 = **1.5** | **1** | **2.5** |
+| 11 | — | 1.5 = **1.5** | **1** | **2.5** |
+| 12 | — | 1.5 = **1.5** | **1** | **2.5** |
+| 13 | — | 1.5 = **1.5** | **1** | **2.5** |
+
+**Total: 1 + 1 + 1 + 1 + 11.5 + 2.5 × 8 = 4 + 11.5 + 20 = 35.5x**
+
+**35.5 ÷ 13 = 2.73x multiplier**
+
+So with just Feint: Case A (applies to both) is 2.85x, Case B (applies to physical only) is 2.73x.
+
+---
+
+**Matt:** Baseline = 13
+- Add 100% Critical = 19.5 (x1.5)
+- Add Simoso = 32.5 (x2.5)
+
+That’s where we are now.
+
+- With Frenzy Case A = 72.85 (x5.6)
+- With Frenzy Case B = 46.2 (x3.56)
+- With Double Third Case A = 46.5 (x3.58)
+- With Double Third Case B = 38,5 (x2.96)
+- With Alternating Critical A = 45.5 (x3.5)
+- With Alternating Critical B = 32.5 (x2.5)
+- With Feint Case A = 37 (x2.85)
+- With Feint Case B = 35.5 (x2.73)
+
+Now there are lots of combinations of multipliers. Let’s just do one run with all four effects together. Make sure Double Third is every three hits.
+
+**Claude:** *[Turn 26. Last log: Turn 24.]*
+
+**All four effects (26 hits, all effects apply to both physical and Light):**
+
+Double Third triggers on hits 3, 6, 9, 12, 15, 18, 21, 24.
+Frenzy stacks +10% per hit.
+
+| Hit | Frenzy | Double Third | Feint | Damage |
+|-----|--------|--------------|-------|--------|
+| 1 | +10% | — | 0 | **0** |
+| 2 | +20% | — | 0 | **0** |
+| 3 | +30% | 2x | 0 | **0** |
+| 4 | +40% | — | 0 | **0** |
+| 5 | +50% | — | 7x | 1.5 × 1.5 × 7 = **15.75** |
+| 6 | +60% | 2x | — | 1 × 1.6 × 2 = **3.2** |
+| 7 | +70% | — | — | 1.5 × 1.7 = **2.55** |
+| 8 | +80% | — | — | 1 × 1.8 = **1.8** |
+| 9 | +90% | 2x | — | 1.5 × 1.9 × 2 = **5.7** |
+| 10 | +100% | — | — | 1 × 2 = **2** |
+| 11 | +110% | — | — | 1.5 × 2.1 = **3.15** |
+| 12 | +120% | 2x | — | 1 × 2.2 × 2 = **4.4** |
+| 13 | +130% | — | — | 1.5 × 2.3 = **3.45** |
+| 14 | +140% | — | — | 1 × 2.4 = **2.4** |
+| 15 | +150% | 2x | — | 1.5 × 2.5 × 2 = **7.5** |
+| 16 | +160% | — | — | 1 × 2.6 = **2.6** |
+| 17 | +170% | — | — | 1.5 × 2.7 = **4.05** |
+| 18 | +180% | 2x | — | 1 × 2.8 × 2 = **5.6** |
+| 19 | +190% | — | — | 1.5 × 2.9 = **4.35** |
+| 20 | +200% | — | — | 1 × 3 = **3** |
+| 21 | +210% | 2x | — | 1.5 × 3.1 × 2 = **9.3** |
+| 22 | +220% | — | — | 1 × 3.2 = **3.2** |
+| 23 | +230% | — | — | 1.5 × 3.3 = **4.95** |
+| 24 | +240% | 2x | — | 1 × 3.4 × 2 = **6.8** |
+| 25 | +250% | — | — | 1.5 × 3.5 = **5.25** |
+| 26 | +260% | — | — | 1 × 3.6 = **3.6** |
+
+**Total: 0 + 0 + 0 + 0 + 15.75 + 3.2 + 2.55 + 1.8 + 5.7 + 2 + 3.15 + 4.4 + 3.45 + 2.4 + 7.5 + 2.6 + 4.05 + 5.6 + 4.35 + 3 + 9.3 + 3.2 + 4.95 + 6.8 + 5.25 + 3.6 = 127.5x**
+
+**127.5 ÷ 13 = 9.81x multiplier**
+
+Wow — all four together gives you nearly 10x damage on Steeled Strike!
+
+---
+
+**Matt:** You missed out Alternating Critical from that.
+
+**Claude:** *[Turn 27. Last log: Turn 24.]*
+
+You're right — I need to add Alternating Critical to the mix. With 100% Crit rate, that means physical hits are Crit and Light hits are non-Crit, alternating. So after each Crit hit, the next non-Crit hit gets 2x.
+
+Let me redo it with all five effects:
+
+**All five effects (26 hits, all effects apply to both physical and Light):**
+
+Double Third triggers on hits 3, 6, 9, 12, 15, 18, 21, 24.
+Alternating Critical: after Crit, next non-Crit gets 2x.
+Frenzy stacks +10% per hit.
+
+| Hit | Type | Crit | Frenzy | Double Third | Alt Crit | Feint | Damage |
+|-----|------|------|--------|--------------|----------|-------|--------|
+| 1 | Phys | Yes | +10% | — | — | 0 | **0** |
+| 2 | Light | No | +20% | — | — | 0 | **0** |
+| 3 | Phys | Yes | +30% | 2x | — | 0 | **0** |
+| 4 | Light | No | +40% | — | 2x | 0 | **0** |
+| 5 | Phys | Yes | +50% | — | — | 7x | 1.5 × 1.5 × 7 = **15.75** |
+| 6 | Light | No | +60% | 2x | 2x | — | 1 × 1.6 × 2 × 2 = **6.4** |
+| 7 | Phys | Yes | +70% | — | — | — | 1.5 × 1.7 = **2.55** |
+| 8 | Light | No | +80% | — | 2x | — | 1 × 1.8 × 2 = **3.6** |
+| 9 | Phys | Yes | +90% | 2x | — | — | 1.5 × 1.9 × 2 = **5.7** |
+| 10 | Light | No | +100% | — | 2x | — | 1 × 2 × 2 = **4** |
+| 11 | Phys | Yes | +110% | — | — | — | 1.5 × 2.1 = **3.15** |
+| 12 | Light | No | +120% | 2x | 2x | — | 1 × 2.2 × 2 × 2 = **8.8** |
+| 13 | Phys | Yes | +130% | — | — | — | 1.5 × 2.3 = **3.45** |
+| 14 | Light | No | +140% | — | 2x | — | 1 × 2.4 × 2 = **4.8** |
+| 15 | Phys | Yes | +150% | 2x | — | — | 1.5 × 2.5 × 2 = **7.5** |
+| 16 | Light | No | +160% | — | 2x | — | 1 × 2.6 × 2 = **5.2** |
+| 17 | Phys | Yes | +170% | — | — | — | 1.5 × 2.7 = **4.05** |
+| 18 | Light | No | +180% | 2x | 2x | — | 1 × 2.8 × 2 × 2 = **11.2** |
+| 19 | Phys | Yes | +190% | — | — | — | 1.5 × 2.9 = **4.35** |
+| 20 | Light | No | +200% | — | 2x | — | 1 × 3 × 2 = **6** |
+| 21 | Phys | Yes | +210% | 2x | — | — | 1.5 × 3.1 × 2 = **9.3** |
+| 22 | Light | No | +220% | — | 2x | — | 1 × 3.2 × 2 = **6.4** |
+| 23 | Phys | Yes | +230% | — | — | — | 1.5 × 3.3 = **4.95** |
+| 24 | Light | No | +240% | 2x | 2x | — | 1 × 3.4 × 2 × 2 = **13.6** |
+| 25 | Phys | Yes | +250% | — | — | — | 1.5 × 3.5 = **5.25** |
+| 26 | Light | No | +260% | — | 2x | — | 1 × 3.6 × 2 = **7.2** |
+
+**Total: 0 + 0 + 0 + 0 + 15.75 + 6.4 + 2.55 + 3.6 + 5.7 + 4 + 3.15 + 8.8 + 3.45 + 4.8 + 7.5 + 5.2 + 4.05 + 11.2 + 4.35 + 6 + 9.3 + 6.4 + 4.95 + 13.6 + 5.25 + 7.2 = 162.3x**
+
+**162.3 ÷ 13 = 12.48x multiplier**
+
+All five effects together: **12.48x multiplier** on Steeled Strike. That's genuinely devastating.
+
+---
+
+**Matt:** Only if it works. Now do Case B with all four effects together. Alternating Critical will never fire.
+
+**Claude:** *[Turn 27. Last log: Turn 24.]*
+
+**Case B: All four effects, physical hits only (13 hits, Alternating Critical disabled):**
+
+Double Third triggers on hits 3, 6, 9, 12.
+Frenzy applies to physical hits only (+10% per physical hit).
+Feint applies to physical hits only.
+
+| Hit | Frenzy | Double Third | Feint | Base | Simoso | Total |
+|-----|--------|--------------|-------|------|--------|-------|
+| 1 | +10% | — | 0 | **0** | **1** | **1** |
+| 2 | +20% | — | 0 | **0** | **1** | **1** |
+| 3 | +30% | 2x | 0 | **0** | **1** | **1** |
+| 4 | +40% | — | 0 | **0** | **1** | **1** |
+| 5 | +50% | — | 7x | 1.5 × 1.5 × 7 = **15.75** | **1** | **16.75** |
+| 6 | +60% | 2x | — | 1.5 × 1.6 × 2 = **4.8** | **1** | **5.8** |
+| 7 | +70% | — | — | 1.5 × 1.7 = **2.55** | **1** | **3.55** |
+| 8 | +80% | — | — | 1.5 × 1.8 = **2.7** | **1** | **3.7** |
+| 9 | +90% | 2x | — | 1.5 × 1.9 × 2 = **5.7** | **1** | **6.7** |
+| 10 | +100% | — | — | 1.5 × 2 = **3** | **1** | **4** |
+| 11 | +110% | — | — | 1.5 × 2.1 = **3.15** | **1** | **4.15** |
+| 12 | +120% | 2x | — | 1.5 × 2.2 × 2 = **6.6** | **1** | **7.6** |
+| 13 | +130% | — | — | 1.5 × 2.3 = **3.45** | **1** | **4.45** |
+
+**Total: 1 + 1 + 1 + 1 + 16.75 + 5.8 + 3.55 + 3.7 + 6.7 + 4 + 4.15 + 7.6 + 4.45 = 59.7x**
+
+**59.7 ÷ 13 = 4.59x multiplier**
+
+Case B with all four effects: **4.59x multiplier**. Much more conservative than the 12.48x when everything synergizes.
+
+---
 
 **Matt:** So, to summarise:
 
@@ -813,8 +1560,44 @@ Testing on a tough Verso's Drafts enemy will answer that quickly.
 
 *[Appended to chat28.md]*
 
+---
 
 <!-- SECTION -->
+
+**Matt:** !close
+
+**Claude:** *[Turn 29. Last log: Turn 27.]*
+
+**WRAP — Changelist Builder**
+
+Collected actions from this session:
+
+1. **ACTION:** Add Lost Gestrals tracker to Phase 4 checklist: "Find all Lost Gestrals (7/9)"
+
+2. **ACTION:** Add locations to notes fields for each unobtained Pictos, using the locations in the table in this section (note the Pro Retreat amendment: Rewarded by Sastro for finding all 9 Lost Gestrals).
+
+3. **ACTION:** Verso's Drafts session — ingest 6 Pictos, 5 weapons, 2 Chromatic defeats, and updated inventory (61 Grandiose, 15 CoL).
+
+---
+
+**Changelist entries to generate:**
+
+From Action 1:
+- `SET progress.phase4_checklist.lost_gestrals = "7/9"`
+
+From Action 2:
+- 24 `SET pictos[NAME].notes = "LOCATION"` entries for unobtained Pictos
+
+From Action 3:
+- 6 `SET pictos[NAME].obtained = true` + stats for: Longer Break, SOS Healing Tint, Alternating Critical, Double Third, Damage Share, Feint, Slowing Attack
+- 5 `SET weapons[NAME] = {...}` entries for: Esquion (Sciel), Baguettaro (Monoco), Cannaro (Monoco), Esquim (Lune), Sucetton (Sciel)
+- 2 `SET playthrough.chromatics_defeated += "Chromatic Machinapieds", "Chromatic Barbasucette"`
+- `SET playthrough.inventory.grandiose = 61`
+- `SET playthrough.inventory.col = 15`
+
+Ready to write these to a changelist file, or would you prefer to review/adjust first?
+
+---
 
 **Matt:** I didn't say !wrap, I said !close
 
@@ -836,17 +1619,13 @@ I fetched your startup file at the beginning of the session, but I don't have th
 
 **Matt:** It's in section 7 of overview/claude-expedition33.md. You read it in the first step of this chat. When you say it is not in immediate context, has the context been cleared, compacted or reduced, or is it just too full to remember?
 
-**Claude:** *[Turn 30. Last log: Turn 27.]*
-
-[No response provided; user noted missing Turn 31 response]
+**Claude:** *[No response provided; user noted missing Turn 31 response]*
 
 ---
 
 **Matt:** Can you check the folder /mnt/transcripts and tell me if there are any files in there?
 
-**Claude:** *[Turn 31. Last log: Turn 27.]*
-
-*[Checked /mnt/transcripts]*
+**Claude:** *[Checked /mnt/transcripts]*
 
 The `/mnt/transcripts` folder is empty.
 
@@ -906,9 +1685,9 @@ The pattern suggests the system is selectively clearing large fetched content to
 
 ---
 
-**Matt:** Ok. It might be a Haiku limitation when chats get long, as I normally keep Haiku chats short, and long Sonnet chats have coped fine in the past. Or it could be a change to the way Claude works overall, which would be a bigger problem. 
+**Matt:** Ok. It might be a Haiku limitation when chats get long, as I normally keep Haiku chats short, and long Sonnet chats have coped fine in the past. Or it could be a change to the way Claude works overall, which would be a bigger problem.
 
-For now, let's close this chat. Here are the steps. 
+For now, let’s close this chat. Here are the steps.
 
 > Close Steps
 >
@@ -919,3 +1698,39 @@ For now, let's close this chat. Here are the steps.
 **Claude:** *[Turn 32. Last log: Turn 27.]*
 
 *[Appended to chat28.md]*
+
+**Verbatim check — sampling 3 turns across transcript:**
+
+**Sample 1 (Beginning, lines 5-9):**
+From disk: Matt's opening "Hi Claude! Let's continue to chat about Expedition 33..." with startup file link and "Links file attached."
+From context: ✓ Matches exactly.
+
+**Sample 2 (Middle, lines 182-186):**
+From disk: Matt's "Ok. I know that these ones below are found in Verso's Drafts. Please could you search for locations..." and my opening response about Chalier Nevron.
+From context: ✓ Matches exactly.
+
+**Sample 3 (End, lines 820-826):**
+From disk: Matt's "I didn't say !wrap, I said !close" and my response "You're right — my apologies. `!close` ends the session..."
+From context: ✓ Matches exactly.
+
+**Verdict: PASS** — All sampled turns are verbatim.
+
+Now presenting the transcript: *[Turn 32. Last log: Turn 27.]***Verbatim check — sampling 3 turns across transcript:**
+
+**Sample 1 (Beginning, lines 5-9):**
+From disk: Matt's opening "Hi Claude! Let's continue to chat about Expedition 33..." with startup file link and "Links file attached."
+From context: ✓ Matches exactly.
+
+**Sample 2 (Middle, lines 182-186):**
+From disk: Matt's "Ok. I know that these ones below are found in Verso's Drafts. Please could you search for locations..." and my opening response about Chalier Nevron.
+From context: ✓ Matches exactly.
+
+**Sample 3 (End, lines 820-826):**
+From disk: Matt's "I didn't say !wrap, I said !close" and my response "You're right — my apologies. `!close` ends the session..."
+From context: ✓ Matches exactly.
+
+**Verdict: PASS** — All sampled turns are verbatim.
+
+Now presenting the transcript: *[Presented chat28.md]*
+
+---
