@@ -35,7 +35,7 @@ Fetch that file only when reviewing specific past errors.
 - **Progress:**
   - Act 3, Phase 4.
   - Characters: Maelle L95, Verso L94, Sciel L94, Lune L89, Monoco L89.
-  - Current area: Exploring.
+  - Current area: Verso's Drafts.
 <!-- GENERATED:END -->
   - For detailed progression plan, see [`overview/progress.md`](progress.md)
 
