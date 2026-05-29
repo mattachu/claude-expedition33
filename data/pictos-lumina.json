@@ -33,7 +33,8 @@
       "effect": "20% chance to gain Rush on Free Aim shot.",
       "lp_cost": 3,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Gestral Merchant (Flying Manor)"
     },
     {
       "name": "Accelerating Tint",
@@ -43,7 +44,8 @@
       "effect": "Healing Tints also apply Rush.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Gestral Merchant (Sanctuary of Endless Night)"
     },
     {
       "name": "Aegis Revival",
@@ -260,7 +262,8 @@
       "effect": "Apply Powerful for 3 turns on battle start.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Floating Cemetery — grant Chalier his wish for death"
     },
     {
       "name": "Auto Regen",
@@ -319,7 +322,8 @@
       "effect": "+2 AP on applying a Status Effect. Once per turn.",
       "lp_cost": 15,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Falling Leaves merchant"
     },
     {
       "name": "Break Specialist",
@@ -512,7 +516,8 @@
       "effect": "+15% of a Gradient Charge on Base Attack.",
       "lp_cost": 7,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "The Reacher"
     },
     {
       "name": "Charging Burn",
@@ -537,7 +542,8 @@
       "effect": "+10% of a Gradient Charge on Counterattack.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "The Reacher (guarded by two Echassiers in Mountain area)"
     },
     {
       "name": "Charging Critical",
@@ -563,7 +569,8 @@
       "effect": "+20% of a Gradient Charge on hitting a Marked target. Once per turn.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Gestral Merchant (Sanctuary of Endless Night)"
     },
     {
       "name": "Charging Stun",
@@ -595,7 +602,8 @@
       "effect": "+15% of a Gradient Charge on hitting a Weakness. Once per turn.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Gestral Merchant (The Reacher)"
     },
     {
       "name": "Cheater",
@@ -758,7 +766,8 @@
       "effect": "100% Critical Chance on hitting a Stunned target.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Gestral Merchant (Sacred River)"
     },
     {
       "name": "Critical Vulnerability",
@@ -993,7 +1002,8 @@
       "effect": "+2 AP on Healing an ally. Once per turn.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Flying Manor (left of Lampmaster boss, near frame)"
     },
     {
       "name": "Energising Attack I",
@@ -1141,7 +1151,8 @@
       "effect": "Give 2 AP on applying Powerful.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Lumiere rooftop"
     },
     {
       "name": "Energising Revive",
@@ -1336,7 +1347,8 @@
       "effect": "Apply Defenceless on Break.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Gestral Merchant (The Reacher)"
     },
     {
       "name": "Faster Than Strong",
@@ -1433,7 +1445,8 @@
       "effect": "50% increased Break damage with Gradient Attacks.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Gestral Merchant (Flying Manor)"
     },
     {
       "name": "Gradient Fighter",
@@ -1500,7 +1513,8 @@
       "effect": "+25% to Rush Speed increase.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Monoco's Station merchant"
     },
     {
       "name": "Greater Shell",
@@ -1673,7 +1687,8 @@
       "effect": "Apply Inverted on self for 3 turns on battle start. 50% increased damage while Inverted.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Gestral Merchant (Forgotten Battlefield)"
     },
     {
       "name": "Last Stand Critical",
@@ -1747,7 +1762,8 @@
       "effect": "Apply Mark on Break.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Gestral Merchant (Sanctuary of Endless Night)"
     },
     {
       "name": "Marking Shots",
@@ -1838,7 +1854,8 @@
       "effect": "Healing an ally also applies Powerful for 1 turn.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Gestral Merchant (Sanctuary of Endless Night)"
     },
     {
       "name": "Powerful Mark",
@@ -1878,7 +1895,8 @@
       "effect": "10% increased damage per Shield Point on self.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Gestral Merchant (Sanctuary of Endless Night)"
     },
     {
       "name": "Powerful Shots",
@@ -1915,7 +1933,8 @@
       "effect": "Allows Flee to be instantaneous.",
       "lp_cost": 40,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Rewarded by Sastro for finding all 9 Lost Gestrals"
     },
     {
       "name": "Protecting Attack",
@@ -1925,7 +1944,8 @@
       "effect": "Gain Shell for 1 turn on Base Attack.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Gestral Merchant (Sanctuary of Endless Night)"
     },
     {
       "name": "Protecting Death",
@@ -1971,7 +1991,8 @@
       "effect": "20% chance to gain Shell on Free Aim shot.",
       "lp_cost": 3,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Flying Manor (right ledge from starting stairs, going down)"
     },
     {
       "name": "Protecting Tint",
@@ -2173,7 +2194,8 @@
       "effect": "Apply Shell on applying Rush.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Endless Night Sanctuary merchant"
     },
     {
       "name": "Shield Affinity",
@@ -2211,7 +2233,8 @@
       "effect": "Healing Tints also add 2 Shields.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "The Continent, under wooden crates southeast of Forgotten Battlefield"
     },
     {
       "name": "Shortcut",
@@ -2235,8 +2258,14 @@
       ],
       "effect": "Base Attack applies Slow for 1 turn.",
       "lp_cost": 10,
-      "obtained": false,
-      "equipped_by": null
+      "obtained": true,
+      "equipped_by": null,
+      "level": 29,
+      "stats": {
+        "health": 2757,
+        "speed": 557
+      },
+      "notes": "Verso's Drafts"
     },
     {
       "name": "Slowing Break",
@@ -2246,7 +2275,8 @@
       "effect": "Apply Slow on Break.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Gestral Merchant (Flying Manor)"
     },
     {
       "name": "Sniper",
@@ -2450,8 +2480,14 @@
       ],
       "effect": "On Critical hit, 100% increased damage of the next non-Critical hit.",
       "lp_cost": 10,
-      "obtained": false,
-      "equipped_by": null
+      "obtained": true,
+      "equipped_by": null,
+      "level": 29,
+      "stats": {
+        "speed": 293,
+        "crit": "50%"
+      },
+      "notes": "Verso's Drafts"
     },
     {
       "name": "AP Discount",
@@ -2461,7 +2497,8 @@
       "effect": "Skills cost 1 less AP.",
       "lp_cost": 30,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Verso's Drafts"
     },
     {
       "name": "Consuming Attack",
@@ -2472,7 +2509,8 @@
       "effect": "Base attack consumes up to 100 Burns to deal 10% more damage per Burn consumed.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Verso's Drafts"
     },
     {
       "name": "Damage Share",
@@ -2482,8 +2520,14 @@
       ],
       "effect": "50% damage taken is redirected to other allies (if possible).",
       "lp_cost": 30,
-      "obtained": false,
-      "equipped_by": null
+      "obtained": true,
+      "equipped_by": null,
+      "level": 29,
+      "stats": {
+        "health": 2612,
+        "defence": 1489
+      },
+      "notes": "Verso's Drafts"
     },
     {
       "name": "Double Third",
@@ -2492,8 +2536,10 @@
       ],
       "effect": "Every third hit of a Skill deals double damage.",
       "lp_cost": 10,
-      "obtained": false,
-      "equipped_by": null
+      "obtained": true,
+      "equipped_by": null,
+      "level": 29,
+      "notes": "Verso's Drafts"
     },
     {
       "name": "Empowered Healer",
@@ -2504,7 +2550,8 @@
       "effect": "Using a Healing Skill gives 50% more damage for 1 turn.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Verso's Drafts"
     },
     {
       "name": "Empowering Jumps",
@@ -2514,7 +2561,8 @@
       "effect": "Counters deal 100% more damage for each successful Jump Counter this turn.",
       "lp_cost": 5,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Verso's Drafts"
     },
     {
       "name": "Feint",
@@ -2523,8 +2571,13 @@
       ],
       "effect": "Start each turn with 4 Barbapapa stacks. Every 5th hit with a Skill deals 600% more damage.",
       "lp_cost": 15,
-      "obtained": false,
-      "equipped_by": null
+      "obtained": true,
+      "equipped_by": null,
+      "level": 29,
+      "stats": {
+        "crit": "66%"
+      },
+      "notes": "Verso's Drafts"
     },
     {
       "name": "Frenzy",
@@ -2534,7 +2587,8 @@
       "effect": "Each successive Skill hit deals 10% more damage.",
       "lp_cost": 20,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Verso's Drafts"
     },
     {
       "name": "Gradient Overcharge",
@@ -2545,7 +2599,8 @@
       "effect": "On turn start, consume 3 Gradient Charges (if able) to deal 200% more damage this turn.",
       "lp_cost": 15,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Verso's Drafts"
     },
     {
       "name": "Gradient Parry",
@@ -2555,7 +2610,8 @@
       "effect": "+5% of a Gradient charge on Parry.",
       "lp_cost": 10,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Verso's Drafts"
     },
     {
       "name": "Longer Break",
@@ -2564,8 +2620,15 @@
       ],
       "effect": "Breaks last 1 more turn but the target can't be Broken twice.",
       "lp_cost": 10,
-      "obtained": false,
-      "equipped_by": null
+      "obtained": true,
+      "equipped_by": null,
+      "level": 29,
+      "stats": {
+        "health": 2757,
+        "defence": 786,
+        "speed": 279
+      },
+      "notes": "Verso's Drafts"
     },
     {
       "name": "SOS Healing Tint",
@@ -2575,8 +2638,13 @@
       ],
       "effect": "Consume a Healing Tint when falling below 50% Health.",
       "lp_cost": 10,
-      "obtained": false,
-      "equipped_by": null
+      "obtained": true,
+      "equipped_by": null,
+      "level": 29,
+      "stats": {
+        "defence": 1572
+      },
+      "notes": "Verso's Drafts"
     },
     {
       "name": "Trigger-Happy",
@@ -2588,7 +2656,8 @@
       "effect": "After shooting 10 times in the same turn, gain +2 AP (once). And following Shots this turn deal 200% more damage.",
       "lp_cost": 20,
       "obtained": false,
-      "equipped_by": null
+      "equipped_by": null,
+      "notes": "Verso's Drafts"
     }
   ],
   "core_lumina_suite": {

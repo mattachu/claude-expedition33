@@ -846,6 +846,50 @@
           "description": "Skills cost 1 less AP while in Caster Mask."
         }
       ]
+    },
+    {
+      "name": "Esquion",
+      "level": 29,
+      "power": 4362,
+      "element": "Physical",
+      "scaling": "Luck A, Vitality B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Can't enter Twilight. On turn start, if Moon and Sun charges are balanced, deal 100% more damage and apply double Foretell."
+        },
+        {
+          "level": 10,
+          "description": "On turn start, remove all Sun and Moon charges. Then, randomly gain 1 Sun or 1 Moon charge."
+        },
+        {
+          "level": 20,
+          "description": "Base attack adds 1 Sun charge. Using a Tint adds 1 Moon charge."
+        }
+      ]
+    },
+    {
+      "name": "Sucetton",
+      "level": 29,
+      "power": 2489,
+      "element": "Fire",
+      "scaling": "Luck A, Agility B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Every fourth hit with a Skill generates 1 Sun charge and applies 5 Foretell."
+        },
+        {
+          "level": 10,
+          "description": "+20% increased damage per Sun charge."
+        },
+        {
+          "level": 20,
+          "description": "Sun Skills cost 1 less AP."
+        }
+      ]
     }
   ],
   "Lune": [
@@ -1145,6 +1189,28 @@
       "name": "Painerim",
       "level": 31,
       "obtained": true
+    },
+    {
+      "name": "Esquim",
+      "level": 29,
+      "power": 4105,
+      "element": "Dark",
+      "scaling": "Agility A, Defense B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Using a Skill that doesn't consume Stains increases damage by 20%. Resets on using a Skill that consumes Stains."
+        },
+        {
+          "level": 10,
+          "description": "Base attack changes all current Stains into Dark Stains."
+        },
+        {
+          "level": 20,
+          "description": "With 4 active Dark Stains, any Skill can consume them to deal 300% more damage."
+        }
+      ]
     }
   ],
   "Monoco": [
@@ -1276,6 +1342,50 @@
       "scaling": null,
       "obtained": true,
       "effects": []
+    },
+    {
+      "name": "Baguettaro",
+      "level": 29,
+      "power": 4448,
+      "element": "Fire",
+      "scaling": "Luck A, Defense B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Critical hits apply Burn."
+        },
+        {
+          "level": 10,
+          "description": "Almighty Mask gives 50% increased damage (cumulative) and doubles enemies' Burn."
+        },
+        {
+          "level": 20,
+          "description": "Almighty Mask Skills consume up to 100 Burn to deal 2% more damage per Burn consumed."
+        }
+      ]
+    },
+    {
+      "name": "Cannaro",
+      "level": 29,
+      "power": 2404,
+      "element": "Light",
+      "scaling": "Ability A, Luck B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Free Aim Shots move the Bestial Wheel 1 step forward."
+        },
+        {
+          "level": 10,
+          "description": "25% increased damage per Mask change this turn."
+        },
+        {
+          "level": 20,
+          "description": "Free Aim shots deal double damage while in Almighty Mask."
+        }
+      ]
     }
   ]
 }

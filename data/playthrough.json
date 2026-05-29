@@ -12,16 +12,21 @@
     "Monoco"
   ],
   "inventory": {
-    "colour_of_lumina": 2,
+    "colour_of_lumina": 15,
     "recoats": 37,
     "chroma": 1616433,
     "chroma_catalyst": 67,
     "chroma_catalyst_polished": 74,
     "chroma_catalyst_resplendent": 101,
-    "chroma_catalyst_grandiose": 53,
+    "chroma_catalyst_grandiose": 61,
     "chroma_catalyst_perfect": 5
   },
   "current_phase_checklist": [
+    {
+      "id": "lost_gestrals",
+      "label": "Find all Lost Gestrals (7/9)",
+      "done": false
+    },
     {
       "id": "dark_gestral_arena",
       "label": "Dark Gestral Arena",
@@ -109,7 +114,7 @@
         {
           "id": "barbasucette",
           "label": "Chromatic Barbasucette — Verso's Drafts",
-          "done": false
+          "done": true
         },
         {
           "id": "franctale",
@@ -124,7 +129,7 @@
         {
           "id": "machinapieds",
           "label": "Chromatic Machinapieds — Verso's Drafts (near Gestral Carousel, Candy Land)",
-          "done": false
+          "done": true
         }
       ]
     },
