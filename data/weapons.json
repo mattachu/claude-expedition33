@@ -254,6 +254,50 @@
         }
       ],
       "notes": "Free Aim focused weapon — not suited to current Maelle build (Lithum endgame). Retain for reference."
+    },
+    {
+      "name": "Esqium",
+      "level": 29,
+      "power": 5053,
+      "element": "Fire",
+      "scaling": "Defense B, Agility A",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "On turn start, consume each AP above 4 to gain 50% more damage per AP consumed."
+        },
+        {
+          "level": 10,
+          "description": "On Virtuose, all hits apply Burn."
+        },
+        {
+          "level": 20,
+          "description": "Using a Skill that costs less than 4 AP applies Mark to all enemies."
+        }
+      ]
+    },
+    {
+      "name": "Licorum",
+      "level": 29,
+      "power": 5722,
+      "element": "Physical",
+      "scaling": "Agility B, Luck A",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Each successive Skill hit deals 10% more damage."
+        },
+        {
+          "level": 10,
+          "description": "First hit of a Skill applies Mark."
+        },
+        {
+          "level": 20,
+          "description": "Second hit of a Skill and following hits don't consume Mark."
+        }
+      ]
     }
   ],
   "Verso": [
@@ -850,7 +894,7 @@
     {
       "name": "Esquion",
       "level": 29,
-      "power": 4362,
+      "power": 4400,
       "element": "Physical",
       "scaling": "Luck A, Vitality B",
       "obtained": true,
@@ -872,7 +916,7 @@
     {
       "name": "Sucetton",
       "level": 29,
-      "power": 2489,
+      "power": 5224,
       "element": "Fire",
       "scaling": "Luck A, Agility B",
       "obtained": true,
@@ -1193,7 +1237,7 @@
     {
       "name": "Esquim",
       "level": 29,
-      "power": 4105,
+      "power": 4141,
       "element": "Dark",
       "scaling": "Agility A, Defense B",
       "obtained": true,
@@ -1209,6 +1253,28 @@
         {
           "level": 20,
           "description": "With 4 active Dark Stains, any Skill can consume them to deal 300% more damage."
+        }
+      ]
+    },
+    {
+      "name": "Bonbim",
+      "level": 29,
+      "power": 4500,
+      "element": "Lightning",
+      "scaling": "Vitality B, Luck A",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "+5% Critical chance per Burn on the target."
+        },
+        {
+          "level": 10,
+          "description": "Critical hits apply Burn."
+        },
+        {
+          "level": 20,
+          "description": "Lightning Skills consume up to 100 Burn to deal 2% more damage per Burn consumed."
         }
       ]
     }
@@ -1346,7 +1412,7 @@
     {
       "name": "Baguettaro",
       "level": 29,
-      "power": 4448,
+      "power": 4495,
       "element": "Fire",
       "scaling": "Luck A, Defense B",
       "obtained": true,
@@ -1368,9 +1434,9 @@
     {
       "name": "Cannaro",
       "level": 29,
-      "power": 2404,
+      "power": 4556,
       "element": "Light",
-      "scaling": "Ability A, Luck B",
+      "scaling": "Agility A, Luck B",
       "obtained": true,
       "effects": [
         {
@@ -1384,6 +1450,28 @@
         {
           "level": 20,
           "description": "Free Aim shots deal double damage while in Almighty Mask."
+        }
+      ]
+    },
+    {
+      "name": "Esquiaro",
+      "level": 29,
+      "power": 3360,
+      "element": "Earth",
+      "scaling": "Vitality A, Defense B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Base Attack moves the Bestial Wheel to Heavy Mask."
+        },
+        {
+          "level": 10,
+          "description": "Heavy Mask gives 1 Shield to all allies."
+        },
+        {
+          "level": 20,
+          "description": "Damage taken reduced by 50% while in Heavy Mask."
         }
       ]
     }

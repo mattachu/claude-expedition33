@@ -2496,9 +2496,13 @@
       ],
       "effect": "Skills cost 1 less AP.",
       "lp_cost": 30,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Verso's Drafts"
+      "notes": "Verso's Drafts",
+      "level": 29,
+      "stats": {
+        "speed": 1055
+      }
     },
     {
       "name": "Consuming Attack",
@@ -2508,9 +2512,14 @@
       ],
       "effect": "Base attack consumes up to 100 Burns to deal 10% more damage per Burn consumed.",
       "lp_cost": 10,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Verso's Drafts"
+      "notes": "Verso's Drafts",
+      "level": 29,
+      "stats": {
+        "speed": 836,
+        "crit": "16%"
+      }
     },
     {
       "name": "Damage Share",
@@ -2539,7 +2548,12 @@
       "obtained": true,
       "equipped_by": null,
       "level": 29,
-      "notes": "Verso's Drafts"
+      "notes": "Verso's Drafts",
+      "stats": {
+        "health": 2757,
+        "speed": 279,
+        "crit": "16%"
+      }
     },
     {
       "name": "Empowered Healer",
@@ -2549,9 +2563,14 @@
       ],
       "effect": "Using a Healing Skill gives 50% more damage for 1 turn.",
       "lp_cost": 10,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Verso's Drafts"
+      "notes": "Verso's Drafts",
+      "level": 29,
+      "stats": {
+        "health": 2757,
+        "crit": "32%"
+      }
     },
     {
       "name": "Empowering Jumps",
@@ -2560,9 +2579,14 @@
       ],
       "effect": "Counters deal 100% more damage for each successful Jump Counter this turn.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Verso's Drafts"
+      "notes": "Verso's Drafts",
+      "level": 29,
+      "stats": {
+        "defence": 1654,
+        "crit": "33%"
+      }
     },
     {
       "name": "Feint",
@@ -2586,9 +2610,14 @@
       ],
       "effect": "Each successive Skill hit deals 10% more damage.",
       "lp_cost": 20,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Verso's Drafts"
+      "notes": "Verso's Drafts",
+      "level": 29,
+      "stats": {
+        "defence": 1572,
+        "speed": 557
+      }
     },
     {
       "name": "Gradient Overcharge",
@@ -2598,9 +2627,13 @@
       ],
       "effect": "On turn start, consume 3 Gradient Charges (if able) to deal 200% more damage this turn.",
       "lp_cost": 15,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Verso's Drafts"
+      "notes": "Verso's Drafts",
+      "level": 29,
+      "stats": {
+        "health": 5514
+      }
     },
     {
       "name": "Gradient Parry",
@@ -2609,9 +2642,14 @@
       ],
       "effect": "+5% of a Gradient charge on Parry.",
       "lp_cost": 10,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Verso's Drafts"
+      "notes": "Verso's Drafts",
+      "level": 29,
+      "stats": {
+        "speed": 557,
+        "crit": "32%"
+      }
     },
     {
       "name": "Longer Break",
@@ -2655,9 +2693,13 @@
       ],
       "effect": "After shooting 10 times in the same turn, gain +2 AP (once). And following Shots this turn deal 200% more damage.",
       "lp_cost": 20,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Verso's Drafts"
+      "notes": "Verso's Drafts",
+      "level": 29,
+      "stats": {
+        "speed": 1114
+      }
     }
   ],
   "core_lumina_suite": {

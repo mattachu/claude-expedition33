@@ -62,10 +62,10 @@ Fetch that file only when reviewing specific past errors.
 
 ### Inventory
 <!-- GENERATED:START playthrough:inventory -->
-- Colour of Lumina: 15
-- Recoats: 37
-- Chroma Catalysts: 67 standard, 74 polished, 101 resplendent, 61 grandiose, 5 perfect
-- Chroma: 1616433
+- Colour of Lumina: 38
+- Recoats: 38
+- Chroma Catalysts: 67 standard, 74 polished, 105 resplendent, 73 grandiose, 5 perfect
+- Chroma: 1399559
 <!-- GENERATED:END -->
 
 ---
@@ -163,7 +163,6 @@ If the main party is fully wiped in a battle, the player can continue the battle
 ## Section 6: Open Questions
 
 - **First Life (15LP):** Drops from Chromatic Lampmaster in Endless Tower (Stage 11 / DLC superboss area). 25% damage while alive, no downside for a well-supported DPS. Strong candidate for Maelle once obtained.
-- **Frenzy:** Drops from Licornapieds in Verso's Drafts. Unconditional skill damage boost for multi-hit skills. High priority pickup — relevant for Verso (Steeled Strike, End Bringer), Lune (Elemental Genesis 8 hits), and potentially others. Simulated in Chat 28 (see below for interaction questions).
 - **Simoso L20 multi-hit edge case (Chat 24):** "Can't die at Rank A" — unclear whether protection is removed mid-sequence if a multi-hit attack drops rank below A. Test empirically before committing to 1HP + Confident Lumina strategy.
 - **Maelle Last Chance + Shortcut interaction:** Observed three-turn sequence: Normal turn → Cheater → Shortcut (triggered when Last Chance drops HP below 30%). Confirm whether this is intentional/consistent in practice.
 - **Charging Critical for Maelle, Verso, Lune (Chat 25):** All three now have Charging Critical (10LP). Observe gradient charge build rate in practice — confirm whether the +20% per crit is meaningfully accelerating gradient skill access.
@@ -171,8 +170,9 @@ If the main party is fully wiped in a battle, the player can continue the battle
 - **Empowering Parry for Verso (Chat 25):** Added (5LP). Practical value depends on how consistently parrying is achieved — monitor in Verso's Drafts.
 - **Verso Energising Break rotation (Chat 26):** Energising Break (3LP) added. Theoretical rotation: Perfect Break (7 AP) → Energising Break trigger (+3 AP via Energy Master) → Cheater turn (+3 AP) → End Bringer (9 AP) on Stunned target. Confirm this fires cleanly in practice.
 - **Powerful Shield + Base Shield synergy (Chat 27):** Investigate whether Powerful Shield's damage boost is triggered by Base Shield (the basic shield action), or only by Shield skills. High value if it applies to Base Shield.
-- **Alternating Critical + Simoso interaction (Chat 28):** Does Alternating Critical trigger on Simoso Light hits? If yes (Case A), all-Pictos combination gives 12.48x multiplier on Steeled Strike. If no (Case B), 4.59x. This is the critical unknown from the Chat 28 damage simulation — test on a tough Verso's Drafts enemy.
-- **Frenzy + Simoso stacking (Chat 28):** Does Frenzy count Simoso Light hits for its successive-hit stacking? Case A gives 5.6x (Frenzy alone), Case B gives 3.56x. Test alongside Alternating Critical.
+- **Alternating Critical + Simoso interaction (Chat 28/29):** Alternating Critical now obtained. Does it trigger on Simoso Light hits? If yes (Case A), all-Pictos combination gives 12.48x multiplier on Steeled Strike. If no (Case B), 4.59x. Test on a tough Verso's Drafts enemy before the final boss.
+- **Frenzy + Simoso stacking (Chat 28/29):** Frenzy now obtained. Does Frenzy count Simoso Light hits for its successive-hit stacking? Case A gives 5.6x (Frenzy alone), Case B gives 3.56x. Test alongside Alternating Critical.
+- **Licorum L4 + Frenzy stacking (Chat 29):** Licorum (Physical, for Maelle) has an L4 effect with identical wording to the Frenzy Pictos: "Each successive Skill hit deals 10% more damage." Do these stack multiplicatively, additively, or not at all? If they stack, Licorum is a strong candidate to replace Lithum for multi-hit builds. Evaluate after confirming stacking behaviour.
 - **Tool result clearing (Chat 28):** `[Older tool result cleared to save context]` observed ~6–7 times in a long Haiku chat, silently discarding fetched file content. Unknown whether this is a Haiku token limitation or a system-wide change affecting all models. If system-wide, impacts reliability of any workflow depending on file fetches persisting across many turns.
 
 ---

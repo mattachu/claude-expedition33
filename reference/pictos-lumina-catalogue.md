@@ -4,15 +4,15 @@
 
 See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) for Pictos and Lumina currently in use.
 
-**208 Pictos total.** 176 obtained.
+**208 Pictos total.** 184 obtained.
 
 ---
 
-## AP and Energy (33 Pictos, 29 obtained)
+## AP and Energy (33 Pictos, 30 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
-|  | AP Discount | Skills cost 1 less AP. | 30 |  |  |  |
+| ✓ | AP Discount | Skills cost 1 less AP. | 30 | Speed: 1055 |  |  |
 |  | Beneficial Contamination | +2 AP on applying a Status Effect. Once per turn. | 15 |  |  |  |
 | ✓ | Dead Energy I | +3 AP on killing an enemy. | 2 | Speed: 162, Crit: 17% |  |  |
 | ✓ | Dead Energy II | +3 AP on killing an enemy. | 2 |  |  |  |
@@ -96,7 +96,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Damage Modifiers (37 Pictos, 31 obtained)
+## Damage Modifiers (37 Pictos, 35 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
@@ -109,22 +109,22 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Augmented Counter III | 75% increased Counterattack damage. | 7 | Health: 1548, Crit: 10% |  |  |
 | ✓ | Augmented First Strike | 50% increased damage on the first hit. Once per battle. | 5 | Speed: 1008, Crit: 18% | Monoco |  |
 | ✓ | Confident Fighter | 30% increased damage, but cannot be healed. | 15 | Health: 222, Crit: 20% |  |  |
-|  | Consuming Attack | Base attack consumes up to 100 Burns to deal 10% more damage per Burn consumed. | 10 |  |  | burn |
-| ✓ | Double Third | Every third hit of a Skill deals double damage. | 10 |  |  |  |
+| ✓ | Consuming Attack | Base attack consumes up to 100 Burns to deal 10% more damage per Burn consumed. | 10 | Speed: 836, Crit: 16% |  | burn |
+| ✓ | Double Third | Every third hit of a Skill deals double damage. | 10 | Health: 2757, Speed: 279, Crit: 16% |  |  |
 | ✓ | Empowering Attack | Gain Powerful for 1 turn on Base Attack. | 10 |  |  |  |
 | ✓ | Empowering Break | Gain Powerful on Breaking a target. | 3 | Speed: 546, Crit: 32% | Maelle |  |
 | ✓ | Empowering Dodge | 5% increased damage per consecutive dodge, stacks up to 10 | 5 | Speed: 162, Crit: 17% |  |  |
-|  | Empowering Jumps | Counters deal 100% more damage for each successful Jump Counter this turn. | 5 |  |  |  |
+| ✓ | Empowering Jumps | Counters deal 100% more damage for each successful Jump Counter this turn. | 5 | Defence: 1654, Crit: 33% |  |  |
 | ✓ | Empowering Parry | Each successful Parry increases damage by 5% until end of the following turn. Taking any damage removes this buff. | 5 |  |  |  |
 | ✓ | Empowering Tint | Healing Tints also apply Powerful. | 5 | Health: 2705, Speed: 546 |  | support |
 | ✓ | Exhausting Power | 50% increased damage when Exhausted. | 2 |  |  |  |
 | ✓ | Feint | Start each turn with 4 Barbapapa stacks. Every 5th hit with a Skill deals 600% more damage. | 15 | Crit: 66% |  |  |
 | ✓ | First Offensive | First hit dealt and taken deals 50% more damage. | 5 |  |  |  |
-|  | Frenzy | Each successive Skill hit deals 10% more damage. | 20 |  |  |  |
+| ✓ | Frenzy | Each successive Skill hit deals 10% more damage. | 20 | Defence: 1572, Speed: 557 |  |  |
 | ✓ | Full Strength | 25% increased damage on full Health. | 15 |  |  |  |
 | ✓ | Glass Canon | Deal 25% more damage, but take 25% more damage. | 10 |  |  |  |
 | ✓ | Gradient Fighter | 25% increased damage with Gradient Attacks. | 5 | Speed: 182, Crit: 18% |  | gradient |
-|  | Gradient Overcharge | On turn start, consume 3 Gradient Charges (if able) to deal 200% more damage this turn. | 15 |  |  | gradient |
+| ✓ | Gradient Overcharge | On turn start, consume 3 Gradient Charges (if able) to deal 200% more damage this turn. | 15 | Health: 5514 |  | gradient |
 | ✓ | Greater Defenceless | +15% to Defenceless damage amplification. | 15 | Speed: 293, Crit: 23% |  |  |
 | ✓ | Greater Powerful | +15% to Powerful damage increase. | 10 |  |  |  |
 | ✓ | Immaculate | 30% increased damage until a hit is received. | 10 |  |  |  |
@@ -152,7 +152,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Gradient Charge (10 Pictos, 5 obtained)
+## Gradient Charge (10 Pictos, 6 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
@@ -165,18 +165,18 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Charging Stun | +5% of a Gradient Charge on hitting a Stunned enemy. | 5 |  |  |  |
 | ✓ | Charging Tint | +5% of a Gradient Charge on using an item. | 2 |  |  | support |
 |  | Charging Weakness | +15% of a Gradient Charge on hitting a Weakness. Once per turn. | 5 |  |  |  |
-|  | Gradient Parry | +5% of a Gradient charge on Parry. | 10 |  |  |  |
+| ✓ | Gradient Parry | +5% of a Gradient charge on Parry. | 10 | Speed: 557, Crit: 32% |  |  |
 
 ---
 
-## Healing (15 Pictos, 14 obtained)
+## Healing (15 Pictos, 15 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
 | ✓ | Attack Lifesteal | Recover 15% Health on Base Attack. | 15 |  |  |  |
 | ✓ | Clea's Life | On turn start, if no damage taken since last turn, recover 100% Health. | 30 | Health: 5591 | Maelle |  |
 | ✓ | Effective Heal | Double all Heals received. | 30 |  |  |  |
-|  | Empowered Healer | Using a Healing Skill gives 50% more damage for 1 turn. | 10 |  |  | support |
+| ✓ | Empowered Healer | Using a Healing Skill gives 50% more damage for 1 turn. | 10 | Health: 2757, Crit: 32% |  | support |
 | ✓ | Healing Boon | Heal 15% HP on applying a buff | 10 | Defence: 647, Speed: 266 |  |  |
 | ✓ | Healing Counter | Recover 25% Health on Counterattack. | 10 |  |  |  |
 | ✓ | Healing Fire | Recover 25% Health when attacking a Burning target. Once per turn. | 10 |  |  |  |
@@ -303,11 +303,11 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Free Aim and Shots (1 Pictos, 0 obtained)
+## Free Aim and Shots (1 Pictos, 1 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
-|  | Trigger-Happy | After shooting 10 times in the same turn, gain +2 AP (once). And following Shots this turn deal 200% more damage. | 20 |  |  | ap, damage |
+| ✓ | Trigger-Happy | After shooting 10 times in the same turn, gain +2 AP (once). And following Shots this turn deal 200% more damage. | 20 | Speed: 1114 |  | ap, damage |
 
 ---
 

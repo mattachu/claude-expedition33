@@ -37,7 +37,7 @@
 - ✅ Dark Gestral Arena
 - ✅ Endless Tower Stages 1–10 (30 fights)
 - ✅ Endless Tower Stage 11 — 3 fights; Trial 3 (Painted Love) gives Perfect Catalyst + Clair Outfit for Verso
-- ⬜ Hard chromatics (15/17)
+- ✅ Hard chromatics (17/17)
   - ✅ Chromatic Echassier — Lumiere
   - ✅ Chromatic Catapult Sakapatate — Dark Gestral Arena
   - ✅ Chromatic Ranger Sakapatate — Dark Gestral Arena
@@ -52,8 +52,8 @@
   - ✅ Chromatic Clair Obscur — The Monolith, top (after defeating The Paintress) → Combo Attack II Pictos
   - ✅ Chromatic Creation — Renoir's Drafts
   - ✅ Chromatic Barbasucette — Verso's Drafts
-  - ⬜ Chromatic Franctale — Verso's Drafts
-  - ⬜ Chromatic Licorne — Verso's Drafts (handholds right of Reverie Path)
+  - ✅ Chromatic Franctale — Verso's Drafts
+  - ✅ Chromatic Licorne — Verso's Drafts (handholds right of Reverie Path)
   - ✅ Chromatic Machinapieds — Verso's Drafts (near Gestral Carousel, Candy Land)
 - ⬜ Endless Tower Chromatics (3/4)
   - ✅ Chromatic Eveque — Endless Tower
