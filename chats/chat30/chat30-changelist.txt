@@ -385,4 +385,4 @@ CONTENT:
 
 APPEND: chats/chat-index.md
 CONTENT:
-| Chat 30 | [Formatted](chat30/chat30-index.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat30/chat30-index.md) | [chat30.md](chat30/chat30.md) | Verso's Drafts completed; inventory and location updated. Lost Gestrals sidequest completed (9/9); Pro Retreat Pictos obtained. Four open questions closed: Simoso multi-hit edge case, Last Chance + Shortcut, Charging Critical, and Tool Result Clearing (Context Editing). Character levels and stats updated for all five characters via screenshots; Sciel gains five new skills, Verso gains Powerful. |
+| Chat 30 | [Formatted](chat30/chat30-index.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat30/chat30-index.md) | [chat30.md](chat30/chat30.md) | Verso's Drafts completed; inventory, location, stats updated; Lost Gestrals sidequest completed (9/9); four open questions closed.                                                                                                       |
