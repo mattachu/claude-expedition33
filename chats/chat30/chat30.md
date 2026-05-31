@@ -142,6 +142,11 @@ From Section 7 of the overview, the logging rules are:
 
 **Matt:** !log
 
+**Claude:** *[Turn 6. Last log: Turn 6.]*
+
+Logged turns 1–6 to `chat30.md`.
+
+---
 
 <!-- SECTION -->
 
@@ -185,6 +190,11 @@ That should be clean now. Apologies for the botched first attempt — the sed ra
 
 !log
 
+**Claude:** *[Turn 10. Last log: Turn 10.]*
+
+Logged turns 7–10.
+
+---
 
 <!-- SECTION -->
 
@@ -255,6 +265,11 @@ Worth noting this affects the logging system specifically because cleared tool r
 
 !log
 
+**Claude:** *[Turn 15. Last log: Turn 15.]*
+
+Logged turns 11–15.
+
+---
 
 <!-- SECTION -->
 
@@ -478,3 +493,8 @@ That's all five characters done. Anything else for this session?
 
 **Matt:** !log
 
+**Claude:** *[Turn 24. Last log: Turn 24.]*
+
+Logged turns 16–24.
+
+---
