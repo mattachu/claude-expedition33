@@ -56,10 +56,10 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 <!-- GENERATED:START characters:Monoco:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 89    |
+| Level     | 90    |
 | Agility   | 99    |
 | Defence   | 99    |
-| Luck      | 69    |
+| Luck      | 72    |
 | Vitality  | 0     |
 | Might     | 0     |
 <!-- GENERATED:END -->
@@ -71,11 +71,11 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2080 | 4867     |
-| Attack  | 1131 | 10900    |
-| Speed   | 1168 | 2858     |
+| Health  | 2140 | 6095     |
+| Attack  | 1170 | 10920    |
+| Speed   | 1189 | 2597     |
 | Defence | 729  | 2301     |
-| Crit    | 51%  | 106%     |
+| Crit    | 53%  | 71%      |
 <!-- GENERATED:END -->
 
 ---

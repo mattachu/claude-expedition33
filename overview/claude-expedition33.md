@@ -34,8 +34,8 @@ Fetch that file only when reviewing specific past errors.
 - **Current playthrough:** First playthrough
 - **Progress:**
   - Act 3, Phase 4.
-  - Characters: Maelle L95, Verso L94, Sciel L94, Lune L89, Monoco L89.
-  - Current area: Verso's Drafts.
+  - Characters: Maelle L96, Verso L96, Sciel L95, Lune L90, Monoco L90.
+  - Current area: Endless Tower.
 <!-- GENERATED:END -->
   - For detailed progression plan, see [`overview/progress.md`](progress.md)
 
@@ -48,11 +48,11 @@ Fetch that file only when reviewing specific past errors.
 <!-- GENERATED:START characters:summary:party -->
 | Character                         | Level | Role                         | Weapon        | Pictos                                        | LP      |
 |-----------------------------------|-------|------------------------------|---------------|-----------------------------------------------|---------|
-| [Maelle](../characters/maelle.md) | 95    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut       | 305/305 |
-| [Verso](../characters/verso.md)   | 94    | Endgame main DPS             | Simoso (33)   | Second Chance, Breaking Death, Confident      | 285/285 |
-| [Sciel](../characters/sciel.md)   | 94    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots      | 262/262 |
-| [Lune](../characters/lune.md)     | 89    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death   | 224/224 |
-| [Monoco](../characters/monoco.md) | 89    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Cheater | 175/175 |
+| [Maelle](../characters/maelle.md) | 96    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut       | 305/305 |
+| [Verso](../characters/verso.md)   | 96    | Endgame main DPS             | Simoso (33)   | Second Chance, Breaking Death, Confident      | 285/285 |
+| [Sciel](../characters/sciel.md)   | 95    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots      | 262/262 |
+| [Lune](../characters/lune.md)     | 90    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death   | 224/224 |
+| [Monoco](../characters/monoco.md) | 90    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Cheater | 175/175 |
 <!-- GENERATED:END -->
 
 **More details:**
@@ -62,22 +62,22 @@ Fetch that file only when reviewing specific past errors.
 
 ### Inventory
 <!-- GENERATED:START playthrough:inventory -->
-- Colour of Lumina: 38
-- Recoats: 38
-- Chroma Catalysts: 67 standard, 74 polished, 105 resplendent, 73 grandiose, 5 perfect
-- Chroma: 1399559
+- Colour of Lumina: 53
+- Recoats: 39
+- Chroma Catalysts: 67 standard, 74 polished, 105 resplendent, 76 grandiose, 6 perfect
+- Chroma: 1343625
 <!-- GENERATED:END -->
 
 ---
 
 ## Section 3: Playstyle Notes
-*Last updated: Chat 22*
+*Last updated: Chat 30*
 
 - **Parry rate:** Improving with experience — ~20% against unfamiliar bosses initially; up to ~100% against well-known enemies after extended grinding. Pattern-recognition is the bottleneck. Dodge is used actively to learn timings: the dodge window is wider than the parry window, and Perfect Dodge shares the same timing as Parry. Dodger Lumina gives +1 AP on Perfect Dodge. This is a persistent constraint on risky builds (Overload without Cheater, etc.).
 - **Risk tolerance:** Conservative while parry skills are developing. Prefers empirical testing. Rejects builds that rely on low-HP states (Overload without Cheater, Berserk Slash) or skills with survival costs (Defiant Strike's HP cost).
 - **AP management:** Prefers to use skills every turn if AP allows. Values AP flow highly. **Endgame team (Maelle/Sciel/Verso) AP note:** AP flow is sustainable with Sciel's Litheson (+3 AP/turn for Sciel on buff/debuff) and Intervention, but requires active management. Do not assume freely available AP when advising on endgame team builds.
 - **Turn rotation (endgame burst):** Verso (base attack) → Verso(C) (Steeled Strike charge) → Sciel (Fortune's Fury on Verso) → Sciel(C) (Intervention on Verso) → Verso(Intervention) (Steeled Strike executes at Rank S with doubled damage).
-- **Maelle Last Chance rotation:** Last Chance (1 AP) reduces HP to 1, refills all AP, switches to Virtuose. Cheater fires an immediate extra turn. Clea's Life restores HP to 100% on that turn start. Net result: full AP reset + Virtuose + full HP in one move. Used as a deliberate rotation tool, not an emergency skill. Observed three-turn sequence: Normal turn → Cheater → Shortcut (triggered by Last Chance dropping HP below 30%). Whether this is intended behaviour is unconfirmed — monitor.
+- **Maelle Last Chance rotation:** Last Chance (1 AP) reduces HP to 1, refills all AP, switches to Virtuose. Cheater fires an immediate extra turn. Clea's Life restores HP to 100% on that turn start. Net result: full AP reset + Virtuose + full HP in one move. Used as a deliberate rotation tool, not an emergency skill. Confirmed three-turn sequence (Chat 30): Normal turn → Cheater → Shortcut (triggered when Last Chance drops HP below 30%). With Clea's Life active, Shortcut's intended low-health tide-turner purpose is bypassed — it functions as a free third turn rather than an emergency response. Also triggers on Verso's Overload. One-per-battle limit.
 - **Trash fights:** Maelle: Phantom Stars (Verso AoE at S Rank) to clear turn 1.
 - **Boss fights:** Methodical; learns patterns over multiple attempts. Values break dynamics highly.
 - **Status effects:** Primarily burn and mark; limited experience with others.
@@ -163,17 +163,14 @@ If the main party is fully wiped in a battle, the player can continue the battle
 ## Section 6: Open Questions
 
 - **First Life (15LP):** Drops from Chromatic Lampmaster in Endless Tower (Stage 11 / DLC superboss area). 25% damage while alive, no downside for a well-supported DPS. Strong candidate for Maelle once obtained.
-- **Simoso L20 multi-hit edge case (Chat 24):** "Can't die at Rank A" — unclear whether protection is removed mid-sequence if a multi-hit attack drops rank below A. Test empirically before committing to 1HP + Confident Lumina strategy.
-- **Maelle Last Chance + Shortcut interaction:** Observed three-turn sequence: Normal turn → Cheater → Shortcut (triggered when Last Chance drops HP below 30%). Confirm whether this is intentional/consistent in practice.
-- **Charging Critical for Maelle, Verso, Lune (Chat 25):** All three now have Charging Critical (10LP). Observe gradient charge build rate in practice — confirm whether the +20% per crit is meaningfully accelerating gradient skill access.
+- **Verso Confident vs Clea's Life (Chat 30):** Simoso L20 multi-hit edge case confirmed: a multi-hit attack can knock Verso from Rank A and kill him in the same sequence (observed in Osquio fight). Strategic choice pending: keep Confident + Confident Fighter (accept risk, retain damage bonuses) or switch to Clea's Life (eliminates vulnerability — full HP after Overload).
 - **Greater Powerful value for Maelle (Chat 25):** Added (+15% to Powerful → ~40% total bonus). Confirm uplift feels meaningful in practice vs pre-chat-25 baseline.
-- **Empowering Parry for Verso (Chat 25):** Added (5LP). Practical value depends on how consistently parrying is achieved — monitor in Verso's Drafts.
-- **Verso Energising Break rotation (Chat 26):** Energising Break (3LP) added. Theoretical rotation: Perfect Break (7 AP) → Energising Break trigger (+3 AP via Energy Master) → Cheater turn (+3 AP) → End Bringer (9 AP) on Stunned target. Confirm this fires cleanly in practice.
+- **Empowering Parry for Verso (Chat 25):** Added (5LP). Practical value depends on how consistently parrying is achieved — monitor in Endless Tower.
+- **Verso Energising Break rotation (Chat 26):** Energising Break (3LP) added. Theoretical rotation: Perfect Break (7 AP) → Energising Break trigger (+3 AP via Energy Master) → Cheater turn (+3 AP) → End Bringer (9 AP) on Stunned target. Tentatively confirmed from observation (Chat 30) — intentional test still pending before closing.
 - **Powerful Shield + Base Shield synergy (Chat 27):** Investigate whether Powerful Shield's damage boost is triggered by Base Shield (the basic shield action), or only by Shield skills. High value if it applies to Base Shield.
-- **Alternating Critical + Simoso interaction (Chat 28/29):** Alternating Critical now obtained. Does it trigger on Simoso Light hits? If yes (Case A), all-Pictos combination gives 12.48x multiplier on Steeled Strike. If no (Case B), 4.59x. Test on a tough Verso's Drafts enemy before the final boss.
+- **Alternating Critical + Simoso interaction (Chat 28/29):** Alternating Critical now obtained. Does it trigger on Simoso Light hits? If yes (Case A), all-Pictos combination gives 12.48x multiplier on Steeled Strike. If no (Case B), 4.59x. Test in the Endless Tower.
 - **Frenzy + Simoso stacking (Chat 28/29):** Frenzy now obtained. Does Frenzy count Simoso Light hits for its successive-hit stacking? Case A gives 5.6x (Frenzy alone), Case B gives 3.56x. Test alongside Alternating Critical.
 - **Licorum L4 + Frenzy stacking (Chat 29):** Licorum (Physical, for Maelle) has an L4 effect with identical wording to the Frenzy Pictos: "Each successive Skill hit deals 10% more damage." Do these stack multiplicatively, additively, or not at all? If they stack, Licorum is a strong candidate to replace Lithum for multi-hit builds. Evaluate after confirming stacking behaviour.
-- **Tool result clearing (Chat 28):** `[Older tool result cleared to save context]` observed ~6–7 times in a long Haiku chat, silently discarding fetched file content. Unknown whether this is a Haiku token limitation or a system-wide change affecting all models. If system-wide, impacts reliability of any workflow depending on file fetches persisting across many turns.
 
 ---
 

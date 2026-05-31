@@ -4,7 +4,7 @@
 
 See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) for Pictos and Lumina currently in use.
 
-**208 Pictos total.** 184 obtained.
+**208 Pictos total.** 185 obtained.
 
 ---
 
@@ -311,12 +311,12 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Miscellaneous (3 Pictos, 2 obtained)
+## Miscellaneous (3 Pictos, 3 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
 | ✓ | Painter | Converts all Physical damage to Void damage. | 10 | Speed: 519, Crit: 31% | Sciel |  |
-|  | Pro Retreat | Allows Flee to be instantaneous. | 40 |  |  |  |
+| ✓ | Pro Retreat | Allows Flee to be instantaneous. | 40 | Health: 2830, Speed: 574 |  |  |
 | ✓ | The One | Max Health is reduced to 1 | 1 | Crit: 108% |  |  |
 
 ---

@@ -634,6 +634,28 @@
         }
       ],
       "notes": "Can't reach Rank S. Required for End Bringer stunlock build (Plan F). Purchased from merchant in Renoir's Drafts area. Scaling becomes Vitality A, Agility S at L33."
+    },
+    {
+      "name": "Esquiso",
+      "level": 33,
+      "power": 7792,
+      "element": "Light",
+      "scaling": "Agility A, Luck S",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Gain Aureole on Rank S but drop to Rank D."
+        },
+        {
+          "level": 10,
+          "description": "30% increased damage when revived."
+        },
+        {
+          "level": 20,
+          "description": "Gradient attacks deal 100% more damage."
+        }
+      ]
     }
   ],
   "Sciel": [

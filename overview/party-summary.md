@@ -6,11 +6,11 @@
 
 | Character                         | Level | Role                         | Weapon        | Pictos                                        | LP      |
 |-----------------------------------|-------|------------------------------|---------------|-----------------------------------------------|---------|
-| [Maelle](../characters/maelle.md) | 95    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut       | 305/305 |
-| [Verso](../characters/verso.md)   | 94    | Endgame main DPS             | Simoso (33)   | Second Chance, Breaking Death, Confident      | 285/285 |
-| [Sciel](../characters/sciel.md)   | 94    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots      | 262/262 |
-| [Lune](../characters/lune.md)     | 89    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death   | 224/224 |
-| [Monoco](../characters/monoco.md) | 89    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Cheater | 175/175 |
+| [Maelle](../characters/maelle.md) | 96    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut       | 305/305 |
+| [Verso](../characters/verso.md)   | 96    | Endgame main DPS             | Simoso (33)   | Second Chance, Breaking Death, Confident      | 285/285 |
+| [Sciel](../characters/sciel.md)   | 95    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots      | 262/262 |
+| [Lune](../characters/lune.md)     | 90    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death   | 224/224 |
+| [Monoco](../characters/monoco.md) | 90    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Cheater | 175/175 |
 
 ---
 
@@ -48,13 +48,13 @@
 
 ### Maelle
 
-**Level:** 95 | **Role:** Primary DPS | **Weapon:** Lithum (33)
+**Level:** 96 | **Role:** Primary DPS | **Weapon:** Lithum (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2232 | 7885     |
-| Attack  | 1368 | 11298    |
-| Speed   | 1228 | 2462     |
+| Health  | 2326 | 7917     |
+| Attack  | 1436 | 11370    |
+| Speed   | 1251 | 2469     |
 | Defence | 182  | 182      |
 | Crit    | 41%  | 109%     |
 
@@ -85,15 +85,15 @@
 
 ### Verso
 
-**Level:** 94 | **Role:** Endgame main DPS | **Weapon:** Simoso (33)
+**Level:** 96 | **Role:** Endgame main DPS | **Weapon:** Simoso (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2232 | 8628     |
-| Attack  | 1368 | 10841    |
-| Speed   | 1228 | 2284     |
+| Health  | 3715 | 7696     |
+| Attack  | 1410 | 10988    |
+| Speed   | 1156 | 2299     |
 | Defence | 182  | 182      |
-| Crit    | 41%  | 124%     |
+| Crit    | 17%  | 97%      |
 
 
 | Pictos         | Level | Stats                   |
@@ -126,13 +126,13 @@
 
 ### Sciel
 
-**Level:** 94 | **Role:** Pure support | **Weapon:** Litheson (33)
+**Level:** 95 | **Role:** Pure support | **Weapon:** Litheson (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2202 | 7233     |
-| Attack  | 1226 | 8906     |
-| Speed   | 1221 | 2534     |
+| Health  | 2294 | 7264     |
+| Attack  | 1302 | 8974     |
+| Speed   | 1244 | 2542     |
 | Defence | 492  | 492      |
 | Crit    | 55%  | 102%     |
 
@@ -193,13 +193,13 @@
 
 ### Lune
 
-**Level:** 89 | **Role:** DPS / healer (reserve) | **Weapon:** Kralim (33)
+**Level:** 90 | **Role:** DPS / healer (reserve) | **Weapon:** Kralim (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 3469 | 3499     |
-| Attack  | 1155 | 10386    |
-| Speed   | 1149 | 2575     |
+| Health  | 3529 | 3529     |
+| Attack  | 1205 | 10463    |
+| Speed   | 1164 | 2583     |
 | Defence | 182  | 182      |
 | Crit    | 29%  | 101%     |
 
@@ -228,15 +228,15 @@
 
 ### Monoco
 
-**Level:** 89 | **Role:** Break + AP support (reserve) | **Weapon:** Joyaro (33)
+**Level:** 90 | **Role:** Break + AP support (reserve) | **Weapon:** Joyaro (33)
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2080 | 4867     |
-| Attack  | 1131 | 10900    |
-| Speed   | 1168 | 2858     |
+| Health  | 2140 | 6095     |
+| Attack  | 1170 | 10920    |
+| Speed   | 1189 | 2597     |
 | Defence | 729  | 2301     |
-| Crit    | 51%  | 106%     |
+| Crit    | 53%  | 71%      |
 
 
 | Pictos                 | Level | Stats                       |
@@ -263,7 +263,7 @@
 
 # Inventory
 
-- Colour of Lumina: 38
-- Recoats: 38
-- Chroma Catalysts: 67 standard, 74 polished, 105 resplendent, 73 grandiose, 5 perfect
-- Chroma: 1399559
+- Colour of Lumina: 53
+- Recoats: 39
+- Chroma Catalysts: 67 standard, 74 polished, 105 resplendent, 76 grandiose, 6 perfect
+- Chroma: 1343625

@@ -1,7 +1,7 @@
 {
   "act": 3,
   "phase": 4,
-  "current_area": "Verso's Drafts",
+  "current_area": "Endless Tower",
   "active_party": [
     "Maelle",
     "Verso",
@@ -12,20 +12,20 @@
     "Monoco"
   ],
   "inventory": {
-    "colour_of_lumina": 38,
-    "recoats": 38,
-    "chroma": 1399559,
+    "colour_of_lumina": 53,
+    "recoats": 39,
+    "chroma": 1343625,
     "chroma_catalyst": 67,
     "chroma_catalyst_polished": 74,
     "chroma_catalyst_resplendent": 105,
-    "chroma_catalyst_grandiose": 73,
-    "chroma_catalyst_perfect": 5
+    "chroma_catalyst_grandiose": 76,
+    "chroma_catalyst_perfect": 6
   },
   "current_phase_checklist": [
     {
       "id": "lost_gestrals",
-      "label": "Find all Lost Gestrals (7/9)",
-      "done": false
+      "label": "Find all Lost Gestrals (9/9)",
+      "done": true
     },
     {
       "id": "dark_gestral_arena",
@@ -177,7 +177,7 @@
     {
       "id": "versos_drafts",
       "label": "Verso's Drafts (DLC, Level 80+) — recommended after Renoir's Drafts; final boss (Root of All Evil) is hardest boss in game, reported to beat level 99 parties",
-      "done": false
+      "done": true
     },
     {
       "id": "endless_tower_dlc",

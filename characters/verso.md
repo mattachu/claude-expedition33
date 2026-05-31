@@ -57,10 +57,10 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 <!-- GENERATED:START characters:Verso:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 94    |
+| Level     | 96    |
 | Vitality  | 99    |
 | Agility   | 99    |
-| Might     | 62    |
+| Might     | 68    |
 | Luck      | 22    |
 | Defence   | 0     |
 <!-- GENERATED:END -->
@@ -68,15 +68,15 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ### Combat Stats
 
 <!-- GENERATED:START characters:Verso:stats -->
-*Stats with Chevalam (33), Augmented Counter I (28), Breaking Death (29), Confident (29) equipped*
+*Stats with Simoso (33), Second Chance (31), Breaking Death (29), Confident (29) equipped*
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2232 | 8628     |
-| Attack  | 1368 | 10841    |
-| Speed   | 1228 | 2284     |
+| Health  | 3715 | 7696     |
+| Attack  | 1410 | 10988    |
+| Speed   | 1156 | 2299     |
 | Defence | 182  | 182      |
-| Crit    | 41%  | 124%     |
+| Crit    | 17%  | 97%      |
 <!-- GENERATED:END -->
 
 ---
@@ -213,6 +213,7 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Ascending Assault | —               | —                                    | ❌        |                                                                                          |
 | Follow Up         | —               | —                                    | ❌        |                                                                                          |
 | Radiant Slash     | —               | —                                    | ❌        |                                                                                          |
+| Powerful          | —               | —                                    | ❌        |                                                                                          |
 <!-- GENERATED:END -->
 
 ---

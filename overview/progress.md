@@ -33,7 +33,7 @@
 ## Phase 4 — Post-game (Level 80+)
 
 <!-- GENERATED:START playthrough:current_phase_checklist -->
-- ⬜ Find all Lost Gestrals (7/9)
+- ✅ Find all Lost Gestrals (9/9)
 - ✅ Dark Gestral Arena
 - ✅ Endless Tower Stages 1–10 (30 fights)
 - ✅ Endless Tower Stage 11 — 3 fights; Trial 3 (Painted Love) gives Perfect Catalyst + Clair Outfit for Verso
@@ -63,6 +63,6 @@
 - ✅ Painting Workshop Beast (Level 80+)
 - ✅ Renoir's Drafts (Level 80+, recommended 90+ for Simon) — hardest optional area; Aberrations, Bouchecliers, Contorsionnistes
 - ✅ Purchase Charnon (89,884 Chromas, Renoir's Drafts merchant) — Sciel alternative endgame weapon
-- ⬜ Verso's Drafts (DLC, Level 80+) — recommended after Renoir's Drafts; final boss (Root of All Evil) is hardest boss in game, reported to beat level 99 parties
+- ✅ Verso's Drafts (DLC, Level 80+) — recommended after Renoir's Drafts; final boss (Root of All Evil) is hardest boss in game, reported to beat level 99 parties
 - ⬜ Endless Tower DLC superbosses (4 including Clea Unleashed, Simon the Divergent Star — accessed via Tower canvases after beating originals; added by Thank You Update)
 <!-- GENERATED:END -->

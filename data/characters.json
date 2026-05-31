@@ -1,25 +1,25 @@
 {
   "Maelle": {
-    "level": 95,
+    "level": 96,
     "role": "Primary DPS",
     "attributes": {
       "vitality": 0,
-      "might": 87,
+      "might": 90,
       "agility": 99,
       "defence": 0,
       "luck": 99
     },
     "stats_base": {
-      "health": 2232,
-      "attack": 1368,
-      "speed": 1228,
+      "health": 2326,
+      "attack": 1436,
+      "speed": 1251,
       "defence": 182,
       "crit": "41%"
     },
     "stats_modified": {
-      "health": 7885,
-      "attack": 11298,
-      "speed": 2462,
+      "health": 7917,
+      "attack": 11370,
+      "speed": 2469,
       "defence": 182,
       "crit": "109%",
       "_note": "Stats with Lithum (33), Clea's Life (30), Empowering Break (28), Shortcut (31) equipped. Speed and Crit approximate pending in-game verification.",
@@ -124,30 +124,30 @@
     ]
   },
   "Verso": {
-    "level": 94,
+    "level": 96,
     "role": "Endgame main DPS",
     "attributes": {
       "vitality": 99,
-      "might": 62,
+      "might": 68,
       "agility": 99,
       "defence": 0,
       "luck": 22,
       "defense": 0
     },
     "stats_base": {
-      "health": 2232,
-      "attack": 1368,
-      "speed": 1228,
+      "health": 3715,
+      "attack": 1410,
+      "speed": 1156,
       "defence": 182,
-      "crit": "41%"
+      "crit": "17%"
     },
     "stats_modified": {
-      "health": 8628,
-      "attack": 10841,
-      "speed": 2284,
+      "health": 7696,
+      "attack": 10988,
+      "speed": 2299,
       "defence": 182,
-      "crit": "124%",
-      "_note": "Stats with Chevalam (33), Augmented Counter I (28), Breaking Death (29), Confident (29) equipped",
+      "crit": "97%",
+      "_note": "Stats with Simoso (33), Second Chance (31), Breaking Death (29), Confident (29) equipped",
       "defense": 182,
       "crit_rate": "100%"
     },
@@ -238,7 +238,8 @@
       "Ascending Assault",
       "Follow Up",
       "Overload",
-      "Radiant Slash"
+      "Radiant Slash",
+      "Powerful"
     ],
     "gradient_skills": [
       {
@@ -262,26 +263,26 @@
     ]
   },
   "Sciel": {
-    "level": 94,
+    "level": 95,
     "role": "Pure support",
     "attributes": {
       "vitality": 0,
-      "might": 18,
+      "might": 21,
       "agility": 99,
       "defence": 66,
       "luck": 99
     },
     "stats_base": {
-      "health": 2202,
-      "attack": 1226,
-      "speed": 1221,
+      "health": 2294,
+      "attack": 1302,
+      "speed": 1244,
       "defence": 492,
       "crit": "55%"
     },
     "stats_modified": {
-      "health": 7233,
-      "attack": 8906,
-      "speed": 2534,
+      "health": 7264,
+      "attack": 8974,
+      "speed": 2542,
       "defence": 492,
       "crit": "102%",
       "_note": "Stats with Litheson (33), Painter (28), Energy Master (30), Energising Shots (28) equipped"
@@ -359,7 +360,12 @@
       "Searing Bond",
       "Twilight Dance",
       "Twilight Slash",
-      "All Set"
+      "All Set",
+      "Card Weaver",
+      "Marking Card",
+      "Rush",
+      "Our Sacrifice",
+      "Spectral Sweep"
     ],
     "gradient_skills": [
       {
@@ -383,26 +389,26 @@
     ]
   },
   "Lune": {
-    "level": 89,
+    "level": 90,
     "role": "DPS / healer (reserve)",
     "attributes": {
       "vitality": 99,
-      "might": 18,
+      "might": 21,
       "agility": 99,
       "defence": 0,
       "luck": 51
     },
     "stats_base": {
-      "health": 3469,
-      "attack": 1155,
-      "speed": 1149,
+      "health": 3529,
+      "attack": 1205,
+      "speed": 1164,
       "defence": 182,
       "crit": "29%"
     },
     "stats_modified": {
-      "health": 3499,
-      "attack": 10386,
-      "speed": 2575,
+      "health": 3529,
+      "attack": 10463,
+      "speed": 2583,
       "defence": 182,
       "crit": "101%",
       "_note": "Stats with Kralim (33), Critical Burn (25), Burn Affinity (21), Burning Death (28) equipped"
@@ -495,28 +501,28 @@
     ]
   },
   "Monoco": {
-    "level": 89,
+    "level": 90,
     "role": "Break + AP support (reserve)",
     "attributes": {
       "vitality": 0,
       "might": 0,
       "agility": 99,
       "defence": 99,
-      "luck": 69
+      "luck": 72
     },
     "stats_base": {
-      "health": 2080,
-      "attack": 1131,
-      "speed": 1168,
+      "health": 2140,
+      "attack": 1170,
+      "speed": 1189,
       "defence": 729,
-      "crit": "51%"
+      "crit": "53%"
     },
     "stats_modified": {
-      "health": 4867,
-      "attack": 10900,
-      "speed": 2858,
+      "health": 6095,
+      "attack": 10920,
+      "speed": 2597,
       "defence": 2301,
-      "crit": "106%",
+      "crit": "71%",
       "_note": "Stats with Joyaro (33), Longer Shell (29), Augmented First Strike (31), Quick Break (31) equipped. Speed and Crit approximate pending in-game verification."
     },
     "weapon_equipped": "Joyaro",

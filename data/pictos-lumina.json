@@ -1932,9 +1932,14 @@
       ],
       "effect": "Allows Flee to be instantaneous.",
       "lp_cost": 40,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Rewarded by Sastro for finding all 9 Lost Gestrals"
+      "notes": "Rewarded by Sastro for finding all 9 Lost Gestrals",
+      "level": 32,
+      "stats": {
+        "health": 2830,
+        "speed": 574
+      }
     },
     {
       "name": "Protecting Attack",

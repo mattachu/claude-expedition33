@@ -36,11 +36,11 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 <!-- GENERATED:START characters:Sciel:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 94    |
+| Level     | 95    |
 | Agility   | 99    |
 | Luck      | 99    |
 | Defence   | 66    |
-| Might     | 18    |
+| Might     | 21    |
 | Vitality  | 0     |
 <!-- GENERATED:END -->
 
@@ -51,9 +51,9 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2202 | 7233     |
-| Attack  | 1226 | 8906     |
-| Speed   | 1221 | 2534     |
+| Health  | 2294 | 7264     |
+| Attack  | 1302 | 8974     |
+| Speed   | 1244 | 2542     |
 | Defence | 492  | 492      |
 | Crit    | 55%  | 102%     |
 <!-- GENERATED:END -->
@@ -190,6 +190,11 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 | Searing Bond      | 4  | Sun    | ❌        | Medium single-target Dark, 1 hit. Applies 5 Foretell. Also deals damage and applies Foretell to every other Burning enemy.   |
 | Twilight Dance    | 9  | Moon   | ❌        | High single-target Dark damage in Twilight state. Consumes Foretell. Extends Twilight duration by 1 turn.                    |
 | Twilight Slash    | 2  | Sun    | ❌        | Low single-target Physical damage. Applies 2 Foretell.                                                                       |
+| Card Weaver       | —  | —      | ❌        |                                                                                                                              |
+| Marking Card      | —  | —      | ❌        |                                                                                                                              |
+| Rush              | —  | —      | ❌        |                                                                                                                              |
+| Our Sacrifice     | —  | —      | ❌        |                                                                                                                              |
+| Spectral Sweep    | —  | —      | ❌        |                                                                                                                              |
 <!-- GENERATED:END -->
 
 *Target loadout once Grim Harvest confirmed available: Fortune's Fury, Intervention, Plentiful Harvest, Final Path, Twilight Dance, Grim Harvest.*

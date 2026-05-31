@@ -62,10 +62,10 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 <!-- GENERATED:START characters:Maelle:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 95    |
+| Level     | 96    |
 | Agility   | 99    |
 | Luck      | 99    |
-| Might     | 87    |
+| Might     | 90    |
 | Vitality  | 0     |
 | Defence   | 0     |
 <!-- GENERATED:END -->
@@ -79,9 +79,9 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 
 | Stat    | Base | Modified |
 |---------|------|----------|
-| Health  | 2232 | 7885     |
-| Attack  | 1368 | 11298    |
-| Speed   | 1228 | 2462     |
+| Health  | 2326 | 7917     |
+| Attack  | 1436 | 11370    |
+| Speed   | 1251 | 2469     |
 | Defence | 182  | 182      |
 | Crit    | 41%  | 109%     |
 <!-- GENERATED:END -->
