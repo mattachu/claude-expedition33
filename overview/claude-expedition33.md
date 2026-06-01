@@ -63,9 +63,9 @@ Fetch that file only when reviewing specific past errors.
 ### Inventory
 <!-- GENERATED:START playthrough:inventory -->
 - Colour of Lumina: 53
-- Recoats: 39
+- Recoats: 40
 - Chroma Catalysts: 67 standard, 74 polished, 105 resplendent, 76 grandiose, 6 perfect
-- Chroma: 1343625
+- Chroma: 1058974
 <!-- GENERATED:END -->
 
 ---

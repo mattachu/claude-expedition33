@@ -4,7 +4,7 @@
 
 See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) for Pictos and Lumina currently in use.
 
-**208 Pictos total.** 185 obtained.
+**208 Pictos total.** 186 obtained.
 
 ---
 
@@ -266,7 +266,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 ---
 
-## Buffs and Support (30 Pictos, 22 obtained)
+## Buffs and Support (30 Pictos, 23 obtained)
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
@@ -282,7 +282,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Exposing Attack | Base Attack applies Defenceless for 1 turn. | 10 |  |  |  |
 |  | Exposing Break | Apply Defenceless on Break. | 5 |  |  |  |
 | ✓ | Greater Powerless | +15% to Powerless damage reduction. | 15 | Defence: 1727, Speed: 597 |  |  |
-|  | Greater Rush | +25% to Rush Speed increase. | 10 |  |  |  |
+| ✓ | Greater Rush | +25% to Rush Speed increase. | 10 |  |  |  |
 | ✓ | Greater Slow | +15% to Slow Speed reduction. | 15 | Defence: 647, Speed: 266 |  |  |
 | ✓ | Longer Powerful | On applying Powerful, its duration is increased by 2. | 10 |  |  |  |
 | ✓ | Longer Rush | On applying Rush, its duration is increased by 2. | 10 |  |  |  |

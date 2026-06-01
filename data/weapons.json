@@ -298,6 +298,28 @@
           "description": "Second hit of a Skill and following hits don't consume Mark."
         }
       ]
+    },
+    {
+      "name": "Coldum",
+      "level": 21,
+      "power": 1514,
+      "element": "Ice",
+      "scaling": "Vitality A, Defense B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "Self-Heal by 2% Health on dealing a Critical hit."
+        },
+        {
+          "level": 10,
+          "description": "+50% Critical Chance while in Defensive Stance."
+        },
+        {
+          "level": 20,
+          "description": "If Stanceless, Base Attack switches to Defensive Stance."
+        }
+      ]
     }
   ],
   "Verso": [
@@ -654,6 +676,28 @@
         {
           "level": 20,
           "description": "Gradient attacks deal 100% more damage."
+        }
+      ]
+    },
+    {
+      "name": "Cultam",
+      "level": 21,
+      "power": 2152,
+      "element": "Dark",
+      "scaling": "Defence A, Agility B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "No Perfection loss on damage taken. Perfection is instead lost on being Healed."
+        },
+        {
+          "level": 10,
+          "description": "Gain 2AP on Counterattack."
+        },
+        {
+          "level": 20,
+          "description": "Gain 1 Rank on Counterattack."
         }
       ]
     }

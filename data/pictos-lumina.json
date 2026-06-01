@@ -491,7 +491,7 @@
       "lp_cost": 3,
       "obtained": true,
       "equipped_by": null,
-      "level": 1
+      "level": 21
     },
     {
       "name": "Charging Alteration",
@@ -1078,7 +1078,7 @@
       "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
-      "level": 8
+      "level": 21
     },
     {
       "name": "Energising Gradient",
@@ -1510,9 +1510,10 @@
       "category": [
         "support"
       ],
+      "level": 21,
       "effect": "+25% to Rush Speed increase.",
       "lp_cost": 10,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
       "notes": "Monoco's Station merchant"
     },
