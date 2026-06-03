@@ -12,15 +12,32 @@ CONTENT:
     - Level 10: 20% chance to apply Burn on Light damage.
     - Level 20: Can't die at Rank A or above.
 <!-- GENERATED:END -->
-- **Notes:** The L4 extra hit copies the main hit exactly — same damage value and crit multiplier, including from Frenzy stacking. With Steeled Strike (13 hits), approximately 9 hits are doubled by Simoso. Frenzy (Pictos) stacks compound ×1.1 per Steeled Strike hit only; Simoso copies do not advance the Frenzy stack — ceiling ×3.14 at hit 13. Alternating Critical has no synergy at 100% crit (all hits including Simoso copies benefit from guaranteed crits). Base Shield now functional (was blocked by Chevalam L4). L20 "can't die at Rank A" mitigates the multi-hit edge case risk identified in the Confident vs Clea's Life open question.
+- **Notes:**
+    - The L4 extra hit copies the main hit exactly — same damage value and crit multiplier, including from Frenzy stacking.
+    - With Steeled Strike (13 hits), approximately 9 hits are doubled by Simoso.
+    - Frenzy (Pictos) stacks compound ×1.1 per Steeled Strike hit only; Simoso copies do not advance the Frenzy stack — ceiling ×3.14 at hit 13.
+    - Alternating Critical has no synergy at 100% crit (all hits including Simoso copies benefit from guaranteed crits).
+    - Base Shield now functional (was blocked by Chevalam L4).
 
 FILE: characters/verso.md
 SECTION: ## Weapons > ### Future (post-game)
 CONTENT:
 ### Future (post-game)
-- **Chevalam** (previous endgame weapon, replaced by Simoso at Chat 24) — Physical, Agility S / Luck A. L4: Start battle at Rank S, can't be healed or gain Shields. L10: +20% damage per consecutive no-damage turn, up to 5× (Cheater turns stack this automatically). L20: Apply Rush at Rank S.
 - **Dreameso** — Agility + Luck scaling; Rank gain on Counterattack; deferred until parry/counterattack rate improves.
 - **Seeram** — Vitality + Agility. Can't reach Rank S. S-tier ONLY for End Bringer stunlock build. Purchased from Unfinished Cruler, Coastal Cave.
+
+FILE: characters/verso.md
+SECTION: ## Weapons > ### Previous
+AFTER: ### Future (post-game)
+CONTENT:
+### Previous
+- **Lanceram** — Rank can't be lower than C
+- **Gaulteram** — Lose Perfection rather than Rank when hit
+- **Chevalam** (previous endgame weapon, replaced by Simoso at Chat 24)
+    - Physical, Agility S / Luck A.
+    - L4: Start battle at Rank S, can't be healed or gain Shields.
+    - L10: +20% damage per consecutive no-damage turn, up to 5× (Cheater turns stack this automatically).
+    - L20: Apply Rush at Rank S.
 
 FILE: characters/verso.md
 SECTION: ## Mechanics
@@ -52,7 +69,7 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 **Steeled Strike:** Charges for 1 turn; executes following turn for extreme damage. Interrupted if Verso takes any damage during charge. Requires Cheater (consecutive turns) to use safely. S Rank bonus requires building to Rank S (no longer auto-starts at S with Simoso).
 
-**Burst sequence (endgame):** Verso (normal turn): base attack to farm AP → Verso (Cheater turn): Steeled Strike charge → Sciel (normal turn): Fortune's Fury on Verso → Sciel (Cheater turn): Intervention on Verso → Verso (Greater Rush turn): Steeled Strike executes with Fortune's Fury active. Combined multiplier: Rank S (×3.0) × Fortune's Fury (×2.0) × Simoso (~9 of 13 hits doubled) = very high total output before Steeled Strike's own multiplier. With Frenzy Pictos: additional compound ×1.1 per Steeled Strike hit (ceiling ×3.14 at hit 13; Simoso copies do not advance the stack).
+**Burst sequence (endgame):** Verso (normal turn): base attack to farm AP → Verso (Cheater turn): Steeled Strike charge → Sciel (normal turn): Fortune's Fury on Verso → Sciel (Cheater turn): Intervention on Verso → Verso (Intervention turn): Steeled Strike executes with Fortune's Fury active. Combined multiplier: Rank S (×3.0) × Fortune's Fury (×2.0) × Simoso (~9 of 13 hits doubled) = very high total output before Steeled Strike's own multiplier. With Frenzy Pictos: additional compound ×1.1 per Steeled Strike hit (ceiling ×3.14 at hit 13).
 
 **Solo fights:** Both completed (vs Francois, vs Monoco).
 
@@ -123,4 +140,4 @@ CONTENT:
 
 APPEND: chats/chat-index.md
 CONTENT:
-| Chat 31 | [Formatted](chat31/chat31-index.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat31/chat31-index.md) | [chat31.md](chat31/chat31.md) | Endless Tower testing session: Chevalam vs Simoso compared (~2.1× output confirmed); Alternating Critical, Frenzy stacking, Energising Break rotation, Powerful Shield synergy, and Licorum + Frenzy stacking all tested or resolved. Five open questions closed. |
+| Chat 31 | [Formatted](chat31/chat31-index.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat31/chat31-index.md) | [chat31.md](chat31/chat31.md) | Endless Tower testing session: Chevalam vs Simoso compared (~2.1× output confirmed); Alternating Critical, Frenzy stacking, Energising Break rotation, Powerful Shield synergy, and Licorum + Frenzy stacking all tested or resolved.    |
