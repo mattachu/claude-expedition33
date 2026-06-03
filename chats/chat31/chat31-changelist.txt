@@ -1,0 +1,126 @@
+FILE: characters/verso.md
+SECTION: ## Weapons > ### Current (Endgame)
+CONTENT:
+### Current (Endgame)
+<!-- GENERATED:START weapons:Verso:Simoso -->
+- **Name:** Simoso (33)
+- **Power:** 9480
+- **Element:** Light
+- **Scaling:** Vitality A, Agility S
+- **Effects:**
+    - Level 4: Ethereal Sword deals Light damage after any skill hit.
+    - Level 10: 20% chance to apply Burn on Light damage.
+    - Level 20: Can't die at Rank A or above.
+<!-- GENERATED:END -->
+- **Notes:** The L4 extra hit copies the main hit exactly — same damage value and crit multiplier, including from Frenzy stacking. With Steeled Strike (13 hits), approximately 9 hits are doubled by Simoso. Frenzy (Pictos) stacks compound ×1.1 per Steeled Strike hit only; Simoso copies do not advance the Frenzy stack — ceiling ×3.14 at hit 13. Alternating Critical has no synergy at 100% crit (all hits including Simoso copies benefit from guaranteed crits). Base Shield now functional (was blocked by Chevalam L4). L20 "can't die at Rank A" mitigates the multi-hit edge case risk identified in the Confident vs Clea's Life open question.
+
+FILE: characters/verso.md
+SECTION: ## Weapons > ### Future (post-game)
+CONTENT:
+### Future (post-game)
+- **Chevalam** (previous endgame weapon, replaced by Simoso at Chat 24) — Physical, Agility S / Luck A. L4: Start battle at Rank S, can't be healed or gain Shields. L10: +20% damage per consecutive no-damage turn, up to 5× (Cheater turns stack this automatically). L20: Apply Rush at Rank S.
+- **Dreameso** — Agility + Luck scaling; Rank gain on Counterattack; deferred until parry/counterattack rate improves.
+- **Seeram** — Vitality + Agility. Can't reach Rank S. S-tier ONLY for End Bringer stunlock build. Purchased from Unfinished Cruler, Coastal Cave.
+
+FILE: characters/verso.md
+SECTION: ## Mechanics
+CONTENT:
+## Mechanics
+
+Verso's central system is **Perfection and Rank**. Perfection is a resource that fills a rank meter; higher ranks give higher damage multipliers and unlock skill bonuses. Rank order: **D → C → B → A → S**. Skills and parries generate Perfection. D is the true base rank — previous note of C as starting rank was because Lighteram's Level 4 set a floor of C. With Simoso there is no rank floor; hits can take Verso back to D.
+
+**Critical mechanic:** Rank bonuses apply ONLY at the **exact rank stated** — not at higher ranks. Yellow skill text in-game indicates an active rank bonus.
+
+| Event                     | Perfection effect                |
+|---------------------------|----------------------------------|
+| Parry                     | Gains Perfection                 |
+| Dodge                     | Prevents rank loss               |
+| Hit taken (general)       | Full rank demotion               |
+| Hit taken (Gaulteram)     | Lose 1 Perfection only           |
+| Death                     | Drop back to Rank D              |
+| Battle start (general)    | Start on Rank D                  |
+| Battle start (Lanceram)   | Start on Rank C                  |
+| Battle start (Chevalam)   | Start on Rank S                  |
+| Light Holder              | +1 Rank on completion            |
+| Perfect Break (at B Rank) | Jump to S Rank if triggers Break |
+
+**Dodge vs Parry timing:** Dodge has a wider window than Parry. Dodge > Perfect Dodge == Parry in terms of timing windows. If a Dodge is Perfect, a Parry would also work. Dodge is used to safely learn parry timings — the game indicates whether a Dodge was Perfect.
+
+**Counterattack:** Successfully completing all parries in an enemy's attack sequence launches a highly powerful Counterattack. This does not consume a turn. This is the primary reason to prioritise Parry over Dodge.
+
+**Stun:** Enemies are stunned on Break. End Bringer deals increased damage to stunned targets, and at A Rank can reapply stun to extend the window.
+
+**Steeled Strike:** Charges for 1 turn; executes following turn for extreme damage. Interrupted if Verso takes any damage during charge. Requires Cheater (consecutive turns) to use safely. S Rank bonus requires building to Rank S (no longer auto-starts at S with Simoso).
+
+**Burst sequence (endgame):** Verso (normal turn): base attack to farm AP → Verso (Cheater turn): Steeled Strike charge → Sciel (normal turn): Fortune's Fury on Verso → Sciel (Cheater turn): Intervention on Verso → Verso (Greater Rush turn): Steeled Strike executes with Fortune's Fury active. Combined multiplier: Rank S (×3.0) × Fortune's Fury (×2.0) × Simoso (~9 of 13 hits doubled) = very high total output before Steeled Strike's own multiplier. With Frenzy Pictos: additional compound ×1.1 per Steeled Strike hit (ceiling ×3.14 at hit 13; Simoso copies do not advance the stack).
+
+**Solo fights:** Both completed (vs Francois, vs Monoco).
+
+FILE: characters/verso.md
+SECTION: ## Key Decisions
+CONTENT:
+## Key Decisions
+
+- **Gaulteram over Glaceso:** Glaceso costs 2 Recoats net; no forgiveness mechanic. Gaulteram Level 4 forgiveness critical while parry skills developing. Same scaling as Chevalam = clean future swap.
+- **Marking Shot over Defiant Strike:** Same 100% Mark. Defiant Strike costs 30% HP per use — unacceptable at ~20% parry rate. Marking Shot: 2 AP, no HP cost.
+- **Strike Storm over Defiant Strike (damage slot):** More damage, synergises with Fortune's Fury. Mark handled by Marking Shot.
+- **Phantom Stars retained:** Essential for AoE in Visages and multi-enemy areas. Useless in 1v1 — never use in boss fights.
+- **Steeled Strike deferred:** Available but requires Cheater Pictos for safe use. Obtain Cheater (Sprong) first.
+- **Energising Break rotation confirmed (Chat 31):** Perfect Break (7 AP, 5 at B Rank) → Energising Break trigger (+3 AP via Energy Master) → Cheater turn → End Bringer (9 AP) on stunned target. Very effective — use when stun is available as an alternative to Steeled Strike burst.
+- **Frenzy Pictos (obtained, Verso's Drafts):** Stacks compound ×1.1 per Steeled Strike hit; Simoso copies do not advance the stack. Ceiling: ×3.14 at hit 13. Strong multiplier for endgame burst — evaluate adding to Pictos or Lumina loadout.
+- **Powerful Shield (to acquire):** Purchase from Endless Night Sanctuary merchant. 5LP. +10% damage per Shield Point on self — effectively permanent with Base Shield active. High value at low LP cost.
+
+FILE: characters/verso.md
+SECTION: ## Errors to Avoid
+CONTENT:
+## Errors to Avoid
+
+- **Light Holder and End Bringer recommended before available:** These skills were recommended in session summaries before Matt had obtained them. The "Confirmed NOT in skill list" note was accurate at the time — the error was recommending skills without checking current availability.
+- **Glaceso recommendation:** Recommended over Gaulteram based on higher weapon level. Wrong: costs 2 Recoats net; no forgiveness; Gaulteram was the right choice at the time.
+- **Phantom Stars in 1v1/solo fights:** AoE is useless vs single target.
+- **Paradigm Shift rank jump:** Said it jumps to S Rank. Correct: generates 1–3 AP; C Rank bonus only.
+- **Quick Strike rank jump (inherent):** Requires Glaceso Level 4. Without Glaceso = modest Perfection gain only.
+- **Rank bonuses persist to higher ranks:** WRONG. Exact rank only. Yellow text = active.
+- **Overload AP in same turn:** AP from Overload carries to the next turn, not the same turn.
+- **Second Chance on multiple characters:** Only one character can hold this Pictos at a time.
+- **Chevalam "available right now at Level 56":** Recommended level is 65–70+.
+- **Gaulteram as Act 3 endgame weapon:** It is an Act 2 weapon.
+- **Rank loss on hit as weapon-specific:** General Verso mechanic. Gaulteram's forgiveness is the exception.
+- **Rank starts at C:** Rank starts at D. C was the effective floor with Lighteram equipped. With Chevalam there is no floor — hits can send Verso back to D.
+- **Base Shield with Chevalam:** Non-functional — Chevalam prevents shields. Remove from loadout.
+- **Alternating Critical + Simoso:** No synergy at 100% crit. All hits including Simoso extra hits benefit from guaranteed crits — Alternating Critical's boost applies only to non-crit hits, leaving nothing to boost.
+
+FILE: characters/maelle.md
+SECTION: ## Weapons > ### Future candidates
+AFTER: ### Current (Endgame)
+CONTENT:
+### Future candidates
+- **Licorum** — Physical. L4: "Each successive Skill hit deals 10% more damage" — stacks multiplicatively with Frenzy Pictos (×1.21 compound per hit, confirmed Chat 31 vs Gargant using Gustave's Homage). Strong candidate to replace Lithum for multi-hit builds once Frenzy is available. Verify scaling attributes and respec requirements before switching.
+
+FILE: characters/maelle.md
+SECTION: ## Key Decisions
+CONTENT:
+## Key Decisions
+
+- **Lithum over all alternatives:** Strictly better than Medalum for parry-competent players. Same scaling = no respec. The Reacher must be completed before Renoir — choose "Truth" for Gustave resurrection path and Relationship Level 7.
+- **Glaisum as Lithum alternative:** Same scaling as Medalum/Lithum (Defence + Agility), no respec, higher base power (3461). More defensive/supportive (ally heals, self-cleanse) vs Lithum's offensive (Mark persistence, Virtuose on Counterattack). Lithum preferred for standard DPS build; Glaisum worth considering if survivability becomes a priority.
+- **Stalum for burn-stacking:** Core weapon for the burn-stacking build path. Not current priority but available at level 23 when ready.
+- **Cheater via Lumina:** All three endgame team members use Cheater via Lumina (40 LP) rather than Pictos. For solo fights, swap Cheater to Pictos to free 40 LP.
+- **Phantom Strike over Fencer's Flurry:** Phantom Strike replaced Fencer's Flurry. Better damage, adds Defensive stance utility and Gradient generation. AoE function preserved.
+- **Solo Lumina build:** Swap Cheater to Pictos + borrow Second Chance from Verso + remove Teamwork/Breaking Counter/Dead Energy I+II + add Last Stand suite + Recovery + Energising Attack I.
+- **Gradient Break over Burning Break for solo:** For The Reacher, Gradient Break chosen for speed advantage (1821 vs 1397) to handle Alicia's Rush phase at 25% HP. Second Chance covers survivability.
+- **Licorum over Lithum (pending evaluation):** Licorum L4 and Frenzy Pictos stack multiplicatively (×1.21 per hit compound, confirmed Chat 31). Evaluate for multi-hit builds once Frenzy is acquired. Verify Licorum scaling attributes and whether a respec from Lithum is required before switching.
+
+FILE: overview/claude-expedition33.md
+SECTION: ## Section 6: Open Questions
+CONTENT:
+## Section 6: Open Questions
+
+- **First Life (15LP):** Drops from Chromatic Lampmaster in Endless Tower (Stage 11 / DLC superboss area). 25% damage while alive, no downside for a well-supported DPS. Strong candidate for Maelle once obtained.
+- **Verso Confident vs Clea's Life (Chat 30):** Simoso L20 multi-hit edge case confirmed: a multi-hit attack can knock Verso from Rank A and kill him in the same sequence (observed in Osquio fight). Strategic choice pending: keep Confident + Confident Fighter (accept risk, retain damage bonuses) or switch to Clea's Life (eliminates vulnerability — full HP after Overload).
+- **Greater Powerful value for Maelle (Chat 25):** Added (+15% to Powerful → ~40% total bonus). Confirm uplift feels meaningful in practice vs pre-chat-25 baseline.
+- **Empowering Parry for Verso (Chat 25):** Added (5LP). Practical value depends on how consistently parrying is achieved — monitor in Endless Tower.
+
+APPEND: chats/chat-index.md
+CONTENT:
+| Chat 31 | [Formatted](chat31/chat31-index.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat31/chat31-index.md) | [chat31.md](chat31/chat31.md) | Endless Tower testing session: Chevalam vs Simoso compared (~2.1× output confirmed); Alternating Critical, Frenzy stacking, Energising Break rotation, Powerful Shield synergy, and Licorum + Frenzy stacking all tested or resolved. Five open questions closed. |
