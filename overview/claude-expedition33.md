@@ -166,11 +166,6 @@ If the main party is fully wiped in a battle, the player can continue the battle
 - **Verso Confident vs Clea's Life (Chat 30):** Simoso L20 multi-hit edge case confirmed: a multi-hit attack can knock Verso from Rank A and kill him in the same sequence (observed in Osquio fight). Strategic choice pending: keep Confident + Confident Fighter (accept risk, retain damage bonuses) or switch to Clea's Life (eliminates vulnerability — full HP after Overload).
 - **Greater Powerful value for Maelle (Chat 25):** Added (+15% to Powerful → ~40% total bonus). Confirm uplift feels meaningful in practice vs pre-chat-25 baseline.
 - **Empowering Parry for Verso (Chat 25):** Added (5LP). Practical value depends on how consistently parrying is achieved — monitor in Endless Tower.
-- **Verso Energising Break rotation (Chat 26):** Energising Break (3LP) added. Theoretical rotation: Perfect Break (7 AP) → Energising Break trigger (+3 AP via Energy Master) → Cheater turn (+3 AP) → End Bringer (9 AP) on Stunned target. Tentatively confirmed from observation (Chat 30) — intentional test still pending before closing.
-- **Powerful Shield + Base Shield synergy (Chat 27):** Investigate whether Powerful Shield's damage boost is triggered by Base Shield (the basic shield action), or only by Shield skills. High value if it applies to Base Shield.
-- **Alternating Critical + Simoso interaction (Chat 28/29):** Alternating Critical now obtained. Does it trigger on Simoso Light hits? If yes (Case A), all-Pictos combination gives 12.48x multiplier on Steeled Strike. If no (Case B), 4.59x. Test in the Endless Tower.
-- **Frenzy + Simoso stacking (Chat 28/29):** Frenzy now obtained. Does Frenzy count Simoso Light hits for its successive-hit stacking? Case A gives 5.6x (Frenzy alone), Case B gives 3.56x. Test alongside Alternating Critical.
-- **Licorum L4 + Frenzy stacking (Chat 29):** Licorum (Physical, for Maelle) has an L4 effect with identical wording to the Frenzy Pictos: "Each successive Skill hit deals 10% more damage." Do these stack multiplicatively, additively, or not at all? If they stack, Licorum is a strong candidate to replace Lithum for multi-hit builds. Evaluate after confirming stacking behaviour.
 
 ---
 

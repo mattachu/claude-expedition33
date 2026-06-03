@@ -19,7 +19,7 @@
 
 ## Mechanics
 
-Verso's central system is **Perfection and Rank**. Perfection is a resource that fills a rank meter; higher ranks give higher damage multipliers and unlock skill bonuses. Rank order: **D → C → B → A → S**. Skills and parries generate Perfection. D is the true base rank — previous note of C as starting rank was because Lighteram's Level 4 set a floor of C. With Chevalam there is no floor; hits can take Verso back to D.
+Verso's central system is **Perfection and Rank**. Perfection is a resource that fills a rank meter; higher ranks give higher damage multipliers and unlock skill bonuses. Rank order: **D → C → B → A → S**. Skills and parries generate Perfection. D is the true base rank — previous note of C as starting rank was because Lighteram's Level 4 set a floor of C. With Simoso there is no rank floor; hits can take Verso back to D.
 
 **Critical mechanic:** Rank bonuses apply ONLY at the **exact rank stated** — not at higher ranks. Yellow skill text in-game indicates an active rank bonus.
 
@@ -42,9 +42,9 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 **Stun:** Enemies are stunned on Break. End Bringer deals increased damage to stunned targets, and at A Rank can reapply stun to extend the window.
 
-**Steeled Strike:** Charges for 1 turn; executes following turn for extreme damage. Interrupted if Verso takes any damage during charge. Requires Cheater (consecutive turns) to use safely. S Rank bonus active with Chevalam (starts at S).
+**Steeled Strike:** Charges for 1 turn; executes following turn for extreme damage. Interrupted if Verso takes any damage during charge. Requires Cheater (consecutive turns) to use safely. S Rank bonus requires building to Rank S (no longer auto-starts at S with Simoso).
 
-**Burst sequence (endgame):** Verso (normal turn): base attack to farm AP → Verso (Cheater turn): Steeled Strike charge → Sciel (normal turn): Fortune's Fury on Verso → Sciel (Cheater turn): Intervention on Verso → Verso (Greater Rush turn): Steeled Strike executes with Fortune's Fury active. Combined multiplier: Rank S (×3.0) × Chevalam stacks (×1.4+) × Fortune's Fury (×2.0) = ×8.4+ before Steeled Strike's own multiplier.
+**Burst sequence (endgame):** Verso (normal turn): base attack to farm AP → Verso (Cheater turn): Steeled Strike charge → Sciel (normal turn): Fortune's Fury on Verso → Sciel (Cheater turn): Intervention on Verso → Verso (Intervention turn): Steeled Strike executes with Fortune's Fury active. Combined multiplier: Rank S (×3.0) × Fortune's Fury (×2.0) × Simoso (~9 of 13 hits doubled) = very high total output before Steeled Strike's own multiplier. With Frenzy Pictos: additional compound ×1.1 per Steeled Strike hit (ceiling ×3.14 at hit 13).
 
 **Solo fights:** Both completed (vs Francois, vs Monoco).
 
@@ -84,22 +84,35 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ## Weapons
 
 ### Current (Endgame)
-<!-- GENERATED:START weapons:Verso:Chevalam -->
-- **Name:** Chevalam (33)
-- **Power:** 5173
-- **Element:** Physical
-- **Scaling:** Agility S, Luck A
+<!-- GENERATED:START weapons:Verso:Simoso -->
+- **Name:** Simoso (33)
+- **Power:** 9480
+- **Element:** Light
+- **Scaling:** Vitality A, Agility S
 - **Effects:**
-    - Level 4: Start battle at Rank S, but can't be healed or gain Shields.
-    - Level 10: 20% increased damage for each consecutive no-damage turn, stacks up to 5×.
-    - Level 20: Apply Rush on Rank S.
+    - Level 4: An ethereal Sword deals Light damage on any damage dealt with Skills.
+    - Level 10: 20% chance to apply Burn on dealing Light damage.
+    - Level 20: Can't die if at least Rank A.
 <!-- GENERATED:END -->
-- **Notes:** The Cheater extra turn counts as a no-damage turn and stacks the Level 10 bonus — Verso builds damage stacks mechanically just by taking his Cheater turns normally, not only by successfully avoiding hits. Confident (20LP) and Confident Fighter (15LP) are the recommended Lumina pairing: since Chevalam already prevents healing, the "cannot be healed" downside of both Lumina is fully priced in, while the benefits (take half damage; deal 30% more damage) are entirely available.
+- **Notes:**
+    - The L4 extra hit copies the main hit exactly — same damage value and crit multiplier, including from Frenzy stacking.
+    - With Steeled Strike (13 hits), approximately 9 hits are doubled by Simoso.
+    - Frenzy (Pictos) stacks compound ×1.1 per Steeled Strike hit only; Simoso copies do not advance the Frenzy stack — ceiling ×3.14 at hit 13.
+    - Alternating Critical has no synergy at 100% crit (all hits including Simoso copies benefit from guaranteed crits).
+    - Base Shield now functional (was blocked by Chevalam L4).
 
 ### Future (post-game)
-- **Simoso** — from Simon (Renoir's Drafts). S-tier. Scaling: Vitality + Agility. Level 20: Can't die if at least Rank A.
 - **Dreameso** — Agility + Luck scaling; Rank gain on Counterattack; deferred until parry/counterattack rate improves.
-- **Seeram** — Vitality + Agility. Can't reach Rank S. S-tier ONLY for End Bringer stunlock build on Simon. Purchased from Unfinished Cruler, Coastal Cave.
+- **Seeram** — Vitality + Agility. Can't reach Rank S. S-tier ONLY for End Bringer stunlock build. Purchased from Unfinished Cruler, Coastal Cave.
+
+### Previous
+- **Lanceram** — Rank can't be lower than C
+- **Gaulteram** — Lose Perfection rather than Rank when hit
+- **Chevalam** (previous endgame weapon, replaced by Simoso at Chat 24)
+    - Physical, Agility S / Luck A.
+    - L4: Start battle at Rank S, can't be healed or gain Shields.
+    - L10: +20% damage per consecutive no-damage turn, up to 5× (Cheater turns stack this automatically).
+    - L20: Apply Rush at Rank S.
 
 ---
 
@@ -276,6 +289,9 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 - **Strike Storm over Defiant Strike (damage slot):** More damage, synergises with Fortune's Fury. Mark handled by Marking Shot.
 - **Phantom Stars retained:** Essential for AoE in Visages and multi-enemy areas. Useless in 1v1 — never use in boss fights.
 - **Steeled Strike deferred:** Available but requires Cheater Pictos for safe use. Obtain Cheater (Sprong) first.
+- **Energising Break rotation confirmed (Chat 31):** Perfect Break (7 AP, 5 at B Rank) → Energising Break trigger (+3 AP via Energy Master) → Cheater turn → End Bringer (9 AP) on stunned target. Very effective — use when stun is available as an alternative to Steeled Strike burst.
+- **Frenzy Pictos (obtained, Verso's Drafts):** Stacks compound ×1.1 per Steeled Strike hit; Simoso copies do not advance the stack. Ceiling: ×3.14 at hit 13. Strong multiplier for endgame burst — evaluate adding to Pictos or Lumina loadout.
+- **Powerful Shield (to acquire):** Purchase from Endless Night Sanctuary merchant. 5LP. +10% damage per Shield Point on self — effectively permanent with Base Shield active. High value at low LP cost.
 
 ---
 
@@ -294,3 +310,4 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 - **Rank loss on hit as weapon-specific:** General Verso mechanic. Gaulteram's forgiveness is the exception.
 - **Rank starts at C:** Rank starts at D. C was the effective floor with Lighteram equipped. With Chevalam there is no floor — hits can send Verso back to D.
 - **Base Shield with Chevalam:** Non-functional — Chevalam prevents shields. Remove from loadout.
+- **Alternating Critical + Simoso:** No synergy at 100% crit. All hits including Simoso extra hits benefit from guaranteed crits — Alternating Critical's boost applies only to non-crit hits, leaving nothing to boost.

@@ -105,6 +105,9 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 - **Core rotation:** Any skill switching to Defensive stance → parry/counterattack → Counterattack triggers Virtuose entry (L10) → attack in Virtuose → Shell applied on leaving Virtuose (L20) → repeat. Phantom Strike is a useful Defensive-entry option as it also contributes +35% Gradient Charge per use.
 - **L4 Mark synergy:** Hitting a Marked enemy in Virtuose does not consume the Mark. This enables repeated Percée use in Virtuose on a Marked enemy (each cast benefits from reduced 2 AP cost, increased damage, and Rewarding Mark AP return) without losing the Mark. Burning Canvas can similarly be used in Virtuose on a Marked enemy for repeated burn-scaling damage without consuming the Mark. Both synergies make these skills substantially stronger with Lithum than with Medalum.
 
+### Future candidates
+- **Licorum** — Physical. L4: "Each successive Skill hit deals 10% more damage" — stacks multiplicatively with Frenzy Pictos (×1.21 compound per hit, confirmed Chat 31 vs Gargant using Gustave's Homage). Strong candidate to replace Lithum for multi-hit builds once Frenzy is available. Verify scaling attributes and respec requirements before switching.
+
 ---
 
 ## Pictos
@@ -280,6 +283,7 @@ Burning Canvas (5 AP, switches to Offensive, high Void damage + 1 burn per hit) 
 - **Phantom Strike over Fencer's Flurry:** Phantom Strike replaced Fencer's Flurry. Better damage, adds Defensive stance utility and Gradient generation. AoE function preserved.
 - **Solo Lumina build:** Swap Cheater to Pictos + borrow Second Chance from Verso + remove Teamwork/Breaking Counter/Dead Energy I+II + add Last Stand suite + Recovery + Energising Attack I.
 - **Gradient Break over Burning Break for solo:** For The Reacher, Gradient Break chosen for speed advantage (1821 vs 1397) to handle Alicia's Rush phase at 25% HP. Second Chance covers survivability.
+- **Licorum over Lithum (pending evaluation):** Licorum L4 and Frenzy Pictos stack multiplicatively (×1.21 per hit compound, confirmed Chat 31). Evaluate for multi-hit builds once Frenzy is acquired. Verify Licorum scaling attributes and whether a respec from Lithum is required before switching.
 
 ---
 
