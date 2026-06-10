@@ -32,9 +32,14 @@
       ],
       "effect": "20% chance to gain Rush on Free Aim shot.",
       "lp_cost": 3,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Gestral Merchant (Flying Manor)"
+      "notes": "Gestral Merchant (Flying Manor)",
+      "level": 28,
+      "stats": {
+        "health": 4869,
+        "defence": 301
+      }
     },
     {
       "name": "Accelerating Tint",
@@ -43,9 +48,10 @@
       ],
       "effect": "Healing Tints also apply Rush.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Gestral Merchant (Sanctuary of Endless Night)"
+      "notes": "Gestral Merchant (Sanctuary of Endless Night)",
+      "level": 25
     },
     {
       "name": "Aegis Revival",
@@ -191,7 +197,7 @@
       "effect": "25% increased Counterattack damage.",
       "lp_cost": 3,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Sciel",
       "level": 28,
       "stats": {
         "health": 4058,
@@ -321,9 +327,10 @@
       ],
       "effect": "+2 AP on applying a Status Effect. Once per turn.",
       "lp_cost": 15,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Falling Leaves merchant"
+      "notes": "Falling Leaves merchant",
+      "level": 14
     },
     {
       "name": "Break Specialist",
@@ -393,7 +400,7 @@
       "effect": "Fully charge enemy break bar on death",
       "lp_cost": 5,
       "obtained": true,
-      "equipped_by": "Verso",
+      "equipped_by": "Lune",
       "level": 29,
       "stats": {
         "speed": 586,
@@ -462,7 +469,7 @@
       "effect": "Apply 3 Burn to all enemies on death",
       "lp_cost": 5,
       "obtained": true,
-      "equipped_by": "Lune",
+      "equipped_by": null,
       "level": 28,
       "stats": {
         "speed": 546,
@@ -515,9 +522,10 @@
       ],
       "effect": "+15% of a Gradient Charge on Base Attack.",
       "lp_cost": 7,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "The Reacher"
+      "notes": "The Reacher",
+      "level": 20
     },
     {
       "name": "Charging Burn",
@@ -541,9 +549,10 @@
       ],
       "effect": "+10% of a Gradient Charge on Counterattack.",
       "lp_cost": 10,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "The Reacher (guarded by two Echassiers in Mountain area)"
+      "notes": "The Reacher (guarded by two Echassiers in Mountain area)",
+      "level": 20
     },
     {
       "name": "Charging Critical",
@@ -568,9 +577,10 @@
       ],
       "effect": "+20% of a Gradient Charge on hitting a Marked target. Once per turn.",
       "lp_cost": 10,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Gestral Merchant (Sanctuary of Endless Night)"
+      "notes": "Gestral Merchant (Sanctuary of Endless Night)",
+      "level": 25
     },
     {
       "name": "Charging Stun",
@@ -601,9 +611,10 @@
       ],
       "effect": "+15% of a Gradient Charge on hitting a Weakness. Once per turn.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Gestral Merchant (The Reacher)"
+      "notes": "Gestral Merchant (The Reacher)",
+      "level": 20
     },
     {
       "name": "Cheater",
@@ -698,7 +709,7 @@
       "effect": "Take 50% less damage, but can't be healed.",
       "lp_cost": 20,
       "obtained": true,
-      "equipped_by": "Verso",
+      "equipped_by": null,
       "level": 29,
       "stats": {
         "speed": 557,
@@ -765,9 +776,10 @@
       ],
       "effect": "100% Critical Chance on hitting a Stunned target.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Gestral Merchant (Sacred River)"
+      "notes": "Gestral Merchant (Sacred River)",
+      "level": 20
     },
     {
       "name": "Critical Vulnerability",
@@ -1001,9 +1013,14 @@
       ],
       "effect": "+2 AP on Healing an ally. Once per turn.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Flying Manor (left of Lampmaster boss, near frame)"
+      "notes": "Flying Manor (left of Lampmaster boss, near frame)",
+      "level": 28,
+      "stats": {
+        "defence": 1426,
+        "speed": 519
+      }
     },
     {
       "name": "Energising Attack I",
@@ -1150,9 +1167,10 @@
       ],
       "effect": "Give 2 AP on applying Powerful.",
       "lp_cost": 10,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Lumiere rooftop"
+      "notes": "Lumiere rooftop",
+      "level": 16
     },
     {
       "name": "Energising Revive",
@@ -1288,7 +1306,7 @@
       "effect": "Every AP gain is increased by 1",
       "lp_cost": 40,
       "obtained": true,
-      "equipped_by": "Sciel",
+      "equipped_by": null,
       "level": 30,
       "stats": {
         "health": 4979
@@ -1346,9 +1364,10 @@
       ],
       "effect": "Apply Defenceless on Break.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Gestral Merchant (The Reacher)"
+      "notes": "Gestral Merchant (The Reacher)",
+      "level": 20
     },
     {
       "name": "Faster Than Strong",
@@ -1444,9 +1463,14 @@
       ],
       "effect": "50% increased Break damage with Gradient Attacks.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Gestral Merchant (Flying Manor)"
+      "notes": "Gestral Merchant (Flying Manor)",
+      "level": 28,
+      "stats": {
+        "speed": 546,
+        "crit": 32
+      }
     },
     {
       "name": "Gradient Fighter",
@@ -1687,9 +1711,10 @@
       ],
       "effect": "Apply Inverted on self for 3 turns on battle start. 50% increased damage while Inverted.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Gestral Merchant (Forgotten Battlefield)"
+      "notes": "Gestral Merchant (Forgotten Battlefield)",
+      "level": 8
     },
     {
       "name": "Last Stand Critical",
@@ -1762,9 +1787,10 @@
       ],
       "effect": "Apply Mark on Break.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Gestral Merchant (Sanctuary of Endless Night)"
+      "notes": "Gestral Merchant (Sanctuary of Endless Night)",
+      "level": 25
     },
     {
       "name": "Marking Shots",
@@ -1854,9 +1880,10 @@
       ],
       "effect": "Healing an ally also applies Powerful for 1 turn.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Gestral Merchant (Sanctuary of Endless Night)"
+      "notes": "Gestral Merchant (Sanctuary of Endless Night)",
+      "level": 25
     },
     {
       "name": "Powerful Mark",
@@ -1895,9 +1922,10 @@
       ],
       "effect": "10% increased damage per Shield Point on self.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Gestral Merchant (Sanctuary of Endless Night)"
+      "notes": "Gestral Merchant (Sanctuary of Endless Night)",
+      "level": 25
     },
     {
       "name": "Powerful Shots",
@@ -1949,9 +1977,10 @@
       ],
       "effect": "Gain Shell for 1 turn on Base Attack.",
       "lp_cost": 10,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Gestral Merchant (Sanctuary of Endless Night)"
+      "notes": "Gestral Merchant (Sanctuary of Endless Night)",
+      "level": 25
     },
     {
       "name": "Protecting Death",
@@ -1996,9 +2025,14 @@
       ],
       "effect": "20% chance to gain Shell on Free Aim shot.",
       "lp_cost": 3,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Flying Manor (right ledge from starting stairs, going down)"
+      "notes": "Flying Manor (right ledge from starting stairs, going down)",
+      "level": 28,
+      "stats": {
+        "health": 4869,
+        "defence": 301
+      }
     },
     {
       "name": "Protecting Tint",
@@ -2199,9 +2233,10 @@
       ],
       "effect": "Apply Shell on applying Rush.",
       "lp_cost": 10,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Endless Night Sanctuary merchant"
+      "notes": "Endless Night Sanctuary merchant",
+      "level": 25
     },
     {
       "name": "Shield Affinity",
@@ -2238,9 +2273,10 @@
       ],
       "effect": "Healing Tints also add 2 Shields.",
       "lp_cost": 10,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "The Continent, under wooden crates southeast of Forgotten Battlefield"
+      "notes": "The Continent, under wooden crates southeast of Forgotten Battlefield",
+      "level": 9
     },
     {
       "name": "Shortcut",
@@ -2280,9 +2316,14 @@
       ],
       "effect": "Apply Slow on Break.",
       "lp_cost": 5,
-      "obtained": false,
+      "obtained": true,
       "equipped_by": null,
-      "notes": "Gestral Merchant (Flying Manor)"
+      "notes": "Gestral Merchant (Flying Manor)",
+      "level": 28,
+      "stats": {
+        "defence": 1501,
+        "speed": 546
+      }
     },
     {
       "name": "Sniper",
@@ -2383,7 +2424,7 @@
       "effect": "Recover 50% Health on killing an enemy.",
       "lp_cost": 5,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Verso",
       "level": 31,
       "stats": {
         "speed": 672,
@@ -2487,7 +2528,7 @@
       "effect": "On Critical hit, 100% increased damage of the next non-Critical hit.",
       "lp_cost": 10,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Verso",
       "level": 29,
       "stats": {
         "speed": 293,

@@ -36,26 +36,26 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 <!-- GENERATED:START characters:Sciel:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 95    |
+| Level     | 99    |
+| Might     | 99    |
 | Agility   | 99    |
 | Luck      | 99    |
-| Defence   | 66    |
-| Might     | 21    |
 | Vitality  | 0     |
+| Defence   | 0     |
 <!-- GENERATED:END -->
 
 ### Combat Stats
 
 <!-- GENERATED:START characters:Sciel:stats -->
-*Stats with Litheson (33), Painter (28), Energy Master (30), Energising Shots (28) equipped*
+*Stats with Litheson (33), Augmented Counter I (L31), Energising Shots (L28), Painter (L28) equipped.*
 
-| Stat    | Base | Modified |
-|---------|------|----------|
-| Health  | 2294 | 7264     |
-| Attack  | 1302 | 8974     |
-| Speed   | 1244 | 2542     |
-| Defence | 492  | 492      |
-| Crit    | 55%  | 102%     |
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 7396     |
+| Attack  | *[unknown]* | 10275    |
+| Speed   | *[unknown]* | 2572     |
+| Defence | *[unknown]* | 182      |
+| Crit    | *[unknown]* | 106%     |
 <!-- GENERATED:END -->
 
 *Critical Burn Pictos replaced Base Shield — restored intended turn order (Sciel faster than Maelle).*
@@ -93,11 +93,11 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 ### Current (permanent loadout)
 
 <!-- GENERATED:START characters:Sciel:Pictos -->
-| Slot | Pictos           | Level | Stat Bonus            | Effect                                       |
-|------|------------------|-------|-----------------------|----------------------------------------------|
-| 1    | Painter          | 28    | Speed +519, Crit +31% | Converts all Physical damage to Void damage. |
-| 2    | Energy Master    | 30    | Health +4979          | Every AP gain is increased by 1              |
-| 3    | Energising Shots | 28    | Speed +779, Crit +16% | 20% chance to gain 1 AP on Free Aim shot.    |
+| Slot | Pictos              | Level | Stat Bonus              | Effect                                       |
+|------|---------------------|-------|-------------------------|----------------------------------------------|
+| 1    | Augmented Counter I | 28    | Health +4058, Crit +16% | 25% increased Counterattack damage.          |
+| 2    | Energising Shots    | 28    | Speed +779, Crit +16%   | 20% chance to gain 1 AP on Free Aim shot.    |
+| 3    | Painter             | 28    | Speed +519, Crit +31%   | Converts all Physical damage to Void damage. |
 <!-- GENERATED:END -->
 
 ---
@@ -106,60 +106,69 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 ### LP Budget
 <!-- GENERATED:START characters:Sciel:LP -->
-- **Current capacity:** 262 LP
-- **Used:** 262 LP
+- **Current capacity:** 287 LP
+- **Used:** 287 LP
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Lumina Adjustments
 
 <!-- GENERATED:START characters:Sciel:Lumina:adjustments -->
-| Lumina              | Change   | LP | Notes                                                                   |
-|---------------------|----------|----|-------------------------------------------------------------------------|
-| Energy Master       | Excluded | 40 | Free from Energy Master Pictos                                          |
-| Recovery            | Added    | 10 | Passive heal on turn start, increases survivability                     |
-| Accelerating Heal   | Added    | 5  | Rush on heal.                                                           |
-| Energising Heal     | Added    | 10 | 2 AP on healing an ally — primary AP engine with Grim Harvest           |
-| Protecting Heal     | Added    | 5  | Shell on heal                                                           |
-| Healing Tint Energy | Added    | 1  | 1 AP on Healing Tint use — small AP top-up                              |
-| Breaking Attack     | Added    | 10 | Can Break on base attack — cheaper than Final Path                      |
-| Charging Alteration | Added    | 10 | Build Gradient Charge on applying buffs such as All Set                 |
-| Gradient Break      | Added    | 5  | 5LP. +50% Gradient Charge on Breaking. Synergises with Breaking Attack. |
+| Lumina              | Change   | LP | Notes                                                    |
+|---------------------|----------|----|----------------------------------------------------------|
+| Energy Master       | Excluded | 40 | Not used — Augmented Counter I Pictos prioritised        |
+| Dead Energy II      | Excluded | 2  | Not used in current build                                |
+| Burning Shots       | Excluded | 3  | Not used in current build                                |
+| Anti-Blight         | Excluded | 10 | Not used in current build                                |
+| AP Discount         | Added    | 30 | 30LP. Reduces skill AP cost by 1.                        |
+| Accelerating Heal   | Added    | 5  | 5LP. Rush on healing an ally.                            |
+| Augmented Counter I | Added    | —  | Free from Augmented Counter I Pictos.                    |
+| Breaking Attack     | Added    | 10 | 10LP. Apply Break damage on base attack.                 |
+| Charging Alteration | Added    | 10 | 10LP. +20% Gradient Charge on applying buffs or debuffs. |
+| Energising Heal     | Added    | 10 | 10LP. +2 AP on healing an ally.                          |
+| Energising Shots    | Added    | —  | Free from Energising Shots Pictos.                       |
+| First Strike        | Added    | 10 | 10LP. Act first in battle.                               |
+| Gradient Break      | Added    | 5  | 5LP. +50% Gradient Charge on Breaking.                   |
+| Healing Tint Energy | Added    | 1  | 1LP. +1 AP on Healing Tint use.                          |
+| Painter             | Added    | —  | Free from Painter Pictos.                                |
+| Protecting Heal     | Added    | 5  | 5LP. Shell on healing an ally.                           |
+| Recovery            | Added    | 10 | 10LP. Passive heal on turn start.                        |
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Sciel:Lumina -->
-| Lumina              | LP | Notes                                                                   |
-|---------------------|----|-------------------------------------------------------------------------|
-| Accelerating Heal   | 5  | Rush on heal.                                                           |
-| Anti-Blight         | 10 | Especially important in Renoir's Drafts                                 |
-| Base Shield         | 20 |                                                                         |
-| Breaker             | 10 | Main break damage booster                                               |
-| Breaking Attack     | 10 | Can Break on base attack — cheaper than Final Path                      |
-| Breaking Burn       | 5  |                                                                         |
-| Breaking Counter    | 3  |                                                                         |
-| Breaking Death      | 5  | Extremely helpful in tough boss fights                                  |
-| Burning Shots       | 3  |                                                                         |
-| Charging Alteration | 10 | Build Gradient Charge on applying buffs such as All Set                 |
-| Cheater             | 40 | Essential for endgame builds                                            |
-| Critical Break      | 5  |                                                                         |
-| Dead Energy I       | 2  |                                                                         |
-| Dead Energy II      | 2  |                                                                         |
-| Dodger              | 1  |                                                                         |
-| Energising Heal     | 10 | 2 AP on healing an ally — primary AP engine with Grim Harvest           |
-| Energising Start I  | 5  | Boosted by Energy Master to 8AP on battle start                         |
-| Energising Turn     | 20 | Main AP flow generator; boosted by Energy Master                        |
-| Energy Master       | —  | FREE from Energy Master Pictos                                          |
-| Gradient Break      | 5  | 5LP. +50% Gradient Charge on Breaking. Synergises with Breaking Attack. |
-| Healing Tint Energy | 1  | 1 AP on Healing Tint use — small AP top-up                              |
-| Painted Power       | 5  | Essential for all characters from Act 3 onwards                         |
-| Protecting Heal     | 5  | Shell on heal                                                           |
-| Recovery            | 10 | Passive heal on turn start, increases survivability                     |
-| Second Chance       | 40 | Can save boss battles                                                   |
-| Shortcut            | 5  |                                                                         |
-| Survivor            | 20 | Secondary safety net before Second Chance                               |
-| Teamwork            | 5  |                                                                         |
+| Lumina              | LP | Notes                                                    |
+|---------------------|----|----------------------------------------------------------|
+| AP Discount         | 30 | 30LP. Reduces skill AP cost by 1.                        |
+| Accelerating Heal   | 5  | 5LP. Rush on healing an ally.                            |
+| Augmented Counter I | —  | FREE from Augmented Counter I Pictos                     |
+| Base Shield         | 20 |                                                          |
+| Breaker             | 10 | Main break damage booster                                |
+| Breaking Attack     | 10 | 10LP. Apply Break damage on base attack.                 |
+| Breaking Burn       | 5  |                                                          |
+| Breaking Counter    | 3  |                                                          |
+| Breaking Death      | 5  | Extremely helpful in tough boss fights                   |
+| Charging Alteration | 10 | 10LP. +20% Gradient Charge on applying buffs or debuffs. |
+| Cheater             | 40 | Essential for endgame builds                             |
+| Critical Break      | 5  |                                                          |
+| Dead Energy I       | 2  |                                                          |
+| Dodger              | 1  |                                                          |
+| Energising Heal     | 10 | 10LP. +2 AP on healing an ally.                          |
+| Energising Shots    | —  | FREE from Energising Shots Pictos                        |
+| Energising Start I  | 5  | Boosted by Energy Master to 8AP on battle start          |
+| Energising Turn     | 20 | Main AP flow generator; boosted by Energy Master         |
+| First Strike        | 10 | 10LP. Act first in battle.                               |
+| Gradient Break      | 5  | 5LP. +50% Gradient Charge on Breaking.                   |
+| Healing Tint Energy | 1  | 1LP. +1 AP on Healing Tint use.                          |
+| Painted Power       | 5  | Essential for all characters from Act 3 onwards          |
+| Painter             | —  | FREE from Painter Pictos                                 |
+| Protecting Heal     | 5  | 5LP. Shell on healing an ally.                           |
+| Recovery            | 10 | 10LP. Passive heal on turn start.                        |
+| Second Chance       | 40 | Can save boss battles                                    |
+| Shortcut            | 5  |                                                          |
+| Survivor            | 20 | Secondary safety net before Second Chance                |
+| Teamwork            | 5  |                                                          |
 <!-- GENERATED:END -->
 
 *Burn Affinity Lumina removed — Burn Affinity Pictos replaced by Quick Break, effect no longer free.*

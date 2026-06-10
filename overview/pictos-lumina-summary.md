@@ -49,21 +49,21 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 ### Verso
 
 <!-- GENERATED:START characters:Verso:Pictos -->
-| Slot | Pictos         | Level | Stat Bonus              | Effect                                     |
-|------|----------------|-------|-------------------------|--------------------------------------------|
-| 1    | Second Chance  | 31    | Health +3981, Crit +15% | Revive with 100% Health. Once per battle.  |
-| 2    | Breaking Death | 29    | Speed +586, Crit +33%   | Fully charge enemy break bar on death      |
-| 3    | Confident      | 29    | Speed +557, Crit +32%   | Take 50% less damage, but can't be healed. |
+| Slot | Pictos               | Level | Stat Bonus              | Effect                                                               |
+|------|----------------------|-------|-------------------------|----------------------------------------------------------------------|
+| 1    | Second Chance        | 31    | Health +3981, Crit +15% | Revive with 100% Health. Once per battle.                            |
+| 2    | Sweet Kill           | 31    | Speed +672, Crit +36%   | Recover 50% Health on killing an enemy.                              |
+| 3    | Alternating Critical | 29    | Speed +293, Crit +50%   | On Critical hit, 100% increased damage of the next non-Critical hit. |
 <!-- GENERATED:END -->
 
 ### Sciel
 
 <!-- GENERATED:START characters:Sciel:Pictos -->
-| Slot | Pictos           | Level | Stat Bonus            | Effect                                       |
-|------|------------------|-------|-----------------------|----------------------------------------------|
-| 1    | Painter          | 28    | Speed +519, Crit +31% | Converts all Physical damage to Void damage. |
-| 2    | Energy Master    | 30    | Health +4979          | Every AP gain is increased by 1              |
-| 3    | Energising Shots | 28    | Speed +779, Crit +16% | 20% chance to gain 1 AP on Free Aim shot.    |
+| Slot | Pictos              | Level | Stat Bonus              | Effect                                       |
+|------|---------------------|-------|-------------------------|----------------------------------------------|
+| 1    | Augmented Counter I | 28    | Health +4058, Crit +16% | 25% increased Counterattack damage.          |
+| 2    | Energising Shots    | 28    | Speed +779, Crit +16%   | 20% chance to gain 1 AP on Free Aim shot.    |
+| 3    | Painter             | 28    | Speed +519, Crit +31%   | Converts all Physical damage to Void damage. |
 <!-- GENERATED:END -->
 
 ---
@@ -73,11 +73,11 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 ### Lune
 
 <!-- GENERATED:START characters:Lune:Pictos -->
-| Slot | Pictos        | Level | Stat Bonus            | Effect                                     |
-|------|---------------|-------|-----------------------|--------------------------------------------|
-| 1    | Critical Burn | 25    | Speed +434, Crit +28% | 25% increased Crit rate on Burning enemies |
-| 2    | Burn Affinity | 21    | Speed +439, Crit +12% | 25% increased damage on Burning targets    |
-| 3    | Burning Death | 28    | Speed +546, Crit +32% | Apply 3 Burn to all enemies on death       |
+| Slot | Pictos         | Level | Stat Bonus            | Effect                                     |
+|------|----------------|-------|-----------------------|--------------------------------------------|
+| 1    | Critical Burn  | 25    | Speed +434, Crit +28% | 25% increased Crit rate on Burning enemies |
+| 2    | Burn Affinity  | 21    | Speed +439, Crit +12% | 25% increased damage on Burning targets    |
+| 3    | Breaking Death | 29    | Speed +586, Crit +33% | Fully charge enemy break bar on death      |
 <!-- GENERATED:END -->
 
 ### Monoco
@@ -177,49 +177,77 @@ Adjustments each character makes to their team's core Lumina set — exclusions 
 ### Verso
 
 <!-- GENERATED:START characters:Verso:Lumina:adjustments -->
-| Lumina                 | Change   | LP | Notes                                                                                                |
-|------------------------|----------|----|------------------------------------------------------------------------------------------------------|
-| Breaking Death         | Excluded | 5  | Free from Breaking Death Pictos                                                                      |
-| Second Chance          | Excluded | 40 | Free from Second Chance Pictos                                                                       |
-| Confident Fighter      | Added    | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block                                  |
-| Warming Up             | Added    | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks                                  |
-| Energising Attack I    | Added    | 10 |                                                                                                      |
-| Energising Start II    | Added    | 10 |                                                                                                      |
-| Staggering Attack      | Added    | 1  |                                                                                                      |
-| Augmented First Strike | Added    | 5  | 5LP.                                                                                                 |
-| Auto Rush              | Added    | 10 | 10LP. Applies Rush for 3 turns on battle start.                                                      |
-| Empowering Parry       | Added    | 5  | 5LP. Each successful Parry increases damage by 5% until end of following turn.                       |
-| Charging Critical      | Added    | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn.                                           |
-| Energising Break       | Added    | 3  | 3LP. +3 AP on Breaking a target. Enables Perfect Break → Stun → Cheater turn → End Bringer rotation. |
+| Lumina                 | Change   | LP | Notes                                                           |
+|------------------------|----------|----|-----------------------------------------------------------------|
+| Second Chance          | Excluded | 40 | Free from Second Chance Pictos                                  |
+| Sweet Kill             | Excluded | 5  | Free from Sweet Kill Pictos                                     |
+| Survivor               | Excluded | 20 | Not used in current build                                       |
+| Energising Start I     | Excluded | 5  | Not used in current build                                       |
+| Burning Shots          | Excluded | 3  | Not used in current build                                       |
+| Breaking Counter       | Excluded | 3  | Not used in current build                                       |
+| Anti-Blight            | Excluded | 10 | Not used in current build                                       |
+| AP Discount            | Added    | 30 | 30LP. Reduces skill AP cost by 1.                               |
+| Alternating Critical   | Added    | —  | Free from Alternating Critical Pictos.                          |
+| At Death's Door        | Added    | 5  | 5LP. 50% increased damage below 10% HP.                         |
+| Augmented First Strike | Added    | 5  | 5LP. 50% increased damage on first hit, once per battle.        |
+| Auto Rush              | Added    | 10 | 10LP. Apply Rush for 3 turns on battle start.                   |
+| Burn Affinity          | Added    | 10 | 10LP. 25% increased damage against burning targets.             |
+| Charging Critical      | Added    | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn.      |
+| Confident Fighter      | Added    | 15 | 15LP. 30% increased damage, can't be healed.                    |
+| Double Third           | Added    | 10 | 10LP. Third hit in a sequence deals double damage.              |
+| Energising Break       | Added    | 3  | 3LP. +3 AP on Breaking a target.                                |
+| First Strike           | Added    | 10 | 10LP. Act first in battle.                                      |
+| Frenzy                 | Added    | 20 | 20LP. Each successive hit increases damage by 10%.              |
+| Warming Up             | Added    | 15 | 15LP. Damage increases with each attack, up to 20% at 5 stacks. |
 <!-- GENERATED:END -->
 
 ### Sciel
 
 <!-- GENERATED:START characters:Sciel:Lumina:adjustments -->
-| Lumina              | Change   | LP | Notes                                                                   |
-|---------------------|----------|----|-------------------------------------------------------------------------|
-| Energy Master       | Excluded | 40 | Free from Energy Master Pictos                                          |
-| Recovery            | Added    | 10 | Passive heal on turn start, increases survivability                     |
-| Accelerating Heal   | Added    | 5  | Rush on heal.                                                           |
-| Energising Heal     | Added    | 10 | 2 AP on healing an ally — primary AP engine with Grim Harvest           |
-| Protecting Heal     | Added    | 5  | Shell on heal                                                           |
-| Healing Tint Energy | Added    | 1  | 1 AP on Healing Tint use — small AP top-up                              |
-| Breaking Attack     | Added    | 10 | Can Break on base attack — cheaper than Final Path                      |
-| Charging Alteration | Added    | 10 | Build Gradient Charge on applying buffs such as All Set                 |
-| Gradient Break      | Added    | 5  | 5LP. +50% Gradient Charge on Breaking. Synergises with Breaking Attack. |
+| Lumina              | Change   | LP | Notes                                                    |
+|---------------------|----------|----|----------------------------------------------------------|
+| Energy Master       | Excluded | 40 | Not used — Augmented Counter I Pictos prioritised        |
+| Dead Energy II      | Excluded | 2  | Not used in current build                                |
+| Burning Shots       | Excluded | 3  | Not used in current build                                |
+| Anti-Blight         | Excluded | 10 | Not used in current build                                |
+| AP Discount         | Added    | 30 | 30LP. Reduces skill AP cost by 1.                        |
+| Accelerating Heal   | Added    | 5  | 5LP. Rush on healing an ally.                            |
+| Augmented Counter I | Added    | —  | Free from Augmented Counter I Pictos.                    |
+| Breaking Attack     | Added    | 10 | 10LP. Apply Break damage on base attack.                 |
+| Charging Alteration | Added    | 10 | 10LP. +20% Gradient Charge on applying buffs or debuffs. |
+| Energising Heal     | Added    | 10 | 10LP. +2 AP on healing an ally.                          |
+| Energising Shots    | Added    | —  | Free from Energising Shots Pictos.                       |
+| First Strike        | Added    | 10 | 10LP. Act first in battle.                               |
+| Gradient Break      | Added    | 5  | 5LP. +50% Gradient Charge on Breaking.                   |
+| Healing Tint Energy | Added    | 1  | 1LP. +1 AP on Healing Tint use.                          |
+| Painter             | Added    | —  | Free from Painter Pictos.                                |
+| Protecting Heal     | Added    | 5  | 5LP. Shell on healing an ally.                           |
+| Recovery            | Added    | 10 | 10LP. Passive heal on turn start.                        |
 <!-- GENERATED:END -->
 
 ### Lune
 
 <!-- GENERATED:START characters:Lune:Lumina:adjustments -->
-| Lumina            | Change   | LP | Notes                                                      |
-|-------------------|----------|----|------------------------------------------------------------|
-| Critical Break    | Excluded | 5  | Dropped to save LP, as not her primary role                |
-| Burning Shots     | Excluded | 3  | Dropped to free LP for Survivor                            |
-| Accelerating Heal | Added    | 5  | Rush on heal — synergy with Healing Light                  |
-| Protecting Heal   | Added    | 5  | Shell on heal                                              |
-| Energising Burn   | Added    | 10 | 10LP. +1 AP on applying Burn, once per turn.               |
-| Charging Critical | Added    | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn. |
+| Lumina            | Change   | LP | Notes                                                                         |
+|-------------------|----------|----|-------------------------------------------------------------------------------|
+| Breaking Death    | Excluded | 5  | Free from Breaking Death Pictos                                               |
+| Survivor          | Excluded | 20 | Not used in current build                                                     |
+| Breaker           | Excluded | 10 | Not used in current build                                                     |
+| Critical Break    | Excluded | 5  | Not used in current build                                                     |
+| Burning Shots     | Excluded | 3  | Not used in current build                                                     |
+| Breaking Counter  | Excluded | 3  | Not used in current build                                                     |
+| Recovery          | Excluded | 10 | Not used in current build                                                     |
+| AP Discount       | Added    | 30 | 30LP. Reduces skill AP cost by 1.                                             |
+| Accelerating Heal | Added    | 5  | 5LP. Rush on healing an ally.                                                 |
+| Breaking Attack   | Added    | 10 | 10LP. Apply Break damage on base attack.                                      |
+| Burn Affinity     | Added    | —  | Free from Burn Affinity Pictos. 25% increased damage against burning targets. |
+| Critical Burn     | Added    | —  | Free from Critical Burn Pictos. 25% increased crit chance on burning targets. |
+| Energy Master     | Added    | 40 | 40LP. +5 AP on turn start.                                                    |
+| Dead Energy I     | Added    | 2  | 2LP. +2 AP on death of an ally.                                               |
+| Dead Energy II    | Added    | 2  | 2LP. +2 AP on death of an ally (stacks with Dead Energy I).                   |
+| Energising Burn   | Added    | 10 | 10LP. +1 AP on applying Burn, once per turn.                                  |
+| First Strike      | Added    | 10 | 10LP. Act first in battle.                                                    |
+| Protecting Heal   | Added    | 5  | 5LP. Shell on healing an ally.                                                |
 <!-- GENERATED:END -->
 
 ### Monoco

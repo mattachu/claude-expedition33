@@ -34,7 +34,7 @@ Fetch that file only when reviewing specific past errors.
 - **Current playthrough:** First playthrough
 - **Progress:**
   - Act 3, Phase 4.
-  - Characters: Maelle L96, Verso L96, Sciel L95, Lune L90, Monoco L90.
+  - Characters: Maelle L99, Verso L99, Sciel L99, Lune L99, Monoco L99.
   - Current area: Endless Tower.
 <!-- GENERATED:END -->
   - For detailed progression plan, see [`overview/progress.md`](progress.md)
@@ -46,13 +46,13 @@ Fetch that file only when reviewing specific past errors.
 <!-- GENERATED:END -->
 
 <!-- GENERATED:START characters:summary:party -->
-| Character                         | Level | Role                         | Weapon        | Pictos                                        | LP      |
-|-----------------------------------|-------|------------------------------|---------------|-----------------------------------------------|---------|
-| [Maelle](../characters/maelle.md) | 96    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut       | 305/305 |
-| [Verso](../characters/verso.md)   | 96    | Endgame main DPS             | Simoso (33)   | Second Chance, Breaking Death, Confident      | 285/285 |
-| [Sciel](../characters/sciel.md)   | 95    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots      | 262/262 |
-| [Lune](../characters/lune.md)     | 90    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death   | 224/224 |
-| [Monoco](../characters/monoco.md) | 90    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Cheater | 175/175 |
+| Character                         | Level | Role                         | Weapon        | Pictos                                          | LP      |
+|-----------------------------------|-------|------------------------------|---------------|-------------------------------------------------|---------|
+| [Maelle](../characters/maelle.md) | 99    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut         | 305/361 |
+| [Verso](../characters/verso.md)   | 99    | Endgame main DPS             | Simoso (33)   | Second Chance, Sweet Kill, Alternating Critical | 308/308 |
+| [Sciel](../characters/sciel.md)   | 99    | Pure support                 | Litheson (33) | Augmented Counter I, Energising Shots, Painter  | 287/287 |
+| [Lune](../characters/lune.md)     | 99    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Breaking Death    | 260/260 |
+| [Monoco](../characters/monoco.md) | 99    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Cheater   | 175/186 |
 <!-- GENERATED:END -->
 
 **More details:**
@@ -62,10 +62,10 @@ Fetch that file only when reviewing specific past errors.
 
 ### Inventory
 <!-- GENERATED:START playthrough:inventory -->
-- Colour of Lumina: 53
-- Recoats: 40
-- Chroma Catalysts: 67 standard, 74 polished, 105 resplendent, 76 grandiose, 6 perfect
-- Chroma: 1058974
+- Colour of Lumina: 132
+- Recoats: 59
+- Chroma Catalysts: 67 standard, 77 polished, 113 resplendent, 271 grandiose, 6 perfect
+- Chroma: 1801759
 <!-- GENERATED:END -->
 
 ---
@@ -163,9 +163,6 @@ If the main party is fully wiped in a battle, the player can continue the battle
 ## Section 6: Open Questions
 
 - **First Life (15LP):** Drops from Chromatic Lampmaster in Endless Tower (Stage 11 / DLC superboss area). 25% damage while alive, no downside for a well-supported DPS. Strong candidate for Maelle once obtained.
-- **Verso Confident vs Clea's Life (Chat 30):** Simoso L20 multi-hit edge case confirmed: a multi-hit attack can knock Verso from Rank A and kill him in the same sequence (observed in Osquio fight). Strategic choice pending: keep Confident + Confident Fighter (accept risk, retain damage bonuses) or switch to Clea's Life (eliminates vulnerability — full HP after Overload).
-- **Greater Powerful value for Maelle (Chat 25):** Added (+15% to Powerful → ~40% total bonus). Confirm uplift feels meaningful in practice vs pre-chat-25 baseline.
-- **Empowering Parry for Verso (Chat 25):** Added (5LP). Practical value depends on how consistently parrying is achieved — monitor in Endless Tower.
 
 ---
 

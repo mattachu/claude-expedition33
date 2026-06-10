@@ -49,9 +49,13 @@ Net effect: full AP reset + Virtuose stance + full HP in a single 1 AP move. Ful
 
 Use Last Chance as a deliberate rotation tool rather than an emergency skill. Practical usage: when AP is low and you want to re-enter Virtuose with full resources.
 
-**Caveats:**
-- Stendhal applies Defenceless to Maelle on use. If Stendhal is used in the same turn sequence before Last Chance, Maelle has both HP-1 and Defenceless simultaneously — a vulnerability window if the enemy gets a turn between moves. Rare with good turn economy but plan accordingly.
-- If an enemy has any interrupt-style mechanic that allows them to act during a Cheater bonus turn, Clea's Life will not fire (condition fails if damage taken). No known enemies in the current content do this.
+**Lithum Shell-Powerful loop (Chat 32):**
+
+Lithum applies Shell when leaving Virtuose Stance (L20). Powerful On Shell converts that Shell to Powerful. Greater Powerful then amplifies it by +15%, giving a total ~40% Powerful damage bonus. This fires reliably on every Last Chance rotation and the uplift is meaningful in practice. Note: Energising Shell, Powerful On Shell, and Greater Powerful are all Lithum-dependent — remove them if swapping weapons.
+
+**Lithum Shell overrides Defenceless (Chat 32):**
+
+Stendhal applies Defenceless to Maelle, but in the standard Last Chance rotation Lithum's Shell (triggered on leaving Virtuose Stance) immediately overwrites it. Net result: Shell provides approximately 30% damage reduction below baseline — the rotation is net positive defensively. Empirically confirmed: baseline incoming 1637 / Defenceless 2046 (+25%) / Shell after Last Chance 1146 (−30%). Stendhal used without prior Virtuose (no Shell trigger) leaves Maelle Defenceless — avoid this in the standard build.
 
 ---
 
@@ -62,10 +66,10 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 <!-- GENERATED:START characters:Maelle:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 96    |
+| Level     | 99    |
+| Might     | 99    |
 | Agility   | 99    |
 | Luck      | 99    |
-| Might     | 90    |
 | Vitality  | 0     |
 | Defence   | 0     |
 <!-- GENERATED:END -->
@@ -75,15 +79,15 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 ### Combat Stats
 
 <!-- GENERATED:START characters:Maelle:stats -->
-*Stats with Lithum (33), Clea's Life (30), Empowering Break (28), Shortcut (31) equipped. Speed and Crit approximate pending in-game verification.*
+*Stats with Lithum (33) equipped and Energising Turn (L31), Energy Master (L30), Cheater (L24) Pictos for Solo At Death's Door variant.*
 
-| Stat    | Base | Modified |
-|---------|------|----------|
-| Health  | 2326 | 7917     |
-| Attack  | 1436 | 11370    |
-| Speed   | 1251 | 2469     |
-| Defence | 182  | 182      |
-| Crit    | 41%  | 109%     |
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 8588     |
+| Attack  | *[unknown]* | 11583    |
+| Speed   | *[unknown]* | 2951     |
+| Defence | *[unknown]* | 182      |
+| Crit    | *[unknown]* | 41%      |
 <!-- GENERATED:END -->
 
 ---
@@ -130,9 +134,9 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 
 ### LP Budget
 <!-- GENERATED:START characters:Maelle:LP -->
-- **Current capacity:** 305 LP
+- **Current capacity:** 361 LP
 - **Used:** 305 LP
-- **Spare:** 0 LP
+- **Spare:** 56 LP
 <!-- GENERATED:END -->
 
 ### Lumina Adjustments
@@ -190,25 +194,26 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 ## Skills
 
 <!-- GENERATED:START characters:Maelle:skills -->
-**Currently equipped (6):** Phantom Strike, Fleuret Fury, Gustave's Homage, Stendhal, Last Chance, Mezzo Forte
+**Currently equipped (6):** Phantom Strike, Fleuret Fury, Stendhal, Burning Canvas, Last Chance, Pyrolyse
 
 | Skill            | AP                | Stance     | Equipped | Notes                                                                                                                                           |
 |------------------|-------------------|------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | Phantom Strike   | 4                 | Defensive  | ✅        | 4-hit very high Void AoE. Switches to Defensive stance. Gives +35% of a Gradient Charge.                                                        |
 | Fleuret Fury     | 6                 | —          | ✅        | 3-hit high single-target Physical. Stays in Virtuose if already there. Can Break.                                                               |
-| Gustave's Homage | 8                 | Virtuose   | ✅        | 8-hit extreme Physical damage. Switches to Virtuose Stance.                                                                                     |
 | Stendhal         | 8                 | Stanceless | ✅        | Extreme single-target Void damage, 1 hit. Switches to Stanceless. Removes self-shields. Applies Defenceless to self. Nerfed 40% in Patch 1.2.3. |
+| Burning Canvas   | 5                 | Offensive  | ✅        | High Void damage + 1 burn per hit. Damage increased for each burn stack on target.                                                              |
 | Last Chance      | 1                 | Virtuose   | ✅        | Reduces self-health to 1. Refills all AP.                                                                                                       |
-| Mezzo Forte      | 1                 | —          | ✅        | Reapply current stance. Give 2–4 AP.                                                                                                            |
+| Pyrolyse         | —                 | —          | ✅        |                                                                                                                                                 |
 | Percée           | 5 (2 in Virtuose) | Stanceless | ❌        | Increased damage to Marked target. 2 AP in Virtuose but leaves Virtuose after — one use per Virtuose window.                                    |
+| Gustave's Homage | 8                 | Virtuose   | ❌        | 8-hit extreme Physical damage. Switches to Virtuose Stance.                                                                                     |
 | Sword Ballet     | 9                 | —          | ❌        | 5-hit extreme single-target weapon element. Crits deal double damage. Primary Virtuose damage skill.                                            |
 | Breaking Rules   | 3                 | Offensive  | ❌        | Destroys all target shields. Gains 1 AP per shield destroyed. If target is Defenceless: grants a second turn.                                   |
-| Burning Canvas   | 5                 | Offensive  | ❌        | High Void damage + 1 burn per hit. Damage increased for each burn stack on target.                                                              |
 | Combustion       | 4                 | Offensive  | ❌        | Medium single target Physical damage. 2 hits. Consumes up to 10 Burn for increased damage.                                                      |
 | Degagement       | 2                 | Offensive  | ❌        | Low Fire damage. Target becomes weak to Fire.                                                                                                   |
 | Égide            | 3                 | Defensive  | ❌        | Protects allies by taking damage in their place for 2 turns.                                                                                    |
 | Fencer's Flurry  | 4                 | Offensive  | ❌        | Medium AoE. Applies Defenceless 1 turn.                                                                                                         |
 | Guard Up         | 3                 | Offensive  | ❌        | Shell buff for allies.                                                                                                                          |
+| Mezzo Forte      | 1                 | —          | ❌        | Reapply current stance. Give 2–4 AP.                                                                                                            |
 | Momentum Strike  | 7                 | Defensive  | ❌        | High damage. Costs 4 AP in Virtuose.                                                                                                            |
 | Offensive Switch | 1                 | Offensive  | ❌        | Low damage. Applies Defenceless to enemy.                                                                                                       |
 | Payback          | 9                 | Defensive  | ❌        | Very high Physical damage. Reduced AP cost for each attack parried since last turn. Can Break.                                                  |
@@ -216,7 +221,6 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 | Spark            | 3                 | Defensive  | ❌        | Low Fire damage + 3 burn. Applies 2 more burn if in Offensive.                                                                                  |
 | Swift Stride     | 3                 | Virtuose   | ❌        | Low Physical. Switches to Virtuose if target burning. Regains 0–2 AP.                                                                           |
 | Revenge          | —                 | —          | ❌        |                                                                                                                                                 |
-| Pyrolyse         | —                 | —          | ❌        |                                                                                                                                                 |
 <!-- GENERATED:END -->
 
 ---
@@ -272,18 +276,48 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 
 Burning Canvas (5 AP, switches to Offensive, high Void damage + 1 burn per hit) deals increased damage for each burn stack on target. Corpeso (Verso's weapon) applies 2 burn per Rank on base attack — synergises to stack burn quickly before Maelle fires Burning Canvas.
 
+### Solo At Death's Door
+
+High-damage solo build using Monoco as a self-destructing support. Monoco's Auto Death fires at battle start (before any turns), applying Death Bomb damage and a death suite of buffs. Maelle operates at 1HP to maximise her low-health damage multipliers.
+
+**Pictos:** Energising Turn (L31) / Energy Master (L30) / Cheater (L24)
+
+**Skills:** Phantom Strike (7), Fleuret Fury (6), Stendhal (8), Burning Canvas (5), Last Chance (1), Pyrolyse (9)
+
+**LP:** 361/361
+
+**Key multipliers (all apply to Stendhal):**
+- At Death's Door (5LP) — ×1.5 below 10% HP
+- Inverted Affinity (5LP) — ×1.5 while Inverted; blocks healing
+- Confident Fighter (15LP) — ×1.3; can't be healed (redundant with Inverted but stacks)
+- Glass Cannon (10LP) — ×1.25 damage, take ×1.25 more
+- Immaculate (10LP) — ×1.3 until first hit received
+- Solo Fighter (1LP) — ×1.5 while fighting alone
+- Burn Affinity (10LP) — ×1.25 against burning targets (Monoco's Burning Death provides burns)
+- Augmented First Strike (5LP) — ×1.5 on first hit of battle
+- First Offensive (5LP) — ×1.5 on first hit dealt and taken
+- Last Stand Critical (3LP) — 100% crit chance while fighting alone
+- Powerful Shield (5LP) — ×1.1 per shield on self at time of hit (Monoco's Shielding Death provides 3 Shields)
+
+**Active Lumina (full list):** AP Discount (30), Accelerating Last Stand (3), At Death's Door (5), Augmented First Strike (5), Base Shield (20), Breaker (10), Breaking Burn (5), Breaking Counter (3), Breaking Death (5), Burn Affinity (10), Charging Critical (10), Cheater (40, Pictos), Confident Fighter (15), Critical Break (5), Dead Energy I (2), Dead Energy II (2), Dodger (1), Empowering Last Stand (3), Energising Shell (10), Energising Start I (5), Energising Turn (20, Pictos), Energy Master (40, Pictos), Exposing Break (5), First Offensive (5), First Strike (10), Glass Cannon (10), Gradient Fighter (5), Greater Defenceless (15), Greater Powerful (10), Greater Shell (10), Immaculate (10), Inverted Affinity (5), Last Stand Critical (3), Longer Powerful (10), Longer Shell (10), Painted Power (5), Powerful On Shell (10), Powerful Shield (5), Protecting Last Stand (3), Second Chance (40), Shortcut (5), Solo Fighter (1), Survivor (20), Warming Up (15)
+
+**Survivability:** Monoco's death suite (Shielding Death: 3 shields, Protecting Death: Shell, Burning Death: burns for Burn Affinity, Energising Death: +4 AP) fires before Maelle acts. Base Shield retains 1 shield per turn. Protecting Last Stand and Lithum L20 provide Shell which reduces damage taken, but this doesn't help while on 1HP. Rely on shields, dodging and parrying, with high speed Pictos so Maelle can finish fights quickly, and Survivor and Second Chance provide safety nets.
+
+**Peak performance:** 21m damage recorded on Last Chance + Stendhal (Chat 32).
+
 ---
 
 ## Key Decisions
 
 - **Lithum over all alternatives:** Strictly better than Medalum for parry-competent players. Same scaling = no respec. The Reacher must be completed before Renoir — choose "Truth" for Gustave resurrection path and Relationship Level 7.
-- **Glaisum as Lithum alternative:** Same scaling as Medalum/Lithum (Defence + Agility), no respec, higher base power (3461). More defensive/supportive (ally heals, self-cleanse) vs Lithum's offensive (Mark persistence, Virtuose on Counterattack). Lithum preferred for standard DPS build; Glaisum worth considering if survivability becomes a priority.
+- **Lithum confirmed — Medalum obsolete for Stendhal builds (Chat 32):** Community research confirms Medalum's L20 double-damage was a bug, fixed in Patch 1.2.3 (now doubles only burn damage). For a single-hit Stendhal build without burn stacking, Medalum offers no meaningful advantage. Lithum advantages: Void element (no enemy resistances), Agility/Luck scaling matches Maelle's attribute spread, reliable Shell-Powerful loop. Do not upgrade Medalum unless switching to a burn-stacking build.
+- **Solo At Death's Door build (Chat 32):** High-risk high-reward variant using Monoco as self-destructing support (Auto Death at battle start). Maelle runs At Death's Door (×1.5 below 10% HP) + Inverted Affinity (×1.5, blocks healing) + Confident Fighter (×1.3) for approximately 2.3× damage advantage over Clea's Life build. LP 361/361. Peak recorded: 21m damage. See Solo At Death's Door build subsection.
+- **Glaisum as Lithum alternative:** Same scaling as Medalum/Lithum (Defence + Agility), no respec, higher base power. More defensive/supportive (ally heals, self-cleanse) vs Lithum's offensive (Mark persistence, Virtuose on Counterattack). Lithum preferred for standard DPS build; Glaisum worth considering if survivability becomes a priority.
 - **Stalum for burn-stacking:** Core weapon for the burn-stacking build path. Not current priority but available at level 23 when ready.
 - **Cheater via Lumina:** All three endgame team members use Cheater via Lumina (40 LP) rather than Pictos. For solo fights, swap Cheater to Pictos to free 40 LP.
 - **Phantom Strike over Fencer's Flurry:** Phantom Strike replaced Fencer's Flurry. Better damage, adds Defensive stance utility and Gradient generation. AoE function preserved.
-- **Solo Lumina build:** Swap Cheater to Pictos + borrow Second Chance from Verso + remove Teamwork/Breaking Counter/Dead Energy I+II + add Last Stand suite + Recovery + Energising Attack I.
 - **Gradient Break over Burning Break for solo:** For The Reacher, Gradient Break chosen for speed advantage (1821 vs 1397) to handle Alicia's Rush phase at 25% HP. Second Chance covers survivability.
-- **Licorum over Lithum (pending evaluation):** Licorum L4 and Frenzy Pictos stack multiplicatively (×1.21 per hit compound, confirmed Chat 31). Evaluate for multi-hit builds once Frenzy is acquired. Verify Licorum scaling attributes and whether a respec from Lithum is required before switching.
+- **Licorum for multi-hit builds only:** Licorum L4 and Frenzy Pictos stack multiplicatively (×1.21 per hit compound, confirmed Chat 31). Doesn't help for Stendhal or Gommage, so only really useful for a different playstyle.
 
 ---
 

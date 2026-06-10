@@ -56,10 +56,10 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 <!-- GENERATED:START characters:Monoco:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 90    |
+| Level     | 99    |
 | Agility   | 99    |
 | Defence   | 99    |
-| Luck      | 72    |
+| Luck      | 99    |
 | Vitality  | 0     |
 | Might     | 0     |
 <!-- GENERATED:END -->
@@ -67,15 +67,15 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 ### Combat Stats
 
 <!-- GENERATED:START characters:Monoco:stats -->
-*Stats with Joyaro (33), Longer Shell (29), Augmented First Strike (31), Quick Break (31) equipped. Speed and Crit approximate pending in-game verification.*
+*Stats with Joyaro (33) equipped and only Longer Break (L29), The One (L31) Pictos for Death Bomb variant.*
 
-| Stat    | Base | Modified |
-|---------|------|----------|
-| Health  | 2140 | 6095     |
-| Attack  | 1170 | 10920    |
-| Speed   | 1189 | 2597     |
-| Defence | 729  | 2301     |
-| Crit    | 53%  | 71%      |
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 5177     |
+| Attack  | *[unknown]* | 11097    |
+| Speed   | *[unknown]* | 1553     |
+| Defence | *[unknown]* | 1515     |
+| Crit    | *[unknown]* | 167%     |
 <!-- GENERATED:END -->
 
 ---
@@ -137,9 +137,9 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 
 ### LP Budget
 <!-- GENERATED:START characters:Monoco:LP -->
-- **Current capacity:** 175 LP
+- **Current capacity:** 186 LP
 - **Used:** 175 LP
-- **Spare:** 0 LP
+- **Spare:** 11 LP
 <!-- GENERATED:END -->
 
 ### Lumina Adjustments
@@ -198,15 +198,15 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 ## Skills
 
 <!-- GENERATED:START characters:Monoco:skills -->
-**Currently equipped (6):** Chapelier Slash, Grosse Tête Whack, Moissonneuse Vendange, Orphelin Cheers, Potier Energy, Stalact Punches
+**Currently equipped (6):** Chapelier Slash, Moissonneuse Vendange, Orphelin Cheers, Potier Energy, Sakapatate Fire, Stalact Punches
 
 | Skill                 | AP             | Wheel | Mask     | Equipped | Notes                                                                                         |
 |-----------------------|----------------|-------|----------|----------|-----------------------------------------------------------------------------------------------|
 | Chapelier Slash       | 7              | +4    | Agile    | ✅        | High Physical AoE, 3 hits. Applies Mark.                                                      |
-| Grosse Tête Whack     | 6              | +4    | Heavy    | ✅        | High Physical single target, 5 hits. Applies Defenceless 3 turns.                             |
 | Moissonneuse Vendange | 5              | +2    | Balanced | ✅        | High Physical single target, 3 hits. Can Break.                                               |
 | Orphelin Cheers       | 3              | +3    | Caster   | ✅        | Applies Powerful to 1–3 allies.                                                               |
 | Potier Energy         | 4              | +6    | Caster   | ✅        | Gives 1–3 AP to all allies.                                                                   |
+| Sakapatate Fire       | —              | +1    | Almighty | ✅        | Extreme Fire AoE, 3 hits. Applies 3 Burn per hit.                                             |
 | Stalact Punches       | 4              | +4    | Heavy    | ✅        | Medium Ice single target, 4 hits. High Break damage.                                          |
 | Abbest Wind           | 2 (0 in Agile) | +2    | Agile    | ❌        | Low Physical single target, 1 hit. Plays a second turn.                                       |
 | Aberration Light      | 7              | +4    | Agile    | ❌        | High Light AoE, 2 hits. Applies 4 Burn per hit.                                               |
@@ -232,6 +232,7 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Évêque Spear          | 6              | +3    | Heavy    | ❌        | High Earth single target, 1 hit. Applies Powerless 3 turns.                                   |
 | Gault Fury            | 3              | +2    | Balanced | ❌        | Low Physical single target, 4 hits. Applies Mark.                                             |
 | Glaise Earthquakes    | 4              | +6    | Heavy    | ❌        | Medium Earth AoE, 3 hits. Applies Powerful to self.                                           |
+| Grosse Tête Whack     | 6              | +4    | Heavy    | ❌        | High Physical single target, 5 hits. Applies Defenceless 3 turns.                             |
 | Hexga Crush           | 5              | +6    | Heavy    | ❌        | Medium Earth single target, 2 hits. Applies Defenceless 3 turns.                              |
 | Jar Lampstorm         | 5              | +6    | Heavy    | ❌        | Medium Physical AoE, 4 hits.                                                                  |
 | Lampmaster Light      | 5              | +1    | Almighty | ❌        | High Light AoE, 1 hit. Increased damage at each cast.                                         |
@@ -244,7 +245,6 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Rocher Hammering      | 3              | +3    | Heavy    | ❌        | Medium Physical single target, 4 hits. Can Break.                                             |
 | Sakapatate Estoc      | 3              | +3    | Balanced | ❌        | Low Lightning single target, 1 hit. More damage if target is Stunned.                         |
 | Sakapatate Explosion  | 4              | +6    | Caster   | ❌        | Medium Lightning random targets, 3 hits. Crits trigger an additional hit.                     |
-| Sakapatate Fire       | —              | +1    | Almighty | ❌        | Extreme Fire AoE, 3 hits. Applies 3 Burn per hit.                                             |
 | Sakapatate Slam       | 7              | +5    | Heavy    | ❌        | High Physical AoE, 1 hit. Increased damage against Marked targets.                            |
 | Sapling Absorption    | 6              | +5    | Caster   | ❌        | High Dark, 3 hits. Recovers 5% HP per hit.                                                    |
 | Troubadour Trumpet    | 3              | +4    | Caster   | ❌        | Applies a random buff to 1–3 allies.                                                          |
@@ -310,6 +310,37 @@ Keep Mark and Defenceless persistent throughout fight (not saved for burst only)
 - **Évêque Spear:** Situational debuff (Powerless 3 turns) — worth having for specific boss fights.
 - **Creation Void:** Major damage skill for Monoco as DPS.
 - **Duallist Storm:** Major damage skill that Can Break, but more AP-expensive than Moissonneuse Vendange.
+
+### Death Bomb Variant
+
+Self-destructing support build designed to pair with solo Maelle (At Death's Door build). Monoco's Auto Death fires at battle start before any turns are taken, triggering the full death suite and providing burns, shields, and debuffs before Maelle acts.
+
+**Party position:** Main team alongside Maelle (replacing a reserve character). Ensures the three reserve characters are the desired three (Verso, Sciel, Lune).
+
+**Pictos:** Empty slot / Longer Break (L29) / The One (L31)
+
+- The One provides over 100% crit chance to increase Death Bomb and Burning Death damage. It also reduces max HP to 1, which is fine as he is trying to die anyway.
+- Longer Break extends break duration from Breaking Death (not sure this always fires as the death wasn't caused by an enemy).
+
+**Skills:** Irrelevant
+
+**LP:** 166/186 (20 spare)
+
+**Death suite — fires at battle start via Auto Death:**
+- Death Bomb (5LP) — deals damage to all enemies on death
+- Burning Death (5LP) — applies 3 Burn to all enemies (enables Maelle's Burn Affinity ×1.25)
+- Shielding Death (10LP) — allies gain 3 Shield points (buffers Maelle before she acts)
+- Protecting Death (5LP) — allies gain Shell
+- Energising Death (5LP) — allies gain +4 AP
+- Breaking Death (5LP) — fully charges enemy break bar on death
+
+**Active Lumina (full list):** Auto Death (1), Breaking Death (5), Burning Death (5), Death Bomb (5), Energising Death (5), Greater Defenceless (15), Greater Powerful (10), Greater Powerless (15), Greater Rush (10), Greater Shell (10), Greater Slow (15), Longer Break (10, Pictos), Longer Burn (15), Longer Powerful (10), Longer Rush (10), Longer Shell (10), Painted Power (5), Protecting Death (5), Shielding Death (10), The One (1, Pictos)
+
+**Notes:**
+- Painted Power (5LP) enables Death Bomb to exceed the 9,999 damage cap.
+- Longer Burn (15LP) extends Burning Death's burns — more turns of Burn Affinity uptime for Maelle.
+- Healing Death removed: confirmed not useful when Maelle is Inverted (healing would convert to damage). Removed from build.
+- Greater Defenceless, Greater Powerless, Greater Rush, Greater Slow are utility debuff/buff amplifiers; not currently used.
 
 ---
 

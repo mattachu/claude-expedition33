@@ -39,26 +39,26 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 <!-- GENERATED:START characters:Lune:attributes -->
 | Attribute | Value |
 |-----------|-------|
-| Level     | 90    |
+| Level     | 99    |
 | Vitality  | 99    |
 | Agility   | 99    |
 | Luck      | 51    |
-| Might     | 21    |
+| Might     | 48    |
 | Defence   | 0     |
 <!-- GENERATED:END -->
 
 ### Combat Stats
 
 <!-- GENERATED:START characters:Lune:stats -->
-*Stats with Kralim (33), Critical Burn (25), Burn Affinity (21), Burning Death (28) equipped*
+*Stats with Kralim (33), Critical Burn (L25), Burn Affinity (L21), Breaking Death (L29) equipped.*
 
-| Stat    | Base | Modified |
-|---------|------|----------|
-| Health  | 3529 | 3529     |
-| Attack  | 1205 | 10463    |
-| Speed   | 1164 | 2583     |
-| Defence | 182  | 182      |
-| Crit    | 29%  | 101%     |
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 3809     |
+| Attack  | *[unknown]* | 11155    |
+| Speed   | *[unknown]* | 2691     |
+| Defence | *[unknown]* | 182      |
+| Crit    | *[unknown]* | 102%     |
 <!-- GENERATED:END -->
 
 ---
@@ -114,11 +114,11 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 ## Pictos
 
 <!-- GENERATED:START characters:Lune:Pictos -->
-| Slot | Pictos        | Level | Stat Bonus            | Effect                                     |
-|------|---------------|-------|-----------------------|--------------------------------------------|
-| 1    | Critical Burn | 25    | Speed +434, Crit +28% | 25% increased Crit rate on Burning enemies |
-| 2    | Burn Affinity | 21    | Speed +439, Crit +12% | 25% increased damage on Burning targets    |
-| 3    | Burning Death | 28    | Speed +546, Crit +32% | Apply 3 Burn to all enemies on death       |
+| Slot | Pictos         | Level | Stat Bonus            | Effect                                     |
+|------|----------------|-------|-----------------------|--------------------------------------------|
+| 1    | Critical Burn  | 25    | Speed +434, Crit +28% | 25% increased Crit rate on Burning enemies |
+| 2    | Burn Affinity  | 21    | Speed +439, Crit +12% | 25% increased damage on Burning targets    |
+| 3    | Breaking Death | 29    | Speed +586, Crit +33% | Fully charge enemy break bar on death      |
 <!-- GENERATED:END -->
 
 *Previous Pictos (Longer Shell, Healing Share, Powerful on Shell) replaced Chat 5. Longer Shell moved to Monoco; Healing Share retired.*
@@ -131,48 +131,63 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 
 ### LP Budget
 <!-- GENERATED:START characters:Lune:LP -->
-- **Current capacity:** 224 LP
-- **Used:** 224 LP
+- **Current capacity:** 260 LP
+- **Used:** 260 LP
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Lumina Adjustments
 
 <!-- GENERATED:START characters:Lune:Lumina:adjustments -->
-| Lumina            | Change   | LP | Notes                                                      |
-|-------------------|----------|----|------------------------------------------------------------|
-| Critical Break    | Excluded | 5  | Dropped to save LP, as not her primary role                |
-| Burning Shots     | Excluded | 3  | Dropped to free LP for Survivor                            |
-| Accelerating Heal | Added    | 5  | Rush on heal — synergy with Healing Light                  |
-| Protecting Heal   | Added    | 5  | Shell on heal                                              |
-| Energising Burn   | Added    | 10 | 10LP. +1 AP on applying Burn, once per turn.               |
-| Charging Critical | Added    | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn. |
+| Lumina            | Change   | LP | Notes                                                                         |
+|-------------------|----------|----|-------------------------------------------------------------------------------|
+| Breaking Death    | Excluded | 5  | Free from Breaking Death Pictos                                               |
+| Survivor          | Excluded | 20 | Not used in current build                                                     |
+| Breaker           | Excluded | 10 | Not used in current build                                                     |
+| Critical Break    | Excluded | 5  | Not used in current build                                                     |
+| Burning Shots     | Excluded | 3  | Not used in current build                                                     |
+| Breaking Counter  | Excluded | 3  | Not used in current build                                                     |
+| Recovery          | Excluded | 10 | Not used in current build                                                     |
+| AP Discount       | Added    | 30 | 30LP. Reduces skill AP cost by 1.                                             |
+| Accelerating Heal | Added    | 5  | 5LP. Rush on healing an ally.                                                 |
+| Breaking Attack   | Added    | 10 | 10LP. Apply Break damage on base attack.                                      |
+| Burn Affinity     | Added    | —  | Free from Burn Affinity Pictos. 25% increased damage against burning targets. |
+| Critical Burn     | Added    | —  | Free from Critical Burn Pictos. 25% increased crit chance on burning targets. |
+| Energy Master     | Added    | 40 | 40LP. +5 AP on turn start.                                                    |
+| Dead Energy I     | Added    | 2  | 2LP. +2 AP on death of an ally.                                               |
+| Dead Energy II    | Added    | 2  | 2LP. +2 AP on death of an ally (stacks with Dead Energy I).                   |
+| Energising Burn   | Added    | 10 | 10LP. +1 AP on applying Burn, once per turn.                                  |
+| First Strike      | Added    | 10 | 10LP. Act first in battle.                                                    |
+| Protecting Heal   | Added    | 5  | 5LP. Shell on healing an ally.                                                |
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Lune:Lumina -->
-| Lumina             | LP | Notes                                                      |
-|--------------------|----|------------------------------------------------------------|
-| Accelerating Heal  | 5  | Rush on heal — synergy with Healing Light                  |
-| Base Shield        | 20 |                                                            |
-| Breaker            | 10 |                                                            |
-| Breaking Burn      | 5  |                                                            |
-| Breaking Counter   | 3  |                                                            |
-| Breaking Death     | 5  |                                                            |
-| Charging Critical  | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn. |
-| Cheater            | 40 |                                                            |
-| Dodger             | 1  |                                                            |
-| Energising Burn    | 10 | 10LP. +1 AP on applying Burn, once per turn.               |
-| Energising Start I | 5  |                                                            |
-| Energising Turn    | 20 |                                                            |
-| Painted Power      | 5  |                                                            |
-| Protecting Heal    | 5  | Shell on heal                                              |
-| Recovery           | 10 |                                                            |
-| Second Chance      | 40 | Revive with 100% Health, once per battle.                  |
-| Shortcut           | 5  |                                                            |
-| Survivor           | 20 |                                                            |
-| Teamwork           | 5  |                                                            |
+| Lumina             | LP | Notes                                                       |
+|--------------------|----|-------------------------------------------------------------|
+| AP Discount        | 30 | 30LP. Reduces skill AP cost by 1.                           |
+| Accelerating Heal  | 5  | 5LP. Rush on healing an ally.                               |
+| Base Shield        | 20 |                                                             |
+| Breaking Attack    | 10 | 10LP. Apply Break damage on base attack.                    |
+| Breaking Burn      | 5  |                                                             |
+| Breaking Death     | —  | FREE from Breaking Death Pictos                             |
+| Burn Affinity      | —  | FREE from Burn Affinity Pictos                              |
+| Cheater            | 40 |                                                             |
+| Critical Burn      | —  | FREE from Critical Burn Pictos                              |
+| Dead Energy I      | 2  | 2LP. +2 AP on death of an ally.                             |
+| Dead Energy II     | 2  | 2LP. +2 AP on death of an ally (stacks with Dead Energy I). |
+| Dodger             | 1  |                                                             |
+| Energising Burn    | 10 | 10LP. +1 AP on applying Burn, once per turn.                |
+| Energising Start I | 5  |                                                             |
+| Energising Turn    | 20 |                                                             |
+| Energy Master      | 40 | 40LP. +5 AP on turn start.                                  |
+| First Strike       | 10 | 10LP. Act first in battle.                                  |
+| Painted Power      | 5  |                                                             |
+| Protecting Heal    | 5  | 5LP. Shell on healing an ally.                              |
+| Second Chance      | 40 | Revive with 100% Health, once per battle.                   |
+| Shortcut           | 5  |                                                             |
+| Teamwork           | 5  |                                                             |
 <!-- GENERATED:END -->
 
 ---

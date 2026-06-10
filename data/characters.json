@@ -1,30 +1,22 @@
 {
   "Maelle": {
-    "level": 96,
+    "level": 99,
     "role": "Primary DPS",
     "attributes": {
       "vitality": 0,
-      "might": 90,
+      "might": 99,
       "agility": 99,
       "defence": 0,
       "luck": 99
     },
-    "stats_base": {
-      "health": 2326,
-      "attack": 1436,
-      "speed": 1251,
-      "defence": 182,
-      "crit": "41%"
-    },
+    "stats_base": null,
     "stats_modified": {
-      "health": 7917,
-      "attack": 11370,
-      "speed": 2469,
+      "health": 8588,
+      "attack": 11583,
+      "speed": 2951,
       "defence": 182,
-      "crit": "109%",
-      "_note": "Stats with Lithum (33), Clea's Life (30), Empowering Break (28), Shortcut (31) equipped. Speed and Crit approximate pending in-game verification.",
-      "crit_rate": "109%",
-      "defense": 182
+      "crit": "41%",
+      "_note": "Stats with Lithum (33) equipped and Energising Turn (L31), Energy Master (L30), Cheater (L24) Pictos for Solo At Death's Door variant."
     },
     "weapon_equipped": "Lithum",
     "pictos_equipped": [
@@ -32,7 +24,7 @@
       "Empowering Break",
       "Shortcut"
     ],
-    "lp_total": 305,
+    "lp_total": 361,
     "lp_used": 305,
     "lumina_core_exclusions": [],
     "lumina_extras": [
@@ -72,10 +64,10 @@
     "skills_equipped": [
       "Phantom Strike",
       "Fleuret Fury",
+      "Stendhal",
+      "Burning Canvas",
       "Last Chance",
-      "Mezzo Forte",
-      "Gustave's Homage",
-      "Stendhal"
+      "Pyrolyse"
     ],
     "skills_learned": [
       "Phantom Strike",
@@ -124,88 +116,114 @@
     ]
   },
   "Verso": {
-    "level": 96,
+    "level": 99,
     "role": "Endgame main DPS",
     "attributes": {
       "vitality": 99,
-      "might": 68,
+      "might": 99,
       "agility": 99,
       "defence": 0,
-      "luck": 22,
-      "defense": 0
+      "luck": 0
     },
-    "stats_base": {
-      "health": 3715,
-      "attack": 1410,
-      "speed": 1156,
-      "defence": 182,
-      "crit": "17%"
-    },
+    "stats_base": null,
     "stats_modified": {
-      "health": 7696,
-      "attack": 10988,
-      "speed": 2299,
+      "health": 7790,
+      "attack": 11583,
+      "speed": 2100,
       "defence": 182,
-      "crit": "97%",
-      "_note": "Stats with Simoso (33), Second Chance (31), Breaking Death (29), Confident (29) equipped",
-      "defense": 182,
-      "crit_rate": "100%"
+      "crit": "106%",
+      "_note": "Stats with Simoso (33), Second Chance (L31), Sweet Kill (L31), Alternating Critical (L29) equipped."
     },
     "weapon_equipped": "Simoso",
     "pictos_equipped": [
       "Second Chance",
-      "Breaking Death",
-      "Confident"
+      "Sweet Kill",
+      "Alternating Critical"
     ],
-    "lp_total": 285,
-    "lp_used": 285,
+    "lp_total": 308,
+    "lp_used": 308,
     "lumina_core_exclusions": [
-      {
-        "name": "Breaking Death",
-        "notes": "Free from Breaking Death Pictos"
-      },
       {
         "name": "Second Chance",
         "notes": "Free from Second Chance Pictos"
+      },
+      {
+        "name": "Sweet Kill",
+        "notes": "Free from Sweet Kill Pictos"
+      },
+      {
+        "name": "Survivor",
+        "notes": "Not used in current build"
+      },
+      {
+        "name": "Energising Start I",
+        "notes": "Not used in current build"
+      },
+      {
+        "name": "Burning Shots",
+        "notes": "Not used in current build"
+      },
+      {
+        "name": "Breaking Counter",
+        "notes": "Not used in current build"
+      },
+      {
+        "name": "Anti-Blight",
+        "notes": "Not used in current build"
       }
     ],
     "lumina_extras": [
       {
-        "name": "Confident Fighter",
-        "notes": "30% increased damage — cost priced in via Chevalam L4 healing block"
+        "name": "AP Discount",
+        "notes": "30LP. Reduces skill AP cost by 1."
       },
       {
-        "name": "Warming Up",
-        "notes": "Damage bonus that increases with each attack, up to 20% at 5 stacks"
+        "name": "Alternating Critical",
+        "notes": "Free from Alternating Critical Pictos."
       },
       {
-        "name": "Energising Attack I"
-      },
-      {
-        "name": "Energising Start II"
-      },
-      {
-        "name": "Staggering Attack"
+        "name": "At Death's Door",
+        "notes": "5LP. 50% increased damage below 10% HP."
       },
       {
         "name": "Augmented First Strike",
-        "notes": "5LP."
+        "notes": "5LP. 50% increased damage on first hit, once per battle."
       },
       {
         "name": "Auto Rush",
-        "notes": "10LP. Applies Rush for 3 turns on battle start."
+        "notes": "10LP. Apply Rush for 3 turns on battle start."
       },
       {
-        "name": "Empowering Parry",
-        "notes": "5LP. Each successful Parry increases damage by 5% until end of following turn."
+        "name": "Burn Affinity",
+        "notes": "10LP. 25% increased damage against burning targets."
       },
       {
         "name": "Charging Critical",
         "notes": "10LP. +20% Gradient Charge on Critical Hit, once per turn."
       },
       {
+        "name": "Confident Fighter",
+        "notes": "15LP. 30% increased damage, can't be healed."
+      },
+      {
+        "name": "Double Third",
+        "notes": "10LP. Third hit in a sequence deals double damage."
+      },
+      {
         "name": "Energising Break",
-        "notes": "3LP. +3 AP on Breaking a target. Enables Perfect Break → Stun → Cheater turn → End Bringer rotation."
+        "notes": "3LP. +3 AP on Breaking a target."
+      },
+      {
+        "name": "First Strike",
+        "notes": "10LP. Act first in battle."
+      },
+      {
+        "name": "Frenzy",
+        "notes": "20LP. Each successive hit increases damage by 10%."
+      },
+      {
+        "name": "Warming Up",
+        "notes": "15LP. Damage increases with each attack, up to 20% at 5 stacks."
       }
     ],
     "skills_equipped": [
@@ -263,76 +281,102 @@
     ]
   },
   "Sciel": {
-    "level": 95,
+    "level": 99,
     "role": "Pure support",
     "attributes": {
       "vitality": 0,
-      "might": 21,
+      "might": 99,
       "agility": 99,
-      "defence": 66,
+      "defence": 0,
       "luck": 99
     },
-    "stats_base": {
-      "health": 2294,
-      "attack": 1302,
-      "speed": 1244,
-      "defence": 492,
-      "crit": "55%"
-    },
+    "stats_base": null,
     "stats_modified": {
-      "health": 7264,
-      "attack": 8974,
-      "speed": 2542,
-      "defence": 492,
-      "crit": "102%",
-      "_note": "Stats with Litheson (33), Painter (28), Energy Master (30), Energising Shots (28) equipped"
+      "health": 7396,
+      "attack": 10275,
+      "speed": 2572,
+      "defence": 182,
+      "crit": "106%",
+      "_note": "Stats with Litheson (33), Augmented Counter I (L31), Energising Shots (L28), Painter (L28) equipped."
     },
     "weapon_equipped": "Litheson",
     "pictos_equipped": [
-      "Painter",
-      "Energy Master",
-      "Energising Shots"
+      "Augmented Counter I",
+      "Energising Shots",
+      "Painter"
     ],
-    "lp_total": 262,
-    "lp_used": 262,
+    "lp_total": 287,
+    "lp_used": 287,
     "lumina_core_exclusions": [
       {
         "name": "Energy Master",
-        "notes": "Free from Energy Master Pictos"
+        "notes": "Not used — Augmented Counter I Pictos prioritised"
+      },
+      {
+        "name": "Dead Energy II",
+        "notes": "Not used in current build"
+      },
+      {
+        "name": "Burning Shots",
+        "notes": "Not used in current build"
+      },
+      {
+        "name": "Anti-Blight",
+        "notes": "Not used in current build"
       }
     ],
     "lumina_extras": [
       {
-        "name": "Recovery",
-        "notes": "Passive heal on turn start, increases survivability"
+        "name": "AP Discount",
+        "notes": "30LP. Reduces skill AP cost by 1."
       },
       {
         "name": "Accelerating Heal",
-        "notes": "Rush on heal."
+        "notes": "5LP. Rush on healing an ally."
       },
       {
-        "name": "Energising Heal",
-        "notes": "2 AP on healing an ally — primary AP engine with Grim Harvest"
-      },
-      {
-        "name": "Protecting Heal",
-        "notes": "Shell on heal"
-      },
-      {
-        "name": "Healing Tint Energy",
-        "notes": "1 AP on Healing Tint use — small AP top-up"
+        "name": "Augmented Counter I",
+        "notes": "Free from Augmented Counter I Pictos."
       },
       {
         "name": "Breaking Attack",
-        "notes": "Can Break on base attack — cheaper than Final Path"
+        "notes": "10LP. Apply Break damage on base attack."
       },
       {
         "name": "Charging Alteration",
-        "notes": "Build Gradient Charge on applying buffs such as All Set"
+        "notes": "10LP. +20% Gradient Charge on applying buffs or debuffs."
+      },
+      {
+        "name": "Energising Heal",
+        "notes": "10LP. +2 AP on healing an ally."
+      },
+      {
+        "name": "Energising Shots",
+        "notes": "Free from Energising Shots Pictos."
+      },
+      {
+        "name": "First Strike",
+        "notes": "10LP. Act first in battle."
       },
       {
         "name": "Gradient Break",
-        "notes": "5LP. +50% Gradient Charge on Breaking. Synergises with Breaking Attack."
+        "notes": "5LP. +50% Gradient Charge on Breaking."
+      },
+      {
+        "name": "Healing Tint Energy",
+        "notes": "1LP. +1 AP on Healing Tint use."
+      },
+      {
+        "name": "Painter",
+        "notes": "Free from Painter Pictos."
+      },
+      {
+        "name": "Protecting Heal",
+        "notes": "5LP. Shell on healing an ally."
+      },
+      {
+        "name": "Recovery",
+        "notes": "10LP. Passive heal on turn start."
       }
     ],
     "skills_equipped": [
@@ -389,64 +433,106 @@
     ]
   },
   "Lune": {
-    "level": 90,
+    "level": 99,
     "role": "DPS / healer (reserve)",
     "attributes": {
       "vitality": 99,
-      "might": 21,
+      "might": 48,
       "agility": 99,
       "defence": 0,
       "luck": 51
     },
-    "stats_base": {
-      "health": 3529,
-      "attack": 1205,
-      "speed": 1164,
-      "defence": 182,
-      "crit": "29%"
-    },
+    "stats_base": null,
     "stats_modified": {
-      "health": 3529,
-      "attack": 10463,
-      "speed": 2583,
+      "health": 3809,
+      "attack": 11155,
+      "speed": 2691,
       "defence": 182,
-      "crit": "101%",
-      "_note": "Stats with Kralim (33), Critical Burn (25), Burn Affinity (21), Burning Death (28) equipped"
+      "crit": "102%",
+      "_note": "Stats with Kralim (33), Critical Burn (L25), Burn Affinity (L21), Breaking Death (L29) equipped."
     },
     "weapon_equipped": "Kralim",
     "pictos_equipped": [
       "Critical Burn",
       "Burn Affinity",
-      "Burning Death"
+      "Breaking Death"
     ],
-    "lp_total": 224,
-    "lp_used": 224,
+    "lp_total": 260,
+    "lp_used": 260,
     "lumina_core_exclusions": [
       {
+        "name": "Breaking Death",
+        "notes": "Free from Breaking Death Pictos"
+      },
+      {
+        "name": "Survivor",
+        "notes": "Not used in current build"
+      },
+      {
+        "name": "Breaker",
+        "notes": "Not used in current build"
+      },
+      {
         "name": "Critical Break",
-        "notes": "Dropped to save LP, as not her primary role"
+        "notes": "Not used in current build"
       },
       {
         "name": "Burning Shots",
-        "notes": "Dropped to free LP for Survivor"
+        "notes": "Not used in current build"
+      },
+      {
+        "name": "Breaking Counter",
+        "notes": "Not used in current build"
+      },
+      {
+        "name": "Recovery",
+        "notes": "Not used in current build"
       }
     ],
     "lumina_extras": [
       {
-        "name": "Accelerating Heal",
-        "notes": "Rush on heal — synergy with Healing Light"
+        "name": "AP Discount",
+        "notes": "30LP. Reduces skill AP cost by 1."
       },
       {
-        "name": "Protecting Heal",
-        "notes": "Shell on heal"
+        "name": "Accelerating Heal",
+        "notes": "5LP. Rush on healing an ally."
+      },
+      {
+        "name": "Breaking Attack",
+        "notes": "10LP. Apply Break damage on base attack."
+      },
+      {
+        "name": "Burn Affinity",
+        "notes": "Free from Burn Affinity Pictos. 25% increased damage against burning targets."
+      },
+      {
+        "name": "Critical Burn",
+        "notes": "Free from Critical Burn Pictos. 25% increased crit chance on burning targets."
+      },
+      {
+        "name": "Energy Master",
+        "notes": "40LP. +5 AP on turn start."
+      },
+      {
+        "name": "Dead Energy I",
+        "notes": "2LP. +2 AP on death of an ally."
+      },
+      {
+        "name": "Dead Energy II",
+        "notes": "2LP. +2 AP on death of an ally (stacks with Dead Energy I)."
       },
       {
         "name": "Energising Burn",
         "notes": "10LP. +1 AP on applying Burn, once per turn."
       },
       {
-        "name": "Charging Critical",
-        "notes": "10LP. +20% Gradient Charge on Critical Hit, once per turn."
+        "name": "First Strike",
+        "notes": "10LP. Act first in battle."
+      },
+      {
+        "name": "Protecting Heal",
+        "notes": "5LP. Shell on healing an ally."
       }
     ],
     "skills_equipped": [
@@ -501,29 +587,23 @@
     ]
   },
   "Monoco": {
-    "level": 90,
+    "level": 99,
     "role": "Break + AP support (reserve)",
     "attributes": {
       "vitality": 0,
       "might": 0,
       "agility": 99,
       "defence": 99,
-      "luck": 72
+      "luck": 99
     },
-    "stats_base": {
-      "health": 2140,
-      "attack": 1170,
-      "speed": 1189,
-      "defence": 729,
-      "crit": "53%"
-    },
+    "stats_base": null,
     "stats_modified": {
-      "health": 6095,
-      "attack": 10920,
-      "speed": 2597,
-      "defence": 2301,
-      "crit": "71%",
-      "_note": "Stats with Joyaro (33), Longer Shell (29), Augmented First Strike (31), Quick Break (31) equipped. Speed and Crit approximate pending in-game verification."
+      "health": 5177,
+      "attack": 11097,
+      "speed": 1553,
+      "defence": 1515,
+      "crit": "167%",
+      "_note": "Stats with Joyaro (33) equipped and only Longer Break (L29), The One (L31) Pictos for Death Bomb variant."
     },
     "weapon_equipped": "Joyaro",
     "pictos_equipped": [
@@ -531,7 +611,7 @@
       "Augmented First Strike",
       "Cheater"
     ],
-    "lp_total": 175,
+    "lp_total": 186,
     "lp_used": 175,
     "lumina_core_exclusions": [],
     "lumina_extras": [
@@ -560,12 +640,12 @@
       }
     ],
     "skills_equipped": [
-      "Stalact Punches",
-      "Chapelier Slash",
-      "Grosse Tête Whack",
       "Orphelin Cheers",
+      "Stalact Punches",
       "Potier Energy",
-      "Moissonneuse Vendange"
+      "Moissonneuse Vendange",
+      "Chapelier Slash",
+      "Sakapatate Fire"
     ],
     "skills_learned": [
       "Abbest Wind",

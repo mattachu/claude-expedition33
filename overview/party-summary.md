@@ -4,13 +4,13 @@
 - **Active:** Maelle, Verso, Sciel
 - **Reserve:** Lune, Monoco
 
-| Character                         | Level | Role                         | Weapon        | Pictos                                        | LP      |
-|-----------------------------------|-------|------------------------------|---------------|-----------------------------------------------|---------|
-| [Maelle](../characters/maelle.md) | 96    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut       | 305/305 |
-| [Verso](../characters/verso.md)   | 96    | Endgame main DPS             | Simoso (33)   | Second Chance, Breaking Death, Confident      | 285/285 |
-| [Sciel](../characters/sciel.md)   | 95    | Pure support                 | Litheson (33) | Painter, Energy Master, Energising Shots      | 262/262 |
-| [Lune](../characters/lune.md)     | 90    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Burning Death   | 224/224 |
-| [Monoco](../characters/monoco.md) | 90    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Cheater | 175/175 |
+| Character                         | Level | Role                         | Weapon        | Pictos                                          | LP      |
+|-----------------------------------|-------|------------------------------|---------------|-------------------------------------------------|---------|
+| [Maelle](../characters/maelle.md) | 99    | Primary DPS                  | Lithum (33)   | Clea's Life, Empowering Break, Shortcut         | 305/361 |
+| [Verso](../characters/verso.md)   | 99    | Endgame main DPS             | Simoso (33)   | Second Chance, Sweet Kill, Alternating Critical | 308/308 |
+| [Sciel](../characters/sciel.md)   | 99    | Pure support                 | Litheson (33) | Augmented Counter I, Energising Shots, Painter  | 287/287 |
+| [Lune](../characters/lune.md)     | 99    | DPS / healer (reserve)       | Kralim (33)   | Critical Burn, Burn Affinity, Breaking Death    | 260/260 |
+| [Monoco](../characters/monoco.md) | 99    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Cheater   | 175/186 |
 
 ---
 
@@ -48,15 +48,15 @@
 
 ### Maelle
 
-**Level:** 96 | **Role:** Primary DPS | **Weapon:** Lithum (33)
+**Level:** 99 | **Role:** Primary DPS | **Weapon:** Lithum (33)
 
-| Stat    | Base | Modified |
-|---------|------|----------|
-| Health  | 2326 | 7917     |
-| Attack  | 1436 | 11370    |
-| Speed   | 1251 | 2469     |
-| Defence | 182  | 182      |
-| Crit    | 41%  | 109%     |
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 8588     |
+| Attack  | *[unknown]* | 11583    |
+| Speed   | *[unknown]* | 2951     |
+| Defence | *[unknown]* | 182      |
+| Crit    | *[unknown]* | 41%      |
 
 
 | Pictos           | Level | Stats                 |
@@ -79,86 +79,102 @@
 | Greater Powerful       | Added  | 10 | 10LP. +15% to Powerful damage increase.                                                                                                                              |
 | Charging Critical      | Added  | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn.                                                                                                           |
 
-**LP:** 305/305
+**LP:** 305/361
 
 ---
 
 ### Verso
 
-**Level:** 96 | **Role:** Endgame main DPS | **Weapon:** Simoso (33)
+**Level:** 99 | **Role:** Endgame main DPS | **Weapon:** Simoso (33)
 
-| Stat    | Base | Modified |
-|---------|------|----------|
-| Health  | 3715 | 7696     |
-| Attack  | 1410 | 10988    |
-| Speed   | 1156 | 2299     |
-| Defence | 182  | 182      |
-| Crit    | 17%  | 97%      |
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 7790     |
+| Attack  | *[unknown]* | 11583    |
+| Speed   | *[unknown]* | 2100     |
+| Defence | *[unknown]* | 182      |
+| Crit    | *[unknown]* | 106%     |
 
 
-| Pictos         | Level | Stats                   |
-|----------------|-------|-------------------------|
-| Second Chance  | 31    | Health +3981, Crit +15% |
-| Breaking Death | 29    | Speed +586, Crit +33%   |
-| Confident      | 29    | Speed +557, Crit +32%   |
+| Pictos               | Level | Stats                   |
+|----------------------|-------|-------------------------|
+| Second Chance        | 31    | Health +3981, Crit +15% |
+| Sweet Kill           | 31    | Speed +672, Crit +36%   |
+| Alternating Critical | 29    | Speed +293, Crit +50%   |
 
 
 **Lumina adjustments:**
 
-| Lumina                 | Change   | LP | Notes                                                                                                |
-|------------------------|----------|----|------------------------------------------------------------------------------------------------------|
-| Breaking Death         | Excluded | 5  | Free from Breaking Death Pictos                                                                      |
-| Second Chance          | Excluded | 40 | Free from Second Chance Pictos                                                                       |
-| Confident Fighter      | Added    | 15 | 30% increased damage — cost priced in via Chevalam L4 healing block                                  |
-| Warming Up             | Added    | 15 | Damage bonus that increases with each attack, up to 20% at 5 stacks                                  |
-| Energising Attack I    | Added    | 10 |                                                                                                      |
-| Energising Start II    | Added    | 10 |                                                                                                      |
-| Staggering Attack      | Added    | 1  |                                                                                                      |
-| Augmented First Strike | Added    | 5  | 5LP.                                                                                                 |
-| Auto Rush              | Added    | 10 | 10LP. Applies Rush for 3 turns on battle start.                                                      |
-| Empowering Parry       | Added    | 5  | 5LP. Each successful Parry increases damage by 5% until end of following turn.                       |
-| Charging Critical      | Added    | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn.                                           |
-| Energising Break       | Added    | 3  | 3LP. +3 AP on Breaking a target. Enables Perfect Break → Stun → Cheater turn → End Bringer rotation. |
+| Lumina                 | Change   | LP | Notes                                                           |
+|------------------------|----------|----|-----------------------------------------------------------------|
+| Second Chance          | Excluded | 40 | Free from Second Chance Pictos                                  |
+| Sweet Kill             | Excluded | 5  | Free from Sweet Kill Pictos                                     |
+| Survivor               | Excluded | 20 | Not used in current build                                       |
+| Energising Start I     | Excluded | 5  | Not used in current build                                       |
+| Burning Shots          | Excluded | 3  | Not used in current build                                       |
+| Breaking Counter       | Excluded | 3  | Not used in current build                                       |
+| Anti-Blight            | Excluded | 10 | Not used in current build                                       |
+| AP Discount            | Added    | 30 | 30LP. Reduces skill AP cost by 1.                               |
+| Alternating Critical   | Added    | —  | Free from Alternating Critical Pictos.                          |
+| At Death's Door        | Added    | 5  | 5LP. 50% increased damage below 10% HP.                         |
+| Augmented First Strike | Added    | 5  | 5LP. 50% increased damage on first hit, once per battle.        |
+| Auto Rush              | Added    | 10 | 10LP. Apply Rush for 3 turns on battle start.                   |
+| Burn Affinity          | Added    | 10 | 10LP. 25% increased damage against burning targets.             |
+| Charging Critical      | Added    | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn.      |
+| Confident Fighter      | Added    | 15 | 15LP. 30% increased damage, can't be healed.                    |
+| Double Third           | Added    | 10 | 10LP. Third hit in a sequence deals double damage.              |
+| Energising Break       | Added    | 3  | 3LP. +3 AP on Breaking a target.                                |
+| First Strike           | Added    | 10 | 10LP. Act first in battle.                                      |
+| Frenzy                 | Added    | 20 | 20LP. Each successive hit increases damage by 10%.              |
+| Warming Up             | Added    | 15 | 15LP. Damage increases with each attack, up to 20% at 5 stacks. |
 
-**LP:** 285/285
+**LP:** 308/308
 
 ---
 
 ### Sciel
 
-**Level:** 95 | **Role:** Pure support | **Weapon:** Litheson (33)
+**Level:** 99 | **Role:** Pure support | **Weapon:** Litheson (33)
 
-| Stat    | Base | Modified |
-|---------|------|----------|
-| Health  | 2294 | 7264     |
-| Attack  | 1302 | 8974     |
-| Speed   | 1244 | 2542     |
-| Defence | 492  | 492      |
-| Crit    | 55%  | 102%     |
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 7396     |
+| Attack  | *[unknown]* | 10275    |
+| Speed   | *[unknown]* | 2572     |
+| Defence | *[unknown]* | 182      |
+| Crit    | *[unknown]* | 106%     |
 
 
-| Pictos           | Level | Stats                 |
-|------------------|-------|-----------------------|
-| Painter          | 28    | Speed +519, Crit +31% |
-| Energy Master    | 30    | Health +4979          |
-| Energising Shots | 28    | Speed +779, Crit +16% |
+| Pictos              | Level | Stats                   |
+|---------------------|-------|-------------------------|
+| Augmented Counter I | 28    | Health +4058, Crit +16% |
+| Energising Shots    | 28    | Speed +779, Crit +16%   |
+| Painter             | 28    | Speed +519, Crit +31%   |
 
 
 **Lumina adjustments:**
 
-| Lumina              | Change   | LP | Notes                                                                   |
-|---------------------|----------|----|-------------------------------------------------------------------------|
-| Energy Master       | Excluded | 40 | Free from Energy Master Pictos                                          |
-| Recovery            | Added    | 10 | Passive heal on turn start, increases survivability                     |
-| Accelerating Heal   | Added    | 5  | Rush on heal.                                                           |
-| Energising Heal     | Added    | 10 | 2 AP on healing an ally — primary AP engine with Grim Harvest           |
-| Protecting Heal     | Added    | 5  | Shell on heal                                                           |
-| Healing Tint Energy | Added    | 1  | 1 AP on Healing Tint use — small AP top-up                              |
-| Breaking Attack     | Added    | 10 | Can Break on base attack — cheaper than Final Path                      |
-| Charging Alteration | Added    | 10 | Build Gradient Charge on applying buffs such as All Set                 |
-| Gradient Break      | Added    | 5  | 5LP. +50% Gradient Charge on Breaking. Synergises with Breaking Attack. |
+| Lumina              | Change   | LP | Notes                                                    |
+|---------------------|----------|----|----------------------------------------------------------|
+| Energy Master       | Excluded | 40 | Not used — Augmented Counter I Pictos prioritised        |
+| Dead Energy II      | Excluded | 2  | Not used in current build                                |
+| Burning Shots       | Excluded | 3  | Not used in current build                                |
+| Anti-Blight         | Excluded | 10 | Not used in current build                                |
+| AP Discount         | Added    | 30 | 30LP. Reduces skill AP cost by 1.                        |
+| Accelerating Heal   | Added    | 5  | 5LP. Rush on healing an ally.                            |
+| Augmented Counter I | Added    | —  | Free from Augmented Counter I Pictos.                    |
+| Breaking Attack     | Added    | 10 | 10LP. Apply Break damage on base attack.                 |
+| Charging Alteration | Added    | 10 | 10LP. +20% Gradient Charge on applying buffs or debuffs. |
+| Energising Heal     | Added    | 10 | 10LP. +2 AP on healing an ally.                          |
+| Energising Shots    | Added    | —  | Free from Energising Shots Pictos.                       |
+| First Strike        | Added    | 10 | 10LP. Act first in battle.                               |
+| Gradient Break      | Added    | 5  | 5LP. +50% Gradient Charge on Breaking.                   |
+| Healing Tint Energy | Added    | 1  | 1LP. +1 AP on Healing Tint use.                          |
+| Painter             | Added    | —  | Free from Painter Pictos.                                |
+| Protecting Heal     | Added    | 5  | 5LP. Shell on healing an ally.                           |
+| Recovery            | Added    | 10 | 10LP. Passive heal on turn start.                        |
 
-**LP:** 262/262
+**LP:** 287/287
 
 ---
 
@@ -193,50 +209,62 @@
 
 ### Lune
 
-**Level:** 90 | **Role:** DPS / healer (reserve) | **Weapon:** Kralim (33)
+**Level:** 99 | **Role:** DPS / healer (reserve) | **Weapon:** Kralim (33)
 
-| Stat    | Base | Modified |
-|---------|------|----------|
-| Health  | 3529 | 3529     |
-| Attack  | 1205 | 10463    |
-| Speed   | 1164 | 2583     |
-| Defence | 182  | 182      |
-| Crit    | 29%  | 101%     |
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 3809     |
+| Attack  | *[unknown]* | 11155    |
+| Speed   | *[unknown]* | 2691     |
+| Defence | *[unknown]* | 182      |
+| Crit    | *[unknown]* | 102%     |
 
 
-| Pictos        | Level | Stats                 |
-|---------------|-------|-----------------------|
-| Critical Burn | 25    | Speed +434, Crit +28% |
-| Burn Affinity | 21    | Speed +439, Crit +12% |
-| Burning Death | 28    | Speed +546, Crit +32% |
+| Pictos         | Level | Stats                 |
+|----------------|-------|-----------------------|
+| Critical Burn  | 25    | Speed +434, Crit +28% |
+| Burn Affinity  | 21    | Speed +439, Crit +12% |
+| Breaking Death | 29    | Speed +586, Crit +33% |
 
 
 **Lumina adjustments:**
 
-| Lumina            | Change   | LP | Notes                                                      |
-|-------------------|----------|----|------------------------------------------------------------|
-| Critical Break    | Excluded | 5  | Dropped to save LP, as not her primary role                |
-| Burning Shots     | Excluded | 3  | Dropped to free LP for Survivor                            |
-| Accelerating Heal | Added    | 5  | Rush on heal — synergy with Healing Light                  |
-| Protecting Heal   | Added    | 5  | Shell on heal                                              |
-| Energising Burn   | Added    | 10 | 10LP. +1 AP on applying Burn, once per turn.               |
-| Charging Critical | Added    | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn. |
+| Lumina            | Change   | LP | Notes                                                                         |
+|-------------------|----------|----|-------------------------------------------------------------------------------|
+| Breaking Death    | Excluded | 5  | Free from Breaking Death Pictos                                               |
+| Survivor          | Excluded | 20 | Not used in current build                                                     |
+| Breaker           | Excluded | 10 | Not used in current build                                                     |
+| Critical Break    | Excluded | 5  | Not used in current build                                                     |
+| Burning Shots     | Excluded | 3  | Not used in current build                                                     |
+| Breaking Counter  | Excluded | 3  | Not used in current build                                                     |
+| Recovery          | Excluded | 10 | Not used in current build                                                     |
+| AP Discount       | Added    | 30 | 30LP. Reduces skill AP cost by 1.                                             |
+| Accelerating Heal | Added    | 5  | 5LP. Rush on healing an ally.                                                 |
+| Breaking Attack   | Added    | 10 | 10LP. Apply Break damage on base attack.                                      |
+| Burn Affinity     | Added    | —  | Free from Burn Affinity Pictos. 25% increased damage against burning targets. |
+| Critical Burn     | Added    | —  | Free from Critical Burn Pictos. 25% increased crit chance on burning targets. |
+| Energy Master     | Added    | 40 | 40LP. +5 AP on turn start.                                                    |
+| Dead Energy I     | Added    | 2  | 2LP. +2 AP on death of an ally.                                               |
+| Dead Energy II    | Added    | 2  | 2LP. +2 AP on death of an ally (stacks with Dead Energy I).                   |
+| Energising Burn   | Added    | 10 | 10LP. +1 AP on applying Burn, once per turn.                                  |
+| First Strike      | Added    | 10 | 10LP. Act first in battle.                                                    |
+| Protecting Heal   | Added    | 5  | 5LP. Shell on healing an ally.                                                |
 
-**LP:** 224/224
+**LP:** 260/260
 
 ---
 
 ### Monoco
 
-**Level:** 90 | **Role:** Break + AP support (reserve) | **Weapon:** Joyaro (33)
+**Level:** 99 | **Role:** Break + AP support (reserve) | **Weapon:** Joyaro (33)
 
-| Stat    | Base | Modified |
-|---------|------|----------|
-| Health  | 2140 | 6095     |
-| Attack  | 1170 | 10920    |
-| Speed   | 1189 | 2597     |
-| Defence | 729  | 2301     |
-| Crit    | 53%  | 71%      |
+| Stat    | Base        | Modified |
+|---------|-------------|----------|
+| Health  | *[unknown]* | 5177     |
+| Attack  | *[unknown]* | 11097    |
+| Speed   | *[unknown]* | 1553     |
+| Defence | *[unknown]* | 1515     |
+| Crit    | *[unknown]* | 167%     |
 
 
 | Pictos                 | Level | Stats                       |
@@ -257,13 +285,13 @@
 | Empowering Break       | Added  | 3  | 3LP. Gain Powerful on Breaking a target.                                                  |
 | Gradient Break         | Added  | 5  | Earn 50% of Gradient Charge when breaking an enemy.                                       |
 
-**LP:** 175/175
+**LP:** 175/186
 
 ---
 
 # Inventory
 
-- Colour of Lumina: 53
-- Recoats: 40
-- Chroma Catalysts: 67 standard, 74 polished, 105 resplendent, 76 grandiose, 6 perfect
-- Chroma: 1058974
+- Colour of Lumina: 132
+- Recoats: 59
+- Chroma Catalysts: 67 standard, 77 polished, 113 resplendent, 271 grandiose, 6 perfect
+- Chroma: 1801759

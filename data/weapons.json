@@ -1000,6 +1000,50 @@
           "description": "Sun Skills cost 1 less AP."
         }
       ]
+    },
+    {
+      "name": "Guleson",
+      "level": 25,
+      "power": 3492,
+      "element": "Lightning",
+      "scaling": "Agility B, Luck A",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "On Twilight Start, apply Mark to all enemies."
+        },
+        {
+          "level": 10,
+          "description": "Hitting a Marked enemy during Twilight doesn't remove Mark."
+        },
+        {
+          "level": 20,
+          "description": "Apply 3 Foretell on applying Mark."
+        }
+      ]
+    },
+    {
+      "name": "Direton",
+      "level": 14,
+      "power": 1598,
+      "element": "Earth",
+      "scaling": "Defence C, Agility B",
+      "obtained": true,
+      "effects": [
+        {
+          "level": 4,
+          "description": "+1 AP per Moon charge on turn start."
+        },
+        {
+          "level": 10,
+          "description": "Base Attack gives 1 Moon charge."
+        },
+        {
+          "level": 20,
+          "description": "(Locked) During Twilight, Base Attack consumes all AP, applies 1 Foretell, and deals 50% increased damage per AP consumed."
+        }
+      ]
     }
   ],
   "Lune": [

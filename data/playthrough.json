@@ -12,13 +12,13 @@
     "Monoco"
   ],
   "inventory": {
-    "colour_of_lumina": 53,
-    "recoats": 40,
-    "chroma": 1058974,
+    "colour_of_lumina": 132,
+    "recoats": 59,
+    "chroma": 1801759,
     "chroma_catalyst": 67,
-    "chroma_catalyst_polished": 74,
-    "chroma_catalyst_resplendent": 105,
-    "chroma_catalyst_grandiose": 76,
+    "chroma_catalyst_polished": 77,
+    "chroma_catalyst_resplendent": 113,
+    "chroma_catalyst_grandiose": 271,
     "chroma_catalyst_perfect": 6
   },
   "current_phase_checklist": [
