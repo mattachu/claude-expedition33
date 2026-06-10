@@ -1,5 +1,6 @@
 # Clair Obscur: Expedition 33 — Chat 32
 <!-- SECTION -->
+## Session Start — Inventory and New Weapon Data
 
 **Matt:** Hi Claude! Let's continue to chat about Expedition 33.
 
@@ -105,6 +106,7 @@ From the screenshot:
 ---
 
 <!-- SECTION -->
+## Verso Build Update — Attributes, Pictos, and Lumina
 
 **Matt:** *[Screenshot uploaded: Clair_Obscur__Expedition_33-2026_06_04-21-03-51.png]*
 
@@ -161,6 +163,7 @@ One note: the overview currently shows Verso at 285/285 LP — the 287/287 ACTIO
 ---
 
 <!-- SECTION -->
+## Closing Three Open Questions
 
 **Matt:** I think we can close three of the open questions. Firstly, I've moved Verso onto Clea's Life rather than Confident and Confident Fighter. He still does plenty of damage without Confident Fighter, and Clea's Life does a better job of keeping him alive than Confident, so I think that's resolved. Write an action to delete the open question and make a note of the decision in Verso's character file.
 
@@ -221,6 +224,7 @@ All three open questions closed. What's next?
 ---
 
 <!-- SECTION -->
+## Maelle Weapon Research — Lithum vs Medalum
 
 **Matt:** I'm not convinced about Lithum being the best Endgame weapon for Maelle. On the other hand, I don't think there is a standout option. Most guides still list Medalum as the best, but it seems only its "Start in Virtuouse" trait is what they talk about, but that only makes a difference for the first move. With Last Chance > Virtuose > Cheater > Clea's Life > Stendhal, there's a strong repeatable way to access Virtuose. Lithum's "Virtuose on Counterattack" is a nice bonus but doesn't fire often enough in party play. Probably hugely advantageous playing Maelle solo though. Facesum is mentioned for its burn characteristics when using burn-stacking, but the reliance on Offensive Stance doesn't suit my playstyle. I think it needs a very particular burn-stacking setup. Licorum is interesting for multi-hit moves, but Stendhal is the most powerful move and is a single hit. I don't see any that really grab me. Could you do some searching of community discussions and see what is suggested as the best weapon for maxing damage on Last Chance + Stendhal?
 
@@ -283,6 +287,7 @@ What's next?
 ---
 
 <!-- SECTION -->
+## New Weapons and Pictos — Data Entry
 
 **Matt:** *[Screenshot uploaded: Clair_Obscur__Expedition_33-2026_06_06-14-38-08.png]*
 
@@ -387,6 +392,7 @@ And for the Image 2 batch:
 ---
 
 <!-- SECTION -->
+## Pictos Stats — High-Level Additions
 
 **Matt:** Could you run a query for me please. Are there any Pictos with level 28 or higher, marked obtained, that do not have stats listed?
 
@@ -443,6 +449,7 @@ One flag: Gradient Breaker's stats are Speed and Critical Rate rather than the u
 ---
 
 <!-- SECTION -->
+## Solo Maelle — Monoco Death Build and Damage Analysis
 
 **Matt:** I'm interested in building a max-powered solo Maelle.
 
@@ -709,6 +716,7 @@ Logged. 1.8m to 5.3m is a nearly 3× jump — very much in line with the multipl
 ---
 
 <!-- SECTION -->
+## Maelle Build Finalised — 21m Hit and Variant Logged
 
 **Matt:** Ok, I got a hit of 21m!
 
@@ -790,6 +798,7 @@ One flag: I notice "Greater Defenceless" is in the active loadout — I'd assume
 ---
 
 <!-- SECTION -->
+## Monoco Death Bomb Build Logged
 
 **Matt:** *[Screenshot 1 uploaded: Clair_Obscur__Expedition_33-2026_06_08-20-11-32.png]* *[Screenshot 2 uploaded: Clair_Obscur__Expedition_33-2026_06_08-20-11-24.png]* *[Screenshot 3 uploaded: Clair_Obscur__Expedition_33-2026_06_08-20-11-17.png]*
 
@@ -837,6 +846,7 @@ Two notes: The One (Max Health reduced to 1) makes Monoco's death from Auto Deat
 ---
 
 <!-- SECTION -->
+## Verso Frenzy Build Logged
 
 **Matt:** *[Screenshot 1 uploaded: Clair_Obscur__Expedition_33-2026_06_08-20-10-34.png]* *[Screenshot 2 uploaded: Clair_Obscur__Expedition_33-2026_06_08-20-10-25.png]* *[Screenshot 3 uploaded: Clair_Obscur__Expedition_33-2026_06_08-20-10-28.png]*
 
@@ -882,6 +892,7 @@ LP check: 308 paid LP (Alternating Critical 10 + Second Chance 40 + Sweet Kill 5
 ---
 
 <!-- SECTION -->
+## Lune and Sciel Main Builds Logged
 
 **Matt:** *[Screenshot 1 uploaded: Clair_Obscur__Expedition_33-2026_06_08-20-11-13.png]* *[Screenshot 2 uploaded: Clair_Obscur__Expedition_33-2026_06_08-20-11-06.png]* *[Screenshot 3 uploaded: Clair_Obscur__Expedition_33-2026_06_08-20-11-09.png]* *[Screenshot 4 uploaded: Clair_Obscur__Expedition_33-2026_06_08-20-10-52.png]* *[Screenshot 5 uploaded: Clair_Obscur__Expedition_33-2026_06_08-20-10-59.png]* *[Screenshot 6 uploaded: Clair_Obscur__Expedition_33-2026_06_08-20-10-48.png]*
 
@@ -940,6 +951,7 @@ LP check: paid LP sums to 290, but display shows 287/287 — 3LP discrepancy, li
 ---
 
 <!-- SECTION -->
+## Pre-Close Review — Testing and Tidy-Up
 
 **Matt:** I think this chat is probably full. Is there anything else we should tidy up discussion about before closing this chat? Anything unresolved that your current context would be helpful for?
 
@@ -1110,3 +1122,427 @@ All three samples check out verbatim.
 Chat 32 closed. Ready for !wrap in a new session.
 
 ---
+
+<!-- SECTION -->
+## Session Wrap
+
+**Matt:** Hi Claude!
+
+Latest startup file is at https://raw.githubusercontent.com/mattachu/claude-tools/318be20/startup.md
+
+This is a wrap session for the latest Expedition 33 chat. Links file attached. Fetch `reference/session-procedure.md` and run `!wrap` steps.
+
+**Claude:** *[Downloaded startup.md to /home/claude/startup.md]*
+
+*[Read /home/claude/startup.md]*
+
+Startup file read. This is a wrap session, so let me fetch the session procedure now.
+
+*[Downloaded session-procedure.md to /home/claude/session-procedure.md]*
+
+*[Read /home/claude/session-procedure.md]*
+
+Session procedure read. The uploaded transcript is `chat32.md`, so **N = 32**. Starting Wrap Steps now.
+
+---
+
+**Step 1 — Split transcript into sections**
+
+*[Split chat32.md into 13 section files]*
+
+*[Counted lines per section file]*
+
+13 files created (section00 is the title header). **12 sections** found across sections 01–12.
+
+Line counts:
+- section01: 105, section02: 56, section03: 60, section04: 62, section05: 104, section06: 56 → **443 lines**
+- section07: 266, section08: 81, section09: 47, section10: 45, section11: 58, section12: 171 → **668 lines**
+
+Total: 1,111 lines across 12 sections.
+
+Proposed grouping (neither split hits 500–600 perfectly, but this is the most natural break):
+- **Part 1**: sections 1–6 (443 lines)
+- **Part 2**: sections 7–12 (668 lines)
+
+Alternative: sections 1–7 / 8–12 gives 709 / 402 — less balanced.
+
+Does the proposed 2-part split work, or do you want to adjust?
+
+---
+
+**Matt:** I think we will need three parts. This wrap session itself will be the final section, and it might be a long one (maybe 200 lines?)
+
+**Claude:** Good call. With the wrap section adding ~200 lines, total is roughly 1,311 lines across 13 sections. Targeting ~430–450 lines per part:
+
+- **Part 1**: sections 1–6 (443 lines)
+- **Part 2**: sections 7–11 (497 lines)
+- **Part 3**: section 12 + wrap session (~371 lines)
+
+All three are a bit under the 500–600 target, but the wrap session will pad part 3 and this is the most even split available given how the sections fall. Does that work?
+
+---
+
+**Matt:** Yes, that is fine. What are the instructions for step 2?
+
+**Claude:** From the procedure:
+
+1. **Create the index file** `/mnt/user-data/outputs/chat32-index.md` first, before reading any sections — using the template from the Index File Format section.
+
+2. **Read sections one at a time** — for each section from `section01.md` onward:
+   - **a. Part heading** — if the section opens a new part, append a part heading to the index file
+   - **b. Section title** — write a short descriptive title and insert it into the section file immediately after the `<!-- SECTION -->` marker
+   - **c. Index entry** — append the section title, anchor link, and a 2–3 sentence description to the index file
+
+3. **After all sections**, replace the `(part list to be added later)` placeholder in the index file with the actual part list using `sed`.
+
+4. **Confirm with Matt** when all sections are processed.
+
+Key constraint: read one section at a time, complete all three sub-steps for it, then move to the next. No batching reads across multiple sections.
+
+Ready to start — shall I go ahead?
+
+---
+
+**Matt:** Good, go ahead for step 2 and then stop before step 3.
+
+**Claude:** Starting with the index file, then sections one at a time.
+
+*[Created /mnt/user-data/outputs/chat32-index.md]*
+
+*[Read section01.md]*
+
+*[Inserted section title into section01.md]*
+
+*[Appended Part 1 heading and section01 entry to index]*
+
+*[Read section02.md — section title inserted, index entry appended]*
+
+*[Read section03.md — section title inserted, index entry appended]*
+
+*[Read section04.md — section title inserted, index entry appended]*
+
+*[Read section05.md — section title inserted, index entry appended]*
+
+*[Read section06.md — section title inserted, index entry appended]*
+
+*[Read section07.md — section title inserted, Part 2 heading and index entry appended]*
+
+*[Read section08.md — section title inserted, index entry appended]*
+
+*[Read section09.md — section title inserted, index entry appended]*
+
+*[Read section10.md — section title inserted, index entry appended]*
+
+*[Read section11.md — section title inserted, index entry appended]*
+
+*[Read section12.md — section title inserted, Part 3 heading and index entry appended]*
+
+*[Replaced part list placeholder and appended generated date]*
+
+*[Read /mnt/user-data/outputs/chat32-index.md to verify]*
+
+All 12 sections processed. Index file looks good. Confirming before I stop:
+
+**Part grouping used:**
+- Part 1: sections 1–6 (session start through pictos stats)
+- Part 2: sections 7–11 (solo build design through Lune/Sciel)
+- Part 3: section 12 + wrap session (pre-close review, testing, and wrap)
+
+**12 section titles written:**
+1. Session Start — Inventory and New Weapon Data
+2. Verso Build Update — Attributes, Pictos, and Lumina
+3. Closing Three Open Questions
+4. Maelle Weapon Research — Lithum vs Medalum
+5. New Weapons and Pictos — Data Entry
+6. Pictos Stats — High-Level Additions
+7. Solo Maelle — Monoco Death Build and Damage Analysis
+8. Maelle Build Finalised — 21m Hit and Variant Logged
+9. Monoco Death Bomb Build Logged
+10. Verso Frenzy Build Logged
+11. Lune and Sciel Main Builds Logged
+12. Pre-Close Review — Testing and Tidy-Up
+
+Ready to present the index file, or shall I go straight to Step 3?
+
+---
+
+**Matt:** Present the index file, then tell me what are the instructions for step 3?
+
+**Claude:** *[Presented /mnt/user-data/outputs/chat32-index.md]*
+
+**Step 3 — Pull and present raw actions:**
+
+Run `awk` across all section files to extract every ACTION flag, grouped by section title:
+
+```bash
+awk '/^## /{section=$0; found=0} /^\*\*ACTION:/{if(!found){print section; found=1} print}' /home/claude/section*.md
+```
+
+Then present the raw output to you and stop. You review it, flag anything to drop or modify, and confirm before Step 4 continues.
+
+Shall I run it?
+
+---
+
+**Matt:** Yes please
+
+**Claude:** *[Ran awk to extract ACTION flags — output cleared from context]*
+
+Here are the raw actions grouped by section: [full raw action output presented in chat]
+
+I can already see several things worth flagging before you review:
+
+**Superseded actions (earlier version overridden by later correction):**
+- *Session Start* inventory ACTION superseded by final inventory in *Pre-Close Review*
+- *Closing Three Open Questions* — first Maelle Lumina synergy note ("basic attack") superseded by corrected version ("leaving Virtuose Stance"); "Remove open question Greater Powerful" appears twice
+- *Verso Build Update* — LP 342 ACTION superseded by LP correction (287/287); all Verso stats superseded by Frenzy build
+- *Verso Frenzy Build Logged* — "Add variant" superseded by "Adjust the last action: this is not a variant, but Verso's main build"
+- *Pre-Close Review* — two "Add open question" ACTIONs immediately superseded by "Close open question" ACTIONs
+
+**Corrections noted during session but not auto-applied:**
+- Direton element logged as "Nature" — Matt confirmed it's "Earth"
+- Sciel Lumina ACTION includes Accelerating Last Stand — correcting ACTION says remove it
+- Monoco Death Bomb variant includes Healing Death — Pre-Close ACTION removes it
+
+Please review and confirm which to drop, modify, or keep as-is before I proceed to Step 4.
+
+---
+
+**Matt:** The raw actions are in tool output; I can't see them. Could you display them please?
+
+**Claude:** [Full raw action output displayed in chat — all sections from Session Start through Pre-Close Review with all ACTION flags]
+
+Ready for your review. My flagged issues from before still stand — particularly the superseded actions in *Verso Build Update*, the duplicate Maelle Lumina note and Greater Powerful removal in *Closing Three Open Questions*, the Direton element correction, and the self-cancelling open/close question pairs in *Pre-Close Review*.
+
+---
+
+**Matt:** Your flagged issues all look right. The only thing I would add is not to set Maelle and Monoco's active Pictos in the character file — those Pictos selections are part of the variant build. Also, I haven't given you the base stats for each character at 99, only the modified stats. I suggest setting the base stats to null for now.
+
+Let's work through step 4 bit by bit. I expect there will be clarification needed before writing the changelist entries.
+
+**Claude:** Good plan. Let me first sort the confirmed actions into bins so we know what we're dealing with, incorporating all your corrections.
+
+[Action bins summary presented — in-game actions, data changes to characters.json/weapons.json/pictos-lumina.json/playthrough.json, file changes to Markdown files, APPEND for chat-index.md]
+
+One question before we start writing changelist entries: the Verso build update — the session started with an interim Verso build (Might 90, Clea's Life, different Lumina), and ended with the final Frenzy build (Might 99, no Clea's Life). The final build completely supersedes the interim one. Should I treat the Frenzy build as the only update to write — or do you want the base stats from the interim build retained anywhere?
+
+---
+
+**Matt:** No need to keep the interim build.
+
+The variants for Maelle and Monoco go into the character files, not the data files.
+
+Let's start downloading files and writing changelist entries.
+
+**Claude:** Good — so variants go into the character .md files. Revised bin summary presented.
+
+Let's start with characters.json as it has the most entries. Fetching it now.
+
+*[Downloaded characters.json]*
+
+*[Inspected characters.json structure]*
+
+*[Inspected full character entries for schema reference]*
+
+[Schema inspection summary and pre-flight checks presented — Maelle Might 90→99, Verso interim build superseded by Frenzy, Lune Burning Death→Breaking Death, Sciel Energy Master→Augmented Counter I, Monoco skills update]
+
+Any corrections before I write these to the changelist file?
+
+---
+
+**Matt:** Both correct.
+
+**Claude:** *[Wrote characters.json DATA blocks to /home/claude/chat32-changelist.txt]*
+
+characters.json DATA blocks written. Two things to confirm before I move on:
+
+1. **Monoco's lp_used 166 / lp_total 186** — the 20LP gap is the unused LP, correct? That matches the screenshot.
+2. **Sciel's skills** — current data has the same six skills as the new build, so I've left skills_equipped unchanged. Same for Lune and Verso — same six skills, no update needed.
+
+Ready to fetch weapons.json and write those DATA blocks next.
+
+---
+
+**Matt:** Both correct.
+
+**Claude:** *[Downloaded weapons.json]*
+
+*[Inspected weapons.json schema]*
+
+Schema is clear. Both new weapons are for Sciel. Appending to the changelist now.
+
+*[Appended weapons DATA blocks to changelist]*
+
+Done. Ready to fetch pictos-lumina.json next for the Pictos changes.
+
+*[Downloaded pictos-lumina.json]*
+
+*[Inspected pictos-lumina.json schema and stats fields]*
+
+Good — pictos use `pictos[name=X].field` path notation, stats use British spelling (`defence`), and `crit` for crit rate. Writing all three batches now.
+
+*[Appended pictos-lumina DATA blocks to changelist]*
+
+Pictos done. Now fetching playthrough.json for the inventory update.
+
+*[Downloaded playthrough.json]*
+
+*[Inspected inventory section]*
+
+Field names confirmed. Appending inventory blocks.
+
+*[Appended playthrough.json inventory DATA blocks to changelist]*
+
+DATA blocks done. That covers all four JSON files. Ready to move on to FILE blocks — the Markdown changes. Shall I fetch `characters/maelle.md` first?
+
+---
+
+**Matt:** Yes, fetch Maelle's file and work those bits out, then you should have enough detail to go back to the Lumina question.
+
+**Claude:** *[Downloaded maelle.md]*
+
+*[Read maelle.md — truncated middle section also read]*
+
+Good, full picture now. Three FILE: blocks needed for maelle.md: replace Key Synergies, replace Key Decisions, insert Solo At Death's Door subsection.
+
+The Build Options table also needs a new row — flagged as needing manual update.
+
+*[Appended three maelle.md FILE blocks to changelist]*
+
+Maelle's FILE blocks done. Now, on the **Lumina question** — [full analysis of core suite vs Maelle's build presented, leading to recommendation for Option C scoped or Option D]
+
+---
+
+**Matt:** Maelle and Monoco are variant builds, so they don't go into the data files. That's why they are so different from the core. Leave their exclusions and additions untouched for now. It's the other three that need to be logged.
+
+**Claude:** That's the key clarification. For characters.json, Maelle and Monoco's lumina fields stay untouched — only Verso, Lune, and Sciel need updating.
+
+[Full analysis of Verso/Lune/Sciel Lumina vs core suite presented — exclusions and extras listed for each character]
+
+Any corrections before I write these to the changelist?
+
+---
+
+**Matt:** No, that looks ok. Thanks.
+
+**Claude:** *[Appended Lumina DATA blocks for Verso, Lune, Sciel to changelist]*
+
+Done. All DATA blocks are now written. Remaining FILE blocks needed: monoco.md, verso.md, overview Section 6. Then APPEND for chat-index.md. Shall I fetch monoco.md next?
+
+---
+
+**Matt:** Yes, continue
+
+**Claude:** *[Downloaded monoco.md]*
+
+*[Read monoco.md]*
+
+Good, clear structure. Inserting Death Bomb Variant after Alternative skills.
+
+*[Appended monoco.md Death Bomb variant FILE block to changelist]*
+
+Now fetching verso.md for the two notes.
+
+*[Downloaded verso.md]*
+
+*[Read verso.md]*
+
+Before writing the Verso FILE blocks, I need to flag an inconsistency. The Clea's Life ACTION from section 03 says Clea's Life was chosen over Confident + Confident Fighter and Confident Fighter was removed. But the final Verso build in section 10 uses Confident Fighter (15LP) as part of the At Death's Door low-health damage stack — and no Clea's Life in the Lumina list at all.
+
+So the Clea's Life decision was made for the interim standard build but was then superseded in the same session when the At Death's Door Frenzy build replaced it. Adding the note as written would be misleading about the current state.
+
+Three options: Drop it / Add it with a caveat / Add it as-is. What would you like to do?
+
+---
+
+**Matt:** Ok, good point. Add this to Verso's Key Decisions section:
+
+* **At Death's Door vs Clea's Life:** There are two ways of handling the reduction to 1HP from Overload — Clea's Life restores health to full immediately on the following Cheater turn and removes the risk from the health reduction. Alternatively, At Death's Door and several other Lumina provide huge damage boosts when on low health. For most battles, the At Death's Door option is best, as fights are over quickly due to huge damage spikes from Steeled Strike and End Bringer. For some tough boss battles, the Clea's Life option may be required for survivability.
+
+**Claude:** And for the Empowering Parry note — that fits naturally in Key Decisions too as a one-liner. I'll add both bullets at the end of the section. Writing the block now.
+
+*[Appended verso.md Key Decisions FILE block to changelist]*
+
+Done. Now fetching the overview file for the Section 6 changes.
+
+*[Downloaded claude-expedition33.md]*
+
+*[Read overview file]*
+
+Section 6 is clear. Changes: remove three resolved questions (Verso Confident vs Clea's Life, Greater Powerful for Maelle, Empowering Parry for Verso); two add-then-close pairs cancel out; First Life stays.
+
+One flag: should the Lumina core update work be noted as an open question here?
+
+And should Shell/Defenceless and Last Chance/first-hit confirmations go in Section 5? They're already in maelle.md Key Synergies so probably not needed. Let me know if you disagree.
+
+*[Appended overview Section 6 FILE block to changelist]*
+
+*[Downloaded chat-index.md]*
+
+*[Appended chat-index APPEND block to changelist]*
+
+*[Copied changelist to /mnt/user-data/outputs/chat32-changelist.txt]*
+
+*[Presented chat32-changelist.txt and chat32-index.md]*
+
+Step 4 complete. [Summary of 96 blocks presented, plus notes on manual table updates and deferred Lumina core work]
+
+---
+
+**Matt:** I got an error when applying the changelist:
+
+[Pictos validation conflicts listed — 7 items]
+
+Could you write the required changelist blocks to update data/pictos-lumina.json and I'll copy and paste them into the changelist.
+
+**Claude:** Clear — the `equipped_by` fields in pictos-lumina.json are stale. [7 corrections listed and explained]
+
+Here are the blocks to paste in: [7 DATA blocks for equipped_by fields]
+
+*[Appended 7 equipped_by correction blocks to master changelist]*
+
+Master changelist updated (now 103 blocks). These 7 are entirely my oversight — should have spotted the equipped_by fields when writing the original Pictos blocks.
+
+---
+
+**Matt:** Great, that passed the Pictos validation, but now is struggling on the LP validation:
+
+[LP validation errors listed — Maelle 361 vs 305, Lune 260 vs 226, Monoco 166 vs 175]
+
+Maelle's LP should be set to 305 as the Solo At Death's Door is a variant build, not her main build. Likewise for Monoco, that should be 175. I can change those manually in the changelist.
+
+Why is Lune's LP value not matching?
+
+**Claude:** The validator is computing LP from the data files, so I need to check what it's actually seeing.
+
+*[Inspected core_lumina_suite structure in pictos-lumina.json]*
+
+*[Listed all core suite entries with LP costs]*
+
+*[Simulated validator LP calculation for Lune using main_team core — got 260, not matching 226]*
+
+*[Looked up LP costs for Lune's extras in pictos array]*
+
+[Analysis presented — could not reconcile 226 from available data, asked Matt for further info]
+
+---
+
+**Matt:** I noticed in your thinking you had Lune as a main team character — she's a reserve character, so is based on the reserve team core. Is that the issue?
+
+**Claude:** *[Simulated validator using reserve_team core for Lune — computed 226, confirmed match]*
+
+Confirmed — the validator picks up Recovery (10LP) from the reserve core as active because it's not in Lune's exclusions, and misses Energy Master (40LP), Dead Energy I (2LP), Dead Energy II (2LP) because they're in the main_team core only and aren't in her extras.
+
+The fix: Add Recovery to lumina_core_exclusions; remove Anti-Blight; add Energy Master, Dead Energy I, Dead Energy II to lumina_extras.
+
+[Corrected DATA blocks provided for Lune.lumina_core_exclusions and Lune.lumina_extras]
+
+---
+
+**Matt:** Ok, everything else checks out. What is the next step in the wrap process?
+
+**Claude:** The procedure was cleared from context — let me re-read it from disk before answering.
+
+*[Read /home/claude/session-procedure.md]*
+
+Step 5 — Complete transcript.
