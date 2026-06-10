@@ -34,7 +34,6 @@ Chat between Matt and Claude.
 ### [Part 3](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat32/chat32-part3.md)
 
 - **[Pre-Close Review — Testing and Tidy-Up](chat32.md#pre-close-review--testing-and-tidy-up)** — Claude flags several unresolved items before close: two mechanic questions (Shell/Defenceless interaction, first-hit Lumina timing with Last Chance) and a stale inventory ACTION. Matt tests both in-game: Last Chance confirmed not to consume the first hit bonus (9.9m → 18.1m); Lithum Shell confirmed to immediately overwrite Stendhal's Defenceless, giving net ~30% damage reduction. Healing Death removed from Monoco. Inventory updated to post-grind values (1.8m Chroma, 132 CoL). Both open questions closed with empirical data.
-
 - **[Session Wrap](chat32.md#session-wrap)** — Wrap session for Chat 32. Index file created, 12 sections titled and described, changelist generated (103 blocks across characters.json, weapons.json, pictos-lumina.json, playthrough.json, and four Markdown files). Several changelist corrections applied: 7 equipped_by conflicts fixed, LP values corrected for Maelle/Monoco, Lune's Lumina exclusions/extras corrected after identifying reserve vs main team core mismatch.
 
 *Generated: 2026-06-10*
