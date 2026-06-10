@@ -18,7 +18,7 @@ VALUE: null
 DATA: data/characters.json
 PATH: Maelle.stats_modified
 OP: SET
-VALUE: {"health": 8588, "attack": 11583, "speed": 2951, "defence": 182, "crit": "41%", "_note": "Stats with Lithum (33) equipped. See Solo At Death's Door variant for full Pictos/Lumina build."}
+VALUE: {"health": 8588, "attack": 11583, "speed": 2951, "defence": 182, "crit": "41%", "_note": "Stats with Lithum (33) equipped and Energising Turn (L31), Energy Master (L30), Cheater (L24) Pictos for Solo At Death's Door variant."}
 
 DATA: data/characters.json
 PATH: Maelle.lp_total
@@ -28,7 +28,7 @@ VALUE: 361
 DATA: data/characters.json
 PATH: Maelle.lp_used
 OP: SET
-VALUE: 361
+VALUE: 305
 
 DATA: data/characters.json
 PATH: Maelle.skills_equipped
@@ -158,7 +158,7 @@ VALUE: null
 DATA: data/characters.json
 PATH: Monoco.stats_modified
 OP: SET
-VALUE: {"health": 5177, "attack": 11097, "speed": 1553, "defence": 1515, "crit": "167%", "_note": "Stats with Joyaro (33) equipped. See Death Bomb variant for full Pictos/Lumina build."}
+VALUE: {"health": 5177, "attack": 11097, "speed": 1553, "defence": 1515, "crit": "167%", "_note": "Stats with Joyaro (33) equipped and only Longer Break (L29), The One (L31) Pictos for Death Bomb variant."}
 
 DATA: data/characters.json
 PATH: Monoco.lp_total
@@ -168,7 +168,7 @@ VALUE: 186
 DATA: data/characters.json
 PATH: Monoco.lp_used
 OP: SET
-VALUE: 166
+VALUE: 175
 
 DATA: data/characters.json
 PATH: Monoco.skills_equipped
@@ -185,6 +185,42 @@ DATA: data/weapons.json
 PATH: Sciel
 OP: ADD
 VALUE: {"name": "Direton", "level": 14, "power": 1598, "element": "Earth", "scaling": "Defence C, Agility B", "obtained": true, "effects": [{"level": 4, "description": "+1 AP per Moon charge on turn start."}, {"level": 10, "description": "Base Attack gives 1 Moon charge."}, {"level": 20, "description": "(Locked) During Twilight, Base Attack consumes all AP, applies 1 Foretell, and deals 50% increased damage per AP consumed."}]}
+
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Accelerating Tint].obtained
+OP: SET
+VALUE: true
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Charging Mark].obtained
+OP: SET
+VALUE: true
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Protecting Attack].obtained
+OP: SET
+VALUE: true
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Powerful Shield].obtained
+OP: SET
+VALUE: true
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Powerful Heal].obtained
+OP: SET
+VALUE: true
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Shell On Rush].obtained
+OP: SET
+VALUE: true
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Marking Break].obtained
+OP: SET
+VALUE: true
 
 
 DATA: data/pictos-lumina.json
@@ -432,17 +468,13 @@ Net effect: full AP reset + Virtuose stance + full HP in a single 1 AP move. Ful
 
 Use Last Chance as a deliberate rotation tool rather than an emergency skill. Practical usage: when AP is low and you want to re-enter Virtuose with full resources.
 
-**Caveats:**
-- Stendhal applies Defenceless to Maelle on use. If Stendhal is used in the same turn sequence before Last Chance, Maelle has both HP-1 and Defenceless simultaneously — a vulnerability window if the enemy gets a turn between moves. Rare with good turn economy but plan accordingly.
-- If an enemy has any interrupt-style mechanic that allows them to act during a Cheater bonus turn, Clea's Life will not fire (condition fails if damage taken). No known enemies in the current content do this.
-
 **Lithum Shell-Powerful loop (Chat 32):**
 
 Lithum applies Shell when leaving Virtuose Stance (L20). Powerful On Shell converts that Shell to Powerful. Greater Powerful then amplifies it by +15%, giving a total ~40% Powerful damage bonus. This fires reliably on every Last Chance rotation and the uplift is meaningful in practice. Note: Energising Shell, Powerful On Shell, and Greater Powerful are all Lithum-dependent — remove them if swapping weapons.
 
-**Shell/Defenceless interaction confirmed (Chat 32):**
+**Lithum Shell overrides Defenceless (Chat 32):**
 
-Stendhal applies Defenceless to Maelle, but in the standard Last Chance rotation Lithum's Shell (triggered on leaving Virtuose Stance) immediately overwrites it. Net result: Shell provides approximately 30% damage reduction below baseline and greatly dampens crit amplification — the rotation is net positive defensively. Empirically confirmed: baseline incoming 1637 / Defenceless 2046 (+25%) / Shell after Last Chance 1146 (−30%). Stendhal used without prior Virtuose (no Shell trigger) leaves Maelle Defenceless — avoid this in the standard build.
+Stendhal applies Defenceless to Maelle, but in the standard Last Chance rotation Lithum's Shell (triggered on leaving Virtuose Stance) immediately overwrites it. Net result: Shell provides approximately 30% damage reduction below baseline — the rotation is net positive defensively. Empirically confirmed: baseline incoming 1637 / Defenceless 2046 (+25%) / Shell after Last Chance 1146 (−30%). Stendhal used without prior Virtuose (no Shell trigger) leaves Maelle Defenceless — avoid this in the standard build.
 
 FILE: characters/maelle.md
 SECTION: ## Key Decisions
@@ -452,13 +484,12 @@ CONTENT:
 - **Lithum over all alternatives:** Strictly better than Medalum for parry-competent players. Same scaling = no respec. The Reacher must be completed before Renoir — choose "Truth" for Gustave resurrection path and Relationship Level 7.
 - **Lithum confirmed — Medalum obsolete for Stendhal builds (Chat 32):** Community research confirms Medalum's L20 double-damage was a bug, fixed in Patch 1.2.3 (now doubles only burn damage). For a single-hit Stendhal build without burn stacking, Medalum offers no meaningful advantage. Lithum advantages: Void element (no enemy resistances), Agility/Luck scaling matches Maelle's attribute spread, reliable Shell-Powerful loop. Do not upgrade Medalum unless switching to a burn-stacking build.
 - **Solo At Death's Door build (Chat 32):** High-risk high-reward variant using Monoco as self-destructing support (Auto Death at battle start). Maelle runs At Death's Door (×1.5 below 10% HP) + Inverted Affinity (×1.5, blocks healing) + Confident Fighter (×1.3) for approximately 2.3× damage advantage over Clea's Life build. LP 361/361. Peak recorded: 21m damage. See Solo At Death's Door build subsection.
-- **Glaisum as Lithum alternative:** Same scaling as Medalum/Lithum (Defence + Agility), no respec, higher base power (3461). More defensive/supportive (ally heals, self-cleanse) vs Lithum's offensive (Mark persistence, Virtuose on Counterattack). Lithum preferred for standard DPS build; Glaisum worth considering if survivability becomes a priority.
+- **Glaisum as Lithum alternative:** Same scaling as Medalum/Lithum (Defence + Agility), no respec, higher base power. More defensive/supportive (ally heals, self-cleanse) vs Lithum's offensive (Mark persistence, Virtuose on Counterattack). Lithum preferred for standard DPS build; Glaisum worth considering if survivability becomes a priority.
 - **Stalum for burn-stacking:** Core weapon for the burn-stacking build path. Not current priority but available at level 23 when ready.
 - **Cheater via Lumina:** All three endgame team members use Cheater via Lumina (40 LP) rather than Pictos. For solo fights, swap Cheater to Pictos to free 40 LP.
 - **Phantom Strike over Fencer's Flurry:** Phantom Strike replaced Fencer's Flurry. Better damage, adds Defensive stance utility and Gradient generation. AoE function preserved.
-- **Solo Lumina build:** Swap Cheater to Pictos + borrow Second Chance from Verso + remove Teamwork/Breaking Counter/Dead Energy I+II + add Last Stand suite + Recovery + Energising Attack I.
 - **Gradient Break over Burning Break for solo:** For The Reacher, Gradient Break chosen for speed advantage (1821 vs 1397) to handle Alicia's Rush phase at 25% HP. Second Chance covers survivability.
-- **Licorum over Lithum (pending evaluation):** Licorum L4 and Frenzy Pictos stack multiplicatively (×1.21 per hit compound, confirmed Chat 31). Evaluate for multi-hit builds once Frenzy is acquired. Verify Licorum scaling attributes and whether a respec from Lithum is required before switching.
+- **Licorum for multi-hit builds only:** Licorum L4 and Frenzy Pictos stack multiplicatively (×1.21 per hit compound, confirmed Chat 31). Doesn't help for Stendhal or Gommage, so only really useful for a different playstyle.
 
 FILE: characters/maelle.md
 SECTION: ## Build Options > ### Solo At Death's Door
@@ -466,7 +497,7 @@ AFTER: ### Burn-stacking
 CONTENT:
 ### Solo At Death's Door
 
-High-damage solo build using Monoco as a self-destructing support. Monoco's Auto Death fires at battle start (before any turns), applying Death Bomb damage and a death suite of buffs. Maelle operates at near-zero HP to maximise her low-health damage multipliers.
+High-damage solo build using Monoco as a self-destructing support. Monoco's Auto Death fires at battle start (before any turns), applying Death Bomb damage and a death suite of buffs. Maelle operates at 1HP to maximise her low-health damage multipliers.
 
 **Pictos:** Energising Turn (L31) / Energy Master (L30) / Cheater (L24)
 
@@ -485,13 +516,13 @@ High-damage solo build using Monoco as a self-destructing support. Monoco's Auto
 - Augmented First Strike (5LP) — ×1.5 on first hit of battle
 - First Offensive (5LP) — ×1.5 on first hit dealt and taken
 - Last Stand Critical (3LP) — 100% crit chance while fighting alone
-- Powerful Shield (5LP) — ×1.1 per shield on self at time of hit
+- Powerful Shield (5LP) — ×1.1 per shield on self at time of hit (Monoco's Shielding Death provides 3 Shields)
 
 **Active Lumina (full list):** AP Discount (30), Accelerating Last Stand (3), At Death's Door (5), Augmented First Strike (5), Base Shield (20), Breaker (10), Breaking Burn (5), Breaking Counter (3), Breaking Death (5), Burn Affinity (10), Charging Critical (10), Cheater (40, Pictos), Confident Fighter (15), Critical Break (5), Dead Energy I (2), Dead Energy II (2), Dodger (1), Empowering Last Stand (3), Energising Shell (10), Energising Start I (5), Energising Turn (20, Pictos), Energy Master (40, Pictos), Exposing Break (5), First Offensive (5), First Strike (10), Glass Cannon (10), Gradient Fighter (5), Greater Defenceless (15), Greater Powerful (10), Greater Shell (10), Immaculate (10), Inverted Affinity (5), Last Stand Critical (3), Longer Powerful (10), Longer Shell (10), Painted Power (5), Powerful On Shell (10), Powerful Shield (5), Protecting Last Stand (3), Second Chance (40), Shortcut (5), Solo Fighter (1), Survivor (20), Warming Up (15)
 
-**Survivability:** Monoco's death suite (Shielding Death: 3 shields, Protecting Death: Shell, Burning Death: burns for Burn Affinity, Energising Death: +4 AP) fires before Maelle acts. Base Shield adds 1 shield per turn. Protecting Last Stand and Empowering Last Stand add Shell and Powerful while fighting alone. Survivor and Second Chance provide safety nets.
+**Survivability:** Monoco's death suite (Shielding Death: 3 shields, Protecting Death: Shell, Burning Death: burns for Burn Affinity, Energising Death: +4 AP) fires before Maelle acts. Base Shield retains 1 shield per turn. Protecting Last Stand and Lithum L20 provide Shell which reduces damage taken, but this doesn't help while on 1HP. Rely on shields, dodging and parrying, with high speed Pictos so Maelle can finish fights quickly, and Survivor and Second Chance provide safety nets.
 
-**Peak performance:** 21m damage recorded on Stendhal (Chat 32). Versus Simon: 10m (lower due to higher defence and Immaculate/Augmented First Strike lost before acting — First Strike Lumina recommended for fast-acting bosses).
+**Peak performance:** 21m damage recorded on Last Chance + Stendhal (Chat 32).
 
 
 DATA: data/characters.json
@@ -507,12 +538,12 @@ VALUE: [{"name": "AP Discount", "notes": "30LP. Reduces skill AP cost by 1."}, {
 DATA: data/characters.json
 PATH: Lune.lumina_core_exclusions
 OP: SET
-VALUE: [{"name": "Breaking Death", "notes": "Free from Breaking Death Pictos"}, {"name": "Survivor", "notes": "Not used in current build"}, {"name": "Breaker", "notes": "Not used in current build"}, {"name": "Critical Break", "notes": "Not used in current build"}, {"name": "Burning Shots", "notes": "Not used in current build"}, {"name": "Breaking Counter", "notes": "Not used in current build"}, {"name": "Anti-Blight", "notes": "Not used in current build"}]
+VALUE: [{"name": "Breaking Death", "notes": "Free from Breaking Death Pictos"}, {"name": "Survivor", "notes": "Not used in current build"}, {"name": "Breaker", "notes": "Not used in current build"}, {"name": "Critical Break", "notes": "Not used in current build"}, {"name": "Burning Shots", "notes": "Not used in current build"}, {"name": "Breaking Counter", "notes": "Not used in current build"}, {"name": "Recovery", "notes": "Not used in current build"}]
 
 DATA: data/characters.json
 PATH: Lune.lumina_extras
 OP: SET
-VALUE: [{"name": "AP Discount", "notes": "30LP. Reduces skill AP cost by 1."}, {"name": "Accelerating Heal", "notes": "5LP. Rush on healing an ally."}, {"name": "Breaking Attack", "notes": "10LP. Apply Break damage on base attack."}, {"name": "Burn Affinity", "notes": "Free from Burn Affinity Pictos. 25% increased damage against burning targets."}, {"name": "Critical Burn", "notes": "Free from Critical Burn Pictos. 25% increased crit chance on burning targets."}, {"name": "Energising Burn", "notes": "10LP. +1 AP on applying Burn, once per turn."}, {"name": "First Strike", "notes": "10LP. Act first in battle."}, {"name": "Protecting Heal", "notes": "5LP. Shell on healing an ally."}]
+VALUE: [{"name": "AP Discount", "notes": "30LP. Reduces skill AP cost by 1."}, {"name": "Accelerating Heal", "notes": "5LP. Rush on healing an ally."}, {"name": "Breaking Attack", "notes": "10LP. Apply Break damage on base attack."}, {"name": "Burn Affinity", "notes": "Free from Burn Affinity Pictos. 25% increased damage against burning targets."}, {"name": "Critical Burn", "notes": "Free from Critical Burn Pictos. 25% increased crit chance on burning targets."}, {"name": "Energy Master", "notes": "40LP. +5 AP on turn start."}, {"name": "Dead Energy I", "notes": "2LP. +2 AP on death of an ally."}, {"name": "Dead Energy II", "notes": "2LP. +2 AP on death of an ally (stacks with Dead Energy I)."}, {"name": "Energising Burn", "notes": "10LP. +1 AP on applying Burn, once per turn."}, {"name": "First Strike", "notes": "10LP. Act first in battle."}, {"name": "Protecting Heal", "notes": "5LP. Shell on healing an ally."}]
 
 DATA: data/characters.json
 PATH: Sciel.lumina_core_exclusions
@@ -523,6 +554,42 @@ DATA: data/characters.json
 PATH: Sciel.lumina_extras
 OP: SET
 VALUE: [{"name": "AP Discount", "notes": "30LP. Reduces skill AP cost by 1."}, {"name": "Accelerating Heal", "notes": "5LP. Rush on healing an ally."}, {"name": "Augmented Counter I", "notes": "Free from Augmented Counter I Pictos."}, {"name": "Breaking Attack", "notes": "10LP. Apply Break damage on base attack."}, {"name": "Charging Alteration", "notes": "10LP. +20% Gradient Charge on applying buffs or debuffs."}, {"name": "Energising Heal", "notes": "10LP. +2 AP on healing an ally."}, {"name": "Energising Shots", "notes": "Free from Energising Shots Pictos."}, {"name": "First Strike", "notes": "10LP. Act first in battle."}, {"name": "Gradient Break", "notes": "5LP. +50% Gradient Charge on Breaking."}, {"name": "Healing Tint Energy", "notes": "1LP. +1 AP on Healing Tint use."}, {"name": "Painter", "notes": "Free from Painter Pictos."}, {"name": "Protecting Heal", "notes": "5LP. Shell on healing an ally."}, {"name": "Recovery", "notes": "10LP. Passive heal on turn start."}]
+
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Breaking Death].equipped_by
+OP: SET
+VALUE: "Lune"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Burning Death].equipped_by
+OP: SET
+VALUE: null
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Confident].equipped_by
+OP: SET
+VALUE: null
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Energy Master].equipped_by
+OP: SET
+VALUE: null
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Sweet Kill].equipped_by
+OP: SET
+VALUE: "Verso"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Alternating Critical].equipped_by
+OP: SET
+VALUE: "Verso"
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Augmented Counter I].equipped_by
+OP: SET
+VALUE: "Sciel"
 
 
 FILE: characters/monoco.md
@@ -537,10 +604,10 @@ Self-destructing support build designed to pair with solo Maelle (At Death's Doo
 
 **Pictos:** Empty slot / Longer Break (L29) / The One (L31)
 
-- The One reduces max HP to 1, guaranteeing Auto Death fires even if Monoco somehow survives to his turn.
-- Longer Break extends break duration for any break Monoco applies before dying.
+- The One provides over 100% crit chance to increase Death Bomb and Burning Death damage. It also reduces max HP to 1, which is fine as he is trying to die anyway.
+- Longer Break extends break duration from Breaking Death (not sure this always fires as the death wasn't caused by an enemy).
 
-**Skills:** Orphelin Cheers (3), Stalact Punches (4), Potier Energy (4), Moissonneuse Vendange (5), Chapelier Slash (7), Sakapatate Fire (9)
+**Skills:** Irrelevant
 
 **LP:** 166/186 (20 spare)
 
@@ -555,10 +622,10 @@ Self-destructing support build designed to pair with solo Maelle (At Death's Doo
 **Active Lumina (full list):** Auto Death (1), Breaking Death (5), Burning Death (5), Death Bomb (5), Energising Death (5), Greater Defenceless (15), Greater Powerful (10), Greater Powerless (15), Greater Rush (10), Greater Shell (10), Greater Slow (15), Longer Break (10, Pictos), Longer Burn (15), Longer Powerful (10), Longer Rush (10), Longer Shell (10), Painted Power (5), Protecting Death (5), Shielding Death (10), The One (1, Pictos)
 
 **Notes:**
-- Painted Power (5LP) enables Death Bomb to exceed the 9,999 damage cap on a critical hit. At 167% crit rate this fires often.
+- Painted Power (5LP) enables Death Bomb to exceed the 9,999 damage cap.
 - Longer Burn (15LP) extends Burning Death's burns — more turns of Burn Affinity uptime for Maelle.
 - Healing Death removed: confirmed not useful when Maelle is Inverted (healing would convert to damage). Removed from build.
-- Greater Defenceless, Greater Powerless, Greater Rush, Greater Slow are utility debuff/buff amplifiers; their value depends on whether Monoco's other attacks land before dying — most are relevant only if Monoco survives briefly, which The One prevents. Review if LP is needed elsewhere.
+- Greater Defenceless, Greater Powerless, Greater Rush, Greater Slow are utility debuff/buff amplifiers; not currently used.
 
 
 FILE: characters/verso.md
@@ -570,10 +637,9 @@ CONTENT:
 - **Marking Shot over Defiant Strike:** Same 100% Mark. Defiant Strike costs 30% HP per use — unacceptable at ~20% parry rate. Marking Shot: 2 AP, no HP cost.
 - **Strike Storm over Defiant Strike (damage slot):** More damage, synergises with Fortune's Fury. Mark handled by Marking Shot.
 - **Phantom Stars retained:** Essential for AoE in Visages and multi-enemy areas. Useless in 1v1 — never use in boss fights.
-- **Steeled Strike deferred:** Available but requires Cheater Pictos for safe use. Obtain Cheater (Sprong) first.
 - **Energising Break rotation confirmed (Chat 31):** Perfect Break (7 AP, 5 at B Rank) → Energising Break trigger (+3 AP via Energy Master) → Cheater turn → End Bringer (9 AP) on stunned target. Very effective — use when stun is available as an alternative to Steeled Strike burst.
-- **Frenzy Pictos (obtained, Verso's Drafts):** Stacks compound ×1.1 per Steeled Strike hit; Simoso copies do not advance the stack. Ceiling: ×3.14 at hit 13. Strong multiplier for endgame burst — evaluate adding to Pictos or Lumina loadout.
-- **Powerful Shield (to acquire):** Purchase from Endless Night Sanctuary merchant. 5LP. +10% damage per Shield Point on self — effectively permanent with Base Shield active. High value at low LP cost.
+- **Frenzy Pictos:** Stacks compound ×1.1 per Steeled Strike hit; Simoso copies do not advance the stack. Ceiling: ×3.14 at hit 13. Strong multiplier for endgame burst.
+- **Powerful Shield:** 5LP. +10% damage per Shield Point on self — effectively permanent with Base Shield active. High value at low LP cost.
 - **At Death's Door vs Clea's Life (Chat 32):** There are two ways of handling the reduction to 1HP from Overload — Clea's Life restores health to full immediately on the following Cheater turn and removes the risk from the health reduction. Alternatively, At Death's Door and several other Lumina provide huge damage boosts when on low health. For most battles, the At Death's Door option is best, as fights are over quickly due to huge damage spikes from Steeled Strike and End Bringer. For some tough boss battles, the Clea's Life option may be required for survivability.
 - **Empowering Parry removed (Chat 32):** 5LP Lumina removed from loadout — not firing often enough in Endless Tower to justify the LP cost.
 
@@ -588,5 +654,4 @@ CONTENT:
 
 APPEND: chats/chat-index.md
 CONTENT:
-| Chat 32 | [Formatted](chat32/chat32-index.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat32/chat32-index.md) | [chat32.md](chat32/chat32.md) | Endgame build updates: all five characters levelled to 99 and builds finalised; Solo At Death's Door variant for Maelle (21m hit) and Death Bomb variant for Monoco developed and tested; Lithum/Medalum comparison resolved; Shell-Powerful loop and Shell/Defenceless interaction empirically confirmed. |
-
+| Chat 32 | [Formatted](chat32/chat32-index.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat32/chat32-index.md) | [chat32.md](chat32/chat32.md) | Endgame build updates: all five characters levelled to 99 and builds finalised; Solo At Death's Door variant for Maelle and Death Bomb variant for Monoco; Shell-Powerful loop and Shell/Defenceless interaction empirically confirmed.  |
