@@ -672,36 +672,45 @@
     },
     "weapon_equipped": "Joyaro",
     "pictos_equipped": [
-      "Longer Shell",
       "Augmented First Strike",
-      "Cheater"
+      "Charging Critical",
+      "Pro Retreat"
     ],
-    "lp_total": 274,
-    "lp_used": 274,
+    "lp_total": 337,
+    "lp_used": 337,
     "lumina_core_exclusions": [],
     "lumina_extras": [
       {
-        "name": "Staggering Attack",
-        "notes": "Break damage on base attack — small break bar contribution"
+        "name": "Breaking Attack",
+        "notes": "Support expansion. Apply Break damage on base attack if Break bar is full."
+      },
+      {
+        "name": "Breaking Counter",
+        "notes": "Support expansion. 50% increased Break damage on Counterattack."
+      },
+      {
+        "name": "Recovery",
+        "notes": "Support expansion. Recovers 10% Health on turn start."
       },
       {
         "name": "Break Specialist",
-        "notes": "50% increased Break damage, 20% reduced base damage — net positive for break-focused role"
+        "notes": "Personal addition. 50% increased Break damage, 20% reduced hit damage - net positive given Monoco's role is Break-focused utility, not direct damage."
       },
       {
         "name": "Energising Break",
-        "notes": "Extra AP on breaking an enemy"
-      },
-      {
-        "name": "Augmented First Strike"
+        "notes": "Personal addition. +3 AP on Breaking a target."
       },
       {
         "name": "Empowering Break",
-        "notes": "3LP. Gain Powerful on Breaking a target."
+        "notes": "Personal addition. Gain Powerful on Breaking a target."
       },
       {
         "name": "Gradient Break",
-        "notes": "Earn 50% of Gradient Charge when breaking an enemy."
+        "notes": "Personal addition. +50% Gradient Charge on Breaking a target."
+      },
+      {
+        "name": "Staggering Attack",
+        "notes": "Personal addition. 50% increased Break damage on Base Attack."
       }
     ],
     "skills_equipped": [
@@ -710,7 +719,7 @@
       "Potier Energy",
       "Moissonneuse Vendange",
       "Chapelier Slash",
-      "Sakapatate Fire"
+      "Grosse Tête Whack"
     ],
     "skills_learned": [
       "Abbest Wind",

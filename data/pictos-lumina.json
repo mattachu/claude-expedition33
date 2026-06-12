@@ -562,7 +562,7 @@
       "effect": "+20% of a Gradient Charge on Critical Hit. Once per turn.",
       "lp_cost": 10,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Monoco",
       "level": 31,
       "stats": {
         "defence": 1891,
@@ -624,7 +624,7 @@
       "effect": "Extra turn after using a skill, once per turn",
       "lp_cost": 40,
       "obtained": true,
-      "equipped_by": "Monoco",
+      "equipped_by": null,
       "level": 24,
       "stats": {
         "health": 1198,
@@ -1773,7 +1773,7 @@
       "effect": "On applying Shell, its duration is increased by 2.",
       "lp_cost": 10,
       "obtained": true,
-      "equipped_by": "Monoco",
+      "equipped_by": null,
       "level": 29,
       "stats": {
         "health": 2757,
@@ -1962,7 +1962,7 @@
       "effect": "Allows Flee to be instantaneous.",
       "lp_cost": 40,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Monoco",
       "notes": "Rewarded by Sastro for finding all 9 Lost Gestrals",
       "level": 32,
       "stats": {

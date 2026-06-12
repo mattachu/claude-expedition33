@@ -160,7 +160,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Charging Attack | +15% of a Gradient Charge on Base Attack. | 7 |  |  |  |
 | ✓ | Charging Burn | +20% of a Gradient Charge on applying Burn. Once per turn. | 10 | Health: 3152, Speed: 639 |  |  |
 | ✓ | Charging Counter | +10% of a Gradient Charge on Counterattack. | 10 |  |  |  |
-| ✓ | Charging Critical | +20% of a Gradient Charge on Critical Hit. Once per turn. | 10 | Defence: 1891, Crit: 35% |  |  |
+| ✓ | Charging Critical | +20% of a Gradient Charge on Critical Hit. Once per turn. | 10 | Defence: 1891, Crit: 35% | Monoco |  |
 | ✓ | Charging Mark | +20% of a Gradient Charge on hitting a Marked target. Once per turn. | 10 |  |  | mark |
 | ✓ | Charging Stun | +5% of a Gradient Charge on hitting a Stunned enemy. | 5 |  |  |  |
 | ✓ | Charging Tint | +5% of a Gradient Charge on using an item. | 2 |  |  | support |
@@ -208,7 +208,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
-| ✓ | Cheater | Extra turn after using a skill, once per turn | 40 | Health: 1198, Speed: 400 | Monoco |  |
+| ✓ | Cheater | Extra turn after using a skill, once per turn | 40 | Health: 1198, Speed: 400 |  |  |
 | ✓ | Combo Attack I | Base Attack has 1 extra hit. | 10 |  |  |  |
 | ✓ | Combo Attack II | Base Attack has 1 extra hit. | 20 | Speed: 836, Crit: 16% |  |  |
 | ✓ | Combo Attack III | Base attack has 1 extra hit | 30 | Speed: 619, Crit: 14% |  |  |
@@ -249,7 +249,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Draining Cleanse | Consume 1AP to prevent Status Effect application, if possible | 15 | Health: 2000, Defence: 324 |  |  |
 | ✓ | Greater Shell | +10% to Shell damage reduction. | 10 |  |  |  |
 | ✓ | In Medias Res | +3 Shields on Battle Start, but max Health is halved. | 10 | Defence: 1310, Crit: 13% |  |  |
-| ✓ | Longer Shell | On applying Shell, its duration is increased by 2. | 10 | Health: 2757, Defence: 1572 | Monoco |  |
+| ✓ | Longer Shell | On applying Shell, its duration is increased by 2. | 10 | Health: 2757, Defence: 1572 |  |  |
 | ✓ | Protecting Attack | Gain Shell for 1 turn on Base Attack. | 10 |  |  |  |
 | ✓ | Protecting Shots | 20% chance to gain Shell on Free Aim shot. | 3 | Health: 4869, Defence: 301 |  | shots |
 | ✓ | Protecting Tint | Healing Tints also apply Shell | 5 | Health: 1403, Defence: 681 |  | support |
@@ -316,7 +316,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
 | ✓ | Painter | Converts all Physical damage to Void damage. | 10 | Speed: 519, Crit: 31% |  |  |
-| ✓ | Pro Retreat | Allows Flee to be instantaneous. | 40 | Health: 2830, Speed: 574 |  |  |
+| ✓ | Pro Retreat | Allows Flee to be instantaneous. | 40 | Health: 2830, Speed: 574 | Monoco |  |
 | ✓ | The One | Max Health is reduced to 1 | 1 | Crit: 108% |  |  |
 
 ---

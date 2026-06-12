@@ -83,11 +83,11 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 ### Monoco
 
 <!-- GENERATED:START characters:Monoco:Pictos -->
-| Slot | Pictos                 | Level | Stat Bonus                  | Effect                                                  |
-|------|------------------------|-------|-----------------------------|---------------------------------------------------------|
-| 1    | Longer Shell           | 29    | Health +2757, Defence +1572 | On applying Shell, its duration is increased by 2.      |
-| 2    | Augmented First Strike | 31    | Speed +1008, Crit +18%      | 50% increased damage on the first hit. Once per battle. |
-| 3    | Cheater                | 24    | Health +1198, Speed +400    | Extra turn after using a skill, once per turn           |
+| Slot | Pictos                 | Level | Stat Bonus               | Effect                                                    |
+|------|------------------------|-------|--------------------------|-----------------------------------------------------------|
+| 1    | Augmented First Strike | 31    | Speed +1008, Crit +18%   | 50% increased damage on the first hit. Once per battle.   |
+| 2    | Charging Critical      | 31    | Defence +1891, Crit +35% | +20% of a Gradient Charge on Critical Hit. Once per turn. |
+| 3    | Pro Retreat            | 32    | Health +2830, Speed +574 | Allows Flee to be instantaneous.                          |
 <!-- GENERATED:END -->
 
 ---
@@ -257,14 +257,16 @@ Each character has the core set, then applies the Lumina adjustments below, with
 ### Monoco
 
 <!-- GENERATED:START characters:Monoco:Lumina:adjustments -->
-| Lumina                 | Change | LP | Notes                                                                                     |
-|------------------------|--------|----|-------------------------------------------------------------------------------------------|
-| Staggering Attack      | Added  | 1  | Break damage on base attack — small break bar contribution                                |
-| Break Specialist       | Added  | 1  | 50% increased Break damage, 20% reduced base damage — net positive for break-focused role |
-| Energising Break       | Added  | 3  | Extra AP on breaking an enemy                                                             |
-| Augmented First Strike | Added  | —  |                                                                                           |
-| Empowering Break       | Added  | 3  | 3LP. Gain Powerful on Breaking a target.                                                  |
-| Gradient Break         | Added  | 5  | Earn 50% of Gradient Charge when breaking an enemy.                                       |
+| Lumina            | Change | LP | Notes                                                                                                                                                 |
+|-------------------|--------|----|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Breaking Attack   | Added  | 10 | Support expansion. Apply Break damage on base attack if Break bar is full.                                                                            |
+| Breaking Counter  | Added  | 3  | Support expansion. 50% increased Break damage on Counterattack.                                                                                       |
+| Recovery          | Added  | 10 | Support expansion. Recovers 10% Health on turn start.                                                                                                 |
+| Break Specialist  | Added  | 1  | Personal addition. 50% increased Break damage, 20% reduced hit damage - net positive given Monoco's role is Break-focused utility, not direct damage. |
+| Energising Break  | Added  | 3  | Personal addition. +3 AP on Breaking a target.                                                                                                        |
+| Empowering Break  | Added  | 3  | Personal addition. Gain Powerful on Breaking a target.                                                                                                |
+| Gradient Break    | Added  | 5  | Personal addition. +50% Gradient Charge on Breaking a target.                                                                                         |
+| Staggering Attack | Added  | 1  | Personal addition. 50% increased Break damage on Base Attack.                                                                                         |
 <!-- GENERATED:END -->
 
 ---

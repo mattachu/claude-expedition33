@@ -118,11 +118,11 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 ## Pictos
 
 <!-- GENERATED:START characters:Monoco:Pictos -->
-| Slot | Pictos                 | Level | Stat Bonus                  | Effect                                                  |
-|------|------------------------|-------|-----------------------------|---------------------------------------------------------|
-| 1    | Longer Shell           | 29    | Health +2757, Defence +1572 | On applying Shell, its duration is increased by 2.      |
-| 2    | Augmented First Strike | 31    | Speed +1008, Crit +18%      | 50% increased damage on the first hit. Once per battle. |
-| 3    | Cheater                | 24    | Health +1198, Speed +400    | Extra turn after using a skill, once per turn           |
+| Slot | Pictos                 | Level | Stat Bonus               | Effect                                                    |
+|------|------------------------|-------|--------------------------|-----------------------------------------------------------|
+| 1    | Augmented First Strike | 31    | Speed +1008, Crit +18%   | 50% increased damage on the first hit. Once per battle.   |
+| 2    | Charging Critical      | 31    | Defence +1891, Crit +35% | +20% of a Gradient Charge on Critical Hit. Once per turn. |
+| 3    | Pro Retreat            | 32    | Health +2830, Speed +574 | Allows Flee to be instantaneous.                          |
 <!-- GENERATED:END -->
 
 Longer Shell's extension effect fires when Lune uses Healing Light (Protecting Heal Lumina applies Shell on heal).
@@ -137,82 +137,78 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 
 ### LP Budget
 <!-- GENERATED:START characters:Monoco:LP -->
-- **Current capacity:** 274 LP
-- **Used:** 274 LP
+- **Current capacity:** 337 LP
+- **Used:** 337 LP
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Lumina Adjustments
 
 <!-- GENERATED:START characters:Monoco:Lumina:adjustments -->
-| Lumina                 | Change | LP | Notes                                                                                     |
-|------------------------|--------|----|-------------------------------------------------------------------------------------------|
-| Staggering Attack      | Added  | 1  | Break damage on base attack — small break bar contribution                                |
-| Break Specialist       | Added  | 1  | 50% increased Break damage, 20% reduced base damage — net positive for break-focused role |
-| Energising Break       | Added  | 3  | Extra AP on breaking an enemy                                                             |
-| Augmented First Strike | Added  | —  |                                                                                           |
-| Empowering Break       | Added  | 3  | 3LP. Gain Powerful on Breaking a target.                                                  |
-| Gradient Break         | Added  | 5  | Earn 50% of Gradient Charge when breaking an enemy.                                       |
+| Lumina            | Change | LP | Notes                                                                                                                                                 |
+|-------------------|--------|----|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Breaking Attack   | Added  | 10 | Support expansion. Apply Break damage on base attack if Break bar is full.                                                                            |
+| Breaking Counter  | Added  | 3  | Support expansion. 50% increased Break damage on Counterattack.                                                                                       |
+| Recovery          | Added  | 10 | Support expansion. Recovers 10% Health on turn start.                                                                                                 |
+| Break Specialist  | Added  | 1  | Personal addition. 50% increased Break damage, 20% reduced hit damage - net positive given Monoco's role is Break-focused utility, not direct damage. |
+| Energising Break  | Added  | 3  | Personal addition. +3 AP on Breaking a target.                                                                                                        |
+| Empowering Break  | Added  | 3  | Personal addition. Gain Powerful on Breaking a target.                                                                                                |
+| Gradient Break    | Added  | 5  | Personal addition. +50% Gradient Charge on Breaking a target.                                                                                         |
+| Staggering Attack | Added  | 1  | Personal addition. 50% increased Break damage on Base Attack.                                                                                         |
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Monoco:Lumina -->
-| Lumina                 | LP | Notes                                                                                     |
-|------------------------|----|-------------------------------------------------------------------------------------------|
-| AP Discount            | 30 | Reduces skill AP cost by 1.                                                               |
-| Aegis Revival          | 5  | +1 Shield on being revived.                                                               |
-| Augmented First Strike | —  | FREE from Augmented First Strike Pictos                                                   |
-| Base Shield            | 20 | Grants 1 Shield HP buffer per turn.                                                       |
-| Break Specialist       | 1  | 50% increased Break damage, 20% reduced base damage — net positive for break-focused role |
-| Breaker                | 10 | 25% increased Break damage.                                                               |
-| Breaking Burn          | 5  | 25% increased Break damage on Burning enemies.                                            |
-| Breaking Death         | 5  | Fully charge enemy break bar on death.                                                    |
-| Cheater                | —  | FREE from Cheater Pictos                                                                  |
-| Critical Break         | 5  | 25% increased Break damage on Critical hits.                                              |
-| Dodger                 | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                                                |
-| Empowering Break       | 3  | 3LP. Gain Powerful on Breaking a target.                                                  |
-| Energising Break       | 3  | Extra AP on breaking an enemy                                                             |
-| Energising Start I     | 5  | +1 AP on battle start. Boosted by Energy Master.                                          |
-| Energising Turn        | 20 | +1 AP on turn start. Main AP flow generator; boosted by Energy Master.                    |
-| Energy Master          | 40 | Every AP gain is increased by 1.                                                          |
-| First Strike           | 10 | Act first in battle.                                                                      |
-| Gradient Break         | 5  | Earn 50% of Gradient Charge when breaking an enemy.                                       |
-| Painted Power          | 5  | Damage can exceed 9,999. Essential for all characters from Act 3 onwards.                 |
-| Protecting Death       | 5  | Allies gain Shell on death.                                                               |
-| SOS Power              | 5  | Apply Powerful when falling below 50% Health.                                             |
-| SOS Rush               | 5  | Apply Rush when falling below 50% Health.                                                 |
-| SOS Shell              | 5  | Apply Shell when falling below 50% Health.                                                |
-| Second Chance          | 40 | Revive with 100% Health. Once per battle.                                                 |
-| Shielding Death        | 10 | Allies gain 3 Shield points on death.                                                     |
-| Shortcut               | 5  | Immediately play when falling below 30% Health. Once per battle.                          |
-| Staggering Attack      | 1  | Break damage on base attack — small break bar contribution                                |
-| Survivor               | 20 | Survive fatal damage with 1 Health, once per battle.                                      |
-| Teamwork               | 5  | 10% increased damage while all allies are alive.                                          |
+| Lumina             | LP | Notes                                                                                                                                                 |
+|--------------------|----|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AP Discount        | 30 | Reduces skill AP cost by 1.                                                                                                                           |
+| Aegis Revival      | 5  | +1 Shield on being revived.                                                                                                                           |
+| Base Shield        | 20 | Grants 1 Shield HP buffer per turn.                                                                                                                   |
+| Break Specialist   | 1  | Personal addition. 50% increased Break damage, 20% reduced hit damage - net positive given Monoco's role is Break-focused utility, not direct damage. |
+| Breaker            | 10 | 25% increased Break damage.                                                                                                                           |
+| Breaking Attack    | 10 | Support expansion. Apply Break damage on base attack if Break bar is full.                                                                            |
+| Breaking Burn      | 5  | 25% increased Break damage on Burning enemies.                                                                                                        |
+| Breaking Counter   | 3  | Support expansion. 50% increased Break damage on Counterattack.                                                                                       |
+| Breaking Death     | 5  | Fully charge enemy break bar on death.                                                                                                                |
+| Cheater            | 40 | Extra turn after using a skill, once per turn.                                                                                                        |
+| Critical Break     | 5  | 25% increased Break damage on Critical hits.                                                                                                          |
+| Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                                                                                                            |
+| Empowering Break   | 3  | Personal addition. Gain Powerful on Breaking a target.                                                                                                |
+| Energising Break   | 3  | Personal addition. +3 AP on Breaking a target.                                                                                                        |
+| Energising Start I | 5  | +1 AP on battle start. Boosted by Energy Master.                                                                                                      |
+| Energising Turn    | 20 | +1 AP on turn start. Main AP flow generator; boosted by Energy Master.                                                                                |
+| Energy Master      | 40 | Every AP gain is increased by 1.                                                                                                                      |
+| First Strike       | 10 | Act first in battle.                                                                                                                                  |
+| Gradient Break     | 5  | Personal addition. +50% Gradient Charge on Breaking a target.                                                                                         |
+| Painted Power      | 5  | Damage can exceed 9,999. Essential for all characters from Act 3 onwards.                                                                             |
+| Protecting Death   | 5  | Allies gain Shell on death.                                                                                                                           |
+| Recovery           | 10 | Support expansion. Recovers 10% Health on turn start.                                                                                                 |
+| SOS Power          | 5  | Apply Powerful when falling below 50% Health.                                                                                                         |
+| SOS Rush           | 5  | Apply Rush when falling below 50% Health.                                                                                                             |
+| SOS Shell          | 5  | Apply Shell when falling below 50% Health.                                                                                                            |
+| Second Chance      | 40 | Revive with 100% Health. Once per battle.                                                                                                             |
+| Shielding Death    | 10 | Allies gain 3 Shield points on death.                                                                                                                 |
+| Shortcut           | 5  | Immediately play when falling below 30% Health. Once per battle.                                                                                      |
+| Staggering Attack  | 1  | Personal addition. 50% increased Break damage on Base Attack.                                                                                         |
+| Survivor           | 20 | Survive fatal damage with 1 Health, once per battle.                                                                                                  |
+| Teamwork           | 5  | 10% increased damage while all allies are alive.                                                                                                      |
 <!-- GENERATED:END -->
-
-**Situational Lumina (add for specific boss fights):**
-- Anti-Burn (10LP) — vs bosses applying Burn
-- Anti-Blight (10LP) — vs bosses applying Blight
-- Anti-Freeze (LP unknown) — vs bosses applying Freeze
-
-*Removed Chat 5: Dead Energy I (2LP), Dead Energy II (2LP).*
-*Added Chat 5: Breaking Death (5LP).*
 
 ---
 
 ## Skills
 
 <!-- GENERATED:START characters:Monoco:skills -->
-**Currently equipped (6):** Chapelier Slash, Moissonneuse Vendange, Orphelin Cheers, Potier Energy, Sakapatate Fire, Stalact Punches
+**Currently equipped (6):** Chapelier Slash, Grosse Tête Whack, Moissonneuse Vendange, Orphelin Cheers, Potier Energy, Stalact Punches
 
 | Skill                 | AP             | Wheel | Mask     | Equipped | Notes                                                                                         |
 |-----------------------|----------------|-------|----------|----------|-----------------------------------------------------------------------------------------------|
 | Chapelier Slash       | 7              | +4    | Agile    | ✅        | High Physical AoE, 3 hits. Applies Mark.                                                      |
+| Grosse Tête Whack     | 6              | +4    | Heavy    | ✅        | High Physical single target, 5 hits. Applies Defenceless 3 turns.                             |
 | Moissonneuse Vendange | 5              | +2    | Balanced | ✅        | High Physical single target, 3 hits. Can Break.                                               |
 | Orphelin Cheers       | 3              | +3    | Caster   | ✅        | Applies Powerful to 1–3 allies.                                                               |
 | Potier Energy         | 4              | +6    | Caster   | ✅        | Gives 1–3 AP to all allies.                                                                   |
-| Sakapatate Fire       | —              | +1    | Almighty | ✅        | Extreme Fire AoE, 3 hits. Applies 3 Burn per hit.                                             |
 | Stalact Punches       | 4              | +4    | Heavy    | ✅        | Medium Ice single target, 4 hits. High Break damage.                                          |
 | Abbest Wind           | 2 (0 in Agile) | +2    | Agile    | ❌        | Low Physical single target, 1 hit. Plays a second turn.                                       |
 | Aberration Light      | 7              | +4    | Agile    | ❌        | High Light AoE, 2 hits. Applies 4 Burn per hit.                                               |
@@ -238,7 +234,6 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Évêque Spear          | 6              | +3    | Heavy    | ❌        | High Earth single target, 1 hit. Applies Powerless 3 turns.                                   |
 | Gault Fury            | 3              | +2    | Balanced | ❌        | Low Physical single target, 4 hits. Applies Mark.                                             |
 | Glaise Earthquakes    | 4              | +6    | Heavy    | ❌        | Medium Earth AoE, 3 hits. Applies Powerful to self.                                           |
-| Grosse Tête Whack     | 6              | +4    | Heavy    | ❌        | High Physical single target, 5 hits. Applies Defenceless 3 turns.                             |
 | Hexga Crush           | 5              | +6    | Heavy    | ❌        | Medium Earth single target, 2 hits. Applies Defenceless 3 turns.                              |
 | Jar Lampstorm         | 5              | +6    | Heavy    | ❌        | Medium Physical AoE, 4 hits.                                                                  |
 | Lampmaster Light      | 5              | +1    | Almighty | ❌        | High Light AoE, 1 hit. Increased damage at each cast.                                         |
@@ -251,6 +246,7 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 | Rocher Hammering      | 3              | +3    | Heavy    | ❌        | Medium Physical single target, 4 hits. Can Break.                                             |
 | Sakapatate Estoc      | 3              | +3    | Balanced | ❌        | Low Lightning single target, 1 hit. More damage if target is Stunned.                         |
 | Sakapatate Explosion  | 4              | +6    | Caster   | ❌        | Medium Lightning random targets, 3 hits. Crits trigger an additional hit.                     |
+| Sakapatate Fire       | —              | +1    | Almighty | ❌        | Extreme Fire AoE, 3 hits. Applies 3 Burn per hit.                                             |
 | Sakapatate Slam       | 7              | +5    | Heavy    | ❌        | High Physical AoE, 1 hit. Increased damage against Marked targets.                            |
 | Sapling Absorption    | 6              | +5    | Caster   | ❌        | High Dark, 3 hits. Recovers 5% HP per hit.                                                    |
 | Troubadour Trumpet    | 3              | +4    | Caster   | ❌        | Applies a random buff to 1–3 allies.                                                          |

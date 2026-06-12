@@ -4,13 +4,13 @@
 - **Active:** Maelle, Verso, Sciel
 - **Reserve:** Lune, Monoco
 
-| Character                         | Level | Role                         | Weapon        | Pictos                                             | LP      |
-|-----------------------------------|-------|------------------------------|---------------|----------------------------------------------------|---------|
-| [Maelle](../characters/maelle.md) | 99    | Primary DPS                  | Lithum (33)   | Energising Turn, Empowering Break, Shortcut        | 506/506 |
-| [Verso](../characters/verso.md)   | 99    | Endgame main DPS             | Simoso (33)   | Alternating Critical, Quick Break, Energising Stun | 448/448 |
-| [Sciel](../characters/sciel.md)   | 99    | Pure support                 | Litheson (33) | Energy Master, Breaking Death, Powerful Revive     | 315/315 |
-| [Lune](../characters/lune.md)     | 99    | DPS / healer (reserve)       | Kralim (33)   | Clea's Life, Sweet Kill, Rush On Powerful          | 460/460 |
-| [Monoco](../characters/monoco.md) | 99    | Break + AP support (reserve) | Joyaro (33)   | Longer Shell, Augmented First Strike, Cheater      | 274/274 |
+| Character                         | Level | Role                         | Weapon        | Pictos                                                 | LP      |
+|-----------------------------------|-------|------------------------------|---------------|--------------------------------------------------------|---------|
+| [Maelle](../characters/maelle.md) | 99    | Primary DPS                  | Lithum (33)   | Energising Turn, Empowering Break, Shortcut            | 506/506 |
+| [Verso](../characters/verso.md)   | 99    | Endgame main DPS             | Simoso (33)   | Alternating Critical, Quick Break, Energising Stun     | 448/448 |
+| [Sciel](../characters/sciel.md)   | 99    | Pure support                 | Litheson (33) | Energy Master, Breaking Death, Powerful Revive         | 315/315 |
+| [Lune](../characters/lune.md)     | 99    | DPS / healer (reserve)       | Kralim (33)   | Clea's Life, Sweet Kill, Rush On Powerful              | 460/460 |
+| [Monoco](../characters/monoco.md) | 99    | Break + AP support (reserve) | Joyaro (33)   | Augmented First Strike, Charging Critical, Pro Retreat | 337/337 |
 
 ---
 
@@ -293,25 +293,27 @@
 | Crit    | *[unknown]* | 167%     |
 
 
-| Pictos                 | Level | Stats                       |
-|------------------------|-------|-----------------------------|
-| Longer Shell           | 29    | Health +2757, Defence +1572 |
-| Augmented First Strike | 31    | Speed +1008, Crit +18%      |
-| Cheater                | 24    | Health +1198, Speed +400    |
+| Pictos                 | Level | Stats                    |
+|------------------------|-------|--------------------------|
+| Augmented First Strike | 31    | Speed +1008, Crit +18%   |
+| Charging Critical      | 31    | Defence +1891, Crit +35% |
+| Pro Retreat            | 32    | Health +2830, Speed +574 |
 
 
 **Lumina adjustments:**
 
-| Lumina                 | Change | LP | Notes                                                                                     |
-|------------------------|--------|----|-------------------------------------------------------------------------------------------|
-| Staggering Attack      | Added  | 1  | Break damage on base attack — small break bar contribution                                |
-| Break Specialist       | Added  | 1  | 50% increased Break damage, 20% reduced base damage — net positive for break-focused role |
-| Energising Break       | Added  | 3  | Extra AP on breaking an enemy                                                             |
-| Augmented First Strike | Added  | —  |                                                                                           |
-| Empowering Break       | Added  | 3  | 3LP. Gain Powerful on Breaking a target.                                                  |
-| Gradient Break         | Added  | 5  | Earn 50% of Gradient Charge when breaking an enemy.                                       |
+| Lumina            | Change | LP | Notes                                                                                                                                                 |
+|-------------------|--------|----|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Breaking Attack   | Added  | 10 | Support expansion. Apply Break damage on base attack if Break bar is full.                                                                            |
+| Breaking Counter  | Added  | 3  | Support expansion. 50% increased Break damage on Counterattack.                                                                                       |
+| Recovery          | Added  | 10 | Support expansion. Recovers 10% Health on turn start.                                                                                                 |
+| Break Specialist  | Added  | 1  | Personal addition. 50% increased Break damage, 20% reduced hit damage - net positive given Monoco's role is Break-focused utility, not direct damage. |
+| Energising Break  | Added  | 3  | Personal addition. +3 AP on Breaking a target.                                                                                                        |
+| Empowering Break  | Added  | 3  | Personal addition. Gain Powerful on Breaking a target.                                                                                                |
+| Gradient Break    | Added  | 5  | Personal addition. +50% Gradient Charge on Breaking a target.                                                                                         |
+| Staggering Attack | Added  | 1  | Personal addition. 50% increased Break damage on Base Attack.                                                                                         |
 
-**LP:** 274/274
+**LP:** 337/337
 
 ---
 
