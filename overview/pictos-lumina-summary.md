@@ -289,8 +289,9 @@ Add these as Lumina for specific boss fights — no need to change Pictos.
 ## 8. Candidates for Future Review
 
 <!-- GENERATED:START lumina:future -->
-| Lumina | LP | Effect | Notes |
-|--------|----|--------|-------|
+| Lumina | LP | Effect                                                                                      | Notes                                                                                                                                              |
+|--------|----|---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Feint  | 15 | Start each turn with 4 Barbapapa stacks. Every 5th hit with a Skill deals 600% more damage. | For multi-hit characters, it can give a big boost, but blocks single-hit attacks and doesn't give much more than Frenzy and Double Thurd together. |
 <!-- GENERATED:END -->
 
 ---
