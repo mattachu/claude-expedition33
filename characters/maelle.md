@@ -79,15 +79,15 @@ Stendhal applies Defenceless to Maelle, but in the standard Last Chance rotation
 ### Combat Stats
 
 <!-- GENERATED:START characters:Maelle:stats -->
-*Stats with Lithum (33) equipped and Energising Turn (L31), Energy Master (L30), Cheater (L24) Pictos for Solo At Death's Door variant.*
+*Stats with Lithum (33) and Energising Turn (L31), Empowering Break (L28), Shortcut (L31) Pictos equipped.*
 
-| Stat    | Base        | Modified |
-|---------|-------------|----------|
-| Health  | *[unknown]* | 8588     |
-| Attack  | *[unknown]* | 11583    |
-| Speed   | *[unknown]* | 2951     |
-| Defence | *[unknown]* | 182      |
-| Crit    | *[unknown]* | 41%      |
+| Stat    | Base | Modified |
+|---------|------|----------|
+| Health  | 2420 | 2420     |
+| Attack  | 1503 | 11583    |
+| Speed   | 1274 | 3769     |
+| Defence | 182  | 182      |
+| Crit    | 41%  | 109%     |
 <!-- GENERATED:END -->
 
 ---

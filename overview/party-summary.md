@@ -53,13 +53,13 @@
 
 **Level:** 99 | **Role:** Primary DPS | **Weapon:** Lithum (33)
 
-| Stat    | Base        | Modified |
-|---------|-------------|----------|
-| Health  | *[unknown]* | 8588     |
-| Attack  | *[unknown]* | 11583    |
-| Speed   | *[unknown]* | 2951     |
-| Defence | *[unknown]* | 182      |
-| Crit    | *[unknown]* | 41%      |
+| Stat    | Base | Modified |
+|---------|------|----------|
+| Health  | 2420 | 2420     |
+| Attack  | 1503 | 11583    |
+| Speed   | 1274 | 3769     |
+| Defence | 182  | 182      |
+| Crit    | 41%  | 109%     |
 
 
 | Pictos           | Level | Stats                 |
@@ -111,13 +111,13 @@
 
 **Level:** 99 | **Role:** Endgame main DPS | **Weapon:** Simoso (33)
 
-| Stat    | Base        | Modified |
-|---------|-------------|----------|
-| Health  | *[unknown]* | 7790     |
-| Attack  | *[unknown]* | 11583    |
-| Speed   | *[unknown]* | 2100     |
-| Defence | *[unknown]* | 182      |
-| Crit    | *[unknown]* | 106%     |
+| Stat    | Base | Modified |
+|---------|------|----------|
+| Health  | 3809 | 3809     |
+| Attack  | 1503 | 11583    |
+| Speed   | 1135 | 2619     |
+| Defence | 182  | 182      |
+| Crit    | 5%   | 122%     |
 
 
 | Pictos               | Level | Stats                 |
@@ -160,18 +160,18 @@
 
 **Level:** 99 | **Role:** Pure support | **Weapon:** Litheson (33)
 
-| Stat    | Base        | Modified |
-|---------|-------------|----------|
-| Health  | *[unknown]* | 7396     |
-| Attack  | *[unknown]* | 10275    |
-| Speed   | *[unknown]* | 2572     |
-| Defence | *[unknown]* | 182      |
-| Crit    | *[unknown]* | 106%     |
+| Stat    | Base | Modified |
+|---------|------|----------|
+| Health  | 2420 | 7390     |
+| Attack  | 1503 | 10275    |
+| Speed   | 1274 | 2406     |
+| Defence | 182  | 182      |
+| Crit    | 41%  | 106%     |
 
 
 | Pictos          | Level | Stats                 |
 |-----------------|-------|-----------------------|
-| Energy Master   | 30    | Health +4979          |
+| Energy Master   | 30    | Health +4970          |
 | Breaking Death  | 29    | Speed +586, Crit +33% |
 | Powerful Revive | 28    | Speed +546, Crit +32% |
 
@@ -234,13 +234,13 @@
 
 **Level:** 99 | **Role:** DPS / healer (reserve) | **Weapon:** Kralim (33)
 
-| Stat    | Base        | Modified |
-|---------|-------------|----------|
-| Health  | *[unknown]* | 3809     |
-| Attack  | *[unknown]* | 11155    |
-| Speed   | *[unknown]* | 2691     |
-| Defence | *[unknown]* | 182      |
-| Crit    | *[unknown]* | 102%     |
+| Stat    | Base | Modified |
+|---------|------|----------|
+| Health  | 3809 | 9400     |
+| Attack  | 1437 | 11155    |
+| Speed   | 1232 | 2543     |
+| Defence | 182  | 182      |
+| Crit    | 29%  | 100%     |
 
 
 | Pictos           | Level | Stats                 |
@@ -284,13 +284,13 @@
 
 **Level:** 99 | **Role:** Break + AP support (reserve) | **Weapon:** Joyaro (33)
 
-| Stat    | Base        | Modified |
-|---------|-------------|----------|
-| Health  | *[unknown]* | 5177     |
-| Attack  | *[unknown]* | 11097    |
-| Speed   | *[unknown]* | 1553     |
-| Defence | *[unknown]* | 1515     |
-| Crit    | *[unknown]* | 167%     |
+| Stat    | Base | Modified |
+|---------|------|----------|
+| Health  | 2420 | 5250     |
+| Attack  | 1347 | 11097    |
+| Speed   | 1274 | 2856     |
+| Defence | 729  | 2620     |
+| Crit    | 59%  | 112%     |
 
 
 | Pictos                 | Level | Stats                    |

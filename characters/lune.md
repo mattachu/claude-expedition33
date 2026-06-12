@@ -50,15 +50,15 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 ### Combat Stats
 
 <!-- GENERATED:START characters:Lune:stats -->
-*Stats with Kralim (33), Critical Burn (L25), Burn Affinity (L21), Breaking Death (L29) equipped.*
+*Stats with Kralim (33) and Clea's Life (L30), Sweet Kill (L31), Rush On Powerful (L31) Pictos equipped.*
 
-| Stat    | Base        | Modified |
-|---------|-------------|----------|
-| Health  | *[unknown]* | 3809     |
-| Attack  | *[unknown]* | 11155    |
-| Speed   | *[unknown]* | 2691     |
-| Defence | *[unknown]* | 182      |
-| Crit    | *[unknown]* | 102%     |
+| Stat    | Base | Modified |
+|---------|------|----------|
+| Health  | 3809 | 9400     |
+| Attack  | 1437 | 11155    |
+| Speed   | 1232 | 2543     |
+| Defence | 182  | 182      |
+| Crit    | 29%  | 100%     |
 <!-- GENERATED:END -->
 
 ---

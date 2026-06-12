@@ -41,7 +41,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Energising Start IV | +1 AP on battle start. | 20 |  |  |  |
 | ✓ | Energising Stun | +1 AP on hitting a Stunned target with a Skill. | 10 | Speed: 519, Crit: 31% | Verso |  |
 | ✓ | Energising Turn | +1 AP on turn start. | 20 | Speed: 1277 | Maelle |  |
-| ✓ | Energy Master | Every AP gain is increased by 1 | 40 | Health: 4979 | Sciel |  |
+| ✓ | Energy Master | Every AP gain is increased by 1 | 40 | Health: 4970 | Sciel |  |
 | ✓ | Perilous Parry | +1 AP on Parry, but damage received is doubled. | 5 | Speed: 586, Crit: 33% |  |  |
 | ✓ | Rewarding Mark | +2 AP on dealing damage to a Marked target. Once per turn. | 5 |  |  | mark |
 | ✓ | Weakness Gain | +1 AP on hitting an enemy's Weakness. Once per turn. | 3 |  |  |  |

@@ -61,7 +61,7 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 <!-- GENERATED:START characters:Sciel:Pictos -->
 | Slot | Pictos          | Level | Stat Bonus            | Effect                                   |
 |------|-----------------|-------|-----------------------|------------------------------------------|
-| 1    | Energy Master   | 30    | Health +4979          | Every AP gain is increased by 1          |
+| 1    | Energy Master   | 30    | Health +4970          | Every AP gain is increased by 1          |
 | 2    | Breaking Death  | 29    | Speed +586, Crit +33% | Fully charge enemy break bar on death    |
 | 3    | Powerful Revive | 28    | Speed +546, Crit +32% | Apply Powerful for 3 turns when revived. |
 <!-- GENERATED:END -->

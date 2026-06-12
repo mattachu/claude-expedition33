@@ -67,15 +67,15 @@ Since a post-launch patch, all skills are obtainable post-game. The Endless Towe
 ### Combat Stats
 
 <!-- GENERATED:START characters:Monoco:stats -->
-*Stats with Joyaro (33) equipped and only Longer Break (L29), The One (L31) Pictos for Death Bomb variant.*
+*Stats with Joyaro (33) and Augmented First Strike (L31), Charging Critical (L31), Pro Retreat (L32) Pictos equipped.*
 
-| Stat    | Base        | Modified |
-|---------|-------------|----------|
-| Health  | *[unknown]* | 5177     |
-| Attack  | *[unknown]* | 11097    |
-| Speed   | *[unknown]* | 1553     |
-| Defence | *[unknown]* | 1515     |
-| Crit    | *[unknown]* | 167%     |
+| Stat    | Base | Modified |
+|---------|------|----------|
+| Health  | 2420 | 5250     |
+| Attack  | 1347 | 11097    |
+| Speed   | 1274 | 2856     |
+| Defence | 729  | 2620     |
+| Crit    | 59%  | 112%     |
 <!-- GENERATED:END -->
 
 ---

@@ -68,15 +68,15 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ### Combat Stats
 
 <!-- GENERATED:START characters:Verso:stats -->
-*Stats with Simoso (33), Second Chance (L31), Sweet Kill (L31), Alternating Critical (L29) equipped.*
+*Stats with Simoso (33) and Alternating Critical (L29), Quick Break (L31), Energising Stun (L28) Pictos equipped.*
 
-| Stat    | Base        | Modified |
-|---------|-------------|----------|
-| Health  | *[unknown]* | 7790     |
-| Attack  | *[unknown]* | 11583    |
-| Speed   | *[unknown]* | 2100     |
-| Defence | *[unknown]* | 182      |
-| Crit    | *[unknown]* | 106%     |
+| Stat    | Base | Modified |
+|---------|------|----------|
+| Health  | 3809 | 3809     |
+| Attack  | 1503 | 11583    |
+| Speed   | 1135 | 2619     |
+| Defence | 182  | 182      |
+| Crit    | 5%   | 122%     |
 <!-- GENERATED:END -->
 
 ---

@@ -9,14 +9,20 @@
       "defence": 0,
       "luck": 99
     },
-    "stats_base": null,
-    "stats_modified": {
-      "health": 8588,
-      "attack": 11583,
-      "speed": 2951,
+    "stats_base": {
+      "health": 2420,
+      "attack": 1503,
+      "speed": 1274,
       "defence": 182,
-      "crit": "41%",
-      "_note": "Stats with Lithum (33) equipped and Energising Turn (L31), Energy Master (L30), Cheater (L24) Pictos for Solo At Death's Door variant."
+      "crit": "41%"
+    },
+    "stats_modified": {
+      "health": 2420,
+      "attack": 11583,
+      "speed": 3769,
+      "defence": 182,
+      "crit": "109%",
+      "_note": "Stats with Lithum (33) and Energising Turn (L31), Empowering Break (L28), Shortcut (L31) Pictos equipped."
     },
     "weapon_equipped": "Lithum",
     "pictos_equipped": [
@@ -209,14 +215,20 @@
       "defence": 0,
       "luck": 0
     },
-    "stats_base": null,
-    "stats_modified": {
-      "health": 7790,
-      "attack": 11583,
-      "speed": 2100,
+    "stats_base": {
+      "health": 3809,
+      "attack": 1503,
+      "speed": 1135,
       "defence": 182,
-      "crit": "106%",
-      "_note": "Stats with Simoso (33), Second Chance (L31), Sweet Kill (L31), Alternating Critical (L29) equipped."
+      "crit": "5%"
+    },
+    "stats_modified": {
+      "health": 3809,
+      "attack": 11583,
+      "speed": 2619,
+      "defence": 182,
+      "crit": "122%",
+      "_note": "Stats with Simoso (33) and Alternating Critical (L29), Quick Break (L31), Energising Stun (L28) Pictos equipped."
     },
     "weapon_equipped": "Simoso",
     "pictos_equipped": [
@@ -373,14 +385,20 @@
       "defence": 0,
       "luck": 99
     },
-    "stats_base": null,
+    "stats_base": {
+      "health": 2420,
+      "attack": 1503,
+      "speed": 1274,
+      "defence": 182,
+      "crit": "41%"
+    },
     "stats_modified": {
-      "health": 7396,
+      "health": 7390,
       "attack": 10275,
-      "speed": 2572,
+      "speed": 2406,
       "defence": 182,
       "crit": "106%",
-      "_note": "Stats with Litheson (33), Augmented Counter I (L31), Energising Shots (L28), Painter (L28) equipped."
+      "_note": "Stats with Litheson (33) and Energy Master (L30), Breaking Death (L29), Powerful Revive (L28) Pictos equipped."
     },
     "weapon_equipped": "Litheson",
     "pictos_equipped": [
@@ -496,14 +514,20 @@
       "defence": 0,
       "luck": 51
     },
-    "stats_base": null,
-    "stats_modified": {
+    "stats_base": {
       "health": 3809,
-      "attack": 11155,
-      "speed": 2691,
+      "attack": 1437,
+      "speed": 1232,
       "defence": 182,
-      "crit": "102%",
-      "_note": "Stats with Kralim (33), Critical Burn (L25), Burn Affinity (L21), Breaking Death (L29) equipped."
+      "crit": "29%"
+    },
+    "stats_modified": {
+      "health": 9400,
+      "attack": 11155,
+      "speed": 2543,
+      "defence": 182,
+      "crit": "100%",
+      "_note": "Stats with Kralim (33) and Clea's Life (L30), Sweet Kill (L31), Rush On Powerful (L31) Pictos equipped."
     },
     "weapon_equipped": "Kralim",
     "pictos_equipped": [
@@ -661,14 +685,20 @@
       "defence": 99,
       "luck": 99
     },
-    "stats_base": null,
+    "stats_base": {
+      "health": 2420,
+      "attack": 1347,
+      "speed": 1274,
+      "defence": 729,
+      "crit": "59%"
+    },
     "stats_modified": {
-      "health": 5177,
+      "health": 5250,
       "attack": 11097,
-      "speed": 1553,
-      "defence": 1515,
-      "crit": "167%",
-      "_note": "Stats with Joyaro (33) equipped and only Longer Break (L29), The One (L31) Pictos for Death Bomb variant."
+      "speed": 2856,
+      "defence": 2620,
+      "crit": "112%",
+      "_note": "Stats with Joyaro (33) and Augmented First Strike (L31), Charging Critical (L31), Pro Retreat (L32) Pictos equipped."
     },
     "weapon_equipped": "Joyaro",
     "pictos_equipped": [

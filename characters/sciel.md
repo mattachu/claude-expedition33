@@ -47,15 +47,15 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 ### Combat Stats
 
 <!-- GENERATED:START characters:Sciel:stats -->
-*Stats with Litheson (33), Augmented Counter I (L31), Energising Shots (L28), Painter (L28) equipped.*
+*Stats with Litheson (33) and Energy Master (L30), Breaking Death (L29), Powerful Revive (L28) Pictos equipped.*
 
-| Stat    | Base        | Modified |
-|---------|-------------|----------|
-| Health  | *[unknown]* | 7396     |
-| Attack  | *[unknown]* | 10275    |
-| Speed   | *[unknown]* | 2572     |
-| Defence | *[unknown]* | 182      |
-| Crit    | *[unknown]* | 106%     |
+| Stat    | Base | Modified |
+|---------|------|----------|
+| Health  | 2420 | 7390     |
+| Attack  | 1503 | 10275    |
+| Speed   | 1274 | 2406     |
+| Defence | 182  | 182      |
+| Crit    | 41%  | 106%     |
 <!-- GENERATED:END -->
 
 *Critical Burn Pictos replaced Base Shield — restored intended turn order (Sciel faster than Maelle).*
@@ -95,7 +95,7 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 <!-- GENERATED:START characters:Sciel:Pictos -->
 | Slot | Pictos          | Level | Stat Bonus            | Effect                                   |
 |------|-----------------|-------|-----------------------|------------------------------------------|
-| 1    | Energy Master   | 30    | Health +4979          | Every AP gain is increased by 1          |
+| 1    | Energy Master   | 30    | Health +4970          | Every AP gain is increased by 1          |
 | 2    | Breaking Death  | 29    | Speed +586, Crit +33% | Fully charge enemy break bar on death    |
 | 3    | Powerful Revive | 28    | Speed +546, Crit +32% | Apply Powerful for 3 turns when revived. |
 <!-- GENERATED:END -->
