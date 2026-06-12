@@ -1,0 +1,61 @@
+# Chat 33 Changelist 4 - stat refresh for all five characters
+
+DATA: data/pictos-lumina.json
+PATH: pictos[name=Energy Master].stats.health
+OP: SET
+VALUE: 4970
+
+
+DATA: data/characters.json
+PATH: Maelle.stats_base
+OP: SET
+VALUE: {"health": 2420, "attack": 1503, "speed": 1274, "defence": 182, "crit": "41%"}
+
+DATA: data/characters.json
+PATH: Maelle.stats_modified
+OP: SET
+VALUE: {"health": 2420, "attack": 11583, "speed": 3769, "defence": 182, "crit": "109%", "_note": "Stats with Lithum (33) and Energising Turn (L31), Empowering Break (L28), Shortcut (L31) Pictos equipped."}
+
+
+DATA: data/characters.json
+PATH: Verso.stats_base
+OP: SET
+VALUE: {"health": 3809, "attack": 1503, "speed": 1135, "defence": 182, "crit": "5%"}
+
+DATA: data/characters.json
+PATH: Verso.stats_modified
+OP: SET
+VALUE: {"health": 3809, "attack": 11583, "speed": 2619, "defence": 182, "crit": "122%", "_note": "Stats with Simoso (33) and Alternating Critical (L29), Quick Break (L31), Energising Stun (L28) Pictos equipped."}
+
+
+DATA: data/characters.json
+PATH: Sciel.stats_base
+OP: SET
+VALUE: {"health": 2420, "attack": 1503, "speed": 1274, "defence": 182, "crit": "41%"}
+
+DATA: data/characters.json
+PATH: Sciel.stats_modified
+OP: SET
+VALUE: {"health": 7390, "attack": 10275, "speed": 2406, "defence": 182, "crit": "106%", "_note": "Stats with Litheson (33) and Energy Master (L30), Breaking Death (L29), Powerful Revive (L28) Pictos equipped."}
+
+
+DATA: data/characters.json
+PATH: Lune.stats_base
+OP: SET
+VALUE: {"health": 3809, "attack": 1437, "speed": 1232, "defence": 182, "crit": "29%"}
+
+DATA: data/characters.json
+PATH: Lune.stats_modified
+OP: SET
+VALUE: {"health": 9400, "attack": 11155, "speed": 2543, "defence": 182, "crit": "100%", "_note": "Stats with Kralim (33) and Clea's Life (L30), Sweet Kill (L31), Rush On Powerful (L31) Pictos equipped."}
+
+
+DATA: data/characters.json
+PATH: Monoco.stats_base
+OP: SET
+VALUE: {"health": 2420, "attack": 1347, "speed": 1274, "defence": 729, "crit": "59%"}
+
+DATA: data/characters.json
+PATH: Monoco.stats_modified
+OP: SET
+VALUE: {"health": 5250, "attack": 11097, "speed": 2856, "defence": 2620, "crit": "112%", "_note": "Stats with Joyaro (33) and Augmented First Strike (L31), Charging Critical (L31), Pro Retreat (L32) Pictos equipped."}
