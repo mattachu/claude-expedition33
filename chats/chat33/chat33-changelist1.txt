@@ -1,49 +1,33 @@
 # Chat 33 Changelist 1 — pictos-lumina.json fixes
-
-# ============================================================
+#
 # 1. Fix Glass Canon spelling -> Glass Cannon
-# ============================================================
+# 2. SOS Rush LP cost — confirmed 5 LP
+# 3. Critical Moment LP cost — confirmed 5 LP
+# 4. Tainted LP cost — confirmed 3 LP
+# 5. Empowering Dodge — remove unconfirmed parry note
+
 
 DATA: data/pictos-lumina.json
 PATH: pictos[name=Glass Canon].name
 OP: SET
 VALUE: "Glass Cannon"
 
-# ============================================================
-# 2. SOS Rush LP cost — confirmed 5 LP
-# ============================================================
-
 DATA: data/pictos-lumina.json
 PATH: pictos[name=SOS Rush].lp_cost
 OP: SET
 VALUE: 5
-
-# ============================================================
-# 3. Critical Moment LP cost — confirmed 5 LP
-# ============================================================
 
 DATA: data/pictos-lumina.json
 PATH: pictos[name=Critical Moment].lp_cost
 OP: SET
 VALUE: 5
 
-# ============================================================
-# 4. Tainted LP cost — confirmed 3 LP
-# ============================================================
-
 DATA: data/pictos-lumina.json
 PATH: pictos[name=Tainted].lp_cost
 OP: SET
 VALUE: 3
 
-
-# ============================================================
-# 5. Empowering Dodge — remove unconfirmed parry note
-#    Confirmed: parry does NOT reset the stack
-# ============================================================
-
 DATA: data/pictos-lumina.json
 PATH: pictos[name=Empowering Dodge].notes
 OP: SET
 VALUE: null
-
