@@ -92,7 +92,21 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 
 ---
 
-## 5. Main Team Core Lumina Set
+## 5. Lumina Set Framework
+
+All five characters share a single **Core** Lumina set. On top of this, each character applies one or more **expansion sets** based on their role, plus personal additions and exclusions. This replaces the previous Main Team / Reserve Team split and is more focused on their role in the team.
+
+**Core set:** common to all characters, this handles AP economy, tempo control, defence and safety nets, Break boosts and also _Painted Power_ to remove the damage cap. 
+
+**DPS expansion:** damage-dealing characters get a suite of Lumina focuses around boosting damage in different situations, plus gaining bonuses from attacking.
+
+**Support expansion:** support characters get a few Lumina to keep their uptime high and utility effective. 
+
+**Low-health expansion:** one of two options for DPS characters, built around _At Death's Door_ to boost damage while at low health. Maelle has _Last Chance_ and Verso has _Overload_ that reduce health to 1HP. Keeping them there can unlock powerful damage boosts through this low-health expansion Lumina set. 
+
+**Full-health expansion:** the other option for DPS characters, being much less risky but not as powerful — _Clea's Life_ returns to full health and _Full Strength_ gives extra damage while at full health. 
+
+### Core set
 
 <!-- GENERATED:START lumina:core:main -->
 **Total: 301 LP** — applied to Maelle, Verso, Sciel.
@@ -128,45 +142,9 @@ For status immunity, add the relevant Lumina (e.g. Anti-Blight, 10LP) rather tha
 
 ---
 
-## 6. Reserve Team Core Lumina Set
+## 6. Character Loadouts
 
-<!-- GENERATED:START lumina:core:reserve -->
-**Total: 301 LP** — applied to Lune, Monoco.
-
-*Unified core set, applied to all five characters.*
-
-| Lumina             | LP | Effect                                                           |
-|--------------------|----|------------------------------------------------------------------|
-| AP Discount        | 30 | Skills cost 1 less AP.                                           |
-| Aegis Revival      | 5  | +1 Shield on being revived.                                      |
-| Base Shield        | 20 | Grants 1 Shield HP buffer per turn                               |
-| Breaker            | 10 | 25% increased Break damage.                                      |
-| Breaking Burn      | 5  | 25% increased Break damage on Burning enemies.                   |
-| Breaking Death     | 5  | Fully charge enemy break bar on death                            |
-| Cheater            | 40 | Extra turn after using a skill, once per turn                    |
-| Critical Break     | 5  | 25% increased Break damage on Critical hits.                     |
-| Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                       |
-| Energising Start I | 5  | +1 AP on battle start.                                           |
-| Energising Turn    | 20 | +1 AP on turn start.                                             |
-| Energy Master      | 40 | Every AP gain is increased by 1                                  |
-| First Strike       | 10 | Play first.                                                      |
-| Painted Power      | 5  | Damage can exceed 9,999.                                         |
-| Protecting Death   | 5  | On death, allies gain Shell.                                     |
-| Second Chance      | 40 | Revive with 100% Health. Once per battle.                        |
-| Shielding Death    | 10 | On death, allies gain 3 Shield points.                           |
-| Shortcut           | 5  | Immediately play when falling below 30% Health. Once per battle. |
-| SOS Power          | 5  | Apply Powerful when falling below 50% Health.                    |
-| SOS Rush           | 5  | Apply Rush when falling below 50% Health.                        |
-| SOS Shell          | 5  | Apply Shell when falling below 50% Health.                       |
-| Survivor           | 20 | Survive fatal damage with 1 Health once per battle               |
-| Teamwork           | 5  | 10% increased damage while all allies are alive.                 |
-<!-- GENERATED:END -->
-
----
-
-## 7. Character Loadouts
-
-Adjustments each character makes to their team's core Lumina set — exclusions first, then additions.
+Each character has the core set, then applies the Lumina adjustments below, with expansion sets added, and personal tweaks that exclude or add certain Lumina. 
 
 ### Maelle
 
@@ -291,7 +269,7 @@ Adjustments each character makes to their team's core Lumina set — exclusions 
 
 ---
 
-## 8. Situational Lumina
+## 7. Situational Lumina
 
 Add these as Lumina for specific boss fights — no need to change Pictos.
 
@@ -306,17 +284,11 @@ Add these as Lumina for specific boss fights — no need to change Pictos.
 
 ---
 
-## 9. Candidates for Future Review
+## 8. Candidates for Future Review
 
 <!-- GENERATED:START lumina:future -->
-| Lumina            | LP | Effect                                                     | Notes                                                                                    |
-|-------------------|----|------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Energy Master     | 40 | Every AP gain is increased by 1                            | Game-change but expensive; consider when expanding core set.                             |
-| Energising Shell  | 10 | Give 2 AP on applying Shell.                               | Consider for Maelle with Lithum.                                                         |
-| Longer Shell      | 5  | On applying Shell, its duration is increased by 2.         | Consider for Maelle with Lithum.                                                         |
-| Powerful On Shell | 10 | Apply Powerful on applying Shell.                          | Consider for Maelle with Lithum.                                                         |
-| Energising Burn   | 10 | +1 AP on applying Burn. Once per turn.                     | Consider when expanding core set — all characters have Burning Shots so fires regularly. |
-| Empowering Dodge  | 5  | 5% increased damage per consecutive dodge, stacks up to 10 | Test empirically before committing — reset on parry unconfirmed.                         |
+| Lumina | LP | Effect | Notes |
+|--------|----|--------|-------|
 <!-- GENERATED:END -->
 
 ---

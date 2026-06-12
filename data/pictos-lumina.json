@@ -2993,38 +2993,7 @@
       "notes": "Unified core set, applied to all five characters."
     }
   },
-  "candidates_for_review": [
-    {
-      "name": "Energy Master",
-      "lp": 40,
-      "notes": "Game-change but expensive; consider when expanding core set."
-    },
-    {
-      "name": "Energising Shell",
-      "lp": 10,
-      "notes": "Consider for Maelle with Lithum."
-    },
-    {
-      "name": "Longer Shell",
-      "lp": 5,
-      "notes": "Consider for Maelle with Lithum."
-    },
-    {
-      "name": "Powerful On Shell",
-      "lp": 10,
-      "notes": "Consider for Maelle with Lithum."
-    },
-    {
-      "name": "Energising Burn",
-      "lp": 10,
-      "notes": "Consider when expanding core set — all characters have Burning Shots so fires regularly."
-    },
-    {
-      "name": "Empowering Dodge",
-      "lp": 5,
-      "notes": "Test empirically before committing — reset on parry unconfirmed."
-    }
-  ],
+  "candidates_for_review": [],
   "situational_lumina": [
     {
       "name": "Anti-Blight",
