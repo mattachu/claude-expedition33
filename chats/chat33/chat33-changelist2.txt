@@ -1,0 +1,704 @@
+# Chat 33 Changelist 2 - characters.json Lumina rebuild
+# Implements unified Core + expansion model (see overview/pictos-lumina-summary.md Section 5)
+# Monoco excluded - Pictos/Lumina to be reviewed in a future session
+
+DATA: data/characters.json
+PATH: Verso.lumina_extras
+OP: SET
+VALUE: [
+  {
+    "name": "Augmented First Strike",
+    "notes": "DPS expansion. 50% increased damage on first hit, once per battle."
+  },
+  {
+    "name": "Burn Affinity",
+    "notes": "DPS expansion. 25% increased damage against burning targets. Synergy: Simoso 20% burn chance on Light damage can seed this."
+  },
+  {
+    "name": "Dead Energy I",
+    "notes": "DPS expansion. +3 AP on killing an enemy."
+  },
+  {
+    "name": "Dead Energy II",
+    "notes": "DPS expansion. +3 AP on killing an enemy (stacks with Dead Energy I)."
+  },
+  {
+    "name": "Double Third",
+    "notes": "DPS expansion. Every 3rd hit deals double damage. Fires on hits 3/6/9/12 of 13-hit Steeled Strike."
+  },
+  {
+    "name": "Empowering Dodge",
+    "notes": "DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack."
+  },
+  {
+    "name": "Frenzy",
+    "notes": "DPS expansion. Each successive Skill hit deals 10% more damage. Major multiplier on 13-hit Steeled Strike."
+  },
+  {
+    "name": "Glass Cannon",
+    "notes": "DPS expansion. 25% increased damage, 25% increased damage taken."
+  },
+  {
+    "name": "Immaculate",
+    "notes": "DPS expansion. 30% increased damage until first hit received."
+  },
+  {
+    "name": "Warming Up",
+    "notes": "DPS expansion. Damage increases with each attack, up to 20% at 5 stacks."
+  },
+  {
+    "name": "At Death's Door",
+    "notes": "Low-health expansion. 50% increased damage below 10% HP. Active permanently while at 1 HP from Overload."
+  },
+  {
+    "name": "Confident Fighter",
+    "notes": "Low-health expansion. 30% increased damage, cannot be healed."
+  },
+  {
+    "name": "In Medias Res",
+    "notes": "Low-health expansion. +3 Shields at battle start, max Health halved. HP penalty irrelevant at 1 HP from Overload."
+  },
+  {
+    "name": "Inverted Affinity",
+    "notes": "Low-health expansion. 50% increased damage while Inverted (cannot be healed)."
+  },
+  {
+    "name": "Auto Rush",
+    "notes": "Personal addition. Apply Rush for 3 turns on battle start - secures first-action priority before Litheson Greater Rush takes effect."
+  },
+  {
+    "name": "Energising Break",
+    "notes": "Personal addition. +3 AP on Breaking a target - enables Perfect Break -> Stun -> End Bringer rotation. Frequency depends on boss: varies from rarely breaking (e.g. Simon) to easily broken (e.g. Chromatic Lampmaster)."
+  },
+  {
+    "name": "Charging Critical",
+    "notes": "DPS expansion. +20% Gradient Charge on Critical Hit, once per turn. Fires every turn at 122% crit."
+  },
+  {
+    "name": "Alternating Critical",
+    "notes": "Free from Alternating Critical Pictos (equipped). Effect not used at 100% crit - pure stat stick (speed 293, crit 50%)."
+  },
+  {
+    "name": "Quick Break",
+    "notes": "Free from Quick Break Pictos (equipped, swapped from Sweet Kill - identical stats: speed 672, crit 36%). Effect (play again on Breaking a target) does not fire alongside Cheater - pure stat stick."
+  },
+  {
+    "name": "Energising Stun",
+    "notes": "Free from Energising Stun Pictos (equipped). +1 AP on hitting Stunned target with Skill - synergy with End Bringer."
+  }
+]
+
+DATA: data/characters.json
+PATH: Verso.lumina_core_exclusions
+OP: SET
+VALUE: []
+
+DATA: data/characters.json
+PATH: Verso.lp_total
+OP: SET
+VALUE: 448
+
+DATA: data/characters.json
+PATH: Verso.lp_used
+OP: SET
+VALUE: 448
+
+
+DATA: data/characters.json
+PATH: Maelle.lumina_extras
+OP: SET
+VALUE: [
+  {
+    "name": "Augmented First Strike",
+    "notes": "DPS expansion. 50% increased damage on first hit, once per battle."
+  },
+  {
+    "name": "Burn Affinity",
+    "notes": "DPS expansion. 25% increased damage against burning targets. Synergy: Burning Shots and Marking Shots (Free Aim) can seed burn."
+  },
+  {
+    "name": "Dead Energy I",
+    "notes": "DPS expansion. +3 AP on killing an enemy."
+  },
+  {
+    "name": "Dead Energy II",
+    "notes": "DPS expansion. +3 AP on killing an enemy (stacks with Dead Energy I)."
+  },
+  {
+    "name": "Double Third",
+    "notes": "DPS expansion. Every 3rd hit deals double damage. Fires on multi-hit skills (Sword Ballet, Burning Canvas)."
+  },
+  {
+    "name": "Empowering Dodge",
+    "notes": "DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack."
+  },
+  {
+    "name": "Frenzy",
+    "notes": "DPS expansion. Each successive Skill hit deals 10% more damage. Fires on multi-hit skills (Sword Ballet, Burning Canvas) - not on single-hit Stendhal/Gommage."
+  },
+  {
+    "name": "Glass Cannon",
+    "notes": "DPS expansion. 25% increased damage, 25% increased damage taken."
+  },
+  {
+    "name": "Immaculate",
+    "notes": "DPS expansion. 30% increased damage until first hit received."
+  },
+  {
+    "name": "Warming Up",
+    "notes": "DPS expansion. Damage increases with each attack, up to 20% at 5 stacks. Strong with sustained multi-turn presence."
+  },
+  {
+    "name": "At Death's Door",
+    "notes": "Low-health expansion. 50% increased damage below 10% HP. Active permanently while at 1 HP from Last Chance."
+  },
+  {
+    "name": "Confident Fighter",
+    "notes": "Low-health expansion. 30% increased damage, cannot be healed. Conflicts with Sciel's healing - accepted tradeoff for the Low-health build."
+  },
+  {
+    "name": "In Medias Res",
+    "notes": "Low-health expansion. +3 Shields at battle start, max Health halved. HP penalty irrelevant at 1 HP from Last Chance."
+  },
+  {
+    "name": "Inverted Affinity",
+    "notes": "Low-health expansion. 50% increased damage while Inverted (cannot be healed)."
+  },
+  {
+    "name": "Anti-Blight",
+    "notes": "Personal addition. Immune to Blight - relevant for Renoir's Drafts farming."
+  },
+  {
+    "name": "Burning Shots",
+    "notes": "Personal addition. 20% chance to Burn on Free Aim shot - seeds Burn Affinity."
+  },
+  {
+    "name": "Charging Critical",
+    "notes": "DPS expansion. +20% Gradient Charge on Critical Hit, once per turn. Fires every turn at 109% crit."
+  },
+  {
+    "name": "Exposing Break",
+    "notes": "Personal addition. Apply Defenceless on Break - supplements Monoco's Defenceless application."
+  },
+  {
+    "name": "First Offensive",
+    "notes": "Personal addition. 50% increased damage on first hit dealt, once per battle."
+  },
+  {
+    "name": "Gradient Fighter",
+    "notes": "Personal addition. 25% increased damage with Gradient Attacks - large boost for Gommage."
+  },
+  {
+    "name": "Greater Powerful",
+    "notes": "Personal addition (Lithum suite). +15% to Powerful bonus - boosts Powerful On Shell."
+  },
+  {
+    "name": "Greater Shell",
+    "notes": "Personal addition (Lithum suite). Stronger Shell from Lithum on Virtuose exit."
+  },
+  {
+    "name": "Longer Powerful",
+    "notes": "Personal addition (Lithum suite). +2 turn duration to Powerful from Powerful On Shell."
+  },
+  {
+    "name": "Longer Shell",
+    "notes": "Personal addition (Lithum suite). On applying Shell, duration +2 - extends Lithum Shell from Virtuose exit."
+  },
+  {
+    "name": "Marking Shots",
+    "notes": "Personal addition. 20% chance to apply Mark on Free Aim shot."
+  },
+  {
+    "name": "Powerful On Shell",
+    "notes": "Personal addition (Lithum suite). Apply Powerful on applying Shell - Lithum applies Shell on Virtuose exit (Last Chance -> Stendhal/Gommage), triggering this every cycle. Boosted by Greater Powerful and Longer Powerful."
+  },
+  {
+    "name": "Powerful Shield",
+    "notes": "Personal addition. 10% increased damage per Shield Point on self."
+  },
+  {
+    "name": "Energising Shell",
+    "notes": "Personal addition (Lithum suite). Give 2 AP on applying Shell - fires every Virtuose exit via Lithum."
+  },
+  {
+    "name": "Empowering Break",
+    "notes": "Free from Empowering Break Pictos (equipped). Speed +546, Crit +32% - keeps Maelle crit-capped at 109% with Shortcut."
+  },
+  {
+    "name": "Shortcut",
+    "notes": "Free from Shortcut Pictos (equipped). Speed +672, Crit +36%. Effect (immediately play below 30% HP, once per battle) fires on the Cheater bonus turn, enabling Last Chance -> Stendhal -> Last Chance -> [Sciel buff] -> Stendhal."
+  }
+]
+
+DATA: data/characters.json
+PATH: Maelle.lumina_core_exclusions
+OP: SET
+VALUE: []
+
+DATA: data/characters.json
+PATH: Maelle.lp_total
+OP: SET
+VALUE: 526
+
+DATA: data/characters.json
+PATH: Maelle.lp_used
+OP: SET
+VALUE: 526
+
+
+DATA: data/characters.json
+PATH: Sciel.lumina_extras
+OP: SET
+VALUE: [
+  {
+    "name": "Breaking Attack",
+    "notes": "Support expansion. Apply Break damage on base attack if Break bar is full."
+  },
+  {
+    "name": "Breaking Counter",
+    "notes": "Support expansion. 50% increased Break damage on Counterattack."
+  },
+  {
+    "name": "Recovery",
+    "notes": "Support expansion. Recovers 10% Health on turn start. Passive self-heal - practical substitute for Clea's Life given Sciel spends turns on Fortune's Fury/Intervention rather than self-healing."
+  },
+  {
+    "name": "Accelerating Heal",
+    "notes": "Personal addition. Healing an ally also applies Rush for 1 turn."
+  },
+  {
+    "name": "Charging Alteration",
+    "notes": "Personal addition. +10% Gradient Charge on applying a Buff, once per turn - fires regularly given Sciel's buff-heavy turns."
+  },
+  {
+    "name": "Energising Heal",
+    "notes": "Personal addition. +2 AP on healing an ally."
+  },
+  {
+    "name": "Gradient Break",
+    "notes": "Personal addition. +50% Gradient Charge on Breaking a target - charges Fortune's Fury gauge."
+  },
+  {
+    "name": "Healing Tint Energy",
+    "notes": "Personal addition. Healing Tints also give 1 AP."
+  },
+  {
+    "name": "Protecting Heal",
+    "notes": "Personal addition. Shell on healing an ally."
+  },
+  {
+    "name": "Powerful Revive",
+    "notes": "Free from Powerful Revive Pictos (equipped). Apply Powerful for 3 turns when revived - synergy with repeated revives in long boss fights."
+  }
+]
+
+DATA: data/characters.json
+PATH: Sciel.lumina_core_exclusions
+OP: SET
+VALUE: []
+
+DATA: data/characters.json
+PATH: Sciel.lp_total
+OP: SET
+VALUE: 315
+
+DATA: data/characters.json
+PATH: Sciel.lp_used
+OP: SET
+VALUE: 315
+
+
+DATA: data/characters.json
+PATH: Lune.lumina_extras
+OP: SET
+VALUE: [
+  {
+    "name": "Augmented First Strike",
+    "notes": "DPS expansion. 50% increased damage on first hit, once per battle."
+  },
+  {
+    "name": "Burn Affinity",
+    "notes": "DPS expansion. 25% increased damage against burning targets. Burn seeded primarily by Hell as setup skill."
+  },
+  {
+    "name": "Dead Energy I",
+    "notes": "DPS expansion. +3 AP on killing an enemy."
+  },
+  {
+    "name": "Dead Energy II",
+    "notes": "DPS expansion. +3 AP on killing an enemy (stacks with Dead Energy I)."
+  },
+  {
+    "name": "Double Third",
+    "notes": "DPS expansion. Every 3rd hit deals double damage. Fires on hits 3/6/9/12 of 12-hit Lightning Dance."
+  },
+  {
+    "name": "Empowering Dodge",
+    "notes": "DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack."
+  },
+  {
+    "name": "Frenzy",
+    "notes": "DPS expansion. Each successive Skill hit deals 10% more damage. Major multiplier on 12-hit Lightning Dance with 3-stain consumption (x5 base damage multiplier)."
+  },
+  {
+    "name": "Glass Cannon",
+    "notes": "DPS expansion. 25% increased damage, 25% increased damage taken. Risk mitigated by Clea's Life maintaining full HP each clean turn."
+  },
+  {
+    "name": "Immaculate",
+    "notes": "DPS expansion. 30% increased damage until first hit received."
+  },
+  {
+    "name": "Warming Up",
+    "notes": "DPS expansion. Damage increases with each attack, up to 20% at 5 stacks."
+  },
+  {
+    "name": "Full Strength",
+    "notes": "Full-health expansion. 25% increased damage at full Health. Maintained by Clea's Life Pictos restoring full HP each clean turn."
+  },
+  {
+    "name": "Accelerating Heal",
+    "notes": "Personal addition. Healing an ally also applies Rush for 1 turn."
+  },
+  {
+    "name": "Breaking Attack",
+    "notes": "Personal addition. Apply Break damage on base attack if Break bar full."
+  },
+  {
+    "name": "Breaker",
+    "notes": "Personal addition. 25% increased Break damage - Lune contributes to Break alongside Monoco, accelerating her own Defenceless/Exposing Break window."
+  },
+  {
+    "name": "Critical Break",
+    "notes": "Personal addition. 25% increased Break damage on Critical hits."
+  },
+  {
+    "name": "Energising Burn",
+    "notes": "Personal addition. +1 AP on applying Burn, once per turn - fires on Hell setup turn."
+  },
+  {
+    "name": "Protecting Heal",
+    "notes": "Personal addition. Shell on healing an ally."
+  },
+  {
+    "name": "Clea's Life",
+    "notes": "Free from Clea's Life Pictos (equipped). Restore to full Health on turn start if no damage taken - keeps all three crit Pictos active for 100% crit without spending a Pictos slot on Clea's Life."
+  },
+  {
+    "name": "Sweet Kill",
+    "notes": "Free from Sweet Kill Pictos (equipped, swapped from Quick Break - identical stats: speed 672, crit 36%). Recover 50% Health on killing an enemy - synergy with Lightning Dance securing kills, supports Full Strength uptime."
+  },
+  {
+    "name": "Rush On Powerful",
+    "notes": "Free from Rush On Powerful Pictos (equipped). Speed 639, Crit 35%. Apply Rush on applying Powerful - fires via Painted Power."
+  },
+  {
+    "name": "Charging Critical",
+    "notes": "DPS expansion. +20% Gradient Charge on Critical Hit, once per turn. Fires every turn at 100% crit."
+  }
+]
+
+DATA: data/characters.json
+PATH: Lune.lumina_core_exclusions
+OP: SET
+VALUE: []
+
+DATA: data/characters.json
+PATH: Lune.lp_total
+OP: SET
+VALUE: 460
+
+DATA: data/characters.json
+PATH: Lune.lp_used
+OP: SET
+VALUE: 460
+
+
+DATA: data/pictos-lumina.json
+PATH: core_lumina_suite.main_team.entries
+OP: SET
+VALUE: [
+  {
+    "name": "AP Discount",
+    "lp": 30,
+    "notes": "Reduces skill AP cost by 1."
+  },
+  {
+    "name": "Aegis Revival",
+    "lp": 5,
+    "notes": "+1 Shield on being revived."
+  },
+  {
+    "name": "Base Shield",
+    "lp": 20,
+    "notes": "Grants 1 Shield HP buffer per turn."
+  },
+  {
+    "name": "Breaker",
+    "lp": 10,
+    "notes": "25% increased Break damage."
+  },
+  {
+    "name": "Breaking Burn",
+    "lp": 5,
+    "notes": "25% increased Break damage on Burning enemies."
+  },
+  {
+    "name": "Breaking Death",
+    "lp": 5,
+    "notes": "Fully charge enemy break bar on death."
+  },
+  {
+    "name": "Cheater",
+    "lp": 40,
+    "notes": "Extra turn after using a skill, once per turn."
+  },
+  {
+    "name": "Critical Break",
+    "lp": 5,
+    "notes": "25% increased Break damage on Critical hits."
+  },
+  {
+    "name": "Dodger",
+    "lp": 1,
+    "notes": "Gain 1 AP on Perfect Dodge. Once per turn."
+  },
+  {
+    "name": "Energising Start I",
+    "lp": 5,
+    "notes": "+1 AP on battle start. Boosted by Energy Master."
+  },
+  {
+    "name": "Energising Turn",
+    "lp": 20,
+    "notes": "+1 AP on turn start. Main AP flow generator; boosted by Energy Master."
+  },
+  {
+    "name": "Energy Master",
+    "lp": 40,
+    "notes": "Every AP gain is increased by 1."
+  },
+  {
+    "name": "First Strike",
+    "lp": 10,
+    "notes": "Act first in battle."
+  },
+  {
+    "name": "Painted Power",
+    "lp": 5,
+    "notes": "Damage can exceed 9,999. Essential for all characters from Act 3 onwards."
+  },
+  {
+    "name": "Protecting Death",
+    "lp": 5,
+    "notes": "Allies gain Shell on death."
+  },
+  {
+    "name": "Second Chance",
+    "lp": 40,
+    "notes": "Revive with 100% Health. Once per battle."
+  },
+  {
+    "name": "Shielding Death",
+    "lp": 10,
+    "notes": "Allies gain 3 Shield points on death."
+  },
+  {
+    "name": "Shortcut",
+    "lp": 5,
+    "notes": "Immediately play when falling below 30% Health. Once per battle."
+  },
+  {
+    "name": "SOS Power",
+    "lp": 5,
+    "notes": "Apply Powerful when falling below 50% Health."
+  },
+  {
+    "name": "SOS Rush",
+    "lp": 5,
+    "notes": "Apply Rush when falling below 50% Health."
+  },
+  {
+    "name": "SOS Shell",
+    "lp": 5,
+    "notes": "Apply Shell when falling below 50% Health."
+  },
+  {
+    "name": "Survivor",
+    "lp": 20,
+    "notes": "Survive fatal damage with 1 Health, once per battle."
+  },
+  {
+    "name": "Teamwork",
+    "lp": 5,
+    "notes": "10% increased damage while all allies are alive."
+  }
+]
+
+DATA: data/pictos-lumina.json
+PATH: core_lumina_suite.main_team.total_lp
+OP: SET
+VALUE: 301
+
+DATA: data/pictos-lumina.json
+PATH: core_lumina_suite.main_team.notes
+OP: SET
+VALUE: "Unified core set, applied to all five characters."
+
+DATA: data/pictos-lumina.json
+PATH: core_lumina_suite.reserve_team.entries
+OP: SET
+VALUE: [
+  {
+    "name": "AP Discount",
+    "lp": 30,
+    "notes": "Reduces skill AP cost by 1."
+  },
+  {
+    "name": "Aegis Revival",
+    "lp": 5,
+    "notes": "+1 Shield on being revived."
+  },
+  {
+    "name": "Base Shield",
+    "lp": 20,
+    "notes": "Grants 1 Shield HP buffer per turn."
+  },
+  {
+    "name": "Breaker",
+    "lp": 10,
+    "notes": "25% increased Break damage."
+  },
+  {
+    "name": "Breaking Burn",
+    "lp": 5,
+    "notes": "25% increased Break damage on Burning enemies."
+  },
+  {
+    "name": "Breaking Death",
+    "lp": 5,
+    "notes": "Fully charge enemy break bar on death."
+  },
+  {
+    "name": "Cheater",
+    "lp": 40,
+    "notes": "Extra turn after using a skill, once per turn."
+  },
+  {
+    "name": "Critical Break",
+    "lp": 5,
+    "notes": "25% increased Break damage on Critical hits."
+  },
+  {
+    "name": "Dodger",
+    "lp": 1,
+    "notes": "Gain 1 AP on Perfect Dodge. Once per turn."
+  },
+  {
+    "name": "Energising Start I",
+    "lp": 5,
+    "notes": "+1 AP on battle start. Boosted by Energy Master."
+  },
+  {
+    "name": "Energising Turn",
+    "lp": 20,
+    "notes": "+1 AP on turn start. Main AP flow generator; boosted by Energy Master."
+  },
+  {
+    "name": "Energy Master",
+    "lp": 40,
+    "notes": "Every AP gain is increased by 1."
+  },
+  {
+    "name": "First Strike",
+    "lp": 10,
+    "notes": "Act first in battle."
+  },
+  {
+    "name": "Painted Power",
+    "lp": 5,
+    "notes": "Damage can exceed 9,999. Essential for all characters from Act 3 onwards."
+  },
+  {
+    "name": "Protecting Death",
+    "lp": 5,
+    "notes": "Allies gain Shell on death."
+  },
+  {
+    "name": "Second Chance",
+    "lp": 40,
+    "notes": "Revive with 100% Health. Once per battle."
+  },
+  {
+    "name": "Shielding Death",
+    "lp": 10,
+    "notes": "Allies gain 3 Shield points on death."
+  },
+  {
+    "name": "Shortcut",
+    "lp": 5,
+    "notes": "Immediately play when falling below 30% Health. Once per battle."
+  },
+  {
+    "name": "SOS Power",
+    "lp": 5,
+    "notes": "Apply Powerful when falling below 50% Health."
+  },
+  {
+    "name": "SOS Rush",
+    "lp": 5,
+    "notes": "Apply Rush when falling below 50% Health."
+  },
+  {
+    "name": "SOS Shell",
+    "lp": 5,
+    "notes": "Apply Shell when falling below 50% Health."
+  },
+  {
+    "name": "Survivor",
+    "lp": 20,
+    "notes": "Survive fatal damage with 1 Health, once per battle."
+  },
+  {
+    "name": "Teamwork",
+    "lp": 5,
+    "notes": "10% increased damage while all allies are alive."
+  }
+]
+
+DATA: data/pictos-lumina.json
+PATH: core_lumina_suite.reserve_team.total_lp
+OP: SET
+VALUE: 301
+
+DATA: data/pictos-lumina.json
+PATH: core_lumina_suite.reserve_team.notes
+OP: SET
+VALUE: "Unified core set, applied to all five characters."
+
+
+DATA: data/characters.json
+PATH: Verso.pictos_equipped
+OP: SET
+VALUE: ["Alternating Critical", "Quick Break", "Energising Stun"]
+
+DATA: data/characters.json
+PATH: Sciel.pictos_equipped
+OP: SET
+VALUE: ["Energy Master", "Breaking Death", "Powerful Revive"]
+
+DATA: data/characters.json
+PATH: Lune.pictos_equipped
+OP: SET
+VALUE: ["Clea's Life", "Sweet Kill", "Rush On Powerful"]
+
+
+DATA: data/characters.json
+PATH: Monoco.lp_used
+OP: SET
+VALUE: 274
+
+DATA: data/characters.json
+PATH: Monoco.lp_total
+OP: SET
+VALUE: 274
