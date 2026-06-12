@@ -114,11 +114,11 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 ## Pictos
 
 <!-- GENERATED:START characters:Lune:Pictos -->
-| Slot | Pictos         | Level | Stat Bonus            | Effect                                     |
-|------|----------------|-------|-----------------------|--------------------------------------------|
-| 1    | Critical Burn  | 25    | Speed +434, Crit +28% | 25% increased Crit rate on Burning enemies |
-| 2    | Burn Affinity  | 21    | Speed +439, Crit +12% | 25% increased damage on Burning targets    |
-| 3    | Breaking Death | 29    | Speed +586, Crit +33% | Fully charge enemy break bar on death      |
+| Slot | Pictos           | Level | Stat Bonus            | Effect                                                                  |
+|------|------------------|-------|-----------------------|-------------------------------------------------------------------------|
+| 1    | Clea's Life      | 30    | Health +5591          | On turn start, if no damage taken since last turn, recover 100% Health. |
+| 2    | Sweet Kill       | 31    | Speed +672, Crit +36% | Recover 50% Health on killing an enemy.                                 |
+| 3    | Rush On Powerful | 31    | Speed +639, Crit +35% | Apply Rush on applying Powerful.                                        |
 <!-- GENERATED:END -->
 
 *Previous Pictos (Longer Shell, Healing Share, Powerful on Shell) replaced Chat 5. Longer Shell moved to Monoco; Healing Share retired.*
@@ -131,63 +131,88 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 
 ### LP Budget
 <!-- GENERATED:START characters:Lune:LP -->
-- **Current capacity:** 260 LP
-- **Used:** 260 LP
+- **Current capacity:** 460 LP
+- **Used:** 460 LP
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Lumina Adjustments
 
 <!-- GENERATED:START characters:Lune:Lumina:adjustments -->
-| Lumina            | Change   | LP | Notes                                                                         |
-|-------------------|----------|----|-------------------------------------------------------------------------------|
-| Breaking Death    | Excluded | 5  | Free from Breaking Death Pictos                                               |
-| Survivor          | Excluded | 20 | Not used in current build                                                     |
-| Breaker           | Excluded | 10 | Not used in current build                                                     |
-| Critical Break    | Excluded | 5  | Not used in current build                                                     |
-| Burning Shots     | Excluded | 3  | Not used in current build                                                     |
-| Breaking Counter  | Excluded | 3  | Not used in current build                                                     |
-| Recovery          | Excluded | 10 | Not used in current build                                                     |
-| AP Discount       | Added    | 30 | 30LP. Reduces skill AP cost by 1.                                             |
-| Accelerating Heal | Added    | 5  | 5LP. Rush on healing an ally.                                                 |
-| Breaking Attack   | Added    | 10 | 10LP. Apply Break damage on base attack.                                      |
-| Burn Affinity     | Added    | —  | Free from Burn Affinity Pictos. 25% increased damage against burning targets. |
-| Critical Burn     | Added    | —  | Free from Critical Burn Pictos. 25% increased crit chance on burning targets. |
-| Energy Master     | Added    | 40 | 40LP. +5 AP on turn start.                                                    |
-| Dead Energy I     | Added    | 2  | 2LP. +2 AP on death of an ally.                                               |
-| Dead Energy II    | Added    | 2  | 2LP. +2 AP on death of an ally (stacks with Dead Energy I).                   |
-| Energising Burn   | Added    | 10 | 10LP. +1 AP on applying Burn, once per turn.                                  |
-| First Strike      | Added    | 10 | 10LP. Act first in battle.                                                    |
-| Protecting Heal   | Added    | 5  | 5LP. Shell on healing an ally.                                                |
+| Lumina                 | Change | LP | Notes                                                                                                                                                            |
+|------------------------|--------|----|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Augmented First Strike | Added  | 5  | DPS expansion. 50% increased damage on first hit, once per battle.                                                                                               |
+| Burn Affinity          | Added  | 10 | DPS expansion. 25% increased damage against burning targets. Burn seeded primarily by Hell as setup skill.                                                       |
+| Charging Critical      | Added  | 10 | DPS expansion. +20% Gradient Charge on Critical Hit, once per turn. Fires every turn at 100% crit.                                                               |
+| Dead Energy I          | Added  | 2  | DPS expansion. +3 AP on killing an enemy.                                                                                                                        |
+| Dead Energy II         | Added  | 2  | DPS expansion. +3 AP on killing an enemy (stacks with Dead Energy I).                                                                                            |
+| Double Third           | Added  | 10 | DPS expansion. Every 3rd hit deals double damage. Fires on hits 3/6/9/12 of 12-hit Lightning Dance.                                                              |
+| Empowering Dodge       | Added  | 5  | DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack.                                                          |
+| Frenzy                 | Added  | 20 | DPS expansion. Each successive Skill hit deals 10% more damage. Major multiplier on 12-hit Lightning Dance with 3-stain consumption (x5 base damage multiplier). |
+| Glass Cannon           | Added  | 10 | DPS expansion. 25% increased damage, 25% increased damage taken. Risk mitigated by Clea's Life maintaining full HP each clean turn.                              |
+| Immaculate             | Added  | 10 | DPS expansion. 30% increased damage until first hit received.                                                                                                    |
+| Warming Up             | Added  | 15 | DPS expansion. Damage increases with each attack, up to 20% at 5 stacks.                                                                                         |
+| Clea's Life            | Added  | —  | Full-health expansion. Free from Pictos. Restore to full Health on turn start if no damage taken.                                                                |
+| Full Strength          | Added  | 15 | Full-health expansion. 25% increased damage at full Health. Maintained by Clea's Life restoring full HP each clean turn.                                         |
+| Accelerating Heal      | Added  | 5  | Personal addition. Healing an ally also applies Rush for 1 turn.                                                                                                 |
+| Breaking Attack        | Added  | 10 | Personal addition. Apply Break damage on base attack if Break bar full.                                                                                          |
+| Breaker                | Added  | 10 | Personal addition. 25% increased Break damage - Lune contributes to Break alongside Monoco, accelerating her own Defenceless/Exposing Break window.              |
+| Critical Break         | Added  | 5  | Personal addition. 25% increased Break damage on Critical hits.                                                                                                  |
+| Energising Burn        | Added  | 10 | Personal addition. +1 AP on applying Burn, once per turn - fires on Hell setup turn.                                                                             |
+| Protecting Heal        | Added  | 5  | Personal addition. Shell on healing an ally.                                                                                                                     |
+| Sweet Kill             | Added  | —  | Free from Pictos. Recover 50% Health on killing an enemy - synergy with Lightning Dance securing kills, supports Full Strength uptime.                           |
+| Rush On Powerful       | Added  | —  | Free from Pictos. Apply Rush on applying Powerful.                                                                                                               |
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Lune:Lumina -->
-| Lumina             | LP | Notes                                                       |
-|--------------------|----|-------------------------------------------------------------|
-| AP Discount        | 30 | 30LP. Reduces skill AP cost by 1.                           |
-| Accelerating Heal  | 5  | 5LP. Rush on healing an ally.                               |
-| Base Shield        | 20 |                                                             |
-| Breaking Attack    | 10 | 10LP. Apply Break damage on base attack.                    |
-| Breaking Burn      | 5  |                                                             |
-| Breaking Death     | —  | FREE from Breaking Death Pictos                             |
-| Burn Affinity      | —  | FREE from Burn Affinity Pictos                              |
-| Cheater            | 40 |                                                             |
-| Critical Burn      | —  | FREE from Critical Burn Pictos                              |
-| Dead Energy I      | 2  | 2LP. +2 AP on death of an ally.                             |
-| Dead Energy II     | 2  | 2LP. +2 AP on death of an ally (stacks with Dead Energy I). |
-| Dodger             | 1  |                                                             |
-| Energising Burn    | 10 | 10LP. +1 AP on applying Burn, once per turn.                |
-| Energising Start I | 5  |                                                             |
-| Energising Turn    | 20 |                                                             |
-| Energy Master      | 40 | 40LP. +5 AP on turn start.                                  |
-| First Strike       | 10 | 10LP. Act first in battle.                                  |
-| Painted Power      | 5  |                                                             |
-| Protecting Heal    | 5  | 5LP. Shell on healing an ally.                              |
-| Second Chance      | 40 | Revive with 100% Health, once per battle.                   |
-| Shortcut           | 5  |                                                             |
-| Teamwork           | 5  |                                                             |
+| Lumina                 | LP | Notes                                                                                                                                                            |
+|------------------------|----|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AP Discount            | 30 | Reduces skill AP cost by 1.                                                                                                                                      |
+| Accelerating Heal      | 5  | Personal addition. Healing an ally also applies Rush for 1 turn.                                                                                                 |
+| Aegis Revival          | 5  | +1 Shield on being revived.                                                                                                                                      |
+| Augmented First Strike | 5  | DPS expansion. 50% increased damage on first hit, once per battle.                                                                                               |
+| Base Shield            | 20 | Grants 1 Shield HP buffer per turn.                                                                                                                              |
+| Breaker                | 10 | 25% increased Break damage.                                                                                                                                      |
+| Breaker                | 10 | Personal addition. 25% increased Break damage - Lune contributes to Break alongside Monoco, accelerating her own Defenceless/Exposing Break window.              |
+| Breaking Attack        | 10 | Personal addition. Apply Break damage on base attack if Break bar full.                                                                                          |
+| Breaking Burn          | 5  | 25% increased Break damage on Burning enemies.                                                                                                                   |
+| Breaking Death         | 5  | Fully charge enemy break bar on death.                                                                                                                           |
+| Burn Affinity          | 10 | DPS expansion. 25% increased damage against burning targets. Burn seeded primarily by Hell as setup skill.                                                       |
+| Charging Critical      | 10 | DPS expansion. +20% Gradient Charge on Critical Hit, once per turn. Fires every turn at 100% crit.                                                               |
+| Cheater                | 40 | Extra turn after using a skill, once per turn.                                                                                                                   |
+| Clea's Life            | —  | FREE from Clea's Life Pictos                                                                                                                                     |
+| Critical Break         | 5  | 25% increased Break damage on Critical hits.                                                                                                                     |
+| Critical Break         | 5  | Personal addition. 25% increased Break damage on Critical hits.                                                                                                  |
+| Dead Energy I          | 2  | DPS expansion. +3 AP on killing an enemy.                                                                                                                        |
+| Dead Energy II         | 2  | DPS expansion. +3 AP on killing an enemy (stacks with Dead Energy I).                                                                                            |
+| Dodger                 | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                                                                                                                       |
+| Double Third           | 10 | DPS expansion. Every 3rd hit deals double damage. Fires on hits 3/6/9/12 of 12-hit Lightning Dance.                                                              |
+| Empowering Dodge       | 5  | DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack.                                                          |
+| Energising Burn        | 10 | Personal addition. +1 AP on applying Burn, once per turn - fires on Hell setup turn.                                                                             |
+| Energising Start I     | 5  | +1 AP on battle start. Boosted by Energy Master.                                                                                                                 |
+| Energising Turn        | 20 | +1 AP on turn start. Main AP flow generator; boosted by Energy Master.                                                                                           |
+| Energy Master          | 40 | Every AP gain is increased by 1.                                                                                                                                 |
+| First Strike           | 10 | Act first in battle.                                                                                                                                             |
+| Frenzy                 | 20 | DPS expansion. Each successive Skill hit deals 10% more damage. Major multiplier on 12-hit Lightning Dance with 3-stain consumption (x5 base damage multiplier). |
+| Full Strength          | 15 | Full-health expansion. 25% increased damage at full Health. Maintained by Clea's Life restoring full HP each clean turn.                                         |
+| Glass Cannon           | 10 | DPS expansion. 25% increased damage, 25% increased damage taken. Risk mitigated by Clea's Life maintaining full HP each clean turn.                              |
+| Immaculate             | 10 | DPS expansion. 30% increased damage until first hit received.                                                                                                    |
+| Painted Power          | 5  | Damage can exceed 9,999. Essential for all characters from Act 3 onwards.                                                                                        |
+| Protecting Death       | 5  | Allies gain Shell on death.                                                                                                                                      |
+| Protecting Heal        | 5  | Personal addition. Shell on healing an ally.                                                                                                                     |
+| Rush On Powerful       | —  | FREE from Rush On Powerful Pictos                                                                                                                                |
+| SOS Power              | 5  | Apply Powerful when falling below 50% Health.                                                                                                                    |
+| SOS Rush               | 5  | Apply Rush when falling below 50% Health.                                                                                                                        |
+| SOS Shell              | 5  | Apply Shell when falling below 50% Health.                                                                                                                       |
+| Second Chance          | 40 | Revive with 100% Health. Once per battle.                                                                                                                        |
+| Shielding Death        | 10 | Allies gain 3 Shield points on death.                                                                                                                            |
+| Shortcut               | 5  | Immediately play when falling below 30% Health. Once per battle.                                                                                                 |
+| Survivor               | 20 | Survive fatal damage with 1 Health, once per battle.                                                                                                             |
+| Sweet Kill             | —  | FREE from Sweet Kill Pictos                                                                                                                                      |
+| Teamwork               | 5  | 10% increased damage while all allies are alive.                                                                                                                 |
+| Warming Up             | 15 | DPS expansion. Damage increases with each attack, up to 20% at 5 stacks.                                                                                         |
 <!-- GENERATED:END -->
 
 ---

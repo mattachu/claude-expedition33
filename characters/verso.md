@@ -119,11 +119,11 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 ## Pictos
 
 <!-- GENERATED:START characters:Verso:Pictos -->
-| Slot | Pictos               | Level | Stat Bonus              | Effect                                                               |
-|------|----------------------|-------|-------------------------|----------------------------------------------------------------------|
-| 1    | Second Chance        | 31    | Health +3981, Crit +15% | Revive with 100% Health. Once per battle.                            |
-| 2    | Sweet Kill           | 31    | Speed +672, Crit +36%   | Recover 50% Health on killing an enemy.                              |
-| 3    | Alternating Critical | 29    | Speed +293, Crit +50%   | On Critical hit, 100% increased damage of the next non-Critical hit. |
+| Slot | Pictos               | Level | Stat Bonus            | Effect                                                               |
+|------|----------------------|-------|-----------------------|----------------------------------------------------------------------|
+| 1    | Alternating Critical | 29    | Speed +293, Crit +50% | On Critical hit, 100% increased damage of the next non-Critical hit. |
+| 2    | Quick Break          | 31    | Speed +672, Crit +36% | Play again on Breaking a target.                                     |
+| 3    | Energising Stun      | 28    | Speed +519, Crit +31% | +1 AP on hitting a Stunned target with a Skill.                      |
 <!-- GENERATED:END -->
 
 **Breaking Death synergy:** On death → break bar fills instantly → Second Chance revives at Rank D → Perfect Break triggers break → Rank S in one move → Steeled Strike burst immediately active.
@@ -134,71 +134,86 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 ### LP Budget
 <!-- GENERATED:START characters:Verso:LP -->
-- **Current capacity:** 308 LP
-- **Used:** 308 LP
+- **Current capacity:** 448 LP
+- **Used:** 448 LP
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Lumina Adjustments
 
 <!-- GENERATED:START characters:Verso:Lumina:adjustments -->
-| Lumina                 | Change   | LP | Notes                                                           |
-|------------------------|----------|----|-----------------------------------------------------------------|
-| Second Chance          | Excluded | 40 | Free from Second Chance Pictos                                  |
-| Sweet Kill             | Excluded | 5  | Free from Sweet Kill Pictos                                     |
-| Survivor               | Excluded | 20 | Not used in current build                                       |
-| Energising Start I     | Excluded | 5  | Not used in current build                                       |
-| Burning Shots          | Excluded | 3  | Not used in current build                                       |
-| Breaking Counter       | Excluded | 3  | Not used in current build                                       |
-| Anti-Blight            | Excluded | 10 | Not used in current build                                       |
-| AP Discount            | Added    | 30 | 30LP. Reduces skill AP cost by 1.                               |
-| Alternating Critical   | Added    | —  | Free from Alternating Critical Pictos.                          |
-| At Death's Door        | Added    | 5  | 5LP. 50% increased damage below 10% HP.                         |
-| Augmented First Strike | Added    | 5  | 5LP. 50% increased damage on first hit, once per battle.        |
-| Auto Rush              | Added    | 10 | 10LP. Apply Rush for 3 turns on battle start.                   |
-| Burn Affinity          | Added    | 10 | 10LP. 25% increased damage against burning targets.             |
-| Charging Critical      | Added    | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn.      |
-| Confident Fighter      | Added    | 15 | 15LP. 30% increased damage, can't be healed.                    |
-| Double Third           | Added    | 10 | 10LP. Third hit in a sequence deals double damage.              |
-| Energising Break       | Added    | 3  | 3LP. +3 AP on Breaking a target.                                |
-| First Strike           | Added    | 10 | 10LP. Act first in battle.                                      |
-| Frenzy                 | Added    | 20 | 20LP. Each successive hit increases damage by 10%.              |
-| Warming Up             | Added    | 15 | 15LP. Damage increases with each attack, up to 20% at 5 stacks. |
+| Lumina                 | Change | LP | Notes                                                                                                                                                                                                                    |
+|------------------------|--------|----|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Augmented First Strike | Added  | 5  | DPS expansion. 50% increased damage on first hit, once per battle.                                                                                                                                                       |
+| Burn Affinity          | Added  | 10 | DPS expansion. 25% increased damage against burning targets. Synergy: Simoso 20% burn chance on Light damage can seed this.                                                                                              |
+| Charging Critical      | Added  | 10 | DPS expansion. +20% Gradient Charge on Critical Hit, once per turn. Fires every turn at 122% crit.                                                                                                                       |
+| Dead Energy I          | Added  | 2  | DPS expansion. +3 AP on killing an enemy.                                                                                                                                                                                |
+| Dead Energy II         | Added  | 2  | DPS expansion. +3 AP on killing an enemy (stacks with Dead Energy I).                                                                                                                                                    |
+| Double Third           | Added  | 10 | DPS expansion. Every 3rd hit deals double damage. Fires on hits 3/6/9/12 of 13-hit Steeled Strike.                                                                                                                       |
+| Empowering Dodge       | Added  | 5  | DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack.                                                                                                                  |
+| Frenzy                 | Added  | 20 | DPS expansion. Each successive Skill hit deals 10% more damage. Major multiplier on 13-hit Steeled Strike.                                                                                                               |
+| Glass Cannon           | Added  | 10 | DPS expansion. 25% increased damage, 25% increased damage taken.                                                                                                                                                         |
+| Immaculate             | Added  | 10 | DPS expansion. 30% increased damage until first hit received.                                                                                                                                                            |
+| Warming Up             | Added  | 15 | DPS expansion. Damage increases with each attack, up to 20% at 5 stacks.                                                                                                                                                 |
+| At Death's Door        | Added  | 5  | Low-health expansion. 50% increased damage below 10% HP. Active permanently while at 1 HP from Overload.                                                                                                                 |
+| Confident Fighter      | Added  | 15 | Low-health expansion. 30% increased damage, cannot be healed.                                                                                                                                                            |
+| In Medias Res          | Added  | 10 | Low-health expansion. +3 Shields at battle start, max Health halved. HP penalty irrelevant at 1 HP from Overload.                                                                                                        |
+| Inverted Affinity      | Added  | 5  | Low-health expansion. 50% increased damage while Inverted (cannot be healed).                                                                                                                                            |
+| Auto Rush              | Added  | 10 | Personal addition. Apply Rush for 3 turns on battle start - secures first-action priority before Litheson Greater Rush takes effect.                                                                                     |
+| Energising Break       | Added  | 3  | Personal addition. +3 AP on Breaking a target - enables Perfect Break -> Stun -> End Bringer rotation. Frequency depends on boss: varies from rarely breaking (e.g. Simon) to easily broken (e.g. Chromatic Lampmaster). |
+| Alternating Critical   | Added  | —  | Free from Pictos. Effect not used at 100% crit - pure stat stick.                                                                                                                                                        |
+| Quick Break            | Added  | —  | Free from Pictos. Effect (play again on Breaking a target) does not fire alongside Cheater - pure stat stick.                                                                                                            |
+| Energising Stun        | Added  | —  | Free from Pictos. +1 AP on hitting Stunned target with Skill - synergy with End Bringer.                                                                                                                                 |
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Verso:Lumina -->
-| Lumina                 | LP | Notes                                                                                             |
-|------------------------|----|---------------------------------------------------------------------------------------------------|
-| AP Discount            | 30 | 30LP. Reduces skill AP cost by 1.                                                                 |
-| Alternating Critical   | —  | FREE from Alternating Critical Pictos                                                             |
-| At Death's Door        | 5  | 5LP. 50% increased damage below 10% HP.                                                           |
-| Augmented First Strike | 5  | 5LP. 50% increased damage on first hit, once per battle.                                          |
-| Auto Rush              | 10 | 10LP. Apply Rush for 3 turns on battle start.                                                     |
-| Base Shield            | 20 | Verso: previously non-functional with Chevalam L4; now available with Simoso — see open question. |
-| Breaker                | 10 | Main break damage booster                                                                         |
-| Breaking Burn          | 5  |                                                                                                   |
-| Breaking Death         | 5  | Extremely helpful in tough boss fights                                                            |
-| Burn Affinity          | 10 | 10LP. 25% increased damage against burning targets.                                               |
-| Charging Critical      | 10 | 10LP. +20% Gradient Charge on Critical Hit, once per turn.                                        |
-| Cheater                | 40 | Essential for endgame builds                                                                      |
-| Confident Fighter      | 15 | 15LP. 30% increased damage, can't be healed.                                                      |
-| Critical Break         | 5  |                                                                                                   |
-| Dead Energy I          | 2  |                                                                                                   |
-| Dead Energy II         | 2  |                                                                                                   |
-| Dodger                 | 1  |                                                                                                   |
-| Double Third           | 10 | 10LP. Third hit in a sequence deals double damage.                                                |
-| Energising Break       | 3  | 3LP. +3 AP on Breaking a target.                                                                  |
-| Energising Turn        | 20 | Main AP flow generator; boosted by Energy Master                                                  |
-| Energy Master          | 40 | Add 1 to AP boosts (not double) — game-changing for AP generation                                 |
-| First Strike           | 10 | 10LP. Act first in battle.                                                                        |
-| Frenzy                 | 20 | 20LP. Each successive hit increases damage by 10%.                                                |
-| Painted Power          | 5  | Essential for all characters from Act 3 onwards                                                   |
-| Second Chance          | —  | FREE from Second Chance Pictos                                                                    |
-| Shortcut               | 5  |                                                                                                   |
-| Teamwork               | 5  |                                                                                                   |
-| Warming Up             | 15 | 15LP. Damage increases with each attack, up to 20% at 5 stacks.                                   |
+| Lumina                 | LP | Notes                                                                                                                                                                                                                    |
+|------------------------|----|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AP Discount            | 30 | Reduces skill AP cost by 1.                                                                                                                                                                                              |
+| Aegis Revival          | 5  | +1 Shield on being revived.                                                                                                                                                                                              |
+| Alternating Critical   | —  | FREE from Alternating Critical Pictos                                                                                                                                                                                    |
+| At Death's Door        | 5  | Low-health expansion. 50% increased damage below 10% HP. Active permanently while at 1 HP from Overload.                                                                                                                 |
+| Augmented First Strike | 5  | DPS expansion. 50% increased damage on first hit, once per battle.                                                                                                                                                       |
+| Auto Rush              | 10 | Personal addition. Apply Rush for 3 turns on battle start - secures first-action priority before Litheson Greater Rush takes effect.                                                                                     |
+| Base Shield            | 20 | Grants 1 Shield HP buffer per turn.                                                                                                                                                                                      |
+| Breaker                | 10 | 25% increased Break damage.                                                                                                                                                                                              |
+| Breaking Burn          | 5  | 25% increased Break damage on Burning enemies.                                                                                                                                                                           |
+| Breaking Death         | 5  | Fully charge enemy break bar on death.                                                                                                                                                                                   |
+| Burn Affinity          | 10 | DPS expansion. 25% increased damage against burning targets. Synergy: Simoso 20% burn chance on Light damage can seed this.                                                                                              |
+| Charging Critical      | 10 | DPS expansion. +20% Gradient Charge on Critical Hit, once per turn. Fires every turn at 122% crit.                                                                                                                       |
+| Cheater                | 40 | Extra turn after using a skill, once per turn.                                                                                                                                                                           |
+| Confident Fighter      | 15 | Low-health expansion. 30% increased damage, cannot be healed.                                                                                                                                                            |
+| Critical Break         | 5  | 25% increased Break damage on Critical hits.                                                                                                                                                                             |
+| Dead Energy I          | 2  | DPS expansion. +3 AP on killing an enemy.                                                                                                                                                                                |
+| Dead Energy II         | 2  | DPS expansion. +3 AP on killing an enemy (stacks with Dead Energy I).                                                                                                                                                    |
+| Dodger                 | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                                                                                                                                                                               |
+| Double Third           | 10 | DPS expansion. Every 3rd hit deals double damage. Fires on hits 3/6/9/12 of 13-hit Steeled Strike.                                                                                                                       |
+| Empowering Dodge       | 5  | DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack.                                                                                                                  |
+| Energising Break       | 3  | Personal addition. +3 AP on Breaking a target - enables Perfect Break -> Stun -> End Bringer rotation. Frequency depends on boss: varies from rarely breaking (e.g. Simon) to easily broken (e.g. Chromatic Lampmaster). |
+| Energising Start I     | 5  | +1 AP on battle start. Boosted by Energy Master.                                                                                                                                                                         |
+| Energising Stun        | —  | FREE from Energising Stun Pictos                                                                                                                                                                                         |
+| Energising Turn        | 20 | +1 AP on turn start. Main AP flow generator; boosted by Energy Master.                                                                                                                                                   |
+| Energy Master          | 40 | Every AP gain is increased by 1.                                                                                                                                                                                         |
+| First Strike           | 10 | Act first in battle.                                                                                                                                                                                                     |
+| Frenzy                 | 20 | DPS expansion. Each successive Skill hit deals 10% more damage. Major multiplier on 13-hit Steeled Strike.                                                                                                               |
+| Glass Cannon           | 10 | DPS expansion. 25% increased damage, 25% increased damage taken.                                                                                                                                                         |
+| Immaculate             | 10 | DPS expansion. 30% increased damage until first hit received.                                                                                                                                                            |
+| In Medias Res          | 10 | Low-health expansion. +3 Shields at battle start, max Health halved. HP penalty irrelevant at 1 HP from Overload.                                                                                                        |
+| Inverted Affinity      | 5  | Low-health expansion. 50% increased damage while Inverted (cannot be healed).                                                                                                                                            |
+| Painted Power          | 5  | Damage can exceed 9,999. Essential for all characters from Act 3 onwards.                                                                                                                                                |
+| Protecting Death       | 5  | Allies gain Shell on death.                                                                                                                                                                                              |
+| Quick Break            | —  | FREE from Quick Break Pictos                                                                                                                                                                                             |
+| SOS Power              | 5  | Apply Powerful when falling below 50% Health.                                                                                                                                                                            |
+| SOS Rush               | 5  | Apply Rush when falling below 50% Health.                                                                                                                                                                                |
+| SOS Shell              | 5  | Apply Shell when falling below 50% Health.                                                                                                                                                                               |
+| Second Chance          | 40 | Revive with 100% Health. Once per battle.                                                                                                                                                                                |
+| Shielding Death        | 10 | Allies gain 3 Shield points on death.                                                                                                                                                                                    |
+| Shortcut               | 5  | Immediately play when falling below 30% Health. Once per battle.                                                                                                                                                         |
+| Survivor               | 20 | Survive fatal damage with 1 Health, once per battle.                                                                                                                                                                     |
+| Teamwork               | 5  | 10% increased damage while all allies are alive.                                                                                                                                                                         |
+| Warming Up             | 15 | DPS expansion. Damage increases with each attack, up to 20% at 5 stacks.                                                                                                                                                 |
 <!-- GENERATED:END -->
 
 ---

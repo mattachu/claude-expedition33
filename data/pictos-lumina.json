@@ -197,7 +197,7 @@
       "effect": "25% increased Counterattack damage.",
       "lp_cost": 3,
       "obtained": true,
-      "equipped_by": "Sciel",
+      "equipped_by": null,
       "level": 28,
       "stats": {
         "health": 4058,
@@ -400,7 +400,7 @@
       "effect": "Fully charge enemy break bar on death",
       "lp_cost": 5,
       "obtained": true,
-      "equipped_by": "Lune",
+      "equipped_by": "Sciel",
       "level": 29,
       "stats": {
         "speed": 586,
@@ -438,7 +438,7 @@
       "effect": "25% increased damage on Burning targets",
       "lp_cost": 10,
       "obtained": true,
-      "equipped_by": "Lune",
+      "equipped_by": null,
       "level": 21,
       "stats": {
         "speed": 439,
@@ -639,7 +639,7 @@
       "effect": "On turn start, if no damage taken since last turn, recover 100% Health.",
       "lp_cost": 30,
       "obtained": true,
-      "equipped_by": "Maelle",
+      "equipped_by": "Lune",
       "level": 30,
       "stats": {
         "health": 5591
@@ -751,7 +751,7 @@
       "effect": "25% increased Crit rate on Burning enemies",
       "lp_cost": 5,
       "obtained": true,
-      "equipped_by": "Lune",
+      "equipped_by": null,
       "level": 25,
       "stats": {
         "speed": 434,
@@ -1218,7 +1218,7 @@
       "effect": "20% chance to gain 1 AP on Free Aim shot.",
       "lp_cost": 10,
       "obtained": true,
-      "equipped_by": "Sciel",
+      "equipped_by": null,
       "level": 28,
       "stats": {
         "speed": 779,
@@ -1277,7 +1277,7 @@
       "effect": "+1 AP on hitting a Stunned target with a Skill.",
       "lp_cost": 10,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Verso",
       "level": 28,
       "stats": {
         "speed": 519,
@@ -1292,7 +1292,7 @@
       "effect": "+1 AP on turn start.",
       "lp_cost": 20,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Maelle",
       "level": 31,
       "stats": {
         "speed": 1277
@@ -1306,7 +1306,7 @@
       "effect": "Every AP gain is increased by 1",
       "lp_cost": 40,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Sciel",
       "level": 30,
       "stats": {
         "health": 4979
@@ -1827,7 +1827,7 @@
       "effect": "Converts all Physical damage to Void damage.",
       "lp_cost": 10,
       "obtained": true,
-      "equipped_by": "Sciel",
+      "equipped_by": null,
       "level": 28,
       "stats": {
         "speed": 519,
@@ -1908,7 +1908,7 @@
       "effect": "Apply Powerful for 3 turns when revived.",
       "lp_cost": 3,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Sciel",
       "level": 28,
       "stats": {
         "speed": 546,
@@ -2058,7 +2058,7 @@
       "effect": "Play again on Breaking a target.",
       "lp_cost": 3,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Verso",
       "level": 31,
       "stats": {
         "speed": 672,
@@ -2160,7 +2160,7 @@
       "effect": "Apply Rush on applying Powerful.",
       "lp_cost": 10,
       "obtained": true,
-      "equipped_by": null,
+      "equipped_by": "Lune",
       "level": 31,
       "stats": {
         "speed": 639,
@@ -2208,7 +2208,7 @@
       "effect": "Revive with 100% Health. Once per battle.",
       "lp_cost": 40,
       "obtained": true,
-      "equipped_by": "Verso",
+      "equipped_by": null,
       "level": 31,
       "stats": {
         "health": 3981,
@@ -2424,7 +2424,7 @@
       "effect": "Recover 50% Health on killing an enemy.",
       "lp_cost": 5,
       "obtained": true,
-      "equipped_by": "Verso",
+      "equipped_by": "Lune",
       "level": 31,
       "stats": {
         "speed": 672,
@@ -2751,176 +2751,246 @@
   ],
   "core_lumina_suite": {
     "main_team": {
-      "total_lp": 246,
+      "total_lp": 301,
       "entries": [
         {
-          "name": "Painted Power",
-          "lp": 5,
-          "notes": "Essential for all characters from Act 3 onwards"
+          "name": "AP Discount",
+          "lp": 30,
+          "notes": "Reduces skill AP cost by 1."
         },
         {
-          "name": "Energising Turn",
+          "name": "Aegis Revival",
+          "lp": 5,
+          "notes": "+1 Shield on being revived."
+        },
+        {
+          "name": "Base Shield",
           "lp": 20,
-          "notes": "Main AP flow generator; boosted by Energy Master"
+          "notes": "Grants 1 Shield HP buffer per turn."
+        },
+        {
+          "name": "Breaker",
+          "lp": 10,
+          "notes": "25% increased Break damage."
+        },
+        {
+          "name": "Breaking Burn",
+          "lp": 5,
+          "notes": "25% increased Break damage on Burning enemies."
+        },
+        {
+          "name": "Breaking Death",
+          "lp": 5,
+          "notes": "Fully charge enemy break bar on death."
         },
         {
           "name": "Cheater",
           "lp": 40,
-          "notes": "Essential for endgame builds"
+          "notes": "Extra turn after using a skill, once per turn."
+        },
+        {
+          "name": "Critical Break",
+          "lp": 5,
+          "notes": "25% increased Break damage on Critical hits."
+        },
+        {
+          "name": "Dodger",
+          "lp": 1,
+          "notes": "Gain 1 AP on Perfect Dodge. Once per turn."
+        },
+        {
+          "name": "Energising Start I",
+          "lp": 5,
+          "notes": "+1 AP on battle start. Boosted by Energy Master."
+        },
+        {
+          "name": "Energising Turn",
+          "lp": 20,
+          "notes": "+1 AP on turn start. Main AP flow generator; boosted by Energy Master."
         },
         {
           "name": "Energy Master",
           "lp": 40,
-          "notes": "Add 1 to AP boosts (not double) — game-changing for AP generation"
+          "notes": "Every AP gain is increased by 1."
+        },
+        {
+          "name": "First Strike",
+          "lp": 10,
+          "notes": "Act first in battle."
+        },
+        {
+          "name": "Painted Power",
+          "lp": 5,
+          "notes": "Damage can exceed 9,999. Essential for all characters from Act 3 onwards."
+        },
+        {
+          "name": "Protecting Death",
+          "lp": 5,
+          "notes": "Allies gain Shell on death."
         },
         {
           "name": "Second Chance",
           "lp": 40,
-          "notes": "Can save boss battles"
+          "notes": "Revive with 100% Health. Once per battle."
+        },
+        {
+          "name": "Shielding Death",
+          "lp": 10,
+          "notes": "Allies gain 3 Shield points on death."
+        },
+        {
+          "name": "Shortcut",
+          "lp": 5,
+          "notes": "Immediately play when falling below 30% Health. Once per battle."
+        },
+        {
+          "name": "SOS Power",
+          "lp": 5,
+          "notes": "Apply Powerful when falling below 50% Health."
+        },
+        {
+          "name": "SOS Rush",
+          "lp": 5,
+          "notes": "Apply Rush when falling below 50% Health."
+        },
+        {
+          "name": "SOS Shell",
+          "lp": 5,
+          "notes": "Apply Shell when falling below 50% Health."
         },
         {
           "name": "Survivor",
           "lp": 20,
-          "notes": "Secondary safety net before Second Chance"
+          "notes": "Survive fatal damage with 1 Health, once per battle."
+        },
+        {
+          "name": "Teamwork",
+          "lp": 5,
+          "notes": "10% increased damage while all allies are alive."
+        }
+      ],
+      "notes": "Unified core set, applied to all five characters."
+    },
+    "reserve_team": {
+      "total_lp": 301,
+      "entries": [
+        {
+          "name": "AP Discount",
+          "lp": 30,
+          "notes": "Reduces skill AP cost by 1."
+        },
+        {
+          "name": "Aegis Revival",
+          "lp": 5,
+          "notes": "+1 Shield on being revived."
         },
         {
           "name": "Base Shield",
           "lp": 20,
-          "notes": "Verso: previously non-functional with Chevalam L4; now available with Simoso — see open question."
-        },
-        {
-          "name": "Teamwork",
-          "lp": 5
-        },
-        {
-          "name": "Energising Start I",
-          "lp": 5,
-          "notes": "Boosted by Energy Master to 8AP on battle start"
-        },
-        {
-          "name": "Dodger",
-          "lp": 1
+          "notes": "Grants 1 Shield HP buffer per turn."
         },
         {
           "name": "Breaker",
           "lp": 10,
-          "notes": "Main break damage booster"
+          "notes": "25% increased Break damage."
         },
         {
-          "name": "Dead Energy I",
-          "lp": 2
-        },
-        {
-          "name": "Dead Energy II",
-          "lp": 2
+          "name": "Breaking Burn",
+          "lp": 5,
+          "notes": "25% increased Break damage on Burning enemies."
         },
         {
           "name": "Breaking Death",
           "lp": 5,
-          "notes": "Extremely helpful in tough boss fights"
-        },
-        {
-          "name": "Critical Break",
-          "lp": 5
-        },
-        {
-          "name": "Burning Shots",
-          "lp": 3
-        },
-        {
-          "name": "Breaking Burn",
-          "lp": 5
-        },
-        {
-          "name": "Breaking Counter",
-          "lp": 3
-        },
-        {
-          "name": "Shortcut",
-          "lp": 5
-        },
-        {
-          "name": "Anti-Blight",
-          "lp": 10,
-          "notes": "Especially important in Renoir's Drafts"
-        }
-      ],
-      "notes": "Applied via in-game Lumina set."
-    },
-    "reserve_team": {
-      "total_lp": 202,
-      "entries": [
-        {
-          "name": "Painted Power",
-          "lp": 5
-        },
-        {
-          "name": "Energising Turn",
-          "lp": 20
+          "notes": "Fully charge enemy break bar on death."
         },
         {
           "name": "Cheater",
-          "lp": 40
-        },
-        {
-          "name": "Shortcut",
-          "lp": 5
-        },
-        {
-          "name": "Survivor",
-          "lp": 20
-        },
-        {
-          "name": "Recovery",
-          "lp": 10
-        },
-        {
-          "name": "Teamwork",
-          "lp": 5
-        },
-        {
-          "name": "Energising Start I",
-          "lp": 5
-        },
-        {
-          "name": "Dodger",
-          "lp": 1
-        },
-        {
-          "name": "Breaker",
-          "lp": 10
+          "lp": 40,
+          "notes": "Extra turn after using a skill, once per turn."
         },
         {
           "name": "Critical Break",
-          "lp": 5
+          "lp": 5,
+          "notes": "25% increased Break damage on Critical hits."
         },
         {
-          "name": "Burning Shots",
-          "lp": 3
+          "name": "Dodger",
+          "lp": 1,
+          "notes": "Gain 1 AP on Perfect Dodge. Once per turn."
         },
         {
-          "name": "Breaking Burn",
-          "lp": 5
+          "name": "Energising Start I",
+          "lp": 5,
+          "notes": "+1 AP on battle start. Boosted by Energy Master."
         },
         {
-          "name": "Breaking Counter",
-          "lp": 3
+          "name": "Energising Turn",
+          "lp": 20,
+          "notes": "+1 AP on turn start. Main AP flow generator; boosted by Energy Master."
         },
         {
-          "name": "Breaking Death",
-          "lp": 5
+          "name": "Energy Master",
+          "lp": 40,
+          "notes": "Every AP gain is increased by 1."
         },
         {
-          "name": "Base Shield",
-          "lp": 20
+          "name": "First Strike",
+          "lp": 10,
+          "notes": "Act first in battle."
+        },
+        {
+          "name": "Painted Power",
+          "lp": 5,
+          "notes": "Damage can exceed 9,999. Essential for all characters from Act 3 onwards."
+        },
+        {
+          "name": "Protecting Death",
+          "lp": 5,
+          "notes": "Allies gain Shell on death."
         },
         {
           "name": "Second Chance",
           "lp": 40,
-          "notes": "Revive with 100% Health, once per battle."
+          "notes": "Revive with 100% Health. Once per battle."
+        },
+        {
+          "name": "Shielding Death",
+          "lp": 10,
+          "notes": "Allies gain 3 Shield points on death."
+        },
+        {
+          "name": "Shortcut",
+          "lp": 5,
+          "notes": "Immediately play when falling below 30% Health. Once per battle."
+        },
+        {
+          "name": "SOS Power",
+          "lp": 5,
+          "notes": "Apply Powerful when falling below 50% Health."
+        },
+        {
+          "name": "SOS Rush",
+          "lp": 5,
+          "notes": "Apply Rush when falling below 50% Health."
+        },
+        {
+          "name": "SOS Shell",
+          "lp": 5,
+          "notes": "Apply Shell when falling below 50% Health."
+        },
+        {
+          "name": "Survivor",
+          "lp": 20,
+          "notes": "Survive fatal damage with 1 Health, once per battle."
+        },
+        {
+          "name": "Teamwork",
+          "lp": 5,
+          "notes": "10% increased damage while all allies are alive."
         }
       ],
-      "notes": "Main team core minus Dead Energy I, Dead Energy II, Energy Master, Anti-Blight; plus Recovery."
+      "notes": "Unified core set, applied to all five characters."
     }
   },
   "candidates_for_review": [

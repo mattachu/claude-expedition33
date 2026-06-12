@@ -93,11 +93,11 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 ### Current (permanent loadout)
 
 <!-- GENERATED:START characters:Sciel:Pictos -->
-| Slot | Pictos              | Level | Stat Bonus              | Effect                                       |
-|------|---------------------|-------|-------------------------|----------------------------------------------|
-| 1    | Augmented Counter I | 28    | Health +4058, Crit +16% | 25% increased Counterattack damage.          |
-| 2    | Energising Shots    | 28    | Speed +779, Crit +16%   | 20% chance to gain 1 AP on Free Aim shot.    |
-| 3    | Painter             | 28    | Speed +519, Crit +31%   | Converts all Physical damage to Void damage. |
+| Slot | Pictos          | Level | Stat Bonus            | Effect                                   |
+|------|-----------------|-------|-----------------------|------------------------------------------|
+| 1    | Energy Master   | 30    | Health +4979          | Every AP gain is increased by 1          |
+| 2    | Breaking Death  | 29    | Speed +586, Crit +33% | Fully charge enemy break bar on death    |
+| 3    | Powerful Revive | 28    | Speed +546, Crit +32% | Apply Powerful for 3 turns when revived. |
 <!-- GENERATED:END -->
 
 ---
@@ -106,69 +106,66 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 ### LP Budget
 <!-- GENERATED:START characters:Sciel:LP -->
-- **Current capacity:** 287 LP
-- **Used:** 287 LP
+- **Current capacity:** 315 LP
+- **Used:** 315 LP
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Lumina Adjustments
 
 <!-- GENERATED:START characters:Sciel:Lumina:adjustments -->
-| Lumina              | Change   | LP | Notes                                                    |
-|---------------------|----------|----|----------------------------------------------------------|
-| Energy Master       | Excluded | 40 | Not used — Augmented Counter I Pictos prioritised        |
-| Dead Energy II      | Excluded | 2  | Not used in current build                                |
-| Burning Shots       | Excluded | 3  | Not used in current build                                |
-| Anti-Blight         | Excluded | 10 | Not used in current build                                |
-| AP Discount         | Added    | 30 | 30LP. Reduces skill AP cost by 1.                        |
-| Accelerating Heal   | Added    | 5  | 5LP. Rush on healing an ally.                            |
-| Augmented Counter I | Added    | —  | Free from Augmented Counter I Pictos.                    |
-| Breaking Attack     | Added    | 10 | 10LP. Apply Break damage on base attack.                 |
-| Charging Alteration | Added    | 10 | 10LP. +20% Gradient Charge on applying buffs or debuffs. |
-| Energising Heal     | Added    | 10 | 10LP. +2 AP on healing an ally.                          |
-| Energising Shots    | Added    | —  | Free from Energising Shots Pictos.                       |
-| First Strike        | Added    | 10 | 10LP. Act first in battle.                               |
-| Gradient Break      | Added    | 5  | 5LP. +50% Gradient Charge on Breaking.                   |
-| Healing Tint Energy | Added    | 1  | 1LP. +1 AP on Healing Tint use.                          |
-| Painter             | Added    | —  | Free from Painter Pictos.                                |
-| Protecting Heal     | Added    | 5  | 5LP. Shell on healing an ally.                           |
-| Recovery            | Added    | 10 | 10LP. Passive heal on turn start.                        |
+| Lumina              | Change | LP | Notes                                                                                                                                                                                            |
+|---------------------|--------|----|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Breaking Attack     | Added  | 10 | Support expansion. Apply Break damage on base attack if Break bar is full.                                                                                                                       |
+| Breaking Counter    | Added  | 3  | Support expansion. 50% increased Break damage on Counterattack.                                                                                                                                  |
+| Recovery            | Added  | 10 | Support expansion. Recovers 10% Health on turn start. Passive self-heal - practical substitute for Clea's Life given Sciel spends turns on Fortune's Fury/Intervention rather than self-healing. |
+| Accelerating Heal   | Added  | 5  | Personal addition. Healing an ally also applies Rush for 1 turn.                                                                                                                                 |
+| Charging Alteration | Added  | 10 | Personal addition. +10% Gradient Charge on applying a Buff, once per turn - fires regularly given Sciel's buff-heavy turns.                                                                      |
+| Energising Heal     | Added  | 10 | Personal addition. +2 AP on healing an ally.                                                                                                                                                     |
+| Gradient Break      | Added  | 5  | Personal addition. +50% Gradient Charge on Breaking a target - charges Fortune's Fury gauge.                                                                                                     |
+| Healing Tint Energy | Added  | 1  | Personal addition. Healing Tints also give 1 AP.                                                                                                                                                 |
+| Protecting Heal     | Added  | 5  | Personal addition. Shell on healing an ally.                                                                                                                                                     |
+| Powerful Revive     | Added  | —  | Free from Pictos. Apply Powerful for 3 turns when revived - synergy with repeated revives in long boss fights.                                                                                   |
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Sciel:Lumina -->
-| Lumina              | LP | Notes                                                    |
-|---------------------|----|----------------------------------------------------------|
-| AP Discount         | 30 | 30LP. Reduces skill AP cost by 1.                        |
-| Accelerating Heal   | 5  | 5LP. Rush on healing an ally.                            |
-| Augmented Counter I | —  | FREE from Augmented Counter I Pictos                     |
-| Base Shield         | 20 |                                                          |
-| Breaker             | 10 | Main break damage booster                                |
-| Breaking Attack     | 10 | 10LP. Apply Break damage on base attack.                 |
-| Breaking Burn       | 5  |                                                          |
-| Breaking Counter    | 3  |                                                          |
-| Breaking Death      | 5  | Extremely helpful in tough boss fights                   |
-| Charging Alteration | 10 | 10LP. +20% Gradient Charge on applying buffs or debuffs. |
-| Cheater             | 40 | Essential for endgame builds                             |
-| Critical Break      | 5  |                                                          |
-| Dead Energy I       | 2  |                                                          |
-| Dodger              | 1  |                                                          |
-| Energising Heal     | 10 | 10LP. +2 AP on healing an ally.                          |
-| Energising Shots    | —  | FREE from Energising Shots Pictos                        |
-| Energising Start I  | 5  | Boosted by Energy Master to 8AP on battle start          |
-| Energising Turn     | 20 | Main AP flow generator; boosted by Energy Master         |
-| First Strike        | 10 | 10LP. Act first in battle.                               |
-| Gradient Break      | 5  | 5LP. +50% Gradient Charge on Breaking.                   |
-| Healing Tint Energy | 1  | 1LP. +1 AP on Healing Tint use.                          |
-| Painted Power       | 5  | Essential for all characters from Act 3 onwards          |
-| Painter             | —  | FREE from Painter Pictos                                 |
-| Protecting Heal     | 5  | 5LP. Shell on healing an ally.                           |
-| Recovery            | 10 | 10LP. Passive heal on turn start.                        |
-| Second Chance       | 40 | Can save boss battles                                    |
-| Shortcut            | 5  |                                                          |
-| Survivor            | 20 | Secondary safety net before Second Chance                |
-| Teamwork            | 5  |                                                          |
+| Lumina              | LP | Notes                                                                                                                                                                                            |
+|---------------------|----|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AP Discount         | 30 | Reduces skill AP cost by 1.                                                                                                                                                                      |
+| Accelerating Heal   | 5  | Personal addition. Healing an ally also applies Rush for 1 turn.                                                                                                                                 |
+| Aegis Revival       | 5  | +1 Shield on being revived.                                                                                                                                                                      |
+| Base Shield         | 20 | Grants 1 Shield HP buffer per turn.                                                                                                                                                              |
+| Breaker             | 10 | 25% increased Break damage.                                                                                                                                                                      |
+| Breaking Attack     | 10 | Support expansion. Apply Break damage on base attack if Break bar is full.                                                                                                                       |
+| Breaking Burn       | 5  | 25% increased Break damage on Burning enemies.                                                                                                                                                   |
+| Breaking Counter    | 3  | Support expansion. 50% increased Break damage on Counterattack.                                                                                                                                  |
+| Breaking Death      | —  | FREE from Breaking Death Pictos                                                                                                                                                                  |
+| Charging Alteration | 10 | Personal addition. +10% Gradient Charge on applying a Buff, once per turn - fires regularly given Sciel's buff-heavy turns.                                                                      |
+| Cheater             | 40 | Extra turn after using a skill, once per turn.                                                                                                                                                   |
+| Critical Break      | 5  | 25% increased Break damage on Critical hits.                                                                                                                                                     |
+| Dodger              | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                                                                                                                                                       |
+| Energising Heal     | 10 | Personal addition. +2 AP on healing an ally.                                                                                                                                                     |
+| Energising Start I  | 5  | +1 AP on battle start. Boosted by Energy Master.                                                                                                                                                 |
+| Energising Turn     | 20 | +1 AP on turn start. Main AP flow generator; boosted by Energy Master.                                                                                                                           |
+| Energy Master       | —  | FREE from Energy Master Pictos                                                                                                                                                                   |
+| First Strike        | 10 | Act first in battle.                                                                                                                                                                             |
+| Gradient Break      | 5  | Personal addition. +50% Gradient Charge on Breaking a target - charges Fortune's Fury gauge.                                                                                                     |
+| Healing Tint Energy | 1  | Personal addition. Healing Tints also give 1 AP.                                                                                                                                                 |
+| Painted Power       | 5  | Damage can exceed 9,999. Essential for all characters from Act 3 onwards.                                                                                                                        |
+| Powerful Revive     | —  | FREE from Powerful Revive Pictos                                                                                                                                                                 |
+| Protecting Death    | 5  | Allies gain Shell on death.                                                                                                                                                                      |
+| Protecting Heal     | 5  | Personal addition. Shell on healing an ally.                                                                                                                                                     |
+| Recovery            | 10 | Support expansion. Recovers 10% Health on turn start. Passive self-heal - practical substitute for Clea's Life given Sciel spends turns on Fortune's Fury/Intervention rather than self-healing. |
+| SOS Power           | 5  | Apply Powerful when falling below 50% Health.                                                                                                                                                    |
+| SOS Rush            | 5  | Apply Rush when falling below 50% Health.                                                                                                                                                        |
+| SOS Shell           | 5  | Apply Shell when falling below 50% Health.                                                                                                                                                       |
+| Second Chance       | 40 | Revive with 100% Health. Once per battle.                                                                                                                                                        |
+| Shielding Death     | 10 | Allies gain 3 Shield points on death.                                                                                                                                                            |
+| Shortcut            | 5  | Immediately play when falling below 30% Health. Once per battle.                                                                                                                                 |
+| Survivor            | 20 | Survive fatal damage with 1 Health, once per battle.                                                                                                                                             |
+| Teamwork            | 5  | 10% increased damage while all allies are alive.                                                                                                                                                 |
 <!-- GENERATED:END -->
 
 *Burn Affinity Lumina removed — Burn Affinity Pictos replaced by Quick Break, effect no longer free.*

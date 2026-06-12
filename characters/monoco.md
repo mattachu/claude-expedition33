@@ -137,9 +137,9 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 
 ### LP Budget
 <!-- GENERATED:START characters:Monoco:LP -->
-- **Current capacity:** 186 LP
-- **Used:** 175 LP
-- **Spare:** 11 LP
+- **Current capacity:** 274 LP
+- **Used:** 274 LP
+- **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Lumina Adjustments
@@ -160,29 +160,35 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 <!-- GENERATED:START characters:Monoco:Lumina -->
 | Lumina                 | LP | Notes                                                                                     |
 |------------------------|----|-------------------------------------------------------------------------------------------|
+| AP Discount            | 30 | Reduces skill AP cost by 1.                                                               |
+| Aegis Revival          | 5  | +1 Shield on being revived.                                                               |
 | Augmented First Strike | —  | FREE from Augmented First Strike Pictos                                                   |
-| Base Shield            | 20 |                                                                                           |
+| Base Shield            | 20 | Grants 1 Shield HP buffer per turn.                                                       |
 | Break Specialist       | 1  | 50% increased Break damage, 20% reduced base damage — net positive for break-focused role |
-| Breaker                | 10 |                                                                                           |
-| Breaking Burn          | 5  |                                                                                           |
-| Breaking Counter       | 3  |                                                                                           |
-| Breaking Death         | 5  |                                                                                           |
-| Burning Shots          | 3  |                                                                                           |
+| Breaker                | 10 | 25% increased Break damage.                                                               |
+| Breaking Burn          | 5  | 25% increased Break damage on Burning enemies.                                            |
+| Breaking Death         | 5  | Fully charge enemy break bar on death.                                                    |
 | Cheater                | —  | FREE from Cheater Pictos                                                                  |
-| Critical Break         | 5  |                                                                                           |
-| Dodger                 | 1  |                                                                                           |
+| Critical Break         | 5  | 25% increased Break damage on Critical hits.                                              |
+| Dodger                 | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                                                |
 | Empowering Break       | 3  | 3LP. Gain Powerful on Breaking a target.                                                  |
 | Energising Break       | 3  | Extra AP on breaking an enemy                                                             |
-| Energising Start I     | 5  |                                                                                           |
-| Energising Turn        | 20 |                                                                                           |
+| Energising Start I     | 5  | +1 AP on battle start. Boosted by Energy Master.                                          |
+| Energising Turn        | 20 | +1 AP on turn start. Main AP flow generator; boosted by Energy Master.                    |
+| Energy Master          | 40 | Every AP gain is increased by 1.                                                          |
+| First Strike           | 10 | Act first in battle.                                                                      |
 | Gradient Break         | 5  | Earn 50% of Gradient Charge when breaking an enemy.                                       |
-| Painted Power          | 5  |                                                                                           |
-| Recovery               | 10 |                                                                                           |
-| Second Chance          | 40 | Revive with 100% Health, once per battle.                                                 |
-| Shortcut               | 5  |                                                                                           |
+| Painted Power          | 5  | Damage can exceed 9,999. Essential for all characters from Act 3 onwards.                 |
+| Protecting Death       | 5  | Allies gain Shell on death.                                                               |
+| SOS Power              | 5  | Apply Powerful when falling below 50% Health.                                             |
+| SOS Rush               | 5  | Apply Rush when falling below 50% Health.                                                 |
+| SOS Shell              | 5  | Apply Shell when falling below 50% Health.                                                |
+| Second Chance          | 40 | Revive with 100% Health. Once per battle.                                                 |
+| Shielding Death        | 10 | Allies gain 3 Shield points on death.                                                     |
+| Shortcut               | 5  | Immediately play when falling below 30% Health. Once per battle.                          |
 | Staggering Attack      | 1  | Break damage on base attack — small break bar contribution                                |
-| Survivor               | 20 |                                                                                           |
-| Teamwork               | 5  |                                                                                           |
+| Survivor               | 20 | Survive fatal damage with 1 Health, once per battle.                                      |
+| Teamwork               | 5  | 10% increased damage while all allies are alive.                                          |
 <!-- GENERATED:END -->
 
 **Situational Lumina (add for specific boss fights):**
