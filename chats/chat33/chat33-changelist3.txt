@@ -1,0 +1,67 @@
+# Chat 33 Changelist 3 - Monoco Pictos rebuild
+# Follows changelist 2 (unified Core + expansion model now live)
+
+# ============================================================
+# Monoco — Pictos rebuild and Core catch-up
+# AFS + Charging Critical + Pro Retreat: Health 5250, Defence 2620,
+# Speed 2856, Crit 112% (capped) — crit cap amplifies Critical Break
+# (Core) on every hit including Stalact Punches.
+# ============================================================
+
+DATA: data/characters.json
+PATH: Monoco.pictos_equipped
+OP: SET
+VALUE: ["Augmented First Strike", "Charging Critical", "Pro Retreat"]
+
+DATA: data/characters.json
+PATH: Monoco.lumina_extras
+OP: SET
+VALUE: [
+  {
+    "name": "Breaking Attack",
+    "notes": "Support expansion. Apply Break damage on base attack if Break bar is full."
+  },
+  {
+    "name": "Breaking Counter",
+    "notes": "Support expansion. 50% increased Break damage on Counterattack."
+  },
+  {
+    "name": "Recovery",
+    "notes": "Support expansion. Recovers 10% Health on turn start."
+  },
+  {
+    "name": "Break Specialist",
+    "notes": "Personal addition. 50% increased Break damage, 20% reduced hit damage - net positive given Monoco's role is Break-focused utility, not direct damage."
+  },
+  {
+    "name": "Energising Break",
+    "notes": "Personal addition. +3 AP on Breaking a target."
+  },
+  {
+    "name": "Empowering Break",
+    "notes": "Personal addition. Gain Powerful on Breaking a target."
+  },
+  {
+    "name": "Gradient Break",
+    "notes": "Personal addition. +50% Gradient Charge on Breaking a target."
+  },
+  {
+    "name": "Staggering Attack",
+    "notes": "Personal addition. 50% increased Break damage on Base Attack."
+  }
+]
+
+DATA: data/characters.json
+PATH: Monoco.lumina_core_exclusions
+OP: SET
+VALUE: []
+
+DATA: data/characters.json
+PATH: Monoco.lp_total
+OP: SET
+VALUE: 337
+
+DATA: data/characters.json
+PATH: Monoco.lp_used
+OP: SET
+VALUE: 337
