@@ -764,7 +764,7 @@
         "critical"
       ],
       "effect": "50% increased Critical Chance if Health is below 30%.",
-      "lp_cost": null,
+      "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
       "level": 5
@@ -965,7 +965,7 @@
         "speed": 162,
         "crit": "17%"
       },
-      "notes": "Reset behaviour on parry unconfirmed — test empirically"
+      "notes": null
     },
     {
       "name": "Empowering Last Stand",
@@ -1429,7 +1429,7 @@
       "level": 16
     },
     {
-      "name": "Glass Canon",
+      "name": "Glass Cannon",
       "category": [
         "damage"
       ],
@@ -2184,7 +2184,7 @@
         "survival"
       ],
       "effect": "Apply Rush when falling below 50% Health.",
-      "lp_cost": null,
+      "lp_cost": 5,
       "obtained": true,
       "equipped_by": null,
       "level": 14
@@ -2437,7 +2437,7 @@
         "damage"
       ],
       "effect": "15% increased damage for each Status Effect on self.",
-      "lp_cost": null,
+      "lp_cost": 3,
       "obtained": true,
       "equipped_by": null,
       "level": 20

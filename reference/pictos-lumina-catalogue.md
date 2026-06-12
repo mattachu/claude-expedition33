@@ -89,7 +89,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 |  | Name | Effect | LP | Stat boosts | Equipped By | Also in |
 |--|------|--------|----|-------------|-------------|---------|
 | ✓ | Critical Break | 25% increased Break damage on Critical hits. | 5 |  |  |  |
-| ✓ | Critical Moment | 50% increased Critical Chance if Health is below 30%. | None |  |  |  |
+| ✓ | Critical Moment | 50% increased Critical Chance if Health is below 30%. | 5 |  |  |  |
 | ✓ | Critical Stun | 100% Critical Chance on hitting a Stunned target. | 5 |  |  |  |
 | ✓ | Critical Vulnerability | 25% increased Critical Chance on Defenceless enemies. | 5 |  |  |  |
 | ✓ | Critical Weakness | 25% increased Critical Chance on Weakness. | 5 | Speed: 705, Crit: 15% |  |  |
@@ -122,7 +122,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | First Offensive | First hit dealt and taken deals 50% more damage. | 5 |  |  |  |
 | ✓ | Frenzy | Each successive Skill hit deals 10% more damage. | 20 | Defence: 1572, Speed: 557 |  |  |
 | ✓ | Full Strength | 25% increased damage on full Health. | 15 |  |  |  |
-| ✓ | Glass Canon | Deal 25% more damage, but take 25% more damage. | 10 |  |  |  |
+| ✓ | Glass Cannon | Deal 25% more damage, but take 25% more damage. | 10 |  |  |  |
 | ✓ | Gradient Fighter | 25% increased damage with Gradient Attacks. | 5 | Speed: 182, Crit: 18% |  | gradient |
 | ✓ | Gradient Overcharge | On turn start, consume 3 Gradient Charges (if able) to deal 200% more damage this turn. | 15 | Health: 5514 |  | gradient |
 | ✓ | Greater Defenceless | +15% to Defenceless damage amplification. | 15 | Speed: 293, Crit: 23% |  |  |
@@ -135,7 +135,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Roulette | Every hit has a 50% chance to deal either 50% or 200% of its damage. | 5 | Defence: 1501, Crit: 32% |  |  |
 | ✓ | Shield Affinity | 30% increased damage while having Shields, but receiving any damage always removes all Shields. | 15 |  |  |  |
 | ✓ | Stun Boost | 30% increased damage on Stunned targets. | 10 |  |  |  |
-| ✓ | Tainted | 15% increased damage for each Status Effect on self. | None |  |  |  |
+| ✓ | Tainted | 15% increased damage for each Status Effect on self. | 3 |  |  |  |
 | ✓ | Warming Up | 5% increased damage per turn, stacks up to 5 | 15 | Health: 1166, Crit: 9% |  |  |
 
 ---
@@ -256,7 +256,7 @@ See [`overview/pictos-lumina-summary.md`](../overview/pictos-lumina-summary.md) 
 | ✓ | Random Defense | Damage taken is randomly multiplied by a value between 50% and 200%. | 5 |  |  |  |
 | ✓ | SOS Healing Tint | Consume a Healing Tint when falling below 50% Health. | 10 | Defence: 1572 |  | healing |
 | ✓ | SOS Power | Apply Powerful when falling below 50% Health. | 5 |  |  |  |
-| ✓ | SOS Rush | Apply Rush when falling below 50% Health. | None |  |  |  |
+| ✓ | SOS Rush | Apply Rush when falling below 50% Health. | 5 |  |  |  |
 | ✓ | SOS Shell | Apply Shell when falling below 50% Health. | 5 |  |  |  |
 | ✓ | Second Chance | Revive with 100% Health. Once per battle. | 40 | Health: 3981, Crit: 15% | Verso |  |
 | ✓ | Shielding Tint | Healing Tints also add 2 Shields. | 10 |  |  | support |
