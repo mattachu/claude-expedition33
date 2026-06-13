@@ -2709,10 +2709,317 @@ Sounds good - standing by. Let me know when you're ready and I'll run through th
 
 **Claude:** *[Turn 105. Last log: Turn 104 (this log).]*
 
-Logged — Turns 102–105 appended verbatim, transcript now at 2712 lines. Last logged turn is **Turn 105**.
+---
 
-*[Turn 105. Last log: Turn 105.]*
+<!-- SECTION -->
 
-Ready for the sanity check whenever you've pushed the Monoco changes.
+**Matt:** *[Uploaded LINKS.md with new commit 260e3f5c]*
+
+Ok, all changes pushed. Here is the new links file. I suggest you download and read the three relevant files in the `overview/` folder: `claude-expedition33.md`, `party-summary.md` and `pictos-lumina-summary.md`.
+
+**Claude:** *[Turn 106. Last log: Turn 105.]*
+
+*[Cleaned up old files and fetched the three overview files from commit 260e3f5c]*
+
+*[Read overview.md - 224 lines]*
+
+Good - overview confirms everything is live: Pictos and LP totals all match (Maelle 506/506, Verso 448/448, Sciel 315/315, Lune 460/460, Monoco 337/337). Now reading party-summary and pictos-lumina-summary.
+
+*[Read party-summary.md - 326 lines]*
+
+Two things jump out immediately, both worth flagging before reading further.
+
+*[Read truncated middle section of party-summary.md - Maelle, Verso, Sciel adjustments]*
+
+The structure all checks out - both Core tables list the same unified 23-Lumina/301 LP set (good, the dual-key approach worked), and every character's `lp_total`/`lp_used` matches what's in `claude-expedition33.md`. The Core+expansion+personal framework is fully reflected.
+
+But the **generated stat blocks (Health/Attack/Speed/Defence/Crit) are stale** - they're from before this session's changes and don't reflect the new builds:
+
+- **Maelle: Health 8588, Speed 2951, Crit 41%** - these are her *old* Pictos stats (Clea's Life/Energising Shell-era). With her actual Pictos now Energising Turn/Empowering Break/Shortcut, Speed should be ~3769 and Crit ~109% (as established in Turns 17-18).
+- **Verso: Health 7790, Speed 2100, Crit 106%** - Speed should be 2619 with Energising Stun, crit 122%.
+- **Lune: Health 3809, Speed 2691, Crit 102%** - should be Health 9400, Speed 2543 (or 2553 with Charging Critical's defence... no, speed doesn't change), Crit 100%.
+- **Monoco: Health 5177, Speed 1553, Crit 167%** - should be Health 5250, Defence 2620, Speed 2856, Crit 112% (167% looks like a leftover artefact, possibly from an intermediate calculation).
+
+This is a **generator issue, not a data issue** - the underlying `pictos_equipped` and stats in `characters.json` are correct (we validated those), but `generate.py` apparently isn't recalculating the Pictos-derived stat totals from the new `pictos_equipped` lists, or `stats_modified` in `characters.json` itself wasn't updated and the generator just renders whatever's stored there.
+
+This is exactly the kind of thing the sanity check should have caught structurally, though it's a different category from the LP arithmetic issues - it's about whether `generate.py` recomputes derived stats or just passes through stored values. Before I look at pictos-lumina-summary.md, do you want to chase this stat-block staleness now, or note it and continue the review?
+
+---
+
+**Matt:** There is no stat calculation in `generate.py`, sadly. It's all handled manually. I can grab all the correct stats from the game when we've finished this review.
+
+**Claude:** *[Turn 107. Last log:105.]*
+
+That's fine - manual stat capture at the end makes sense, no generator work needed. I'll proceed with the review and just flag stat-block staleness as a known item for your end-of-session capture pass, rather than something to fix now.
+
+Now reading `pictos-lumina-summary.md` - the file with the new Section 5 framework you restructured manually.
+
+*[Read pictos-lumina-summary.md - 297 lines]*
+
+*[Read truncated middle section - Section 5 framework and core set, Maelle/Verso lumina adjustments]*
+
+Everything reads correctly. Section 5 framework is well-written and matches what we agreed in Turns 76-78. Section 6 character loadouts are complete for all five characters with proper Core/DPS/Support/Low-health/Full-health/Personal labelling - the work from changelists 2 and 3 came through cleanly.
+
+A few small things worth noting, none urgent:
+
+1. **Section 8 "Candidates for Future Review" is now empty** - Frenzy, Energising Shell, Empowering Dodge etc. that used to live there have all been actioned into character builds. The section header remains with an empty table, which is fine but you may want to remove the section entirely or leave it as a placeholder for future candidates (e.g. Feint, which we discussed and rejected for Lune but might suit someone else).
+
+2. **Section 4 "Reserve Team Pictos"** header (line 71) is slightly anachronistic now that Core is unified - but Lune and Monoco genuinely are the reserve team, so the heading is still accurate as a party-structure label, just not as a *Lumina* structure label. Probably fine as-is.
+
+3. **Monoco's `lumina_core_exclusions`** is empty per the changelist, and his Lumina table (259-270) shows 8 entries (3 Support + 5 personal) - matches exactly what we computed for 337 LP.
+
+Everything I can check from these three files is consistent. The only outstanding item is the stat-block refresh in `claude-expedition33.md`/`party-summary.md`, which you said you'd capture manually. I think the sanity check comes back clean - **the LP/Pictos/Lumina structure across all five characters is correct and consistent with the framework.**
+
+---
+
+**Matt:** !log
+
+**Claude:** *[Turn 108. Last log: Turn 107 (this log).]*
+
+---
+
+<!-- SECTION -->
+
+**Matt:** Here are the stat updates:
+* Maelle
+    * Attributes: Vitality V0, Might M99, Agility A99, Defense D0, Luck L99
+    * Base stats: Health H2420, Attack Power A1503, Speed S1274, Defense D182, Critical Rate C41%
+    * Modified stats: H2420 A11583 S3769 D182 C109%
+* Verso
+    * Attributes: V99 M99 A99 D0 L0
+    * Base: H3809 A1503 S1135 D182 C5%
+    * Modified: H3809 A11583 S2619 C122%
+* Sciel
+    * Attributes: V0 M99 A99 D0 L99
+    * Base: H2420 A1503 S1274 D182 C41%
+    * Modified: H7390 A10275 S2406 D182 C106%
+* Lune
+    * Attributes: V99 M48 A99 D0 L51
+    * Base: H3809 A1437 S1232 D182 C29%
+    * Modified: H9400 A11155 S2543 D182 C100%
+* Monoco
+    * Attributes: V0 M0 A99 D99 L99
+    * Base: H2420 A1347 S1274 D729 C59%
+    * Modified: H5250 A11097 S2856 D2620 C112%
+
+Could you do a sanity check on these numbers and if it's all ok, write them into a new changelist 4 please?
+
+**Claude:** Let me verify the modified stats follow base + Pictos bonuses for each character.
+
+*[Verified modified stats = base + Pictos stat bonuses for all five characters]*
+
+*[Re-fetched pictos-lumina.json (was deleted)]*
+
+*[Re-ran verification]*
+
+19 of 20 check out. One mismatch: **Sciel's Health** - base 2420 + Energy Master's 4979 = 7399, but you gave 7390. That's a 9-point difference, small enough to plausibly be a reading error on the in-game number (or a rounding/display quirk). Can you double-check Sciel's modified Health in-game - is it 7390 or 7399?
+
+Everything else (Attack values, all of Verso/Maelle/Lune/Monoco, and Sciel's Speed/Defence/Crit) checks out cleanly against base + Pictos bonuses.
+
+---
+
+**Matt:** Sciel says 2420 + 4970 = 7,390. The stat boost for Energy Master in the file must be wrong.
+
+**Claude:** Found it - the data file has Energy Master's Health bonus as 4979, but it should be **4970**.
+
+*[Checked Energy Master's current stat entry: stats.health = 4979, equipped_by Sciel, level 30]*
+
+Good - confirmed. Now writing changelist 4 with the stat correction plus all the modified-stats updates for the five characters.
+
+*[Fetched characters.json from commit 260e3f5c]*
+
+*[Checked current structure of stats fields - found stats_modified exists with _note, stats_base is None/unused]*
+
+*[Checked remaining characters - all have stats_base: None, stats_modified populated with old Pictos-era values and _note]*
+
+There's no `stats_base` field currently - only `stats_modified` with a `_note`. Let me check schema.md for guidance before inventing a field.
+
+*[Fetched schema.md, checked stats_base and stats_modified field definitions]*
+
+Good - `stats_base` is a defined schema field, just unused so far. Both fields are appropriate to populate. Writing changelist 4 now.
+
+*[Wrote chat33-changelist4.txt: Energy Master health stat correction (4979->4970), plus stats_base and stats_modified for all five characters with updated _note reflecting current Pictos]*
+
+*[Presented chat33-changelist4.txt]*
+
+19/20 stat checks passed cleanly; the one mismatch (Sciel's Health) was a data error in Energy Master's stat block (4979 -> 4970), now corrected as part of this changelist. All five characters' `stats_base` and `stats_modified` are set, with `_note` updated to reflect the current Pictos loadouts.
+
+---
+
+**Matt:** Great, thanks.
+
+Note: You've lost the turn counter from your turns.
+
+**Claude:** You're right - I dropped it for the last few turns. Apologies, picking it back up.
+
+*[Turn 109. Last log: Turn 108.]*
+
+Anything else before logging this exchange?
+
+---
+
+**Matt:** [Uploaded LINKS.md with new commit d931183a]
+
+That all went through. Here is a new links file. Delete the files you've downloaded again, please. No need to verify again, that's done.
+
+!log
+
+**Claude:** *[Turn 110. Last log: Turn 110 (this log).]*
+
+*[Deleted all downloaded repo files: pictos-lumina.json, characters.json, schema.md]*
+
+Done - all downloaded files removed. New LINKS.md noted (commit `d931183a`). Now logging.
+
+---
+
+<!-- SECTION -->
+
+**Matt:** Here are the current LP totals: Maelle 429, Verso 348, Sciel 287, Lune 350, Monoco 186. How many CoL do I need to complete all Lumina loadouts?
+
+**Claude:** *[Turn 111. Last log: Turn 110.]*
+
+**466 CoL total** — about 7h 46m at 1/minute. Monoco needs the most (151), followed by Lune (110) and Verso (100). Sciel is closest to done at just 28.
+
+---
+
+**Matt:** With Maelle’s Solo At Death’s Door build with Monoco as Death Bomb beside her, I can kill both enemies nearest the flag through a single Last Chance > Phantom Strike hit, as long as I hit both QT events perfectly. If I get all the timings right, I can finish that battle in 16 seconds, then run back to the flag and Rest to respawn enemies. I timed myself for 5 minutes and gained 14 CoL at the fastest possible speed. What does that do to the total time?
+
+**Claude:** *[Turn 112. Last log: Turn 110.]*
+
+At 2.8 CoL/minute, **466 CoL takes ~2h 46m** — a 2.8× speedup over the original estimate, cutting roughly 5 hours off the grind. Worth noting this rate depends on hitting both QT events perfectly every cycle, so the real-world time will likely sit somewhere between this and the 1/minute baseline depending on consistency.
+
+---
+
+**Matt:** Three hours sounds a lot better than 8 hours!
+
+**Claude:** Definitely — and that's the difference between "an evening's grinding" and "basically not happening." Good find on the route.
+
+---
+
+**Matt:** I’m up to 300 CoL so far!
+
+**Claude:** *[Turn 113. Last log: Turn 110.]*
+
+Nice progress —64% done — 166 CoL left, roughly an hour at that rate. Good progress.
+
+---
+
+**Matt:** 466 done! All Lumina applied.
+
+You double counted Breaker and Critical Break on Lune.
+
+**Claude:** *[Turn 114. Last log: Turn 110.]*
+
+Let me check — both are in Core (universal), so if they're also in Lune's `lumina_extras`, that's the same duplication issue we hit with Sciel and Monoco... Confirmed — both **Breaker** and **Critical Break** are in Lune's `lumina_extras`, but both are already in **Core** (universal, 23-Lumina set). They were genuinely in her *original* personal additions (Turn 47, before the Core unification), but once Core absorbed them for everyone, they became duplicates — same pattern as Sciel's Energy Master/Breaking Death.
+
+Removing them: 10 LP (Breaker) + 5 LP (Critical Break) = 15 LP off her extras, so **lp_total/lp_used should be 445**, not 460.
+
+*[Presented chate33-changelist5.txt]*
+
+Removed Breaker and Critical Break from Lune's `lumina_extras` (19 entries remain), `lp_total`/`lp_used` corrected from 460 to **445**. This means you actually only needed 95 CoL for Lune (350→445), not 110 — so with 466 done, you have **15 CoL to spare** overall.
+
+---
+
+**Matt:** Don't forget the turn counter.
+
+There were several Lumina on Maelle's list that I'm not sure why they're there. I feel that they should be in core or DPS expansion, or not at all, as they didn't seem specific to Maelle. Do you remember where they came from?
+
+Anti-Blight, Burning Shots, Exposing Break, First Offensive, Marking Shots, Powerful Shield.
+
+**Claude:** *[Turn 115. Last log: Turn 110.]*
+
+Sorry - turn counter dropped again, fixed now. Let me check what I said about each of these back in the Turn 81 draft.
+
+*[Searched transcript for mentions of all six Lumina]*
+
+These were all pre-existing on Maelle's loadout *before this session started* - they appeared on the Turn 40 screenshot of her active Lumina, and I flagged them at the time as "not in my model" because they weren't part of the solo-build-vs-team-build comparison I'd been working from. They weren't things this session added; they're leftover from earlier chats (Chat 25's "full Lumina loadout review" per the chat-index, most likely).
+
+Going through each against the current framework:
+
+- **First Offensive** and **Powerful Shield** - I explicitly listed these as transferable At-Death's-Door-build multipliers back in Turn 4 (×1.5 first hit, ×1.1 per shield point). They fit the **DPS expansion** (First Offensive is the same shape as Augmented First Strike) or **Low-health** conceptually, but neither made it into either expansion list when we built the framework in Turns 61-64.
+
+- **Exposing Break** - "Apply Defenceless on Break." This is genuinely Maelle-specific synergy (she applies Defenceless herself, supplementing Monoco's Grosse Tête Whack) - a personal addition, correctly placed.
+
+- **Burning Shots, Marking Shots** - tied to her Free Aim rifle mechanic, genuinely Maelle-specific - personal additions, correctly placed.
+
+- **Anti-Blight** - I called this "situational defensive... relevant for Renoir's Drafts farming" in the Turn 81 draft, but I never actually verified what Blight is or whether Renoir's Drafts apply it - that was speculation on my part to justify an item I didn't understand, rather than a real basis.
+
+So: **Exposing Break, Burning Shots, Marking Shots** are legitimately Maelle-specific personal additions and correctly categorised. **First Offensive and Powerful Shield** are arguably DPS-expansion-shaped and were never properly evaluated for that. **Anti-Blight** I have no good justification for - it may be entirely vestigial from an earlier build context that no longer applies.
+
+Given these are all sunk LP already spent (not new costs), the question is whether to reclassify First Offensive/Powerful Shield into DPS expansion for everyone, or leave them as Maelle-only. And whether to drop Anti-Blight from Maelle if it's not earning its 10 LP. What's your instinct?
+
+---
+
+**Matt:** Exposing Break applies Defenceless to an enemy when the character holding the Lumina Breaks that energy. It won't be triggered by Stendhal. It just means every Break adds an extra damage boost to the next hit against that enemy, compounding the bonus from the Break itself.
+
+Free Aim is for everyone, not specific to Maelle.
+
+Anti-Blight is situational, but used by a lot of more powerful bosses, so some guides recommend it permanently. I'm happy to keep it situational.
+
+**Claude:** *[Turn 116. Last log: Turn 110.]*
+
+Good corrections - two of these change my categorisation:
+
+**Exposing Break** - not "Maelle applies Defenceless then benefits from it" (circular), it's "whoever breaks the target sets up Defenceless for the *next* hitter." Not Maelle-specific at all - team-utility Lumina that benefits whoever follows up after a break. Looks more like a **Support-expansion-shaped** Lumina. Worth considering for Monoco specifically, since he's the primary break-builder and currently doesn't have it.
+
+**Burning Shots/Marking Shots** - if Free Aim is universal, not Maelle-specific, then these aren't tailored to her as I claimed. The question becomes whether anyone else in the party actually uses Free Aim - if it's a Maelle-only *mechanic* even if the Lumina itself isn't restricted, then the categorisation (personal addition) is still correct in practice, just for a different reason.
+
+**Anti-Blight** - happy to leave as a situational personal addition on Maelle, as you say. No change needed.
+
+So the open question is really just **Exposing Break**: is it worth moving from "Maelle personal addition" to "Monoco personal addition" (or Support expansion) given he's the team's primary break-trigger and the effect benefits *other* characters' follow-up hits? Or does Maelle also break things often enough that it's earning its keep where it is?
+
+---
+
+**Matt:** I think: Exposing Break for the Support expansion, First Offensive and Powerful Shield for DPS expansion, Burning Shots and Marking Shots for Core, remove Anti-Blight. What does that do to the per-character LP totals?
+
+**Claude:** *[Turn 117. Last log: Turn 110.]*
+
+Let me work through this carefully - these reclassifications change LP totals for everyone, not just Maelle, since the expansions/core apply broadly.
+
+*[Checked LP costs: Exposing Break 5, First Offensive 5, Powerful Shield 5, Burning Shots 3, Marking Shots 3, Anti-Blight 10]*
+
+*[Fetched characters.json; confirmed none of Verso/Sciel/Lune/Monoco currently have First Offensive, Powerful Shield, or Exposing Break in their extras]*
+
+*[Calculated new LP totals]*
+
+| Character | Current | New | Change |
+|---|---|---|---|
+| Maelle | 506 | 491 | −15 |
+| Verso | 448 | 464 | +16 |
+| Sciel | 315 | 326 | +11 |
+| Lune | 460 | 476 | +16 |
+| Monoco | 337 | 348 | +11 |
+
+Net +39 CoL overall. Maelle is the only one who drops - she already had all five items plus Anti-Blight as personal additions (31 LP), and the reclassification only adds back 16 LP (her share of Core+DPS gains), netting −15.
+
+Worth flagging: with 466 CoL spent and Lune's correction freeing up 15, you had 15 spare. This reclassification needs +39 more - so net +24 CoL beyond what's currently available. Want me to build this as changelist 6?
+
+---
+
+**Matt:** I've already expanded Maelle to 506, so that will stay as LP total, even if her LP used goes down. So we don't get those 15 CoL back.
+
+Can you merge the changes into changelist 5 please?
+
+**Claude:** *[Turn 118. Last log: Turn 110.]*
+
+Understood - `lp_total` reflects the CoL actually spent/allocated (sunk), `lp_used` reflects what the build actually needs. Maelle's `lp_total` stays 506, but `lp_used` drops to 491.
+
+*[Built updated extras lists for all five characters]*
+
+*[Confirmed: Maelle extras 29 -> 23; Verso 20 -> 22; Sciel 10 -> 11; Lune 19 -> 21 (from 445 base + 16 = 461); Monoco 8 -> 9]*
+
+*[Recalculated Lune: base was 445 (after Breaker/Critical Break fix), not 460 -> final total 461]*
+
+*[Appended to chat33-changelist5.txt: Core +2 entries (Burning Shots/Marking Shots) to both main_team and reserve_team, total_lp 307; all five character extras SET; lp_total/lp_used for all five; fixed stray comment in Lune section]*
+
+*[Presented chat33-changelist5.txt]*
+
+Final totals: Maelle 506/491, Verso 464/464, Sciel 326/326, Lune 461/461, Monoco 348/348. Core grows to 25 entries / 307 LP. Net additional CoL needed beyond the 466 already spent: 54 CoL.
+
+---
+
+**Matt:** !log
+
+**Claude:** *[Turn 119. Last log: Turn 118 (this log).]*
 
 ---
