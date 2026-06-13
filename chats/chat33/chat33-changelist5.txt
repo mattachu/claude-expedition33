@@ -18,104 +18,27 @@
 # Monoco - add Exposing Break (Support), plus Core +6 -> 337+11=348
 
 
-DATA: data/characters.json
-PATH: Lune.lumina_extras
-OP: SET
-VALUE: [
-  {
-    "name": "Augmented First Strike",
-    "notes": "DPS expansion. 50% increased damage on first hit, once per battle."
-  },
-  {
-    "name": "Burn Affinity",
-    "notes": "DPS expansion. 25% increased damage against burning targets. Burn seeded primarily by Hell as setup skill."
-  },
-  {
-    "name": "Charging Critical",
-    "notes": "DPS expansion. +20% Gradient Charge on Critical Hit, once per turn. Fires every turn at 100% crit."
-  },
-  {
-    "name": "Dead Energy I",
-    "notes": "DPS expansion. +3 AP on killing an enemy."
-  },
-  {
-    "name": "Dead Energy II",
-    "notes": "DPS expansion. +3 AP on killing an enemy (stacks with Dead Energy I)."
-  },
-  {
-    "name": "Double Third",
-    "notes": "DPS expansion. Every 3rd hit deals double damage. Fires on hits 3/6/9/12 of 12-hit Lightning Dance."
-  },
-  {
-    "name": "Empowering Dodge",
-    "notes": "DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack."
-  },
-  {
-    "name": "Frenzy",
-    "notes": "DPS expansion. Each successive Skill hit deals 10% more damage. Major multiplier on 12-hit Lightning Dance with 3-stain consumption (x5 base damage multiplier)."
-  },
-  {
-    "name": "Glass Cannon",
-    "notes": "DPS expansion. 25% increased damage, 25% increased damage taken. Risk mitigated by Clea's Life maintaining full HP each clean turn."
-  },
-  {
-    "name": "Immaculate",
-    "notes": "DPS expansion. 30% increased damage until first hit received."
-  },
-  {
-    "name": "Warming Up",
-    "notes": "DPS expansion. Damage increases with each attack, up to 20% at 5 stacks."
-  },
-  {
-    "name": "Clea's Life",
-    "notes": "Full-health expansion. Free from Pictos. Restore to full Health on turn start if no damage taken."
-  },
-  {
-    "name": "Full Strength",
-    "notes": "Full-health expansion. 25% increased damage at full Health. Maintained by Clea's Life restoring full HP each clean turn."
-  },
-  {
-    "name": "Accelerating Heal",
-    "notes": "Personal addition. Healing an ally also applies Rush for 1 turn."
-  },
-  {
-    "name": "Breaking Attack",
-    "notes": "Personal addition. Apply Break damage on base attack if Break bar full."
-  },
-  {
-    "name": "Energising Burn",
-    "notes": "Personal addition. +1 AP on applying Burn, once per turn - fires on Hell setup turn."
-  },
-  {
-    "name": "Protecting Heal",
-    "notes": "Personal addition. Shell on healing an ally."
-  },
-  {
-    "name": "Sweet Kill",
-    "notes": "Free from Pictos. Recover 50% Health on killing an enemy - synergy with Lightning Dance securing kills, supports Full Strength uptime."
-  },
-  {
-    "name": "Rush On Powerful",
-    "notes": "Free from Pictos. Apply Rush on applying Powerful."
-  }
-]
-
+DATA: data/pictos-lumina.json
+PATH: core_lumina_suite.main_team.entries
+OP: ADD
+VALUE: {"name": "Burning Shots", "lp": 3, "notes": "20% chance to Burn on Free Aim shot."}
 
 DATA: data/pictos-lumina.json
 PATH: core_lumina_suite.main_team.entries
 OP: ADD
-VALUE: [
-  {"name": "Burning Shots", "lp": 3, "notes": "20% chance to Burn on Free Aim shot."},
-  {"name": "Marking Shots", "lp": 3, "notes": "20% chance to apply Mark on Free Aim shot."}
-]
+VALUE: {"name": "Marking Shots", "lp": 3, "notes": "20% chance to apply Mark on Free Aim shot."}
+
 
 DATA: data/pictos-lumina.json
 PATH: core_lumina_suite.reserve_team.entries
 OP: ADD
-VALUE: [
-  {"name": "Burning Shots", "lp": 3, "notes": "20% chance to Burn on Free Aim shot."},
-  {"name": "Marking Shots", "lp": 3, "notes": "20% chance to apply Mark on Free Aim shot."}
-]
+VALUE: {"name": "Burning Shots", "lp": 3, "notes": "20% chance to Burn on Free Aim shot."}
+
+DATA: data/pictos-lumina.json
+PATH: core_lumina_suite.reserve_team.entries
+OP: ADD
+VALUE: {"name": "Marking Shots", "lp": 3, "notes": "20% chance to apply Mark on Free Aim shot."}
+
 
 DATA: data/pictos-lumina.json
 PATH: core_lumina_suite.main_team.total_lp
@@ -161,6 +84,10 @@ VALUE: [
     "notes": "DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack."
   },
   {
+    "name": "First Offensive",
+    "notes": "DPS expansion. 50% increased damage on first hit dealt, once per battle."
+  },
+  {
     "name": "Frenzy",
     "notes": "DPS expansion. Each successive Skill hit deals 10% more damage. Fires on multi-hit skills (Sword Ballet, Burning Canvas) - not on single-hit Stendhal/Gommage."
   },
@@ -171,6 +98,10 @@ VALUE: [
   {
     "name": "Immaculate",
     "notes": "DPS expansion. 30% increased damage until first hit received."
+  },
+  {
+    "name": "Powerful Shield",
+    "notes": "DPS expansion. 10% increased damage per Shield Point on self."
   },
   {
     "name": "Warming Up",
@@ -265,6 +196,10 @@ VALUE: [
     "notes": "DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack."
   },
   {
+    "name": "First Offensive",
+    "notes": "DPS expansion. 50% increased damage on first hit dealt, once per battle."
+  },
+  {
     "name": "Frenzy",
     "notes": "DPS expansion. Each successive Skill hit deals 10% more damage. Major multiplier on 13-hit Steeled Strike."
   },
@@ -275,6 +210,10 @@ VALUE: [
   {
     "name": "Immaculate",
     "notes": "DPS expansion. 30% increased damage until first hit received."
+  },
+  {
+    "name": "Powerful Shield",
+    "notes": "DPS expansion. 10% increased damage per Shield Point on self."
   },
   {
     "name": "Warming Up",
@@ -305,36 +244,32 @@ VALUE: [
     "notes": "Personal addition. +3 AP on Breaking a target - enables Perfect Break -> Stun -> End Bringer rotation. Frequency depends on boss: varies from rarely breaking (e.g. Simon) to easily broken (e.g. Chromatic Lampmaster)."
   },
   {
-    "name": "Alternating Critical",
-    "notes": "Free from Pictos. Effect not used at 100% crit - pure stat stick."
+    "name": "Exposing Break",
+    "notes": "Personal addition. Apply Defenceless on Breaking a target - sets up the next hit against that enemy with a damage boost compounding the Break bonus itself."
   },
   {
-    "name": "Quick Break",
-    "notes": "Free from Pictos. Effect (play again on Breaking a target) does not fire alongside Cheater - pure stat stick."
+    "name": "Alternating Critical",
+    "notes": "Free from Pictos. Effect not used at 100% crit - pure stat stick."
   },
   {
     "name": "Energising Stun",
     "notes": "Free from Pictos. +1 AP on hitting Stunned target with Skill - synergy with End Bringer."
   },
   {
-    "name": "First Offensive",
-    "notes": "DPS expansion. 50% increased damage on first hit dealt, once per battle."
-  },
-  {
-    "name": "Powerful Shield",
-    "notes": "DPS expansion. 10% increased damage per Shield Point on self."
+    "name": "Quick Break",
+    "notes": "Free from Pictos. Effect (play again on Breaking a target) does not fire alongside Cheater - pure stat stick."
   }
 ]
 
 DATA: data/characters.json
 PATH: Verso.lp_total
 OP: SET
-VALUE: 464
+VALUE: 469
 
 DATA: data/characters.json
 PATH: Verso.lp_used
 OP: SET
-VALUE: 464
+VALUE: 469
 
 
 DATA: data/characters.json
@@ -348,6 +283,10 @@ VALUE: [
   {
     "name": "Breaking Counter",
     "notes": "Support expansion. 50% increased Break damage on Counterattack."
+  },
+  {
+    "name": "Exposing Break",
+    "notes": "Support expansion. Apply Defenceless on Breaking a target - sets up the next hit against that enemy with a damage boost compounding the Break bonus itself."
   },
   {
     "name": "Recovery",
@@ -380,10 +319,6 @@ VALUE: [
   {
     "name": "Powerful Revive",
     "notes": "Free from Pictos. Apply Powerful for 3 turns when revived - synergy with repeated revives in long boss fights."
-  },
-  {
-    "name": "Exposing Break",
-    "notes": "Support expansion. Apply Defenceless on Breaking a target - sets up the next hit against that enemy with a damage boost compounding the Break bonus itself."
   }
 ]
 
@@ -431,6 +366,10 @@ VALUE: [
     "notes": "DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack."
   },
   {
+    "name": "First Offensive",
+    "notes": "DPS expansion. 50% increased damage on first hit dealt, once per battle."
+  },
+  {
     "name": "Frenzy",
     "notes": "DPS expansion. Each successive Skill hit deals 10% more damage. Major multiplier on 12-hit Lightning Dance with 3-stain consumption (x5 base damage multiplier)."
   },
@@ -441,6 +380,10 @@ VALUE: [
   {
     "name": "Immaculate",
     "notes": "DPS expansion. 30% increased damage until first hit received."
+  },
+  {
+    "name": "Powerful Shield",
+    "notes": "DPS expansion. 10% increased damage per Shield Point on self."
   },
   {
     "name": "Warming Up",
@@ -463,14 +406,6 @@ VALUE: [
     "notes": "Personal addition. Apply Break damage on base attack if Break bar full."
   },
   {
-    "name": "Breaker",
-    "notes": "Personal addition. 25% increased Break damage - Lune contributes to Break alongside Monoco, accelerating her own Defenceless/Exposing Break window."
-  },
-  {
-    "name": "Critical Break",
-    "notes": "Personal addition. 25% increased Break damage on Critical hits."
-  },
-  {
     "name": "Energising Burn",
     "notes": "Personal addition. +1 AP on applying Burn, once per turn - fires on Hell setup turn."
   },
@@ -485,14 +420,6 @@ VALUE: [
   {
     "name": "Rush On Powerful",
     "notes": "Free from Pictos. Apply Rush on applying Powerful."
-  },
-  {
-    "name": "First Offensive",
-    "notes": "DPS expansion. 50% increased damage on first hit dealt, once per battle."
-  },
-  {
-    "name": "Powerful Shield",
-    "notes": "DPS expansion. 10% increased damage per Shield Point on self."
   }
 ]
 
@@ -520,6 +447,10 @@ VALUE: [
     "notes": "Support expansion. 50% increased Break damage on Counterattack."
   },
   {
+    "name": "Exposing Break",
+    "notes": "Support expansion. Apply Defenceless on Breaking a target - sets up the next hit against that enemy with a damage boost compounding the Break bonus itself."
+  },
+  {
     "name": "Recovery",
     "notes": "Support expansion. Recovers 10% Health on turn start."
   },
@@ -542,10 +473,6 @@ VALUE: [
   {
     "name": "Staggering Attack",
     "notes": "Personal addition. 50% increased Break damage on Base Attack."
-  },
-  {
-    "name": "Exposing Break",
-    "notes": "Support expansion. Apply Defenceless on Breaking a target - sets up the next hit against that enemy with a damage boost compounding the Break bonus itself."
   }
 ]
 
