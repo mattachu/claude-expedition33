@@ -6,11 +6,11 @@
 
 | Character                         | Level | Role                         | Weapon        | Pictos                                                 | LP      |
 |-----------------------------------|-------|------------------------------|---------------|--------------------------------------------------------|---------|
-| [Maelle](../characters/maelle.md) | 99    | Primary DPS                  | Lithum (33)   | Energising Turn, Empowering Break, Shortcut            | 506/506 |
-| [Verso](../characters/verso.md)   | 99    | Endgame main DPS             | Simoso (33)   | Alternating Critical, Quick Break, Energising Stun     | 448/448 |
-| [Sciel](../characters/sciel.md)   | 99    | Pure support                 | Litheson (33) | Energy Master, Breaking Death, Powerful Revive         | 315/315 |
-| [Lune](../characters/lune.md)     | 99    | DPS / healer (reserve)       | Kralim (33)   | Clea's Life, Sweet Kill, Rush On Powerful              | 460/460 |
-| [Monoco](../characters/monoco.md) | 99    | Break + AP support (reserve) | Joyaro (33)   | Augmented First Strike, Charging Critical, Pro Retreat | 337/337 |
+| [Maelle](../characters/maelle.md) | 99    | Primary DPS                  | Lithum (33)   | Energising Turn, Empowering Break, Shortcut            | 491/506 |
+| [Verso](../characters/verso.md)   | 99    | Endgame main DPS             | Simoso (33)   | Alternating Critical, Quick Break, Energising Stun     | 469/469 |
+| [Sciel](../characters/sciel.md)   | 99    | Pure support                 | Litheson (33) | Energy Master, Breaking Death, Powerful Revive         | 326/326 |
+| [Lune](../characters/lune.md)     | 99    | DPS / healer (reserve)       | Kralim (33)   | Clea's Life, Sweet Kill, Rush On Powerful              | 461/461 |
+| [Monoco](../characters/monoco.md) | 99    | Break + AP support (reserve) | Joyaro (33)   | Augmented First Strike, Charging Critical, Pro Retreat | 348/348 |
 
 ---
 
@@ -18,7 +18,7 @@
 
 ### Core Lumina Set
 
-**Total: 301 LP** — applied to Maelle, Verso, Sciel.
+**Total: 307 LP** — applied to Maelle, Verso, Sciel.
 
 *Unified core set, applied to all five characters.*
 
@@ -30,6 +30,7 @@
 | Breaker            | 10 | 25% increased Break damage.                                      | 25% increased Break damage.                                               |
 | Breaking Burn      | 5  | 25% increased Break damage on Burning enemies.                   | 25% increased Break damage on Burning enemies.                            |
 | Breaking Death     | 5  | Fully charge enemy break bar on death                            | Fully charge enemy break bar on death.                                    |
+| Burning Shots      | 3  | 20% chance to Burn on Free Aim shot.                             | 20% chance to Burn on Free Aim shot.                                      |
 | Cheater            | 40 | Extra turn after using a skill, once per turn                    | Extra turn after using a skill, once per turn.                            |
 | Critical Break     | 5  | 25% increased Break damage on Critical hits.                     | 25% increased Break damage on Critical hits.                              |
 | Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                       | Gain 1 AP on Perfect Dodge. Once per turn.                                |
@@ -37,14 +38,15 @@
 | Energising Turn    | 20 | +1 AP on turn start.                                             | +1 AP on turn start. Main AP flow generator; boosted by Energy Master.    |
 | Energy Master      | 40 | Every AP gain is increased by 1                                  | Every AP gain is increased by 1.                                          |
 | First Strike       | 10 | Play first.                                                      | Act first in battle.                                                      |
+| Marking Shots      | 3  | 20% chance to apply Mark on Free Aim shot.                       | 20% chance to apply Mark on Free Aim shot.                                |
 | Painted Power      | 5  | Damage can exceed 9,999.                                         | Damage can exceed 9,999. Essential for all characters from Act 3 onwards. |
 | Protecting Death   | 5  | On death, allies gain Shell.                                     | Allies gain Shell on death.                                               |
-| Second Chance      | 40 | Revive with 100% Health. Once per battle.                        | Revive with 100% Health. Once per battle.                                 |
-| Shielding Death    | 10 | On death, allies gain 3 Shield points.                           | Allies gain 3 Shield points on death.                                     |
-| Shortcut           | 5  | Immediately play when falling below 30% Health. Once per battle. | Immediately play when falling below 30% Health. Once per battle.          |
 | SOS Power          | 5  | Apply Powerful when falling below 50% Health.                    | Apply Powerful when falling below 50% Health.                             |
 | SOS Rush           | 5  | Apply Rush when falling below 50% Health.                        | Apply Rush when falling below 50% Health.                                 |
 | SOS Shell          | 5  | Apply Shell when falling below 50% Health.                       | Apply Shell when falling below 50% Health.                                |
+| Second Chance      | 40 | Revive with 100% Health. Once per battle.                        | Revive with 100% Health. Once per battle.                                 |
+| Shielding Death    | 10 | On death, allies gain 3 Shield points.                           | Allies gain 3 Shield points on death.                                     |
+| Shortcut           | 5  | Immediately play when falling below 30% Health. Once per battle. | Immediately play when falling below 30% Health. Once per battle.          |
 | Survivor           | 20 | Survive fatal damage with 1 Health once per battle               | Survive fatal damage with 1 Health, once per battle.                      |
 | Teamwork           | 5  | 10% increased damage while all allies are alive.                 | 10% increased damage while all allies are alive.                          |
 
@@ -80,30 +82,26 @@
 | Dead Energy II         | Added  | 2  | DPS expansion. +3 AP on killing an enemy (stacks with Dead Energy I).                                                                                                                                                       |
 | Double Third           | Added  | 10 | DPS expansion. Every 3rd hit deals double damage. Fires on multi-hit skills (Sword Ballet, Burning Canvas).                                                                                                                 |
 | Empowering Dodge       | Added  | 5  | DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack.                                                                                                                     |
+| First Offensive        | Added  | 5  | DPS expansion. 50% increased damage on first hit dealt, once per battle.                                                                                                                                                    |
 | Frenzy                 | Added  | 20 | DPS expansion. Each successive Skill hit deals 10% more damage. Fires on multi-hit skills (Sword Ballet, Burning Canvas) - not on single-hit Stendhal/Gommage.                                                              |
 | Glass Cannon           | Added  | 10 | DPS expansion. 25% increased damage, 25% increased damage taken.                                                                                                                                                            |
 | Immaculate             | Added  | 10 | DPS expansion. 30% increased damage until first hit received.                                                                                                                                                               |
+| Powerful Shield        | Added  | 5  | DPS expansion. 10% increased damage per Shield Point on self.                                                                                                                                                               |
 | Warming Up             | Added  | 15 | DPS expansion. Damage increases with each attack, up to 20% at 5 stacks. Strong with sustained multi-turn presence.                                                                                                         |
 | At Death's Door        | Added  | 5  | Low-health expansion. 50% increased damage below 10% HP. Active permanently while at 1 HP from Last Chance.                                                                                                                 |
 | Confident Fighter      | Added  | 15 | Low-health expansion. 30% increased damage, cannot be healed. Conflicts with Sciel's healing - accepted tradeoff for the Low-health build.                                                                                  |
 | In Medias Res          | Added  | 10 | Low-health expansion. +3 Shields at battle start, max Health halved. HP penalty irrelevant at 1 HP from Last Chance.                                                                                                        |
 | Inverted Affinity      | Added  | 5  | Low-health expansion. 50% increased damage while Inverted (cannot be healed).                                                                                                                                               |
-| Anti-Blight            | Added  | 10 | Personal addition. Immune to Blight - relevant for Renoir's Drafts farming.                                                                                                                                                 |
-| Burning Shots          | Added  | 3  | Personal addition. 20% chance to Burn on Free Aim shot - seeds Burn Affinity.                                                                                                                                               |
-| Exposing Break         | Added  | 5  | Personal addition. Apply Defenceless on Break - supplements Monoco's Defenceless application.                                                                                                                               |
-| First Offensive        | Added  | 5  | Personal addition. 50% increased damage on first hit dealt, once per battle.                                                                                                                                                |
 | Gradient Fighter       | Added  | 5  | Personal addition. 25% increased damage with Gradient Attacks - large boost for Gommage.                                                                                                                                    |
 | Greater Powerful       | Added  | 10 | Personal addition (Lithum suite). +15% to Powerful bonus - boosts Powerful On Shell.                                                                                                                                        |
 | Greater Shell          | Added  | 10 | Personal addition (Lithum suite). Stronger Shell from Lithum on Virtuose exit.                                                                                                                                              |
 | Longer Powerful        | Added  | 10 | Personal addition (Lithum suite). +2 turn duration to Powerful from Powerful On Shell.                                                                                                                                      |
 | Longer Shell           | Added  | 10 | Personal addition (Lithum suite). On applying Shell, duration +2 - extends Lithum Shell from Virtuose exit.                                                                                                                 |
-| Marking Shots          | Added  | 3  | Personal addition. 20% chance to apply Mark on Free Aim shot.                                                                                                                                                               |
 | Powerful On Shell      | Added  | 10 | Personal addition (Lithum suite). Apply Powerful on applying Shell - Lithum applies Shell on Virtuose exit (Last Chance -> Stendhal/Gommage), triggering this every cycle. Boosted by Greater Powerful and Longer Powerful. |
-| Powerful Shield        | Added  | 5  | Personal addition. 10% increased damage per Shield Point on self.                                                                                                                                                           |
 | Energising Shell       | Added  | 10 | Personal addition (Lithum suite). Give 2 AP on applying Shell - fires every Virtuose exit via Lithum.                                                                                                                       |
 | Empowering Break       | Added  | —  | Free from Pictos.                                                                                                                                                                                                           |
 
-**LP:** 506/506
+**LP:** 491/506
 
 ---
 
@@ -138,9 +136,11 @@
 | Dead Energy II         | Added  | 2  | DPS expansion. +3 AP on killing an enemy (stacks with Dead Energy I).                                                                                                                                                    |
 | Double Third           | Added  | 10 | DPS expansion. Every 3rd hit deals double damage. Fires on hits 3/6/9/12 of 13-hit Steeled Strike.                                                                                                                       |
 | Empowering Dodge       | Added  | 5  | DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack.                                                                                                                  |
+| First Offensive        | Added  | 5  | DPS expansion. 50% increased damage on first hit dealt, once per battle.                                                                                                                                                 |
 | Frenzy                 | Added  | 20 | DPS expansion. Each successive Skill hit deals 10% more damage. Major multiplier on 13-hit Steeled Strike.                                                                                                               |
 | Glass Cannon           | Added  | 10 | DPS expansion. 25% increased damage, 25% increased damage taken.                                                                                                                                                         |
 | Immaculate             | Added  | 10 | DPS expansion. 30% increased damage until first hit received.                                                                                                                                                            |
+| Powerful Shield        | Added  | 5  | DPS expansion. 10% increased damage per Shield Point on self.                                                                                                                                                            |
 | Warming Up             | Added  | 15 | DPS expansion. Damage increases with each attack, up to 20% at 5 stacks.                                                                                                                                                 |
 | At Death's Door        | Added  | 5  | Low-health expansion. 50% increased damage below 10% HP. Active permanently while at 1 HP from Overload.                                                                                                                 |
 | Confident Fighter      | Added  | 15 | Low-health expansion. 30% increased damage, cannot be healed.                                                                                                                                                            |
@@ -148,11 +148,12 @@
 | Inverted Affinity      | Added  | 5  | Low-health expansion. 50% increased damage while Inverted (cannot be healed).                                                                                                                                            |
 | Auto Rush              | Added  | 10 | Personal addition. Apply Rush for 3 turns on battle start - secures first-action priority before Litheson Greater Rush takes effect.                                                                                     |
 | Energising Break       | Added  | 3  | Personal addition. +3 AP on Breaking a target - enables Perfect Break -> Stun -> End Bringer rotation. Frequency depends on boss: varies from rarely breaking (e.g. Simon) to easily broken (e.g. Chromatic Lampmaster). |
+| Exposing Break         | Added  | 5  | Personal addition. Apply Defenceless on Breaking a target - sets up the next hit against that enemy with a damage boost compounding the Break bonus itself.                                                              |
 | Alternating Critical   | Added  | —  | Free from Pictos. Effect not used at 100% crit - pure stat stick.                                                                                                                                                        |
-| Quick Break            | Added  | —  | Free from Pictos. Effect (play again on Breaking a target) does not fire alongside Cheater - pure stat stick.                                                                                                            |
 | Energising Stun        | Added  | —  | Free from Pictos. +1 AP on hitting Stunned target with Skill - synergy with End Bringer.                                                                                                                                 |
+| Quick Break            | Added  | —  | Free from Pictos. Effect (play again on Breaking a target) does not fire alongside Cheater - pure stat stick.                                                                                                            |
 
-**LP:** 448/448
+**LP:** 469/469
 
 ---
 
@@ -182,6 +183,7 @@
 |---------------------|--------|----|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Breaking Attack     | Added  | 10 | Support expansion. Apply Break damage on base attack if Break bar is full.                                                                                                                       |
 | Breaking Counter    | Added  | 3  | Support expansion. 50% increased Break damage on Counterattack.                                                                                                                                  |
+| Exposing Break      | Added  | 5  | Support expansion. Apply Defenceless on Breaking a target - sets up the next hit against that enemy with a damage boost compounding the Break bonus itself.                                      |
 | Recovery            | Added  | 10 | Support expansion. Recovers 10% Health on turn start. Passive self-heal - practical substitute for Clea's Life given Sciel spends turns on Fortune's Fury/Intervention rather than self-healing. |
 | Accelerating Heal   | Added  | 5  | Personal addition. Healing an ally also applies Rush for 1 turn.                                                                                                                                 |
 | Charging Alteration | Added  | 10 | Personal addition. +10% Gradient Charge on applying a Buff, once per turn - fires regularly given Sciel's buff-heavy turns.                                                                      |
@@ -191,7 +193,7 @@
 | Protecting Heal     | Added  | 5  | Personal addition. Shell on healing an ally.                                                                                                                                                     |
 | Powerful Revive     | Added  | —  | Free from Pictos. Apply Powerful for 3 turns when revived - synergy with repeated revives in long boss fights.                                                                                   |
 
-**LP:** 315/315
+**LP:** 326/326
 
 ---
 
@@ -199,7 +201,7 @@
 
 ### Core Lumina Set
 
-**Total: 301 LP** — applied to Lune, Monoco.
+**Total: 307 LP** — applied to Lune, Monoco.
 
 *Unified core set, applied to all five characters.*
 
@@ -211,6 +213,7 @@
 | Breaker            | 10 | 25% increased Break damage.                                      |
 | Breaking Burn      | 5  | 25% increased Break damage on Burning enemies.                   |
 | Breaking Death     | 5  | Fully charge enemy break bar on death                            |
+| Burning Shots      | 3  | 20% chance to Burn on Free Aim shot.                             |
 | Cheater            | 40 | Extra turn after using a skill, once per turn                    |
 | Critical Break     | 5  | 25% increased Break damage on Critical hits.                     |
 | Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                       |
@@ -218,14 +221,15 @@
 | Energising Turn    | 20 | +1 AP on turn start.                                             |
 | Energy Master      | 40 | Every AP gain is increased by 1                                  |
 | First Strike       | 10 | Play first.                                                      |
+| Marking Shots      | 3  | 20% chance to apply Mark on Free Aim shot.                       |
 | Painted Power      | 5  | Damage can exceed 9,999.                                         |
 | Protecting Death   | 5  | On death, allies gain Shell.                                     |
-| Second Chance      | 40 | Revive with 100% Health. Once per battle.                        |
-| Shielding Death    | 10 | On death, allies gain 3 Shield points.                           |
-| Shortcut           | 5  | Immediately play when falling below 30% Health. Once per battle. |
 | SOS Power          | 5  | Apply Powerful when falling below 50% Health.                    |
 | SOS Rush           | 5  | Apply Rush when falling below 50% Health.                        |
 | SOS Shell          | 5  | Apply Shell when falling below 50% Health.                       |
+| Second Chance      | 40 | Revive with 100% Health. Once per battle.                        |
+| Shielding Death    | 10 | On death, allies gain 3 Shield points.                           |
+| Shortcut           | 5  | Immediately play when falling below 30% Health. Once per battle. |
 | Survivor           | 20 | Survive fatal damage with 1 Health once per battle               |
 | Teamwork           | 5  | 10% increased damage while all allies are alive.                 |
 
@@ -261,22 +265,22 @@
 | Dead Energy II         | Added  | 2  | DPS expansion. +3 AP on killing an enemy (stacks with Dead Energy I).                                                                                            |
 | Double Third           | Added  | 10 | DPS expansion. Every 3rd hit deals double damage. Fires on hits 3/6/9/12 of 12-hit Lightning Dance.                                                              |
 | Empowering Dodge       | Added  | 5  | DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack.                                                          |
+| First Offensive        | Added  | 5  | DPS expansion. 50% increased damage on first hit dealt, once per battle.                                                                                         |
 | Frenzy                 | Added  | 20 | DPS expansion. Each successive Skill hit deals 10% more damage. Major multiplier on 12-hit Lightning Dance with 3-stain consumption (x5 base damage multiplier). |
 | Glass Cannon           | Added  | 10 | DPS expansion. 25% increased damage, 25% increased damage taken. Risk mitigated by Clea's Life maintaining full HP each clean turn.                              |
 | Immaculate             | Added  | 10 | DPS expansion. 30% increased damage until first hit received.                                                                                                    |
+| Powerful Shield        | Added  | 5  | DPS expansion. 10% increased damage per Shield Point on self.                                                                                                    |
 | Warming Up             | Added  | 15 | DPS expansion. Damage increases with each attack, up to 20% at 5 stacks.                                                                                         |
 | Clea's Life            | Added  | —  | Full-health expansion. Free from Pictos. Restore to full Health on turn start if no damage taken.                                                                |
 | Full Strength          | Added  | 15 | Full-health expansion. 25% increased damage at full Health. Maintained by Clea's Life restoring full HP each clean turn.                                         |
 | Accelerating Heal      | Added  | 5  | Personal addition. Healing an ally also applies Rush for 1 turn.                                                                                                 |
 | Breaking Attack        | Added  | 10 | Personal addition. Apply Break damage on base attack if Break bar full.                                                                                          |
-| Breaker                | Added  | 10 | Personal addition. 25% increased Break damage - Lune contributes to Break alongside Monoco, accelerating her own Defenceless/Exposing Break window.              |
-| Critical Break         | Added  | 5  | Personal addition. 25% increased Break damage on Critical hits.                                                                                                  |
 | Energising Burn        | Added  | 10 | Personal addition. +1 AP on applying Burn, once per turn - fires on Hell setup turn.                                                                             |
 | Protecting Heal        | Added  | 5  | Personal addition. Shell on healing an ally.                                                                                                                     |
 | Sweet Kill             | Added  | —  | Free from Pictos. Recover 50% Health on killing an enemy - synergy with Lightning Dance securing kills, supports Full Strength uptime.                           |
 | Rush On Powerful       | Added  | —  | Free from Pictos. Apply Rush on applying Powerful.                                                                                                               |
 
-**LP:** 460/460
+**LP:** 461/461
 
 ---
 
@@ -302,18 +306,19 @@
 
 **Lumina adjustments:**
 
-| Lumina            | Change | LP | Notes                                                                                                                                                 |
-|-------------------|--------|----|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Breaking Attack   | Added  | 10 | Support expansion. Apply Break damage on base attack if Break bar is full.                                                                            |
-| Breaking Counter  | Added  | 3  | Support expansion. 50% increased Break damage on Counterattack.                                                                                       |
-| Recovery          | Added  | 10 | Support expansion. Recovers 10% Health on turn start.                                                                                                 |
-| Break Specialist  | Added  | 1  | Personal addition. 50% increased Break damage, 20% reduced hit damage - net positive given Monoco's role is Break-focused utility, not direct damage. |
-| Energising Break  | Added  | 3  | Personal addition. +3 AP on Breaking a target.                                                                                                        |
-| Empowering Break  | Added  | 3  | Personal addition. Gain Powerful on Breaking a target.                                                                                                |
-| Gradient Break    | Added  | 5  | Personal addition. +50% Gradient Charge on Breaking a target.                                                                                         |
-| Staggering Attack | Added  | 1  | Personal addition. 50% increased Break damage on Base Attack.                                                                                         |
+| Lumina            | Change | LP | Notes                                                                                                                                                       |
+|-------------------|--------|----|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Breaking Attack   | Added  | 10 | Support expansion. Apply Break damage on base attack if Break bar is full.                                                                                  |
+| Breaking Counter  | Added  | 3  | Support expansion. 50% increased Break damage on Counterattack.                                                                                             |
+| Exposing Break    | Added  | 5  | Support expansion. Apply Defenceless on Breaking a target - sets up the next hit against that enemy with a damage boost compounding the Break bonus itself. |
+| Recovery          | Added  | 10 | Support expansion. Recovers 10% Health on turn start.                                                                                                       |
+| Break Specialist  | Added  | 1  | Personal addition. 50% increased Break damage, 20% reduced hit damage - net positive given Monoco's role is Break-focused utility, not direct damage.       |
+| Energising Break  | Added  | 3  | Personal addition. +3 AP on Breaking a target.                                                                                                              |
+| Empowering Break  | Added  | 3  | Personal addition. Gain Powerful on Breaking a target.                                                                                                      |
+| Gradient Break    | Added  | 5  | Personal addition. +50% Gradient Charge on Breaking a target.                                                                                               |
+| Staggering Attack | Added  | 1  | Personal addition. 50% increased Break damage on Base Attack.                                                                                               |
 
-**LP:** 337/337
+**LP:** 348/348
 
 ---
 

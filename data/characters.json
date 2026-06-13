@@ -31,7 +31,7 @@
       "Shortcut"
     ],
     "lp_total": 506,
-    "lp_used": 506,
+    "lp_used": 491,
     "lumina_core_exclusions": [],
     "lumina_extras": [
       {
@@ -63,6 +63,10 @@
         "notes": "DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack."
       },
       {
+        "name": "First Offensive",
+        "notes": "DPS expansion. 50% increased damage on first hit dealt, once per battle."
+      },
+      {
         "name": "Frenzy",
         "notes": "DPS expansion. Each successive Skill hit deals 10% more damage. Fires on multi-hit skills (Sword Ballet, Burning Canvas) - not on single-hit Stendhal/Gommage."
       },
@@ -73,6 +77,10 @@
       {
         "name": "Immaculate",
         "notes": "DPS expansion. 30% increased damage until first hit received."
+      },
+      {
+        "name": "Powerful Shield",
+        "notes": "DPS expansion. 10% increased damage per Shield Point on self."
       },
       {
         "name": "Warming Up",
@@ -95,22 +103,6 @@
         "notes": "Low-health expansion. 50% increased damage while Inverted (cannot be healed)."
       },
       {
-        "name": "Anti-Blight",
-        "notes": "Personal addition. Immune to Blight - relevant for Renoir's Drafts farming."
-      },
-      {
-        "name": "Burning Shots",
-        "notes": "Personal addition. 20% chance to Burn on Free Aim shot - seeds Burn Affinity."
-      },
-      {
-        "name": "Exposing Break",
-        "notes": "Personal addition. Apply Defenceless on Break - supplements Monoco's Defenceless application."
-      },
-      {
-        "name": "First Offensive",
-        "notes": "Personal addition. 50% increased damage on first hit dealt, once per battle."
-      },
-      {
         "name": "Gradient Fighter",
         "notes": "Personal addition. 25% increased damage with Gradient Attacks - large boost for Gommage."
       },
@@ -131,16 +123,8 @@
         "notes": "Personal addition (Lithum suite). On applying Shell, duration +2 - extends Lithum Shell from Virtuose exit."
       },
       {
-        "name": "Marking Shots",
-        "notes": "Personal addition. 20% chance to apply Mark on Free Aim shot."
-      },
-      {
         "name": "Powerful On Shell",
         "notes": "Personal addition (Lithum suite). Apply Powerful on applying Shell - Lithum applies Shell on Virtuose exit (Last Chance -> Stendhal/Gommage), triggering this every cycle. Boosted by Greater Powerful and Longer Powerful."
-      },
-      {
-        "name": "Powerful Shield",
-        "notes": "Personal addition. 10% increased damage per Shield Point on self."
       },
       {
         "name": "Energising Shell",
@@ -236,8 +220,8 @@
       "Quick Break",
       "Energising Stun"
     ],
-    "lp_total": 448,
-    "lp_used": 448,
+    "lp_total": 469,
+    "lp_used": 469,
     "lumina_core_exclusions": [],
     "lumina_extras": [
       {
@@ -269,6 +253,10 @@
         "notes": "DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack."
       },
       {
+        "name": "First Offensive",
+        "notes": "DPS expansion. 50% increased damage on first hit dealt, once per battle."
+      },
+      {
         "name": "Frenzy",
         "notes": "DPS expansion. Each successive Skill hit deals 10% more damage. Major multiplier on 13-hit Steeled Strike."
       },
@@ -279,6 +267,10 @@
       {
         "name": "Immaculate",
         "notes": "DPS expansion. 30% increased damage until first hit received."
+      },
+      {
+        "name": "Powerful Shield",
+        "notes": "DPS expansion. 10% increased damage per Shield Point on self."
       },
       {
         "name": "Warming Up",
@@ -309,16 +301,20 @@
         "notes": "Personal addition. +3 AP on Breaking a target - enables Perfect Break -> Stun -> End Bringer rotation. Frequency depends on boss: varies from rarely breaking (e.g. Simon) to easily broken (e.g. Chromatic Lampmaster)."
       },
       {
+        "name": "Exposing Break",
+        "notes": "Personal addition. Apply Defenceless on Breaking a target - sets up the next hit against that enemy with a damage boost compounding the Break bonus itself."
+      },
+      {
         "name": "Alternating Critical",
         "notes": "Free from Pictos. Effect not used at 100% crit - pure stat stick."
       },
       {
-        "name": "Quick Break",
-        "notes": "Free from Pictos. Effect (play again on Breaking a target) does not fire alongside Cheater - pure stat stick."
-      },
-      {
         "name": "Energising Stun",
         "notes": "Free from Pictos. +1 AP on hitting Stunned target with Skill - synergy with End Bringer."
+      },
+      {
+        "name": "Quick Break",
+        "notes": "Free from Pictos. Effect (play again on Breaking a target) does not fire alongside Cheater - pure stat stick."
       }
     ],
     "skills_equipped": [
@@ -406,8 +402,8 @@
       "Breaking Death",
       "Powerful Revive"
     ],
-    "lp_total": 315,
-    "lp_used": 315,
+    "lp_total": 326,
+    "lp_used": 326,
     "lumina_core_exclusions": [],
     "lumina_extras": [
       {
@@ -417,6 +413,10 @@
       {
         "name": "Breaking Counter",
         "notes": "Support expansion. 50% increased Break damage on Counterattack."
+      },
+      {
+        "name": "Exposing Break",
+        "notes": "Support expansion. Apply Defenceless on Breaking a target - sets up the next hit against that enemy with a damage boost compounding the Break bonus itself."
       },
       {
         "name": "Recovery",
@@ -535,8 +535,8 @@
       "Sweet Kill",
       "Rush On Powerful"
     ],
-    "lp_total": 460,
-    "lp_used": 460,
+    "lp_total": 461,
+    "lp_used": 461,
     "lumina_core_exclusions": [],
     "lumina_extras": [
       {
@@ -568,6 +568,10 @@
         "notes": "DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack."
       },
       {
+        "name": "First Offensive",
+        "notes": "DPS expansion. 50% increased damage on first hit dealt, once per battle."
+      },
+      {
         "name": "Frenzy",
         "notes": "DPS expansion. Each successive Skill hit deals 10% more damage. Major multiplier on 12-hit Lightning Dance with 3-stain consumption (x5 base damage multiplier)."
       },
@@ -578,6 +582,10 @@
       {
         "name": "Immaculate",
         "notes": "DPS expansion. 30% increased damage until first hit received."
+      },
+      {
+        "name": "Powerful Shield",
+        "notes": "DPS expansion. 10% increased damage per Shield Point on self."
       },
       {
         "name": "Warming Up",
@@ -598,14 +606,6 @@
       {
         "name": "Breaking Attack",
         "notes": "Personal addition. Apply Break damage on base attack if Break bar full."
-      },
-      {
-        "name": "Breaker",
-        "notes": "Personal addition. 25% increased Break damage - Lune contributes to Break alongside Monoco, accelerating her own Defenceless/Exposing Break window."
-      },
-      {
-        "name": "Critical Break",
-        "notes": "Personal addition. 25% increased Break damage on Critical hits."
       },
       {
         "name": "Energising Burn",
@@ -706,8 +706,8 @@
       "Charging Critical",
       "Pro Retreat"
     ],
-    "lp_total": 337,
-    "lp_used": 337,
+    "lp_total": 348,
+    "lp_used": 348,
     "lumina_core_exclusions": [],
     "lumina_extras": [
       {
@@ -717,6 +717,10 @@
       {
         "name": "Breaking Counter",
         "notes": "Support expansion. 50% increased Break damage on Counterattack."
+      },
+      {
+        "name": "Exposing Break",
+        "notes": "Support expansion. Apply Defenceless on Breaking a target - sets up the next hit against that enemy with a damage boost compounding the Break bonus itself."
       },
       {
         "name": "Recovery",

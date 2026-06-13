@@ -134,8 +134,8 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 
 ### LP Budget
 <!-- GENERATED:START characters:Verso:LP -->
-- **Current capacity:** 448 LP
-- **Used:** 448 LP
+- **Current capacity:** 469 LP
+- **Used:** 469 LP
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
@@ -151,9 +151,11 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Dead Energy II         | Added  | 2  | DPS expansion. +3 AP on killing an enemy (stacks with Dead Energy I).                                                                                                                                                    |
 | Double Third           | Added  | 10 | DPS expansion. Every 3rd hit deals double damage. Fires on hits 3/6/9/12 of 13-hit Steeled Strike.                                                                                                                       |
 | Empowering Dodge       | Added  | 5  | DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack.                                                                                                                  |
+| First Offensive        | Added  | 5  | DPS expansion. 50% increased damage on first hit dealt, once per battle.                                                                                                                                                 |
 | Frenzy                 | Added  | 20 | DPS expansion. Each successive Skill hit deals 10% more damage. Major multiplier on 13-hit Steeled Strike.                                                                                                               |
 | Glass Cannon           | Added  | 10 | DPS expansion. 25% increased damage, 25% increased damage taken.                                                                                                                                                         |
 | Immaculate             | Added  | 10 | DPS expansion. 30% increased damage until first hit received.                                                                                                                                                            |
+| Powerful Shield        | Added  | 5  | DPS expansion. 10% increased damage per Shield Point on self.                                                                                                                                                            |
 | Warming Up             | Added  | 15 | DPS expansion. Damage increases with each attack, up to 20% at 5 stacks.                                                                                                                                                 |
 | At Death's Door        | Added  | 5  | Low-health expansion. 50% increased damage below 10% HP. Active permanently while at 1 HP from Overload.                                                                                                                 |
 | Confident Fighter      | Added  | 15 | Low-health expansion. 30% increased damage, cannot be healed.                                                                                                                                                            |
@@ -161,9 +163,10 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Inverted Affinity      | Added  | 5  | Low-health expansion. 50% increased damage while Inverted (cannot be healed).                                                                                                                                            |
 | Auto Rush              | Added  | 10 | Personal addition. Apply Rush for 3 turns on battle start - secures first-action priority before Litheson Greater Rush takes effect.                                                                                     |
 | Energising Break       | Added  | 3  | Personal addition. +3 AP on Breaking a target - enables Perfect Break -> Stun -> End Bringer rotation. Frequency depends on boss: varies from rarely breaking (e.g. Simon) to easily broken (e.g. Chromatic Lampmaster). |
+| Exposing Break         | Added  | 5  | Personal addition. Apply Defenceless on Breaking a target - sets up the next hit against that enemy with a damage boost compounding the Break bonus itself.                                                              |
 | Alternating Critical   | Added  | —  | Free from Pictos. Effect not used at 100% crit - pure stat stick.                                                                                                                                                        |
-| Quick Break            | Added  | —  | Free from Pictos. Effect (play again on Breaking a target) does not fire alongside Cheater - pure stat stick.                                                                                                            |
 | Energising Stun        | Added  | —  | Free from Pictos. +1 AP on hitting Stunned target with Skill - synergy with End Bringer.                                                                                                                                 |
+| Quick Break            | Added  | —  | Free from Pictos. Effect (play again on Breaking a target) does not fire alongside Cheater - pure stat stick.                                                                                                            |
 <!-- GENERATED:END -->
 
 ### Current Loadout
@@ -182,6 +185,7 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Breaking Burn          | 5  | 25% increased Break damage on Burning enemies.                                                                                                                                                                           |
 | Breaking Death         | 5  | Fully charge enemy break bar on death.                                                                                                                                                                                   |
 | Burn Affinity          | 10 | DPS expansion. 25% increased damage against burning targets. Synergy: Simoso 20% burn chance on Light damage can seed this.                                                                                              |
+| Burning Shots          | 3  | 20% chance to Burn on Free Aim shot.                                                                                                                                                                                     |
 | Charging Critical      | 10 | DPS expansion. +20% Gradient Charge on Critical Hit, once per turn. Fires every turn at 122% crit.                                                                                                                       |
 | Cheater                | 40 | Extra turn after using a skill, once per turn.                                                                                                                                                                           |
 | Confident Fighter      | 15 | Low-health expansion. 30% increased damage, cannot be healed.                                                                                                                                                            |
@@ -196,13 +200,17 @@ Verso's central system is **Perfection and Rank**. Perfection is a resource that
 | Energising Stun        | —  | FREE from Energising Stun Pictos                                                                                                                                                                                         |
 | Energising Turn        | 20 | +1 AP on turn start. Main AP flow generator; boosted by Energy Master.                                                                                                                                                   |
 | Energy Master          | 40 | Every AP gain is increased by 1.                                                                                                                                                                                         |
+| Exposing Break         | 5  | Personal addition. Apply Defenceless on Breaking a target - sets up the next hit against that enemy with a damage boost compounding the Break bonus itself.                                                              |
+| First Offensive        | 5  | DPS expansion. 50% increased damage on first hit dealt, once per battle.                                                                                                                                                 |
 | First Strike           | 10 | Act first in battle.                                                                                                                                                                                                     |
 | Frenzy                 | 20 | DPS expansion. Each successive Skill hit deals 10% more damage. Major multiplier on 13-hit Steeled Strike.                                                                                                               |
 | Glass Cannon           | 10 | DPS expansion. 25% increased damage, 25% increased damage taken.                                                                                                                                                         |
 | Immaculate             | 10 | DPS expansion. 30% increased damage until first hit received.                                                                                                                                                            |
 | In Medias Res          | 10 | Low-health expansion. +3 Shields at battle start, max Health halved. HP penalty irrelevant at 1 HP from Overload.                                                                                                        |
 | Inverted Affinity      | 5  | Low-health expansion. 50% increased damage while Inverted (cannot be healed).                                                                                                                                            |
+| Marking Shots          | 3  | 20% chance to apply Mark on Free Aim shot.                                                                                                                                                                               |
 | Painted Power          | 5  | Damage can exceed 9,999. Essential for all characters from Act 3 onwards.                                                                                                                                                |
+| Powerful Shield        | 5  | DPS expansion. 10% increased damage per Shield Point on self.                                                                                                                                                            |
 | Protecting Death       | 5  | Allies gain Shell on death.                                                                                                                                                                                              |
 | Quick Break            | —  | FREE from Quick Break Pictos                                                                                                                                                                                             |
 | SOS Power              | 5  | Apply Powerful when falling below 50% Health.                                                                                                                                                                            |

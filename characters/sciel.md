@@ -106,8 +106,8 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 
 ### LP Budget
 <!-- GENERATED:START characters:Sciel:LP -->
-- **Current capacity:** 315 LP
-- **Used:** 315 LP
+- **Current capacity:** 326 LP
+- **Used:** 326 LP
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
@@ -118,6 +118,7 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 |---------------------|--------|----|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Breaking Attack     | Added  | 10 | Support expansion. Apply Break damage on base attack if Break bar is full.                                                                                                                       |
 | Breaking Counter    | Added  | 3  | Support expansion. 50% increased Break damage on Counterattack.                                                                                                                                  |
+| Exposing Break      | Added  | 5  | Support expansion. Apply Defenceless on Breaking a target - sets up the next hit against that enemy with a damage boost compounding the Break bonus itself.                                      |
 | Recovery            | Added  | 10 | Support expansion. Recovers 10% Health on turn start. Passive self-heal - practical substitute for Clea's Life given Sciel spends turns on Fortune's Fury/Intervention rather than self-healing. |
 | Accelerating Heal   | Added  | 5  | Personal addition. Healing an ally also applies Rush for 1 turn.                                                                                                                                 |
 | Charging Alteration | Added  | 10 | Personal addition. +10% Gradient Charge on applying a Buff, once per turn - fires regularly given Sciel's buff-heavy turns.                                                                      |
@@ -142,6 +143,7 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 | Breaking Burn       | 5  | 25% increased Break damage on Burning enemies.                                                                                                                                                   |
 | Breaking Counter    | 3  | Support expansion. 50% increased Break damage on Counterattack.                                                                                                                                  |
 | Breaking Death      | —  | FREE from Breaking Death Pictos                                                                                                                                                                  |
+| Burning Shots       | 3  | 20% chance to Burn on Free Aim shot.                                                                                                                                                             |
 | Charging Alteration | 10 | Personal addition. +10% Gradient Charge on applying a Buff, once per turn - fires regularly given Sciel's buff-heavy turns.                                                                      |
 | Cheater             | 40 | Extra turn after using a skill, once per turn.                                                                                                                                                   |
 | Critical Break      | 5  | 25% increased Break damage on Critical hits.                                                                                                                                                     |
@@ -150,9 +152,11 @@ Her **Sun/Moon charge** system (from Litheson) layers on top: gaining a Sun char
 | Energising Start I  | 5  | +1 AP on battle start. Boosted by Energy Master.                                                                                                                                                 |
 | Energising Turn     | 20 | +1 AP on turn start. Main AP flow generator; boosted by Energy Master.                                                                                                                           |
 | Energy Master       | —  | FREE from Energy Master Pictos                                                                                                                                                                   |
+| Exposing Break      | 5  | Support expansion. Apply Defenceless on Breaking a target - sets up the next hit against that enemy with a damage boost compounding the Break bonus itself.                                      |
 | First Strike        | 10 | Act first in battle.                                                                                                                                                                             |
 | Gradient Break      | 5  | Personal addition. +50% Gradient Charge on Breaking a target - charges Fortune's Fury gauge.                                                                                                     |
 | Healing Tint Energy | 1  | Personal addition. Healing Tints also give 1 AP.                                                                                                                                                 |
+| Marking Shots       | 3  | 20% chance to apply Mark on Free Aim shot.                                                                                                                                                       |
 | Painted Power       | 5  | Damage can exceed 9,999. Essential for all characters from Act 3 onwards.                                                                                                                        |
 | Powerful Revive     | —  | FREE from Powerful Revive Pictos                                                                                                                                                                 |
 | Protecting Death    | 5  | Allies gain Shell on death.                                                                                                                                                                      |

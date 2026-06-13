@@ -137,62 +137,66 @@ Longer Shell's extension effect fires when Lune uses Healing Light (Protecting H
 
 ### LP Budget
 <!-- GENERATED:START characters:Monoco:LP -->
-- **Current capacity:** 337 LP
-- **Used:** 337 LP
+- **Current capacity:** 348 LP
+- **Used:** 348 LP
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Lumina Adjustments
 
 <!-- GENERATED:START characters:Monoco:Lumina:adjustments -->
-| Lumina            | Change | LP | Notes                                                                                                                                                 |
-|-------------------|--------|----|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Breaking Attack   | Added  | 10 | Support expansion. Apply Break damage on base attack if Break bar is full.                                                                            |
-| Breaking Counter  | Added  | 3  | Support expansion. 50% increased Break damage on Counterattack.                                                                                       |
-| Recovery          | Added  | 10 | Support expansion. Recovers 10% Health on turn start.                                                                                                 |
-| Break Specialist  | Added  | 1  | Personal addition. 50% increased Break damage, 20% reduced hit damage - net positive given Monoco's role is Break-focused utility, not direct damage. |
-| Energising Break  | Added  | 3  | Personal addition. +3 AP on Breaking a target.                                                                                                        |
-| Empowering Break  | Added  | 3  | Personal addition. Gain Powerful on Breaking a target.                                                                                                |
-| Gradient Break    | Added  | 5  | Personal addition. +50% Gradient Charge on Breaking a target.                                                                                         |
-| Staggering Attack | Added  | 1  | Personal addition. 50% increased Break damage on Base Attack.                                                                                         |
+| Lumina            | Change | LP | Notes                                                                                                                                                       |
+|-------------------|--------|----|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Breaking Attack   | Added  | 10 | Support expansion. Apply Break damage on base attack if Break bar is full.                                                                                  |
+| Breaking Counter  | Added  | 3  | Support expansion. 50% increased Break damage on Counterattack.                                                                                             |
+| Exposing Break    | Added  | 5  | Support expansion. Apply Defenceless on Breaking a target - sets up the next hit against that enemy with a damage boost compounding the Break bonus itself. |
+| Recovery          | Added  | 10 | Support expansion. Recovers 10% Health on turn start.                                                                                                       |
+| Break Specialist  | Added  | 1  | Personal addition. 50% increased Break damage, 20% reduced hit damage - net positive given Monoco's role is Break-focused utility, not direct damage.       |
+| Energising Break  | Added  | 3  | Personal addition. +3 AP on Breaking a target.                                                                                                              |
+| Empowering Break  | Added  | 3  | Personal addition. Gain Powerful on Breaking a target.                                                                                                      |
+| Gradient Break    | Added  | 5  | Personal addition. +50% Gradient Charge on Breaking a target.                                                                                               |
+| Staggering Attack | Added  | 1  | Personal addition. 50% increased Break damage on Base Attack.                                                                                               |
 <!-- GENERATED:END -->
 
 ### Current Loadout
 
 <!-- GENERATED:START characters:Monoco:Lumina -->
-| Lumina             | LP | Notes                                                                                                                                                 |
-|--------------------|----|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AP Discount        | 30 | Reduces skill AP cost by 1.                                                                                                                           |
-| Aegis Revival      | 5  | +1 Shield on being revived.                                                                                                                           |
-| Base Shield        | 20 | Grants 1 Shield HP buffer per turn.                                                                                                                   |
-| Break Specialist   | 1  | Personal addition. 50% increased Break damage, 20% reduced hit damage - net positive given Monoco's role is Break-focused utility, not direct damage. |
-| Breaker            | 10 | 25% increased Break damage.                                                                                                                           |
-| Breaking Attack    | 10 | Support expansion. Apply Break damage on base attack if Break bar is full.                                                                            |
-| Breaking Burn      | 5  | 25% increased Break damage on Burning enemies.                                                                                                        |
-| Breaking Counter   | 3  | Support expansion. 50% increased Break damage on Counterattack.                                                                                       |
-| Breaking Death     | 5  | Fully charge enemy break bar on death.                                                                                                                |
-| Cheater            | 40 | Extra turn after using a skill, once per turn.                                                                                                        |
-| Critical Break     | 5  | 25% increased Break damage on Critical hits.                                                                                                          |
-| Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                                                                                                            |
-| Empowering Break   | 3  | Personal addition. Gain Powerful on Breaking a target.                                                                                                |
-| Energising Break   | 3  | Personal addition. +3 AP on Breaking a target.                                                                                                        |
-| Energising Start I | 5  | +1 AP on battle start. Boosted by Energy Master.                                                                                                      |
-| Energising Turn    | 20 | +1 AP on turn start. Main AP flow generator; boosted by Energy Master.                                                                                |
-| Energy Master      | 40 | Every AP gain is increased by 1.                                                                                                                      |
-| First Strike       | 10 | Act first in battle.                                                                                                                                  |
-| Gradient Break     | 5  | Personal addition. +50% Gradient Charge on Breaking a target.                                                                                         |
-| Painted Power      | 5  | Damage can exceed 9,999. Essential for all characters from Act 3 onwards.                                                                             |
-| Protecting Death   | 5  | Allies gain Shell on death.                                                                                                                           |
-| Recovery           | 10 | Support expansion. Recovers 10% Health on turn start.                                                                                                 |
-| SOS Power          | 5  | Apply Powerful when falling below 50% Health.                                                                                                         |
-| SOS Rush           | 5  | Apply Rush when falling below 50% Health.                                                                                                             |
-| SOS Shell          | 5  | Apply Shell when falling below 50% Health.                                                                                                            |
-| Second Chance      | 40 | Revive with 100% Health. Once per battle.                                                                                                             |
-| Shielding Death    | 10 | Allies gain 3 Shield points on death.                                                                                                                 |
-| Shortcut           | 5  | Immediately play when falling below 30% Health. Once per battle.                                                                                      |
-| Staggering Attack  | 1  | Personal addition. 50% increased Break damage on Base Attack.                                                                                         |
-| Survivor           | 20 | Survive fatal damage with 1 Health, once per battle.                                                                                                  |
-| Teamwork           | 5  | 10% increased damage while all allies are alive.                                                                                                      |
+| Lumina             | LP | Notes                                                                                                                                                       |
+|--------------------|----|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AP Discount        | 30 | Reduces skill AP cost by 1.                                                                                                                                 |
+| Aegis Revival      | 5  | +1 Shield on being revived.                                                                                                                                 |
+| Base Shield        | 20 | Grants 1 Shield HP buffer per turn.                                                                                                                         |
+| Break Specialist   | 1  | Personal addition. 50% increased Break damage, 20% reduced hit damage - net positive given Monoco's role is Break-focused utility, not direct damage.       |
+| Breaker            | 10 | 25% increased Break damage.                                                                                                                                 |
+| Breaking Attack    | 10 | Support expansion. Apply Break damage on base attack if Break bar is full.                                                                                  |
+| Breaking Burn      | 5  | 25% increased Break damage on Burning enemies.                                                                                                              |
+| Breaking Counter   | 3  | Support expansion. 50% increased Break damage on Counterattack.                                                                                             |
+| Breaking Death     | 5  | Fully charge enemy break bar on death.                                                                                                                      |
+| Burning Shots      | 3  | 20% chance to Burn on Free Aim shot.                                                                                                                        |
+| Cheater            | 40 | Extra turn after using a skill, once per turn.                                                                                                              |
+| Critical Break     | 5  | 25% increased Break damage on Critical hits.                                                                                                                |
+| Dodger             | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                                                                                                                  |
+| Empowering Break   | 3  | Personal addition. Gain Powerful on Breaking a target.                                                                                                      |
+| Energising Break   | 3  | Personal addition. +3 AP on Breaking a target.                                                                                                              |
+| Energising Start I | 5  | +1 AP on battle start. Boosted by Energy Master.                                                                                                            |
+| Energising Turn    | 20 | +1 AP on turn start. Main AP flow generator; boosted by Energy Master.                                                                                      |
+| Energy Master      | 40 | Every AP gain is increased by 1.                                                                                                                            |
+| Exposing Break     | 5  | Support expansion. Apply Defenceless on Breaking a target - sets up the next hit against that enemy with a damage boost compounding the Break bonus itself. |
+| First Strike       | 10 | Act first in battle.                                                                                                                                        |
+| Gradient Break     | 5  | Personal addition. +50% Gradient Charge on Breaking a target.                                                                                               |
+| Marking Shots      | 3  | 20% chance to apply Mark on Free Aim shot.                                                                                                                  |
+| Painted Power      | 5  | Damage can exceed 9,999. Essential for all characters from Act 3 onwards.                                                                                   |
+| Protecting Death   | 5  | Allies gain Shell on death.                                                                                                                                 |
+| Recovery           | 10 | Support expansion. Recovers 10% Health on turn start.                                                                                                       |
+| SOS Power          | 5  | Apply Powerful when falling below 50% Health.                                                                                                               |
+| SOS Rush           | 5  | Apply Rush when falling below 50% Health.                                                                                                                   |
+| SOS Shell          | 5  | Apply Shell when falling below 50% Health.                                                                                                                  |
+| Second Chance      | 40 | Revive with 100% Health. Once per battle.                                                                                                                   |
+| Shielding Death    | 10 | Allies gain 3 Shield points on death.                                                                                                                       |
+| Shortcut           | 5  | Immediately play when falling below 30% Health. Once per battle.                                                                                            |
+| Staggering Attack  | 1  | Personal addition. 50% increased Break damage on Base Attack.                                                                                               |
+| Survivor           | 20 | Survive fatal damage with 1 Health, once per battle.                                                                                                        |
+| Teamwork           | 5  | 10% increased damage while all allies are alive.                                                                                                            |
 <!-- GENERATED:END -->
 
 ---

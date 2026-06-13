@@ -2751,7 +2751,7 @@
   ],
   "core_lumina_suite": {
     "main_team": {
-      "total_lp": 301,
+      "total_lp": 307,
       "entries": [
         {
           "name": "AP Discount",
@@ -2782,6 +2782,11 @@
           "name": "Breaking Death",
           "lp": 5,
           "notes": "Fully charge enemy break bar on death."
+        },
+        {
+          "name": "Burning Shots",
+          "lp": 3,
+          "notes": "20% chance to Burn on Free Aim shot."
         },
         {
           "name": "Cheater",
@@ -2819,6 +2824,11 @@
           "notes": "Act first in battle."
         },
         {
+          "name": "Marking Shots",
+          "lp": 3,
+          "notes": "20% chance to apply Mark on Free Aim shot."
+        },
+        {
           "name": "Painted Power",
           "lp": 5,
           "notes": "Damage can exceed 9,999. Essential for all characters from Act 3 onwards."
@@ -2827,21 +2837,6 @@
           "name": "Protecting Death",
           "lp": 5,
           "notes": "Allies gain Shell on death."
-        },
-        {
-          "name": "Second Chance",
-          "lp": 40,
-          "notes": "Revive with 100% Health. Once per battle."
-        },
-        {
-          "name": "Shielding Death",
-          "lp": 10,
-          "notes": "Allies gain 3 Shield points on death."
-        },
-        {
-          "name": "Shortcut",
-          "lp": 5,
-          "notes": "Immediately play when falling below 30% Health. Once per battle."
         },
         {
           "name": "SOS Power",
@@ -2857,6 +2852,21 @@
           "name": "SOS Shell",
           "lp": 5,
           "notes": "Apply Shell when falling below 50% Health."
+        },
+        {
+          "name": "Second Chance",
+          "lp": 40,
+          "notes": "Revive with 100% Health. Once per battle."
+        },
+        {
+          "name": "Shielding Death",
+          "lp": 10,
+          "notes": "Allies gain 3 Shield points on death."
+        },
+        {
+          "name": "Shortcut",
+          "lp": 5,
+          "notes": "Immediately play when falling below 30% Health. Once per battle."
         },
         {
           "name": "Survivor",
@@ -2872,7 +2882,7 @@
       "notes": "Unified core set, applied to all five characters."
     },
     "reserve_team": {
-      "total_lp": 301,
+      "total_lp": 307,
       "entries": [
         {
           "name": "AP Discount",
@@ -2903,6 +2913,11 @@
           "name": "Breaking Death",
           "lp": 5,
           "notes": "Fully charge enemy break bar on death."
+        },
+        {
+          "name": "Burning Shots",
+          "lp": 3,
+          "notes": "20% chance to Burn on Free Aim shot."
         },
         {
           "name": "Cheater",
@@ -2940,6 +2955,11 @@
           "notes": "Act first in battle."
         },
         {
+          "name": "Marking Shots",
+          "lp": 3,
+          "notes": "20% chance to apply Mark on Free Aim shot."
+        },
+        {
           "name": "Painted Power",
           "lp": 5,
           "notes": "Damage can exceed 9,999. Essential for all characters from Act 3 onwards."
@@ -2948,21 +2968,6 @@
           "name": "Protecting Death",
           "lp": 5,
           "notes": "Allies gain Shell on death."
-        },
-        {
-          "name": "Second Chance",
-          "lp": 40,
-          "notes": "Revive with 100% Health. Once per battle."
-        },
-        {
-          "name": "Shielding Death",
-          "lp": 10,
-          "notes": "Allies gain 3 Shield points on death."
-        },
-        {
-          "name": "Shortcut",
-          "lp": 5,
-          "notes": "Immediately play when falling below 30% Health. Once per battle."
         },
         {
           "name": "SOS Power",
@@ -2978,6 +2983,21 @@
           "name": "SOS Shell",
           "lp": 5,
           "notes": "Apply Shell when falling below 50% Health."
+        },
+        {
+          "name": "Second Chance",
+          "lp": 40,
+          "notes": "Revive with 100% Health. Once per battle."
+        },
+        {
+          "name": "Shielding Death",
+          "lp": 10,
+          "notes": "Allies gain 3 Shield points on death."
+        },
+        {
+          "name": "Shortcut",
+          "lp": 5,
+          "notes": "Immediately play when falling below 30% Health. Once per battle."
         },
         {
           "name": "Survivor",

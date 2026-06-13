@@ -131,8 +131,8 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 
 ### LP Budget
 <!-- GENERATED:START characters:Lune:LP -->
-- **Current capacity:** 460 LP
-- **Used:** 460 LP
+- **Current capacity:** 461 LP
+- **Used:** 461 LP
 - **Spare:** 0 LP
 <!-- GENERATED:END -->
 
@@ -148,16 +148,16 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 | Dead Energy II         | Added  | 2  | DPS expansion. +3 AP on killing an enemy (stacks with Dead Energy I).                                                                                            |
 | Double Third           | Added  | 10 | DPS expansion. Every 3rd hit deals double damage. Fires on hits 3/6/9/12 of 12-hit Lightning Dance.                                                              |
 | Empowering Dodge       | Added  | 5  | DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack.                                                          |
+| First Offensive        | Added  | 5  | DPS expansion. 50% increased damage on first hit dealt, once per battle.                                                                                         |
 | Frenzy                 | Added  | 20 | DPS expansion. Each successive Skill hit deals 10% more damage. Major multiplier on 12-hit Lightning Dance with 3-stain consumption (x5 base damage multiplier). |
 | Glass Cannon           | Added  | 10 | DPS expansion. 25% increased damage, 25% increased damage taken. Risk mitigated by Clea's Life maintaining full HP each clean turn.                              |
 | Immaculate             | Added  | 10 | DPS expansion. 30% increased damage until first hit received.                                                                                                    |
+| Powerful Shield        | Added  | 5  | DPS expansion. 10% increased damage per Shield Point on self.                                                                                                    |
 | Warming Up             | Added  | 15 | DPS expansion. Damage increases with each attack, up to 20% at 5 stacks.                                                                                         |
 | Clea's Life            | Added  | —  | Full-health expansion. Free from Pictos. Restore to full Health on turn start if no damage taken.                                                                |
 | Full Strength          | Added  | 15 | Full-health expansion. 25% increased damage at full Health. Maintained by Clea's Life restoring full HP each clean turn.                                         |
 | Accelerating Heal      | Added  | 5  | Personal addition. Healing an ally also applies Rush for 1 turn.                                                                                                 |
 | Breaking Attack        | Added  | 10 | Personal addition. Apply Break damage on base attack if Break bar full.                                                                                          |
-| Breaker                | Added  | 10 | Personal addition. 25% increased Break damage - Lune contributes to Break alongside Monoco, accelerating her own Defenceless/Exposing Break window.              |
-| Critical Break         | Added  | 5  | Personal addition. 25% increased Break damage on Critical hits.                                                                                                  |
 | Energising Burn        | Added  | 10 | Personal addition. +1 AP on applying Burn, once per turn - fires on Hell setup turn.                                                                             |
 | Protecting Heal        | Added  | 5  | Personal addition. Shell on healing an ally.                                                                                                                     |
 | Sweet Kill             | Added  | —  | Free from Pictos. Recover 50% Health on killing an enemy - synergy with Lightning Dance securing kills, supports Full Strength uptime.                           |
@@ -175,16 +175,15 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 | Augmented First Strike | 5  | DPS expansion. 50% increased damage on first hit, once per battle.                                                                                               |
 | Base Shield            | 20 | Grants 1 Shield HP buffer per turn.                                                                                                                              |
 | Breaker                | 10 | 25% increased Break damage.                                                                                                                                      |
-| Breaker                | 10 | Personal addition. 25% increased Break damage - Lune contributes to Break alongside Monoco, accelerating her own Defenceless/Exposing Break window.              |
 | Breaking Attack        | 10 | Personal addition. Apply Break damage on base attack if Break bar full.                                                                                          |
 | Breaking Burn          | 5  | 25% increased Break damage on Burning enemies.                                                                                                                   |
 | Breaking Death         | 5  | Fully charge enemy break bar on death.                                                                                                                           |
 | Burn Affinity          | 10 | DPS expansion. 25% increased damage against burning targets. Burn seeded primarily by Hell as setup skill.                                                       |
+| Burning Shots          | 3  | 20% chance to Burn on Free Aim shot.                                                                                                                             |
 | Charging Critical      | 10 | DPS expansion. +20% Gradient Charge on Critical Hit, once per turn. Fires every turn at 100% crit.                                                               |
 | Cheater                | 40 | Extra turn after using a skill, once per turn.                                                                                                                   |
 | Clea's Life            | —  | FREE from Clea's Life Pictos                                                                                                                                     |
 | Critical Break         | 5  | 25% increased Break damage on Critical hits.                                                                                                                     |
-| Critical Break         | 5  | Personal addition. 25% increased Break damage on Critical hits.                                                                                                  |
 | Dead Energy I          | 2  | DPS expansion. +3 AP on killing an enemy.                                                                                                                        |
 | Dead Energy II         | 2  | DPS expansion. +3 AP on killing an enemy (stacks with Dead Energy I).                                                                                            |
 | Dodger                 | 1  | Gain 1 AP on Perfect Dodge. Once per turn.                                                                                                                       |
@@ -194,12 +193,15 @@ Lune's central system is **stain generation and consumption**. Skills generate s
 | Energising Start I     | 5  | +1 AP on battle start. Boosted by Energy Master.                                                                                                                 |
 | Energising Turn        | 20 | +1 AP on turn start. Main AP flow generator; boosted by Energy Master.                                                                                           |
 | Energy Master          | 40 | Every AP gain is increased by 1.                                                                                                                                 |
+| First Offensive        | 5  | DPS expansion. 50% increased damage on first hit dealt, once per battle.                                                                                         |
 | First Strike           | 10 | Act first in battle.                                                                                                                                             |
 | Frenzy                 | 20 | DPS expansion. Each successive Skill hit deals 10% more damage. Major multiplier on 12-hit Lightning Dance with 3-stain consumption (x5 base damage multiplier). |
 | Full Strength          | 15 | Full-health expansion. 25% increased damage at full Health. Maintained by Clea's Life restoring full HP each clean turn.                                         |
 | Glass Cannon           | 10 | DPS expansion. 25% increased damage, 25% increased damage taken. Risk mitigated by Clea's Life maintaining full HP each clean turn.                              |
 | Immaculate             | 10 | DPS expansion. 30% increased damage until first hit received.                                                                                                    |
+| Marking Shots          | 3  | 20% chance to apply Mark on Free Aim shot.                                                                                                                       |
 | Painted Power          | 5  | Damage can exceed 9,999. Essential for all characters from Act 3 onwards.                                                                                        |
+| Powerful Shield        | 5  | DPS expansion. 10% increased damage per Shield Point on self.                                                                                                    |
 | Protecting Death       | 5  | Allies gain Shell on death.                                                                                                                                      |
 | Protecting Heal        | 5  | Personal addition. Shell on healing an ally.                                                                                                                     |
 | Rush On Powerful       | —  | FREE from Rush On Powerful Pictos                                                                                                                                |
