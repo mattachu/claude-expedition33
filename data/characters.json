@@ -30,8 +30,8 @@
       "Empowering Break",
       "Shortcut"
     ],
-    "lp_total": 506,
-    "lp_used": 491,
+    "lp_total": 521,
+    "lp_used": 521,
     "lumina_core_exclusions": [],
     "lumina_extras": [
       {
@@ -107,8 +107,16 @@
         "notes": "Personal addition. 25% increased damage with Gradient Attacks - large boost for Gommage."
       },
       {
+        "name": "Energising Shell",
+        "notes": "Personal addition (Lithum suite). Give 2 AP on applying Shell - fires every Virtuose exit via Lithum."
+      },
+      {
         "name": "Greater Powerful",
         "notes": "Personal addition (Lithum suite). +15% to Powerful bonus - boosts Powerful On Shell."
+      },
+      {
+        "name": "Greater Rush",
+        "notes": "Personal addition (Lithum suite). +25% to Rush Speed increase - amplifies the Rush applied by Rush On Powerful."
       },
       {
         "name": "Greater Shell",
@@ -119,6 +127,10 @@
         "notes": "Personal addition (Lithum suite). +2 turn duration to Powerful from Powerful On Shell."
       },
       {
+        "name": "Longer Rush",
+        "notes": "Personal addition (Lithum suite). On applying Rush, duration +2 - extends the Rush applied by Rush On Powerful."
+      },
+      {
         "name": "Longer Shell",
         "notes": "Personal addition (Lithum suite). On applying Shell, duration +2 - extends Lithum Shell from Virtuose exit."
       },
@@ -127,8 +139,8 @@
         "notes": "Personal addition (Lithum suite). Apply Powerful on applying Shell - Lithum applies Shell on Virtuose exit (Last Chance -> Stendhal/Gommage), triggering this every cycle. Boosted by Greater Powerful and Longer Powerful."
       },
       {
-        "name": "Energising Shell",
-        "notes": "Personal addition (Lithum suite). Give 2 AP on applying Shell - fires every Virtuose exit via Lithum."
+        "name": "Rush On Powerful",
+        "notes": "Personal addition (Lithum suite). Apply Rush on applying Powerful - fires every Virtuose exit via the Lithum -> Shell -> Powerful On Shell -> Powerful -> Rush On Powerful chain."
       },
       {
         "name": "Empowering Break",

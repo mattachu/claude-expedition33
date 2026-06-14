@@ -3018,6 +3018,51 @@
       "name": "Feint",
       "lp": 15,
       "notes": "For multi-hit characters, it can give a big boost, but blocks single-hit attacks and doesn't give much more than Frenzy and Double Thurd together."
+    },
+    {
+      "name": "Powerful On Shell",
+      "lp": 10,
+      "notes": "Get all status effects for the price of one."
+    },
+    {
+      "name": "Rush On Powerful",
+      "lp": 10,
+      "notes": "Get all status effects for the price of one."
+    },
+    {
+      "name": "Shell On Rush",
+      "lp": 10,
+      "notes": "Get all status effects for the price of one."
+    },
+    {
+      "name": "Greater Powerful",
+      "lp": 10,
+      "notes": "Make status effects better."
+    },
+    {
+      "name": "Greater Rush",
+      "lp": 10,
+      "notes": "Make status effects better."
+    },
+    {
+      "name": "Greater Shell",
+      "lp": 10,
+      "notes": "Make status effects better."
+    },
+    {
+      "name": "Longer Powerful",
+      "lp": 10,
+      "notes": "Make status effects better."
+    },
+    {
+      "name": "Longer Rush",
+      "lp": 10,
+      "notes": "Make status effects better."
+    },
+    {
+      "name": "Longer Shell",
+      "lp": 10,
+      "notes": "Make status effects better."
     }
   ],
   "situational_lumina": [

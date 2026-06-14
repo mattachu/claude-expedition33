@@ -6,7 +6,7 @@
 
 | Character                         | Level | Role                         | Weapon        | Pictos                                                 | LP      |
 |-----------------------------------|-------|------------------------------|---------------|--------------------------------------------------------|---------|
-| [Maelle](../characters/maelle.md) | 99    | Primary DPS                  | Lithum (33)   | Energising Turn, Empowering Break, Shortcut            | 491/506 |
+| [Maelle](../characters/maelle.md) | 99    | Primary DPS                  | Lithum (33)   | Energising Turn, Empowering Break, Shortcut            | 521/521 |
 | [Verso](../characters/verso.md)   | 99    | Endgame main DPS             | Simoso (33)   | Alternating Critical, Quick Break, Energising Stun     | 469/469 |
 | [Sciel](../characters/sciel.md)   | 99    | Pure support                 | Litheson (33) | Energy Master, Breaking Death, Powerful Revive         | 326/326 |
 | [Lune](../characters/lune.md)     | 99    | DPS / healer (reserve)       | Kralim (33)   | Clea's Life, Sweet Kill, Rush On Powerful              | 461/461 |
@@ -93,15 +93,18 @@
 | In Medias Res          | Added  | 10 | Low-health expansion. +3 Shields at battle start, max Health halved. HP penalty irrelevant at 1 HP from Last Chance.                                                                                                        |
 | Inverted Affinity      | Added  | 5  | Low-health expansion. 50% increased damage while Inverted (cannot be healed).                                                                                                                                               |
 | Gradient Fighter       | Added  | 5  | Personal addition. 25% increased damage with Gradient Attacks - large boost for Gommage.                                                                                                                                    |
+| Energising Shell       | Added  | 10 | Personal addition (Lithum suite). Give 2 AP on applying Shell - fires every Virtuose exit via Lithum.                                                                                                                       |
 | Greater Powerful       | Added  | 10 | Personal addition (Lithum suite). +15% to Powerful bonus - boosts Powerful On Shell.                                                                                                                                        |
+| Greater Rush           | Added  | 10 | Personal addition (Lithum suite). +25% to Rush Speed increase - amplifies the Rush applied by Rush On Powerful.                                                                                                             |
 | Greater Shell          | Added  | 10 | Personal addition (Lithum suite). Stronger Shell from Lithum on Virtuose exit.                                                                                                                                              |
 | Longer Powerful        | Added  | 10 | Personal addition (Lithum suite). +2 turn duration to Powerful from Powerful On Shell.                                                                                                                                      |
+| Longer Rush            | Added  | 10 | Personal addition (Lithum suite). On applying Rush, duration +2 - extends the Rush applied by Rush On Powerful.                                                                                                             |
 | Longer Shell           | Added  | 10 | Personal addition (Lithum suite). On applying Shell, duration +2 - extends Lithum Shell from Virtuose exit.                                                                                                                 |
 | Powerful On Shell      | Added  | 10 | Personal addition (Lithum suite). Apply Powerful on applying Shell - Lithum applies Shell on Virtuose exit (Last Chance -> Stendhal/Gommage), triggering this every cycle. Boosted by Greater Powerful and Longer Powerful. |
-| Energising Shell       | Added  | 10 | Personal addition (Lithum suite). Give 2 AP on applying Shell - fires every Virtuose exit via Lithum.                                                                                                                       |
+| Rush On Powerful       | Added  | 10 | Personal addition (Lithum suite). Apply Rush on applying Powerful - fires every Virtuose exit via the Lithum -> Shell -> Powerful On Shell -> Powerful -> Rush On Powerful chain.                                           |
 | Empowering Break       | Added  | —  | Free from Pictos.                                                                                                                                                                                                           |
 
-**LP:** 491/506
+**LP:** 521/521
 
 ---
 

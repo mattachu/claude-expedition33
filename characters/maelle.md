@@ -51,7 +51,7 @@ Use Last Chance as a deliberate rotation tool rather than an emergency skill. Pr
 
 **Lithum Shell-Powerful loop (Chat 32):**
 
-Lithum applies Shell when leaving Virtuose Stance (L20). Powerful On Shell converts that Shell to Powerful. Greater Powerful then amplifies it by +15%, giving a total ~40% Powerful damage bonus. This fires reliably on every Last Chance rotation and the uplift is meaningful in practice. Note: Energising Shell, Powerful On Shell, and Greater Powerful are all Lithum-dependent — remove them if swapping weapons.
+On leaving Virtuose Stance, Lithum applies Shell. Powerful On Shell converts that Shell to Powerful. Greater Powerful then amplifies it by +15%, giving a total ~40% Powerful damage bonus. Rush On Powerful then triggers Rush from that Powerful application. Greater Rush amplifies the Speed bonus by +25% and Longer Rush extends its duration by 2 turns. Maelle therefore gains Shell, Powerful and Rush automatically on every exit from Virtuose. Note: These Lumina are all Lithum-dependent — remove them if swapping weapons.
 
 **Lithum Shell overrides Defenceless (Chat 32):**
 
@@ -134,9 +134,9 @@ Stendhal applies Defenceless to Maelle, but in the standard Last Chance rotation
 
 ### LP Budget
 <!-- GENERATED:START characters:Maelle:LP -->
-- **Current capacity:** 506 LP
-- **Used:** 491 LP
-- **Spare:** 15 LP
+- **Current capacity:** 521 LP
+- **Used:** 521 LP
+- **Spare:** 0 LP
 <!-- GENERATED:END -->
 
 ### Lumina Adjustments
@@ -162,12 +162,15 @@ Stendhal applies Defenceless to Maelle, but in the standard Last Chance rotation
 | In Medias Res          | Added  | 10 | Low-health expansion. +3 Shields at battle start, max Health halved. HP penalty irrelevant at 1 HP from Last Chance.                                                                                                        |
 | Inverted Affinity      | Added  | 5  | Low-health expansion. 50% increased damage while Inverted (cannot be healed).                                                                                                                                               |
 | Gradient Fighter       | Added  | 5  | Personal addition. 25% increased damage with Gradient Attacks - large boost for Gommage.                                                                                                                                    |
+| Energising Shell       | Added  | 10 | Personal addition (Lithum suite). Give 2 AP on applying Shell - fires every Virtuose exit via Lithum.                                                                                                                       |
 | Greater Powerful       | Added  | 10 | Personal addition (Lithum suite). +15% to Powerful bonus - boosts Powerful On Shell.                                                                                                                                        |
+| Greater Rush           | Added  | 10 | Personal addition (Lithum suite). +25% to Rush Speed increase - amplifies the Rush applied by Rush On Powerful.                                                                                                             |
 | Greater Shell          | Added  | 10 | Personal addition (Lithum suite). Stronger Shell from Lithum on Virtuose exit.                                                                                                                                              |
 | Longer Powerful        | Added  | 10 | Personal addition (Lithum suite). +2 turn duration to Powerful from Powerful On Shell.                                                                                                                                      |
+| Longer Rush            | Added  | 10 | Personal addition (Lithum suite). On applying Rush, duration +2 - extends the Rush applied by Rush On Powerful.                                                                                                             |
 | Longer Shell           | Added  | 10 | Personal addition (Lithum suite). On applying Shell, duration +2 - extends Lithum Shell from Virtuose exit.                                                                                                                 |
 | Powerful On Shell      | Added  | 10 | Personal addition (Lithum suite). Apply Powerful on applying Shell - Lithum applies Shell on Virtuose exit (Last Chance -> Stendhal/Gommage), triggering this every cycle. Boosted by Greater Powerful and Longer Powerful. |
-| Energising Shell       | Added  | 10 | Personal addition (Lithum suite). Give 2 AP on applying Shell - fires every Virtuose exit via Lithum.                                                                                                                       |
+| Rush On Powerful       | Added  | 10 | Personal addition (Lithum suite). Apply Rush on applying Powerful - fires every Virtuose exit via the Lithum -> Shell -> Powerful On Shell -> Powerful -> Rush On Powerful chain.                                           |
 | Empowering Break       | Added  | —  | Free from Pictos.                                                                                                                                                                                                           |
 <!-- GENERATED:END -->
 
@@ -206,17 +209,20 @@ Stendhal applies Defenceless to Maelle, but in the standard Last Chance rotation
 | Glass Cannon           | 10 | DPS expansion. 25% increased damage, 25% increased damage taken.                                                                                                                                                            |
 | Gradient Fighter       | 5  | Personal addition. 25% increased damage with Gradient Attacks - large boost for Gommage.                                                                                                                                    |
 | Greater Powerful       | 10 | Personal addition (Lithum suite). +15% to Powerful bonus - boosts Powerful On Shell.                                                                                                                                        |
+| Greater Rush           | 10 | Personal addition (Lithum suite). +25% to Rush Speed increase - amplifies the Rush applied by Rush On Powerful.                                                                                                             |
 | Greater Shell          | 10 | Personal addition (Lithum suite). Stronger Shell from Lithum on Virtuose exit.                                                                                                                                              |
 | Immaculate             | 10 | DPS expansion. 30% increased damage until first hit received.                                                                                                                                                               |
 | In Medias Res          | 10 | Low-health expansion. +3 Shields at battle start, max Health halved. HP penalty irrelevant at 1 HP from Last Chance.                                                                                                        |
 | Inverted Affinity      | 5  | Low-health expansion. 50% increased damage while Inverted (cannot be healed).                                                                                                                                               |
 | Longer Powerful        | 10 | Personal addition (Lithum suite). +2 turn duration to Powerful from Powerful On Shell.                                                                                                                                      |
+| Longer Rush            | 10 | Personal addition (Lithum suite). On applying Rush, duration +2 - extends the Rush applied by Rush On Powerful.                                                                                                             |
 | Longer Shell           | 10 | Personal addition (Lithum suite). On applying Shell, duration +2 - extends Lithum Shell from Virtuose exit.                                                                                                                 |
 | Marking Shots          | 3  | 20% chance to apply Mark on Free Aim shot.                                                                                                                                                                                  |
 | Painted Power          | 5  | Damage can exceed 9,999. Essential for all characters from Act 3 onwards.                                                                                                                                                   |
 | Powerful On Shell      | 10 | Personal addition (Lithum suite). Apply Powerful on applying Shell - Lithum applies Shell on Virtuose exit (Last Chance -> Stendhal/Gommage), triggering this every cycle. Boosted by Greater Powerful and Longer Powerful. |
 | Powerful Shield        | 5  | DPS expansion. 10% increased damage per Shield Point on self.                                                                                                                                                               |
 | Protecting Death       | 5  | Allies gain Shell on death.                                                                                                                                                                                                 |
+| Rush On Powerful       | 10 | Personal addition (Lithum suite). Apply Rush on applying Powerful - fires every Virtuose exit via the Lithum -> Shell -> Powerful On Shell -> Powerful -> Rush On Powerful chain.                                           |
 | SOS Power              | 5  | Apply Powerful when falling below 50% Health.                                                                                                                                                                               |
 | SOS Rush               | 5  | Apply Rush when falling below 50% Health.                                                                                                                                                                                   |
 | SOS Shell              | 5  | Apply Shell when falling below 50% Health.                                                                                                                                                                                  |

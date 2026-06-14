@@ -48,7 +48,7 @@ Fetch that file only when reviewing specific past errors.
 <!-- GENERATED:START characters:summary:party -->
 | Character                         | Level | Role                         | Weapon        | Pictos                                                 | LP      |
 |-----------------------------------|-------|------------------------------|---------------|--------------------------------------------------------|---------|
-| [Maelle](../characters/maelle.md) | 99    | Primary DPS                  | Lithum (33)   | Energising Turn, Empowering Break, Shortcut            | 491/506 |
+| [Maelle](../characters/maelle.md) | 99    | Primary DPS                  | Lithum (33)   | Energising Turn, Empowering Break, Shortcut            | 521/521 |
 | [Verso](../characters/verso.md)   | 99    | Endgame main DPS             | Simoso (33)   | Alternating Critical, Quick Break, Energising Stun     | 469/469 |
 | [Sciel](../characters/sciel.md)   | 99    | Pure support                 | Litheson (33) | Energy Master, Breaking Death, Powerful Revive         | 326/326 |
 | [Lune](../characters/lune.md)     | 99    | DPS / healer (reserve)       | Kralim (33)   | Clea's Life, Sweet Kill, Rush On Powerful              | 461/461 |
