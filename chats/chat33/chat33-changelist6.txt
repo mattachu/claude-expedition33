@@ -1,0 +1,148 @@
+# Chat 33 Changelist 6 - Maelle Rush On Powerful suite
+# Lithum exit sequence: Lithum -> Shell -> Powerful On Shell -> Powerful -> Rush On Powerful
+# All three fire automatically every time Maelle exits Virtuose via Last Chance
+# lp_used: 491 -> 521 (+30); lp_total stays 506 (sunk), so 15 more CoL needed
+
+# ============================================================
+# Maelle lumina_extras: add Rush On Powerful, Greater Rush, Longer Rush
+# ============================================================
+
+DATA: data/characters.json
+PATH: Maelle.lumina_extras
+OP: SET
+VALUE: [
+  {
+    "name": "Augmented First Strike",
+    "notes": "DPS expansion. 50% increased damage on first hit, once per battle."
+  },
+  {
+    "name": "Burn Affinity",
+    "notes": "DPS expansion. 25% increased damage against burning targets. Synergy: Burning Shots and Marking Shots (Free Aim) can seed burn."
+  },
+  {
+    "name": "Charging Critical",
+    "notes": "DPS expansion. +20% Gradient Charge on Critical Hit, once per turn. Fires every turn at 109% crit."
+  },
+  {
+    "name": "Dead Energy I",
+    "notes": "DPS expansion. +3 AP on killing an enemy."
+  },
+  {
+    "name": "Dead Energy II",
+    "notes": "DPS expansion. +3 AP on killing an enemy (stacks with Dead Energy I)."
+  },
+  {
+    "name": "Double Third",
+    "notes": "DPS expansion. Every 3rd hit deals double damage. Fires on multi-hit skills (Sword Ballet, Burning Canvas)."
+  },
+  {
+    "name": "Empowering Dodge",
+    "notes": "DPS expansion. 5% increased damage per consecutive dodge, stacks to 10. Parry does not reset the stack."
+  },
+  {
+    "name": "First Offensive",
+    "notes": "DPS expansion. 50% increased damage on first hit dealt, once per battle."
+  },
+  {
+    "name": "Frenzy",
+    "notes": "DPS expansion. Each successive Skill hit deals 10% more damage. Fires on multi-hit skills (Sword Ballet, Burning Canvas) - not on single-hit Stendhal/Gommage."
+  },
+  {
+    "name": "Glass Cannon",
+    "notes": "DPS expansion. 25% increased damage, 25% increased damage taken."
+  },
+  {
+    "name": "Immaculate",
+    "notes": "DPS expansion. 30% increased damage until first hit received."
+  },
+  {
+    "name": "Powerful Shield",
+    "notes": "DPS expansion. 10% increased damage per Shield Point on self."
+  },
+  {
+    "name": "Warming Up",
+    "notes": "DPS expansion. Damage increases with each attack, up to 20% at 5 stacks. Strong with sustained multi-turn presence."
+  },
+  {
+    "name": "At Death's Door",
+    "notes": "Low-health expansion. 50% increased damage below 10% HP. Active permanently while at 1 HP from Last Chance."
+  },
+  {
+    "name": "Confident Fighter",
+    "notes": "Low-health expansion. 30% increased damage, cannot be healed. Conflicts with Sciel's healing - accepted tradeoff for the Low-health build."
+  },
+  {
+    "name": "In Medias Res",
+    "notes": "Low-health expansion. +3 Shields at battle start, max Health halved. HP penalty irrelevant at 1 HP from Last Chance."
+  },
+  {
+    "name": "Inverted Affinity",
+    "notes": "Low-health expansion. 50% increased damage while Inverted (cannot be healed)."
+  },
+  {
+    "name": "Gradient Fighter",
+    "notes": "Personal addition. 25% increased damage with Gradient Attacks - large boost for Gommage."
+  },
+  {
+    "name": "Greater Powerful",
+    "notes": "Personal addition (Lithum suite). +15% to Powerful bonus - boosts Powerful On Shell."
+  },
+  {
+    "name": "Greater Shell",
+    "notes": "Personal addition (Lithum suite). Stronger Shell from Lithum on Virtuose exit."
+  },
+  {
+    "name": "Longer Powerful",
+    "notes": "Personal addition (Lithum suite). +2 turn duration to Powerful from Powerful On Shell."
+  },
+  {
+    "name": "Longer Shell",
+    "notes": "Personal addition (Lithum suite). On applying Shell, duration +2 - extends Lithum Shell from Virtuose exit."
+  },
+  {
+    "name": "Powerful On Shell",
+    "notes": "Personal addition (Lithum suite). Apply Powerful on applying Shell - Lithum applies Shell on Virtuose exit (Last Chance -> Stendhal/Gommage), triggering this every cycle. Boosted by Greater Powerful and Longer Powerful."
+  },
+  {
+    "name": "Energising Shell",
+    "notes": "Personal addition (Lithum suite). Give 2 AP on applying Shell - fires every Virtuose exit via Lithum."
+  },
+  {
+    "name": "Empowering Break",
+    "notes": "Free from Pictos."
+  },
+  {
+    "name": "Rush On Powerful",
+    "notes": "Personal addition (Lithum suite). Apply Rush on applying Powerful - fires every Virtuose exit via the Lithum -> Shell -> Powerful On Shell -> Powerful -> Rush On Powerful chain."
+  },
+  {
+    "name": "Greater Rush",
+    "notes": "Personal addition (Lithum suite). +25% to Rush Speed increase - amplifies the Rush applied by Rush On Powerful."
+  },
+  {
+    "name": "Longer Rush",
+    "notes": "Personal addition (Lithum suite). On applying Rush, duration +2 - extends the Rush applied by Rush On Powerful."
+  }
+]
+
+
+DATA: data/characters.json
+PATH: Maelle.lp_used
+OP: SET
+VALUE: 521
+
+DATA: data/characters.json
+PATH: Maelle.lp_total
+OP: SET
+VALUE: 521
+
+# ============================================================
+# Maelle character file: add Key Synergy entry for Rush loop
+# ============================================================
+
+FILE: characters/maelle.md
+AFTER: **Lithum Shell overrides Defenceless (Chat 32):**\n\nStendhal applies Defenceless to Maelle, but in the standard Last Chance rotation Lithum's Shell (triggered on leaving Virtuose Stance) immediately overwrites it. Net result: Shell provides approximately 30% damage reduction below baseline — the rotation is net positive defensively. Empirically confirmed: baseline incoming 1637 / Defenceless 2046 (+25%) / Shell after Last Chance 1146 (−30%). Stendhal used without prior Virtuose (no Shell trigger) leaves Maelle Defenceless — avoid this in the standard build.
+APPEND:
+**Lithum Shell-Rush loop (Chat 33):**
+
+On leaving Virtuose Stance, Lithum applies Shell. Powerful On Shell converts that Shell to Powerful. Rush On Powerful then triggers Rush from that Powerful application. Maelle therefore gains Rush automatically on every Last Chance exit from Virtuose — no Sciel intervention required for that buff. Greater Rush amplifies the Speed bonus by +25% and Longer Rush extends its duration by 2 turns.
