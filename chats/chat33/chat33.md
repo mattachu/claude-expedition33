@@ -3022,4 +3022,204 @@ Final totals: Maelle 506/491, Verso 464/464, Sciel 326/326, Lune 461/461, Monoco
 
 **Claude:** *[Turn 119. Last log: Turn 118 (this log).]*
 
+Logged — Turns 115–119 appended verbatim, transcript now at 2979 lines. Last logged turn is **Turn 119**.
+
+---
+
+<!-- SECTION -->
+
+**Matt:** *[Uploaded LINKS.md with new commit 619aad81]*
+
+There were a number of mistakes in the changelist. Fixed now. New links file attached — please delete downloaded files again and use new links if you need to fetch.
+
+I decided to give Exposing Break to Verso as well, to go alongside his Energising Break rotation. So his total increases to 469 and I need to grind 59 CoL. Other totals are as you had them.
+
+**Claude:** *[Turn 120. Last log: Turn 119.]*
+
+*[Deleted all downloaded repo files]*
+
+Done - files deleted, new LINKS.md noted (commit `619aad81`).
+
+Good call on Verso - Energising Break fires on Breaking, and Exposing Break fires on Breaking too, so they trigger together giving him +3 AP and setting up Defenceless for Maelle/Lune's follow-up on the same turn. Clean synergy.
+
+Confirmed: Verso 469/469, others as before (Maelle 506/491, Sciel 326, Lune 461, Monoco 348). 59 CoL to grind - about 21 minutes at 2.8/min.
+
+---
+
+**Matt:** Actually, Verso can follow up himself with End Bringer, which does extra damage against Stunned targets. Perfect Break applies the break and pushes him to S Rank, Break applies Stun and Exposing Break applies Defenceless, Energising Break gives him AP back, Cheater gives him another turn, End Bringer does a ton of damage.
+
+**Claude:** *[Turn 121. Last log: Turn 119.]*
+
+That's an elegant combo - Perfect Break → S Rank → Break → Stun + Defenceless + AP → Cheater → End Bringer hits a Stunned+Defenceless target at S Rank. Exposing Break isn't setting up for someone else, it's part of his own kill sequence. Self-contained and powerful.
+
+It also means the Energising Break note in his `lumina_extras` ("enables Perfect Break -> Stun -> End Bringer rotation") is the right framing - Exposing Break just slots in as another amplifier in that same chain, not a separate team-utility play. Worth noting that in Exposing Break's note when it's added to his extras.
+
+---
+
+**Matt:** I tried counting up how many more CoL I need and I got 44. I am wrong or are you?
+
+**Claude:** *[Turn 122. Last log: Turn 119.]*
+
+*[Recounted CoL from current lp_used to target lp_used for all five characters]*
+
+I get 59. Breakdown: Verso +21 (Core +6, DPS +10, Exposing Break +5), Sciel +11, Lune +16, Monoco +11, Maelle 0. Can you share how you arrived at 44? It might reveal a discrepancy in one character's base figure.
+
+---
+
+**Matt:** I only have Lune going up 1 from 460 to 461. That was because of the double counting, it should have been 445. I think I already expanded her to 460. I'll check in-game.
+
+**Claude:** *[Turn 123. Last log: Turn 119.]*
+
+Ah - if you already spent CoL expanding Lune to 460 before the Breaker/Critical Break correction came to light, then her `lp_total` is 460 (sunk), and her `lp_used` target of 461 means she needs just 1 more CoL. That changes the tally:
+
+*[Recalculated with Lune starting from 460 not 445: Verso +21, Sciel +11, Lune +1, Monoco +11, Maelle 0 = total 44]*
+
+That gives **44** - your number. The difference was Lune's starting point: I had her at 445 (after the correction) but she was already at 460 in-game, so only needs 1 more. Worth updating `lp_total` for Lune to 460 (sunk) rather than 445 in the data.
+
+---
+
+**Matt:** Total is 461 in the data already. !log
+
+**Claude:** *[Turn 124. Last log: Turn 123 (this log).]*
+
+Good - 461 is both total and used, no data fix needed. The mismatch was just in my local tracking.
+
+Logged — Turns 120–124 appended verbatim, transcript now at 3039 lines. Last logged turn is **Turn 124**.
+
+---
+
+<!-- SECTION -->
+
+**Matt:** I've just realised, there is no Rush On Shell but there is Rush On Powerful. This means they can all be applied automatically in a sequence: Lithum > Exit Virtuose > Shell > Powerful On Shell > Powerful > Rush On Powerful. So Maelle can get all three every time she exits Virtuose.
+
+Can you write a new changelist to add Rush On Powerful, Greater Rush and Longer Rush to Maelle's personal additions, and document this under Key Synergies in her file.
+
+**Claude:** *[Turn 125. Last log: Turn 124.]*
+
+Let me check the LP costs and whether these are already in Maelle's data before writing anything.
+
+*[Fetched pictos-lumina.json and characters.json from commit 619aad81]*
+
+*[Checked Rush On Powerful (10 LP), Greater Rush (10 LP), Longer Rush (10 LP) - all found, none in Maelle's extras. Maelle lp_total: 506, lp_used: 491.]*
+
+All three found, none already in her extras. 30 LP total - she has 15 spare (506 - 491 used), so she needs **15 more CoL** for the remaining 15 LP.
+
+Now let me check the character file structure to see what "Key Synergies" looks like.
+
+*[Checked Maelle's character file for Key Synergies section - found at line 42, with existing entries: Last Chance + Cheater + Clea's Life loop, Lithum Shell-Powerful loop, Lithum Shell overrides Defenceless]*
+
+*[Fetched maelle.md, read Key Synergies section (lines 42-60)]*
+
+[Turn 125. Last log: Turn 124.]
+Good — the Key Synergies section is clearly structured with named synergies. The new one extends the Lithum Shell loop. Let me write the changelist now.
+
+*[Built Maelle's updated extras list: 25 entries + 3 new Rush entries = 28 total]*
+
+*[Wrote chat33-changelist6.txt: lumina_extras SET (28 entries), lp_used 521, lp_total 521; FILE block appending new Key Synergy entry after Defenceless override note]*
+
+Wait — `lp_total` should stay at 506 (sunk), not jump to 521. Let me fix that.
+
+Actually — `lp_total` does need to rise to 521, since she'll need to spend 15 more CoL to unlock those 15 LP. The sunk 506 just means she's already committed that much; the new addition costs more on top. So the changelist is correct. Let me revert that edit.
+
+Now let me inline the JSON value directly rather than using a VALUE_FILE reference, since I'm not sure `apply_changelist.py` supports that syntax.
+
+*[Fixed VALUE_FILE reference to inline JSON directly]*
+
+*[Presented chat33-changelist6.txt]*
+
+Three DATA blocks (lumina_extras SET, lp_used 521, lp_total 521) plus one FILE block adding the Key Synergy entry after the existing Defenceless override note. Net additional CoL: **15** (521 - 506 already sunk). Grand total still pending including the 44 from before: 59 CoL still to grind.
+
+---
+
+**Matt:** !log
+
+**Claude:** *[Turn 126. Last log: Turn 125 (this log).]*
+
+Logged — Turns 125–126 appended verbatim, transcript now at 3077 lines. Last logged turn is **Turn 126**.
+
+---
+
+<!-- SECTION -->
+
+**Matt:** I defeated the Chromatic Lampmaster! I also got through the first phase of Duallistes quite easily, and used the fully powered first-hit Gommage on the second phase. That did 70m damage, but that was only half its health! I died before I could kill it. The moves look learnable with some effort though.
+
+I then went to see Clea Unleashed and Simon the Divergent Star. Clea has a shield that is only broken by perfect parry streaks. Simon had so many multi-hit moves that I didn't even get a turn before all my characters were dead. So I think both of those need very high parry skills.
+
+**Claude:** *[Turn 127. Last log: Turn 126.]*
+
+Great progress — Chromatic Lampmaster down, which clears the First Life question from the very start of this session.
+
+Duallistes at 70M on a single Gommage hit is a remarkable number — the Full Strength + Glass Cannon + Gradient Fighter stack doing real work there. Half health though means you need roughly that twice, which with the Fortune's Fury/Intervention setup and the Rush loop from Lithum is probably achievable once you've learned the move patterns.
+
+Clea Unleashed and Simon both sound like pure parry skill checks rather than build problems — no amount of damage helps if you can't survive long enough to deal it. Simon especially (dead before getting a turn from multi-hits) suggests the team needs to be reliably perfect-parrying everything, which is a different kind of challenge entirely from the optimisation work we've been doing. Those two may be genuine endgame skill walls rather than build walls.
+
+Worth noting for the record: defeating the Chromatic Lampmaster means **First Life (15 LP)** should now be obtainable as a drop. Did it drop, and if so does that change anyone's LP plans?
+
+---
+
+**Matt:** Yes, it dropped, but I don't think I'll use it. It gives +25% damage until a character dies, but -20% after they die. The latter makes it unhelpful for long, difficult boss fights.
+
+**Claude:** *[Turn 128. Last log: Turn 126.]*
+
+Agreed — for the easy/fast fights where characters don't die it would be fine, but those are exactly the fights where you don't need the damage boost anyway. For the hard fights (Duallistes, Clea, Simon) where characters will be dying and reviving repeatedly, the −20% penalty after first death is actively harmful. Not worth the LP slot.
+
+---
+
+**Matt:** I watched a YouTube video on Duallistes and found a build that can beat it without receiving a single hit. Verso and Lune run At Death's Door builds for extreme damage modifiers, Verso uses Blodam which gets him to Rank S instantly when on low health, Lune uses Esquim which gives 300% modifier when with four Dark Stains. So the first phase runs the setup on Lune and uses Verso to end the first phase with two Steeled Strikes, then Lune starts phase 2 with Fortune's Fury plus the Esquim 300% bonus and destroys Duallistes on the first attack with Lightning Dance. Uses Feint, Frenzy and Double Third on Steeled Strike and Lightning Dance. I think Feint boosts *every* 5th hit, not just hit 5.
+
+**Claude:** *[Turn 129. Last log: Turn 126.]*
+
+That's a very different build philosophy from what we discussed — worth unpacking properly before committing to it.
+
+On Feint first: you're right to revisit this. My earlier calculation treated Feint as "hits 1–4 zero, hit 5 ×6, hits 6+ normal" based on your description at the time. If it actually fires on *every* 5th hit (hits 5, 10, 15...), the calculation changes completely — let me redo it.
+
+*[Recalculated Feint on every 5th hit vs only hit 5]*
+
+Feint only on hit 5: Steeled Strike +4.4%, Lightning Dance +4.8%
+Feint on every 5th hit: Steeled Strike +39.1%, Lightning Dance +42.5%
+
+---
+
+**Matt:** No need to recalculate or to discuss this as a full build philosophy — I'm now at the stage of the game where I will apply specific builds for specific fights, not a new method for general use. I'm happy with the builds that we've come up with.
+
+Now it's just about finding the tricks to win the last two superbosses. Even with all the tricks from different YouTube tutorials, Clea Unleashed and Simon the Divergent Star both need learning the parry sequences before you can do the ultra-high damage attacks. So it comes down to practice, whereas previous bosses I've been able to find a way around with one build or other.
+
+I've pretty much completed the game, so thank you so much for your help!
+
+**Claude:** *[Turn 130. Last log: Turn 126.]*
+
+That makes complete sense — you've optimised the builds as far as they can go, and the remaining fights are skill checks rather than build problems. That's a satisfying place to be, actually: you've removed every variable you can control, and what's left is pure practice.
+
+It's been a genuinely impressive project. Going from the initial Maelle solo build question all the way through a full five-character rebuild with a unified Core + expansion framework, validated changelists, stat refreshes, and a proper data architecture in the repo — that's a lot of careful work across a lot of sessions.
+
+Good luck with Clea and Simon when you're ready for them. I hope the parry practice pays off!
+
+---
+
+**Matt:** !close
+
+**Claude:** *[Turn 131. Last log: Turn 126.]*
+
+Fetching the session procedure before closing.
+
+*[Fetched and read session-procedure.md — 329 lines]*
+
+Good. Step 1 of Close: final `!log`.
+
+*[Wrote final log]*
+
+Step 2: verbatim check — sampling turns from beginning, middle, and end.
+
+*[Carried out verbatim check]*
+
+Verbatim check results:
+
+- **Beginning (Turn 1):** PASS — Matt's opening message and Claude's session-start response match context exactly, including the startup file URL and bracket notation for tool calls.
+- **Middle (Turns 37–38):** PASS — Sakapatate Fire/Grosse Tête Whack discussion matches context verbatim, including the settled skill loadout list and the Breaking Attack conclusion.
+- **End (Turns 129–131):** PASS — Feint recalculation results, Matt's "no need to recalculate" response, final exchange, and `!close` all match context exactly.
+
+Step 3: present transcript.`chat33.md` — 3145 lines, verbatim check passed at all three sample points. Session closed.
+
+*[Presented chat33.md]*
+
 ---
