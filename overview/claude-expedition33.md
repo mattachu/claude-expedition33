@@ -162,7 +162,7 @@ If the main party is fully wiped in a battle, the player can continue the battle
 
 ## Section 6: Open Questions
 
-- **First Life (15LP):** Drops from Chromatic Lampmaster in Endless Tower (Stage 11 / DLC superboss area). 25% damage while alive, no downside for a well-supported DPS. Strong candidate for Maelle once obtained.
+*(none currently)*
 
 ---
 
