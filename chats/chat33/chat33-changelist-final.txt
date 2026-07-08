@@ -1,0 +1,17 @@
+FILE: overview/claude-expedition33.md
+SECTION: ## Section 6: Open Questions
+CONTENT:
+## Section 6: Open Questions
+
+*(none currently)*
+
+APPEND: chats/chat-index.md
+CONTENT:
+| Chat 33 | [Formatted](chat33/chat33-index.md) / [Raw](https://raw.githubusercontent.com/mattachu/claude-expedition33/main/chats/chat33/chat33-index.md) | [chat33.md](chat33/chat33.md) | Final chat: Full Lumina reorganisation into a unified Core + DPS/Support/Low-health/Full-health expansion framework; Lune's Lightning Dance damage rebuild; Monoco's crit-cap Pictos rebuild; game essentially complete.                 |
+
+APPEND: reference/historical-errors.md
+CONTENT:
+61. **Transcript logging drift, twice (Chat 33):** Logging drifted from strict verbatim to summarised/merged turns on two separate occasions within the same session, requiring Matt to supply a corrected transcript file both times. Recurring pattern — see also errors 55 and 59.
+62. **Monoco Support expansion omitted from LP target (Chat 33):** When computing Monoco's target LP total after his Pictos rebuild, the Support expansion (Breaking Attack, Breaking Counter, Recovery — 23 LP) was forgotten entirely. Reported total was 314 instead of the correct 337. Self-caught before the changelist was finalised.
+63. **Energy Master Health stat data error (Chat 33):** `pictos-lumina.json` listed Energy Master's Health bonus as 4979. In-game value confirmed as 4970 — a pre-existing data error surfaced during final stat verification.
+64. **Lune duplicate Lumina from stale personal additions (Chat 33):** Breaker and Critical Break remained in Lune's `lumina_extras` after both were absorbed into the unified Core set during this session, double-counting 15 LP. Leftover from before this session's Core unification; Matt caught it after applying the changelist in-game.
